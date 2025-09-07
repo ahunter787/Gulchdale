@@ -15,16 +15,15 @@
       background-size: contain; /* desktop default */
       background-color: #000;
       display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      align-items: center;   /* center vertically */
+      justify-content: center; /* center horizontally */
       font-family: 'Garamond', serif;
     }
     button {
-      margin: 3rem;
       padding: 1rem 3rem;
       font-size: 1.5rem;
       background: rgba(0,0,0,0.7); /* shadow box look */
-      color: #d4af37; /* gold */
+      color: #d4af37; /* gold text */
       border: 2px solid #d4af37;
       border-radius: 0.5rem;
       cursor: pointer;
@@ -41,16 +40,12 @@
     @media (max-width: 768px) {
       body {
         background-size: cover;
-        align-items: center; /* center button vertically */
-      }
-      button {
-        margin: 0;
       }
     }
   </style>
 </head>
 <body>
-  <button id="start-draft">Draft Gulchdale Now</button>
+  <button id="start-draft">Draft Now!</button>
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
