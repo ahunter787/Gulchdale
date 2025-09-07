@@ -5,15 +5,54 @@
   <title>Draft Gulchdale</title>
   <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
   <style>
-    body { background:#111; color:#eee; font-family:sans-serif; text-align:center; padding-top:10%; }
-    button { padding:1em 2em; font-size:1.2em; background:#3a3; color:#fff; border:none; border-radius:.5em; cursor:pointer; }
-    button:hover { background:#2a2; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: url('./GulchdaleLandingPage.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Garamond', serif;
+    }
+    #cta {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #d4af37; /* gold */
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 10px #000;
+    }
+    button {
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+      background: linear-gradient(180deg, #f0d76d 0%, #b8860b 100%);
+      color: #000;
+      border: 2px solid #d4af37;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+      background: linear-gradient(180deg, #ffe680 0%, #c99700 100%);
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
-  <h1>Draft Gulchdale</h1>
-  <p>Click below to start Draftmancer with Gulchdale preloaded.</p>
-  <button id="start-draft">Draft Now</button>
+  <div id="cta">
+    <h1>Draft Gulchdale</h1>
+    <button id="start-draft">Draft Now</button>
+  </div>
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
