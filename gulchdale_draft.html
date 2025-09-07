@@ -12,47 +12,45 @@
     }
     body {
       background: url('./GulchdaleLandingPage.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-size: contain; /* desktop default */
+      background-color: #000;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       font-family: 'Garamond', serif;
     }
-    #cta {
-      text-align: center;
-      background: rgba(0, 0, 0, 0.55);
-      padding: 2rem 3rem;
-      border-radius: 1rem;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #d4af37; /* gold */
-      margin-bottom: 1.5rem;
-      text-shadow: 0 0 10px #000;
-    }
     button {
+      margin: 3rem;
       padding: 1rem 3rem;
       font-size: 1.5rem;
-      background: linear-gradient(180deg, #f0d76d 0%, #b8860b 100%);
-      color: #000;
+      background: rgba(0,0,0,0.7); /* shadow box look */
+      color: #d4af37; /* gold */
       border: 2px solid #d4af37;
       border-radius: 0.5rem;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
       transition: all 0.2s ease-in-out;
     }
     button:hover {
-      background: linear-gradient(180deg, #ffe680 0%, #c99700 100%);
+      background: rgba(0,0,0,0.9);
       transform: scale(1.05);
+    }
+
+    /* 📱 On mobile / narrow screens, switch to cover */
+    @media (max-width: 768px) {
+      body {
+        background-size: cover;
+        align-items: center; /* center button vertically */
+      }
+      button {
+        margin: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div id="cta">
-    <h1>Draft Gulchdale</h1>
-    <button id="start-draft">Draft Now</button>
-  </div>
+  <button id="start-draft">Draft Gulchdale Now</button>
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
