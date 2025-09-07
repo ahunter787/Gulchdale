@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Draft Gulchdale</title>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
   <style>
     body { background:#111; color:#eee; font-family:sans-serif; text-align:center; padding-top:10%; }
     button { padding:1em 2em; font-size:1.2em; background:#3a3; color:#fff; border:none; border-radius:.5em; cursor:pointer; }
@@ -16,29 +17,41 @@
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
+    const Domain = "https://draftmancer.com";
 
-    document.getElementById("start-draft").addEventListener("click", async () => {
-      const resp = await fetch(gistURL);
-      const cardList = await resp.text();
-
-      // Open Draftmancer
-      const dmWin = window.open("https://draftmancer.com", "_blank");
-
-      // Connect websocket
-      const ws = new WebSocket("wss://draftmancer.com:443");
-
-      ws.onopen = () => {
-        console.log("Connected to Draftmancer, sending custom list…");
-
-        // Send the same style of message as the Substation33 demo
-        ws.send(JSON.stringify({
-          action: "uploadCardList",
-          customlist: cardList
-        }));
+    async function startDraft() {
+      const BotID = "Bot_gulchdale_" + Date.now();
+      const SessionID = "Bot_gulchdale_" + Date.now();
+      const query = {
+        userID: BotID,
+        userName: "Gulchdale Bot",
+        sessionSettings: "{}",
+        sessionID: SessionID,
       };
 
-      ws.onmessage = (msg) => console.log("Draftmancer says:", msg.data);
-    });
+      const socket = io(Domain, { query, transports: ["websocket"] });
+      const cubeFile = await (await fetch(gistURL)).text();
+
+      socket.once("sessionOwner", (ownerID) => {
+        if (ownerID !== BotID) {
+          console.error("Not the owner!");
+          socket.disconnect();
+          return;
+        }
+
+        socket.emit("parseCustomCardList", cubeFile, (res) => {
+          if (res.code < 0) {
+            socket.disconnect();
+            alert("Draftmancer socket error:\n" + JSON.stringify(res));
+          } else {
+            socket.once("sessionUsers", () => socket.disconnect());
+            window.open(`${Domain}/?session=${SessionID}`, "_blank").focus();
+          }
+        });
+      });
+    }
+
+    document.getElementById("start-draft").addEventListener("click", startDraft);
   </script>
 </body>
 </html>
