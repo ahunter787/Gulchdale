@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Draft Gulchdale</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 10%;
+    }
+    button {
+      padding: 1em 2em;
+      font-size: 1.2em;
+      background: #3a3;
+      color: #fff;
+      border: none;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2a2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Draft Gulchdale</h1>
+  <p>Click below to start a Draftmancer session with the Gulchdale cube preloaded.</p>
+  <button id="start-draft">Draft Now</button>
+
+  <script>
+    const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
+
+    document.getElementById("start-draft").addEventListener("click", async () => {
+      try {
+        // Fetch the cube list text
+        const resp = await fetch(gistURL);
+        const text = await resp.text();
+
+        // Open Draftmancer in a new window
+        const dmWindow = window.open("https://draftmancer.com", "_blank");
+
+        // Wait a little for Draftmancer to boot up
+        setTimeout(() => {
+          // Connect to Draftmancer's websocket server
+          const ws = new WebSocket("wss://draftmancer.com:443");
+
+          ws.onopen = () => {
+            // Send a "create room" request with the custom list
+            ws.send(JSON.stringify({
+              type: "setCustomCardList",
+              list: text
+            }));
+          };
+
+          ws.onmessage = (msg) => {
+            console.log("Message from Draftmancer:", msg.data);
+          };
+        }, 2000);
+
+      } catch (err) {
+        alert("Failed to fetch cube list: " + err);
+      }
+    });
+  </script>
+</body>
+</html>
