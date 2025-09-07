@@ -4,65 +4,40 @@
   <meta charset="UTF-8" />
   <title>Draft Gulchdale</title>
   <style>
-    body {
-      background: #111;
-      color: #eee;
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 10%;
-    }
-    button {
-      padding: 1em 2em;
-      font-size: 1.2em;
-      background: #3a3;
-      color: #fff;
-      border: none;
-      border-radius: 0.5em;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #2a2;
-    }
+    body { background:#111; color:#eee; font-family:sans-serif; text-align:center; padding-top:10%; }
+    button { padding:1em 2em; font-size:1.2em; background:#3a3; color:#fff; border:none; border-radius:.5em; cursor:pointer; }
+    button:hover { background:#2a2; }
   </style>
 </head>
 <body>
   <h1>Draft Gulchdale</h1>
-  <p>Click below to start a Draftmancer session with the Gulchdale cube preloaded.</p>
+  <p>Click below to start Draftmancer with Gulchdale preloaded.</p>
   <button id="start-draft">Draft Now</button>
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
 
     document.getElementById("start-draft").addEventListener("click", async () => {
-      try {
-        // Fetch the cube list text
-        const resp = await fetch(gistURL);
-        const text = await resp.text();
+      const resp = await fetch(gistURL);
+      const cardList = await resp.text();
 
-        // Open Draftmancer in a new window
-        const dmWindow = window.open("https://draftmancer.com", "_blank");
+      // Open Draftmancer
+      const dmWin = window.open("https://draftmancer.com", "_blank");
 
-        // Wait a little for Draftmancer to boot up
-        setTimeout(() => {
-          // Connect to Draftmancer's websocket server
-          const ws = new WebSocket("wss://draftmancer.com:443");
+      // Connect websocket
+      const ws = new WebSocket("wss://draftmancer.com:443");
 
-          ws.onopen = () => {
-            // Send a "create room" request with the custom list
-            ws.send(JSON.stringify({
-              type: "setCustomCardList",
-              list: text
-            }));
-          };
+      ws.onopen = () => {
+        console.log("Connected to Draftmancer, sending custom list…");
 
-          ws.onmessage = (msg) => {
-            console.log("Message from Draftmancer:", msg.data);
-          };
-        }, 2000);
+        // Send the same style of message as the Substation33 demo
+        ws.send(JSON.stringify({
+          action: "uploadCardList",
+          customlist: cardList
+        }));
+      };
 
-      } catch (err) {
-        alert("Failed to fetch cube list: " + err);
-      }
+      ws.onmessage = (msg) => console.log("Draftmancer says:", msg.data);
     });
   </script>
 </body>
