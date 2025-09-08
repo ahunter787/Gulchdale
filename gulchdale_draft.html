@@ -45,7 +45,7 @@
   </style>
 </head>
 <body>
-  <button id="start-draft">Draft Now!</button>
+  <button id="start-draft">Draft Now</button>
 
   <script>
     const gistURL = "https://gist.githubusercontent.com/ahunter787/629779b7ca35a94f1f57d276c3a45ead/raw/gulchdale.txt";
@@ -71,11 +71,19 @@
           return;
         }
 
+        // Send the cube list
         socket.emit("parseCustomCardList", cubeFile, (res) => {
           if (res.code < 0) {
             socket.disconnect();
             alert("Draftmancer socket error:\n" + JSON.stringify(res));
           } else {
+            // Apply session options: timer=0, report drafts to CubeCobra
+            socket.emit("sessionOptions", {
+              timer: 0,
+              useCustomCardList: true,
+              reportToCubeCobra: true
+            });
+
             socket.once("sessionUsers", () => socket.disconnect());
             window.open(`${Domain}/?session=${SessionID}`, "_blank").focus();
           }
@@ -87,5 +95,3 @@
   </script>
 </body>
 </html>
-
-
