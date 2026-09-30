@@ -1,0 +1,30 @@
+name: Server Test
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    server:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [22.x]
+
+        env:
+            PERSISTENCE_LOCAL_PATH: .
+
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "npm"
+            - run: npm ci
+            - run: npm run build-server
+            - run: mkdir tmp # For simulating server restarts
+            - run: npm test

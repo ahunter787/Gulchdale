@@ -1,0 +1,4431 @@
+{
+    "10e": {
+        "code": "10e",
+        "fullName": "Tenth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/10e.svg"
+    },
+    "2ed": {
+        "code": "2ed",
+        "fullName": "Unlimited Edition",
+        "block": "Core Set",
+        "icon": "img/sets/2ed.svg"
+    },
+    "2x2": {
+        "code": "2x2",
+        "fullName": "Double Masters 2022",
+        "icon": "img/sets/2x2.svg"
+    },
+    "2xm": {
+        "code": "2xm",
+        "fullName": "Double Masters",
+        "icon": "img/sets/2xm.svg"
+    },
+    "30a": {
+        "code": "30a",
+        "fullName": "30th Anniversary Edition",
+        "icon": "img/sets/30a.svg"
+    },
+    "3ed": {
+        "code": "3ed",
+        "fullName": "Revised Edition",
+        "block": "Core Set",
+        "icon": "img/sets/3ed.svg"
+    },
+    "40k": {
+        "code": "40k",
+        "fullName": "Warhammer 40,000 Commander",
+        "block": "Commander",
+        "icon": "img/sets/40k.svg"
+    },
+    "4bb": {
+        "code": "4bb",
+        "fullName": "Fourth Edition Foreign Black Border",
+        "icon": "img/sets/4bb.svg"
+    },
+    "4ed": {
+        "code": "4ed",
+        "fullName": "Fourth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/4ed.svg"
+    },
+    "5dn": {
+        "code": "5dn",
+        "fullName": "Fifth Dawn",
+        "block": "Mirrodin",
+        "icon": "img/sets/5dn.svg"
+    },
+    "5ed": {
+        "code": "5ed",
+        "fullName": "Fifth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/5ed.svg"
+    },
+    "6ed": {
+        "code": "6ed",
+        "fullName": "Classic Sixth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/6ed.svg"
+    },
+    "7ed": {
+        "code": "7ed",
+        "fullName": "Seventh Edition",
+        "block": "Core Set",
+        "icon": "img/sets/7ed.svg"
+    },
+    "8ed": {
+        "code": "8ed",
+        "fullName": "Eighth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/8ed.svg"
+    },
+    "9ed": {
+        "code": "9ed",
+        "fullName": "Ninth Edition",
+        "block": "Core Set",
+        "icon": "img/sets/9ed.svg"
+    },
+    "a25": {
+        "code": "a25",
+        "fullName": "Masters 25",
+        "icon": "img/sets/a25.svg"
+    },
+    "aa1": {
+        "code": "aa1",
+        "fullName": "Arena Anthology 1",
+        "icon": "img/sets/aa1.svg"
+    },
+    "aa2": {
+        "code": "aa2",
+        "fullName": "Arena Anthology 2",
+        "icon": "img/sets/aa2.svg"
+    },
+    "aa3": {
+        "code": "aa3",
+        "fullName": "Arena Anthology 3",
+        "icon": "img/sets/aa3.svg"
+    },
+    "aa4": {
+        "code": "aa4",
+        "fullName": "Arena Anthology 4",
+        "icon": "img/sets/aa4.svg"
+    },
+    "acr": {
+        "code": "acr",
+        "fullName": "Assassin's Creed",
+        "icon": "img/sets/acr.svg"
+    },
+    "aer": {
+        "code": "aer",
+        "fullName": "Aether Revolt",
+        "block": "Kaladesh",
+        "icon": "img/sets/aer.svg"
+    },
+    "afc": {
+        "code": "afc",
+        "fullName": "Forgotten Realms Commander",
+        "block": "Commander",
+        "icon": "img/sets/afc.svg"
+    },
+    "afr": {
+        "code": "afr",
+        "fullName": "Adventures in the Forgotten Realms",
+        "icon": "img/sets/afr.svg"
+    },
+    "ajmp": {
+        "code": "ajmp",
+        "fullName": "Jumpstart Arena Exclusives",
+        "icon": "img/sets/ajmp.svg"
+    },
+    "akh": {
+        "code": "akh",
+        "fullName": "Amonkhet",
+        "block": "Amonkhet",
+        "icon": "img/sets/akh.svg"
+    },
+    "akr": {
+        "code": "akr",
+        "fullName": "Amonkhet Remastered",
+        "icon": "img/sets/akr.svg"
+    },
+    "ala": {
+        "code": "ala",
+        "fullName": "Shards of Alara",
+        "block": "Alara",
+        "icon": "img/sets/ala.svg"
+    },
+    "all": {
+        "code": "all",
+        "fullName": "Alliances",
+        "block": "Ice Age",
+        "icon": "img/sets/all.svg"
+    },
+    "ana": {
+        "code": "ana",
+        "fullName": "Arena New Player Experience",
+        "icon": "img/sets/ana.svg"
+    },
+    "anb": {
+        "code": "anb",
+        "fullName": "Arena Beginner Set",
+        "icon": "img/sets/anb.svg"
+    },
+    "apc": {
+        "code": "apc",
+        "fullName": "Apocalypse",
+        "block": "Invasion",
+        "icon": "img/sets/apc.svg"
+    },
+    "arb": {
+        "code": "arb",
+        "fullName": "Alara Reborn",
+        "block": "Alara",
+        "icon": "img/sets/arb.svg"
+    },
+    "arc": {
+        "code": "arc",
+        "fullName": "Archenemy",
+        "icon": "img/sets/arc.svg"
+    },
+    "arn": {
+        "code": "arn",
+        "fullName": "Arabian Nights",
+        "icon": "img/sets/arn.svg"
+    },
+    "ath": {
+        "code": "ath",
+        "fullName": "Anthologies",
+        "icon": "img/sets/ath.svg"
+    },
+    "atq": {
+        "code": "atq",
+        "fullName": "Antiquities",
+        "icon": "img/sets/atq.svg"
+    },
+    "avr": {
+        "code": "avr",
+        "fullName": "Avacyn Restored",
+        "block": "Innistrad",
+        "icon": "img/sets/avr.svg"
+    },
+    "bbd": {
+        "code": "bbd",
+        "fullName": "Battlebond",
+        "icon": "img/sets/bbd.svg"
+    },
+    "bchr": {
+        "code": "bchr",
+        "fullName": "Chronicles Foreign Black Border",
+        "icon": "img/sets/bchr.svg"
+    },
+    "bfz": {
+        "code": "bfz",
+        "fullName": "Battle for Zendikar",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/bfz.svg"
+    },
+    "big": {
+        "code": "big",
+        "fullName": "The Big Score",
+        "block": "Outlaws of Thunder Junction",
+        "icon": "img/sets/big.svg"
+    },
+    "blb": {
+        "code": "blb",
+        "fullName": "Bloomburrow",
+        "icon": "img/sets/blb.svg"
+    },
+    "blc": {
+        "code": "blc",
+        "fullName": "Bloomburrow Commander",
+        "block": "Commander",
+        "icon": "img/sets/blc.svg"
+    },
+    "bng": {
+        "code": "bng",
+        "fullName": "Born of the Gods",
+        "block": "Theros",
+        "icon": "img/sets/bng.svg"
+    },
+    "bok": {
+        "code": "bok",
+        "fullName": "Betrayers of Kamigawa",
+        "block": "Kamigawa",
+        "icon": "img/sets/bok.svg"
+    },
+    "bot": {
+        "code": "bot",
+        "fullName": "Transformers",
+        "icon": "img/sets/bot.svg"
+    },
+    "brb": {
+        "code": "brb",
+        "fullName": "Battle Royale Box Set",
+        "icon": "img/sets/brb.svg"
+    },
+    "brc": {
+        "code": "brc",
+        "fullName": "The Brothers' War Commander",
+        "block": "Commander",
+        "icon": "img/sets/brc.svg"
+    },
+    "bro": {
+        "code": "bro",
+        "fullName": "The Brothers' War",
+        "icon": "img/sets/bro.svg"
+    },
+    "brr": {
+        "code": "brr",
+        "fullName": "The Brothers' War Retro Artifacts",
+        "icon": "img/sets/brr.svg"
+    },
+    "btd": {
+        "code": "btd",
+        "fullName": "Beatdown Box Set",
+        "icon": "img/sets/btd.svg"
+    },
+    "c13": {
+        "code": "c13",
+        "fullName": "Commander 2013",
+        "block": "Commander",
+        "icon": "img/sets/c13.svg"
+    },
+    "c14": {
+        "code": "c14",
+        "fullName": "Commander 2014",
+        "block": "Commander",
+        "icon": "img/sets/c14.svg"
+    },
+    "c15": {
+        "code": "c15",
+        "fullName": "Commander 2015",
+        "block": "Commander",
+        "icon": "img/sets/c15.svg"
+    },
+    "c16": {
+        "code": "c16",
+        "fullName": "Commander 2016",
+        "block": "Commander",
+        "icon": "img/sets/c16.svg"
+    },
+    "c17": {
+        "code": "c17",
+        "fullName": "Commander 2017",
+        "block": "Commander",
+        "icon": "img/sets/c17.svg"
+    },
+    "c18": {
+        "code": "c18",
+        "fullName": "Commander 2018",
+        "block": "Commander",
+        "icon": "img/sets/c18.svg"
+    },
+    "c19": {
+        "code": "c19",
+        "fullName": "Commander 2019",
+        "block": "Commander",
+        "icon": "img/sets/c19.svg"
+    },
+    "c20": {
+        "code": "c20",
+        "fullName": "Commander 2020",
+        "block": "Commander",
+        "icon": "img/sets/c20.svg"
+    },
+    "c21": {
+        "code": "c21",
+        "fullName": "Commander 2021",
+        "block": "Commander",
+        "icon": "img/sets/c21.svg"
+    },
+    "cc1": {
+        "code": "cc1",
+        "fullName": "Commander Collection: Green",
+        "icon": "img/sets/cc1.svg"
+    },
+    "cc2": {
+        "code": "cc2",
+        "fullName": "Commander Collection: Black",
+        "icon": "img/sets/cc2.svg"
+    },
+    "ced": {
+        "code": "ced",
+        "fullName": "Collectors' Edition",
+        "icon": "img/sets/ced.svg"
+    },
+    "cei": {
+        "code": "cei",
+        "fullName": "Intl. Collectors' Edition",
+        "icon": "img/sets/cei.svg"
+    },
+    "chk": {
+        "code": "chk",
+        "fullName": "Champions of Kamigawa",
+        "block": "Kamigawa",
+        "icon": "img/sets/chk.svg"
+    },
+    "chr": {
+        "code": "chr",
+        "fullName": "Chronicles",
+        "icon": "img/sets/chr.svg"
+    },
+    "clb": {
+        "code": "clb",
+        "fullName": "Commander Legends: Battle for Baldur's Gate",
+        "block": "Commander",
+        "icon": "img/sets/clb.svg"
+    },
+    "clu": {
+        "code": "clu",
+        "fullName": "Ravnica: Clue Edition",
+        "icon": "img/sets/clu.svg"
+    },
+    "cm1": {
+        "code": "cm1",
+        "fullName": "Commander's Arsenal",
+        "block": "Commander",
+        "icon": "img/sets/cm1.svg"
+    },
+    "cm2": {
+        "code": "cm2",
+        "fullName": "Commander Anthology Volume II",
+        "block": "Commander",
+        "icon": "img/sets/cm2.svg"
+    },
+    "cma": {
+        "code": "cma",
+        "fullName": "Commander Anthology",
+        "block": "Commander",
+        "icon": "img/sets/cma.svg"
+    },
+    "cmb1": {
+        "code": "cmb1",
+        "fullName": "Mystery Booster Playtest Cards 2019",
+        "icon": "img/sets/cmb1.svg"
+    },
+    "cmb2": {
+        "code": "cmb2",
+        "fullName": "Mystery Booster Playtest Cards 2021",
+        "icon": "img/sets/cmb2.svg"
+    },
+    "cmd": {
+        "code": "cmd",
+        "fullName": "Commander 2011",
+        "block": "Commander",
+        "icon": "img/sets/cmd.svg"
+    },
+    "cmm": {
+        "code": "cmm",
+        "fullName": "Commander Masters",
+        "block": "Commander",
+        "icon": "img/sets/cmm.svg"
+    },
+    "cmr": {
+        "code": "cmr",
+        "fullName": "Commander Legends",
+        "block": "Commander",
+        "icon": "img/sets/cmr.svg"
+    },
+    "cn2": {
+        "code": "cn2",
+        "fullName": "Conspiracy: Take the Crown",
+        "block": "Conspiracy",
+        "icon": "img/sets/cn2.svg"
+    },
+    "cns": {
+        "code": "cns",
+        "fullName": "Conspiracy",
+        "block": "Conspiracy",
+        "icon": "img/sets/cns.svg"
+    },
+    "con": {
+        "code": "con",
+        "fullName": "Conflux",
+        "block": "Alara",
+        "icon": "img/sets/conf.svg"
+    },
+    "cp1": {
+        "code": "cp1",
+        "fullName": "Magic 2015 Clash Pack",
+        "icon": "img/sets/cp1.svg"
+    },
+    "cp2": {
+        "code": "cp2",
+        "fullName": "Fate Reforged Clash Pack",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/cp2.svg"
+    },
+    "cp3": {
+        "code": "cp3",
+        "fullName": "Magic Origins Clash Pack",
+        "icon": "img/sets/cp3.svg"
+    },
+    "csp": {
+        "code": "csp",
+        "fullName": "Coldsnap",
+        "block": "Ice Age",
+        "icon": "img/sets/csp.svg"
+    },
+    "cst": {
+        "code": "cst",
+        "fullName": "Coldsnap Theme Decks",
+        "block": "Ice Age",
+        "icon": "img/sets/cst.svg"
+    },
+    "dbl": {
+        "code": "dbl",
+        "fullName": "Innistrad: Double Feature",
+        "icon": "img/sets/dbl.svg"
+    },
+    "dci": {
+        "code": "dci",
+        "fullName": "DCI Promos",
+        "icon": "img/sets/dci.svg"
+    },
+    "dd1": {
+        "code": "dd1",
+        "fullName": "Duel Decks: Elves vs. Goblins",
+        "icon": "img/sets/dd1.svg"
+    },
+    "dd2": {
+        "code": "dd2",
+        "fullName": "Duel Decks: Jace vs. Chandra",
+        "icon": "img/sets/dd2.svg"
+    },
+    "ddc": {
+        "code": "ddc",
+        "fullName": "Duel Decks: Divine vs. Demonic",
+        "icon": "img/sets/ddc.svg"
+    },
+    "ddd": {
+        "code": "ddd",
+        "fullName": "Duel Decks: Garruk vs. Liliana",
+        "icon": "img/sets/ddd.svg"
+    },
+    "dde": {
+        "code": "dde",
+        "fullName": "Duel Decks: Phyrexia vs. the Coalition",
+        "icon": "img/sets/dde.svg"
+    },
+    "ddf": {
+        "code": "ddf",
+        "fullName": "Duel Decks: Elspeth vs. Tezzeret",
+        "icon": "img/sets/ddf.svg"
+    },
+    "ddg": {
+        "code": "ddg",
+        "fullName": "Duel Decks: Knights vs. Dragons",
+        "icon": "img/sets/ddg.svg"
+    },
+    "ddh": {
+        "code": "ddh",
+        "fullName": "Duel Decks: Ajani vs. Nicol Bolas",
+        "icon": "img/sets/ddh.svg"
+    },
+    "ddi": {
+        "code": "ddi",
+        "fullName": "Duel Decks: Venser vs. Koth",
+        "icon": "img/sets/ddi.svg"
+    },
+    "ddj": {
+        "code": "ddj",
+        "fullName": "Duel Decks: Izzet vs. Golgari",
+        "icon": "img/sets/ddj.svg"
+    },
+    "ddk": {
+        "code": "ddk",
+        "fullName": "Duel Decks: Sorin vs. Tibalt",
+        "icon": "img/sets/ddk.svg"
+    },
+    "ddl": {
+        "code": "ddl",
+        "fullName": "Duel Decks: Heroes vs. Monsters",
+        "icon": "img/sets/ddl.svg"
+    },
+    "ddm": {
+        "code": "ddm",
+        "fullName": "Duel Decks: Jace vs. Vraska",
+        "icon": "img/sets/ddm.svg"
+    },
+    "ddn": {
+        "code": "ddn",
+        "fullName": "Duel Decks: Speed vs. Cunning",
+        "icon": "img/sets/ddn.svg"
+    },
+    "ddo": {
+        "code": "ddo",
+        "fullName": "Duel Decks: Elspeth vs. Kiora",
+        "icon": "img/sets/ddo.svg"
+    },
+    "ddp": {
+        "code": "ddp",
+        "fullName": "Duel Decks: Zendikar vs. Eldrazi",
+        "icon": "img/sets/ddp.svg"
+    },
+    "ddq": {
+        "code": "ddq",
+        "fullName": "Duel Decks: Blessed vs. Cursed",
+        "icon": "img/sets/ddq.svg"
+    },
+    "ddr": {
+        "code": "ddr",
+        "fullName": "Duel Decks: Nissa vs. Ob Nixilis",
+        "icon": "img/sets/ddr.svg"
+    },
+    "dds": {
+        "code": "dds",
+        "fullName": "Duel Decks: Mind vs. Might",
+        "icon": "img/sets/dds.svg"
+    },
+    "ddt": {
+        "code": "ddt",
+        "fullName": "Duel Decks: Merfolk vs. Goblins",
+        "icon": "img/sets/ddt.svg"
+    },
+    "ddu": {
+        "code": "ddu",
+        "fullName": "Duel Decks: Elves vs. Inventors",
+        "icon": "img/sets/ddu.svg"
+    },
+    "dft": {
+        "code": "dft",
+        "fullName": "Aetherdrift",
+        "icon": "img/sets/dft.svg"
+    },
+    "dgm": {
+        "code": "dgm",
+        "fullName": "Dragon's Maze",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/dgm.svg"
+    },
+    "dis": {
+        "code": "dis",
+        "fullName": "Dissension",
+        "block": "Ravnica",
+        "icon": "img/sets/dis.svg"
+    },
+    "dka": {
+        "code": "dka",
+        "fullName": "Dark Ascension",
+        "block": "Innistrad",
+        "icon": "img/sets/dka.svg"
+    },
+    "dkm": {
+        "code": "dkm",
+        "fullName": "Deckmasters",
+        "icon": "img/sets/dkm.svg"
+    },
+    "dmc": {
+        "code": "dmc",
+        "fullName": "Dominaria United Commander",
+        "block": "Commander",
+        "icon": "img/sets/dmc.svg"
+    },
+    "dmr": {
+        "code": "dmr",
+        "fullName": "Dominaria Remastered",
+        "icon": "img/sets/dmr.svg"
+    },
+    "dmu": {
+        "code": "dmu",
+        "fullName": "Dominaria United",
+        "icon": "img/sets/dmu.svg"
+    },
+    "dom": {
+        "code": "dom",
+        "fullName": "Dominaria",
+        "icon": "img/sets/dom.svg"
+    },
+    "dpa": {
+        "code": "dpa",
+        "fullName": "Duels of the Planeswalkers",
+        "icon": "img/sets/dpa.svg"
+    },
+    "drb": {
+        "code": "drb",
+        "fullName": "From the Vault: Dragons",
+        "block": "From the Vault",
+        "icon": "img/sets/drb.svg"
+    },
+    "drc": {
+        "code": "drc",
+        "fullName": "Aetherdrift Commander",
+        "block": "Commander",
+        "icon": "img/sets/drc.svg"
+    },
+    "drk": {
+        "code": "drk",
+        "fullName": "The Dark",
+        "icon": "img/sets/drk.svg"
+    },
+    "dsc": {
+        "code": "dsc",
+        "fullName": "Duskmourn: House of Horror Commander",
+        "block": "Commander",
+        "icon": "img/sets/dsc.svg"
+    },
+    "dsk": {
+        "code": "dsk",
+        "fullName": "Duskmourn: House of Horror",
+        "icon": "img/sets/dsk.svg"
+    },
+    "dst": {
+        "code": "dst",
+        "fullName": "Darksteel",
+        "block": "Mirrodin",
+        "icon": "img/sets/dst.svg"
+    },
+    "dtk": {
+        "code": "dtk",
+        "fullName": "Dragons of Tarkir",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/dtk.svg"
+    },
+    "dvd": {
+        "code": "dvd",
+        "fullName": "Duel Decks Anthology: Divine vs. Demonic",
+        "icon": "img/sets/dvd.svg"
+    },
+    "e01": {
+        "code": "e01",
+        "fullName": "Archenemy: Nicol Bolas",
+        "icon": "img/sets/e01.svg"
+    },
+    "e02": {
+        "code": "e02",
+        "fullName": "Explorers of Ixalan",
+        "icon": "img/sets/e02.svg"
+    },
+    "ea1": {
+        "code": "ea1",
+        "fullName": "Explorer Anthology 1",
+        "icon": "img/sets/ea1.svg"
+    },
+    "ea2": {
+        "code": "ea2",
+        "fullName": "Explorer Anthology 2",
+        "icon": "img/sets/ea2.svg"
+    },
+    "ea3": {
+        "code": "ea3",
+        "fullName": "Explorer Anthology 3",
+        "icon": "img/sets/ea3.svg"
+    },
+    "ecc": {
+        "code": "ecc",
+        "fullName": "Lorwyn Eclipsed Commander",
+        "block": "Commander",
+        "icon": "img/sets/ecc.svg"
+    },
+    "ecl": {
+        "code": "ecl",
+        "fullName": "Lorwyn Eclipsed",
+        "icon": "img/sets/ecl.svg"
+    },
+    "eld": {
+        "code": "eld",
+        "fullName": "Throne of Eldraine",
+        "icon": "img/sets/eld.svg"
+    },
+    "ema": {
+        "code": "ema",
+        "fullName": "Eternal Masters",
+        "icon": "img/sets/ema.svg"
+    },
+    "emn": {
+        "code": "emn",
+        "fullName": "Eldritch Moon",
+        "block": "Shadows over Innistrad",
+        "icon": "img/sets/emn.svg"
+    },
+    "eoc": {
+        "code": "eoc",
+        "fullName": "Edge of Eternities Commander",
+        "block": "Commander",
+        "icon": "img/sets/eoc.svg"
+    },
+    "eoe": {
+        "code": "eoe",
+        "fullName": "Edge of Eternities",
+        "icon": "img/sets/eoe.svg"
+    },
+    "eos": {
+        "code": "eos",
+        "fullName": "Edge of Eternities: Stellar Sights",
+        "icon": "img/sets/eos.svg"
+    },
+    "eve": {
+        "code": "eve",
+        "fullName": "Eventide",
+        "block": "Shadowmoor",
+        "icon": "img/sets/eve.svg"
+    },
+    "evg": {
+        "code": "evg",
+        "fullName": "Duel Decks Anthology: Elves vs. Goblins",
+        "icon": "img/sets/evg.svg"
+    },
+    "exo": {
+        "code": "exo",
+        "fullName": "Exodus",
+        "block": "Tempest",
+        "icon": "img/sets/exo.svg"
+    },
+    "exp": {
+        "code": "exp",
+        "fullName": "Zendikar Expeditions",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/exp.svg"
+    },
+    "f01": {
+        "code": "f01",
+        "fullName": "Friday Night Magic 2001",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f01.svg"
+    },
+    "f02": {
+        "code": "f02",
+        "fullName": "Friday Night Magic 2002",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f02.svg"
+    },
+    "f03": {
+        "code": "f03",
+        "fullName": "Friday Night Magic 2003",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f03.svg"
+    },
+    "f04": {
+        "code": "f04",
+        "fullName": "Friday Night Magic 2004",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f04.svg"
+    },
+    "f05": {
+        "code": "f05",
+        "fullName": "Friday Night Magic 2005",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f05.svg"
+    },
+    "f06": {
+        "code": "f06",
+        "fullName": "Friday Night Magic 2006",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f06.svg"
+    },
+    "f07": {
+        "code": "f07",
+        "fullName": "Friday Night Magic 2007",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f07.svg"
+    },
+    "f08": {
+        "code": "f08",
+        "fullName": "Friday Night Magic 2008",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f08.svg"
+    },
+    "f09": {
+        "code": "f09",
+        "fullName": "Friday Night Magic 2009",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f09.svg"
+    },
+    "f10": {
+        "code": "f10",
+        "fullName": "Friday Night Magic 2010",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f10.svg"
+    },
+    "f11": {
+        "code": "f11",
+        "fullName": "Friday Night Magic 2011",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f11.svg"
+    },
+    "f12": {
+        "code": "f12",
+        "fullName": "Friday Night Magic 2012",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f12.svg"
+    },
+    "f13": {
+        "code": "f13",
+        "fullName": "Friday Night Magic 2013",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f13.svg"
+    },
+    "f14": {
+        "code": "f14",
+        "fullName": "Friday Night Magic 2014",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f14.svg"
+    },
+    "f15": {
+        "code": "f15",
+        "fullName": "Friday Night Magic 2015",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f15.svg"
+    },
+    "f16": {
+        "code": "f16",
+        "fullName": "Friday Night Magic 2016",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f16.svg"
+    },
+    "f17": {
+        "code": "f17",
+        "fullName": "Friday Night Magic 2017",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/f17.svg"
+    },
+    "fbb": {
+        "code": "fbb",
+        "fullName": "Foreign Black Border",
+        "block": "Core Set",
+        "icon": "img/sets/fbb.svg"
+    },
+    "fbro": {
+        "code": "fbro",
+        "fullName": "The Brothers' War Jumpstart Front Cards",
+        "icon": "img/sets/fbro.svg"
+    },
+    "fca": {
+        "code": "fca",
+        "fullName": "Final Fantasy: Through the Ages",
+        "icon": "img/sets/fca.svg"
+    },
+    "fclu": {
+        "code": "fclu",
+        "fullName": "Ravnica: Clue Edition Front Cards",
+        "icon": "img/sets/fclu.svg"
+    },
+    "fdc": {
+        "code": "fdc",
+        "fullName": "Foundations Commander",
+        "icon": "img/sets/fdc.svg"
+    },
+    "fdmu": {
+        "code": "fdmu",
+        "fullName": "Dominaria United Jumpstart Front Cards",
+        "icon": "img/sets/fdmu.svg"
+    },
+    "fdn": {
+        "code": "fdn",
+        "fullName": "Foundations",
+        "block": "Core Set",
+        "icon": "img/sets/fdn.svg"
+    },
+    "fem": {
+        "code": "fem",
+        "fullName": "Fallen Empires",
+        "icon": "img/sets/fem.svg"
+    },
+    "ffdn": {
+        "code": "ffdn",
+        "fullName": "Foundations Front Cards",
+        "icon": "img/sets/ffdn.svg"
+    },
+    "fic": {
+        "code": "fic",
+        "fullName": "Final Fantasy Commander",
+        "block": "Commander",
+        "icon": "img/sets/fic.svg"
+    },
+    "fin": {
+        "code": "fin",
+        "fullName": "Final Fantasy",
+        "icon": "img/sets/fin.svg"
+    },
+    "fj22": {
+        "code": "fj22",
+        "fullName": "Jumpstart 2022 Front Cards",
+        "icon": "img/sets/fj22.svg"
+    },
+    "fj25": {
+        "code": "fj25",
+        "fullName": "Foundations Jumpstart Front Cards"
+    },
+    "fjmp": {
+        "code": "fjmp",
+        "fullName": "Jumpstart Front Cards",
+        "icon": "img/sets/fjmp.svg"
+    },
+    "fltr": {
+        "code": "fltr",
+        "fullName": "Tales of Middle-earth Front Cards",
+        "icon": "img/sets/fltr.svg"
+    },
+    "fmom": {
+        "code": "fmom",
+        "fullName": "March of the Machine Jumpstart Front Cards",
+        "icon": "img/sets/fmom.svg"
+    },
+    "fmsc": {
+        "code": "fmsc",
+        "fullName": "Marvel Super Heroes Jumpstart Front Cards"
+    },
+    "fnm": {
+        "code": "fnm",
+        "fullName": "Friday Night Magic 2000",
+        "block": "Friday Night Magic",
+        "icon": "img/sets/fnm.svg"
+    },
+    "fone": {
+        "code": "fone",
+        "fullName": "Phyrexia: All Will Be One Jumpstart Front Cards",
+        "icon": "img/sets/fone.svg"
+    },
+    "fra": {
+        "code": "fra",
+        "fullName": "Reality Fracture",
+        "icon": "img/sets/fra.svg"
+    },
+    "frc": {
+        "code": "frc",
+        "fullName": "Reality Fracture Commander"
+    },
+    "frf": {
+        "code": "frf",
+        "fullName": "Fate Reforged",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/frf.svg"
+    },
+    "ftla": {
+        "code": "ftla",
+        "fullName": "Avatar: The Last Airbender Beginner Box Front Cards",
+        "icon": "img/sets/ftla.svg"
+    },
+    "ftmc": {
+        "code": "ftmc",
+        "fullName": "Teenage Mutant Ninja Turtles Eternal Front Cards",
+        "icon": "img/sets/ftmc.svg"
+    },
+    "fut": {
+        "code": "fut",
+        "fullName": "Future Sight",
+        "block": "Time Spiral",
+        "icon": "img/sets/fut.svg"
+    },
+    "g00": {
+        "code": "g00",
+        "fullName": "Judge Gift Cards 2000",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g00.svg"
+    },
+    "g01": {
+        "code": "g01",
+        "fullName": "Judge Gift Cards 2001",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g01.svg"
+    },
+    "g02": {
+        "code": "g02",
+        "fullName": "Judge Gift Cards 2002",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g02.svg"
+    },
+    "g03": {
+        "code": "g03",
+        "fullName": "Judge Gift Cards 2003",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g03.svg"
+    },
+    "g04": {
+        "code": "g04",
+        "fullName": "Judge Gift Cards 2004",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g04.svg"
+    },
+    "g05": {
+        "code": "g05",
+        "fullName": "Judge Gift Cards 2005",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g05.svg"
+    },
+    "g06": {
+        "code": "g06",
+        "fullName": "Judge Gift Cards 2006",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g06.svg"
+    },
+    "g07": {
+        "code": "g07",
+        "fullName": "Judge Gift Cards 2007",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g07.svg"
+    },
+    "g08": {
+        "code": "g08",
+        "fullName": "Judge Gift Cards 2008",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g08.svg"
+    },
+    "g09": {
+        "code": "g09",
+        "fullName": "Judge Gift Cards 2009",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g09.svg"
+    },
+    "g10": {
+        "code": "g10",
+        "fullName": "Judge Gift Cards 2010",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g10.svg"
+    },
+    "g11": {
+        "code": "g11",
+        "fullName": "Judge Gift Cards 2011",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g11.svg"
+    },
+    "g17": {
+        "code": "g17",
+        "fullName": "2017 Gift Pack",
+        "icon": "img/sets/g17.svg"
+    },
+    "g18": {
+        "code": "g18",
+        "fullName": "M19 Gift Pack",
+        "icon": "img/sets/g18.svg"
+    },
+    "g99": {
+        "code": "g99",
+        "fullName": "Judge Gift Cards 1999",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/g99.svg"
+    },
+    "gdy": {
+        "code": "gdy",
+        "fullName": "Game Day Promos",
+        "icon": "img/sets/gdy.svg"
+    },
+    "gk1": {
+        "code": "gk1",
+        "fullName": "GRN Guild Kit",
+        "icon": "img/sets/gk1.svg"
+    },
+    "gk2": {
+        "code": "gk2",
+        "fullName": "RNA Guild Kit",
+        "icon": "img/sets/gk2.svg"
+    },
+    "gn2": {
+        "code": "gn2",
+        "fullName": "Game Night 2019",
+        "icon": "img/sets/gn2.svg"
+    },
+    "gn3": {
+        "code": "gn3",
+        "fullName": "Game Night: Free-for-All",
+        "icon": "img/sets/gn3.svg"
+    },
+    "gnt": {
+        "code": "gnt",
+        "fullName": "Game Night",
+        "icon": "img/sets/gnt.svg"
+    },
+    "gpt": {
+        "code": "gpt",
+        "fullName": "Guildpact",
+        "block": "Ravnica",
+        "icon": "img/sets/gpt.svg"
+    },
+    "grn": {
+        "code": "grn",
+        "fullName": "Guilds of Ravnica",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/grn.svg"
+    },
+    "gs1": {
+        "code": "gs1",
+        "fullName": "Global Series Jiang Yanggu & Mu Yanling",
+        "icon": "img/sets/gs1.svg"
+    },
+    "gtc": {
+        "code": "gtc",
+        "fullName": "Gatecrash",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/gtc.svg"
+    },
+    "gvl": {
+        "code": "gvl",
+        "fullName": "Duel Decks Anthology: Garruk vs. Liliana",
+        "icon": "img/sets/gvl.svg"
+    },
+    "h09": {
+        "code": "h09",
+        "fullName": "Premium Deck Series: Slivers",
+        "icon": "img/sets/h09.svg"
+    },
+    "h17": {
+        "code": "h17",
+        "fullName": "HasCon 2017",
+        "icon": "img/sets/h17.svg"
+    },
+    "h1r": {
+        "code": "h1r",
+        "fullName": "Modern Horizons 1 Timeshifts",
+        "icon": "img/sets/h1r.svg"
+    },
+    "h2r": {
+        "code": "h2r",
+        "fullName": "Modern Horizons 2 Timeshifts",
+        "icon": "img/sets/h2r.svg"
+    },
+    "ha1": {
+        "code": "ha1",
+        "fullName": "Historic Anthology 1",
+        "icon": "img/sets/ha1.svg"
+    },
+    "ha2": {
+        "code": "ha2",
+        "fullName": "Historic Anthology 2",
+        "icon": "img/sets/ha2.svg"
+    },
+    "ha3": {
+        "code": "ha3",
+        "fullName": "Historic Anthology 3",
+        "icon": "img/sets/ha3.svg"
+    },
+    "ha4": {
+        "code": "ha4",
+        "fullName": "Historic Anthology 4",
+        "icon": "img/sets/ha4.svg"
+    },
+    "ha5": {
+        "code": "ha5",
+        "fullName": "Historic Anthology 5",
+        "icon": "img/sets/ha5.svg"
+    },
+    "ha6": {
+        "code": "ha6",
+        "fullName": "Historic Anthology 6",
+        "icon": "img/sets/ha6.svg"
+    },
+    "ha7": {
+        "code": "ha7",
+        "fullName": "Historic Anthology 7",
+        "icon": "img/sets/ha7.svg"
+    },
+    "hbg": {
+        "code": "hbg",
+        "fullName": "Alchemy Horizons: Baldur's Gate",
+        "block": "Alchemy 2022",
+        "icon": "img/sets/hbg.svg"
+    },
+    "hho": {
+        "code": "hho",
+        "fullName": "Happy Holidays",
+        "icon": "img/sets/hho.svg"
+    },
+    "hml": {
+        "code": "hml",
+        "fullName": "Homelands",
+        "icon": "img/sets/hml.svg"
+    },
+    "hob": {
+        "code": "hob",
+        "fullName": "The Hobbit",
+        "icon": "img/sets/hob.svg"
+    },
+    "hoc": {
+        "code": "hoc",
+        "fullName": "The Hobbit Eternal",
+        "icon": "img/sets/hoc.svg"
+    },
+    "hop": {
+        "code": "hop",
+        "fullName": "Planechase",
+        "icon": "img/sets/hop.svg"
+    },
+    "hou": {
+        "code": "hou",
+        "fullName": "Hour of Devastation",
+        "block": "Amonkhet",
+        "icon": "img/sets/hou.svg"
+    },
+    "ice": {
+        "code": "ice",
+        "fullName": "Ice Age",
+        "block": "Ice Age",
+        "icon": "img/sets/ice.svg"
+    },
+    "iko": {
+        "code": "iko",
+        "fullName": "Ikoria: Lair of Behemoths",
+        "icon": "img/sets/iko.svg"
+    },
+    "ima": {
+        "code": "ima",
+        "fullName": "Iconic Masters",
+        "icon": "img/sets/ima.svg"
+    },
+    "inr": {
+        "code": "inr",
+        "fullName": "Innistrad Remastered",
+        "icon": "img/sets/inr.svg"
+    },
+    "inv": {
+        "code": "inv",
+        "fullName": "Invasion",
+        "block": "Invasion",
+        "icon": "img/sets/inv.svg"
+    },
+    "isd": {
+        "code": "isd",
+        "fullName": "Innistrad",
+        "block": "Innistrad",
+        "icon": "img/sets/isd.svg"
+    },
+    "itp": {
+        "code": "itp",
+        "fullName": "Introductory Two-Player Set",
+        "icon": "img/sets/itp.svg"
+    },
+    "j12": {
+        "code": "j12",
+        "fullName": "Judge Gift Cards 2012",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j12.svg"
+    },
+    "j13": {
+        "code": "j13",
+        "fullName": "Judge Gift Cards 2013",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j13.svg"
+    },
+    "j14": {
+        "code": "j14",
+        "fullName": "Judge Gift Cards 2014",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j14.svg"
+    },
+    "j15": {
+        "code": "j15",
+        "fullName": "Judge Gift Cards 2015",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j15.svg"
+    },
+    "j16": {
+        "code": "j16",
+        "fullName": "Judge Gift Cards 2016",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j16.svg"
+    },
+    "j17": {
+        "code": "j17",
+        "fullName": "Judge Gift Cards 2017",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j17.svg"
+    },
+    "j18": {
+        "code": "j18",
+        "fullName": "Judge Gift Cards 2018",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j18.svg"
+    },
+    "j19": {
+        "code": "j19",
+        "fullName": "Judge Gift Cards 2019",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j19.svg"
+    },
+    "j20": {
+        "code": "j20",
+        "fullName": "Judge Gift Cards 2020",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/j20.svg"
+    },
+    "j21": {
+        "code": "j21",
+        "fullName": "Jumpstart: Historic Horizons",
+        "icon": "img/sets/j21.svg"
+    },
+    "j22": {
+        "code": "j22",
+        "fullName": "Jumpstart 2022",
+        "icon": "img/sets/j22.svg"
+    },
+    "j25": {
+        "code": "j25",
+        "fullName": "Foundations Jumpstart",
+        "icon": "img/sets/j25.svg"
+    },
+    "jgp": {
+        "code": "jgp",
+        "fullName": "Judge Gift Cards 1998",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/jgp.svg"
+    },
+    "jmp": {
+        "code": "jmp",
+        "fullName": "Jumpstart",
+        "icon": "img/sets/jmp.svg"
+    },
+    "jou": {
+        "code": "jou",
+        "fullName": "Journey into Nyx",
+        "block": "Theros",
+        "icon": "img/sets/jou.svg"
+    },
+    "jp1": {
+        "code": "jp1",
+        "fullName": "Hobby Japan Promos",
+        "icon": "img/sets/jp1.svg"
+    },
+    "jtla": {
+        "code": "jtla",
+        "fullName": "Avatar: The Last Airbender Jumpstart Front Cards",
+        "icon": "img/sets/jtla.svg"
+    },
+    "jud": {
+        "code": "jud",
+        "fullName": "Judgment",
+        "block": "Odyssey",
+        "icon": "img/sets/jud.svg"
+    },
+    "jvc": {
+        "code": "jvc",
+        "fullName": "Duel Decks Anthology: Jace vs. Chandra",
+        "icon": "img/sets/jvc.svg"
+    },
+    "khc": {
+        "code": "khc",
+        "fullName": "Kaldheim Commander",
+        "block": "Commander",
+        "icon": "img/sets/khc.svg"
+    },
+    "khm": {
+        "code": "khm",
+        "fullName": "Kaldheim",
+        "icon": "img/sets/khm.svg"
+    },
+    "kld": {
+        "code": "kld",
+        "fullName": "Kaladesh",
+        "block": "Kaladesh",
+        "icon": "img/sets/kld.svg"
+    },
+    "klr": {
+        "code": "klr",
+        "fullName": "Kaladesh Remastered",
+        "icon": "img/sets/klr.svg"
+    },
+    "ktk": {
+        "code": "ktk",
+        "fullName": "Khans of Tarkir",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/ktk.svg"
+    },
+    "lcc": {
+        "code": "lcc",
+        "fullName": "The Lost Caverns of Ixalan Commander",
+        "block": "Commander",
+        "icon": "img/sets/lcc.svg"
+    },
+    "lci": {
+        "code": "lci",
+        "fullName": "The Lost Caverns of Ixalan",
+        "icon": "img/sets/lci.svg"
+    },
+    "lea": {
+        "code": "lea",
+        "fullName": "Limited Edition Alpha",
+        "block": "Core Set",
+        "icon": "img/sets/lea.svg"
+    },
+    "leb": {
+        "code": "leb",
+        "fullName": "Limited Edition Beta",
+        "block": "Core Set",
+        "icon": "img/sets/leb.svg"
+    },
+    "leg": {
+        "code": "leg",
+        "fullName": "Legends",
+        "icon": "img/sets/leg.svg"
+    },
+    "lgn": {
+        "code": "lgn",
+        "fullName": "Legions",
+        "block": "Onslaught",
+        "icon": "img/sets/lgn.svg"
+    },
+    "lmar": {
+        "code": "lmar",
+        "fullName": "Marvel Legends Series Inserts",
+        "icon": "img/sets/lmar.svg"
+    },
+    "lrw": {
+        "code": "lrw",
+        "fullName": "Lorwyn",
+        "block": "Lorwyn",
+        "icon": "img/sets/lrw.svg"
+    },
+    "ltc": {
+        "code": "ltc",
+        "fullName": "Tales of Middle-earth Commander",
+        "block": "Commander",
+        "icon": "img/sets/ltc.svg"
+    },
+    "ltr": {
+        "code": "ltr",
+        "fullName": "The Lord of the Rings: Tales of Middle-earth",
+        "icon": "img/sets/ltr.svg"
+    },
+    "m10": {
+        "code": "m10",
+        "fullName": "Magic 2010",
+        "block": "Core Set",
+        "icon": "img/sets/m10.svg"
+    },
+    "m11": {
+        "code": "m11",
+        "fullName": "Magic 2011",
+        "block": "Core Set",
+        "icon": "img/sets/m11.svg"
+    },
+    "m12": {
+        "code": "m12",
+        "fullName": "Magic 2012",
+        "block": "Core Set",
+        "icon": "img/sets/m12.svg"
+    },
+    "m13": {
+        "code": "m13",
+        "fullName": "Magic 2013",
+        "block": "Core Set",
+        "icon": "img/sets/m13.svg"
+    },
+    "m14": {
+        "code": "m14",
+        "fullName": "Magic 2014",
+        "block": "Core Set",
+        "icon": "img/sets/m14.svg"
+    },
+    "m15": {
+        "code": "m15",
+        "fullName": "Magic 2015",
+        "block": "Core Set",
+        "icon": "img/sets/m15.svg"
+    },
+    "m19": {
+        "code": "m19",
+        "fullName": "Core Set 2019",
+        "block": "Core Set",
+        "icon": "img/sets/m19.svg"
+    },
+    "m20": {
+        "code": "m20",
+        "fullName": "Core Set 2020",
+        "block": "Core Set",
+        "icon": "img/sets/m20.svg"
+    },
+    "m21": {
+        "code": "m21",
+        "fullName": "Core Set 2021",
+        "block": "Core Set",
+        "icon": "img/sets/m21.svg"
+    },
+    "m3c": {
+        "code": "m3c",
+        "fullName": "Modern Horizons 3 Commander",
+        "block": "Commander",
+        "icon": "img/sets/m3c.svg"
+    },
+    "mar": {
+        "code": "mar",
+        "fullName": "Marvel Universe",
+        "icon": "img/sets/mar.svg"
+    },
+    "mat": {
+        "code": "mat",
+        "fullName": "March of the Machine: The Aftermath",
+        "icon": "img/sets/mat.svg"
+    },
+    "mb2": {
+        "code": "mb2",
+        "fullName": "Mystery Booster 2",
+        "icon": "img/sets/mb2.svg"
+    },
+    "mbc": {
+        "code": "mbc",
+        "fullName": "Mystery Booster Commander Edition",
+        "icon": "img/sets/mbc.svg"
+    },
+    "mbs": {
+        "code": "mbs",
+        "fullName": "Mirrodin Besieged",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/mbs.svg"
+    },
+    "md1": {
+        "code": "md1",
+        "fullName": "Modern Event Deck 2014",
+        "icon": "img/sets/md1.svg"
+    },
+    "me1": {
+        "code": "me1",
+        "fullName": "Masters Edition",
+        "icon": "img/sets/me1.svg"
+    },
+    "me2": {
+        "code": "me2",
+        "fullName": "Masters Edition II",
+        "icon": "img/sets/me2.svg"
+    },
+    "me3": {
+        "code": "me3",
+        "fullName": "Masters Edition III",
+        "icon": "img/sets/me3.svg"
+    },
+    "me4": {
+        "code": "me4",
+        "fullName": "Masters Edition IV",
+        "icon": "img/sets/me4.svg"
+    },
+    "med": {
+        "code": "med",
+        "fullName": "Mythic Edition",
+        "icon": "img/sets/med.svg"
+    },
+    "mgb": {
+        "code": "mgb",
+        "fullName": "Multiverse Gift Box",
+        "icon": "img/sets/mgb.svg"
+    },
+    "mh1": {
+        "code": "mh1",
+        "fullName": "Modern Horizons",
+        "block": "Modern Horizons Block",
+        "icon": "img/sets/mh1.svg"
+    },
+    "mh2": {
+        "code": "mh2",
+        "fullName": "Modern Horizons 2",
+        "block": "Modern Horizons Block",
+        "icon": "img/sets/mh2.svg"
+    },
+    "mh3": {
+        "code": "mh3",
+        "fullName": "Modern Horizons 3",
+        "block": "Modern Horizons Block",
+        "icon": "img/sets/mh3.svg"
+    },
+    "mic": {
+        "code": "mic",
+        "fullName": "Midnight Hunt Commander",
+        "block": "Commander",
+        "icon": "img/sets/mic.svg"
+    },
+    "mid": {
+        "code": "mid",
+        "fullName": "Innistrad: Midnight Hunt",
+        "block": "Innistrad: Double Feature",
+        "icon": "img/sets/mid.svg"
+    },
+    "mir": {
+        "code": "mir",
+        "fullName": "Mirage",
+        "block": "Mirage",
+        "icon": "img/sets/mir.svg"
+    },
+    "mkc": {
+        "code": "mkc",
+        "fullName": "Murders at Karlov Manor Commander",
+        "block": "Commander",
+        "icon": "img/sets/mkc.svg"
+    },
+    "mkm": {
+        "code": "mkm",
+        "fullName": "Murders at Karlov Manor",
+        "icon": "img/sets/mkm.svg"
+    },
+    "mm2": {
+        "code": "mm2",
+        "fullName": "Modern Masters 2015",
+        "icon": "img/sets/mm2.svg"
+    },
+    "mm3": {
+        "code": "mm3",
+        "fullName": "Modern Masters 2017",
+        "icon": "img/sets/mm3.svg"
+    },
+    "mma": {
+        "code": "mma",
+        "fullName": "Modern Masters",
+        "icon": "img/sets/mma.svg"
+    },
+    "mmq": {
+        "code": "mmq",
+        "fullName": "Mercadian Masques",
+        "block": "Masques",
+        "icon": "img/sets/mmq.svg"
+    },
+    "moc": {
+        "code": "moc",
+        "fullName": "March of the Machine Commander",
+        "block": "Commander",
+        "icon": "img/sets/moc.svg"
+    },
+    "mom": {
+        "code": "mom",
+        "fullName": "March of the Machine",
+        "icon": "img/sets/mom.svg"
+    },
+    "mor": {
+        "code": "mor",
+        "fullName": "Morningtide",
+        "block": "Lorwyn",
+        "icon": "img/sets/mor.svg"
+    },
+    "mp2": {
+        "code": "mp2",
+        "fullName": "Amonkhet Invocations",
+        "block": "Amonkhet",
+        "icon": "img/sets/mp2.svg"
+    },
+    "mpr": {
+        "code": "mpr",
+        "fullName": "Magic Player Rewards 2001",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/mpr.svg"
+    },
+    "mps": {
+        "code": "mps",
+        "fullName": "Kaladesh Inventions",
+        "block": "Kaladesh",
+        "icon": "img/sets/mps.svg"
+    },
+    "mrd": {
+        "code": "mrd",
+        "fullName": "Mirrodin",
+        "block": "Mirrodin",
+        "icon": "img/sets/mrd.svg"
+    },
+    "msc": {
+        "code": "msc",
+        "fullName": "Marvel Super Heroes Commander",
+        "block": "Commander",
+        "icon": "img/sets/msc.svg"
+    },
+    "msh": {
+        "code": "msh",
+        "fullName": "Marvel Super Heroes",
+        "icon": "img/sets/msh.svg"
+    },
+    "mul": {
+        "code": "mul",
+        "fullName": "Multiverse Legends",
+        "icon": "img/sets/mul.svg"
+    },
+    "ncc": {
+        "code": "ncc",
+        "fullName": "New Capenna Commander",
+        "block": "Commander",
+        "icon": "img/sets/ncc.svg"
+    },
+    "nec": {
+        "code": "nec",
+        "fullName": "Neon Dynasty Commander",
+        "block": "Commander",
+        "icon": "img/sets/nec.svg"
+    },
+    "nem": {
+        "code": "nem",
+        "fullName": "Nemesis",
+        "block": "Masques",
+        "icon": "img/sets/nem.svg"
+    },
+    "neo": {
+        "code": "neo",
+        "fullName": "Kamigawa: Neon Dynasty",
+        "icon": "img/sets/neo.svg"
+    },
+    "nph": {
+        "code": "nph",
+        "fullName": "New Phyrexia",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/nph.svg"
+    },
+    "o90p": {
+        "code": "o90p",
+        "fullName": "Oversized 90's Promos",
+        "icon": "img/sets/o90p.svg"
+    },
+    "oafc": {
+        "code": "oafc",
+        "fullName": "Forgotten Realms Commander Display Commanders",
+        "icon": "img/sets/oafc.svg"
+    },
+    "oafr": {
+        "code": "oafr",
+        "fullName": "Forgotten Realms Oversized Cards",
+        "icon": "img/sets/oafr.svg"
+    },
+    "oana": {
+        "code": "oana",
+        "fullName": "Arena New Player Experience Cards",
+        "icon": "img/sets/oana.svg"
+    },
+    "oarc": {
+        "code": "oarc",
+        "fullName": "Archenemy Schemes",
+        "icon": "img/sets/oarc.svg"
+    },
+    "oc13": {
+        "code": "oc13",
+        "fullName": "Commander 2013 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc13.svg"
+    },
+    "oc14": {
+        "code": "oc14",
+        "fullName": "Commander 2014 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc14.svg"
+    },
+    "oc15": {
+        "code": "oc15",
+        "fullName": "Commander 2015 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc15.svg"
+    },
+    "oc16": {
+        "code": "oc16",
+        "fullName": "Commander 2016 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc16.svg"
+    },
+    "oc17": {
+        "code": "oc17",
+        "fullName": "Commander 2017 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc17.svg"
+    },
+    "oc18": {
+        "code": "oc18",
+        "fullName": "Commander 2018 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc18.svg"
+    },
+    "oc19": {
+        "code": "oc19",
+        "fullName": "Commander 2019 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/oc19.svg"
+    },
+    "oc20": {
+        "code": "oc20",
+        "fullName": "Commander 2020 Oversized",
+        "icon": "img/sets/oc20.svg"
+    },
+    "oc21": {
+        "code": "oc21",
+        "fullName": "Commander 2021 Display Commanders",
+        "icon": "img/sets/oc21.svg"
+    },
+    "ocm1": {
+        "code": "ocm1",
+        "fullName": "Commander's Arsenal Oversized",
+        "block": "Commander",
+        "icon": "img/sets/ocm1.svg"
+    },
+    "ocmd": {
+        "code": "ocmd",
+        "fullName": "Commander 2011 Oversized",
+        "block": "Commander",
+        "icon": "img/sets/ocmd.svg"
+    },
+    "ody": {
+        "code": "ody",
+        "fullName": "Odyssey",
+        "block": "Odyssey",
+        "icon": "img/sets/ody.svg"
+    },
+    "oe01": {
+        "code": "oe01",
+        "fullName": "Archenemy: Nicol Bolas Schemes",
+        "icon": "img/sets/oe01.svg"
+    },
+    "ogw": {
+        "code": "ogw",
+        "fullName": "Oath of the Gatewatch",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/ogw.svg"
+    },
+    "ohop": {
+        "code": "ohop",
+        "fullName": "Planechase Planes",
+        "icon": "img/sets/ohop.svg"
+    },
+    "olep": {
+        "code": "olep",
+        "fullName": "Oversized League Prizes",
+        "icon": "img/sets/olep.svg"
+    },
+    "olgc": {
+        "code": "olgc",
+        "fullName": "Legacy Championship",
+        "icon": "img/sets/olgc.svg"
+    },
+    "om1": {
+        "code": "om1",
+        "fullName": "Through the Omenpaths",
+        "icon": "img/sets/om1.svg"
+    },
+    "omb": {
+        "code": "omb",
+        "fullName": "Through the Omenpaths Bonus Sheet",
+        "icon": "img/sets/omb.svg"
+    },
+    "omic": {
+        "code": "omic",
+        "fullName": "Midnight Hunt Commander Display Commanders",
+        "block": "Commander",
+        "icon": "img/sets/omic.svg"
+    },
+    "onc": {
+        "code": "onc",
+        "fullName": "Phyrexia: All Will Be One Commander",
+        "block": "Commander",
+        "icon": "img/sets/onc.svg"
+    },
+    "one": {
+        "code": "one",
+        "fullName": "Phyrexia: All Will Be One",
+        "icon": "img/sets/one.svg"
+    },
+    "ons": {
+        "code": "ons",
+        "fullName": "Onslaught",
+        "block": "Onslaught",
+        "icon": "img/sets/ons.svg"
+    },
+    "opc2": {
+        "code": "opc2",
+        "fullName": "Planechase 2012 Planes",
+        "icon": "img/sets/opc2.svg"
+    },
+    "opca": {
+        "code": "opca",
+        "fullName": "Planechase Anthology Planes",
+        "icon": "img/sets/opca.svg"
+    },
+    "ori": {
+        "code": "ori",
+        "fullName": "Magic Origins",
+        "block": "Core Set",
+        "icon": "img/sets/ori.svg"
+    },
+    "otc": {
+        "code": "otc",
+        "fullName": "Outlaws of Thunder Junction Commander",
+        "block": "Commander",
+        "icon": "img/sets/otc.svg"
+    },
+    "otj": {
+        "code": "otj",
+        "fullName": "Outlaws of Thunder Junction",
+        "block": "Outlaws of Thunder Junction",
+        "icon": "img/sets/otj.svg"
+    },
+    "otp": {
+        "code": "otp",
+        "fullName": "Breaking News",
+        "block": "Outlaws of Thunder Junction",
+        "icon": "img/sets/otp.svg"
+    },
+    "ovnt": {
+        "code": "ovnt",
+        "fullName": "Vintage Championship",
+        "icon": "img/sets/ovnt.svg"
+    },
+    "ovoc": {
+        "code": "ovoc",
+        "fullName": "Crimson Vow Commander Display Commanders",
+        "block": "Innistrad: Double Feature",
+        "icon": "img/sets/ovoc.svg"
+    },
+    "p02": {
+        "code": "p02",
+        "fullName": "Portal Second Age",
+        "block": "Portal",
+        "icon": "img/sets/p02.svg"
+    },
+    "p03": {
+        "code": "p03",
+        "fullName": "Magic Player Rewards 2003",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p03.svg"
+    },
+    "p04": {
+        "code": "p04",
+        "fullName": "Magic Player Rewards 2004",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p04.svg"
+    },
+    "p05": {
+        "code": "p05",
+        "fullName": "Magic Player Rewards 2005",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p05.svg"
+    },
+    "p06": {
+        "code": "p06",
+        "fullName": "Magic Player Rewards 2006",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p06.svg"
+    },
+    "p07": {
+        "code": "p07",
+        "fullName": "Magic Player Rewards 2007",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p07.svg"
+    },
+    "p08": {
+        "code": "p08",
+        "fullName": "Magic Player Rewards 2008",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p08.svg"
+    },
+    "p09": {
+        "code": "p09",
+        "fullName": "Magic Player Rewards 2009",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p09.svg"
+    },
+    "p10": {
+        "code": "p10",
+        "fullName": "Magic Player Rewards 2010",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p10.svg"
+    },
+    "p10e": {
+        "code": "p10e",
+        "fullName": "Tenth Edition Promos",
+        "icon": "img/sets/p10e.svg"
+    },
+    "p11": {
+        "code": "p11",
+        "fullName": "Magic Player Rewards 2011",
+        "block": "Magic Player Rewards",
+        "icon": "img/sets/p11.svg"
+    },
+    "p15a": {
+        "code": "p15a",
+        "fullName": "15th Anniversary Cards",
+        "icon": "img/sets/p15a.svg"
+    },
+    "p22": {
+        "code": "p22",
+        "fullName": "Judge Gift Cards 2022",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/p22.svg"
+    },
+    "p23": {
+        "code": "p23",
+        "fullName": "Judge Gift Cards 2023",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/p23.svg"
+    },
+    "p2hg": {
+        "code": "p2hg",
+        "fullName": "Two-Headed Giant Tournament",
+        "icon": "img/sets/p2hg.svg"
+    },
+    "p30a": {
+        "code": "p30a",
+        "fullName": "30th Anniversary Play Promos",
+        "icon": "img/sets/p30a.svg"
+    },
+    "p30h": {
+        "code": "p30h",
+        "fullName": "30th Anniversary History Promos",
+        "icon": "img/sets/p30h.svg"
+    },
+    "p30m": {
+        "code": "p30m",
+        "fullName": "30th Anniversary Misc Promos",
+        "icon": "img/sets/p30m.svg"
+    },
+    "p30t": {
+        "code": "p30t",
+        "fullName": "30th Anniversary Celebration Tokyo",
+        "icon": "img/sets/p30t.svg"
+    },
+    "p5dn": {
+        "code": "p5dn",
+        "fullName": "Fifth Dawn Promos",
+        "block": "Mirrodin",
+        "icon": "img/sets/p5dn.svg"
+    },
+    "p8ed": {
+        "code": "p8ed",
+        "fullName": "Eighth Edition Promos",
+        "block": "Core Set",
+        "icon": "img/sets/p8ed.svg"
+    },
+    "p9ed": {
+        "code": "p9ed",
+        "fullName": "Ninth Edition Promos",
+        "block": "Core Set",
+        "icon": "img/sets/p9ed.svg"
+    },
+    "pa1": {
+        "code": "pa1",
+        "fullName": "Pioneer Anthology 1",
+        "icon": "img/sets/pa1.svg"
+    },
+    "paer": {
+        "code": "paer",
+        "fullName": "Aether Revolt Promos",
+        "block": "Kaladesh",
+        "icon": "img/sets/paer.svg"
+    },
+    "pafr": {
+        "code": "pafr",
+        "fullName": "Adventures in the Forgotten Realms Promos",
+        "icon": "img/sets/pafr.svg"
+    },
+    "pakh": {
+        "code": "pakh",
+        "fullName": "Amonkhet Promos",
+        "block": "Amonkhet",
+        "icon": "img/sets/pakh.svg"
+    },
+    "pal00": {
+        "code": "pal00",
+        "fullName": "Arena League 2000",
+        "block": "Arena League",
+        "icon": "img/sets/pal00.svg"
+    },
+    "pal01": {
+        "code": "pal01",
+        "fullName": "Arena League 2001",
+        "block": "Arena League",
+        "icon": "img/sets/pal01.svg"
+    },
+    "pal02": {
+        "code": "pal02",
+        "fullName": "Arena League 2002",
+        "block": "Arena League",
+        "icon": "img/sets/pal02.svg"
+    },
+    "pal03": {
+        "code": "pal03",
+        "fullName": "Arena League 2003",
+        "block": "Arena League",
+        "icon": "img/sets/pal03.svg"
+    },
+    "pal04": {
+        "code": "pal04",
+        "fullName": "Arena League 2004",
+        "block": "Arena League",
+        "icon": "img/sets/pal04.svg"
+    },
+    "pal05": {
+        "code": "pal05",
+        "fullName": "Arena League 2005",
+        "block": "Arena League",
+        "icon": "img/sets/pal05.svg"
+    },
+    "pal06": {
+        "code": "pal06",
+        "fullName": "Arena League 2006",
+        "block": "Arena League",
+        "icon": "img/sets/pal06.svg"
+    },
+    "pal99": {
+        "code": "pal99",
+        "fullName": "Arena League 1999",
+        "block": "Arena League",
+        "icon": "img/sets/pal99.svg"
+    },
+    "pala": {
+        "code": "pala",
+        "fullName": "Shards of Alara Promos",
+        "block": "Alara",
+        "icon": "img/sets/pala.svg"
+    },
+    "palp": {
+        "code": "palp",
+        "fullName": "Asia Pacific Land Program",
+        "icon": "img/sets/palp.svg"
+    },
+    "pana": {
+        "code": "pana",
+        "fullName": "MTG Arena Promos",
+        "icon": "img/sets/pana.svg"
+    },
+    "papc": {
+        "code": "papc",
+        "fullName": "Apocalypse Promos",
+        "block": "Invasion",
+        "icon": "img/sets/papc.svg"
+    },
+    "parb": {
+        "code": "parb",
+        "fullName": "Alara Reborn Promos",
+        "block": "Alara",
+        "icon": "img/sets/parb.svg"
+    },
+    "parl": {
+        "code": "parl",
+        "fullName": "Arena League 1996",
+        "block": "Arena League",
+        "icon": "img/sets/parl.svg"
+    },
+    "past": {
+        "code": "past",
+        "fullName": "Astral Cards",
+        "icon": "img/sets/past.svg"
+    },
+    "pavr": {
+        "code": "pavr",
+        "fullName": "Avacyn Restored Promos",
+        "block": "Innistrad",
+        "icon": "img/sets/pavr.svg"
+    },
+    "pbbd": {
+        "code": "pbbd",
+        "fullName": "Battlebond Promos",
+        "icon": "img/sets/pbbd.svg"
+    },
+    "pbfz": {
+        "code": "pbfz",
+        "fullName": "Battle for Zendikar Promos",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/pbfz.svg"
+    },
+    "pbig": {
+        "code": "pbig",
+        "fullName": "The Big Score Promos",
+        "icon": "img/sets/pbig.svg"
+    },
+    "pblb": {
+        "code": "pblb",
+        "fullName": "Bloomburrow Promos",
+        "icon": "img/sets/pblb.svg"
+    },
+    "pbng": {
+        "code": "pbng",
+        "fullName": "Born of the Gods Promos",
+        "block": "Theros",
+        "icon": "img/sets/pbng.svg"
+    },
+    "pbok": {
+        "code": "pbok",
+        "fullName": "Betrayers of Kamigawa Promos",
+        "block": "Kamigawa",
+        "icon": "img/sets/pbok.svg"
+    },
+    "pbro": {
+        "code": "pbro",
+        "fullName": "The Brothers' War Promos",
+        "icon": "img/sets/pbro.svg"
+    },
+    "pc2": {
+        "code": "pc2",
+        "fullName": "Planechase 2012",
+        "icon": "img/sets/pc2.svg"
+    },
+    "pca": {
+        "code": "pca",
+        "fullName": "Planechase Anthology",
+        "icon": "img/sets/pca.svg"
+    },
+    "pcbb": {
+        "code": "pcbb",
+        "fullName": "Cowboy Bebop",
+        "icon": "img/sets/pcbb.svg"
+    },
+    "pcel": {
+        "code": "pcel",
+        "fullName": "Celebration Cards",
+        "icon": "img/sets/pcel.svg"
+    },
+    "pchk": {
+        "code": "pchk",
+        "fullName": "Champions of Kamigawa Promos",
+        "block": "Kamigawa",
+        "icon": "img/sets/pchk.svg"
+    },
+    "pclb": {
+        "code": "pclb",
+        "fullName": "Battle for Baldur's Gate Promos",
+        "icon": "img/sets/pclb.svg"
+    },
+    "pcmd": {
+        "code": "pcmd",
+        "fullName": "Commander 2011 Launch Party",
+        "block": "Commander",
+        "icon": "img/sets/pcmd.svg"
+    },
+    "pcmp": {
+        "code": "pcmp",
+        "fullName": "Champs and States",
+        "icon": "img/sets/pcmp.svg"
+    },
+    "pcmr": {
+        "code": "pcmr",
+        "fullName": "Commander Legends Promos",
+        "icon": "img/sets/pcmr.svg"
+    },
+    "pcns": {
+        "code": "pcns",
+        "fullName": "Conspiracy Promos",
+        "block": "Conspiracy",
+        "icon": "img/sets/pcns.svg"
+    },
+    "pcon": {
+        "code": "pcon",
+        "fullName": "Conflux Promos",
+        "block": "Alara",
+        "icon": "img/sets/pcon.svg"
+    },
+    "pcsp": {
+        "code": "pcsp",
+        "fullName": "Coldsnap Promos",
+        "block": "Ice Age",
+        "icon": "img/sets/pcsp.svg"
+    },
+    "pcy": {
+        "code": "pcy",
+        "fullName": "Prophecy",
+        "block": "Masques",
+        "icon": "img/sets/pcy.svg"
+    },
+    "pd2": {
+        "code": "pd2",
+        "fullName": "Premium Deck Series: Fire and Lightning",
+        "icon": "img/sets/pd2.svg"
+    },
+    "pd3": {
+        "code": "pd3",
+        "fullName": "Premium Deck Series: Graveborn",
+        "icon": "img/sets/pd3.svg"
+    },
+    "pdft": {
+        "code": "pdft",
+        "fullName": "Aetherdrift Promos",
+        "icon": "img/sets/pdft.svg"
+    },
+    "pdgm": {
+        "code": "pdgm",
+        "fullName": "Dragon's Maze Promos",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/pdgm.svg"
+    },
+    "pdis": {
+        "code": "pdis",
+        "fullName": "Dissension Promos",
+        "block": "Ravnica",
+        "icon": "img/sets/pdis.svg"
+    },
+    "pdka": {
+        "code": "pdka",
+        "fullName": "Dark Ascension Promos",
+        "block": "Innistrad",
+        "icon": "img/sets/pdka.svg"
+    },
+    "pdmu": {
+        "code": "pdmu",
+        "fullName": "Dominaria United Promos",
+        "icon": "img/sets/pdmu.svg"
+    },
+    "pdom": {
+        "code": "pdom",
+        "fullName": "Dominaria Promos",
+        "icon": "img/sets/pdom.svg"
+    },
+    "pdp10": {
+        "code": "pdp10",
+        "fullName": "Duels of the Planeswalkers 2010 Promos",
+        "icon": "img/sets/pdp10.svg"
+    },
+    "pdp12": {
+        "code": "pdp12",
+        "fullName": "Duels of the Planeswalkers 2012 Promos",
+        "icon": "img/sets/pdp12.svg"
+    },
+    "pdp13": {
+        "code": "pdp13",
+        "fullName": "Duels of the Planeswalkers 2013 Promos",
+        "icon": "img/sets/pdp13.svg"
+    },
+    "pdp14": {
+        "code": "pdp14",
+        "fullName": "Duels of the Planeswalkers 2014 Promos",
+        "icon": "img/sets/pdp14.svg"
+    },
+    "pdp15": {
+        "code": "pdp15",
+        "fullName": "Duels of the Planeswalkers 2015 Promos",
+        "icon": "img/sets/pdp15.svg"
+    },
+    "pdrc": {
+        "code": "pdrc",
+        "fullName": "Dragon Con",
+        "icon": "img/sets/pdrc.svg"
+    },
+    "pdsk": {
+        "code": "pdsk",
+        "fullName": "Duskmourn: House of Horror Promos",
+        "icon": "img/sets/pdsk.svg"
+    },
+    "pdst": {
+        "code": "pdst",
+        "fullName": "Darksteel Promos",
+        "block": "Mirrodin",
+        "icon": "img/sets/pdst.svg"
+    },
+    "pdtk": {
+        "code": "pdtk",
+        "fullName": "Dragons of Tarkir Promos",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/pdtk.svg"
+    },
+    "pdtp": {
+        "code": "pdtp",
+        "fullName": "Duels of the Planeswalkers 2009 Promos",
+        "icon": "img/sets/pdtp.svg"
+    },
+    "pecl": {
+        "code": "pecl",
+        "fullName": "Lorwyn Eclipsed Promos",
+        "icon": "img/sets/pecl.svg"
+    },
+    "peld": {
+        "code": "peld",
+        "fullName": "Throne of Eldraine Promos",
+        "icon": "img/sets/peld.svg"
+    },
+    "pelp": {
+        "code": "pelp",
+        "fullName": "European Land Program",
+        "icon": "img/sets/pelp.svg"
+    },
+    "pemn": {
+        "code": "pemn",
+        "fullName": "Eldritch Moon Promos",
+        "block": "Shadows over Innistrad",
+        "icon": "img/sets/pemn.svg"
+    },
+    "peoe": {
+        "code": "peoe",
+        "fullName": "Edge of Eternities Promos",
+        "icon": "img/sets/peoe.svg"
+    },
+    "peve": {
+        "code": "peve",
+        "fullName": "Eventide Promos",
+        "block": "Shadowmoor",
+        "icon": "img/sets/peve.svg"
+    },
+    "pewk": {
+        "code": "pewk",
+        "fullName": "Eternal Weekend",
+        "icon": "img/sets/pewk.svg"
+    },
+    "pexo": {
+        "code": "pexo",
+        "fullName": "Exodus Promos",
+        "block": "Tempest",
+        "icon": "img/sets/pexo.svg"
+    },
+    "pf19": {
+        "code": "pf19",
+        "fullName": "MagicFest 2019",
+        "icon": "img/sets/pf19.svg"
+    },
+    "pf20": {
+        "code": "pf20",
+        "fullName": "MagicFest 2020",
+        "icon": "img/sets/pf20.svg"
+    },
+    "pf23": {
+        "code": "pf23",
+        "fullName": "MagicFest 2023",
+        "icon": "img/sets/pf23.svg"
+    },
+    "pf24": {
+        "code": "pf24",
+        "fullName": "MagicFest 2024",
+        "icon": "img/sets/pf24.svg"
+    },
+    "pf25": {
+        "code": "pf25",
+        "fullName": "MagicFest 2025",
+        "icon": "img/sets/pf25.svg"
+    },
+    "pf26": {
+        "code": "pf26",
+        "fullName": "MagicFest 2026",
+        "icon": "img/sets/pf26.svg"
+    },
+    "pf27": {
+        "code": "pf27",
+        "fullName": "MagicFest 2027"
+    },
+    "pfdn": {
+        "code": "pfdn",
+        "fullName": "Foundations Promos",
+        "icon": "img/sets/pfdn.svg"
+    },
+    "pfin": {
+        "code": "pfin",
+        "fullName": "Final Fantasy Promos",
+        "icon": "img/sets/pfin.svg"
+    },
+    "pfrf": {
+        "code": "pfrf",
+        "fullName": "Fate Reforged Promos",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/pfrf.svg"
+    },
+    "pfut": {
+        "code": "pfut",
+        "fullName": "Future Sight Promos",
+        "block": "Time Spiral",
+        "icon": "img/sets/pfut.svg"
+    },
+    "pgpt": {
+        "code": "pgpt",
+        "fullName": "Guildpact Promos",
+        "block": "Ravnica",
+        "icon": "img/sets/pgpt.svg"
+    },
+    "pgpx": {
+        "code": "pgpx",
+        "fullName": "Grand Prix Promos",
+        "icon": "img/sets/pgpx.svg"
+    },
+    "pgrn": {
+        "code": "pgrn",
+        "fullName": "Guilds of Ravnica Promos",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/pgrn.svg"
+    },
+    "pgru": {
+        "code": "pgru",
+        "fullName": "Guru",
+        "icon": "img/sets/pgru.svg"
+    },
+    "pgtc": {
+        "code": "pgtc",
+        "fullName": "Gatecrash Promos",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/pgtc.svg"
+    },
+    "ph17": {
+        "code": "ph17",
+        "fullName": "2017 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph17.svg"
+    },
+    "ph18": {
+        "code": "ph18",
+        "fullName": "2018 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph18.svg"
+    },
+    "ph19": {
+        "code": "ph19",
+        "fullName": "2019 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph19.svg"
+    },
+    "ph20": {
+        "code": "ph20",
+        "fullName": "2020 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph20.svg"
+    },
+    "ph21": {
+        "code": "ph21",
+        "fullName": "2021 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph21.svg"
+    },
+    "ph22": {
+        "code": "ph22",
+        "fullName": "2022 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph22.svg"
+    },
+    "ph23": {
+        "code": "ph23",
+        "fullName": "2023 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/ph23.svg"
+    },
+    "phel": {
+        "code": "phel",
+        "fullName": "Open the Helvault",
+        "icon": "img/sets/phel.svg"
+    },
+    "phop": {
+        "code": "phop",
+        "fullName": "Planechase Promos",
+        "icon": "img/sets/phop.svg"
+    },
+    "phou": {
+        "code": "phou",
+        "fullName": "Hour of Devastation Promos",
+        "block": "Amonkhet",
+        "icon": "img/sets/phou.svg"
+    },
+    "phpr": {
+        "code": "phpr",
+        "fullName": "HarperPrism Book Promos",
+        "icon": "img/sets/phpr.svg"
+    },
+    "phtr": {
+        "code": "phtr",
+        "fullName": "2016 Heroes of the Realm",
+        "block": "Heroes of the Realm",
+        "icon": "img/sets/phtr.svg"
+    },
+    "phuk": {
+        "code": "phuk",
+        "fullName": "Hachette UK",
+        "icon": "img/sets/phuk.svg"
+    },
+    "pidw": {
+        "code": "pidw",
+        "fullName": "IDW Comics Inserts",
+        "icon": "img/sets/pidw.svg"
+    },
+    "piko": {
+        "code": "piko",
+        "fullName": "Ikoria: Lair of Behemoths Promos",
+        "icon": "img/sets/piko.svg"
+    },
+    "pinv": {
+        "code": "pinv",
+        "fullName": "Invasion Promos",
+        "block": "Invasion",
+        "icon": "img/sets/pinv.svg"
+    },
+    "pio": {
+        "code": "pio",
+        "fullName": "Pioneer Masters",
+        "icon": "img/sets/pio.svg"
+    },
+    "pip": {
+        "code": "pip",
+        "fullName": "Fallout",
+        "block": "Commander",
+        "icon": "img/sets/pip.svg"
+    },
+    "pisd": {
+        "code": "pisd",
+        "fullName": "Innistrad Promos",
+        "block": "Innistrad",
+        "icon": "img/sets/pisd.svg"
+    },
+    "pj21": {
+        "code": "pj21",
+        "fullName": "Judge Gift Cards 2021",
+        "block": "Judge Gift Cards",
+        "icon": "img/sets/pj21.svg"
+    },
+    "pjas": {
+        "code": "pjas",
+        "fullName": "Junior APAC Series",
+        "icon": "img/sets/pjas.svg"
+    },
+    "pjjt": {
+        "code": "pjjt",
+        "fullName": "Japan Junior Tournament",
+        "icon": "img/sets/pjjt.svg"
+    },
+    "pjou": {
+        "code": "pjou",
+        "fullName": "Journey into Nyx Promos",
+        "block": "Theros",
+        "icon": "img/sets/pjou.svg"
+    },
+    "pjsc": {
+        "code": "pjsc",
+        "fullName": "Japan Standard Cup",
+        "icon": "img/sets/pjsc.svg"
+    },
+    "pjse": {
+        "code": "pjse",
+        "fullName": "Junior Series Europe",
+        "icon": "img/sets/pjse.svg"
+    },
+    "pjud": {
+        "code": "pjud",
+        "fullName": "Judgment Promos",
+        "block": "Odyssey",
+        "icon": "img/sets/pjud.svg"
+    },
+    "pkhm": {
+        "code": "pkhm",
+        "fullName": "Kaldheim Promos",
+        "icon": "img/sets/pkhm.svg"
+    },
+    "pkld": {
+        "code": "pkld",
+        "fullName": "Kaladesh Promos",
+        "block": "Kaladesh",
+        "icon": "img/sets/pkld.svg"
+    },
+    "pktk": {
+        "code": "pktk",
+        "fullName": "Khans of Tarkir Promos",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/pktk.svg"
+    },
+    "pl21": {
+        "code": "pl21",
+        "fullName": "Year of the Ox 2021",
+        "icon": "img/sets/pl21.svg"
+    },
+    "pl22": {
+        "code": "pl22",
+        "fullName": "Year of the Tiger 2022",
+        "icon": "img/sets/pl22.svg"
+    },
+    "pl23": {
+        "code": "pl23",
+        "fullName": "Year of the Rabbit 2023",
+        "icon": "img/sets/pl23.svg"
+    },
+    "pl24": {
+        "code": "pl24",
+        "fullName": "Year of the Dragon 2024",
+        "icon": "img/sets/pl24.svg"
+    },
+    "pl25": {
+        "code": "pl25",
+        "fullName": "Year of the Snake 2025",
+        "icon": "img/sets/pl25.svg"
+    },
+    "pl26": {
+        "code": "pl26",
+        "fullName": "Year of the Horse 2026",
+        "icon": "img/sets/pl26.svg"
+    },
+    "plc": {
+        "code": "plc",
+        "fullName": "Planar Chaos",
+        "block": "Time Spiral",
+        "icon": "img/sets/plc.svg"
+    },
+    "plci": {
+        "code": "plci",
+        "fullName": "The Lost Caverns of Ixalan Promos",
+        "icon": "img/sets/plci.svg"
+    },
+    "plg20": {
+        "code": "plg20",
+        "fullName": "Love Your LGS 2020",
+        "icon": "img/sets/plg20.svg"
+    },
+    "plg21": {
+        "code": "plg21",
+        "fullName": "Love Your LGS 2021",
+        "icon": "img/sets/plg21.svg"
+    },
+    "plg22": {
+        "code": "plg22",
+        "fullName": "Love Your LGS 2022",
+        "icon": "img/sets/plg22.svg"
+    },
+    "plg24": {
+        "code": "plg24",
+        "fullName": "Love Your LGS 2024",
+        "icon": "img/sets/plg24.svg"
+    },
+    "plg25": {
+        "code": "plg25",
+        "fullName": "Love Your LGS 2025",
+        "icon": "img/sets/plg25.svg"
+    },
+    "plgm": {
+        "code": "plgm",
+        "fullName": "DCI Legend Membership",
+        "icon": "img/sets/plgm.svg"
+    },
+    "plgn": {
+        "code": "plgn",
+        "fullName": "Legions Promos",
+        "block": "Onslaught",
+        "icon": "img/sets/plgn.svg"
+    },
+    "plrw": {
+        "code": "plrw",
+        "fullName": "Lorwyn Promos",
+        "block": "Lorwyn",
+        "icon": "img/sets/plrw.svg"
+    },
+    "pls": {
+        "code": "pls",
+        "fullName": "Planeshift",
+        "block": "Invasion",
+        "icon": "img/sets/pls.svg"
+    },
+    "plst": {
+        "code": "plst",
+        "fullName": "The List",
+        "icon": "img/sets/plst.svg"
+    },
+    "pltc": {
+        "code": "pltc",
+        "fullName": "Tales of Middle-earth Deluxe Commander Kit",
+        "icon": "img/sets/pltc.svg"
+    },
+    "pltr": {
+        "code": "pltr",
+        "fullName": "Tales of Middle-earth Promos",
+        "icon": "img/sets/pltr.svg"
+    },
+    "pm10": {
+        "code": "pm10",
+        "fullName": "Magic 2010 Promos",
+        "icon": "img/sets/pm10.svg"
+    },
+    "pm11": {
+        "code": "pm11",
+        "fullName": "Magic 2011 Promos",
+        "icon": "img/sets/pm11.svg"
+    },
+    "pm12": {
+        "code": "pm12",
+        "fullName": "Magic 2012 Promos",
+        "icon": "img/sets/pm12.svg"
+    },
+    "pm13": {
+        "code": "pm13",
+        "fullName": "Magic 2013 Promos",
+        "icon": "img/sets/pm13.svg"
+    },
+    "pm14": {
+        "code": "pm14",
+        "fullName": "Magic 2014 Promos",
+        "icon": "img/sets/pm14.svg"
+    },
+    "pm15": {
+        "code": "pm15",
+        "fullName": "Magic 2015 Promos",
+        "icon": "img/sets/pm15.svg"
+    },
+    "pm19": {
+        "code": "pm19",
+        "fullName": "Core Set 2019 Promos",
+        "icon": "img/sets/pm19.svg"
+    },
+    "pm20": {
+        "code": "pm20",
+        "fullName": "Core Set 2020 Promos",
+        "icon": "img/sets/pm20.svg"
+    },
+    "pm21": {
+        "code": "pm21",
+        "fullName": "Core Set 2021 Promos",
+        "icon": "img/sets/pm21.svg"
+    },
+    "pmat": {
+        "code": "pmat",
+        "fullName": "March of the Machine: The Aftermath Promos",
+        "icon": "img/sets/pmat.svg"
+    },
+    "pmbs": {
+        "code": "pmbs",
+        "fullName": "Mirrodin Besieged Promos",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/pmbs.svg"
+    },
+    "pmda": {
+        "code": "pmda",
+        "fullName": "Magic × Duel Masters Promos",
+        "icon": "img/sets/pmda.svg"
+    },
+    "pmei": {
+        "code": "pmei",
+        "fullName": "Media and Collaboration Promos",
+        "icon": "img/sets/pmei.svg"
+    },
+    "pmh1": {
+        "code": "pmh1",
+        "fullName": "Modern Horizons Promos",
+        "icon": "img/sets/pmh1.svg"
+    },
+    "pmh2": {
+        "code": "pmh2",
+        "fullName": "Modern Horizons 2 Promos",
+        "icon": "img/sets/pmh2.svg"
+    },
+    "pmh3": {
+        "code": "pmh3",
+        "fullName": "Modern Horizons 3 Promos",
+        "icon": "img/sets/pmh3.svg"
+    },
+    "pmic": {
+        "code": "pmic",
+        "fullName": "MicroProse Promos",
+        "icon": "img/sets/pmic.svg"
+    },
+    "pmid": {
+        "code": "pmid",
+        "fullName": "Innistrad: Midnight Hunt Promos",
+        "block": "Innistrad: Double Feature",
+        "icon": "img/sets/pmid.svg"
+    },
+    "pmkm": {
+        "code": "pmkm",
+        "fullName": "Murders at Karlov Manor Promos",
+        "icon": "img/sets/pmkm.svg"
+    },
+    "pmmq": {
+        "code": "pmmq",
+        "fullName": "Mercadian Masques Promos",
+        "block": "Masques",
+        "icon": "img/sets/pmmq.svg"
+    },
+    "pmoa": {
+        "code": "pmoa",
+        "fullName": "Magic Online Avatars",
+        "icon": "img/sets/pmoa.svg"
+    },
+    "pmom": {
+        "code": "pmom",
+        "fullName": "March of the Machine Promos",
+        "icon": "img/sets/pmom.svg"
+    },
+    "pmor": {
+        "code": "pmor",
+        "fullName": "Morningtide Promos",
+        "block": "Lorwyn",
+        "icon": "img/sets/pmor.svg"
+    },
+    "pmps": {
+        "code": "pmps",
+        "fullName": "Magic Premiere Shop 2005",
+        "icon": "img/sets/pmps.svg"
+    },
+    "pmps06": {
+        "code": "pmps06",
+        "fullName": "Magic Premiere Shop 2006",
+        "icon": "img/sets/pmps06.svg"
+    },
+    "pmps07": {
+        "code": "pmps07",
+        "fullName": "Magic Premiere Shop 2007",
+        "icon": "img/sets/pmps07.svg"
+    },
+    "pmps08": {
+        "code": "pmps08",
+        "fullName": "Magic Premiere Shop 2008",
+        "icon": "img/sets/pmps08.svg"
+    },
+    "pmps09": {
+        "code": "pmps09",
+        "fullName": "Magic Premiere Shop 2009",
+        "icon": "img/sets/pmps09.svg"
+    },
+    "pmps10": {
+        "code": "pmps10",
+        "fullName": "Magic Premiere Shop 2010",
+        "icon": "img/sets/pmps10.svg"
+    },
+    "pmps11": {
+        "code": "pmps11",
+        "fullName": "Magic Premiere Shop 2011",
+        "icon": "img/sets/pmps11.svg"
+    },
+    "pmrd": {
+        "code": "pmrd",
+        "fullName": "Mirrodin Promos",
+        "block": "Mirrodin",
+        "icon": "img/sets/pmrd.svg"
+    },
+    "pnat": {
+        "code": "pnat",
+        "fullName": "Nationals Promos",
+        "icon": "img/sets/pnat.svg"
+    },
+    "pncc": {
+        "code": "pncc",
+        "fullName": "New Capenna Commander Promos",
+        "icon": "img/sets/pncc.svg"
+    },
+    "pnem": {
+        "code": "pnem",
+        "fullName": "Nemesis Promos",
+        "block": "Masques",
+        "icon": "img/sets/pnem.svg"
+    },
+    "pneo": {
+        "code": "pneo",
+        "fullName": "Kamigawa: Neon Dynasty Promos",
+        "icon": "img/sets/pneo.svg"
+    },
+    "pnph": {
+        "code": "pnph",
+        "fullName": "New Phyrexia Promos",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/pnph.svg"
+    },
+    "pody": {
+        "code": "pody",
+        "fullName": "Odyssey Promos",
+        "block": "Odyssey",
+        "icon": "img/sets/pody.svg"
+    },
+    "pogw": {
+        "code": "pogw",
+        "fullName": "Oath of the Gatewatch Promos",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/pogw.svg"
+    },
+    "pone": {
+        "code": "pone",
+        "fullName": "Phyrexia: All Will Be One Promos",
+        "icon": "img/sets/pone.svg"
+    },
+    "pons": {
+        "code": "pons",
+        "fullName": "Onslaught Promos",
+        "block": "Onslaught",
+        "icon": "img/sets/pons.svg"
+    },
+    "por": {
+        "code": "por",
+        "fullName": "Portal",
+        "block": "Portal",
+        "icon": "img/sets/por.svg"
+    },
+    "pori": {
+        "code": "pori",
+        "fullName": "Magic Origins Promos",
+        "icon": "img/sets/pori.svg"
+    },
+    "potj": {
+        "code": "potj",
+        "fullName": "Outlaws of Thunder Junction Promos",
+        "icon": "img/sets/potj.svg"
+    },
+    "ppc1": {
+        "code": "ppc1",
+        "fullName": "M15 Prerelease Challenge",
+        "icon": "img/sets/ppc1.svg"
+    },
+    "ppcy": {
+        "code": "ppcy",
+        "fullName": "Prophecy Promos",
+        "block": "Masques",
+        "icon": "img/sets/ppcy.svg"
+    },
+    "pplc": {
+        "code": "pplc",
+        "fullName": "Planar Chaos Promos",
+        "block": "Time Spiral",
+        "icon": "img/sets/pplc.svg"
+    },
+    "ppls": {
+        "code": "ppls",
+        "fullName": "Planeshift Promos",
+        "block": "Invasion",
+        "icon": "img/sets/ppls.svg"
+    },
+    "ppp1": {
+        "code": "ppp1",
+        "fullName": "M20 Promo Packs",
+        "block": "Core Set",
+        "icon": "img/sets/ppp1.svg"
+    },
+    "ppro": {
+        "code": "ppro",
+        "fullName": "Pro Tour Promos",
+        "icon": "img/sets/ppro.svg"
+    },
+    "pptk": {
+        "code": "pptk",
+        "fullName": "Portal Three Kingdoms Promos",
+        "block": "Portal",
+        "icon": "img/sets/pptk.svg"
+    },
+    "pr23": {
+        "code": "pr23",
+        "fullName": "Regional Championship Qualifiers 2023",
+        "icon": "img/sets/pr23.svg"
+    },
+    "prav": {
+        "code": "prav",
+        "fullName": "Ravnica: City of Guilds Promos",
+        "block": "Ravnica",
+        "icon": "img/sets/prav.svg"
+    },
+    "prcq": {
+        "code": "prcq",
+        "fullName": "Regional Championship Qualifiers 2022",
+        "icon": "img/sets/prcq.svg"
+    },
+    "pred": {
+        "code": "pred",
+        "fullName": "Redemption Program",
+        "icon": "img/sets/pred.svg"
+    },
+    "prix": {
+        "code": "prix",
+        "fullName": "Rivals of Ixalan Promos",
+        "block": "Ixalan",
+        "icon": "img/sets/prix.svg"
+    },
+    "prm": {
+        "code": "prm",
+        "fullName": "Magic Online Promos",
+        "icon": "img/sets/prm.svg"
+    },
+    "prna": {
+        "code": "prna",
+        "fullName": "Ravnica Allegiance Promos",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/prna.svg"
+    },
+    "proe": {
+        "code": "proe",
+        "fullName": "Rise of the Eldrazi Promos",
+        "block": "Zendikar",
+        "icon": "img/sets/proe.svg"
+    },
+    "prtr": {
+        "code": "prtr",
+        "fullName": "Return to Ravnica Promos",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/prtr.svg"
+    },
+    "prw2": {
+        "code": "prw2",
+        "fullName": "RNA Ravnica Weekend",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/prw2.svg"
+    },
+    "prwk": {
+        "code": "prwk",
+        "fullName": "GRN Ravnica Weekend",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/prwk.svg"
+    },
+    "ps11": {
+        "code": "ps11",
+        "fullName": "Salvat 2011",
+        "icon": "img/sets/ps11.svg"
+    },
+    "ps14": {
+        "code": "ps14",
+        "fullName": "San Diego Comic-Con 2014",
+        "icon": "img/sets/ps14.svg"
+    },
+    "ps15": {
+        "code": "ps15",
+        "fullName": "San Diego Comic-Con 2015",
+        "icon": "img/sets/ps15.svg"
+    },
+    "ps16": {
+        "code": "ps16",
+        "fullName": "San Diego Comic-Con 2016",
+        "icon": "img/sets/ps16.svg"
+    },
+    "ps17": {
+        "code": "ps17",
+        "fullName": "San Diego Comic-Con 2017",
+        "icon": "img/sets/ps17.svg"
+    },
+    "ps18": {
+        "code": "ps18",
+        "fullName": "San Diego Comic-Con 2018",
+        "icon": "img/sets/ps18.svg"
+    },
+    "ps19": {
+        "code": "ps19",
+        "fullName": "San Diego Comic-Con 2019",
+        "icon": "img/sets/ps19.svg"
+    },
+    "psal": {
+        "code": "psal",
+        "fullName": "Salvat 2005",
+        "icon": "img/sets/psal.svg"
+    },
+    "pscg": {
+        "code": "pscg",
+        "fullName": "Scourge Promos",
+        "block": "Onslaught",
+        "icon": "img/sets/pscg.svg"
+    },
+    "psdc": {
+        "code": "psdc",
+        "fullName": "San Diego Comic-Con 2013",
+        "icon": "img/sets/psdc.svg"
+    },
+    "psdg": {
+        "code": "psdg",
+        "fullName": "Sega Dreamcast Cards",
+        "icon": "img/sets/psdg.svg"
+    },
+    "pshm": {
+        "code": "pshm",
+        "fullName": "Shadowmoor Promos",
+        "block": "Shadowmoor",
+        "icon": "img/sets/pshm.svg"
+    },
+    "psnc": {
+        "code": "psnc",
+        "fullName": "Streets of New Capenna Promos",
+        "icon": "img/sets/psnc.svg"
+    },
+    "psoi": {
+        "code": "psoi",
+        "fullName": "Shadows over Innistrad Promos",
+        "block": "Shadows over Innistrad",
+        "icon": "img/sets/psoi.svg"
+    },
+    "psok": {
+        "code": "psok",
+        "fullName": "Saviors of Kamigawa Promos",
+        "block": "Kamigawa",
+        "icon": "img/sets/psok.svg"
+    },
+    "psom": {
+        "code": "psom",
+        "fullName": "Scars of Mirrodin Promos",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/psom.svg"
+    },
+    "psos": {
+        "code": "psos",
+        "fullName": "Secrets of Strixhaven Promos",
+        "icon": "img/sets/psos.svg"
+    },
+    "pspl": {
+        "code": "pspl",
+        "fullName": "Spotlight Series",
+        "icon": "img/sets/pspl.svg"
+    },
+    "pspm": {
+        "code": "pspm",
+        "fullName": "Marvel's Spider-Man Promos",
+        "icon": "img/sets/pspm.svg"
+    },
+    "pss1": {
+        "code": "pss1",
+        "fullName": "BFZ Standard Series",
+        "block": "Battle for Zendikar",
+        "icon": "img/sets/pss1.svg"
+    },
+    "pss2": {
+        "code": "pss2",
+        "fullName": "XLN Standard Showdown",
+        "block": "Ixalan",
+        "icon": "img/sets/pss2.svg"
+    },
+    "pss3": {
+        "code": "pss3",
+        "fullName": "M19 Standard Showdown",
+        "icon": "img/sets/pss3.svg"
+    },
+    "pss4": {
+        "code": "pss4",
+        "fullName": "MKM Standard Showdown",
+        "icon": "img/sets/pss4.svg"
+    },
+    "pss5": {
+        "code": "pss5",
+        "fullName": "FIN Standard Showdown",
+        "icon": "img/sets/pss5.svg"
+    },
+    "pssc": {
+        "code": "pssc",
+        "fullName": "Secret Lair Showcase Planes",
+        "icon": "img/sets/pssc.svg"
+    },
+    "psth": {
+        "code": "psth",
+        "fullName": "Stronghold Promos",
+        "block": "Tempest",
+        "icon": "img/sets/psth.svg"
+    },
+    "pstx": {
+        "code": "pstx",
+        "fullName": "Strixhaven: School of Mages Promos",
+        "icon": "img/sets/pstx.svg"
+    },
+    "psus": {
+        "code": "psus",
+        "fullName": "Junior Super Series",
+        "icon": "img/sets/psus.svg"
+    },
+    "psvc": {
+        "code": "psvc",
+        "fullName": "Summer Vacation Promos 2022",
+        "icon": "img/sets/psvc.svg"
+    },
+    "ptc": {
+        "code": "ptc",
+        "fullName": "Pro Tour Collector Set",
+        "icon": "img/sets/ptc.svg"
+    },
+    "ptdm": {
+        "code": "ptdm",
+        "fullName": "Tarkir: Dragonstorm Promos",
+        "icon": "img/sets/ptdm.svg"
+    },
+    "ptg": {
+        "code": "ptg",
+        "fullName": "Ponies: The Galloping",
+        "icon": "img/sets/ptg.svg"
+    },
+    "pthb": {
+        "code": "pthb",
+        "fullName": "Theros Beyond Death Promos",
+        "icon": "img/sets/pthb.svg"
+    },
+    "pths": {
+        "code": "pths",
+        "fullName": "Theros Promos",
+        "block": "Theros",
+        "icon": "img/sets/pths.svg"
+    },
+    "ptk": {
+        "code": "ptk",
+        "fullName": "Portal Three Kingdoms",
+        "block": "Portal",
+        "icon": "img/sets/ptk.svg"
+    },
+    "ptkdf": {
+        "code": "ptkdf",
+        "fullName": "Tarkir Dragonfury",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/ptkdf.svg"
+    },
+    "ptla": {
+        "code": "ptla",
+        "fullName": "Avatar: The Last Airbender Promos",
+        "icon": "img/sets/ptla.svg"
+    },
+    "ptmp": {
+        "code": "ptmp",
+        "fullName": "Tempest Promos",
+        "block": "Tempest",
+        "icon": "img/sets/ptmp.svg"
+    },
+    "ptor": {
+        "code": "ptor",
+        "fullName": "Torment Promos",
+        "block": "Odyssey",
+        "icon": "img/sets/ptor.svg"
+    },
+    "ptsp": {
+        "code": "ptsp",
+        "fullName": "Time Spiral Promos",
+        "block": "Time Spiral",
+        "icon": "img/sets/ptsp.svg"
+    },
+    "ptsr": {
+        "code": "ptsr",
+        "fullName": "Time Spiral Remastered Promos",
+        "icon": "img/sets/ptsr.svg"
+    },
+    "puds": {
+        "code": "puds",
+        "fullName": "Urza's Destiny Promos",
+        "block": "Urza",
+        "icon": "img/sets/puds.svg"
+    },
+    "pulg": {
+        "code": "pulg",
+        "fullName": "Urza's Legacy Promos",
+        "block": "Urza",
+        "icon": "img/sets/pulg.svg"
+    },
+    "puma": {
+        "code": "puma",
+        "fullName": "Ultimate Box Topper",
+        "icon": "img/sets/puma.svg"
+    },
+    "punh": {
+        "code": "punh",
+        "fullName": "Unhinged Promos",
+        "icon": "img/sets/punh.svg"
+    },
+    "punk": {
+        "code": "punk",
+        "fullName": "Black Lotus Unknown Planechase",
+        "icon": "img/sets/punk.svg"
+    },
+    "purl": {
+        "code": "purl",
+        "fullName": "URL/Convention Promos",
+        "icon": "img/sets/purl.svg"
+    },
+    "pusg": {
+        "code": "pusg",
+        "fullName": "Urza's Saga Promos",
+        "block": "Urza",
+        "icon": "img/sets/pusg.svg"
+    },
+    "pust": {
+        "code": "pust",
+        "fullName": "Unstable Promos",
+        "icon": "img/sets/pust.svg"
+    },
+    "pvan": {
+        "code": "pvan",
+        "fullName": "Vanguard Series",
+        "icon": "img/sets/pvan.svg"
+    },
+    "pvow": {
+        "code": "pvow",
+        "fullName": "Innistrad: Crimson Vow Promos",
+        "icon": "img/sets/pvow.svg"
+    },
+    "pw11": {
+        "code": "pw11",
+        "fullName": "Wizards Play Network 2011",
+        "icon": "img/sets/pw11.svg"
+    },
+    "pw12": {
+        "code": "pw12",
+        "fullName": "Wizards Play Network 2012",
+        "icon": "img/sets/pw12.svg"
+    },
+    "pw21": {
+        "code": "pw21",
+        "fullName": "Wizards Play Network 2021",
+        "icon": "img/sets/pw21.svg"
+    },
+    "pw22": {
+        "code": "pw22",
+        "fullName": "Wizards Play Network 2022",
+        "icon": "img/sets/pw22.svg"
+    },
+    "pw23": {
+        "code": "pw23",
+        "fullName": "Wizards Play Network 2023",
+        "icon": "img/sets/pw23.svg"
+    },
+    "pw24": {
+        "code": "pw24",
+        "fullName": "Wizards Play Network 2024",
+        "icon": "img/sets/pw24.svg"
+    },
+    "pw25": {
+        "code": "pw25",
+        "fullName": "Wizards Play Network 2025",
+        "icon": "img/sets/pw25.svg"
+    },
+    "pw26": {
+        "code": "pw26",
+        "fullName": "Wizards Play Network 2026",
+        "icon": "img/sets/pw26.svg"
+    },
+    "pwar": {
+        "code": "pwar",
+        "fullName": "War of the Spark Promos",
+        "icon": "img/sets/pwar.svg"
+    },
+    "pwcs": {
+        "code": "pwcs",
+        "fullName": "Planeswalker Championship Promos",
+        "icon": "img/sets/pwcs.svg"
+    },
+    "pwoe": {
+        "code": "pwoe",
+        "fullName": "Wilds of Eldraine Promos",
+        "icon": "img/sets/pwoe.svg"
+    },
+    "pwor": {
+        "code": "pwor",
+        "fullName": "World Championship Promos",
+        "icon": "img/sets/pwor.svg"
+    },
+    "pwos": {
+        "code": "pwos",
+        "fullName": "Wizards of the Coast Online Store",
+        "icon": "img/sets/pwos.svg"
+    },
+    "pwwk": {
+        "code": "pwwk",
+        "fullName": "Worldwake Promos",
+        "block": "Zendikar",
+        "icon": "img/sets/pwwk.svg"
+    },
+    "pxln": {
+        "code": "pxln",
+        "fullName": "Ixalan Promos",
+        "block": "Ixalan",
+        "icon": "img/sets/pxln.svg"
+    },
+    "pxtc": {
+        "code": "pxtc",
+        "fullName": "XLN Treasure Chest",
+        "block": "Ixalan",
+        "icon": "img/sets/pxtc.svg"
+    },
+    "pz1": {
+        "code": "pz1",
+        "fullName": "Legendary Cube Prize Pack",
+        "icon": "img/sets/pz1.svg"
+    },
+    "pz2": {
+        "code": "pz2",
+        "fullName": "Treasure Chest",
+        "icon": "img/sets/pz2.svg"
+    },
+    "pza": {
+        "code": "pza",
+        "fullName": "Teenage Mutant Ninja Turtles Source Material",
+        "icon": "img/sets/pza.svg"
+    },
+    "pzen": {
+        "code": "pzen",
+        "fullName": "Zendikar Promos",
+        "block": "Zendikar",
+        "icon": "img/sets/pzen.svg"
+    },
+    "pznr": {
+        "code": "pznr",
+        "fullName": "Zendikar Rising Promos",
+        "icon": "img/sets/pznr.svg"
+    },
+    "q06": {
+        "code": "q06",
+        "fullName": "Pioneer Challenger Decks 2021",
+        "icon": "img/sets/q06.svg"
+    },
+    "rav": {
+        "code": "rav",
+        "fullName": "Ravnica: City of Guilds",
+        "block": "Ravnica",
+        "icon": "img/sets/rav.svg"
+    },
+    "ren": {
+        "code": "ren",
+        "fullName": "Renaissance",
+        "icon": "img/sets/ren.svg"
+    },
+    "rex": {
+        "code": "rex",
+        "fullName": "Jurassic World Collection",
+        "icon": "img/sets/rex.svg"
+    },
+    "rfin": {
+        "code": "rfin",
+        "fullName": "Final Fantasy Regional Promos",
+        "icon": "img/sets/rfin.svg"
+    },
+    "rin": {
+        "code": "rin",
+        "fullName": "Rinascimento",
+        "icon": "img/sets/rin.svg"
+    },
+    "rix": {
+        "code": "rix",
+        "fullName": "Rivals of Ixalan",
+        "block": "Ixalan",
+        "icon": "img/sets/rix.svg"
+    },
+    "rna": {
+        "code": "rna",
+        "fullName": "Ravnica Allegiance",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/rna.svg"
+    },
+    "roe": {
+        "code": "roe",
+        "fullName": "Rise of the Eldrazi",
+        "block": "Zendikar",
+        "icon": "img/sets/roe.svg"
+    },
+    "rqs": {
+        "code": "rqs",
+        "fullName": "Rivals Quick Start Set",
+        "icon": "img/sets/rqs.svg"
+    },
+    "rtr": {
+        "code": "rtr",
+        "fullName": "Return to Ravnica",
+        "block": "Return to Ravnica",
+        "icon": "img/sets/rtr.svg"
+    },
+    "rvr": {
+        "code": "rvr",
+        "fullName": "Ravnica Remastered",
+        "icon": "img/sets/rvr.svg"
+    },
+    "s00": {
+        "code": "s00",
+        "fullName": "Starter 2000",
+        "icon": "img/sets/s00.svg"
+    },
+    "s99": {
+        "code": "s99",
+        "fullName": "Starter 1999",
+        "icon": "img/sets/s99.svg"
+    },
+    "sbro": {
+        "code": "sbro",
+        "fullName": "The Brothers' War Substitute Cards",
+        "icon": "img/sets/sbro.svg"
+    },
+    "scd": {
+        "code": "scd",
+        "fullName": "Starter Commander Decks",
+        "block": "Commander",
+        "icon": "img/sets/scd.svg"
+    },
+    "scg": {
+        "code": "scg",
+        "fullName": "Scourge",
+        "block": "Onslaught",
+        "icon": "img/sets/scg.svg"
+    },
+    "sch": {
+        "code": "sch",
+        "fullName": "Store Championships",
+        "icon": "img/sets/sch.svg"
+    },
+    "sds": {
+        "code": "sds",
+        "fullName": "Stardates"
+    },
+    "shm": {
+        "code": "shm",
+        "fullName": "Shadowmoor",
+        "block": "Shadowmoor",
+        "icon": "img/sets/shm.svg"
+    },
+    "sir": {
+        "code": "sir",
+        "fullName": "Shadows over Innistrad Remastered",
+        "icon": "img/sets/sir.svg"
+    },
+    "sis": {
+        "code": "sis",
+        "fullName": "Shadows of the Past",
+        "icon": "img/sets/sis.svg"
+    },
+    "skhm": {
+        "code": "skhm",
+        "fullName": "Kaldheim Substitute Cards",
+        "icon": "img/sets/skhm.svg"
+    },
+    "slc": {
+        "code": "slc",
+        "fullName": "Secret Lair Countdown",
+        "icon": "img/sets/slc.svg"
+    },
+    "slci": {
+        "code": "slci",
+        "fullName": "The Lost Caverns of Ixalan Substitute Cards",
+        "icon": "img/sets/slci.svg"
+    },
+    "sld": {
+        "code": "sld",
+        "fullName": "Secret Lair Drop",
+        "icon": "img/sets/sld.svg"
+    },
+    "slp": {
+        "code": "slp",
+        "fullName": "Secret Lair Promo",
+        "icon": "img/sets/slp.svg"
+    },
+    "slu": {
+        "code": "slu",
+        "fullName": "Secret Lair: Ultimate Edition",
+        "icon": "img/sets/slu.svg"
+    },
+    "slx": {
+        "code": "slx",
+        "fullName": "Universes Within",
+        "icon": "img/sets/slx.svg"
+    },
+    "slz": {
+        "code": "slz",
+        "fullName": "The Zeta Set"
+    },
+    "smh3": {
+        "code": "smh3",
+        "fullName": "Modern Horizons 3 Substitute Cards",
+        "icon": "img/sets/smh3.svg"
+    },
+    "smid": {
+        "code": "smid",
+        "fullName": "Innistrad: Midnight Hunt Substitute Cards",
+        "block": "Innistrad: Double Feature",
+        "icon": "img/sets/smid.svg"
+    },
+    "smom": {
+        "code": "smom",
+        "fullName": "March of the Machine Substitute Cards",
+        "icon": "img/sets/smom.svg"
+    },
+    "snc": {
+        "code": "snc",
+        "fullName": "Streets of New Capenna",
+        "icon": "img/sets/snc.svg"
+    },
+    "sneo": {
+        "code": "sneo",
+        "fullName": "Kamigawa: Neon Dynasty Substitute Cards",
+        "icon": "img/sets/sneo.svg"
+    },
+    "soa": {
+        "code": "soa",
+        "fullName": "Secrets of Strixhaven Mystical Archive",
+        "icon": "img/sets/soa.svg"
+    },
+    "soc": {
+        "code": "soc",
+        "fullName": "Secrets of Strixhaven Commander",
+        "block": "Commander",
+        "icon": "img/sets/soc.svg"
+    },
+    "soi": {
+        "code": "soi",
+        "fullName": "Shadows over Innistrad",
+        "block": "Shadows over Innistrad",
+        "icon": "img/sets/soi.svg"
+    },
+    "sok": {
+        "code": "sok",
+        "fullName": "Saviors of Kamigawa",
+        "block": "Kamigawa",
+        "icon": "img/sets/sok.svg"
+    },
+    "som": {
+        "code": "som",
+        "fullName": "Scars of Mirrodin",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/som.svg"
+    },
+    "sos": {
+        "code": "sos",
+        "fullName": "Secrets of Strixhaven",
+        "icon": "img/sets/sos.svg"
+    },
+    "spe": {
+        "code": "spe",
+        "fullName": "Marvel's Spider-Man Eternal",
+        "icon": "img/sets/spe.svg"
+    },
+    "spg": {
+        "code": "spg",
+        "fullName": "Special Guests",
+        "icon": "img/sets/spg.svg"
+    },
+    "spm": {
+        "code": "spm",
+        "fullName": "Marvel's Spider-Man",
+        "icon": "img/sets/spm.svg"
+    },
+    "ss1": {
+        "code": "ss1",
+        "fullName": "Signature Spellbook: Jace",
+        "icon": "img/sets/ss1.svg"
+    },
+    "ss2": {
+        "code": "ss2",
+        "fullName": "Signature Spellbook: Gideon",
+        "icon": "img/sets/ss2.svg"
+    },
+    "ss3": {
+        "code": "ss3",
+        "fullName": "Signature Spellbook: Chandra",
+        "icon": "img/sets/ss3.svg"
+    },
+    "sstx": {
+        "code": "sstx",
+        "fullName": "Strixhaven: School of Mages Substitute Cards",
+        "icon": "img/sets/sstx.svg"
+    },
+    "sta": {
+        "code": "sta",
+        "fullName": "Strixhaven Mystical Archive",
+        "icon": "img/sets/sta.svg"
+    },
+    "sth": {
+        "code": "sth",
+        "fullName": "Stronghold",
+        "block": "Tempest",
+        "icon": "img/sets/sth.svg"
+    },
+    "stx": {
+        "code": "stx",
+        "fullName": "Strixhaven: School of Mages",
+        "icon": "img/sets/stx.svg"
+    },
+    "sum": {
+        "code": "sum",
+        "fullName": "Summer Magic / Edgar",
+        "block": "Core Set",
+        "icon": "img/sets/sum.svg"
+    },
+    "sunf": {
+        "code": "sunf",
+        "fullName": "Unfinity Sticker Sheets",
+        "icon": "img/sets/sunf.svg"
+    },
+    "svow": {
+        "code": "svow",
+        "fullName": "Innistrad: Crimson Vow Substitute Cards",
+        "icon": "img/sets/svow.svg"
+    },
+    "sznr": {
+        "code": "sznr",
+        "fullName": "Zendikar Rising Substitute Cards",
+        "icon": "img/sets/sznr.svg"
+    },
+    "tafr": {
+        "code": "tafr",
+        "fullName": "Adventures in the Forgotten Realms Tokens",
+        "icon": "img/sets/tafr.svg"
+    },
+    "tblc": {
+        "code": "tblc",
+        "fullName": "Bloomburrow Commander Tokens",
+        "icon": "img/sets/tblc.svg"
+    },
+    "tbth": {
+        "code": "tbth",
+        "fullName": "Battle the Horde",
+        "block": "Theros",
+        "icon": "img/sets/tbth.svg"
+    },
+    "tc15": {
+        "code": "tc15",
+        "fullName": "Commander 2015 Tokens",
+        "block": "Commander",
+        "icon": "img/sets/tc15.svg"
+    },
+    "tclb": {
+        "code": "tclb",
+        "fullName": "Battle for Baldur's Gate Tokens",
+        "icon": "img/sets/tclb.svg"
+    },
+    "tcm2": {
+        "code": "tcm2",
+        "fullName": "Commander Anthology Volume II Tokens",
+        "block": "Commander",
+        "icon": "img/sets/tcm2.svg"
+    },
+    "tcma": {
+        "code": "tcma",
+        "fullName": "Commander Anthology Tokens",
+        "block": "Commander",
+        "icon": "img/sets/tcma.svg"
+    },
+    "td0": {
+        "code": "td0",
+        "fullName": "Magic Online Theme Decks",
+        "icon": "img/sets/td0.svg"
+    },
+    "td2": {
+        "code": "td2",
+        "fullName": "Duel Decks: Mirrodin Pure vs. New Phyrexia",
+        "icon": "img/sets/td2.svg"
+    },
+    "tdag": {
+        "code": "tdag",
+        "fullName": "Defeat a God",
+        "block": "Theros",
+        "icon": "img/sets/tdag.svg"
+    },
+    "tdc": {
+        "code": "tdc",
+        "fullName": "Tarkir: Dragonstorm Commander",
+        "block": "Commander",
+        "icon": "img/sets/tdc.svg"
+    },
+    "tdm": {
+        "code": "tdm",
+        "fullName": "Tarkir: Dragonstorm",
+        "icon": "img/sets/tdm.svg"
+    },
+    "tecc": {
+        "code": "tecc",
+        "fullName": "Lorwyn Eclipsed Commander Tokens",
+        "icon": "img/sets/tecc.svg"
+    },
+    "tfth": {
+        "code": "tfth",
+        "fullName": "Face the Hydra",
+        "block": "Theros",
+        "icon": "img/sets/tfth.svg"
+    },
+    "thb": {
+        "code": "thb",
+        "fullName": "Theros Beyond Death",
+        "icon": "img/sets/thb.svg"
+    },
+    "thp1": {
+        "code": "thp1",
+        "fullName": "Theros Hero's Path",
+        "block": "Theros",
+        "icon": "img/sets/thp1.svg"
+    },
+    "thp2": {
+        "code": "thp2",
+        "fullName": "Born of the Gods Hero's Path",
+        "block": "Theros",
+        "icon": "img/sets/thp2.svg"
+    },
+    "thp3": {
+        "code": "thp3",
+        "fullName": "Journey into Nyx Hero's Path",
+        "block": "Theros",
+        "icon": "img/sets/thp3.svg"
+    },
+    "ths": {
+        "code": "ths",
+        "fullName": "Theros",
+        "block": "Theros",
+        "icon": "img/sets/ths.svg"
+    },
+    "tla": {
+        "code": "tla",
+        "fullName": "Avatar: The Last Airbender",
+        "icon": "img/sets/tla.svg"
+    },
+    "tle": {
+        "code": "tle",
+        "fullName": "Avatar: The Last Airbender Eternal",
+        "icon": "img/sets/tle.svg"
+    },
+    "tmbs": {
+        "code": "tmbs",
+        "fullName": "Mirrodin Besieged Tokens",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/tmbs.svg"
+    },
+    "tmc": {
+        "code": "tmc",
+        "fullName": "Teenage Mutant Ninja Turtles Eternal",
+        "block": "Commander",
+        "icon": "img/sets/tmc.svg"
+    },
+    "tmp": {
+        "code": "tmp",
+        "fullName": "Tempest",
+        "block": "Tempest",
+        "icon": "img/sets/tmp.svg"
+    },
+    "tmt": {
+        "code": "tmt",
+        "fullName": "Teenage Mutant Ninja Turtles",
+        "icon": "img/sets/tmt.svg"
+    },
+    "tnph": {
+        "code": "tnph",
+        "fullName": "New Phyrexia Tokens",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/tnph.svg"
+    },
+    "tone": {
+        "code": "tone",
+        "fullName": "Phyrexia: All Will Be One Tokens",
+        "icon": "img/sets/tone.svg"
+    },
+    "tor": {
+        "code": "tor",
+        "fullName": "Torment",
+        "block": "Odyssey",
+        "icon": "img/sets/tor.svg"
+    },
+    "tpr": {
+        "code": "tpr",
+        "fullName": "Tempest Remastered",
+        "icon": "img/sets/tpr.svg"
+    },
+    "trc": {
+        "code": "trc",
+        "fullName": "Star Trek Commander",
+        "block": "Commander",
+        "icon": "img/sets/trc.svg"
+    },
+    "trk": {
+        "code": "trk",
+        "fullName": "Star Trek"
+    },
+    "tsb": {
+        "code": "tsb",
+        "fullName": "Time Spiral Timeshifted",
+        "block": "Time Spiral",
+        "icon": "img/sets/tsb.svg"
+    },
+    "tsom": {
+        "code": "tsom",
+        "fullName": "Scars of Mirrodin Tokens",
+        "block": "Scars of Mirrodin",
+        "icon": "img/sets/tsom.svg"
+    },
+    "tsp": {
+        "code": "tsp",
+        "fullName": "Time Spiral",
+        "block": "Time Spiral",
+        "icon": "img/sets/tsp.svg"
+    },
+    "tsr": {
+        "code": "tsr",
+        "fullName": "Time Spiral Remastered",
+        "icon": "img/sets/tsr.svg"
+    },
+    "ttdc": {
+        "code": "ttdc",
+        "fullName": "Tarkir: Dragonstorm Commander Tokens",
+        "icon": "img/sets/ttdc.svg"
+    },
+    "tund": {
+        "code": "tund",
+        "fullName": "Unsanctioned Tokens",
+        "icon": "img/sets/tund.svg"
+    },
+    "tunf": {
+        "code": "tunf",
+        "fullName": "Unfinity Tokens",
+        "icon": "img/sets/tunf.svg"
+    },
+    "twoc": {
+        "code": "twoc",
+        "fullName": "Wilds of Eldraine Commander Tokens",
+        "icon": "img/sets/twoc.svg"
+    },
+    "twoe": {
+        "code": "twoe",
+        "fullName": "Wilds of Eldraine Tokens",
+        "icon": "img/sets/twoe.svg"
+    },
+    "uds": {
+        "code": "uds",
+        "fullName": "Urza's Destiny",
+        "block": "Urza",
+        "icon": "img/sets/uds.svg"
+    },
+    "ugin": {
+        "code": "ugin",
+        "fullName": "Ugin's Fate",
+        "block": "Khans of Tarkir",
+        "icon": "img/sets/ugin.svg"
+    },
+    "ugl": {
+        "code": "ugl",
+        "fullName": "Unglued",
+        "icon": "img/sets/ugl.svg"
+    },
+    "ulg": {
+        "code": "ulg",
+        "fullName": "Urza's Legacy",
+        "block": "Urza",
+        "icon": "img/sets/ulg.svg"
+    },
+    "ulst": {
+        "code": "ulst",
+        "fullName": "The List (Unfinity Foil Edition)",
+        "icon": "img/sets/ulst.svg"
+    },
+    "uma": {
+        "code": "uma",
+        "fullName": "Ultimate Masters",
+        "icon": "img/sets/uma.svg"
+    },
+    "und": {
+        "code": "und",
+        "fullName": "Unsanctioned",
+        "icon": "img/sets/und.svg"
+    },
+    "unf": {
+        "code": "unf",
+        "fullName": "Unfinity",
+        "icon": "img/sets/unf.svg"
+    },
+    "unh": {
+        "code": "unh",
+        "fullName": "Unhinged",
+        "icon": "img/sets/unh.svg"
+    },
+    "unk": {
+        "code": "unk",
+        "fullName": "Unknown Event",
+        "icon": "img/sets/unk.svg"
+    },
+    "usg": {
+        "code": "usg",
+        "fullName": "Urza's Saga",
+        "block": "Urza",
+        "icon": "img/sets/usg.svg"
+    },
+    "ust": {
+        "code": "ust",
+        "fullName": "Unstable",
+        "icon": "img/sets/ust.svg"
+    },
+    "v09": {
+        "code": "v09",
+        "fullName": "From the Vault: Exiled",
+        "block": "From the Vault",
+        "icon": "img/sets/v09.svg"
+    },
+    "v10": {
+        "code": "v10",
+        "fullName": "From the Vault: Relics",
+        "block": "From the Vault",
+        "icon": "img/sets/v10.svg"
+    },
+    "v11": {
+        "code": "v11",
+        "fullName": "From the Vault: Legends",
+        "block": "From the Vault",
+        "icon": "img/sets/v11.svg"
+    },
+    "v12": {
+        "code": "v12",
+        "fullName": "From the Vault: Realms",
+        "block": "From the Vault",
+        "icon": "img/sets/v12.svg"
+    },
+    "v13": {
+        "code": "v13",
+        "fullName": "From the Vault: Twenty",
+        "block": "From the Vault",
+        "icon": "img/sets/v13.svg"
+    },
+    "v14": {
+        "code": "v14",
+        "fullName": "From the Vault: Annihilation",
+        "block": "From the Vault",
+        "icon": "img/sets/v14.svg"
+    },
+    "v15": {
+        "code": "v15",
+        "fullName": "From the Vault: Angels",
+        "block": "From the Vault",
+        "icon": "img/sets/v15.svg"
+    },
+    "v16": {
+        "code": "v16",
+        "fullName": "From the Vault: Lore",
+        "block": "From the Vault",
+        "icon": "img/sets/v16.svg"
+    },
+    "v17": {
+        "code": "v17",
+        "fullName": "From the Vault: Transform",
+        "block": "From the Vault",
+        "icon": "img/sets/v17.svg"
+    },
+    "vis": {
+        "code": "vis",
+        "fullName": "Visions",
+        "block": "Mirage",
+        "icon": "img/sets/vis.svg"
+    },
+    "vma": {
+        "code": "vma",
+        "fullName": "Vintage Masters",
+        "icon": "img/sets/vma.svg"
+    },
+    "voc": {
+        "code": "voc",
+        "fullName": "Crimson Vow Commander",
+        "block": "Commander",
+        "icon": "img/sets/voc.svg"
+    },
+    "vow": {
+        "code": "vow",
+        "fullName": "Innistrad: Crimson Vow",
+        "block": "Innistrad: Double Feature",
+        "icon": "img/sets/vow.svg"
+    },
+    "w16": {
+        "code": "w16",
+        "fullName": "Welcome Deck 2016",
+        "icon": "img/sets/w16.svg"
+    },
+    "w17": {
+        "code": "w17",
+        "fullName": "Welcome Deck 2017",
+        "icon": "img/sets/w17.svg"
+    },
+    "war": {
+        "code": "war",
+        "fullName": "War of the Spark",
+        "block": "Guilds of Ravnica",
+        "icon": "img/sets/war.svg"
+    },
+    "wc00": {
+        "code": "wc00",
+        "fullName": "World Championship Decks 2000",
+        "icon": "img/sets/wc00.svg"
+    },
+    "wc01": {
+        "code": "wc01",
+        "fullName": "World Championship Decks 2001",
+        "icon": "img/sets/wc01.svg"
+    },
+    "wc02": {
+        "code": "wc02",
+        "fullName": "World Championship Decks 2002",
+        "icon": "img/sets/wc02.svg"
+    },
+    "wc03": {
+        "code": "wc03",
+        "fullName": "World Championship Decks 2003",
+        "icon": "img/sets/wc03.svg"
+    },
+    "wc04": {
+        "code": "wc04",
+        "fullName": "World Championship Decks 2004",
+        "icon": "img/sets/wc04.svg"
+    },
+    "wc97": {
+        "code": "wc97",
+        "fullName": "World Championship Decks 1997",
+        "icon": "img/sets/wc97.svg"
+    },
+    "wc98": {
+        "code": "wc98",
+        "fullName": "World Championship Decks 1998",
+        "icon": "img/sets/wc98.svg"
+    },
+    "wc99": {
+        "code": "wc99",
+        "fullName": "World Championship Decks 1999",
+        "icon": "img/sets/wc99.svg"
+    },
+    "who": {
+        "code": "who",
+        "fullName": "Doctor Who",
+        "block": "Commander",
+        "icon": "img/sets/who.svg"
+    },
+    "wmc": {
+        "code": "wmc",
+        "fullName": "World Magic Cup Qualifiers",
+        "icon": "img/sets/wmc.svg"
+    },
+    "woc": {
+        "code": "woc",
+        "fullName": "Wilds of Eldraine Commander",
+        "block": "Commander",
+        "icon": "img/sets/woc.svg"
+    },
+    "woe": {
+        "code": "woe",
+        "fullName": "Wilds of Eldraine",
+        "icon": "img/sets/woe.svg"
+    },
+    "wot": {
+        "code": "wot",
+        "fullName": "Wilds of Eldraine: Enchanting Tales",
+        "icon": "img/sets/wot.svg"
+    },
+    "wth": {
+        "code": "wth",
+        "fullName": "Weatherlight",
+        "block": "Mirage",
+        "icon": "img/sets/wth.svg"
+    },
+    "wwk": {
+        "code": "wwk",
+        "fullName": "Worldwake",
+        "block": "Zendikar",
+        "icon": "img/sets/wwk.svg"
+    },
+    "xana": {
+        "code": "xana",
+        "fullName": "Arena New Player Experience Extras",
+        "icon": "img/sets/xana.svg"
+    },
+    "xln": {
+        "code": "xln",
+        "fullName": "Ixalan",
+        "block": "Ixalan",
+        "icon": "img/sets/xln.svg"
+    },
+    "yblb": {
+        "code": "yblb",
+        "fullName": "Alchemy: Bloomburrow",
+        "block": "Alchemy 2025",
+        "icon": "img/sets/yblb.svg"
+    },
+    "ybro": {
+        "code": "ybro",
+        "fullName": "Alchemy: The Brothers' War",
+        "block": "Alchemy 2023",
+        "icon": "img/sets/ybro.svg"
+    },
+    "ydft": {
+        "code": "ydft",
+        "fullName": "Alchemy: Aetherdrift",
+        "icon": "img/sets/ydft.svg"
+    },
+    "ydmu": {
+        "code": "ydmu",
+        "fullName": "Alchemy: Dominaria",
+        "block": "Alchemy 2023",
+        "icon": "img/sets/ydmu.svg"
+    },
+    "ydsk": {
+        "code": "ydsk",
+        "fullName": "Alchemy: Duskmourn",
+        "icon": "img/sets/ydsk.svg"
+    },
+    "yecl": {
+        "code": "yecl",
+        "fullName": "Alchemy: Lorwyn Eclipsed",
+        "icon": "img/sets/yecl.svg"
+    },
+    "yeoe": {
+        "code": "yeoe",
+        "fullName": "Alchemy: Edge of Eternities",
+        "icon": "img/sets/yeoe.svg"
+    },
+    "ylci": {
+        "code": "ylci",
+        "fullName": "Alchemy: Ixalan",
+        "block": "Alchemy 2024",
+        "icon": "img/sets/ylci.svg"
+    },
+    "ymid": {
+        "code": "ymid",
+        "fullName": "Alchemy: Innistrad",
+        "block": "Alchemy 2022",
+        "icon": "img/sets/ymid.svg"
+    },
+    "ymkm": {
+        "code": "ymkm",
+        "fullName": "Alchemy: Murders at Karlov Manor",
+        "block": "Alchemy 2024",
+        "icon": "img/sets/ymkm.svg"
+    },
+    "yneo": {
+        "code": "yneo",
+        "fullName": "Alchemy: Kamigawa",
+        "block": "Alchemy 2022",
+        "icon": "img/sets/yneo.svg"
+    },
+    "yone": {
+        "code": "yone",
+        "fullName": "Alchemy: Phyrexia",
+        "block": "Alchemy 2023",
+        "icon": "img/sets/yone.svg"
+    },
+    "yotj": {
+        "code": "yotj",
+        "fullName": "Alchemy: Outlaws of Thunder Junction",
+        "block": "Alchemy 2024",
+        "icon": "img/sets/yotj.svg"
+    },
+    "ysnc": {
+        "code": "ysnc",
+        "fullName": "Alchemy: New Capenna",
+        "block": "Alchemy 2022",
+        "icon": "img/sets/ysnc.svg"
+    },
+    "ysos": {
+        "code": "ysos",
+        "fullName": "Alchemy: Secrets of Strixhaven",
+        "icon": "img/sets/ysos.svg"
+    },
+    "ytdm": {
+        "code": "ytdm",
+        "fullName": "Alchemy: Tarkir",
+        "icon": "img/sets/ytdm.svg"
+    },
+    "ywoe": {
+        "code": "ywoe",
+        "fullName": "Alchemy: Wilds of Eldraine",
+        "block": "Alchemy 2024",
+        "icon": "img/sets/ywoe.svg"
+    },
+    "zen": {
+        "code": "zen",
+        "fullName": "Zendikar",
+        "block": "Zendikar",
+        "icon": "img/sets/zen.svg"
+    },
+    "znc": {
+        "code": "znc",
+        "fullName": "Zendikar Rising Commander",
+        "block": "Commander",
+        "icon": "img/sets/znc.svg"
+    },
+    "zne": {
+        "code": "zne",
+        "fullName": "Zendikar Rising Expeditions",
+        "icon": "img/sets/zne.svg"
+    },
+    "znr": {
+        "code": "znr",
+        "fullName": "Zendikar Rising",
+        "icon": "img/sets/znr.svg"
+    },
+    "planeshifted_snc": {
+        "code": "planeshifted_snc",
+        "fullName": "Planeshifted New Capenna",
+        "icon": "img/sets/snc.svg"
+    },
+    "mb1": {
+        "code": "mb1",
+        "fullName": "Mystery Booster",
+        "icon": "img/sets/mb1.svg"
+    },
+    "mb1_convention_2019": {
+        "code": "mb1_convention_2019",
+        "fullName": "Mystery Booster Convention 2019",
+        "icon": "img/sets/mb1.svg"
+    },
+    "mb1_convention_2021": {
+        "code": "mb1_convention_2021",
+        "fullName": "Mystery Booster Convention 2021",
+        "icon": "img/sets/mb1.svg"
+    },
+    "sir0": {
+        "code": "sir0",
+        "fullName": "SIR: Creature Type Terror!",
+        "block": "Shadows over Innistrad Remastered",
+        "icon": "img/sets/sir.svg"
+    },
+    "sir1": {
+        "code": "sir1",
+        "fullName": "SIR: Fatal Flashback!",
+        "block": "Shadows over Innistrad Remastered",
+        "icon": "img/sets/sir.svg"
+    },
+    "sir2": {
+        "code": "sir2",
+        "fullName": "SIR: Morbid and Macabre!",
+        "block": "Shadows over Innistrad Remastered",
+        "icon": "img/sets/sir.svg"
+    },
+    "sir3": {
+        "code": "sir3",
+        "fullName": "SIR: Abominable All Stars!",
+        "block": "Shadows over Innistrad Remastered",
+        "icon": "img/sets/sir.svg"
+    },
+    "pio0": {
+        "code": "pio0",
+        "fullName": "Pioneer Masters: Devotion",
+        "block": "Pioneer Masters",
+        "icon": "img/sets/pio.svg"
+    },
+    "pio1": {
+        "code": "pio1",
+        "fullName": "Pioneer Masters: Planeswalkers",
+        "block": "Pioneer Masters",
+        "icon": "img/sets/pio.svg"
+    },
+    "pio2": {
+        "code": "pio2",
+        "fullName": "Pioneer Masters: Spells",
+        "block": "Pioneer Masters",
+        "icon": "img/sets/pio.svg"
+    }
+}

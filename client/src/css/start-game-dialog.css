@@ -1,0 +1,42 @@
+.dialog {
+	text-align: center;
+	font-size: 1.125em;
+	max-width: min(700px, 100vw);
+}
+
+.dialog p {
+	margin-top: 0;
+}
+
+.dialog-settings {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: start;
+	margin: auto;
+	background-color: #303030;
+	border-radius: 0.2em;
+	padding: 0.2em;
+
+	.help {
+		margin: 0.2em 1em;
+		color: #bbb;
+		width: -moz-available;
+		justify-self: center;
+		text-align: center;
+		font-size: 0.7em;
+		grid-column: span 2;
+		background-color: #383838;
+		padding: 0.2em;
+		border-radius: 0.2em;
+	}
+}
+
+.dialog-settings > label {
+	justify-self: end;
+	text-align: end;
+}
+
+.modal-header h2 {
+	font-size: 1.875em;
+}

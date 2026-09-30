@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Draftmancer - Custom Card List Format</title>
+		<meta
+			name="description"
+			content="Draft any Magic: the Gathering set or even your own cube with other players - or bots! Multiple gamemodes (Winston, Grid...) and many options are available."
+		/>
+		<meta name="keywords" content="Magic, Magic the Gathering, MTG, Draft, Sealed, Limited, Cube, Booster, Simulator, Sim, Arena, MTGA, Pod, Winston, Rochester" />
+		<meta name="thumbnail" content="https://draftmancer.com/img/cardback.webp" />
+		<meta name="color-scheme" content="dark" />
+		<meta property="og:title" content="Draftmancer" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://draftmancer.com/cubeformat.html" />
+		<meta property="og:image" content="https://draftmancer.com/img/cardback.webp" />
+		<meta
+			property="og:description"
+			content="Draft any Magic: the Gathering set or even your own cube with other players - or bots! Multiple gamemodes (Winston, Grid...) and many options are available."
+		/>
+		<meta property="og:site_name" content="Draftmancer" />
+		<link rel="canonical" href="https://draftmancer.com/cubeformat.html" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
+		<link rel="manifest" href="/site.webmanifest?v=2" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#666666" />
+		<link rel="shortcut icon" href="/favicon.ico?v=2" />
+		<meta name="apple-mobile-web-app-title" content="Draftmancer" />
+		<meta name="application-name" content="Draftmancer" />
+		<meta name="msapplication-TileColor" content="#888888" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				margin: 0;
+				margin-left: 0;
+				background-color: rgb(32, 32, 32);
+				color: #ddd;
+				font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+				position: relative;
+				min-height: calc(100vh - 2em);
+				padding-bottom: 2em;
+			}
+
+			pre {
+				background-color: #333;
+				padding: 0.5em;
+				tab-size: 4;
+				overflow-x: scroll;
+			}
+
+			.content {
+				margin: calc(min(5vw, 5em));
+				margin-top: 1em;
+			}
+
+			section {
+				margin-left: 1em;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			section h2,
+			section h3 {
+				margin-left: -1em;
+			}
+
+			comment {
+				color: #31aa2d;
+			}
+
+			pre type {
+				color: #59a7d4;
+			}
+
+			pre note {
+				color: #999999;
+			}
+
+			code {
+				font-size: large;
+				background: #333;
+				padding: 1px 4px;
+				border-radius: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<h1>Draftmancer Custom Card List Format</h1>
+			<ol>
+				<li><a href="#cube">Cube</a></li>
+				<li><a href="#card-spec">Advanced Card Specification</a></li>
+				<li><a href="#simple-layout">Simple Layout</a></li>
+				<li><a href="#settings">Settings</a></li>
+				<li><a href="#sheets">Sheets</a></li>
+				<li><a href="#layouts">Pack Layouts</a></li>
+				<li><a href="#custom-cards">Custom Cards</a></li>
+			</ol>
+			<section>
+				<h2 id="cun">Cube</h2>
+				<p>
+					The simplest Custom Card List is a list of card names, one per line (see Advanced Card Specification). This will define a Cube, meaning packs will be composed
+					of 15 (configurable) random cards from the list without replacement and without regards for their rarity.
+				</p>
+				<p>Pack collation can be further customized by specifying Slots and Layouts (see below).</p>
+				<p>Note: Using a Custom Card List disables the following options: Restrict to Collection, Maximum rarity, Maximum duplicate copies and Foil.</p>
+			</section>
+			<section>
+				<h2 id="card-spec">Advanced Card Specification</h2>
+				Full syntax for a card line is inspired by the Arena Import/Export format and is defined as follows:
+				<pre>[Count] CardName [(Set) [CollectorNumber]]</pre>
+				All parameters between brackets ([]) are optional, only the card name is required.
+				<ul>
+					<li>Count (optional): How many times this card is present in the cube. Defaults to one.</li>
+					<li>CardName (required): The name of the card.</li>
+					<li>Set (optional): Lets you specify the edition of the card. This is the 3-letter code of the set (e.g. 'GRN' for Guilds of Ravnica).</li>
+					<li>
+						CollectorNumber (optional): Lets you specify an exact collector number for cards with multiple printing within a set (like Guildgates). Specifying a
+						collector number without a set is NOT valid.
+					</li>
+				</ul>
+				<section>
+					<h3>Examples</h3>
+					The four following lines are equivalent and will add one copy of 'Incubation Druid' from Ravnica Allegiance. Here the set and collector number are both
+					redundant as there's only one printing of the card (in Arena, and as of May 2020 :)):
+					<pre>
+1 Incubation Druid (RNA) 131
+1 Incubation Druid (RNA)
+1 Incubation Druid
+Incubation Druid</pre
+					>
+					This will add 8 copies of the full art "Unset" Forest:
+					<pre>8 Forest (ANA) 60</pre>
+					This will add one copy of each of the two version (#243 & #244) of the Azorius Guildgate of RNA:
+					<pre>
+1 Azorius Guildgate (RNA) 243
+1 Azorius Guildgate (RNA) 244</pre
+					>
+				</section>
+			</section>
+			<section>
+				<h2 id="simple-layout">Simple Layout</h2>
+				<p>
+					By specifying some card lists (hereafter named 'sheets') and card counts, you can create a simple pack layout. The following example mimicks a basic rarity
+					distribution. For more customization, skip this section and continue reading :)
+				</p>
+				<pre>
+[SlotName(CardsPerBooster)]
+Card Name 1
+Card Name 2
+<note>...</note>
+[Slot2Name(CardsPerBooster)]
+Card Name 3
+Card Name 4
+<note>...</note></pre>
+				Each slot will be present in each booster. For example:
+				<pre>
+[Common(10)]
+Card Name 1
+Card Name 2
+<note>...</note>
+[Uncommon(3)]
+Card Name 3
+Card Name 4
+<note>...</note>
+[Rare(1)]
+Card Name 5
+Card Name 6
+<note>...</note></pre>
+				<p>Will mimic the distribution of a standard Magic booster, except for the 1/8 Mythic/Rare ratio. Cards in the 'Common' slot don't have to be 'real' commons!</p>
+				<p>The following adds a Planeswalker in each pack:</p>
+				<pre>
+[Planeswalker(1)]
+Planeswalker Card Name 1
+Planeswalker Card Name 2
+<note>...</note>
+[Common(9)]
+Card Name 1
+Card Name 2
+<note>...</note>
+[Uncommon(3)]
+Card Name 3
+Card Name 4
+<note>...</note>
+[Rare(1)]
+Card Name 5
+Card Name 6
+<note>...</note></pre>
+				<p>
+					Color balancing (if enabled) will be used only on the largest slot (in terms of cards per booster) and if it consist of at least 5 cards per booster. In both
+					previous examples, the 'Common' slot will be color balanced if the option is enabled (which is the default value).
+				</p>
+			</section>
+			<section>
+				<h2 id="settings">Settings</h2>
+				<p>
+					As the first section, you can declare a
+					<code>Settings</code>
+					block followed by a JSON object to control some global behaviors of your list.
+				</p>
+				<pre>
+[Settings]
+{
+	"settingName": "value",
+	"anotherSetting": 125
+}
+				</pre
+				>
+				<p>Here are the possible settings with their description, they are all optional:</p>
+				<pre>
+{
+	name: <type>string</type>;                       <comment>// The name of your cube.</comment>
+	cubeCobraID: <type>string</type>;                <comment>// ID of your cube on CubeCobra. This allows the results of drafts conducted on Draftmancer to be sent back to Cube Cobra.</comment>
+	cardBack: <type>string</type>;                   <comment>// URL to a custom card back.</comment>
+	cardTitleHeightFactor: <type>number</type>;      <comment>// Allows you to adjust the height of the card title when stacked in a column. Defaults to 1.</comment>
+	showSlots: <type>boolean</type>;                 <comment>// If layouts are used, will display what slot generated which card.
+	                                    //   If you want multiple slots to be displayed with the same name, use "##" to add a hidden identifier.
+		                                //   For example, "Rare" and "Rare##Legendary" will both be displayed as "Rare".</comment>
+	showSheets: <type>boolean</type>;                <comment>// If layouts are used, will display from which sheet each card was drawn.</comment>
+	
+	<comment>// The following properties provide default values for some session settings, applied when the list is uploaded.
+	// They can still be overridden by the user via the UI.</comment>
+	boostersPerPlayer: <type>number</type>;          <comment>// Specify the default value of the "boostersPerPlayer" session setting.</comment>
+	withReplacement: <type>boolean</type>;           <comment>// Specify the default value of the "withReplacement" session setting. When enabled, cards are in illimited quantities and their count only affect their probability of being selected (defaults to false).</comment>
+	refillWhenEmpty: <type>boolean</type>;           <comment>// Resets the sheets when emptied instead of erroring. Allows playing a cube with more players than intended without skewing the distribution too far from the original intent (defaults to false).</comment>
+	duplicateProtection: <type>boolean</type>;       <comment>// Specify the default value of the "duplicateProtection" session setting. Prevents duplicates within a booster (defaults to true).</comment>
+	colorBalance: <type>boolean</type>;              <comment>// Specify the default value of the "colorBalance" session setting. Tries to include one card of each color in the largest slot (defaults to true).</comment>
+
+	boosterSettings: <type>{picks: number | number[], burns: number | number[]}[]</type>; <comment>// Allows you to customize some settings on a per booster basis.</comment>
+	<comment>// Example:</comment>
+	"boosterSettings": [
+		{
+			"picks": 1,
+			"burns": 14
+		}, 
+		{
+			"picks": [2, 1], <comment>// Simulate the "Double Masters mode", with 2 picks right after openning the booster, then 1.</comment>
+			"burns": 0
+		}, 
+		{
+			"picks": [3, 2, 1], <comment>// For booster #3: pick 3 and burn 1, then pick 2 burn 0 and finally pick 1 burn 0 until the pack is empty.</comment>
+			"burns": [1, 0]
+		}
+	]
+
+	layouts: <type>Record&lt;string, PackLayout&gt; | Array&lt;{ name: string; count: number }&gt;</type>; <comment>// See below</comment>
+
+	<comment>// Specify the exact order of the pack layouts rather than picking them randomly. Useful for block drafts. 
+	//   Array of layout names, array of arrays of layout names (weights inherited from the layout declaration) 
+	//   or array of Record&lt;string, number&gt; to override the weights.</comment>
+	predeterminedLayouts: <type>string[] | string[][] | Record&lt;string, number&gt;[] | {name: string, weight: number}[][]</type>;
+	<comment>// Examples:</comment>
+	"predeterminedLayouts": ["SheetA", "SheetB", "SheetC"],
+	"predeterminedLayouts": [["Set1_Rare", "Set1_Mythic"], ["Set2_Rare", "Set2_Mythic"]]
+	"predeterminedLayouts": [{"Set1_Rare": 7, "Set1_Mythic": 1}, {"Set2_Rare": 7, "Set2_Mythic": 1}]
+	"predeterminedLayouts": [[{"name": "Set1_Rare", "weight": 7}, {"name": "Set1_Mythic", "weight": 1}], [{"name": "Set2_Rare", "weight": 7}, {"name": "Set2_Mythic", "weight": 1}]]
+
+	<comment>// Specify if the layouts are randomly picked with or without replacement (default: true).</comment>
+	layoutWithReplacement: <type>boolean</type>;    
+}
+</pre>
+			</section>
+			<section>
+				<h2 id="sheets">Sheets</h2>
+				<p>Sheets are simply card lists, with some optional properties. They can be refered to in the layouts section, and assigned to slots. Here's the syntax:</p>
+				<pre>
+<comment># Header: Name followed by optional properties (JSON)</comment>
+[SheetName {"collation": "random"}]
+Card Name 1 <comment># Then a list of cards, as described <a href="#card-spec">above</a>.</comment>
+Card Name 2
+...
+				</pre>
+				<p>Sheet settings:</p>
+				<pre>
+{
+		<comment># "random" is the default. 
+		# "printRun" means cards are picked sequentionally from a random starting point.
+		# "striped" means cards are picked as per striped collation (from very early sets).</comment>
+		"collation": "random" | "printRun" | "striped", 
+		"groupSize": integer, <comment># Only for "printRun". Forces the random start point to be a multiple of this value (default: 1).</comment>
+		"length": integer,    <comment># Only for "striped" (required). Specifies the length of each row.</comment>
+		"weights": integer[], <comment># Only for "striped" (required). Specifies the chances of different stripe widths.</comment>
+}
+
+<comment># Examples:</comment>
+[common]                                                                <comment># Defaults to random collation.</comment>
+[common {"collation": "striped", "length": 11, "weights": [0,1,1,1,1]}] <comment># Uses striped collation from a sheet with 11 columns with equal chances of stripe widths 2, 3, 4, or 5.</comment>
+[common {"collation": "printRun"}]                                      <comment># Uses sequential collation, wraps from end to start</comment>
+[special {"collation": "printRun","groupSize": 2}]                      <comment># Uses sequential collation but can only start on 1st, 3rd, 5th, etc</comment></pre>
+			</section>
+			<section>
+				<h2 id="layouts">Pack Layouts</h2>
+				<p>
+					For even more control, you can specify multiple
+					<strong>Pack Layouts</strong>
+					describing variations of a pack, each with an associated weight (or probability to be chosen).
+					<strong>Important Note:</strong>
+					When using pack layouts, sheets must be declared without a
+					<code>CardsPerBooster</code>
+					parameter.
+				</p>
+				<p>
+					As part of the
+					<code>[Settings]</code>
+					header, the syntax of a layout is as follow:
+				</p>
+				<pre>
+"layouts": {
+	"LayoutName" : {
+		"weight": 1,
+		"slots": {
+  			"SlotName1": 7,
+ 			"SlotName2": 3
+		}
+	}
+}</pre
+				>
+				<p>
+					Where
+					<code>Weight</code>
+					is an integer specifying how often this layout will be chosen when generating a pack. By default, and for convenience, each slot will be filled with cards from
+					the sheet with the same name. In this example, each pack will contain
+					<code>7</code>
+					cards picked from the sheet named
+					<code>SlotName1</code>
+					and
+					<code>3</code>
+					cards picked from
+					<code>SlotName2</code>
+					.
+				</p>
+				<p>Example implementing a mythic rarity:</p>
+				<div style="display: flex; gap: 1em">
+					<pre>
+[Settings]
+{
+	"layouts": {
+		"Rare": {
+			"weight": 7,
+			"slots": {
+  				"Rare": 1,
+  				"Uncommon": 3,
+  				"Common": 10
+			}
+		},
+		"Mythic": {
+			"weight": 1,
+			"slots": {
+  				"Mythic": 1,
+  				"Uncommon": 3,
+  				"Common": 10
+			}
+		}
+	}
+}
+[Common]
+<note>..Card List..</note>
+[Uncommon]
+<note>..Card List..</note>
+[Rare]
+<note>..Card List..</note>
+[Mythic]
+<note>..Card List..</note></pre>
+					<pre>
+<comment># Alternatively, slots can refer to multiple sheets rather than relying having the same name as a sheet:</comment>
+[Settings]
+{
+	"layouts": {
+		"Default": {
+			"weight": 1,
+			"slots": [
+				{
+					"name": "RareOrMythic", 
+					"count": 1, 
+					"sheets": [
+						{"name": "Rare",   "weight": 7}, 
+						{"name": "Mythic", "weight": 1}
+					]
+				},
+				{"name": "Uncommon", "count": 3 },
+				{"name": "Common",   "count": 10},
+			]
+		}
+	}
+}
+[Common]
+<note>..Card List..</note>
+[Uncommon]
+<note>..Card List..</note>
+[Rare]
+<note>..Card List..</note>
+[Mythic]
+<note>..Card List..</note></pre>
+				</div>
+				<p>More complex example mimicking the collation of Dominaria United (Exactly one legendary creature of varying rarity in each pack):</p>
+				<div style="display: flex; gap: 1em">
+					<pre>
+[Settings]
+{
+	"name": "Dominaria United",
+	"withReplacement": true,
+	"layouts": {
+		"Rare": {
+			"weight": 21,
+			"slots": {
+				"Rare": 1,
+				"UncommonLegendary": 1,
+				"Uncommon": 2,
+  				"Common": 10
+			}
+		},
+		"Mythic": {
+			"weight": 3,
+			"slots": {
+				"Mythic": 1,
+				"UncommonLegendary": 1,
+  				"Uncommon": 2,
+  				"Common": 10
+			}
+		},
+		"RareLegendary": {
+			"weight": 7,
+			"slots": {
+				"RareLegendary": 1,
+				"Uncommon": 3,
+  				"Common": 10
+			}
+		},
+		"MythicLegendary": {
+			"weight": 1,
+			"slots": {
+				"MythicLegendary": 1,
+  				"Uncommon": 3,
+  				"Common": 10
+			}
+		}
+	}
+}
+[Common]
+<note>..List of all non-Legendary Creature Commons..</note>
+[Uncommon]
+<note>..List of all non-Legendary Creature Uncommons..</note>
+[Rare]
+<note>..List of all non-Legendary Creature Rares..</note>
+[Mythic]
+<note>..List of all non-Legendary Creature Mythics..</note>
+[UncommonLegendary]
+<note>..List of all Uncommon Legendary Creatures..</note>
+[RareLegendary]
+<note>..List of all Rare Legendary Creatures..</note>
+[MythicLegendary]
+<note>..List of all Mythic Legendary Creatures..</note></pre>
+					<pre>
+<comment># Another way to generate the same packs.</comment>
+<comment># You can use the 'sheets' property to assign multiple sheets to a slot.</comment>
+<comment># It will randomly select a sheet before picking the cards normally.</comment>
+[Settings]
+{
+    "withReplacement": true,
+    "layouts": {
+        "UncommonLegendary": {
+            "weight": 24,
+            "slots": [
+                {
+					"name": "RareOrMythic", 
+					"count": 1, 
+					"sheets": [
+						{"name": "Rare",   "weight": 7}, 
+						{"name": "Mythic", "weight": 1}
+					]
+				},
+                {"name": "UncommonLegendary", "count": 1 },
+                {"name": "Uncommon",          "count": 2 },
+                {"name": "Common",            "count": 10}
+            ]
+        },
+        "RareOrMythicLegendary": {
+            "weight": 8,
+            "slots": [
+                {
+					"name": "RareOrMythicLegendary", 
+					"count": 1, 
+					"sheets": [
+						{"name": "RareLegendary",   "weight": 7}, 
+						{"name": "MythicLegendary", "weight": 1}
+					]},
+                {"name": "Uncommon", "count": 3 },
+                {"name": "Common",   "count": 10}
+            ]
+        }
+    }
+}
+[Common]
+<note>..List of all non-Legendary Creature Commons..</note>
+[Uncommon]
+<note>..List of all non-Legendary Creature Uncommons..</note>
+[Rare]
+<note>..List of all non-Legendary Creature Rares..</note>
+[Mythic]
+<note>..List of all non-Legendary Creature Mythics..</note>
+[UncommonLegendary]
+<note>..List of all Uncommon Legendary Creatures..</note>
+[RareLegendary]
+<note>..List of all Rare Legendary Creatures..</note>
+[MythicLegendary]
+<note>..List of all Mythic Legendary Creatures..</note></pre>
+				</div>
+			</section>
+			<section>
+				<h2 id="custom-cards">Custom Cards</h2>
+				A cube can also be composed of user-defined cards specified as JSON data. The CustomCards section must be the first one in the file. Once defined in this section,
+				custom cards can be refered to by name in sheets, just like regular cards.
+				<pre>
+[CustomCards]
+[
+	{	
+		"name": "My 1st Custom Card",
+		"rarity": "mythic",
+		"mana_cost": "{2}{W}{W}",
+		"type": "Legendary Creature",
+		"subtypes": [
+			"God"
+		],
+		"image": "https://domain.com/URL/to/image.png"
+	},	
+	{	
+		"name": "My 2nd Custom Card",
+		"mana_cost": "{W/B}{G}",
+		"type": "Instant",
+		"image_uris": {
+			"en": "https://domain.com/URL/to/image2.png",
+			"fr": "https://domain.com/URL/to/image2_fr.png"
+		},
+		"printed_names": {
+			"en": "My 2nd Custom Card",
+			"fr": "Ma deuxième carte personnalisée"
+		},
+		"back": {
+			"name": "Back of my 2nd Custom Card",
+			"printed_names": {
+				"en": "Back of my 2nd Custom Card",
+				"fr": "Dos de ma deuxième carte personnalisée"
+			},
+			"image_uris": {
+				"en": "https://domain.com/URL/to/image2_back.png",
+				"fr": "https://domain.com/URL/to/image2_back_fr.png"
+			},
+			"type": "Land",
+			"subtypes": [
+				"Forest"
+			]
+		}
+	}
+]
+[MainSheet(15)]
+4 My 1st Custom Card
+4 My 2nd Custom Card
+<note>... Standard Card List ...</note></pre>
+				<p>
+					You can define multiple printings of the same card by varying the set and/or the collector number while keeping the name. Referring to these cards by name only
+					(without specifying a set and a collector number) will always mean the first occurence. Duplicate cards by name will inherit all the properties of the first
+					occurence, meaning that besides the name you only have specify the properties that are actually modified in the other printings. In the following example, only
+					the first 'Nazgûl' has all the properties, the other ones will be completed automatically. Note how you can now refer to individual printings using the
+					'CardName (SET) Number' syntax.
+				</p>
+				<pre>
+[Settings]
+{ "withReplacement": true } 
+[CustomCards]
+[
+	{
+		"name": "Nazgûl",
+		"rarity": "uncommon",
+		"mana_cost": "2B",
+		"set": "ltr",
+		"collector_number": "100", 
+		"type": "Creature",
+		"image": "https://cards.scryfall.io/large/front/8/3/833936c6-9381-4c0b-a81c-4a938be95040.jpg?1686968640"
+	},
+	{
+		"name": "Nazgûl",
+		"collector_number": "332",
+		"image": "https://cards.scryfall.io/large/front/c/e/ce65226a-12cd-416a-bb60-12e9b35f609b.jpg?1686971256"
+	},
+	{
+		"name": "Nazgûl",
+		"collector_number": "333",
+		"image": "https://cards.scryfall.io/large/front/6/9/69b32f90-b32f-41a6-af0c-1c967ec49b73.jpg?1686971268"
+	},
+	{
+		"name": "Card related to Nazgûl somehow",
+		"rarity": "uncommon",
+		"mana_cost": "",
+		"type": "Emblem",
+		"image": "https://cards.scryfall.io/large/front/7/2/7215460e-8c06-47d0-94e5-d1832d0218af.jpg?1688215133",
+		"related_cards": [
+			"Nazgûl",
+			"Nazgûl (LTR) 100",
+			"Nazgûl (LTR) 332",
+			"Nazgûl (LTR) 333"
+		]
+	}
+]
+[DefaultSheet]
+Nazgûl
+Nazgûl (LTR) 100
+Nazgûl (LTR) 332
+Nazgûl (LTR) 333
+Card related to Nazgûl somehow
+</pre
+				>
+				<p>Full Card specification ('?' denotes an optional field):</p>
+				<pre>
+CardFace {
+	name: <type>string</type>;
+	image_uris?: <type>{ [lang: string]: URL }</type>; <comment>// Images for the card for each language.</comment>
+	image?: <type>URL</type>; <comment>// Shortcut for image_uris.en. Use it instead of image_uris if you don't need to support multiple languages.</comment>
+	type: <type>string</type>;
+	printed_names?: <type>{ [lang: string]: string }</type>;
+	subtypes?: <type>Array&lt;string&gt;</type>;
+	mana_cost?: <type>string</type>; <comment>// Mana cost.</comment>
+	oracle_text?: <type>string</type>; <comment>// Oracle text.</comment>
+	power?: <type>number | string</type>; <comment>// Creature power.</comment>
+	toughness?: <type>number | string</type>; <comment>// Creature toughness.</comment>
+	loyalty?: <type>number | string</type>; <comment>// Planeswalker loyalty.</comment>
+	layout?: <type>string</type>; <comment>// Possible values are: 'split' and 'split-left'. 'flip' is not supported for card backs.</comment>
+}
+
+CustomCard {
+	name: <type>string</type>;
+	mana_cost: <type>string</type>;
+	type: <type>string</type>;
+	image_uris?: <type>{ [lang: string]: URL }</type>; <comment>// Images for the card for each language.</comment>
+	image?: <type>URL</type>; <comment>// Shortcut for image_uris.en. Use it instead of image_uris if you don't need to support multiple languages.</comment>
+	printed_names?: <type>{ [lang: string]: string }</type>;
+	colors?: <type>Array&lt;"W" | "U" | "B" | "R" | "G"&gt;</type>;
+	set?: <type>string</type>;	
+	collector_number?: <type>string</type>;
+	rarity?: <type>string</type>;
+	subtypes?: <type>Array&lt;string&gt;</type> = [];
+	rating?: <type>number</type> = 0; <comment>// A rating of the strength of the card in a vacuum, between 0 and 5. This may help bots navigate drafts when they don't know any cards :^)</comment>
+	layout?: <type>string</type>; <comment>// Possible values are: 'split', 'flip' and 'split-left'</comment>
+	back?: <type>CardFace</type>;
+	related_cards?: <type>Array&lt;CardID | CardFace&gt;</type>; <comment>// You can use this field to display some related cards when right clicking on the card. CardID can be the name of another custom card, or a Scryfall ID.</comment>
+	draft_effects?: <type>Array&lt;DraftEffect&gt;</type>; <comment>// See the list of valid effects bellow.</comment>
+	foil?: <type>boolean</type>; <comment>// Override the default finish of the card</comment>
+	oracle_text?: <type>string</type>; <comment>// Oracle text. </comment>
+	power?: <type>number | string</type>; <comment>// Creature power</comment>
+	toughness?: <type>number | string</type>; <comment>// Creature toughness</comment>
+	loyalty?: <type>number | string</type>; <comment>// Planeswalker loyalty</comment>
+}</pre>
+				The mana cost field follows
+				<a href="https://scryfall.com/docs/api/card-symbols/all" target="_blank">Scryfall Symbology</a>
+				(e.g. "{5}{G}{G}"). The image_uris and printed_names fields are objects with the language as key and the localized image URL or name as value (see previous
+				example).
+
+				<h3>Draft Effects</h3>
+				You can apply some effects from Conspiracy cards to your custom cards using the
+				<code>draft_effects</code>
+				field. Here are the implemented effects:
+				<pre>
+<comment># On pick effects:</comment>
+FaceUp              <comment># Reveal the card to other players and mark the card as face up. <strong>Important note</strong>: Necessary for most 'UsableEffects" to function correctly!.</comment>
+Reveal              <comment># Reveal the card to other players</comment>
+NotePassingPlayer   <comment># Note the previous player's name on the card.</comment>
+NoteDraftedCards    <comment># Note the number of cards drafted this round, including this card.</comment>
+ChooseColors        <comment># Note colors chosen by your neighbors and you.</comment>
+AetherSearcher      <comment># Reveal and note the next drafted card.</comment>
+CanalDredger        <comment># The last card of each booster is passed to you.</comment>
+ArchdemonOfPaliano  <comment># Pick the next 3 cards randomly.</comment>
+<comment># Optional on pick effects:</comment>
+AddBooster          <comment># Lore Seeker effect: "You may add a booster pack to the draft".</comment>
+<comment># Usable effects (when the card is already in the player's pool):</comment>
+RemoveDraftCard     <comment># Remove the picked card(s) from the draft and associate them with the card.</comment>
+CogworkLibrarian    <comment># Replace this card in a pack for an additional pick.</comment>
+AgentOfAcquisitions <comment># Pick the whole booster, skip until next round.</comment>
+LeovoldsOperative   <comment># Pick an additional card, skip the next booster.</comment>
+NoteCardName        <comment># Note the picked card's name on the card.</comment>
+NoteCreatureName    <comment># Note the picked creature's name on the card.</comment>
+NoteCreatureTypes   <comment># Note the picked creature's types on the card.</comment>
+<comment># Other:</comment>
+TrackRemovedCardsNames     <comment># Will display the names of cards removed by the 'RemoveDraftCard' effect.</comment>
+TrackRemovedCardsSubtypes  <comment># Will display the unique subtypes of cards removed by the 'RemoveDraftCard' effect.</comment>
+CogworkGrinder             <comment># Will display the number of cards removed by the 'RemoveDraftCard' effect.</comment>
+
+<comment># Example value for Cogwork Librarian</comment>
+"draft_effects": [
+	"FaceUp",
+	"CogworkLibrarian"
+]
+
+<comment># The following effects are custom and do not match official Conspiracy effects. They may also accept additional parameters.</comment>
+AddCards            <comment># Adds additional cards to your draft pool.</comment>
+AddBooster          <comment># Also accepts an optional 'layouts' parameter to restrict the added booster to these layouts.</comment>
+BurnAfterPicking    <comment># The card is not added to the player's pool. Useful if you're only interrested in their other draft effects.</comment>
+
+<comment># Example value for AddCards</comment>
+"draft_effects": [
+	{
+		"type": "AddCards",
+		"count": 1, <comment># Optional, if omitted, all cards from the following array will be added. Otherwise, 'count' random cards will be added to your pool.</comment>
+		"cards": ["Card Name 1", "Card Name 2"...],
+		"duplicateProtection": true, <comment># Optional, defaults to true. Duplicates of the same card can be used to increase its probability of being picked.</comment>
+	}
+]
+<comment># Example values for AddBooster</comment>
+"draft_effects": [
+	{
+		"type": "AddBooster",
+		"layouts": ["Layout1", "Layout2"], <comment># Equal weights.</comment>
+	}
+]
+"draft_effects": [
+	{
+		"type": "AddBooster",
+		"layouts": [{name: "Layout1", weight: 1}, {name: "Layout2", weight: 7}],
+	}
+]
+</pre>
+				Please note that only the combinations of effects found on actual Conspiracy cards are officially supported, some might not work as intended! See the list of
+				supported official cards on
+				<a href="https://github.com/Senryoku/Draftmancer/wiki/Conspiracy-cards-support" target="_blank">this page of the GitHub wiki</a>
+				.
+			</section>
+			<section>
+				<h2 id="comments">Comments</h2>
+				<p>
+					Comments starts with
+					<code>#</code>
+					and must be on their own line. They're ignored by the application and can be used to document your file.
+				</p>
+				<pre>
+<comment># Cube File by Myself</comment>
+<comment># Written on this day</comment>
+[Settings]
+{
+	<comment># This enables picking with replacement</comment>
+	"withReplacement": true
+}
+<comment># This sheet contains all the cards because this is just an example of how to use comments!</comment>
+[DefaultSheet]
+Lightning Bolt</pre>
+			</section>
+		</div>
+	</body>
+</html>

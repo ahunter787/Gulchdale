@@ -52,16 +52,16 @@ Every compiled environment should receive a version or content hash. An active d
 
 ## Gulchdale draft rules
 
-The current design uses four predetermined stages, with two cards selected per pick:
+The committed Phase 1 environment uses four predetermined stages, with two cards selected per pick:
 
 | Stage | Contents |
 | --- | --- |
-| Pack 1 | 2 Commander, 2 Multicolor, 16 Mono |
-| Pack 2 | 2 Commander, 2 Multicolor, 16 Mono |
-| Pack 3 | 4 Multicolor, 16 Mono |
-| Expedition/Land Pack | 2 Acceleration, 16 Land |
+| Pack 1 | 4 Commander, 16 Mono |
+| Pack 2 | 2 Commander, 18 Mono |
+| Pack 3 | 20 Mono |
+| Expedition/Land Pack | 20 Land |
 
-These rules should live in configuration rather than being hard-coded into UI components.
+These values come directly from `data/cubes/gulchdale.txt` rather than being hard-coded into UI components. An earlier planning outline described separate Multicolor and Acceleration sheets, but those sheets are not present in the current generated snapshot.
 
 ## Existing custom mechanics
 
@@ -113,11 +113,17 @@ Players should not need to visit Draftmancer, paste a CubeCobra URL, or upload a
 - Design for responsive desktop/mobile use, Docker deployment, and a Linux-hosted server.
 - Do not make authentication a prerequisite for the MVP.
 
-## Current repository state
+## Running Phase 1
 
-The repository currently contains an early landing-page prototype and artwork. The page creates a Draftmancer session through Socket.IO, loads a generated `gulchdale.txt` from a GitHub Gist, requests an untimed draft, and asks Draftmancer to report results to CubeCobra. This validates the concept but still depends visibly and operationally on the public Draftmancer service.
+Phase 1 runs the current Gulchdale environment on a self-hosted Draftmancer engine. The cube snapshot is bundled and locked, so normal users cannot replace its lists or pack rules.
 
-The next implementation step should be discovery and architecture work: bring the current exporter, generated environment, custom-card data, and historical settings into the repository as reference fixtures; document every Draftmancer feature they rely on; inspect the upstream engine boundaries; then define the initial application structure before beginning a broad rewrite.
+```bash
+docker compose up --build -d
+```
+
+Open `http://localhost:43721`, or use port `43721` on the host's LAN address from another device. Override the host port with `GULCHDALE_PORT` if needed. Runtime and troubleshooting details are in [`docs/PHASE1_ENGINE.md`](docs/PHASE1_ENGINE.md); upstream maintenance is documented in [`UPSTREAM.md`](UPSTREAM.md).
+
+The original public-Draftmancer launcher remains available only as a historical prototype under `reference/prototype/`.
 
 ## Source discussions
 

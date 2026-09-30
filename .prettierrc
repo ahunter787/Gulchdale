@@ -1,0 +1,17 @@
+{
+	"semi": true,
+	"tabWidth": 4,
+	"trailingComma": "es5",
+	"useTabs": true,
+	"printWidth": 120,
+	"endOfLine": "auto",
+	"overrides": [
+		{
+			"files": "*.html",
+			"options": {
+				"printWidth": 180,
+				"htmlWhitespaceSensitivity": "ignore"
+			}
+		}
+	]
+}
