@@ -1,4 +1,5 @@
 .git
+.git-backup
 .vscode
 .husky
 .github
