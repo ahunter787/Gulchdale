@@ -2,9 +2,9 @@ name: Server Test
 
 on:
     push:
-        branches: [master]
+        branches: [main]
     pull_request:
-        branches: [master]
+        branches: [main]
 
 jobs:
     server:
@@ -28,3 +28,12 @@ jobs:
             - run: npm run build-server
             - run: mkdir tmp # For simulating server restarts
             - run: npm test
+            - run: npm run test-gulchdale-acceptance
+
+    docker:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+            - name: Build production Docker image
+              run: docker build --tag gulchdale-ci .

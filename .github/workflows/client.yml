@@ -2,9 +2,9 @@ name: Client Test
 
 on:
     push:
-        branches: [master]
+        branches: [main]
     pull_request:
-        branches: [master]
+        branches: [main]
 
 jobs:
     client:
@@ -24,7 +24,7 @@ jobs:
             - run: npm ci
             - run: npm run build-server
             - run: npm run client-type-check
-            - run: npx webpack --config client/webpack.config.js --mode=production
+            - run: npm run build-client
             - run: mkdir screenshots
             - run: npm run fronttest-headless
               timeout-minutes: 30
