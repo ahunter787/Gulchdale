@@ -1576,6 +1576,13 @@
 					<img class="gulchdale-logo" src="/img/gulchdale-logo.png" alt="Gulchdale" />
 					<h1>Welcome to Gulchdale</h1>
 					<p class="important">Host or join a session to draft the bundled Gulchdale Commander Cube.</p>
+					<div
+						v-if="gulchdaleUpdateAvailableForOwner"
+						class="gulchdale-update-banner"
+					>
+						CubeCobra has changed since this build. Compile and promote a new environment, then restart
+						Gulchdale.
+					</div>
 					<div v-if="!gulchdaleConfig.locked" class="welcome-top">
 						<div>
 							<a href="/draftqueue">

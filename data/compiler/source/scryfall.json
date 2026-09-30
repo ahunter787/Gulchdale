@@ -1,0 +1,8914 @@
+{
+  "10e/120": {
+    "collector_number": "120",
+    "image": "",
+    "mana_cost": "",
+    "name": "Twincast",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/155": {
+    "collector_number": "155",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lord of the Undead",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/207": {
+    "collector_number": "207",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin King",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/234": {
+    "collector_number": "234",
+    "image": "",
+    "mana_cost": "",
+    "name": "Siege-Gang Commander",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/261": {
+    "collector_number": "261",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Champion",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/288": {
+    "collector_number": "288",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rampant Growth",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/296": {
+    "collector_number": "296",
+    "image": "",
+    "mana_cost": "",
+    "name": "Seedborn Muse",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/319": {
+    "collector_number": "319",
+    "image": "",
+    "mana_cost": "",
+    "name": "Crucible of Worlds",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/335": {
+    "collector_number": "335",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mind Stone",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/342": {
+    "collector_number": "342",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sculpting Steel",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/347": {
+    "collector_number": "347",
+    "image": "",
+    "mana_cost": "",
+    "name": "Adarkar Wastes",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/348": {
+    "collector_number": "348",
+    "image": "",
+    "mana_cost": "",
+    "name": "Battlefield Forge",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/349": {
+    "collector_number": "349",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brushland",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/350": {
+    "collector_number": "350",
+    "image": "",
+    "mana_cost": "",
+    "name": "Caves of Koilos",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/354": {
+    "collector_number": "354",
+    "image": "",
+    "mana_cost": "",
+    "name": "Karplusan Forest",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/355": {
+    "collector_number": "355",
+    "image": "",
+    "mana_cost": "",
+    "name": "Llanowar Wastes",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/357": {
+    "collector_number": "357",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shivan Reef",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/359": {
+    "collector_number": "359",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sulfurous Springs",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/362": {
+    "collector_number": "362",
+    "image": "",
+    "mana_cost": "",
+    "name": "Underground River",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/363": {
+    "collector_number": "363",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yavimaya Coast",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/66": {
+    "collector_number": "66",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arcanis the Omnipotent",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "10e/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Evacuation",
+    "set": "10e",
+    "type_line": "Card"
+  },
+  "2x2/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mikaeus, the Lunarch",
+    "set": "2x2",
+    "type_line": "Card"
+  },
+  "2xm/136": {
+    "collector_number": "136",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mana Echoes",
+    "set": "2xm",
+    "type_line": "Card"
+  },
+  "2xm/343": {
+    "collector_number": "343",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fatal Push",
+    "set": "2xm",
+    "type_line": "Card"
+  },
+  "30a/241": {
+    "collector_number": "241",
+    "image": "",
+    "mana_cost": "",
+    "name": "Glasses of Urza",
+    "set": "30a",
+    "type_line": "Card"
+  },
+  "30a/537": {
+    "collector_number": "537",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gauntlet of Might",
+    "set": "30a",
+    "type_line": "Card"
+  },
+  "40k/10": {
+    "collector_number": "10",
+    "image": "",
+    "mana_cost": "",
+    "name": "Celestine, the Living Saint",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Commissar Severina Raine",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/140": {
+    "collector_number": "140",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shadow in the Warp",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/150": {
+    "collector_number": "150",
+    "image": "",
+    "mana_cost": "",
+    "name": "Canoptek Scarab Swarm",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/151": {
+    "collector_number": "151",
+    "image": "",
+    "mana_cost": "",
+    "name": "Canoptek Spyder",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/168": {
+    "collector_number": "168",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tomb Fortress",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Imotekh the Stormlord",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Illuminor Szeras",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/42": {
+    "collector_number": "42",
+    "image": "",
+    "mana_cost": "",
+    "name": "Necron Deathmark",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "40k/68": {
+    "collector_number": "68",
+    "image": "",
+    "mana_cost": "",
+    "name": "Venomcrawler",
+    "set": "40k",
+    "type_line": "Card"
+  },
+  "5dn/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Conjurer's Bauble",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "5dn/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Krark-Clan Ironworks",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "5dn/137": {
+    "collector_number": "137",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mycosynth Golem",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "5dn/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vedalken Orrery",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "5dn/75": {
+    "collector_number": "75",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mana Geyser",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "5dn/86": {
+    "collector_number": "86",
+    "image": "",
+    "mana_cost": "",
+    "name": "Eternal Witness",
+    "set": "5dn",
+    "type_line": "Card"
+  },
+  "7ed/88★": {
+    "collector_number": "88★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Memory Lapse",
+    "set": "7ed",
+    "type_line": "Card"
+  },
+  "8ed/26★": {
+    "collector_number": "26★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Intrepid Hero",
+    "set": "8ed",
+    "type_line": "Card"
+  },
+  "9ed/56★": {
+    "collector_number": "56★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wrath of God",
+    "set": "9ed",
+    "type_line": "Card"
+  },
+  "a25/168": {
+    "collector_number": "168",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Piper",
+    "set": "a25",
+    "type_line": "Card"
+  },
+  "a25/57": {
+    "collector_number": "57",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flash",
+    "set": "a25",
+    "type_line": "Card"
+  },
+  "acr/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Caduceus, Staff of Hermes",
+    "set": "acr",
+    "type_line": "Card"
+  },
+  "acr/201": {
+    "collector_number": "201",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cover of Darkness",
+    "set": "acr",
+    "type_line": "Card"
+  },
+  "acr/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Distract the Guards",
+    "set": "acr",
+    "type_line": "Card"
+  },
+  "acr/33": {
+    "collector_number": "33",
+    "image": "",
+    "mana_cost": "",
+    "name": "Alexios, Deimos of Kosmos",
+    "set": "acr",
+    "type_line": "Card"
+  },
+  "acr/72": {
+    "collector_number": "72",
+    "image": "",
+    "mana_cost": "",
+    "name": "Excalibur, Sword of Eden",
+    "set": "acr",
+    "type_line": "Card"
+  },
+  "aer/122": {
+    "collector_number": "122",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rishkar, Peema Renegade",
+    "set": "aer",
+    "type_line": "Card"
+  },
+  "aer/123": {
+    "collector_number": "123",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rishkar's Expertise",
+    "set": "aer",
+    "type_line": "Card"
+  },
+  "aer/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scrap Trawler",
+    "set": "aer",
+    "type_line": "Card"
+  },
+  "aer/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sram's Expertise",
+    "set": "aer",
+    "type_line": "Card"
+  },
+  "afc/161": {
+    "collector_number": "161",
+    "image": "",
+    "mana_cost": "",
+    "name": "Heroic Intervention",
+    "set": "afc",
+    "type_line": "Card"
+  },
+  "afc/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Grim Hireling",
+    "set": "afc",
+    "type_line": "Card"
+  },
+  "afc/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wand of Orcus",
+    "set": "afc",
+    "type_line": "Card"
+  },
+  "afc/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Karazikar, the Eye Tyrant",
+    "set": "afc",
+    "type_line": "Card"
+  },
+  "afc/50": {
+    "collector_number": "50",
+    "image": "",
+    "mana_cost": "",
+    "name": "Klauth, Unrivaled Ancient",
+    "set": "afc",
+    "type_line": "Card"
+  },
+  "afr/147": {
+    "collector_number": "147",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hobgoblin Bandit Lord",
+    "set": "afr",
+    "type_line": "Card"
+  },
+  "afr/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Circle of Dreams Druid",
+    "set": "afr",
+    "type_line": "Card"
+  },
+  "afr/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Loyal Warhound",
+    "set": "afr",
+    "type_line": "Card"
+  },
+  "afr/238": {
+    "collector_number": "238",
+    "image": "",
+    "mana_cost": "",
+    "name": "Volo, Guide to Monsters",
+    "set": "afr",
+    "type_line": "Card"
+  },
+  "akh/119": {
+    "collector_number": "119",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blazing Volley",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Anointed Procession",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/205": {
+    "collector_number": "205",
+    "image": "",
+    "mana_cost": "",
+    "name": "Samut, Voice of Dissent",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/239": {
+    "collector_number": "239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Canyon Slough",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/243": {
+    "collector_number": "243",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fetid Pools",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/245": {
+    "collector_number": "245",
+    "image": "",
+    "mana_cost": "",
+    "name": "Irrigated Farmland",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/247": {
+    "collector_number": "247",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scattered Groves",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sheltered Thicket",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/65": {
+    "collector_number": "65",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pull from Tomorrow",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Liliana, Death's Majesty",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "akh/99": {
+    "collector_number": "99",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lord of the Accursed",
+    "set": "akh",
+    "type_line": "Card"
+  },
+  "ala/109": {
+    "collector_number": "109",
+    "image": "",
+    "mana_cost": "",
+    "name": "Predator Dragon",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/140": {
+    "collector_number": "140",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mycoloth",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/178": {
+    "collector_number": "178",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kresh the Bloodbraided",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/191": {
+    "collector_number": "191",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sarkhan Vol",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oblivion Ring",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ranger of Eos",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/218": {
+    "collector_number": "218",
+    "image": "",
+    "mana_cost": "",
+    "name": "Relic of Progenitus",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/42": {
+    "collector_number": "42",
+    "image": "",
+    "mana_cost": "",
+    "name": "Etherium Sculptor",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Master of Etherium",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/55": {
+    "collector_number": "55",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sharding Sphinx",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/60": {
+    "collector_number": "60",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tezzeret the Seeker",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/70": {
+    "collector_number": "70",
+    "image": "",
+    "mana_cost": "",
+    "name": "Death Baron",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/80": {
+    "collector_number": "80",
+    "image": "",
+    "mana_cost": "",
+    "name": "Infest",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elspeth, Knight-Errant",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "ala/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dragon Fodder",
+    "set": "ala",
+    "type_line": "Card"
+  },
+  "all/60b": {
+    "collector_number": "60b",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soldevi Adnate",
+    "set": "all",
+    "type_line": "Card"
+  },
+  "arb/129": {
+    "collector_number": "129",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wargate",
+    "set": "arb",
+    "type_line": "Card"
+  },
+  "arb/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lich Lord of Unx",
+    "set": "arb",
+    "type_line": "Card"
+  },
+  "avr/1": {
+    "collector_number": "1",
+    "image": "",
+    "mana_cost": "",
+    "name": "Angel of Glory's Rise",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/10": {
+    "collector_number": "10",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cathars' Crusade",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/128": {
+    "collector_number": "128",
+    "image": "",
+    "mana_cost": "",
+    "name": "Battle Hymn",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/130": {
+    "collector_number": "130",
+    "image": "",
+    "mana_cost": "",
+    "name": "Burn at the Stake",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/17": {
+    "collector_number": "17",
+    "image": "",
+    "mana_cost": "",
+    "name": "Devout Chaplain",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/171": {
+    "collector_number": "171",
+    "image": "",
+    "mana_cost": "",
+    "name": "Champion of Lambholt",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Craterhoof Behemoth",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/200": {
+    "collector_number": "200",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ulvenwald Tracker",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/214": {
+    "collector_number": "214",
+    "image": "",
+    "mana_cost": "",
+    "name": "Conjurer's Closet",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Restoration Angel",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "avr/47": {
+    "collector_number": "47",
+    "image": "",
+    "mana_cost": "",
+    "name": "Deadeye Navigator",
+    "set": "avr",
+    "type_line": "Card"
+  },
+  "bbd/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pir, Imaginative Rascal",
+    "set": "bbd",
+    "type_line": "Card"
+  },
+  "bbd/12": {
+    "collector_number": "12",
+    "image": "https://api.scryfall.com/cards/bbd/12?format=image&version=border_crop",
+    "mana_cost": "{3}{U}",
+    "name": "Toothy, Imaginary Friend",
+    "set": "bbd",
+    "type_line": "Legendary Creature — Illusion"
+  },
+  "bbd/34": {
+    "collector_number": "34",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fumble",
+    "set": "bbd",
+    "type_line": "Card"
+  },
+  "bbd/94": {
+    "collector_number": "94",
+    "image": "",
+    "mana_cost": "",
+    "name": "Land Tax",
+    "set": "bbd",
+    "type_line": "Card"
+  },
+  "bfz/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Zulaport Cutthroat",
+    "set": "bfz",
+    "type_line": "Card"
+  },
+  "bfz/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Emeria Shepherd",
+    "set": "bfz",
+    "type_line": "Card"
+  },
+  "big/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lost Jitte",
+    "set": "big",
+    "type_line": "Card"
+  },
+  "big/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oltec Matterweaver",
+    "set": "big",
+    "type_line": "Card"
+  },
+  "blb/131": {
+    "collector_number": "131",
+    "image": "",
+    "mana_cost": "",
+    "name": "Coruscation Mage",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blb/144": {
+    "collector_number": "144",
+    "image": "",
+    "mana_cost": "",
+    "name": "Might of the Meek",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blb/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Three Tree City",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blb/34": {
+    "collector_number": "34",
+    "image": "",
+    "mana_cost": "",
+    "name": "Starfall Invocation",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blb/379": {
+    "collector_number": "379",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bria, Riptide Rogue",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blb/54": {
+    "collector_number": "54",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kitsa, Otterball Elite",
+    "set": "blb",
+    "type_line": "Card"
+  },
+  "blc/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pollywog Prodigy",
+    "set": "blc",
+    "type_line": "Card"
+  },
+  "bng/110": {
+    "collector_number": "110",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scouring Sands",
+    "set": "bng",
+    "type_line": "Card"
+  },
+  "bng/136": {
+    "collector_number": "136",
+    "image": "",
+    "mana_cost": "",
+    "name": "Satyr Wayfinder",
+    "set": "bng",
+    "type_line": "Card"
+  },
+  "bok/104": {
+    "collector_number": "104",
+    "image": "https://api.scryfall.com/cards/bok/104?format=image&version=border_crop",
+    "mana_cost": "{2}{R}{R}",
+    "name": "Fumiko the Lowblood",
+    "set": "bok",
+    "type_line": "Legendary Creature — Human Samurai"
+  },
+  "bok/44": {
+    "collector_number": "44",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ninja of the Deep Hours",
+    "set": "bok",
+    "type_line": "Card"
+  },
+  "brc/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Urza, Chief Artificer",
+    "set": "brc",
+    "type_line": "Card"
+  },
+  "brc/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scholar of New Horizons",
+    "set": "brc",
+    "type_line": "Card"
+  },
+  "bro/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Loran of the Third Path",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "bro/199": {
+    "collector_number": "199",
+    "image": "",
+    "mana_cost": "",
+    "name": "Haywire Mite",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "bro/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Recommission",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "bro/225": {
+    "collector_number": "225",
+    "image": "https://api.scryfall.com/cards/bro/225?format=image&version=border_crop",
+    "mana_cost": "{1}{W}{U}",
+    "name": "Urza, Lord Protector",
+    "set": "bro",
+    "type_line": "Legendary Creature — Human Artificer"
+  },
+  "bro/238": {
+    "collector_number": "238",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Mightstone and Weakstone",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "bro/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Demolition Field",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "bro/265": {
+    "collector_number": "265",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mishra's Foundry",
+    "set": "bro",
+    "type_line": "Card"
+  },
+  "c13/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Sharpshooter",
+    "set": "c13",
+    "type_line": "Card"
+  },
+  "c13/262": {
+    "collector_number": "262",
+    "image": "",
+    "mana_cost": "",
+    "name": "Surveyor's Scope",
+    "set": "c13",
+    "type_line": "Card"
+  },
+  "c13/303": {
+    "collector_number": "303",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kher Keep",
+    "set": "c13",
+    "type_line": "Card"
+  },
+  "c13/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Toxic Deluge",
+    "set": "c13",
+    "type_line": "Card"
+  },
+  "c14/278": {
+    "collector_number": "278",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tormod's Crypt",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Overseer of the Damned",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/282": {
+    "collector_number": "282",
+    "image": "",
+    "mana_cost": "",
+    "name": "Worn Powerstone",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/31": {
+    "collector_number": "31",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wake the Dead",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/34": {
+    "collector_number": "34",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dualcaster Mage",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/50": {
+    "collector_number": "50",
+    "image": "",
+    "mana_cost": "",
+    "name": "Titania, Protector of Argoth",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/60": {
+    "collector_number": "60",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flamekin Village",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/61": {
+    "collector_number": "61",
+    "image": "",
+    "mana_cost": "",
+    "name": "Myriad Landscape",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c14/73": {
+    "collector_number": "73",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gift of Estates",
+    "set": "c14",
+    "type_line": "Card"
+  },
+  "c15/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "Windfall",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/116": {
+    "collector_number": "116",
+    "image": "",
+    "mana_cost": "",
+    "name": "Black Market",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Synthetic Destiny",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dread Summons",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/273": {
+    "collector_number": "273",
+    "image": "",
+    "mana_cost": "",
+    "name": "Urza's Incubator",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/29": {
+    "collector_number": "29",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mizzix's Mastery",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arachnogenesis",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/48": {
+    "collector_number": "48",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mazirek, Kraul Death Priest",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/50": {
+    "collector_number": "50",
+    "image": "https://api.scryfall.com/cards/c15/50?format=image&version=border_crop",
+    "mana_cost": "{2}{U}{R}",
+    "name": "Mizzix of the Izmagnus",
+    "set": "c15",
+    "type_line": "Legendary Creature — Goblin Wizard"
+  },
+  "c15/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blade of Selves",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/55": {
+    "collector_number": "55",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thought Vessel",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/56": {
+    "collector_number": "56",
+    "image": "",
+    "mana_cost": "",
+    "name": "Command Beacon",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c15/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oreskos Explorer",
+    "set": "c15",
+    "type_line": "Card"
+  },
+  "c16/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Benefactor's Draught",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/26": {
+    "collector_number": "26",
+    "image": "",
+    "mana_cost": "",
+    "name": "Akiri, Line-Slinger",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/39": {
+    "collector_number": "39",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ravos, Soultender",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/43": {
+    "collector_number": "43",
+    "image": "",
+    "mana_cost": "",
+    "name": "Silas Renn, Seeker Adept",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/45": {
+    "collector_number": "45",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tana, the Bloodsower",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/48": {
+    "collector_number": "48",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tymna the Weaver",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/49": {
+    "collector_number": "49",
+    "image": "https://api.scryfall.com/cards/c16/49?format=image&version=border_crop",
+    "mana_cost": "{1}{B}{R}",
+    "name": "Vial Smasher the Fierce",
+    "set": "c16",
+    "type_line": "Legendary Creature — Goblin Berserker"
+  },
+  "c16/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Deepglow Skate",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c16/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faerie Artisans",
+    "set": "c16",
+    "type_line": "Card"
+  },
+  "c17/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Curse of Opulence",
+    "set": "c17",
+    "type_line": "Card"
+  },
+  "c17/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Disrupt Decorum",
+    "set": "c17",
+    "type_line": "Card"
+  },
+  "c17/34": {
+    "collector_number": "34",
+    "image": "",
+    "mana_cost": "",
+    "name": "Traverse the Outlands",
+    "set": "c17",
+    "type_line": "Card"
+  },
+  "c17/50": {
+    "collector_number": "50",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bloodforged Battle-Axe",
+    "set": "c17",
+    "type_line": "Card"
+  },
+  "c17/56": {
+    "collector_number": "56",
+    "image": "",
+    "mana_cost": "",
+    "name": "Path of Ancestry",
+    "set": "c17",
+    "type_line": "Card"
+  },
+  "c18/119": {
+    "collector_number": "119",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stitch Together",
+    "set": "c18",
+    "type_line": "Card"
+  },
+  "c18/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Loyal Apprentice",
+    "set": "c18",
+    "type_line": "Card"
+  },
+  "c18/48": {
+    "collector_number": "48",
+    "image": "https://api.scryfall.com/cards/c18/48?format=image&version=border_crop",
+    "mana_cost": "{1}{W}{U}{B}",
+    "name": "Varina, Lich Queen",
+    "set": "c18",
+    "type_line": "Legendary Creature — Zombie Wizard"
+  },
+  "c18/53": {
+    "collector_number": "53",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ancient Stone Idol",
+    "set": "c18",
+    "type_line": "Card"
+  },
+  "c19/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bone Miser",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "K'rrik, Son of Yawgmoth",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thieving Amalgam",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/224": {
+    "collector_number": "224",
+    "image": "",
+    "mana_cost": "",
+    "name": "Strionic Resonator",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dockside Extortionist",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/38": {
+    "collector_number": "38",
+    "image": "https://api.scryfall.com/cards/c19/38?format=image&version=border_crop",
+    "mana_cost": "{1}{R}{G}{W}",
+    "name": "Atla Palani, Nest Tender",
+    "set": "c19",
+    "type_line": "Legendary Creature — Human Shaman"
+  },
+  "c19/39": {
+    "collector_number": "39",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chainer, Nightmare Adept",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c19/43": {
+    "collector_number": "43",
+    "image": "",
+    "mana_cost": "",
+    "name": "Greven, Predator Captain",
+    "set": "c19",
+    "type_line": "Card"
+  },
+  "c20/11": {
+    "collector_number": "11",
+    "image": "https://api.scryfall.com/cards/c20/11?format=image&version=border_crop",
+    "mana_cost": "{R}{W}{B}",
+    "name": "Kelsien, the Plague",
+    "set": "c20",
+    "type_line": "Legendary Creature — Human Assassin"
+  },
+  "c20/13": {
+    "collector_number": "13",
+    "image": "https://api.scryfall.com/cards/c20/13?format=image&version=border_crop",
+    "mana_cost": "{3}{R}{G}",
+    "name": "Pako, Arcane Retriever",
+    "set": "c20",
+    "type_line": "Legendary Creature — Elemental Dog"
+  },
+  "c20/14": {
+    "collector_number": "14",
+    "image": "https://api.scryfall.com/cards/c20/14?format=image&version=border_crop",
+    "mana_cost": "{3}{W}{U}",
+    "name": "Shabraz, the Skyshark",
+    "set": "c20",
+    "type_line": "Legendary Creature — Shark Bird"
+  },
+  "c20/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Crop Rotation",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/19": {
+    "collector_number": "19",
+    "image": "https://api.scryfall.com/cards/c20/19?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{W}",
+    "name": "Yannik, Scavenging Sentinel",
+    "set": "c20",
+    "type_line": "Legendary Creature — Hyena Beast"
+  },
+  "c20/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Haldan, Avid Arcanist",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Call the Coppercoats",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/237": {
+    "collector_number": "237",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arcane Signet",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Martial Impetus",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nikara, Lair Scavenger",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brallin, Skyshark Rider",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fireflux Squad",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c20/54": {
+    "collector_number": "54",
+    "image": "",
+    "mana_cost": "",
+    "name": "Molten Echoes",
+    "set": "c20",
+    "type_line": "Card"
+  },
+  "c21/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Angel of the Ruins",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archaeomancer's Map",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/13": {
+    "collector_number": "13",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bronze Guardian",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Losheel, Clockwork Scholar",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/26": {
+    "collector_number": "26",
+    "image": "",
+    "mana_cost": "",
+    "name": "Deekah, Fractal Theorist",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/323": {
+    "collector_number": "323",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Malady",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/373": {
+    "collector_number": "373",
+    "image": "",
+    "mana_cost": "",
+    "name": "Veinwitch Coven",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/55": {
+    "collector_number": "55",
+    "image": "https://api.scryfall.com/cards/c21/55?format=image&version=border_crop",
+    "mana_cost": "{3}{R}{R}",
+    "name": "Rionya, Fire Dancer",
+    "set": "c21",
+    "type_line": "Legendary Creature — Human Wizard"
+  },
+  "c21/57": {
+    "collector_number": "57",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ruin Grinder",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/59": {
+    "collector_number": "59",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blossoming Bogbeast",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Alibou, Ancient Witness",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Inkshield",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Osgir, the Reconstructor",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "c21/81": {
+    "collector_number": "81",
+    "image": "",
+    "mana_cost": "",
+    "name": "Witch's Clinic",
+    "set": "c21",
+    "type_line": "Card"
+  },
+  "cc2/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ophiomancer",
+    "set": "cc2",
+    "type_line": "Card"
+  },
+  "chk/122": {
+    "collector_number": "122",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kokusho, the Evening Star",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/210": {
+    "collector_number": "210",
+    "image": "",
+    "mana_cost": "",
+    "name": "Glimpse of Nature",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/239": {
+    "collector_number": "239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sakura-Tribe Elder",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kusari-Gama",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/275": {
+    "collector_number": "275",
+    "image": "",
+    "mana_cost": "",
+    "name": "Eiganjo Castle",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/279": {
+    "collector_number": "279",
+    "image": "",
+    "mana_cost": "",
+    "name": "Minamo, School at Water's Edge",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "chk/282": {
+    "collector_number": "282",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shinka, the Bloodsoaked Keep",
+    "set": "chk",
+    "type_line": "Card"
+  },
+  "clb/116": {
+    "collector_number": "116",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blood Money",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/125": {
+    "collector_number": "125",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elder Brain",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/191": {
+    "collector_number": "191",
+    "image": "",
+    "mana_cost": "",
+    "name": "Patron of the Arts",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/206": {
+    "collector_number": "206",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wild Magic Surge",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/266": {
+    "collector_number": "266",
+    "image": "https://api.scryfall.com/cards/clb/266?format=image&version=border_crop",
+    "mana_cost": "{1}{B}{G}",
+    "name": "Baba Lysaga, Night Witch",
+    "set": "clb",
+    "type_line": "Legendary Creature — Human Warlock"
+  },
+  "clb/282": {
+    "collector_number": "282",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mahadi, Emporium Master",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/63": {
+    "collector_number": "63",
+    "image": "",
+    "mana_cost": "",
+    "name": "Displacer Kitten",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/664": {
+    "collector_number": "664",
+    "image": "",
+    "mana_cost": "",
+    "name": "Astral Dragon",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/667": {
+    "collector_number": "667",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mocking Doppelganger",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/676": {
+    "collector_number": "676",
+    "image": "",
+    "mana_cost": "",
+    "name": "Delayed Blast Fireball",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clb/84": {
+    "collector_number": "84",
+    "image": "",
+    "mana_cost": "",
+    "name": "Moonshae Pixie",
+    "set": "clb",
+    "type_line": "Card"
+  },
+  "clu/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aegis of the Legion",
+    "set": "clu",
+    "type_line": "Card"
+  },
+  "cm2/101": {
+    "collector_number": "101",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Welder",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/113": {
+    "collector_number": "113",
+    "image": "",
+    "mana_cost": "",
+    "name": "Magus of the Wheel",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ishai, Ojutai Dragonspeaker",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vorel of the Hull Clade",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/195": {
+    "collector_number": "195",
+    "image": "",
+    "mana_cost": "",
+    "name": "Junk Diver",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/59": {
+    "collector_number": "59",
+    "image": "",
+    "mana_cost": "",
+    "name": "Buried Alive",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cm2/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Feldon of the Third Path",
+    "set": "cm2",
+    "type_line": "Card"
+  },
+  "cma/186": {
+    "collector_number": "186",
+    "image": "",
+    "mana_cost": "",
+    "name": "Meren of Clan Nel Toth",
+    "set": "cma",
+    "type_line": "Card"
+  },
+  "cmd/114": {
+    "collector_number": "114",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chaos Warp",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Insurrection",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brawn",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/170": {
+    "collector_number": "170",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scavenging Ooze",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/179": {
+    "collector_number": "179",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yavimaya Elder",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/182": {
+    "collector_number": "182",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aura Shards",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/207": {
+    "collector_number": "207",
+    "image": "",
+    "mana_cost": "",
+    "name": "Karador, Ghost Chieftain",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/236": {
+    "collector_number": "236",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vulturous Zombie",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmd/269": {
+    "collector_number": "269",
+    "image": "",
+    "mana_cost": "",
+    "name": "Command Tower",
+    "set": "cmd",
+    "type_line": "Card"
+  },
+  "cmm/39": {
+    "collector_number": "39",
+    "image": "",
+    "mana_cost": "",
+    "name": "Loyal Retainers",
+    "set": "cmm",
+    "type_line": "Card"
+  },
+  "cmm/42": {
+    "collector_number": "42",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mangara, the Diplomat",
+    "set": "cmm",
+    "type_line": "Card"
+  },
+  "cmm/841": {
+    "collector_number": "841",
+    "image": "",
+    "mana_cost": "",
+    "name": "Swords to Plowshares",
+    "set": "cmm",
+    "type_line": "Card"
+  },
+  "cmr/187": {
+    "collector_number": "187",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jeska's Will",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/188": {
+    "collector_number": "188",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kediss, Emberclaw Familiar",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/217": {
+    "collector_number": "217",
+    "image": "",
+    "mana_cost": "",
+    "name": "Apex Devastator",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/27": {
+    "collector_number": "27",
+    "image": "",
+    "mana_cost": "",
+    "name": "Keeper of the Accord",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/278": {
+    "collector_number": "278",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hamza, Guardian of Arashin",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/285": {
+    "collector_number": "285",
+    "image": "https://api.scryfall.com/cards/cmr/285?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{W}",
+    "name": "Lathiel, the Bounteous Dawn",
+    "set": "cmr",
+    "type_line": "Legendary Creature — Unicorn"
+  },
+  "cmr/288": {
+    "collector_number": "288",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nymris, Oona's Trickster",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Akroma's Will",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/362": {
+    "collector_number": "362",
+    "image": "https://api.scryfall.com/cards/cmr/362?format=image&version=border_crop",
+    "mana_cost": "{1}{R}{W}",
+    "name": "Wyleth, Soul of Steel",
+    "set": "cmr",
+    "type_line": "Legendary Creature — Human Warrior"
+  },
+  "cmr/630": {
+    "collector_number": "630",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arcane Denial",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cmr/686": {
+    "collector_number": "686",
+    "image": "",
+    "mana_cost": "",
+    "name": "Three Visits",
+    "set": "cmr",
+    "type_line": "Card"
+  },
+  "cn2/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Berserk",
+    "set": "cn2",
+    "type_line": "Card"
+  },
+  "cn2/54": {
+    "collector_number": "54",
+    "image": "",
+    "mana_cost": "",
+    "name": "Grenzo, Havoc Raiser",
+    "set": "cn2",
+    "type_line": "Card"
+  },
+  "cn2/70": {
+    "collector_number": "70",
+    "image": "",
+    "mana_cost": "",
+    "name": "Selvala, Heart of the Wilds",
+    "set": "cn2",
+    "type_line": "Card"
+  },
+  "cn2/73": {
+    "collector_number": "73",
+    "image": "https://api.scryfall.com/cards/cn2/73?format=image&version=border_crop",
+    "mana_cost": "{3}{R}{W}",
+    "name": "Adriana, Captain of the Guard",
+    "set": "cn2",
+    "type_line": "Legendary Creature — Human Knight"
+  },
+  "cns/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Council's Judgment",
+    "set": "cns",
+    "type_line": "Card"
+  },
+  "cns/164": {
+    "collector_number": "164",
+    "image": "",
+    "mana_cost": "",
+    "name": "Exploration",
+    "set": "cns",
+    "type_line": "Card"
+  },
+  "cns/17": {
+    "collector_number": "17",
+    "image": "",
+    "mana_cost": "",
+    "name": "Custodi Soulbinders",
+    "set": "cns",
+    "type_line": "Card"
+  },
+  "cns/196": {
+    "collector_number": "196",
+    "image": "",
+    "mana_cost": "",
+    "name": "Altar of Dementia",
+    "set": "cns",
+    "type_line": "Card"
+  },
+  "cns/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Marchesa, the Black Rose",
+    "set": "cns",
+    "type_line": "Card"
+  },
+  "con/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Armillary Sphere",
+    "set": "con",
+    "type_line": "Card"
+  },
+  "con/143": {
+    "collector_number": "143",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reliquary Tower",
+    "set": "con",
+    "type_line": "Card"
+  },
+  "con/31": {
+    "collector_number": "31",
+    "image": "",
+    "mana_cost": "",
+    "name": "Master Transmuter",
+    "set": "con",
+    "type_line": "Card"
+  },
+  "con/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rotting Rats",
+    "set": "con",
+    "type_line": "Card"
+  },
+  "con/58": {
+    "collector_number": "58",
+    "image": "",
+    "mana_cost": "",
+    "name": "Banefire",
+    "set": "con",
+    "type_line": "Card"
+  },
+  "csp/1": {
+    "collector_number": "1",
+    "image": "",
+    "mana_cost": "",
+    "name": "Adarkar Valkyrie",
+    "set": "csp",
+    "type_line": "Card"
+  },
+  "csp/138": {
+    "collector_number": "138",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mishra's Bauble",
+    "set": "csp",
+    "type_line": "Card"
+  },
+  "csp/41": {
+    "collector_number": "41",
+    "image": "",
+    "mana_cost": "",
+    "name": "Perilous Research",
+    "set": "csp",
+    "type_line": "Card"
+  },
+  "dci/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oona's Blackguard",
+    "set": "dci",
+    "type_line": "Card"
+  },
+  "dci/69": {
+    "collector_number": "69",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fling",
+    "set": "dci",
+    "type_line": "Card"
+  },
+  "ddj/45": {
+    "collector_number": "45",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jarad, Golgari Lich Lord",
+    "set": "ddj",
+    "type_line": "Card"
+  },
+  "ddq/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Eerie Interlude",
+    "set": "ddq",
+    "type_line": "Card"
+  },
+  "dft/120": {
+    "collector_number": "120",
+    "image": "",
+    "mana_cost": "",
+    "name": "Daretti, Rocketeer Engineer",
+    "set": "dft",
+    "type_line": "Card"
+  },
+  "dft/194": {
+    "collector_number": "194",
+    "image": "",
+    "mana_cost": "",
+    "name": "Captain Howler, Sea Scourge",
+    "set": "dft",
+    "type_line": "Card"
+  },
+  "dft/237": {
+    "collector_number": "237",
+    "image": "",
+    "mana_cost": "",
+    "name": "Monument to Endurance",
+    "set": "dft",
+    "type_line": "Card"
+  },
+  "dgm/99": {
+    "collector_number": "99",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ruric Thar, the Unbowed",
+    "set": "dgm",
+    "type_line": "Card"
+  },
+  "dis/159": {
+    "collector_number": "159",
+    "image": "",
+    "mana_cost": "",
+    "name": "Azorius Signet",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/165": {
+    "collector_number": "165",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rakdos Signet",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/166": {
+    "collector_number": "166",
+    "image": "",
+    "mana_cost": "",
+    "name": "Simic Signet",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/171": {
+    "collector_number": "171",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blood Crypt",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Breeding Pool",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/174": {
+    "collector_number": "174",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hallowed Fountain",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dis/73": {
+    "collector_number": "73",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stalking Vengeance",
+    "set": "dis",
+    "type_line": "Card"
+  },
+  "dka/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Increasing Devotion",
+    "set": "dka",
+    "type_line": "Card"
+  },
+  "dka/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thraben Doomsayer",
+    "set": "dka",
+    "type_line": "Card"
+  },
+  "dka/64": {
+    "collector_number": "64",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gravecrawler",
+    "set": "dka",
+    "type_line": "Card"
+  },
+  "dka/87": {
+    "collector_number": "87",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faithless Looting",
+    "set": "dka",
+    "type_line": "Card"
+  },
+  "dka/93": {
+    "collector_number": "93",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hellrider",
+    "set": "dka",
+    "type_line": "Card"
+  },
+  "dmc/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kodama's Reach",
+    "set": "dmc",
+    "type_line": "Card"
+  },
+  "dmc/236": {
+    "collector_number": "236",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Malice",
+    "set": "dmc",
+    "type_line": "Card"
+  },
+  "dmc/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Reaver Cleaver",
+    "set": "dmc",
+    "type_line": "Card"
+  },
+  "dmr/251": {
+    "collector_number": "251",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mishra's Factory",
+    "set": "dmr",
+    "type_line": "Card"
+  },
+  "dmr/310": {
+    "collector_number": "310",
+    "image": "",
+    "mana_cost": "",
+    "name": "Royal Assassin",
+    "set": "dmr",
+    "type_line": "Card"
+  },
+  "dmr/66": {
+    "collector_number": "66",
+    "image": "",
+    "mana_cost": "",
+    "name": "Snap",
+    "set": "dmr",
+    "type_line": "Card"
+  },
+  "dmu/144": {
+    "collector_number": "144",
+    "image": "",
+    "mana_cost": "",
+    "name": "Smash to Dust",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/160": {
+    "collector_number": "160",
+    "image": "",
+    "mana_cost": "",
+    "name": "Defiler of Vigor",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/167": {
+    "collector_number": "167",
+    "image": "",
+    "mana_cost": "",
+    "name": "Leaf-Crowned Visionary",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/198": {
+    "collector_number": "198",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elas il-Kor, Sadistic Pilgrim",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/202": {
+    "collector_number": "202",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jhoira, Ageless Innovator",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/236": {
+    "collector_number": "236",
+    "image": "",
+    "mana_cost": "",
+    "name": "Relic of Legends",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Serra Paragon",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/54": {
+    "collector_number": "54",
+    "image": "",
+    "mana_cost": "",
+    "name": "Impede Momentum",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/89": {
+    "collector_number": "89",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cut Down",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dmu/90": {
+    "collector_number": "90",
+    "image": "",
+    "mana_cost": "",
+    "name": "Defiler of Flesh",
+    "set": "dmu",
+    "type_line": "Card"
+  },
+  "dom/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Evra, Halcyon Witness",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Marwyn, the Nurturer",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/194": {
+    "collector_number": "194",
+    "image": "",
+    "mana_cost": "",
+    "name": "Garna, the Bloodflame",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/211": {
+    "collector_number": "211",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blackblade Reforged",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/217": {
+    "collector_number": "217",
+    "image": "",
+    "mana_cost": "",
+    "name": "Helm of the Host",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/36": {
+    "collector_number": "36",
+    "image": "",
+    "mana_cost": "",
+    "name": "Teshar, Ancestor's Apostle",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "dom/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Board the Weatherlight",
+    "set": "dom",
+    "type_line": "Card"
+  },
+  "drc/1": {
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/drc/1?format=image&version=border_crop",
+    "mana_cost": "{W}{B}",
+    "name": "Hashaton, Scarab's Fist",
+    "set": "drc",
+    "type_line": "Legendary Creature — Zombie Wizard"
+  },
+  "drc/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lost Monarch of Ifnir",
+    "set": "drc",
+    "type_line": "Card"
+  },
+  "drc/19": {
+    "collector_number": "19",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stridehangar Automaton",
+    "set": "drc",
+    "type_line": "Card"
+  },
+  "drc/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Priest of the Crossing",
+    "set": "drc",
+    "type_line": "Card"
+  },
+  "drc/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Prophet of the Scarab",
+    "set": "drc",
+    "type_line": "Card"
+  },
+  "dsc/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kianne, Corrupted Memory",
+    "set": "dsc",
+    "type_line": "Card"
+  },
+  "dsc/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Into the Pit",
+    "set": "dsc",
+    "type_line": "Card"
+  },
+  "dsc/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Metamorphosis Fanatic",
+    "set": "dsc",
+    "type_line": "Card"
+  },
+  "dsc/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aminatou's Augury",
+    "set": "dsc",
+    "type_line": "Card"
+  },
+  "dsk/133": {
+    "collector_number": "133",
+    "image": "",
+    "mana_cost": "",
+    "name": "Enduring Courage",
+    "set": "dsk",
+    "type_line": "Card"
+  },
+  "dsk/135": {
+    "collector_number": "135",
+    "image": "https://cards.scryfall.io/border_crop/front/b/2/b282f8e3-8b79-47e9-8c18-62284211442b.jpg?1783909470",
+    "mana_cost": "{4}{R}{R}",
+    "name": "Fear of Burning Alive",
+    "set": "dsk",
+    "type_line": "Enchantment Creature — Nightmare"
+  },
+  "dsk/153": {
+    "collector_number": "153",
+    "image": "",
+    "mana_cost": "",
+    "name": "Razorkin Needlehead",
+    "set": "dsk",
+    "type_line": "Card"
+  },
+  "dsk/208": {
+    "collector_number": "208",
+    "image": "https://api.scryfall.com/cards/dsk/208?format=image&version=border_crop",
+    "mana_cost": "{R}{W}",
+    "name": "Arabella, Abandoned Doll",
+    "set": "dsk",
+    "type_line": "Legendary Artifact Creature — Toy"
+  },
+  "dsk/224": {
+    "collector_number": "224",
+    "image": "https://api.scryfall.com/cards/dsk/224?format=image&version=border_crop",
+    "mana_cost": "{2}{W}{U}",
+    "name": "Niko, Light of Hope",
+    "set": "dsk",
+    "type_line": "Legendary Creature — Human Wizard"
+  },
+  "dsk/271": {
+    "collector_number": "271",
+    "image": "",
+    "mana_cost": "",
+    "name": "Valgavoth's Lair",
+    "set": "dsk",
+    "type_line": "Card"
+  },
+  "dst/110": {
+    "collector_number": "110",
+    "image": "",
+    "mana_cost": "",
+    "name": "Darksteel Forge",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dst/140": {
+    "collector_number": "140",
+    "image": "",
+    "mana_cost": "",
+    "name": "Skullclamp",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dst/159": {
+    "collector_number": "159",
+    "image": "",
+    "mana_cost": "",
+    "name": "Well of Lost Dreams",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dst/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blinkmoth Nexus",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dst/164": {
+    "collector_number": "164",
+    "image": "",
+    "mana_cost": "",
+    "name": "Darksteel Citadel",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dst/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Echoing Truth",
+    "set": "dst",
+    "type_line": "Card"
+  },
+  "dtk/136": {
+    "collector_number": "136",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dragon Tempest",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "dtk/140": {
+    "collector_number": "140",
+    "image": "",
+    "mana_cost": "",
+    "name": "Impact Tremors",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "dtk/177": {
+    "collector_number": "177",
+    "image": "",
+    "mana_cost": "",
+    "name": "Collected Company",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "dtk/217": {
+    "collector_number": "217",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dragonlord Dromoka",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "dtk/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dragonlord Ojutai",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "dtk/41": {
+    "collector_number": "41",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sunscorch Regent",
+    "set": "dtk",
+    "type_line": "Card"
+  },
+  "e01/90": {
+    "collector_number": "90",
+    "image": "https://cards.scryfall.io/border_crop/front/4/3/43ec73b2-4215-4e30-ad6d-1764879030f4.jpg?1783936135",
+    "mana_cost": "{2}",
+    "name": "Talisman of Dominance",
+    "set": "e01",
+    "type_line": "Artifact"
+  },
+  "e01/91": {
+    "collector_number": "91",
+    "image": "https://cards.scryfall.io/border_crop/front/2/4/243253fb-5fca-401f-9363-c152a5943e13.jpg?1783936133",
+    "mana_cost": "{2}",
+    "name": "Talisman of Indulgence",
+    "set": "e01",
+    "type_line": "Artifact"
+  },
+  "eld/101": {
+    "collector_number": "101",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rankle, Master of Pranks",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/160": {
+    "collector_number": "160",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gilded Goose",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/161": {
+    "collector_number": "161",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Great Henge",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Return of the Wildspeaker",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/173": {
+    "collector_number": "173",
+    "image": "",
+    "mana_cost": "",
+    "name": "Return to Nature",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "All That Glitters",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/244": {
+    "collector_number": "244",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fabled Passage",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/247": {
+    "collector_number": "247",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mystic Sanctuary",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/329": {
+    "collector_number": "329",
+    "image": "",
+    "mana_cost": "",
+    "name": "Korvold, Fae-Cursed King",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/39": {
+    "collector_number": "39",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brazen Borrower",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/43": {
+    "collector_number": "43",
+    "image": "https://api.scryfall.com/cards/eld/43?format=image&version=border_crop",
+    "mana_cost": "{2}{U}",
+    "name": "Emry, Lurker of the Loch",
+    "set": "eld",
+    "type_line": "Legendary Creature — Merfolk Wizard"
+  },
+  "eld/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hypnotic Sprite",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/66": {
+    "collector_number": "66",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stolen by the Fae",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Charming Prince",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "eld/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Murderous Rider",
+    "set": "eld",
+    "type_line": "Card"
+  },
+  "ema/148": {
+    "collector_number": "148",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sneak Attack",
+    "set": "ema",
+    "type_line": "Card"
+  },
+  "ema/218": {
+    "collector_number": "218",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ashnod's Altar",
+    "set": "ema",
+    "type_line": "Card"
+  },
+  "emn/171": {
+    "collector_number": "171",
+    "image": "",
+    "mana_cost": "",
+    "name": "Splendid Reclamation",
+    "set": "emn",
+    "type_line": "Card"
+  },
+  "emn/41": {
+    "collector_number": "41",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sigarda's Aid",
+    "set": "emn",
+    "type_line": "Card"
+  },
+  "emn/70": {
+    "collector_number": "70",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mind's Dilation",
+    "set": "emn",
+    "type_line": "Card"
+  },
+  "emn/72": {
+    "collector_number": "72",
+    "image": "",
+    "mana_cost": "",
+    "name": "Niblis of Frost",
+    "set": "emn",
+    "type_line": "Card"
+  },
+  "emn/98": {
+    "collector_number": "98",
+    "image": "",
+    "mana_cost": "",
+    "name": "Noosegraf Mob",
+    "set": "emn",
+    "type_line": "Card"
+  },
+  "eoc/19": {
+    "collector_number": "19",
+    "image": "",
+    "mana_cost": "",
+    "name": "Surge Conductor",
+    "set": "eoc",
+    "type_line": "Card"
+  },
+  "eoe/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Exalted Sunborn",
+    "set": "eoe",
+    "type_line": "Card"
+  },
+  "eoe/84": {
+    "collector_number": "84",
+    "image": "",
+    "mana_cost": "",
+    "name": "Uthros Psionicist",
+    "set": "eoe",
+    "type_line": "Card"
+  },
+  "eoe/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cosmogrand Zenith",
+    "set": "eoe",
+    "type_line": "Card"
+  },
+  "eve/171": {
+    "collector_number": "171",
+    "image": "",
+    "mana_cost": "",
+    "name": "Leering Emblem",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cascade Bluffs",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fetid Heath",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/177": {
+    "collector_number": "177",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flooded Grove",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/178": {
+    "collector_number": "178",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rugged Prairie",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/180": {
+    "collector_number": "180",
+    "image": "",
+    "mana_cost": "",
+    "name": "Twilight Mire",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Glen Elendra Archmage",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/53": {
+    "collector_number": "53",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flame Jab",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "eve/66": {
+    "collector_number": "66",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bloom Tender",
+    "set": "eve",
+    "type_line": "Card"
+  },
+  "f10/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Visionary",
+    "set": "f10",
+    "type_line": "Card"
+  },
+  "f11/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Go for the Throat",
+    "set": "f11",
+    "type_line": "Card"
+  },
+  "f12/10": {
+    "collector_number": "10",
+    "image": "",
+    "mana_cost": "",
+    "name": "Evolving Wilds",
+    "set": "f12",
+    "type_line": "Card"
+  },
+  "f12/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Acidic Slime",
+    "set": "f12",
+    "type_line": "Card"
+  },
+  "f12/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Forbidden Alchemy",
+    "set": "f12",
+    "type_line": "Card"
+  },
+  "f15/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hordeling Outburst",
+    "set": "f15",
+    "type_line": "Card"
+  },
+  "f17/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reverse Engineer",
+    "set": "f17",
+    "type_line": "Card"
+  },
+  "fdn/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Exemplar of Light",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "Quilled Greatwurm",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/122": {
+    "collector_number": "122",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kykar, Zephyr Awakener",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/132": {
+    "collector_number": "132",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scrawling Crawler",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/257": {
+    "collector_number": "257",
+    "image": "",
+    "mana_cost": "",
+    "name": "Solemn Simulacrum",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/323": {
+    "collector_number": "323",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rise of the Dark Realms",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/38": {
+    "collector_number": "38",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faebloom Trick",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/40": {
+    "collector_number": "40",
+    "image": "",
+    "mana_cost": "",
+    "name": "High Fae Trickster",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/45": {
+    "collector_number": "45",
+    "image": "https://cards.scryfall.io/border_crop/front/8/3/83f20a32-9f5d-4a68-8995-549e57554da2.jpg?1783909116",
+    "mana_cost": "{2}{U}",
+    "name": "Kiora, the Rising Tide",
+    "set": "fdn",
+    "type_line": "Legendary Creature — Merfolk Noble"
+  },
+  "fdn/482": {
+    "collector_number": "482",
+    "image": "",
+    "mana_cost": "",
+    "name": "Niv-Mizzet, Visionary",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fdn/92": {
+    "collector_number": "92",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rite of the Dragoncaller",
+    "set": "fdn",
+    "type_line": "Card"
+  },
+  "fic/285": {
+    "collector_number": "285",
+    "image": "",
+    "mana_cost": "",
+    "name": "Snuff Out",
+    "set": "fic",
+    "type_line": "Card"
+  },
+  "fic/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hraesvelgr of the First Brood",
+    "set": "fic",
+    "type_line": "Card"
+  },
+  "fic/39": {
+    "collector_number": "39",
+    "image": "",
+    "mana_cost": "",
+    "name": "O'aka, Traveling Merchant",
+    "set": "fic",
+    "type_line": "Card"
+  },
+  "fic/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rejoin the Fight",
+    "set": "fic",
+    "type_line": "Card"
+  },
+  "fic/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Siegfried, Famed Swordsman",
+    "set": "fic",
+    "type_line": "Card"
+  },
+  "fin/214": {
+    "collector_number": "214",
+    "image": "",
+    "mana_cost": "",
+    "name": "Black Waltz No. 3",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "fin/255": {
+    "collector_number": "255",
+    "image": "",
+    "mana_cost": "",
+    "name": "Buster Sword",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "fin/283": {
+    "collector_number": "283",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ishgard, the Holy See",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "fin/285": {
+    "collector_number": "285",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lindblum, Industrial Regency",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "fin/30": {
+    "collector_number": "30",
+    "image": "",
+    "mana_cost": "",
+    "name": "Restoration Magic",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "fin/61": {
+    "collector_number": "61",
+    "image": "",
+    "mana_cost": "",
+    "name": "Magic Damper",
+    "set": "fin",
+    "type_line": "Card"
+  },
+  "frf/104": {
+    "collector_number": "104",
+    "image": "",
+    "mana_cost": "",
+    "name": "Humble Defector",
+    "set": "frf",
+    "type_line": "Card"
+  },
+  "frf/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Monastery Mentor",
+    "set": "frf",
+    "type_line": "Card"
+  },
+  "frf/27": {
+    "collector_number": "27",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soulfire Grand Master",
+    "set": "frf",
+    "type_line": "Card"
+  },
+  "frf/66": {
+    "collector_number": "66",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dark Deal",
+    "set": "frf",
+    "type_line": "Card"
+  },
+  "g10/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wheel of Fortune",
+    "set": "g10",
+    "type_line": "Card"
+  },
+  "gn3/2": {
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/gn3/2?format=image&version=border_crop",
+    "mana_cost": "{2}{U}{U}",
+    "name": "Maeve, Insidious Singer",
+    "set": "gn3",
+    "type_line": "Legendary Creature — Siren"
+  },
+  "gn3/5": {
+    "collector_number": "5",
+    "image": "https://api.scryfall.com/cards/gn3/5?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{G}",
+    "name": "Imaryll, Elfhame Elite",
+    "set": "gn3",
+    "type_line": "Legendary Creature — Elf Warrior"
+  },
+  "gpt/150": {
+    "collector_number": "150",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gruul Signet",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "gpt/152": {
+    "collector_number": "152",
+    "image": "",
+    "mana_cost": "",
+    "name": "Izzet Signet",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "gpt/155": {
+    "collector_number": "155",
+    "image": "",
+    "mana_cost": "",
+    "name": "Orzhov Signet",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "gpt/157": {
+    "collector_number": "157",
+    "image": "",
+    "mana_cost": "",
+    "name": "Godless Shrine",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "gpt/164": {
+    "collector_number": "164",
+    "image": "",
+    "mana_cost": "",
+    "name": "Steam Vents",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "gpt/165": {
+    "collector_number": "165",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stomping Ground",
+    "set": "gpt",
+    "type_line": "Card"
+  },
+  "grn/115": {
+    "collector_number": "115",
+    "image": "",
+    "mana_cost": "",
+    "name": "Runaway Steam-Kin",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "grn/123": {
+    "collector_number": "123",
+    "image": "",
+    "mana_cost": "",
+    "name": "Beast Whisperer",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "grn/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bounty Agent",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "grn/259": {
+    "collector_number": "259",
+    "image": "",
+    "mana_cost": "",
+    "name": "Watery Grave",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "grn/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Quasiduplicate",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "grn/77": {
+    "collector_number": "77",
+    "image": "",
+    "mana_cost": "",
+    "name": "Midnight Reaper",
+    "set": "grn",
+    "type_line": "Card"
+  },
+  "gtc/101": {
+    "collector_number": "101",
+    "image": "",
+    "mana_cost": "",
+    "name": "Molten Primordial",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Frontline Medic",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/123": {
+    "collector_number": "123",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gyre Sage",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Master Biomancer",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/178": {
+    "collector_number": "178",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mind Grind",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/188": {
+    "collector_number": "188",
+    "image": "",
+    "mana_cost": "",
+    "name": "Prime Speaker Zegana",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gift of Orzhova",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/231": {
+    "collector_number": "231",
+    "image": "",
+    "mana_cost": "",
+    "name": "Illusionist's Bracers",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/29": {
+    "collector_number": "29",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aetherize",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Angelic Skirmisher",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/33": {
+    "collector_number": "33",
+    "image": "",
+    "mana_cost": "",
+    "name": "Diluvian Primordial",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hands of Binding",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gtc/75": {
+    "collector_number": "75",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sepulchral Primordial",
+    "set": "gtc",
+    "type_line": "Card"
+  },
+  "gvl/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rancor",
+    "set": "gvl",
+    "type_line": "Card"
+  },
+  "hop/56": {
+    "collector_number": "56",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Offensive",
+    "set": "hop",
+    "type_line": "Card"
+  },
+  "hou/139": {
+    "collector_number": "139",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Locust God",
+    "set": "hou",
+    "type_line": "Card"
+  },
+  "hou/145": {
+    "collector_number": "145",
+    "image": "https://api.scryfall.com/cards/hou/145?format=image&version=border_crop",
+    "mana_cost": "{3}{U}{B}",
+    "name": "The Scarab God",
+    "set": "hou",
+    "type_line": "Legendary Creature — God"
+  },
+  "hou/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Abrade",
+    "set": "hou",
+    "type_line": "Card"
+  },
+  "hou/92": {
+    "collector_number": "92",
+    "image": "",
+    "mana_cost": "",
+    "name": "Firebrand Archer",
+    "set": "hou",
+    "type_line": "Card"
+  },
+  "iko/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fight as One",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/192": {
+    "collector_number": "192",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kinnan, Bonder Prodigy",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/203": {
+    "collector_number": "203",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rielle, the Everwise",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Luminous Broodmoth",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Indatha Triome",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/250": {
+    "collector_number": "250",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ketria Triome",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/251": {
+    "collector_number": "251",
+    "image": "",
+    "mana_cost": "",
+    "name": "Raugrin Triome",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/253": {
+    "collector_number": "253",
+    "image": "",
+    "mana_cost": "",
+    "name": "Savai Triome",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/259": {
+    "collector_number": "259",
+    "image": "",
+    "mana_cost": "",
+    "name": "Zagoth Triome",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/362": {
+    "collector_number": "362",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Ozolith",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/67": {
+    "collector_number": "67",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shark Typhoon",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "iko/73": {
+    "collector_number": "73",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bastion of Remembrance",
+    "set": "iko",
+    "type_line": "Card"
+  },
+  "ima/197": {
+    "collector_number": "197",
+    "image": "",
+    "mana_cost": "",
+    "name": "Corpsejack Menace",
+    "set": "ima",
+    "type_line": "Card"
+  },
+  "ima/65": {
+    "collector_number": "65",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mana Drain",
+    "set": "ima",
+    "type_line": "Card"
+  },
+  "isd/105": {
+    "collector_number": "105",
+    "image": "",
+    "mana_cost": "",
+    "name": "Liliana of the Veil",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/130": {
+    "collector_number": "130",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blasphemous Act",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fiend Hunter",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/199": {
+    "collector_number": "199",
+    "image": "",
+    "mana_cost": "",
+    "name": "Parallel Lives",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mentor of the Meek",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/224": {
+    "collector_number": "224",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghoulcaller's Bell",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/238": {
+    "collector_number": "238",
+    "image": "",
+    "mana_cost": "",
+    "name": "Clifftop Retreat",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/241": {
+    "collector_number": "241",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hinterland Harbor",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/242": {
+    "collector_number": "242",
+    "image": "",
+    "mana_cost": "",
+    "name": "Isolated Chapel",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sulfur Falls",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/249": {
+    "collector_number": "249",
+    "image": "",
+    "mana_cost": "",
+    "name": "Woodland Cemetery",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cackling Counterpart",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "Curiosity",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Champion of the Parish",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rooftop Storm",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/78": {
+    "collector_number": "78",
+    "image": "",
+    "mana_cost": "",
+    "name": "Snapcaster Mage",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Think Twice",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "isd/99": {
+    "collector_number": "99",
+    "image": "",
+    "mana_cost": "",
+    "name": "Endless Ranks of the Dead",
+    "set": "isd",
+    "type_line": "Card"
+  },
+  "j13/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Show and Tell",
+    "set": "j13",
+    "type_line": "Card"
+  },
+  "j16/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Azusa, Lost but Seeking",
+    "set": "j16",
+    "type_line": "Card"
+  },
+  "j25/48": {
+    "collector_number": "48",
+    "image": "",
+    "mana_cost": "",
+    "name": "General Kreat, the Boltbringer",
+    "set": "j25",
+    "type_line": "Card"
+  },
+  "j25/52": {
+    "collector_number": "52",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dionus, Elvish Archdruid",
+    "set": "j25",
+    "type_line": "Card"
+  },
+  "jmp/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kels, Fight Fixer",
+    "set": "jmp",
+    "type_line": "Card"
+  },
+  "jou/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Godsend",
+    "set": "jou",
+    "type_line": "Card"
+  },
+  "jud/43": {
+    "collector_number": "43",
+    "image": "",
+    "mana_cost": "",
+    "name": "Keep Watch",
+    "set": "jud",
+    "type_line": "Card"
+  },
+  "jud/77": {
+    "collector_number": "77",
+    "image": "",
+    "mana_cost": "",
+    "name": "Anger",
+    "set": "jud",
+    "type_line": "Card"
+  },
+  "khc/1": {
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/khc/1?format=image&version=border_crop",
+    "mana_cost": "{2}{B}{G}",
+    "name": "Lathril, Blade of the Elves",
+    "set": "khc",
+    "type_line": "Legendary Creature — Elf Noble"
+  },
+  "khc/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wolverine Riders",
+    "set": "khc",
+    "type_line": "Card"
+  },
+  "khm/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tergrid, God of Fright",
+    "set": "khm",
+    "type_line": "Card"
+  },
+  "khm/167": {
+    "collector_number": "167",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Warmaster",
+    "set": "khm",
+    "type_line": "Card"
+  },
+  "khm/225": {
+    "collector_number": "225",
+    "image": "",
+    "mana_cost": "",
+    "name": "Niko Aris",
+    "set": "khm",
+    "type_line": "Card"
+  },
+  "khm/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Behold the Multiverse",
+    "set": "khm",
+    "type_line": "Card"
+  },
+  "khm/72": {
+    "collector_number": "72",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ravenform",
+    "set": "khm",
+    "type_line": "Card"
+  },
+  "kld/110": {
+    "collector_number": "110",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chandra, Torch of Defiance",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reckless Fireweaver",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/144": {
+    "collector_number": "144",
+    "image": "",
+    "mana_cost": "",
+    "name": "Armorcraft Judge",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/151": {
+    "collector_number": "151",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cultivator of Blades",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/183": {
+    "collector_number": "183",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kambal, Consul of Allocation",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/215": {
+    "collector_number": "215",
+    "image": "",
+    "mana_cost": "",
+    "name": "Foundry Inspector",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Angel of Invention",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/67": {
+    "collector_number": "67",
+    "image": "",
+    "mana_cost": "",
+    "name": "Torrential Gearhulk",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/90": {
+    "collector_number": "90",
+    "image": "",
+    "mana_cost": "",
+    "name": "Marionette Master",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "kld/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Noxious Gearhulk",
+    "set": "kld",
+    "type_line": "Card"
+  },
+  "ktk/109": {
+    "collector_number": "109",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblinslide",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/133": {
+    "collector_number": "133",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hardened Scales",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/199": {
+    "collector_number": "199",
+    "image": "https://api.scryfall.com/cards/ktk/199?format=image&version=border_crop",
+    "mana_cost": "{1}{B}{G}{U}",
+    "name": "Sidisi, Brood Tyrant",
+    "set": "ktk",
+    "type_line": "Legendary Creature — Snake Shaman"
+  },
+  "ktk/2": {
+    "collector_number": "2",
+    "image": "",
+    "mana_cost": "",
+    "name": "Abzan Falconer",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/230": {
+    "collector_number": "230",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bloodstained Mire",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/233": {
+    "collector_number": "233",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flooded Strand",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/239": {
+    "collector_number": "239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Polluted Delta",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Windswept Heath",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/249": {
+    "collector_number": "249",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wooded Foothills",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/36": {
+    "collector_number": "36",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dig Through Time",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "ktk/59": {
+    "collector_number": "59",
+    "image": "",
+    "mana_cost": "",
+    "name": "Treasure Cruise",
+    "set": "ktk",
+    "type_line": "Card"
+  },
+  "lcc/308": {
+    "collector_number": "308",
+    "image": "",
+    "mana_cost": "",
+    "name": "Metallic Mimic",
+    "set": "lcc",
+    "type_line": "Card"
+  },
+  "lcc/5": {
+    "collector_number": "5",
+    "image": "",
+    "mana_cost": "",
+    "name": "Carmen, Cruel Skymarcher",
+    "set": "lcc",
+    "type_line": "Card"
+  },
+  "lcc/70": {
+    "collector_number": "70",
+    "image": "",
+    "mana_cost": "",
+    "name": "Charismatic Conqueror",
+    "set": "lcc",
+    "type_line": "Card"
+  },
+  "lcc/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elenda's Hierophant",
+    "set": "lcc",
+    "type_line": "Card"
+  },
+  "lcc/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Illustrious Wanderglyph",
+    "set": "lcc",
+    "type_line": "Card"
+  },
+  "lci/123": {
+    "collector_number": "123",
+    "image": "",
+    "mana_cost": "",
+    "name": "Starving Revenant",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lci/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tectonic Hazard",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lci/185": {
+    "collector_number": "185",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghalta, Stampede Tyrant",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lci/232": {
+    "collector_number": "232",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kutzil, Malamet Exemplar",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lci/240": {
+    "collector_number": "240",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sovereign Okinec Ahau",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lci/258": {
+    "collector_number": "258",
+    "image": "",
+    "mana_cost": "",
+    "name": "Roaming Throne",
+    "set": "lci",
+    "type_line": "Card"
+  },
+  "lgn/101": {
+    "collector_number": "101",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Lookout",
+    "set": "lgn",
+    "type_line": "Card"
+  },
+  "lgn/121": {
+    "collector_number": "121",
+    "image": "",
+    "mana_cost": "",
+    "name": "Caller of the Claw",
+    "set": "lgn",
+    "type_line": "Card"
+  },
+  "lgn/73": {
+    "collector_number": "73",
+    "image": "",
+    "mana_cost": "",
+    "name": "Graveborn Muse",
+    "set": "lgn",
+    "type_line": "Card"
+  },
+  "lrw/124": {
+    "collector_number": "124",
+    "image": "",
+    "mana_cost": "",
+    "name": "Makeshift Mannequin",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/208": {
+    "collector_number": "208",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Promenade",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/213": {
+    "collector_number": "213",
+    "image": "",
+    "mana_cost": "",
+    "name": "Garruk Wildspeaker",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Immaculate Magistrate",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/220": {
+    "collector_number": "220",
+    "image": "",
+    "mana_cost": "",
+    "name": "Imperious Perfect",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/229": {
+    "collector_number": "229",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lys Alana Huntmaster",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/255": {
+    "collector_number": "255",
+    "image": "",
+    "mana_cost": "",
+    "name": "Deathrender",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/256": {
+    "collector_number": "256",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dolmen Gate",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/274": {
+    "collector_number": "274",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spinerock Knoll",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/275": {
+    "collector_number": "275",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vivid Crag",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/276": {
+    "collector_number": "276",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vivid Creek",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/277": {
+    "collector_number": "277",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vivid Grove",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/278": {
+    "collector_number": "278",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vivid Marsh",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/279": {
+    "collector_number": "279",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vivid Meadow",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/281": {
+    "collector_number": "281",
+    "image": "",
+    "mana_cost": "",
+    "name": "Windbrisk Heights",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/31": {
+    "collector_number": "31",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mirror Entity",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scion of Oona",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/88": {
+    "collector_number": "88",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sower of Temptation",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "lrw/89": {
+    "collector_number": "89",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spellstutter Sprite",
+    "set": "lrw",
+    "type_line": "Card"
+  },
+  "ltc/35": {
+    "collector_number": "35",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arwen, Weaver of Hope",
+    "set": "ltc",
+    "type_line": "Card"
+  },
+  "ltc/498": {
+    "collector_number": "498",
+    "image": "https://api.scryfall.com/cards/ltc/498?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{W}{U}",
+    "name": "Galadriel, Light of Valinor",
+    "set": "ltc",
+    "type_line": "Legendary Creature — Elf Noble"
+  },
+  "ltc/501": {
+    "collector_number": "501",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mists of Lórien",
+    "set": "ltc",
+    "type_line": "Card"
+  },
+  "ltc/513": {
+    "collector_number": "513",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fell Beast of Mordor",
+    "set": "ltc",
+    "type_line": "Card"
+  },
+  "ltc/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Beregond of the Guard",
+    "set": "ltc",
+    "type_line": "Card"
+  },
+  "ltr/107": {
+    "collector_number": "107",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shadow of the Enemy",
+    "set": "ltr",
+    "type_line": "Card"
+  },
+  "ltr/149": {
+    "collector_number": "149",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spiteful Banditry",
+    "set": "ltr",
+    "type_line": "Card"
+  },
+  "ltr/256": {
+    "collector_number": "256",
+    "image": "",
+    "mana_cost": "",
+    "name": "Minas Tirith",
+    "set": "ltr",
+    "type_line": "Card"
+  },
+  "ltr/259": {
+    "collector_number": "259",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rivendell",
+    "set": "ltr",
+    "type_line": "Card"
+  },
+  "ltr/75": {
+    "collector_number": "75",
+    "image": "https://api.scryfall.com/cards/ltr/75?format=image&version=border_crop",
+    "mana_cost": "{3}{U}{U}",
+    "name": "The Watcher in the Water",
+    "set": "ltr",
+    "type_line": "Legendary Creature — Kraken"
+  },
+  "ltr/95": {
+    "collector_number": "95",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mirkwood Bats",
+    "set": "ltr",
+    "type_line": "Card"
+  },
+  "m10/139": {
+    "collector_number": "139",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Chieftain",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/146": {
+    "collector_number": "146",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lightning Bolt",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/149": {
+    "collector_number": "149",
+    "image": "",
+    "mana_cost": "",
+    "name": "Manabarbs",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Archdruid",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Open the Vaults",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/226": {
+    "collector_number": "226",
+    "image": "",
+    "mana_cost": "",
+    "name": "Glacial Fortress",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/68": {
+    "collector_number": "68",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ponder",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m10/87": {
+    "collector_number": "87",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cemetery Reaper",
+    "set": "m10",
+    "type_line": "Card"
+  },
+  "m11/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reassembling Skeleton",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/153": {
+    "collector_number": "153",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pyretic Ritual",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/155": {
+    "collector_number": "155",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reverberate",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/168": {
+    "collector_number": "168",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cultivate",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/188": {
+    "collector_number": "188",
+    "image": "",
+    "mana_cost": "",
+    "name": "Obstinate Baloth",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/214": {
+    "collector_number": "214",
+    "image": "",
+    "mana_cost": "",
+    "name": "Steel Overseer",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Voltaic Key",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Serra Ascendant",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/35": {
+    "collector_number": "35",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sun Titan",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/70": {
+    "collector_number": "70",
+    "image": "",
+    "mana_cost": "",
+    "name": "Preordain",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m11/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Grave Titan",
+    "set": "m11",
+    "type_line": "Card"
+  },
+  "m12/160": {
+    "collector_number": "160",
+    "image": "",
+    "mana_cost": "",
+    "name": "Warstorm Surge",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/174": {
+    "collector_number": "174",
+    "image": "",
+    "mana_cost": "",
+    "name": "Garruk, Primal Hunter",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/201": {
+    "collector_number": "201",
+    "image": "",
+    "mana_cost": "",
+    "name": "Adaptive Automaton",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Swiftfoot Boots",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/225": {
+    "collector_number": "225",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dragonskull Summit",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/226": {
+    "collector_number": "226",
+    "image": "",
+    "mana_cost": "",
+    "name": "Drowned Catacomb",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/228": {
+    "collector_number": "228",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rootbound Crag",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/229": {
+    "collector_number": "229",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sunpetal Grove",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/59": {
+    "collector_number": "59",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jace's Archivist",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/65": {
+    "collector_number": "65",
+    "image": "",
+    "mana_cost": "",
+    "name": "Merfolk Looter",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/72": {
+    "collector_number": "72",
+    "image": "",
+    "mana_cost": "",
+    "name": "Phantasmal Image",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m12/76": {
+    "collector_number": "76",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sphinx of Uthuun",
+    "set": "m12",
+    "type_line": "Card"
+  },
+  "m13/138": {
+    "collector_number": "138",
+    "image": "https://api.scryfall.com/cards/m13/138?format=image&version=border_crop",
+    "mana_cost": "{2}{R}{R}",
+    "name": "Krenko, Mob Boss",
+    "set": "m13",
+    "type_line": "Legendary Creature — Goblin Warrior"
+  },
+  "m13/139": {
+    "collector_number": "139",
+    "image": "",
+    "mana_cost": "",
+    "name": "Krenko's Command",
+    "set": "m13",
+    "type_line": "Card"
+  },
+  "m13/142": {
+    "collector_number": "142",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mindclaw Shaman",
+    "set": "m13",
+    "type_line": "Card"
+  },
+  "m13/170": {
+    "collector_number": "170",
+    "image": "",
+    "mana_cost": "",
+    "name": "Farseek",
+    "set": "m13",
+    "type_line": "Card"
+  },
+  "m13/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Odric, Master Tactician",
+    "set": "m13",
+    "type_line": "Card"
+  },
+  "m13/88": {
+    "collector_number": "88",
+    "image": "",
+    "mana_cost": "",
+    "name": "Disciple of Bolas",
+    "set": "m13",
+    "type_line": "Card"
+  },
+  "m14/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Devout Invocation",
+    "set": "m14",
+    "type_line": "Card"
+  },
+  "m14/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Young Pyromancer",
+    "set": "m14",
+    "type_line": "Card"
+  },
+  "m14/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Mystic",
+    "set": "m14",
+    "type_line": "Card"
+  },
+  "m14/181": {
+    "collector_number": "181",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kalonian Hydra",
+    "set": "m14",
+    "type_line": "Card"
+  },
+  "m14/5": {
+    "collector_number": "5",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archangel of Thune",
+    "set": "m14",
+    "type_line": "Card"
+  },
+  "m15/44": {
+    "collector_number": "44",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aetherspouts",
+    "set": "m15",
+    "type_line": "Card"
+  },
+  "m15/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chasm Skulker",
+    "set": "m15",
+    "type_line": "Card"
+  },
+  "m15/47": {
+    "collector_number": "47",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chief Engineer",
+    "set": "m15",
+    "type_line": "Card"
+  },
+  "m15/76": {
+    "collector_number": "76",
+    "image": "",
+    "mana_cost": "",
+    "name": "Quickling",
+    "set": "m15",
+    "type_line": "Card"
+  },
+  "m19/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Open the Graves",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/121": {
+    "collector_number": "121",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stitcher's Supplier",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/129": {
+    "collector_number": "129",
+    "image": "",
+    "mana_cost": "",
+    "name": "Apex of Power",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/144": {
+    "collector_number": "144",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Trashmaster",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thud",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/180": {
+    "collector_number": "180",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elvish Rejuvenator",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/186": {
+    "collector_number": "186",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goreclaw, Terror of Qal Sisma",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m19/69": {
+    "collector_number": "69",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sai, Master Thopterist",
+    "set": "m19",
+    "type_line": "Card"
+  },
+  "m20/10": {
+    "collector_number": "10",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cavalier of Dawn",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rotting Regisaur",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/122": {
+    "collector_number": "122",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vilis, Broker of Blood",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/220": {
+    "collector_number": "220",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yarok, the Desecrated",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/247": {
+    "collector_number": "247",
+    "image": "",
+    "mana_cost": "",
+    "name": "Field of the Dead",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/255": {
+    "collector_number": "255",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Mystery",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/257": {
+    "collector_number": "257",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Triumph",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m20/36": {
+    "collector_number": "36",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sephara, Sky's Blade",
+    "set": "m20",
+    "type_line": "Card"
+  },
+  "m21/109": {
+    "collector_number": "109",
+    "image": "",
+    "mana_cost": "",
+    "name": "Liliana's Devotee",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/136": {
+    "collector_number": "136",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chandra's Incinerator",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/146": {
+    "collector_number": "146",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gadrak, the Crown-Scourge",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/164": {
+    "collector_number": "164",
+    "image": "",
+    "mana_cost": "",
+    "name": "Terror of the Peaks",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/179": {
+    "collector_number": "179",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elder Gargaroth",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/252": {
+    "collector_number": "252",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Epiphany",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/52": {
+    "collector_number": "52",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghostly Pilferer",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m21/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Basri Ket",
+    "set": "m21",
+    "type_line": "Card"
+  },
+  "m3c/113": {
+    "collector_number": "113",
+    "image": "",
+    "mana_cost": "",
+    "name": "Siege-Gang Lieutenant",
+    "set": "m3c",
+    "type_line": "Card"
+  },
+  "mat/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Plargg and Nassari",
+    "set": "mat",
+    "type_line": "Card"
+  },
+  "mat/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Leyline Immersion",
+    "set": "mat",
+    "type_line": "Card"
+  },
+  "mat/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Open the Way",
+    "set": "mat",
+    "type_line": "Card"
+  },
+  "mat/38": {
+    "collector_number": "38",
+    "image": "",
+    "mana_cost": "",
+    "name": "Narset, Enlightened Exile",
+    "set": "mat",
+    "type_line": "Card"
+  },
+  "mat/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Metropolis Reformer",
+    "set": "mat",
+    "type_line": "Card"
+  },
+  "mat/47": {
+    "collector_number": "47",
+    "image": "https://api.scryfall.com/cards/mat/47?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{W}",
+    "name": "Sigarda, Font of Blessings",
+    "set": "mat",
+    "type_line": "Legendary Creature — Angel"
+  },
+  "mat/48": {
+    "collector_number": "48",
+    "image": "https://api.scryfall.com/cards/mat/48?format=image&version=border_crop",
+    "mana_cost": "{2}{B}{G}",
+    "name": "Tyvar the Bellicose",
+    "set": "mat",
+    "type_line": "Legendary Creature — Elf Warrior"
+  },
+  "mbs/110": {
+    "collector_number": "110",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ichor Wellspring",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Psychosis Crawler",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/140": {
+    "collector_number": "140",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thopter Assembly",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Inkmoth Nexus",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Victory's Herald",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Massacre Wurm",
+    "set": "mbs",
+    "type_line": "Card"
+  },
+  "mbs/95": {
+    "collector_number": "95",
+    "image": "https://cards.scryfall.io/border_crop/front/1/2/129fa334-f561-4fbd-9f51-2fa044b674e1.jpg?1783941372",
+    "mana_cost": "{1}{G}",
+    "name": "Viridian Emissary",
+    "set": "mbs",
+    "type_line": "Creature — Phyrexian Elf Scout"
+  },
+  "me1/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Wizard",
+    "set": "me1",
+    "type_line": "Card"
+  },
+  "mh1/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Generous Gift",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/112": {
+    "collector_number": "112",
+    "image": "",
+    "mana_cost": "",
+    "name": "Undead Augur",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/116": {
+    "collector_number": "116",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yawgmoth, Thran Physician",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/138": {
+    "collector_number": "138",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pashalik Mons",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/199": {
+    "collector_number": "199",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fallen Shinobi",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ranger-Captain of Eos",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/214": {
+    "collector_number": "214",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soulherder",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/230": {
+    "collector_number": "230",
+    "image": "",
+    "mana_cost": "",
+    "name": "Talisman of Conviction",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/231": {
+    "collector_number": "231",
+    "image": "",
+    "mana_cost": "",
+    "name": "Talisman of Creativity",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/232": {
+    "collector_number": "232",
+    "image": "",
+    "mana_cost": "",
+    "name": "Talisman of Curiosity",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/233": {
+    "collector_number": "233",
+    "image": "",
+    "mana_cost": "",
+    "name": "Talisman of Hierarchy",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/234": {
+    "collector_number": "234",
+    "image": "",
+    "mana_cost": "",
+    "name": "Talisman of Resilience",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/238": {
+    "collector_number": "238",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fiery Islet",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/243": {
+    "collector_number": "243",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nurturing Peatland",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/244": {
+    "collector_number": "244",
+    "image": "",
+    "mana_cost": "",
+    "name": "Prismatic Vista",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/246": {
+    "collector_number": "246",
+    "image": "",
+    "mana_cost": "",
+    "name": "Silent Clearing",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/247": {
+    "collector_number": "247",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sunbaked Canyon",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/249": {
+    "collector_number": "249",
+    "image": "",
+    "mana_cost": "",
+    "name": "Waterlogged Grove",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/50": {
+    "collector_number": "50",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fact or Fiction",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faerie Seer",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/7": {
+    "collector_number": "7",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ephemerate",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh1/75": {
+    "collector_number": "75",
+    "image": "",
+    "mana_cost": "",
+    "name": "Urza, Lord High Artificer",
+    "set": "mh1",
+    "type_line": "Card"
+  },
+  "mh2/138": {
+    "collector_number": "138",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ragavan, Nimble Pilferer",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/143": {
+    "collector_number": "143",
+    "image": "",
+    "mana_cost": "",
+    "name": "Strike It Rich",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Academy Manufactor",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/232": {
+    "collector_number": "232",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ornithopter of Paradise",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/300": {
+    "collector_number": "300",
+    "image": "",
+    "mana_cost": "",
+    "name": "Zuran Orb",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/301": {
+    "collector_number": "301",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cabal Coffers",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/395": {
+    "collector_number": "395",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bone Shards",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/441": {
+    "collector_number": "441",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yavimaya, Cradle of Growth",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thought Monitor",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh2/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Persist",
+    "set": "mh2",
+    "type_line": "Card"
+  },
+  "mh3/100": {
+    "collector_number": "100",
+    "image": "",
+    "mana_cost": "",
+    "name": "Marionette Apprentice",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/110": {
+    "collector_number": "110",
+    "image": "",
+    "mana_cost": "",
+    "name": "Warren Soultrader",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/128": {
+    "collector_number": "128",
+    "image": "",
+    "mana_cost": "",
+    "name": "Molten Gatekeeper",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/149": {
+    "collector_number": "149",
+    "image": "",
+    "mana_cost": "",
+    "name": "Eladamri, Korvecdal",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/151": {
+    "collector_number": "151",
+    "image": "",
+    "mana_cost": "",
+    "name": "Evolution Witness",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/152": {
+    "collector_number": "152",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fanatic of Rhonas",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/214": {
+    "collector_number": "214",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archway of Innovation",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/228": {
+    "collector_number": "228",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shifting Woodland",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/230": {
+    "collector_number": "230",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spymaster's Vault",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/286": {
+    "collector_number": "286",
+    "image": "",
+    "mana_cost": "",
+    "name": "Priest of Titania",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/61": {
+    "collector_number": "61",
+    "image": "",
+    "mana_cost": "",
+    "name": "Emrakul's Messenger",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Strix Serenade",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mh3/80": {
+    "collector_number": "80",
+    "image": "",
+    "mana_cost": "",
+    "name": "Accursed Marauder",
+    "set": "mh3",
+    "type_line": "Card"
+  },
+  "mic/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cleaver Skaab",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/13": {
+    "collector_number": "13",
+    "image": "",
+    "mana_cost": "",
+    "name": "Drown in Dreams",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hordewing Skaab",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/165": {
+    "collector_number": "165",
+    "image": "https://cards.scryfall.io/border_crop/front/6/7/67c83c7b-d785-4700-8075-6ffb5c3922d6.jpg?1783925318",
+    "mana_cost": "{2}",
+    "name": "Talisman of Unity",
+    "set": "mic",
+    "type_line": "Artifact"
+  },
+  "mic/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Curse of the Restless Dead",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/19": {
+    "collector_number": "19",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghouls' Night Out",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/2": {
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/mic/2?format=image&version=border_crop",
+    "mana_cost": "{2}{U}{B}",
+    "name": "Wilhelt, the Rotcleaver",
+    "set": "mic",
+    "type_line": "Legendary Creature — Zombie Warrior"
+  },
+  "mic/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Prowling Geistcatcher",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Visions of Glory",
+    "set": "mic",
+    "type_line": "Card"
+  },
+  "mic/4": {
+    "collector_number": "4",
+    "image": "https://api.scryfall.com/cards/mic/4?format=image&version=border_crop",
+    "mana_cost": "{3}{G}{W}",
+    "name": "Kyler, Sigardian Emissary",
+    "set": "mic",
+    "type_line": "Legendary Creature — Human Cleric"
+  },
+  "mid/1": {
+    "collector_number": "1",
+    "image": "",
+    "mana_cost": "",
+    "name": "Adeline, Resplendent Cathar",
+    "set": "mid",
+    "type_line": "Card"
+  },
+  "mid/128": {
+    "collector_number": "128",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ardent Elementalist",
+    "set": "mid",
+    "type_line": "Card"
+  },
+  "mid/38": {
+    "collector_number": "38",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sunset Revelry",
+    "set": "mid",
+    "type_line": "Card"
+  },
+  "mid/62": {
+    "collector_number": "62",
+    "image": "",
+    "mana_cost": "",
+    "name": "Memory Deluge",
+    "set": "mid",
+    "type_line": "Card"
+  },
+  "mid/71": {
+    "collector_number": "71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Poppet Stitcher",
+    "set": "mid",
+    "type_line": "Card"
+  },
+  "mkm/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Delney, Streetwise Lookout",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/135": {
+    "collector_number": "135",
+    "image": "",
+    "mana_cost": "",
+    "name": "Krenko, Baron of Tin Street",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/148": {
+    "collector_number": "148",
+    "image": "",
+    "mana_cost": "",
+    "name": "Aftermath Analyst",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/186": {
+    "collector_number": "186",
+    "image": "",
+    "mana_cost": "",
+    "name": "Anzrag, the Quake-Mole",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/210": {
+    "collector_number": "210",
+    "image": "https://api.scryfall.com/cards/mkm/210?format=image&version=border_crop",
+    "mana_cost": "{3}{B}{R}",
+    "name": "Judith, Carnage Connoisseur",
+    "set": "mkm",
+    "type_line": "Legendary Creature — Human Shaman"
+  },
+  "mkm/259": {
+    "collector_number": "259",
+    "image": "",
+    "mana_cost": "",
+    "name": "Commercial District",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elegant Parlor",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/262": {
+    "collector_number": "262",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hedge Maze",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/263": {
+    "collector_number": "263",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lush Portico",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/264": {
+    "collector_number": "264",
+    "image": "",
+    "mana_cost": "",
+    "name": "Meticulous Archive",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/266": {
+    "collector_number": "266",
+    "image": "",
+    "mana_cost": "",
+    "name": "Raucous Theater",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/268": {
+    "collector_number": "268",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shadowy Backstreet",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/269": {
+    "collector_number": "269",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thundering Falls",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/270": {
+    "collector_number": "270",
+    "image": "",
+    "mana_cost": "",
+    "name": "Undercity Sewers",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/271": {
+    "collector_number": "271",
+    "image": "",
+    "mana_cost": "",
+    "name": "Underground Mortuary",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mkm/57": {
+    "collector_number": "57",
+    "image": "",
+    "mana_cost": "",
+    "name": "Forensic Gadgeteer",
+    "set": "mkm",
+    "type_line": "Card"
+  },
+  "mm2/82": {
+    "collector_number": "82",
+    "image": "https://api.scryfall.com/cards/mm2/82?format=image&version=border_crop",
+    "mana_cost": "{4}{B}",
+    "name": "Endrek Sahr, Master Breeder",
+    "set": "mm2",
+    "type_line": "Legendary Creature — Human Wizard"
+  },
+  "mm3/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soul Warden",
+    "set": "mm3",
+    "type_line": "Card"
+  },
+  "mma/221": {
+    "collector_number": "221",
+    "image": "",
+    "mana_cost": "",
+    "name": "City of Brass",
+    "set": "mma",
+    "type_line": "Card"
+  },
+  "mma/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Path to Exile",
+    "set": "mma",
+    "type_line": "Card"
+  },
+  "mmq/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soul Channeling",
+    "set": "mmq",
+    "type_line": "Card"
+  },
+  "mmq/99": {
+    "collector_number": "99",
+    "image": "",
+    "mana_cost": "",
+    "name": "Saprazzan Heir",
+    "set": "mmq",
+    "type_line": "Card"
+  },
+  "moc/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Filigree Vector",
+    "set": "moc",
+    "type_line": "Card"
+  },
+  "moc/2": {
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/moc/2?format=image&version=border_crop",
+    "mana_cost": "{2}{W}{B}",
+    "name": "Brimaz, Blight of Oreskos",
+    "set": "moc",
+    "type_line": "Legendary Creature — Phyrexian Cat"
+  },
+  "moc/263": {
+    "collector_number": "263",
+    "image": "",
+    "mana_cost": "",
+    "name": "Phyrexian Delver",
+    "set": "moc",
+    "type_line": "Card"
+  },
+  "moc/445": {
+    "collector_number": "445",
+    "image": "https://api.scryfall.com/cards/moc/445?format=image&version=border_crop",
+    "mana_cost": "{U}{B}{R}",
+    "name": "Goro-Goro and Satoru",
+    "set": "moc",
+    "type_line": "Legendary Creature — Goblin Human"
+  },
+  "mom/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dusk Legion Duelist",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/135": {
+    "collector_number": "135",
+    "image": "",
+    "mana_cost": "",
+    "name": "City on Fire",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/137": {
+    "collector_number": "137",
+    "image": "",
+    "mana_cost": "",
+    "name": "Etali, Primal Conqueror",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/211": {
+    "collector_number": "211",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tribute to the World Tree",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/225": {
+    "collector_number": "225",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghalta and Mavren",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/227": {
+    "collector_number": "227",
+    "image": "",
+    "mana_cost": "",
+    "name": "Halo Forager",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/229": {
+    "collector_number": "229",
+    "image": "",
+    "mana_cost": "",
+    "name": "Inga and Esika",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/255": {
+    "collector_number": "255",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thalia and The Gitrog Monster",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/26": {
+    "collector_number": "26",
+    "image": "",
+    "mana_cost": "",
+    "name": "Knight-Errant of Eos",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/302": {
+    "collector_number": "302",
+    "image": "",
+    "mana_cost": "",
+    "name": "Baral and Kari Zev",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Progenitor Exarch",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/323": {
+    "collector_number": "323",
+    "image": "",
+    "mana_cost": "",
+    "name": "Essence of Orthodoxy",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/334": {
+    "collector_number": "334",
+    "image": "",
+    "mana_cost": "",
+    "name": "Orthion, Hero of Lavabrink",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/337": {
+    "collector_number": "337",
+    "image": "",
+    "mana_cost": "",
+    "name": "Surrak and Goreclaw",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chrome Host Seedshark",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mom/58": {
+    "collector_number": "58",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faerie Mastermind",
+    "set": "mom",
+    "type_line": "Card"
+  },
+  "mor/104": {
+    "collector_number": "104",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shared Animosity",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/115": {
+    "collector_number": "115",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bramblewood Paragon",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Heritage Druid",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/136": {
+    "collector_number": "136",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scapeshift",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thornbite Staff",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reveillark",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stonehewer Giant",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Distant Melody",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/45": {
+    "collector_number": "45",
+    "image": "",
+    "mana_cost": "",
+    "name": "Notorious Throng",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/54": {
+    "collector_number": "54",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thieves' Fortune",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mor/58": {
+    "collector_number": "58",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bitterblossom",
+    "set": "mor",
+    "type_line": "Card"
+  },
+  "mrd/109": {
+    "collector_number": "109",
+    "image": "",
+    "mana_cost": "",
+    "name": "Trash for Treasure",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gilded Lotus",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/199": {
+    "collector_number": "199",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lightning Greaves",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/201": {
+    "collector_number": "201",
+    "image": "",
+    "mana_cost": "",
+    "name": "Loxodon Warhammer",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/204": {
+    "collector_number": "204",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mesmeric Orb",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/215": {
+    "collector_number": "215",
+    "image": "",
+    "mana_cost": "",
+    "name": "Myr Retriever",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/239": {
+    "collector_number": "239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scythe of the Wretched",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/282": {
+    "collector_number": "282",
+    "image": "",
+    "mana_cost": "",
+    "name": "Great Furnace",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/283": {
+    "collector_number": "283",
+    "image": "",
+    "mana_cost": "",
+    "name": "Seat of the Synod",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/285": {
+    "collector_number": "285",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tree of Tales",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/286": {
+    "collector_number": "286",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vault of Whispers",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "mrd/55": {
+    "collector_number": "55",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vedalken Archmage",
+    "set": "mrd",
+    "type_line": "Card"
+  },
+  "ncc/325": {
+    "collector_number": "325",
+    "image": "https://api.scryfall.com/cards/ncc/325?format=image&version=border_crop",
+    "mana_cost": "{1}{W}{U}{B}",
+    "name": "Alela, Artful Provocateur",
+    "set": "ncc",
+    "type_line": "Legendary Creature — Faerie Warlock"
+  },
+  "ncc/45": {
+    "collector_number": "45",
+    "image": "",
+    "mana_cost": "",
+    "name": "Determined Iteration",
+    "set": "ncc",
+    "type_line": "Card"
+  },
+  "ncc/51": {
+    "collector_number": "51",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rose Room Treasurer",
+    "set": "ncc",
+    "type_line": "Card"
+  },
+  "ncc/62": {
+    "collector_number": "62",
+    "image": "",
+    "mana_cost": "",
+    "name": "Next of Kin",
+    "set": "ncc",
+    "type_line": "Card"
+  },
+  "ncc/89": {
+    "collector_number": "89",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mari, the Killing Quill",
+    "set": "ncc",
+    "type_line": "Card"
+  },
+  "nec/12": {
+    "collector_number": "12",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cyberdrive Awakener",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "nec/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Research Thief",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "nec/180": {
+    "collector_number": "180",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Enlightenment",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "nec/27": {
+    "collector_number": "27",
+    "image": "",
+    "mana_cost": "",
+    "name": "One with the Kami",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "nec/56": {
+    "collector_number": "56",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ruthless Technomancer",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "nec/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Drumbellower",
+    "set": "nec",
+    "type_line": "Card"
+  },
+  "neo/114": {
+    "collector_number": "114",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nashi, Moon Sage's Scion",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Atsushi, the Blazing Sky",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goro-Goro, Disciple of Ryusei",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/147": {
+    "collector_number": "147",
+    "image": "",
+    "mana_cost": "",
+    "name": "Invoke Calamity",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/157": {
+    "collector_number": "157",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rabbit Battery",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/224": {
+    "collector_number": "224",
+    "image": "",
+    "mana_cost": "",
+    "name": "Isshin, Two Heavens as One",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/268": {
+    "collector_number": "268",
+    "image": "",
+    "mana_cost": "",
+    "name": "Eiganjo, Seat of the Empire",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/278": {
+    "collector_number": "278",
+    "image": "",
+    "mana_cost": "",
+    "name": "Takenuma, Abandoned Mire",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/42": {
+    "collector_number": "42",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Wandering Emperor",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/73": {
+    "collector_number": "73",
+    "image": "",
+    "mana_cost": "",
+    "name": "Prosperous Thief",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "neo/95": {
+    "collector_number": "95",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dokuchi Silencer",
+    "set": "neo",
+    "type_line": "Card"
+  },
+  "nph/103": {
+    "collector_number": "103",
+    "image": "",
+    "mana_cost": "",
+    "name": "Beast Within",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mycosynth Wellspring",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/164": {
+    "collector_number": "164",
+    "image": "",
+    "mana_cost": "",
+    "name": "Unwinding Clock",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Puresteel Paladin",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Suture Priest",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/35": {
+    "collector_number": "35",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gitaxian Probe",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jin-Gitaxias, Core Augur",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/57": {
+    "collector_number": "57",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dismember",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/81": {
+    "collector_number": "81",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chancellor of the Forge",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/86": {
+    "collector_number": "86",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gut Shot",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elesh Norn, Grand Cenobite",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "nph/98": {
+    "collector_number": "98",
+    "image": "",
+    "mana_cost": "",
+    "name": "Urabrask the Hidden",
+    "set": "nph",
+    "type_line": "Card"
+  },
+  "oc15/44": {
+    "collector_number": "44",
+    "image": "https://api.scryfall.com/cards/oc15/44?format=image&version=border_crop",
+    "mana_cost": "{2}{G}{U}",
+    "name": "Ezuri, Claw of Progress",
+    "set": "oc15",
+    "type_line": "Legendary Creature — Phyrexian Elf Warrior"
+  },
+  "ocmd/181": {
+    "collector_number": "181",
+    "image": "",
+    "mana_cost": "",
+    "name": "Animar, Soul of Elements",
+    "set": "ocmd",
+    "type_line": "Card"
+  },
+  "ogw/166": {
+    "collector_number": "166",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stoneforge Masterwork",
+    "set": "ogw",
+    "type_line": "Card"
+  },
+  "onc/108": {
+    "collector_number": "108",
+    "image": "",
+    "mana_cost": "",
+    "name": "Evolution Sage",
+    "set": "onc",
+    "type_line": "Card"
+  },
+  "onc/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Roar of Resistance",
+    "set": "onc",
+    "type_line": "Card"
+  },
+  "onc/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Otharri, Suns' Glory",
+    "set": "onc",
+    "type_line": "Card"
+  },
+  "one/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gleeful Demolition",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/149": {
+    "collector_number": "149",
+    "image": "",
+    "mana_cost": "",
+    "name": "Slobad, Iron Goblin",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/150": {
+    "collector_number": "150",
+    "image": "",
+    "mana_cost": "",
+    "name": "Solphim, Mayhem Dominus",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/161": {
+    "collector_number": "161",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cankerbloom",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Conduit of Worlds",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/218": {
+    "collector_number": "218",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tyvar, Jubilant Brawler",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "one/26": {
+    "collector_number": "26",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ossification",
+    "set": "one",
+    "type_line": "Card"
+  },
+  "ons/168": {
+    "collector_number": "168",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shepherd of Rot",
+    "set": "ons",
+    "type_line": "Card"
+  },
+  "ons/191": {
+    "collector_number": "191",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brightstone Ritual",
+    "set": "ons",
+    "type_line": "Card"
+  },
+  "ons/300": {
+    "collector_number": "300",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wellwisher",
+    "set": "ons",
+    "type_line": "Card"
+  },
+  "ons/327": {
+    "collector_number": "327",
+    "image": "",
+    "mana_cost": "",
+    "name": "Unholy Grotto",
+    "set": "ons",
+    "type_line": "Card"
+  },
+  "ori/137": {
+    "collector_number": "137",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chandra's Ignition",
+    "set": "ori",
+    "type_line": "Card"
+  },
+  "ori/147": {
+    "collector_number": "147",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flameshadow Conjuring",
+    "set": "ori",
+    "type_line": "Card"
+  },
+  "ori/157": {
+    "collector_number": "157",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pia and Kiran Nalaar",
+    "set": "ori",
+    "type_line": "Card"
+  },
+  "ori/240": {
+    "collector_number": "240",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sword of the Animist",
+    "set": "ori",
+    "type_line": "Card"
+  },
+  "ori/84": {
+    "collector_number": "84",
+    "image": "",
+    "mana_cost": "",
+    "name": "Willbreaker",
+    "set": "ori",
+    "type_line": "Card"
+  },
+  "otc/13": {
+    "collector_number": "13",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arcane Heist",
+    "set": "otc",
+    "type_line": "Card"
+  },
+  "otc/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Angel of Indemnity",
+    "set": "otc",
+    "type_line": "Card"
+  },
+  "otj/109": {
+    "collector_number": "109",
+    "image": "https://api.scryfall.com/cards/otj/109?format=image&version=border_crop",
+    "mana_cost": "{B}",
+    "name": "Tinybones, the Pickpocket",
+    "set": "otj",
+    "type_line": "Legendary Creature — Skeleton Rogue"
+  },
+  "otj/126": {
+    "collector_number": "126",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hell to Pay",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/143": {
+    "collector_number": "143",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rodeo Pyromancers",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/157": {
+    "collector_number": "157",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bristly Bill, Spine Sower",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Railway Brawler",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/205": {
+    "collector_number": "205",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghired, Mirror of the Wilds",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/206": {
+    "collector_number": "206",
+    "image": "",
+    "mana_cost": "",
+    "name": "The Gitrog, Ravenous Ride",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/211": {
+    "collector_number": "211",
+    "image": "https://api.scryfall.com/cards/otj/211?format=image&version=border_crop",
+    "mana_cost": "{1}{W}{B}",
+    "name": "Kambal, Profiteering Mayor",
+    "set": "otj",
+    "type_line": "Legendary Creature — Human Advisor"
+  },
+  "otj/220": {
+    "collector_number": "220",
+    "image": "https://api.scryfall.com/cards/otj/220?format=image&version=border_crop",
+    "mana_cost": "{U}{B}{R}",
+    "name": "Marchesa, Dealer of Death",
+    "set": "otj",
+    "type_line": "Legendary Creature — Human Rogue"
+  },
+  "otj/226": {
+    "collector_number": "226",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rakdos, the Muscle",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/234": {
+    "collector_number": "234",
+    "image": "https://api.scryfall.com/cards/otj/234?format=image&version=border_crop",
+    "mana_cost": "{R}{W}",
+    "name": "Taii Wakeen, Perfect Shot",
+    "set": "otj",
+    "type_line": "Legendary Creature — Human Mercenary"
+  },
+  "otj/237": {
+    "collector_number": "237",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vraska, the Silencer",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "otj/75": {
+    "collector_number": "75",
+    "image": "",
+    "mana_cost": "",
+    "name": "Three Steps Ahead",
+    "set": "otj",
+    "type_line": "Card"
+  },
+  "p22/6": {
+    "collector_number": "6",
+    "image": "",
+    "mana_cost": "",
+    "name": "Training Grounds",
+    "set": "p22",
+    "type_line": "Card"
+  },
+  "pc2/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sakashima's Student",
+    "set": "pc2",
+    "type_line": "Card"
+  },
+  "pd3/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Entomb",
+    "set": "pd3",
+    "type_line": "Card"
+  },
+  "pd3/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reanimate",
+    "set": "pd3",
+    "type_line": "Card"
+  },
+  "pd3/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Animate Dead",
+    "set": "pd3",
+    "type_line": "Card"
+  },
+  "pd3/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Diabolic Servitude",
+    "set": "pd3",
+    "type_line": "Card"
+  },
+  "pd3/23": {
+    "collector_number": "23",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dread Return",
+    "set": "pd3",
+    "type_line": "Card"
+  },
+  "pdmu/1★": {
+    "collector_number": "1★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Llanowar Elves",
+    "set": "pdmu",
+    "type_line": "Card"
+  },
+  "pgtc/162★": {
+    "collector_number": "162★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fathom Mage",
+    "set": "pgtc",
+    "type_line": "Card"
+  },
+  "pip/108": {
+    "collector_number": "108",
+    "image": "",
+    "mana_cost": "",
+    "name": "MacCready, Lamplight Mayor",
+    "set": "pip",
+    "type_line": "Card"
+  },
+  "pip/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Codsworth, Handy Helper",
+    "set": "pip",
+    "type_line": "Card"
+  },
+  "pip/142": {
+    "collector_number": "142",
+    "image": "",
+    "mana_cost": "",
+    "name": "Silver Shroud Costume",
+    "set": "pip",
+    "type_line": "Card"
+  },
+  "plc/44": {
+    "collector_number": "44",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pongify",
+    "set": "plc",
+    "type_line": "Card"
+  },
+  "plc/85": {
+    "collector_number": "85",
+    "image": "",
+    "mana_cost": "",
+    "name": "Damnation",
+    "set": "plc",
+    "type_line": "Card"
+  },
+  "plst/C21-79": {
+    "collector_number": "C21-79",
+    "image": "",
+    "mana_cost": "",
+    "name": "Triplicate Titan",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/CHK-283": {
+    "collector_number": "CHK-283",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shizo, Death's Storehouse",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/DD1-26": {
+    "collector_number": "DD1-26",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wirewood Lodge",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/ELD-326": {
+    "collector_number": "ELD-326",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chulane, Teller of Tales",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/MH2-180": {
+    "collector_number": "MH2-180",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tireless Provisioner",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/SS1-3": {
+    "collector_number": "SS1-3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brainstorm",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/TPR-87": {
+    "collector_number": "TPR-87",
+    "image": "",
+    "mana_cost": "",
+    "name": "Coffin Queen",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/TSB-52": {
+    "collector_number": "TSB-52",
+    "image": "",
+    "mana_cost": "",
+    "name": "Undead Warchief",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "plst/TSP-71": {
+    "collector_number": "TSP-71",
+    "image": "",
+    "mana_cost": "",
+    "name": "Paradox Haze",
+    "set": "plst",
+    "type_line": "Card"
+  },
+  "pori/29": {
+    "collector_number": "29",
+    "image": "",
+    "mana_cost": "",
+    "name": "Relic Seeker",
+    "set": "pori",
+    "type_line": "Card"
+  },
+  "prix/94": {
+    "collector_number": "94",
+    "image": "",
+    "mana_cost": "",
+    "name": "Brass's Bounty",
+    "set": "prix",
+    "type_line": "Card"
+  },
+  "pw24/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Night's Whisper",
+    "set": "pw24",
+    "type_line": "Card"
+  },
+  "pwwk/76★": {
+    "collector_number": "76★",
+    "image": "",
+    "mana_cost": "",
+    "name": "Comet Storm",
+    "set": "pwwk",
+    "type_line": "Card"
+  },
+  "rav/153": {
+    "collector_number": "153",
+    "image": "",
+    "mana_cost": "",
+    "name": "Birds of Paradise",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Life from the Loam",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pollenbright Wings",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/225": {
+    "collector_number": "225",
+    "image": "",
+    "mana_cost": "",
+    "name": "Savra, Queen of the Golgari",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/255": {
+    "collector_number": "255",
+    "image": "",
+    "mana_cost": "",
+    "name": "Boros Signet",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dimir Signet",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/262": {
+    "collector_number": "262",
+    "image": "",
+    "mana_cost": "",
+    "name": "Golgari Signet",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/270": {
+    "collector_number": "270",
+    "image": "",
+    "mana_cost": "",
+    "name": "Selesnya Signet",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/280": {
+    "collector_number": "280",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sacred Foundry",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/284": {
+    "collector_number": "284",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple Garden",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rav/69": {
+    "collector_number": "69",
+    "image": "",
+    "mana_cost": "",
+    "name": "Telling Time",
+    "set": "rav",
+    "type_line": "Card"
+  },
+  "rix/100": {
+    "collector_number": "100",
+    "image": "",
+    "mana_cost": "",
+    "name": "Etali, Primal Storm",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rix/130": {
+    "collector_number": "130",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ghalta, Primal Hunger",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rix/150": {
+    "collector_number": "150",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wayward Swordtooth",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rix/151": {
+    "collector_number": "151",
+    "image": "",
+    "mana_cost": "",
+    "name": "World Shaper",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rix/157": {
+    "collector_number": "157",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elenda, the Dusk Rose",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rix/173": {
+    "collector_number": "173",
+    "image": "",
+    "mana_cost": "",
+    "name": "Storm the Vault",
+    "set": "rix",
+    "type_line": "Card"
+  },
+  "rna/131": {
+    "collector_number": "131",
+    "image": "",
+    "mana_cost": "",
+    "name": "Incubation Druid",
+    "set": "rna",
+    "type_line": "Card"
+  },
+  "rna/201": {
+    "collector_number": "201",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rhythm of the Wild",
+    "set": "rna",
+    "type_line": "Card"
+  },
+  "rna/22": {
+    "collector_number": "22",
+    "image": "",
+    "mana_cost": "",
+    "name": "Smothering Tithe",
+    "set": "rna",
+    "type_line": "Card"
+  },
+  "rna/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Priest of Forgotten Gods",
+    "set": "rna",
+    "type_line": "Card"
+  },
+  "rna/99": {
+    "collector_number": "99",
+    "image": "",
+    "mana_cost": "",
+    "name": "Electrodominance",
+    "set": "rna",
+    "type_line": "Card"
+  },
+  "roe/212": {
+    "collector_number": "212",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vengevine",
+    "set": "roe",
+    "type_line": "Card"
+  },
+  "roe/44": {
+    "collector_number": "44",
+    "image": "",
+    "mana_cost": "",
+    "name": "Soul's Attendant",
+    "set": "roe",
+    "type_line": "Card"
+  },
+  "rtr/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vandalblast",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "rtr/177": {
+    "collector_number": "177",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lotleth Troll",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "rtr/243": {
+    "collector_number": "243",
+    "image": "",
+    "mana_cost": "",
+    "name": "Overgrown Tomb",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "rtr/245": {
+    "collector_number": "245",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rogue's Passage",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "rtr/95": {
+    "collector_number": "95",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Rally",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "rtr/98": {
+    "collector_number": "98",
+    "image": "",
+    "mana_cost": "",
+    "name": "Guttersnipe",
+    "set": "rtr",
+    "type_line": "Card"
+  },
+  "scd/281": {
+    "collector_number": "281",
+    "image": "https://cards.scryfall.io/border_crop/front/b/0/b08ce0bf-ee14-451c-8a77-b0ffffbb3e0d.jpg?1783918613",
+    "mana_cost": "{2}",
+    "name": "Talisman of Impulse",
+    "set": "scd",
+    "type_line": "Artifact"
+  },
+  "scg/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin War Strike",
+    "set": "scg",
+    "type_line": "Card"
+  },
+  "shm/113": {
+    "collector_number": "113",
+    "image": "",
+    "mana_cost": "",
+    "name": "Farhaven Elf",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/150": {
+    "collector_number": "150",
+    "image": "",
+    "mana_cost": "",
+    "name": "Steel of the Godhead",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/155": {
+    "collector_number": "155",
+    "image": "",
+    "mana_cost": "",
+    "name": "Turn to Mist",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/172": {
+    "collector_number": "172",
+    "image": "https://api.scryfall.com/cards/shm/172?format=image&version=border_crop",
+    "mana_cost": "{3}{U/B}{U/B}{U/B}",
+    "name": "Oona, Queen of the Fae",
+    "set": "shm",
+    "type_line": "Legendary Creature — Faerie Wizard"
+  },
+  "shm/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sygg, River Cutthroat",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/211": {
+    "collector_number": "211",
+    "image": "",
+    "mana_cost": "",
+    "name": "Manamorphose",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/242": {
+    "collector_number": "242",
+    "image": "",
+    "mana_cost": "",
+    "name": "Shield of the Oversoul",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/271": {
+    "collector_number": "271",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fire-Lit Thicket",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/272": {
+    "collector_number": "272",
+    "image": "",
+    "mana_cost": "",
+    "name": "Graven Cairns",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/277": {
+    "collector_number": "277",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mystic Gate",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/278": {
+    "collector_number": "278",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reflecting Pool",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/280": {
+    "collector_number": "280",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sunken Ruins",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/281": {
+    "collector_number": "281",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wooded Bastion",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/49": {
+    "collector_number": "49",
+    "image": "",
+    "mana_cost": "",
+    "name": "River Kelpie",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/76": {
+    "collector_number": "76",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rite of Consumption",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/88": {
+    "collector_number": "88",
+    "image": "",
+    "mana_cost": "",
+    "name": "Crimson Wisps",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "shm/90": {
+    "collector_number": "90",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elemental Mastery",
+    "set": "shm",
+    "type_line": "Card"
+  },
+  "sld/1239": {
+    "collector_number": "1239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Forge, Neverwinter Charlatan",
+    "set": "sld",
+    "type_line": "Card"
+  },
+  "sld/272": {
+    "collector_number": "272",
+    "image": "",
+    "mana_cost": "",
+    "name": "Fractured Identity",
+    "set": "sld",
+    "type_line": "Card"
+  },
+  "slx/18": {
+    "collector_number": "18",
+    "image": "",
+    "mana_cost": "",
+    "name": "Greymond, Avacyn's Stalwart",
+    "set": "slx",
+    "type_line": "Card"
+  },
+  "snc/101": {
+    "collector_number": "101",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arcane Bombardment",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/107": {
+    "collector_number": "107",
+    "image": "",
+    "mana_cost": "",
+    "name": "Glittering Stockpile",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/116": {
+    "collector_number": "116",
+    "image": "",
+    "mana_cost": "",
+    "name": "Professional Face-Breaker",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/124": {
+    "collector_number": "124",
+    "image": "",
+    "mana_cost": "",
+    "name": "Sticky Fingers",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/131": {
+    "collector_number": "131",
+    "image": "",
+    "mana_cost": "",
+    "name": "Witty Roastmaster",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/250": {
+    "collector_number": "250",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jetmir's Garden",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/254": {
+    "collector_number": "254",
+    "image": "",
+    "mana_cost": "",
+    "name": "Raffine's Tower",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/257": {
+    "collector_number": "257",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spara's Headquarters",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/260": {
+    "collector_number": "260",
+    "image": "",
+    "mana_cost": "",
+    "name": "Xander's Lounge",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/261": {
+    "collector_number": "261",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ziatora's Proving Ground",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "snc/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ledger Shredder",
+    "set": "snc",
+    "type_line": "Card"
+  },
+  "soi/107": {
+    "collector_number": "107",
+    "image": "",
+    "mana_cost": "",
+    "name": "Diregraf Colossus",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/111": {
+    "collector_number": "111",
+    "image": "",
+    "mana_cost": "",
+    "name": "From Under the Floorboards",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/200": {
+    "collector_number": "200",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cryptolith Rite",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/227": {
+    "collector_number": "227",
+    "image": "",
+    "mana_cost": "",
+    "name": "Second Harvest",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/233": {
+    "collector_number": "233",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tireless Tracker",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/31": {
+    "collector_number": "31",
+    "image": "",
+    "mana_cost": "",
+    "name": "Odric, Lunarch Marshal",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/43": {
+    "collector_number": "43",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thalia's Lieutenant",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bygone Bishop",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "soi/93": {
+    "collector_number": "93",
+    "image": "",
+    "mana_cost": "",
+    "name": "Trail of Evidence",
+    "set": "soi",
+    "type_line": "Card"
+  },
+  "som/148": {
+    "collector_number": "148",
+    "image": "",
+    "mana_cost": "",
+    "name": "Culling Dais",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Myrsmith",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/171": {
+    "collector_number": "171",
+    "image": "",
+    "mana_cost": "",
+    "name": "Liquimetal Coating",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/180": {
+    "collector_number": "180",
+    "image": "",
+    "mana_cost": "",
+    "name": "Myr Battlesphere",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/190": {
+    "collector_number": "190",
+    "image": "",
+    "mana_cost": "",
+    "name": "Palladium Myr",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/194": {
+    "collector_number": "194",
+    "image": "",
+    "mana_cost": "",
+    "name": "Precursor Golem",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/223": {
+    "collector_number": "223",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wurmcoil Engine",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/33": {
+    "collector_number": "33",
+    "image": "",
+    "mana_cost": "",
+    "name": "Grand Architect",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/61": {
+    "collector_number": "61",
+    "image": "",
+    "mana_cost": "",
+    "name": "Exsanguinate",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/64": {
+    "collector_number": "64",
+    "image": "",
+    "mana_cost": "",
+    "name": "Geth, Lord of the Vault",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "som/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kuldotha Rebirth",
+    "set": "som",
+    "type_line": "Card"
+  },
+  "spg/32": {
+    "collector_number": "32",
+    "image": "",
+    "mana_cost": "",
+    "name": "Morbid Opportunist",
+    "set": "spg",
+    "type_line": "Card"
+  },
+  "spg/5": {
+    "collector_number": "5",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pitiless Plunderer",
+    "set": "spg",
+    "type_line": "Card"
+  },
+  "spm/133": {
+    "collector_number": "133",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kraven the Hunter",
+    "set": "spm",
+    "type_line": "Card"
+  },
+  "ss1/1": {
+    "collector_number": "1",
+    "image": "",
+    "mana_cost": "",
+    "name": "Jace Beleren",
+    "set": "ss1",
+    "type_line": "Card"
+  },
+  "ss1/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Counterspell",
+    "set": "ss1",
+    "type_line": "Card"
+  },
+  "sth/143": {
+    "collector_number": "143",
+    "image": "",
+    "mana_cost": "",
+    "name": "Volrath's Stronghold",
+    "set": "sth",
+    "type_line": "Card"
+  },
+  "sth/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dream Halls",
+    "set": "sth",
+    "type_line": "Card"
+  },
+  "sth/74": {
+    "collector_number": "74",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tortured Existence",
+    "set": "sth",
+    "type_line": "Card"
+  },
+  "stx/115": {
+    "collector_number": "115",
+    "image": "",
+    "mana_cost": "",
+    "name": "Storm-Kiln Artist",
+    "set": "stx",
+    "type_line": "Card"
+  },
+  "stx/189": {
+    "collector_number": "189",
+    "image": "https://api.scryfall.com/cards/stx/189?format=image&version=border_crop",
+    "mana_cost": "{2}{U}{R}",
+    "name": "Galazeth Prismari",
+    "set": "stx",
+    "type_line": "Legendary Creature — Elder Dragon"
+  },
+  "stx/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archmage Emeritus",
+    "set": "stx",
+    "type_line": "Card"
+  },
+  "td2/26": {
+    "collector_number": "26",
+    "image": "https://cards.scryfall.io/border_crop/front/5/7/57cf7b53-a427-4513-abe8-4a9195e92828.jpg?1783941279",
+    "mana_cost": "{2}",
+    "name": "Talisman of Progress",
+    "set": "td2",
+    "type_line": "Artifact"
+  },
+  "tdc/1": {
+    "collector_number": "1",
+    "image": "",
+    "mana_cost": "",
+    "name": "Betor, Ancestor's Voice",
+    "set": "tdc",
+    "type_line": "Card"
+  },
+  "tdc/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Reunion of the House",
+    "set": "tdc",
+    "type_line": "Card"
+  },
+  "tdc/198": {
+    "collector_number": "198",
+    "image": "",
+    "mana_cost": "",
+    "name": "Victimize",
+    "set": "tdc",
+    "type_line": "Card"
+  },
+  "tdc/2": {
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/tdc/2?format=image&version=border_crop",
+    "mana_cost": "{U}{R}{W}",
+    "name": "Elsha, Threefold Master",
+    "set": "tdc",
+    "type_line": "Legendary Creature — Djinn Monk"
+  },
+  "tdc/37": {
+    "collector_number": "37",
+    "image": "",
+    "mana_cost": "",
+    "name": "Redoubled Stormsinger",
+    "set": "tdc",
+    "type_line": "Card"
+  },
+  "tdc/74": {
+    "collector_number": "74",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goldlust Triad",
+    "set": "tdc",
+    "type_line": "Card"
+  },
+  "tdm/202": {
+    "collector_number": "202",
+    "image": "",
+    "mana_cost": "",
+    "name": "Kotis, the Fangkeeper",
+    "set": "tdm",
+    "type_line": "Card"
+  },
+  "tdm/60": {
+    "collector_number": "60",
+    "image": "https://api.scryfall.com/cards/tdm/60?format=image&version=border_crop",
+    "mana_cost": "{1}{U}",
+    "name": "Taigam, Master Opportunist",
+    "set": "tdm",
+    "type_line": "Legendary Creature — Human Monk"
+  },
+  "thb/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "Dryad of the Ilysian Grove",
+    "set": "thb",
+    "type_line": "Card"
+  },
+  "thb/244": {
+    "collector_number": "244",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Abandon",
+    "set": "thb",
+    "type_line": "Card"
+  },
+  "thb/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Plenty",
+    "set": "thb",
+    "type_line": "Card"
+  },
+  "thb/55": {
+    "collector_number": "55",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nadir Kraken",
+    "set": "thb",
+    "type_line": "Card"
+  },
+  "thb/80": {
+    "collector_number": "80",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wavebreak Hippocamp",
+    "set": "thb",
+    "type_line": "Card"
+  },
+  "ths/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gift of Immortality",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/209": {
+    "collector_number": "209",
+    "image": "",
+    "mana_cost": "",
+    "name": "Xenagos, the Reveler",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/213": {
+    "collector_number": "213",
+    "image": "",
+    "mana_cost": "",
+    "name": "Burnished Hart",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/223": {
+    "collector_number": "223",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nykthos, Shrine to Nyx",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/225": {
+    "collector_number": "225",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Deceit",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/227": {
+    "collector_number": "227",
+    "image": "",
+    "mana_cost": "",
+    "name": "Temple of Silence",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/65": {
+    "collector_number": "65",
+    "image": "",
+    "mana_cost": "",
+    "name": "Swan Song",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/89": {
+    "collector_number": "89",
+    "image": "",
+    "mana_cost": "",
+    "name": "Gray Merchant of Asphodel",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "ths/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Elspeth, Sun's Champion",
+    "set": "ths",
+    "type_line": "Card"
+  },
+  "tmp/254": {
+    "collector_number": "254",
+    "image": "",
+    "mana_cost": "",
+    "name": "Seeker of Skybreak",
+    "set": "tmp",
+    "type_line": "Card"
+  },
+  "tmp/256": {
+    "collector_number": "256",
+    "image": "",
+    "mana_cost": "",
+    "name": "Skyshroud Ranger",
+    "set": "tmp",
+    "type_line": "Card"
+  },
+  "tsp/120": {
+    "collector_number": "120",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nether Traitor",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsp/152": {
+    "collector_number": "152",
+    "image": "",
+    "mana_cost": "",
+    "name": "Empty the Warrens",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsp/251": {
+    "collector_number": "251",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chromatic Star",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsp/266": {
+    "collector_number": "266",
+    "image": "",
+    "mana_cost": "",
+    "name": "Triskelavus",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsp/269": {
+    "collector_number": "269",
+    "image": "",
+    "mana_cost": "",
+    "name": "Academy Ruins",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsp/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Call to the Netherworld",
+    "set": "tsp",
+    "type_line": "Card"
+  },
+  "tsr/287": {
+    "collector_number": "287",
+    "image": "",
+    "mana_cost": "",
+    "name": "Urborg, Tomb of Yawgmoth",
+    "set": "tsr",
+    "type_line": "Card"
+  },
+  "uds/135": {
+    "collector_number": "135",
+    "image": "",
+    "mana_cost": "",
+    "name": "Metalworker",
+    "set": "uds",
+    "type_line": "Card"
+  },
+  "uds/50": {
+    "collector_number": "50",
+    "image": "",
+    "mana_cost": "",
+    "name": "Treachery",
+    "set": "uds",
+    "type_line": "Card"
+  },
+  "uds/52": {
+    "collector_number": "52",
+    "image": "",
+    "mana_cost": "",
+    "name": "Attrition",
+    "set": "uds",
+    "type_line": "Card"
+  },
+  "ulg/72": {
+    "collector_number": "72",
+    "image": "",
+    "mana_cost": "",
+    "name": "Unearth",
+    "set": "ulg",
+    "type_line": "Card"
+  },
+  "uma/232": {
+    "collector_number": "232",
+    "image": "",
+    "mana_cost": "",
+    "name": "Phyrexian Altar",
+    "set": "uma",
+    "type_line": "Card"
+  },
+  "uma/248": {
+    "collector_number": "248",
+    "image": "",
+    "mana_cost": "",
+    "name": "Phyrexian Tower",
+    "set": "uma",
+    "type_line": "Card"
+  },
+  "uma/57": {
+    "collector_number": "57",
+    "image": "",
+    "mana_cost": "",
+    "name": "Frantic Search",
+    "set": "uma",
+    "type_line": "Card"
+  },
+  "unf/169": {
+    "collector_number": "169",
+    "image": "",
+    "mana_cost": "",
+    "name": "It Came from Planet Glurg",
+    "set": "unf",
+    "type_line": "Card"
+  },
+  "unf/88": {
+    "collector_number": "88",
+    "image": "",
+    "mana_cost": "",
+    "name": "Saw in Half",
+    "set": "unf",
+    "type_line": "Card"
+  },
+  "unh/116": {
+    "collector_number": "116",
+    "image": "",
+    "mana_cost": "",
+    "name": "\"Ach! Hans, Run!\"",
+    "set": "unh",
+    "type_line": "Card"
+  },
+  "usg/134": {
+    "collector_number": "134",
+    "image": "",
+    "mana_cost": "",
+    "name": "Exhume",
+    "set": "usg",
+    "type_line": "Card"
+  },
+  "usg/330": {
+    "collector_number": "330",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tolarian Academy",
+    "set": "usg",
+    "type_line": "Card"
+  },
+  "v09/5": {
+    "collector_number": "5",
+    "image": "",
+    "mana_cost": "",
+    "name": "Goblin Lackey",
+    "set": "v09",
+    "type_line": "Card"
+  },
+  "v10/11": {
+    "collector_number": "11",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nevinyrral's Disk",
+    "set": "v10",
+    "type_line": "Card"
+  },
+  "v10/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Isochron Scepter",
+    "set": "v10",
+    "type_line": "Card"
+  },
+  "v10/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ivory Tower",
+    "set": "v10",
+    "type_line": "Card"
+  },
+  "v13/5": {
+    "collector_number": "5",
+    "image": "",
+    "mana_cost": "",
+    "name": "Impulse",
+    "set": "v13",
+    "type_line": "Card"
+  },
+  "v14/8": {
+    "collector_number": "8",
+    "image": "",
+    "mana_cost": "",
+    "name": "Living Death",
+    "set": "v14",
+    "type_line": "Card"
+  },
+  "vma/216": {
+    "collector_number": "216",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hermit Druid",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/221": {
+    "collector_number": "221",
+    "image": "",
+    "mana_cost": "",
+    "name": "Norwood Priestess",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/291": {
+    "collector_number": "291",
+    "image": "",
+    "mana_cost": "",
+    "name": "Badlands",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/293": {
+    "collector_number": "293",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bayou",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/308": {
+    "collector_number": "308",
+    "image": "",
+    "mana_cost": "",
+    "name": "Plateau",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/311": {
+    "collector_number": "311",
+    "image": "",
+    "mana_cost": "",
+    "name": "Savannah",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/313": {
+    "collector_number": "313",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scrubland",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/317": {
+    "collector_number": "317",
+    "image": "",
+    "mana_cost": "",
+    "name": "Taiga",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/321": {
+    "collector_number": "321",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tropical Island",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/322": {
+    "collector_number": "322",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tundra",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/323": {
+    "collector_number": "323",
+    "image": "",
+    "mana_cost": "",
+    "name": "Underground Sea",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/324": {
+    "collector_number": "324",
+    "image": "",
+    "mana_cost": "",
+    "name": "Volcanic Island",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "vma/325": {
+    "collector_number": "325",
+    "image": "",
+    "mana_cost": "",
+    "name": "Yavimaya Hollow",
+    "set": "vma",
+    "type_line": "Card"
+  },
+  "voc/13": {
+    "collector_number": "13",
+    "image": "",
+    "mana_cost": "",
+    "name": "Haunting Imitation",
+    "set": "voc",
+    "type_line": "Card"
+  },
+  "vow/155": {
+    "collector_number": "155",
+    "image": "",
+    "mana_cost": "",
+    "name": "End the Festivities",
+    "set": "vow",
+    "type_line": "Card"
+  },
+  "vow/239": {
+    "collector_number": "239",
+    "image": "",
+    "mana_cost": "",
+    "name": "Halana and Alena, Partners",
+    "set": "vow",
+    "type_line": "Card"
+  },
+  "vow/46": {
+    "collector_number": "46",
+    "image": "",
+    "mana_cost": "",
+    "name": "Welcoming Vampire",
+    "set": "vow",
+    "type_line": "Card"
+  },
+  "war/127": {
+    "collector_number": "127",
+    "image": "",
+    "mana_cost": "",
+    "name": "Finale of Promise",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/137": {
+    "collector_number": "137",
+    "image": "",
+    "mana_cost": "",
+    "name": "Krenko, Tin Street Kingpin",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "God-Eternal Oketra",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/204": {
+    "collector_number": "204",
+    "image": "",
+    "mana_cost": "",
+    "name": "Mayhem Devil",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/234": {
+    "collector_number": "234",
+    "image": "",
+    "mana_cost": "",
+    "name": "Saheeli, Sublime Artificer",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/52": {
+    "collector_number": "52",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flux Channeler",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/79": {
+    "collector_number": "79",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bolas's Citadel",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "war/97": {
+    "collector_number": "97",
+    "image": "",
+    "mana_cost": "",
+    "name": "Liliana, Dreadhorde General",
+    "set": "war",
+    "type_line": "Card"
+  },
+  "who/174": {
+    "collector_number": "174",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cyberman Patrol",
+    "set": "who",
+    "type_line": "Card"
+  },
+  "who/176": {
+    "collector_number": "176",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cybermen Squadron",
+    "set": "who",
+    "type_line": "Card"
+  },
+  "who/38": {
+    "collector_number": "38",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cyber Conversion",
+    "set": "who",
+    "type_line": "Card"
+  },
+  "who/43": {
+    "collector_number": "43",
+    "image": "",
+    "mana_cost": "",
+    "name": "Flatline",
+    "set": "who",
+    "type_line": "Card"
+  },
+  "who/62": {
+    "collector_number": "62",
+    "image": "",
+    "mana_cost": "",
+    "name": "Wibbly-wobbly, Timey-wimey",
+    "set": "who",
+    "type_line": "Card"
+  },
+  "woc/1": {
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/woc/1?format=image&version=border_crop",
+    "mana_cost": "{1}{U}{B}",
+    "name": "Tegwyll, Duke of Splendor",
+    "set": "woc",
+    "type_line": "Legendary Creature — Faerie Noble"
+  },
+  "woc/10": {
+    "collector_number": "10",
+    "image": "",
+    "mana_cost": "",
+    "name": "Malleable Impostor",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/13": {
+    "collector_number": "13",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blightwing Bandit",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Faerie Bladecrafter",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/15": {
+    "collector_number": "15",
+    "image": "",
+    "mana_cost": "",
+    "name": "Nettling Nuisance",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Court of Garenbrig",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/28": {
+    "collector_number": "28",
+    "image": "",
+    "mana_cost": "",
+    "name": "Throne of Eldraine",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/3": {
+    "collector_number": "3",
+    "image": "https://api.scryfall.com/cards/woc/3?format=image&version=border_crop",
+    "mana_cost": "{2}{U}{B}",
+    "name": "Alela, Cunning Conqueror",
+    "set": "woc",
+    "type_line": "Legendary Creature — Faerie Warlock"
+  },
+  "woc/86": {
+    "collector_number": "86",
+    "image": "",
+    "mana_cost": "",
+    "name": "Cloud of Faeries",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woc/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archmage of Echoes",
+    "set": "woc",
+    "type_line": "Card"
+  },
+  "woe/163": {
+    "collector_number": "163",
+    "image": "",
+    "mana_cost": "",
+    "name": "Blossoming Tortoise",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "woe/208": {
+    "collector_number": "208",
+    "image": "",
+    "mana_cost": "",
+    "name": "Likeness Looter",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "woe/21": {
+    "collector_number": "21",
+    "image": "",
+    "mana_cost": "",
+    "name": "Moonshaker Cavalry",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "woe/210": {
+    "collector_number": "210",
+    "image": "https://api.scryfall.com/cards/woe/210?format=image&version=border_crop",
+    "mana_cost": "{U}{B}",
+    "name": "Obyra, Dreaming Duelist",
+    "set": "woe",
+    "type_line": "Legendary Creature — Faerie Warrior"
+  },
+  "woe/211": {
+    "collector_number": "211",
+    "image": "https://api.scryfall.com/cards/woe/211?format=image&version=border_crop",
+    "mana_cost": "{1}{B}{R}",
+    "name": "Rowan, Scion of War",
+    "set": "woe",
+    "type_line": "Legendary Creature — Human Wizard"
+  },
+  "woe/218": {
+    "collector_number": "218",
+    "image": "https://api.scryfall.com/cards/woe/218?format=image&version=border_crop",
+    "mana_cost": "{1}{W}{U}",
+    "name": "Will, Scion of Peace",
+    "set": "woe",
+    "type_line": "Legendary Creature — Human Wizard"
+  },
+  "woe/237": {
+    "collector_number": "237",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spellscorn Coven",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "woe/64": {
+    "collector_number": "64",
+    "image": "",
+    "mana_cost": "",
+    "name": "Picklock Prankster",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "woe/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lich-Knights' Conquest",
+    "set": "woe",
+    "type_line": "Card"
+  },
+  "wwk/106": {
+    "collector_number": "106",
+    "image": "",
+    "mana_cost": "",
+    "name": "Joraga Warcaller",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/122": {
+    "collector_number": "122",
+    "image": "",
+    "mana_cost": "",
+    "name": "Basilisk Collar",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/128": {
+    "collector_number": "128",
+    "image": "",
+    "mana_cost": "",
+    "name": "Pilgrim's Eye",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/132": {
+    "collector_number": "132",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bojuka Bog",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/138": {
+    "collector_number": "138",
+    "image": "",
+    "mana_cost": "",
+    "name": "Khalni Garden",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/145": {
+    "collector_number": "145",
+    "image": "",
+    "mana_cost": "",
+    "name": "Tectonic Edge",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/20": {
+    "collector_number": "20",
+    "image": "",
+    "mana_cost": "",
+    "name": "Stoneforge Mystic",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/3": {
+    "collector_number": "3",
+    "image": "",
+    "mana_cost": "",
+    "name": "Archon of Redemption",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/74": {
+    "collector_number": "74",
+    "image": "",
+    "mana_cost": "",
+    "name": "Chain Reaction",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "wwk/96": {
+    "collector_number": "96",
+    "image": "",
+    "mana_cost": "",
+    "name": "Avenger of Zendikar",
+    "set": "wwk",
+    "type_line": "Card"
+  },
+  "xln/203": {
+    "collector_number": "203",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ripjaw Raptor",
+    "set": "xln",
+    "type_line": "Card"
+  },
+  "xln/59": {
+    "collector_number": "59",
+    "image": "",
+    "mana_cost": "",
+    "name": "Herald of Secret Streams",
+    "set": "xln",
+    "type_line": "Card"
+  },
+  "zen/114": {
+    "collector_number": "114",
+    "image": "",
+    "mana_cost": "",
+    "name": "Vampire Hexmage",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/14": {
+    "collector_number": "14",
+    "image": "",
+    "mana_cost": "",
+    "name": "Journey to Nowhere",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/154": {
+    "collector_number": "154",
+    "image": "",
+    "mana_cost": "",
+    "name": "Warren Instigator",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/159": {
+    "collector_number": "159",
+    "image": "",
+    "mana_cost": "",
+    "name": "Beastmaster Ascension",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/165": {
+    "collector_number": "165",
+    "image": "",
+    "mana_cost": "",
+    "name": "Harrow",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/168": {
+    "collector_number": "168",
+    "image": "",
+    "mana_cost": "",
+    "name": "Lotus Cobra",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/172": {
+    "collector_number": "172",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oracle of Mul Daya",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/178": {
+    "collector_number": "178",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rampaging Baloths",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/201": {
+    "collector_number": "201",
+    "image": "",
+    "mana_cost": "",
+    "name": "Expedition Map",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/211": {
+    "collector_number": "211",
+    "image": "",
+    "mana_cost": "",
+    "name": "Arid Mesa",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/213": {
+    "collector_number": "213",
+    "image": "",
+    "mana_cost": "",
+    "name": "Emeria, the Sky Ruin",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/219": {
+    "collector_number": "219",
+    "image": "",
+    "mana_cost": "",
+    "name": "Marsh Flats",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/220": {
+    "collector_number": "220",
+    "image": "",
+    "mana_cost": "",
+    "name": "Misty Rainforest",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/221": {
+    "collector_number": "221",
+    "image": "",
+    "mana_cost": "",
+    "name": "Oran-Rief, the Vastwood",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/223": {
+    "collector_number": "223",
+    "image": "",
+    "mana_cost": "",
+    "name": "Scalding Tarn",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/228": {
+    "collector_number": "228",
+    "image": "",
+    "mana_cost": "",
+    "name": "Valakut, the Molten Pinnacle",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/229": {
+    "collector_number": "229",
+    "image": "",
+    "mana_cost": "",
+    "name": "Verdant Catacombs",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/25": {
+    "collector_number": "25",
+    "image": "",
+    "mana_cost": "",
+    "name": "Luminarch Ascension",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/47": {
+    "collector_number": "47",
+    "image": "",
+    "mana_cost": "",
+    "name": "Hedron Crab",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/61": {
+    "collector_number": "61",
+    "image": "",
+    "mana_cost": "",
+    "name": "Rite of Replication",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/62": {
+    "collector_number": "62",
+    "image": "",
+    "mana_cost": "",
+    "name": "Roil Elemental",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/67": {
+    "collector_number": "67",
+    "image": "",
+    "mana_cost": "",
+    "name": "Spell Pierce",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/82": {
+    "collector_number": "82",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bloodchief Ascension",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/83": {
+    "collector_number": "83",
+    "image": "",
+    "mana_cost": "",
+    "name": "Bloodghast",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "zen/9": {
+    "collector_number": "9",
+    "image": "",
+    "mana_cost": "",
+    "name": "Day of Judgment",
+    "set": "zen",
+    "type_line": "Card"
+  },
+  "znc/4": {
+    "collector_number": "4",
+    "image": "",
+    "mana_cost": "",
+    "name": "Enigma Thief",
+    "set": "znc",
+    "type_line": "Card"
+  },
+  "znr/102": {
+    "collector_number": "102",
+    "image": "",
+    "mana_cost": "",
+    "name": "Feed the Swarm",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/16": {
+    "collector_number": "16",
+    "image": "",
+    "mana_cost": "",
+    "name": "Felidar Retreat",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/175": {
+    "collector_number": "175",
+    "image": "",
+    "mana_cost": "",
+    "name": "Valakut Exploration",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/234": {
+    "collector_number": "234",
+    "image": "",
+    "mana_cost": "",
+    "name": "Phylath, World Sculptor",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/24": {
+    "collector_number": "24",
+    "image": "",
+    "mana_cost": "",
+    "name": "Luminarch Aspirant",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/75": {
+    "collector_number": "75",
+    "image": "",
+    "mana_cost": "",
+    "name": "Ruin Crab",
+    "set": "znr",
+    "type_line": "Card"
+  },
+  "znr/85": {
+    "collector_number": "85",
+    "image": "",
+    "mana_cost": "",
+    "name": "Thieving Skydiver",
+    "set": "znr",
+    "type_line": "Card"
+  }
+}

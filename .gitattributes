@@ -8,3 +8,9 @@
 /client/src/data/MTGACards.json linguist-generated=true
 /client/src/data/MTGAAlternates.json linguist-generated=true
 /src/data/sealed_extended_data.json linguist-generated=true
+/data/cubes/gulchdale.txt -text -diff linguist-generated=true
+/data/compiler/source/gulchdale.csv -text -diff linguist-generated=true
+/data/compiler/source/scryfall.json -diff linguist-generated=true
+/compiler/tests/fixtures/phase1/gulchdale.csv -text -diff linguist-generated=true
+/compiler/tests/fixtures/phase1/scryfall.json -diff linguist-generated=true
+/compiler/tests/fixtures/phase1/expected-gulchdale.txt -text -diff linguist-generated=true

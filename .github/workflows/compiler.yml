@@ -1,0 +1,41 @@
+name: Gulchdale Compiler
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    compiler:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+                  cache: pip
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22.x
+                  cache: npm
+            - run: npm ci
+            - run: npm run build-server
+            - run: python -m pip install -e './compiler[dev]'
+            - run: ruff check compiler
+            - run: mypy compiler/gulchdale_compiler
+            - run: pytest compiler/tests
+            - name: Reproduce and validate the Phase 1 golden environment
+              run: >-
+                  gulchdale-compiler compile
+                  --source compiler/tests/fixtures/phase1/gulchdale.csv
+                  --metadata compiler/tests/fixtures/phase1/scryfall.json
+                  --fetched-at 2026-09-30T00:00:00Z
+                  --recovered-phase1
+            - run: gulchdale-compiler validate --version gch-faa043e37114
+
+    compiler-image:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v4
+            - run: docker build --file compiler/Dockerfile --tag gulchdale-compiler-ci .

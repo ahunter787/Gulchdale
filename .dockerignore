@@ -10,6 +10,12 @@ node_modules
 scripts
 test
 tmp
+.gulchdale
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.egg-info
 
 data/scryfall-all-cards.json
 data/scryfall-sets.json

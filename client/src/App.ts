@@ -39,10 +39,12 @@ import { Sortable } from "sortablejs-vue3";
 import Swal, { SweetAlertIcon, SweetAlertOptions, SweetAlertResult } from "sweetalert2";
 import { SortableEvent } from "sortablejs";
 import { createCommonApp } from "./appCommon";
+import { GulchdaleCompilerStatus, shouldShowGulchdaleUpdateBanner } from "./gulchdaleCompilerStatus";
 
 const DefaultCardback = "/img/gulchdale-card-back.png";
 
 type GulchdaleConfig = {
+	activeVersion: string;
 	app: string;
 	cubeName: string;
 	cubeCobraID: string;
@@ -52,6 +54,7 @@ type GulchdaleConfig = {
 	maxPlayers: number;
 	reportingEnabled: boolean;
 	upstreamRevision: string;
+	compiler: GulchdaleCompilerStatus;
 };
 
 // @ts-expect-error Don't want to debug why TS doesn't understand this for now. Import works fine.
@@ -325,6 +328,7 @@ export default defineComponent({
 
 		return {
 			gulchdaleConfig: {
+				activeVersion: "",
 				app: "Gulchdale",
 				cubeName: "Gulchdale",
 				cubeCobraID: "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
@@ -334,7 +338,16 @@ export default defineComponent({
 				maxPlayers: 8,
 				reportingEnabled: false,
 				upstreamRevision: "",
+				compiler: {
+					activeVersion: "",
+					environmentHash: "",
+					activeSourceHash: "",
+					state: "checking",
+					lastSuccessfulCheckAt: null,
+				},
 			} as GulchdaleConfig,
+			compilerStatusInitialTimer: undefined as ReturnType<typeof setTimeout> | undefined,
+			compilerStatusTimer: undefined as ReturnType<typeof setInterval> | undefined,
 			// Make these enums available in the template
 			GameState: GameState,
 			ReadyState,
@@ -512,6 +525,14 @@ export default defineComponent({
 		};
 	},
 	methods: {
+		async refreshGulchdaleCompilerStatus() {
+			try {
+				const response = await fetch("/api/gulchdale/compiler/status");
+				if (response.ok) this.gulchdaleConfig.compiler = (await response.json()) as GulchdaleCompilerStatus;
+			} catch (error) {
+				console.warn("Unable to refresh Gulchdale compiler status.", error);
+			}
+		},
 		initializeSocket() {
 			this.socket.on("disconnect", () => {
 				console.log("Disconnected from server.");
@@ -3882,6 +3903,9 @@ export default defineComponent({
 		onEnterBoosterCards: onEnterBoosterCards,
 	},
 	computed: {
+		gulchdaleUpdateAvailableForOwner(): boolean {
+			return shouldShowGulchdaleUpdateBanner(this.userID, this.sessionOwner, this.gulchdaleConfig.compiler.state);
+		},
 		deckDisplay(): typeof CardPool | null {
 			return this.$refs.deckDisplay as typeof CardPool | null;
 		},
@@ -4185,6 +4209,8 @@ export default defineComponent({
 		try {
 			const configResponse = await fetch("/api/gulchdale/config");
 			if (configResponse.ok) this.gulchdaleConfig = (await configResponse.json()) as GulchdaleConfig;
+			this.compilerStatusInitialTimer = setTimeout(() => void this.refreshGulchdaleCompilerStatus(), 2_000);
+			this.compilerStatusTimer = setInterval(() => void this.refreshGulchdaleCompilerStatus(), 5 * 60 * 1000);
 
 			this.emitter.on("notification", this.pushNotification);
 			this.emitter.on("requestNotificationPermission", this.requestNotificationPermission);
@@ -4251,6 +4277,8 @@ export default defineComponent({
 	unmounted() {
 		this.emitter.off("notification", this.pushNotification);
 		window.removeEventListener("beforeunload", this.beforeunload);
+		if (this.compilerStatusInitialTimer) clearTimeout(this.compilerStatusInitialTimer);
+		if (this.compilerStatusTimer) clearInterval(this.compilerStatusTimer);
 	},
 	watch: {
 		sessionID() {

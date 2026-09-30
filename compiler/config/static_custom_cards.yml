@@ -1,0 +1,249 @@
+- name: Sapphire Adornment
+  mana_cost: U
+  type_line: Adornment - Blue
+  type: Adornment - Blue
+  image: https://i.imgur.com/wdhWLRi.jpeg
+  oracle_text: Add Blue to your Commander's Color Identity. You may only use one Adornment.
+  include_in:
+  - commander
+- name: Ruby Adornment
+  mana_cost: R
+  type_line: Adornment - Red
+  type: Adornment - Red
+  image: https://i.imgur.com/jLv58XB.jpeg
+  oracle_text: Add Red to your Commander's Color Identity. You may only use one Adornment.
+  include_in:
+  - commander
+- name: Emerald Adornment
+  mana_cost: G
+  type_line: Adornment - Green
+  type: Adornment - Green
+  image: https://i.imgur.com/PGikcjE.jpeg
+  oracle_text: Add Green to your Commander's Color Identity. You may only use one Adornment.
+  include_in:
+  - commander
+- name: Pearl Adornment
+  mana_cost: W
+  type_line: Adornment - White
+  type: Adornment - White
+  image: https://i.imgur.com/CnqHfs2.jpeg
+  oracle_text: Add White to your Commander's Color Identity. You may only use one Adornment.
+  include_in:
+  - commander
+- name: Jet Adornment
+  mana_cost: B
+  type_line: Adornment - Black
+  type: Adornment - Black
+  image: https://i.imgur.com/lUciYhR.jpeg
+  oracle_text: Add Black to your Commander's Color Identity. You may only use one Adornment.
+  include_in:
+  - commander
+- name: Elf Booster Pack
+  mana_cost: G
+  type_line: Booster Pack - Elf
+  type: Booster Pack - Elf
+  image: https://i.imgur.com/cya2kxh.png
+  oracle_text: Drafting Elf Booster Pack adds 6 Elf type cards to your draft pool.
+  draft_effects:
+  - type: AddCards
+    count: 6
+    cards:
+    - Elvish Mystic (m14) 169
+    - Heritage Druid (mor) 126
+    - Joraga Warcaller (wwk) 106
+    - Bramblewood Paragon (mor) 115
+    - Elvish Warmaster (khm) 167
+    - Leaf-Crowned Visionary (dmu) 167
+    - Priest of Titania (mh3) 286
+    - Wellwisher (ons) 300
+    - Elvish Archdruid (m10) 176
+    - Elvish Champion (10e) 261
+    - Imperious Perfect (lrw) 220
+    - Marwyn, the Nurturer (dom) 172
+    - Dionus, Elvish Archdruid (j25) 52
+    - Immaculate Magistrate (lrw) 219
+    - Lys Alana Huntmaster (lrw) 229
+    - Norwood Priestess (vma) 221
+    - Cultivator of Blades (kld) 151
+    - Wolverine Riders (khc) 14
+    - Elvish Promenade (lrw) 208
+    - Wirewood Lodge (plst) DD1-26
+    duplicateProtection: true
+  include_in:
+  - commander
+- name: Goblin Booster Pack
+  mana_cost: R
+  type_line: Booster Pack - Goblin
+  type: Booster Pack - Goblin
+  image: https://i.imgur.com/ZTK3bfR.png
+  oracle_text: Drafting Goblin Booster Pack adds 6 Goblin type cards to your draft pool.
+  draft_effects:
+  - type: AddCards
+    count: 6
+    cards:
+    - Goblin Lackey (v09) 5
+    - Goblin Lookout (lgn) 101
+    - Warren Instigator (zen) 154
+    - General Kreat, the Boltbringer (j25) 48
+    - Goblin Chieftain (m10) 139
+    - Goblin King (10e) 207
+    - Hobgoblin Bandit Lord (afr) 147
+    - Krenko, Baron of Tin Street (mkm) 135
+    - Krenko, Tin Street Kingpin (war) 137
+    - Pashalik Mons (mh1) 138
+    - Goblin Trashmaster (m19) 144
+    - Goblin Wizard (me1) 97
+    - Goblin War Strike (scg) 96
+    - Kuldotha Rebirth (som) 96
+    - Dragon Fodder (ala) 97
+    - Krenko's Command (m13) 139
+    - Goblin Offensive (hop) 56
+    - Hordeling Outburst (f15) 3
+    - Goblin Rally (rtr) 95
+    - Goblinslide (ktk) 109
+    duplicateProtection: true
+  include_in:
+  - commander
+- name: Zombie Booster Pack
+  mana_cost: B
+  type_line: Booster Pack - Zombie
+  type: Booster Pack - Zombie
+  image: https://i.imgur.com/g86D5js.png
+  oracle_text: Drafting Zombie Booster Pack adds 6 Zombie type cards to your draft pool.
+  draft_effects:
+  - type: AddCards
+    count: 6
+    cards:
+    - Cleaver Skaab (mic) 11
+    - Hordewing Skaab (mic) 15
+    - Prophet of the Scarab (drc) 9
+    - Rooftop Storm (isd) 71
+    - Gravecrawler (dka) 64
+    - Shepherd of Rot (ons) 168
+    - Undead Augur (mh1) 112
+    - Cemetery Reaper (m10) 87
+    - Death Baron (ala) 70
+    - Diregraf Colossus (soi) 107
+    - Liliana's Devotee (m21) 109
+    - Lord of the Accursed (akh) 99
+    - Lord of the Undead (10e) 155
+    - Graveborn Muse (lgn) 73
+    - Lost Monarch of Ifnir (drc) 11
+    - Undead Warchief (plst) TSB-52
+    - Endless Ranks of the Dead (isd) 99
+    - Lich Lord of Unx (arb) 24
+    - Unholy Grotto (ons) 327
+    duplicateProtection: true
+  include_in:
+  - commander
+- name: Faerie Booster Pack
+  mana_cost: U
+  type_line: Booster Pack - Faerie
+  type: Booster Pack - Faerie
+  image: https://i.imgur.com/86rJpPk.png
+  oracle_text: Drafting Faerie Booster Pack adds 6 Faerie type cards to your draft pool.
+  draft_effects:
+  - type: AddCards
+    count: 6
+    cards:
+    - Faerie Seer (mh1) 51
+    - Cloud of Faeries (woc) 86
+    - Emrakul's Messenger (mh3) 61
+    - Faerie Mastermind (mom) 58
+    - Hypnotic Sprite (eld) 49
+    - Picklock Prankster (woe) 64
+    - Quickling (m15) 76
+    - Spellstutter Sprite (lrw) 89
+    - Brazen Borrower (eld) 39
+    - Scion of Oona (lrw) 83
+    - Glen Elendra Archmage (eve) 22
+    - Malleable Impostor (woc) 10
+    - Mocking Doppelganger (clb) 667
+    - Archmage of Echoes (woc) 9
+    - Strix Serenade (mh3) 71
+    - Faebloom Trick (fdn) 38
+    - Thieves' Fortune (mor) 54
+    - Aetherize (gtc) 29
+    - Hands of Binding (gtc) 37
+    - Stolen by the Fae (eld) 66
+    - Notorious Throng (mor) 45
+    - Oona's Blackguard (dci) 15
+    - Faerie Bladecrafter (woc) 14
+    - Nettling Nuisance (woc) 15
+    - Blightwing Bandit (woc) 13
+    - Bitterblossom (mor) 58
+    - Likeness Looter (woe) 208
+    - Halo Forager (mom) 227
+    - Spellscorn Coven (woe) 237
+    - Nymris, Oona's Trickster (cmr) 288
+    duplicateProtection: true
+  include_in:
+  - commander
+- name: Human Booster Pack
+  mana_cost: W
+  type_line: Booster Pack - Human
+  type: Booster Pack - Human
+  image: https://i.imgur.com/BHiyi2F.png
+  oracle_text: Drafting Human Booster Pack adds 6 Human type cards to your draft pool.
+  draft_effects:
+  - type: AddCards
+    count: 6
+    cards:
+    - Champion of the Parish (isd) 6
+    - Soul's Attendant (roe) 44
+    - Thalia's Lieutenant (soi) 43
+    - Adeline, Resplendent Cathar (mid) 1
+    - Cosmogrand Zenith (eoe) 9
+    - Devout Chaplain (avr) 17
+    - Ranger-Captain of Eos (mh1) 21
+    - Thraben Doomsayer (dka) 25
+    - Beregond of the Guard (ltc) 9
+    - Greymond, Avacyn's Stalwart (slx) 18
+    - Ranger of Eos (ala) 21
+    - Knight-Errant of Eos (mom) 26
+    - Angel of Glory's Rise (avr) 1
+    - The Wandering Emperor (neo) 42
+    - Fight as One (iko) 12
+    - Call the Coppercoats (c20) 23
+    - Sunset Revelry (mid) 38
+    - Distract the Guards (acr) 3
+    - Increasing Devotion (dka) 11
+    - Visions of Glory (mic) 32
+    duplicateProtection: true
+  include_in:
+  - commander
+- name: Partner Wanted
+  mana_cost: ''
+  type_line: Draft Effect - Partner
+  type: Draft Effect - Partner
+  image: https://i.imgur.com/ouRxd0D.png
+  oracle_text: You may select a Legendary Creature in your Draft Pool, it gains Partner. (You can have two commanders if both
+    have partner.)
+  include_in:
+  - commander
+- name: Looking For Group!
+  mana_cost: ''
+  type_line: Draft Effect - Shapeshifter Partner
+  type: Draft Effect - Shapeshifter Partner
+  image: https://i.imgur.com/22rD7R7.png
+  oracle_text: Select two Legendary Creatures in your draft pool who do not share a color identity. They each gain Partner.
+    (You can have two commanders if both have partner.)
+  include_in:
+  - commander
+- name: Plenty for Both of Us
+  mana_cost: ''
+  type_line: Draft Effect - Partner
+  type: Draft Effect - Partner
+  image: https://i.imgur.com/nKbtg6W.png
+  oracle_text: Select two Legendary Creatures in your draft pool that share color identity. They each gain Partner (You can
+    have two commanders if both have partner.)
+  include_in:
+  - commander
+- name: Signature Spell
+  mana_cost: ''
+  type_line: Draft Effect - Signature Spell
+  type: Draft Effect - Signature Spell
+  image: https://i.imgur.com/GSOAER0.jpeg
+  oracle_text: You may choose a nonland, noncreature spell in your draft pool within your commander's color identity to be
+    your signature spell. (Signature spells obey command zone rules and are castable while you control your commander).
+  include_in: []

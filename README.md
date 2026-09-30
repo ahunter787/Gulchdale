@@ -125,6 +125,20 @@ Open `http://localhost:43721`, or use port `43721` on the host's LAN address fro
 
 The original public-Draftmancer launcher remains available only as a historical prototype under `reference/prototype/`.
 
+## Running the Phase 2 compiler
+
+Phase 2 adds a deterministic, explicitly promoted compiler. A build downloads the public CubeCobra CSV, resolves exact Scryfall printings, compiles and validates a candidate, and leaves the active environment untouched:
+
+```bash
+docker compose --profile tools run --rm compiler build
+docker compose --profile tools run --rm compiler diff --version gch-<candidate-hash>
+docker compose --profile tools run --rm compiler diff --version gch-<candidate-hash> --format markdown
+docker compose --profile tools run --rm compiler promote --version gch-<candidate-hash>
+docker compose up --build -d gulchdale
+```
+
+Promotion must name the reviewed candidate version and never commits, rebuilds, or restarts the app. Because the active environment is copied into the production image, activating a promotion requires the `up --build -d` command shown above; a plain restart keeps the previous image. The complete workflow, local Python setup, manifest format, and recovery steps are documented in [`docs/PHASE2_COMPILER.md`](docs/PHASE2_COMPILER.md).
+
 ## Source discussions
 
 - [Gulchdale app outline](https://chatgpt.com/share/6abc5606-f654-83e8-8bb8-c3813aeb4de9) — primary product and architecture plan

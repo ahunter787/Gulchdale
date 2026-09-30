@@ -86,26 +86,26 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Elvish Mystic (m14) 169",
           "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
           "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
           "Elvish Archdruid (m10) 176",
           "Elvish Champion (10e) 261",
           "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
           "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
           "Lys Alana Huntmaster (lrw) 229",
           "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
         ],
         "duplicateProtection": true
       }
@@ -123,26 +123,26 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Goblin Lackey (v09) 5",
-          "Goblin Lookout (lgn) 101",
-          "Warren Instigator (zen) 154",
-          "General Kreat, the Boltbringer (j25) 48",
-          "Goblin Chieftain (m10) 139",
-          "Goblin King (10e) 207",
-          "Hobgoblin Bandit Lord (afr) 147",
-          "Krenko, Baron of Tin Street (mkm) 135",
-          "Krenko, Tin Street Kingpin (war) 137",
-          "Pashalik Mons (mh1) 138",
-          "Goblin Trashmaster (m19) 144",
-          "Goblin Wizard (me1) 97",
           "Goblin War Strike (scg) 96",
-          "Kuldotha Rebirth (som) 96",
           "Dragon Fodder (ala) 97",
           "Krenko's Command (m13) 139",
-          "Goblin Offensive (hop) 56",
           "Hordeling Outburst (f15) 3",
+          "Krenko, Tin Street Kingpin (war) 137",
+          "Goblin Wizard (me1) 97",
+          "Goblin Chieftain (m10) 139",
+          "Goblin King (10e) 207",
+          "Warren Instigator (zen) 154",
+          "Goblin Lackey (v09) 5",
+          "Goblin Trashmaster (m19) 144",
+          "Hobgoblin Bandit Lord (afr) 147",
+          "Goblin Lookout (lgn) 101",
+          "Krenko, Baron of Tin Street (mkm) 135",
+          "Goblinslide (ktk) 109",
           "Goblin Rally (rtr) 95",
-          "Goblinslide (ktk) 109"
+          "Kuldotha Rebirth (som) 96",
+          "Goblin Offensive (hop) 56",
+          "Pashalik Mons (mh1) 138",
+          "General Kreat, the Boltbringer (j25) 48"
         ],
         "duplicateProtection": true
       }
@@ -160,25 +160,25 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Cleaver Skaab (mic) 11",
-          "Hordewing Skaab (mic) 15",
-          "Prophet of the Scarab (drc) 9",
-          "Rooftop Storm (isd) 71",
           "Gravecrawler (dka) 64",
           "Shepherd of Rot (ons) 168",
-          "Undead Augur (mh1) 112",
-          "Cemetery Reaper (m10) 87",
-          "Death Baron (ala) 70",
-          "Diregraf Colossus (soi) 107",
-          "Liliana's Devotee (m21) 109",
-          "Lord of the Accursed (akh) 99",
-          "Lord of the Undead (10e) 155",
-          "Graveborn Muse (lgn) 73",
-          "Lost Monarch of Ifnir (drc) 11",
           "Undead Warchief (plst) TSB-52",
-          "Endless Ranks of the Dead (isd) 99",
+          "Death Baron (ala) 70",
           "Lich Lord of Unx (arb) 24",
-          "Unholy Grotto (ons) 327"
+          "Cemetery Reaper (m10) 87",
+          "Graveborn Muse (lgn) 73",
+          "Endless Ranks of the Dead (isd) 99",
+          "Diregraf Colossus (soi) 107",
+          "Rooftop Storm (isd) 71",
+          "Liliana's Devotee (m21) 109",
+          "Cleaver Skaab (mic) 11",
+          "Hordewing Skaab (mic) 15",
+          "Lord of the Accursed (akh) 99",
+          "Unholy Grotto (ons) 327",
+          "Undead Augur (mh1) 112",
+          "Lord of the Undead (10e) 155",
+          "Lost Monarch of Ifnir (drc) 11",
+          "Prophet of the Scarab (drc) 9"
         ],
         "duplicateProtection": true
       }
@@ -196,36 +196,36 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Faerie Seer (mh1) 51",
           "Cloud of Faeries (woc) 86",
           "Emrakul's Messenger (mh3) 61",
           "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
           "Spellstutter Sprite (lrw) 89",
           "Brazen Borrower (eld) 39",
           "Scion of Oona (lrw) 83",
           "Glen Elendra Archmage (eve) 22",
           "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
           "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
           "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
           "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
+          "Blightwing Bandit (woc) 13",
           "Faerie Bladecrafter (woc) 14",
           "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
+          "Oona's Blackguard (dci) 15",
           "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
           "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
           "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
         ],
         "duplicateProtection": true
       }
@@ -243,26 +243,26 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Champion of the Parish (isd) 6",
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
           "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
           "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
           "Cosmogrand Zenith (eoe) 9",
           "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
           "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
           "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
         ],
         "duplicateProtection": true
       }
@@ -314,21 +314,21 @@
         "type": "AddCards",
         "count": 3,
         "cards": [
+          "Signature Spell",
           "Wibbly-wobbly, Timey-wimey (who) 62",
-          "Paradox Haze (plst) TSP-71",
-          "Signature Spell"
+          "Paradox Haze (plst) TSP-71"
         ],
         "duplicateProtection": true
       }
     ],
     "related_cards": [
-      "Wibbly-wobbly, Timey-wimey (who) 62",
-      "Paradox Haze (plst) TSP-71",
       {
         "name": "Signature Spell",
         "image": "https://i.imgur.com/GSOAER0.jpeg",
         "type": "Draft Effect - Signature Spell"
-      }
+      },
+      "Wibbly-wobbly, Timey-wimey (who) 62",
+      "Paradox Haze (plst) TSP-71"
     ]
   },
   {
@@ -345,543 +345,19 @@
         "type": "AddCards",
         "count": 2,
         "cards": [
-          "Training Grounds (p22) 6",
-          "Signature Spell"
+          "Signature Spell",
+          "Training Grounds (p22) 6"
         ],
         "duplicateProtection": true
       }
     ],
     "related_cards": [
-      "Training Grounds (p22) 6",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "The Watcher in the Water",
-    "set": "ltr",
-    "collector_number": "75",
-    "image": "https://api.scryfall.com/cards/ltr/75?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{3}{U}{U}",
-    "type_line": "Legendary Creature — Kraken",
-    "type": "Legendary Creature — Kraken",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 4,
-        "cards": [
-          "Nadir Kraken (thb) 55",
-          "Keep Watch (jud) 43",
-          "Perilous Research (csp) 41",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Nadir Kraken (thb) 55",
-      "Keep Watch (jud) 43",
-      "Perilous Research (csp) 41",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Endrek Sahr, Master Breeder",
-    "set": "mm2",
-    "collector_number": "82",
-    "image": "https://api.scryfall.com/cards/mm2/82?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{4}{B}",
-    "type_line": "Legendary Creature — Human Wizard",
-    "type": "Legendary Creature — Human Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Into the Pit (dsc) 20",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Into the Pit (dsc) 20",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Krenko, Mob Boss",
-    "set": "m13",
-    "collector_number": "138",
-    "image": "https://api.scryfall.com/cards/m13/138?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack",
-    "mana_cost": "{2}{R}{R}",
-    "type_line": "Legendary Creature — Goblin Warrior",
-    "type": "Legendary Creature — Goblin Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Goblin Lackey (v09) 5",
-          "Goblin Lookout (lgn) 101",
-          "Warren Instigator (zen) 154",
-          "General Kreat, the Boltbringer (j25) 48",
-          "Goblin Chieftain (m10) 139",
-          "Goblin King (10e) 207",
-          "Hobgoblin Bandit Lord (afr) 147",
-          "Krenko, Baron of Tin Street (mkm) 135",
-          "Krenko, Tin Street Kingpin (war) 137",
-          "Pashalik Mons (mh1) 138",
-          "Goblin Trashmaster (m19) 144",
-          "Goblin Wizard (me1) 97",
-          "Goblin War Strike (scg) 96",
-          "Kuldotha Rebirth (som) 96",
-          "Dragon Fodder (ala) 97",
-          "Krenko's Command (m13) 139",
-          "Goblin Offensive (hop) 56",
-          "Hordeling Outburst (f15) 3",
-          "Goblin Rally (rtr) 95",
-          "Goblinslide (ktk) 109"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Goblin Booster Pack"
-    ]
-  },
-  {
-    "name": "Rionya, Fire Dancer",
-    "set": "c21",
-    "collector_number": "55",
-    "image": "https://api.scryfall.com/cards/c21/55?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{3}{R}{R}",
-    "type_line": "Legendary Creature — Human Wizard",
-    "type": "Legendary Creature — Human Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 7,
-        "cards": [
-          "Pyretic Ritual (m11) 153",
-          "Gut Shot (nph) 86",
-          "Flame Jab (eve) 53",
-          "Patron of the Arts (clb) 191",
-          "Redoubled Stormsinger (tdc) 37",
-          "Ardent Elementalist (mid) 128",
-          "Humble Defector (frf) 104"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Pyretic Ritual (m11) 153",
-      "Gut Shot (nph) 86",
-      "Flame Jab (eve) 53",
-      "Patron of the Arts (clb) 191",
-      "Redoubled Stormsinger (tdc) 37",
-      "Ardent Elementalist (mid) 128",
-      "Humble Defector (frf) 104"
-    ]
-  },
-  {
-    "name": "Imaryll, Elfhame Elite",
-    "set": "gn3",
-    "collector_number": "5",
-    "image": "https://api.scryfall.com/cards/gn3/5?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Elf Booster Pack (x3)",
-    "mana_cost": "{2}{G}{G}",
-    "type_line": "Legendary Creature — Elf Warrior",
-    "type": "Legendary Creature — Elf Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 3,
-        "cards": [
-          "Elvish Mystic (m14) 169",
-          "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
-          "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
-          "Elvish Archdruid (m10) 176",
-          "Elvish Champion (10e) 261",
-          "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
-          "Immaculate Magistrate (lrw) 219",
-          "Lys Alana Huntmaster (lrw) 229",
-          "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Elf Booster Pack"
-    ]
-  },
-  {
-    "name": "Urza, Lord Protector",
-    "set": "bro",
-    "collector_number": "225",
-    "image": "https://api.scryfall.com/cards/bro/225?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{1}{W}{U}",
-    "type_line": "Legendary Creature — Human Artificer",
-    "type": "Legendary Creature — Human Artificer",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "The Mightstone and Weakstone (bro) 238",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "The Mightstone and Weakstone (bro) 238",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Will, Scion of Peace",
-    "set": "woe",
-    "collector_number": "218",
-    "image": "https://api.scryfall.com/cards/woe/218?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack (x4) (and adds any listed cards/effects).",
-    "mana_cost": "{1}{W}{U}",
-    "type_line": "Legendary Creature — Human Wizard",
-    "type": "Legendary Creature — Human Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Ivory Tower (v10) 4",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      },
-      {
-        "type": "AddCards",
-        "count": 4,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Ivory Tower (v10) 4",
       {
         "name": "Signature Spell",
         "image": "https://i.imgur.com/GSOAER0.jpeg",
         "type": "Draft Effect - Signature Spell"
       },
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Niko, Light of Hope",
-    "set": "dsk",
-    "collector_number": "224",
-    "image": "https://api.scryfall.com/cards/dsk/224?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{W}{U}",
-    "type_line": "Legendary Creature — Human Wizard",
-    "type": "Legendary Creature — Human Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Niko Aris (khm) 225",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Niko Aris (khm) 225",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Obyra, Dreaming Duelist",
-    "set": "woe",
-    "collector_number": "210",
-    "image": "https://api.scryfall.com/cards/woe/210?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
-    "mana_cost": "{U}{B}",
-    "type_line": "Legendary Creature — Faerie Warrior",
-    "type": "Legendary Creature — Faerie Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Faerie Seer (mh1) 51",
-          "Cloud of Faeries (woc) 86",
-          "Emrakul's Messenger (mh3) 61",
-          "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
-          "Spellstutter Sprite (lrw) 89",
-          "Brazen Borrower (eld) 39",
-          "Scion of Oona (lrw) 83",
-          "Glen Elendra Archmage (eve) 22",
-          "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
-          "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
-          "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
-          "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
-          "Faerie Bladecrafter (woc) 14",
-          "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
-          "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
-          "Halo Forager (mom) 227",
-          "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Faerie Booster Pack"
-    ]
-  },
-  {
-    "name": "Emry, Lurker of the Loch",
-    "set": "eld",
-    "collector_number": "43",
-    "image": "https://api.scryfall.com/cards/eld/43?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{U}",
-    "type_line": "Legendary Creature — Merfolk Wizard",
-    "type": "Legendary Creature — Merfolk Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 3,
-        "cards": [
-          "Imotekh the Stormlord (40k) 169",
-          "River Kelpie (shm) 49",
-          "Looking For Group!"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Imotekh the Stormlord (40k) 169",
-      "River Kelpie (shm) 49",
-      {
-        "name": "Looking For Group!",
-        "image": "https://i.imgur.com/22rD7R7.png",
-        "type": "Draft Effect - Shapeshifter Partner"
-      }
-    ]
-  },
-  {
-    "name": "Tegwyll, Duke of Splendor",
-    "set": "woc",
-    "collector_number": "1",
-    "image": "https://api.scryfall.com/cards/woc/1?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
-    "mana_cost": "{1}{U}{B}",
-    "type_line": "Legendary Creature — Faerie Noble",
-    "type": "Legendary Creature — Faerie Noble",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Faerie Seer (mh1) 51",
-          "Cloud of Faeries (woc) 86",
-          "Emrakul's Messenger (mh3) 61",
-          "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
-          "Spellstutter Sprite (lrw) 89",
-          "Brazen Borrower (eld) 39",
-          "Scion of Oona (lrw) 83",
-          "Glen Elendra Archmage (eve) 22",
-          "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
-          "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
-          "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
-          "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
-          "Faerie Bladecrafter (woc) 14",
-          "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
-          "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
-          "Halo Forager (mom) 227",
-          "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Faerie Booster Pack"
-    ]
-  },
-  {
-    "name": "Alela, Cunning Conqueror",
-    "set": "woc",
-    "collector_number": "3",
-    "image": "https://api.scryfall.com/cards/woc/3?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
-    "mana_cost": "{2}{U}{B}",
-    "type_line": "Legendary Creature — Faerie Warlock",
-    "type": "Legendary Creature — Faerie Warlock",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Faerie Seer (mh1) 51",
-          "Cloud of Faeries (woc) 86",
-          "Emrakul's Messenger (mh3) 61",
-          "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
-          "Spellstutter Sprite (lrw) 89",
-          "Brazen Borrower (eld) 39",
-          "Scion of Oona (lrw) 83",
-          "Glen Elendra Archmage (eve) 22",
-          "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
-          "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
-          "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
-          "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
-          "Faerie Bladecrafter (woc) 14",
-          "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
-          "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
-          "Halo Forager (mom) 227",
-          "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Faerie Booster Pack"
-    ]
-  },
-  {
-    "name": "Wilhelt, the Rotcleaver",
-    "set": "mic",
-    "collector_number": "2",
-    "image": "https://api.scryfall.com/cards/mic/2?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Zombie Booster Pack",
-    "mana_cost": "{2}{U}{B}",
-    "type_line": "Legendary Creature — Zombie Warrior",
-    "type": "Legendary Creature — Zombie Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Cleaver Skaab (mic) 11",
-          "Hordewing Skaab (mic) 15",
-          "Prophet of the Scarab (drc) 9",
-          "Rooftop Storm (isd) 71",
-          "Gravecrawler (dka) 64",
-          "Shepherd of Rot (ons) 168",
-          "Undead Augur (mh1) 112",
-          "Cemetery Reaper (m10) 87",
-          "Death Baron (ala) 70",
-          "Diregraf Colossus (soi) 107",
-          "Liliana's Devotee (m21) 109",
-          "Lord of the Accursed (akh) 99",
-          "Lord of the Undead (10e) 155",
-          "Graveborn Muse (lgn) 73",
-          "Lost Monarch of Ifnir (drc) 11",
-          "Undead Warchief (plst) TSB-52",
-          "Endless Ranks of the Dead (isd) 99",
-          "Lich Lord of Unx (arb) 24",
-          "Unholy Grotto (ons) 327"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Zombie Booster Pack"
+      "Training Grounds (p22) 6"
     ]
   },
   {
@@ -898,25 +374,25 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Cleaver Skaab (mic) 11",
-          "Hordewing Skaab (mic) 15",
-          "Prophet of the Scarab (drc) 9",
-          "Rooftop Storm (isd) 71",
           "Gravecrawler (dka) 64",
           "Shepherd of Rot (ons) 168",
-          "Undead Augur (mh1) 112",
-          "Cemetery Reaper (m10) 87",
-          "Death Baron (ala) 70",
-          "Diregraf Colossus (soi) 107",
-          "Liliana's Devotee (m21) 109",
-          "Lord of the Accursed (akh) 99",
-          "Lord of the Undead (10e) 155",
-          "Graveborn Muse (lgn) 73",
-          "Lost Monarch of Ifnir (drc) 11",
           "Undead Warchief (plst) TSB-52",
-          "Endless Ranks of the Dead (isd) 99",
+          "Death Baron (ala) 70",
           "Lich Lord of Unx (arb) 24",
-          "Unholy Grotto (ons) 327"
+          "Cemetery Reaper (m10) 87",
+          "Graveborn Muse (lgn) 73",
+          "Endless Ranks of the Dead (isd) 99",
+          "Diregraf Colossus (soi) 107",
+          "Rooftop Storm (isd) 71",
+          "Liliana's Devotee (m21) 109",
+          "Cleaver Skaab (mic) 11",
+          "Hordewing Skaab (mic) 15",
+          "Lord of the Accursed (akh) 99",
+          "Unholy Grotto (ons) 327",
+          "Undead Augur (mh1) 112",
+          "Lord of the Undead (10e) 155",
+          "Lost Monarch of Ifnir (drc) 11",
+          "Prophet of the Scarab (drc) 9"
         ],
         "duplicateProtection": true
       }
@@ -926,1087 +402,44 @@
     ]
   },
   {
-    "name": "Oona, Queen of the Fae",
-    "set": "shm",
-    "collector_number": "172",
-    "image": "https://api.scryfall.com/cards/shm/172?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
-    "mana_cost": "{3}{U/B}{U/B}{U/B}",
-    "type_line": "Legendary Creature — Faerie Wizard",
-    "type": "Legendary Creature — Faerie Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Faerie Seer (mh1) 51",
-          "Cloud of Faeries (woc) 86",
-          "Emrakul's Messenger (mh3) 61",
-          "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
-          "Spellstutter Sprite (lrw) 89",
-          "Brazen Borrower (eld) 39",
-          "Scion of Oona (lrw) 83",
-          "Glen Elendra Archmage (eve) 22",
-          "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
-          "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
-          "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
-          "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
-          "Faerie Bladecrafter (woc) 14",
-          "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
-          "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
-          "Halo Forager (mom) 227",
-          "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Faerie Booster Pack"
-    ]
-  },
-  {
-    "name": "Tinybones, the Pickpocket",
-    "set": "otj",
-    "collector_number": "109",
-    "image": "https://api.scryfall.com/cards/otj/109?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{B}",
-    "type_line": "Legendary Creature — Skeleton Rogue",
-    "type": "Legendary Creature — Skeleton Rogue",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Ragavan, Nimble Pilferer (mh2) 138",
-          "Looking For Group!"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Ragavan, Nimble Pilferer (mh2) 138",
-      {
-        "name": "Looking For Group!",
-        "image": "https://i.imgur.com/22rD7R7.png",
-        "type": "Draft Effect - Shapeshifter Partner"
-      }
-    ]
-  },
-  {
-    "name": "Rowan, Scion of War",
-    "set": "woe",
-    "collector_number": "211",
-    "image": "https://api.scryfall.com/cards/woe/211?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{1}{B}{R}",
-    "type_line": "Legendary Creature — Human Wizard",
-    "type": "Legendary Creature — Human Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Soul Channeling (mmq) 163",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Soul Channeling (mmq) 163",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Vial Smasher the Fierce",
-    "set": "c16",
-    "collector_number": "49",
-    "image": "https://api.scryfall.com/cards/c16/49?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack",
-    "mana_cost": "{1}{B}{R}",
-    "type_line": "Legendary Creature — Goblin Berserker",
-    "type": "Legendary Creature — Goblin Berserker",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Goblin Lackey (v09) 5",
-          "Goblin Lookout (lgn) 101",
-          "Warren Instigator (zen) 154",
-          "General Kreat, the Boltbringer (j25) 48",
-          "Goblin Chieftain (m10) 139",
-          "Goblin King (10e) 207",
-          "Hobgoblin Bandit Lord (afr) 147",
-          "Krenko, Baron of Tin Street (mkm) 135",
-          "Krenko, Tin Street Kingpin (war) 137",
-          "Pashalik Mons (mh1) 138",
-          "Goblin Trashmaster (m19) 144",
-          "Goblin Wizard (me1) 97",
-          "Goblin War Strike (scg) 96",
-          "Kuldotha Rebirth (som) 96",
-          "Dragon Fodder (ala) 97",
-          "Krenko's Command (m13) 139",
-          "Goblin Offensive (hop) 56",
-          "Hordeling Outburst (f15) 3",
-          "Goblin Rally (rtr) 95",
-          "Goblinslide (ktk) 109"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Goblin Booster Pack"
-    ]
-  },
-  {
-    "name": "Judith, Carnage Connoisseur",
-    "set": "mkm",
-    "collector_number": "210",
-    "image": "https://api.scryfall.com/cards/mkm/210?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{3}{B}{R}",
-    "type_line": "Legendary Creature — Human Shaman",
-    "type": "Legendary Creature — Human Shaman",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 5,
-        "cards": [
-          "Chain Reaction (wwk) 74",
-          "End the Festivities (vow) 155",
-          "Smash to Dust (dmu) 144",
-          "Scouring Sands (bng) 110",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Chain Reaction (wwk) 74",
-      "End the Festivities (vow) 155",
-      "Smash to Dust (dmu) 144",
-      "Scouring Sands (bng) 110",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Lathiel, the Bounteous Dawn",
-    "set": "cmr",
-    "collector_number": "285",
-    "image": "https://api.scryfall.com/cards/cmr/285?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{G}{W}",
-    "type_line": "Legendary Creature — Unicorn",
-    "type": "Legendary Creature — Unicorn",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 1,
-        "cards": [
-          "Well of Lost Dreams (dst) 159"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Well of Lost Dreams (dst) 159"
-    ]
-  },
-  {
-    "name": "Sigarda, Font of Blessings",
-    "set": "mat",
-    "collector_number": "47",
-    "image": "https://api.scryfall.com/cards/mat/47?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
-    "mana_cost": "{2}{G}{W}",
-    "type_line": "Legendary Creature — Angel",
-    "type": "Legendary Creature — Angel",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Kyler, Sigardian Emissary",
+    "name": "Wilhelt, the Rotcleaver",
     "set": "mic",
-    "collector_number": "4",
-    "image": "https://api.scryfall.com/cards/mic/4?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
-    "mana_cost": "{3}{G}{W}",
-    "type_line": "Legendary Creature — Human Cleric",
-    "type": "Legendary Creature — Human Cleric",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Kambal, Profiteering Mayor",
-    "set": "otj",
-    "collector_number": "211",
-    "image": "https://api.scryfall.com/cards/otj/211?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
-    "mana_cost": "{1}{W}{B}",
-    "type_line": "Legendary Creature — Human Advisor",
-    "type": "Legendary Creature — Human Advisor",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Brimaz, Blight of Oreskos",
-    "set": "moc",
     "collector_number": "2",
-    "image": "https://api.scryfall.com/cards/moc/2?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{W}{B}",
-    "type_line": "Legendary Creature — Phyrexian Cat",
-    "type": "Legendary Creature — Phyrexian Cat",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Progenitor Exarch (mom) 32",
-          "Essence of Orthodoxy (mom) 323"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Progenitor Exarch (mom) 32",
-      "Essence of Orthodoxy (mom) 323"
-    ]
-  },
-  {
-    "name": "Galazeth Prismari",
-    "set": "stx",
-    "collector_number": "189",
-    "image": "https://api.scryfall.com/cards/stx/189?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{U}{R}",
-    "type_line": "Legendary Creature — Elder Dragon",
-    "type": "Legendary Creature — Elder Dragon",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Trail of Evidence (soi) 93",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Trail of Evidence (soi) 93",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Mizzix of the Izmagnus",
-    "set": "c15",
-    "collector_number": "50",
-    "image": "https://api.scryfall.com/cards/c15/50?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack (and adds any listed cards/effects).",
-    "mana_cost": "{2}{U}{R}",
-    "type_line": "Legendary Creature — Goblin Wizard",
-    "type": "Legendary Creature — Goblin Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 4,
-        "cards": [
-          "Empty the Warrens (tsp) 152",
-          "Brightstone Ritual (ons) 191",
-          "Goblin War Strike (scg) 96",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      },
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Goblin Lackey (v09) 5",
-          "Goblin Lookout (lgn) 101",
-          "Warren Instigator (zen) 154",
-          "General Kreat, the Boltbringer (j25) 48",
-          "Goblin Chieftain (m10) 139",
-          "Goblin King (10e) 207",
-          "Hobgoblin Bandit Lord (afr) 147",
-          "Krenko, Baron of Tin Street (mkm) 135",
-          "Krenko, Tin Street Kingpin (war) 137",
-          "Pashalik Mons (mh1) 138",
-          "Goblin Trashmaster (m19) 144",
-          "Goblin Wizard (me1) 97",
-          "Goblin War Strike (scg) 96",
-          "Kuldotha Rebirth (som) 96",
-          "Dragon Fodder (ala) 97",
-          "Krenko's Command (m13) 139",
-          "Goblin Offensive (hop) 56",
-          "Hordeling Outburst (f15) 3",
-          "Goblin Rally (rtr) 95",
-          "Goblinslide (ktk) 109"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Empty the Warrens (tsp) 152",
-      "Brightstone Ritual (ons) 191",
-      "Goblin War Strike (scg) 96",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      },
-      "Goblin Booster Pack"
-    ]
-  },
-  {
-    "name": "Baba Lysaga, Night Witch",
-    "set": "clb",
-    "collector_number": "266",
-    "image": "https://api.scryfall.com/cards/clb/266?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{1}{B}{G}",
-    "type_line": "Legendary Creature — Human Warlock",
-    "type": "Legendary Creature — Human Warlock",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Crop Rotation (c20) 169",
-          "Mishra's Factory (dmr) 251",
-          "Mishra's Foundry (bro) 265",
-          "Inkmoth Nexus (mbs) 145",
-          "Blinkmoth Nexus (dst) 163",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Crop Rotation (c20) 169",
-      "Mishra's Factory (dmr) 251",
-      "Mishra's Foundry (bro) 265",
-      "Inkmoth Nexus (mbs) 145",
-      "Blinkmoth Nexus (dst) 163",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Lathril, Blade of the Elves",
-    "set": "khc",
-    "collector_number": "1",
-    "image": "https://api.scryfall.com/cards/khc/1?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
-    "mana_cost": "{2}{B}{G}",
-    "type_line": "Legendary Creature — Elf Noble",
-    "type": "Legendary Creature — Elf Noble",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Elvish Mystic (m14) 169",
-          "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
-          "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
-          "Elvish Archdruid (m10) 176",
-          "Elvish Champion (10e) 261",
-          "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
-          "Immaculate Magistrate (lrw) 219",
-          "Lys Alana Huntmaster (lrw) 229",
-          "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Elf Booster Pack"
-    ]
-  },
-  {
-    "name": "Tyvar the Bellicose",
-    "set": "mat",
-    "collector_number": "48",
-    "image": "https://api.scryfall.com/cards/mat/48?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
-    "mana_cost": "{2}{B}{G}",
-    "type_line": "Legendary Creature — Elf Warrior",
-    "type": "Legendary Creature — Elf Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Elvish Mystic (m14) 169",
-          "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
-          "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
-          "Elvish Archdruid (m10) 176",
-          "Elvish Champion (10e) 261",
-          "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
-          "Immaculate Magistrate (lrw) 219",
-          "Lys Alana Huntmaster (lrw) 229",
-          "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Elf Booster Pack"
-    ]
-  },
-  {
-    "name": "Taii Wakeen, Perfect Shot",
-    "set": "otj",
-    "collector_number": "234",
-    "image": "https://api.scryfall.com/cards/otj/234?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{R}{W}",
-    "type_line": "Legendary Creature — Human Mercenary",
-    "type": "Legendary Creature — Human Mercenary",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 3,
-        "cards": [
-          "Tectonic Hazard (lci) 169",
-          "Blazing Volley (akh) 119",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Tectonic Hazard (lci) 169",
-      "Blazing Volley (akh) 119",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Wyleth, Soul of Steel",
-    "set": "cmr",
-    "collector_number": "362",
-    "image": "https://api.scryfall.com/cards/cmr/362?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{1}{R}{W}",
-    "type_line": "Legendary Creature — Human Warrior",
-    "type": "Legendary Creature — Human Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Aegis of the Legion (clu) 22",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Aegis of the Legion (clu) 22",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Fumiko the Lowblood",
-    "set": "bok",
-    "collector_number": "104",
-    "image": "https://api.scryfall.com/cards/bok/104?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack (and adds any listed cards/effects).",
-    "mana_cost": "{2}{R}{R}",
-    "type_line": "Legendary Creature — Human Samurai",
-    "type": "Legendary Creature — Human Samurai",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 1,
-        "cards": [
-          "Pearl Adornment"
-        ],
-        "duplicateProtection": true
-      },
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      {
-        "name": "Pearl Adornment",
-        "image": "https://i.imgur.com/CnqHfs2.jpeg",
-        "type": "Adornment - White"
-      },
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Adriana, Captain of the Guard",
-    "set": "cn2",
-    "collector_number": "73",
-    "image": "https://api.scryfall.com/cards/cn2/73?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
-    "mana_cost": "{3}{R}{W}",
-    "type_line": "Legendary Creature — Human Knight",
-    "type": "Legendary Creature — Human Knight",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Champion of the Parish (isd) 6",
-          "Soul's Attendant (roe) 44",
-          "Thalia's Lieutenant (soi) 43",
-          "Adeline, Resplendent Cathar (mid) 1",
-          "Cosmogrand Zenith (eoe) 9",
-          "Devout Chaplain (avr) 17",
-          "Ranger-Captain of Eos (mh1) 21",
-          "Thraben Doomsayer (dka) 25",
-          "Beregond of the Guard (ltc) 9",
-          "Greymond, Avacyn's Stalwart (slx) 18",
-          "Ranger of Eos (ala) 21",
-          "Knight-Errant of Eos (mom) 26",
-          "Angel of Glory's Rise (avr) 1",
-          "The Wandering Emperor (neo) 42",
-          "Fight as One (iko) 12",
-          "Call the Coppercoats (c20) 23",
-          "Sunset Revelry (mid) 38",
-          "Distract the Guards (acr) 3",
-          "Increasing Devotion (dka) 11",
-          "Visions of Glory (mic) 32"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Human Booster Pack"
-    ]
-  },
-  {
-    "name": "Ezuri, Claw of Progress",
-    "set": "oc15",
-    "collector_number": "44",
-    "image": "https://api.scryfall.com/cards/oc15/44?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
-    "mana_cost": "{2}{G}{U}",
-    "type_line": "Legendary Creature — Phyrexian Elf Warrior",
-    "type": "Legendary Creature — Phyrexian Elf Warrior",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Elvish Mystic (m14) 169",
-          "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
-          "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
-          "Elvish Archdruid (m10) 176",
-          "Elvish Champion (10e) 261",
-          "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
-          "Immaculate Magistrate (lrw) 219",
-          "Lys Alana Huntmaster (lrw) 229",
-          "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Elf Booster Pack"
-    ]
-  },
-  {
-    "name": "Toothy, Imaginary Friend",
-    "set": "bbd",
-    "collector_number": "12",
-    "image": "https://api.scryfall.com/cards/bbd/12?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{3}{U}",
-    "type_line": "Legendary Creature — Illusion",
-    "type": "Legendary Creature — Illusion",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 1,
-        "cards": [
-          "Pir, Imaginative Rascal (bbd) 11"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Pir, Imaginative Rascal (bbd) 11"
-    ]
-  },
-  {
-    "name": "Galadriel, Light of Valinor",
-    "set": "ltc",
-    "collector_number": "498",
-    "image": "https://api.scryfall.com/cards/ltc/498?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
-    "mana_cost": "{2}{G}{W}{U}",
-    "type_line": "Legendary Creature — Elf Noble",
-    "type": "Legendary Creature — Elf Noble",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Elvish Mystic (m14) 169",
-          "Heritage Druid (mor) 126",
-          "Joraga Warcaller (wwk) 106",
-          "Bramblewood Paragon (mor) 115",
-          "Elvish Warmaster (khm) 167",
-          "Leaf-Crowned Visionary (dmu) 167",
-          "Priest of Titania (mh3) 286",
-          "Wellwisher (ons) 300",
-          "Elvish Archdruid (m10) 176",
-          "Elvish Champion (10e) 261",
-          "Imperious Perfect (lrw) 220",
-          "Marwyn, the Nurturer (dom) 172",
-          "Dionus, Elvish Archdruid (j25) 52",
-          "Immaculate Magistrate (lrw) 219",
-          "Lys Alana Huntmaster (lrw) 229",
-          "Norwood Priestess (vma) 221",
-          "Cultivator of Blades (kld) 151",
-          "Wolverine Riders (khc) 14",
-          "Elvish Promenade (lrw) 208",
-          "Wirewood Lodge (plst) DD1-26"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Elf Booster Pack"
-    ]
-  },
-  {
-    "name": "Hashaton, Scarab's Fist",
-    "set": "drc",
-    "collector_number": "1",
-    "image": "https://api.scryfall.com/cards/drc/1?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{W}{B}",
-    "type_line": "Legendary Creature — Zombie Wizard",
-    "type": "Legendary Creature — Zombie Wizard",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Tortured Existence (sth) 74",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Tortured Existence (sth) 74",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Alela, Artful Provocateur",
-    "set": "ncc",
-    "collector_number": "325",
-    "image": "https://api.scryfall.com/cards/ncc/325?format=image&version=border_crop",
-    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
-    "mana_cost": "{1}{W}{U}{B}",
-    "type_line": "Legendary Creature — Faerie Warlock",
-    "type": "Legendary Creature — Faerie Warlock",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 6,
-        "cards": [
-          "Faerie Seer (mh1) 51",
-          "Cloud of Faeries (woc) 86",
-          "Emrakul's Messenger (mh3) 61",
-          "Faerie Mastermind (mom) 58",
-          "Hypnotic Sprite (eld) 49",
-          "Picklock Prankster (woe) 64",
-          "Quickling (m15) 76",
-          "Spellstutter Sprite (lrw) 89",
-          "Brazen Borrower (eld) 39",
-          "Scion of Oona (lrw) 83",
-          "Glen Elendra Archmage (eve) 22",
-          "Malleable Impostor (woc) 10",
-          "Mocking Doppelganger (clb) 667",
-          "Archmage of Echoes (woc) 9",
-          "Strix Serenade (mh3) 71",
-          "Faebloom Trick (fdn) 38",
-          "Thieves' Fortune (mor) 54",
-          "Aetherize (gtc) 29",
-          "Hands of Binding (gtc) 37",
-          "Stolen by the Fae (eld) 66",
-          "Notorious Throng (mor) 45",
-          "Oona's Blackguard (dci) 15",
-          "Faerie Bladecrafter (woc) 14",
-          "Nettling Nuisance (woc) 15",
-          "Blightwing Bandit (woc) 13",
-          "Bitterblossom (mor) 58",
-          "Likeness Looter (woe) 208",
-          "Halo Forager (mom) 227",
-          "Spellscorn Coven (woe) 237",
-          "Nymris, Oona's Trickster (cmr) 288"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Faerie Booster Pack"
-    ]
-  },
-  {
-    "name": "Varina, Lich Queen",
-    "set": "c18",
-    "collector_number": "48",
-    "image": "https://api.scryfall.com/cards/c18/48?format=image&version=border_crop",
+    "image": "https://api.scryfall.com/cards/mic/2?format=image&version=border_crop",
     "oracle_text": "Drafting this card also drafts: Zombie Booster Pack",
-    "mana_cost": "{1}{W}{U}{B}",
-    "type_line": "Legendary Creature — Zombie Wizard",
-    "type": "Legendary Creature — Zombie Wizard",
+    "mana_cost": "{2}{U}{B}",
+    "type_line": "Legendary Creature — Zombie Warrior",
+    "type": "Legendary Creature — Zombie Warrior",
     "draft_effects": [
       {
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Cleaver Skaab (mic) 11",
-          "Hordewing Skaab (mic) 15",
-          "Prophet of the Scarab (drc) 9",
-          "Rooftop Storm (isd) 71",
           "Gravecrawler (dka) 64",
           "Shepherd of Rot (ons) 168",
-          "Undead Augur (mh1) 112",
-          "Cemetery Reaper (m10) 87",
-          "Death Baron (ala) 70",
-          "Diregraf Colossus (soi) 107",
-          "Liliana's Devotee (m21) 109",
-          "Lord of the Accursed (akh) 99",
-          "Lord of the Undead (10e) 155",
-          "Graveborn Muse (lgn) 73",
-          "Lost Monarch of Ifnir (drc) 11",
           "Undead Warchief (plst) TSB-52",
-          "Endless Ranks of the Dead (isd) 99",
+          "Death Baron (ala) 70",
           "Lich Lord of Unx (arb) 24",
-          "Unholy Grotto (ons) 327"
+          "Cemetery Reaper (m10) 87",
+          "Graveborn Muse (lgn) 73",
+          "Endless Ranks of the Dead (isd) 99",
+          "Diregraf Colossus (soi) 107",
+          "Rooftop Storm (isd) 71",
+          "Liliana's Devotee (m21) 109",
+          "Cleaver Skaab (mic) 11",
+          "Hordewing Skaab (mic) 15",
+          "Lord of the Accursed (akh) 99",
+          "Unholy Grotto (ons) 327",
+          "Undead Augur (mh1) 112",
+          "Lord of the Undead (10e) 155",
+          "Lost Monarch of Ifnir (drc) 11",
+          "Prophet of the Scarab (drc) 9"
         ],
         "duplicateProtection": true
       }
     ],
     "related_cards": [
       "Zombie Booster Pack"
-    ]
-  },
-  {
-    "name": "Goro-Goro and Satoru",
-    "set": "moc",
-    "collector_number": "445",
-    "image": "https://api.scryfall.com/cards/moc/445?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{U}{B}{R}",
-    "type_line": "Legendary Creature — Goblin Human",
-    "type": "Legendary Creature — Goblin Human",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 7,
-        "cards": [
-          "Fallen Shinobi (mh1) 199",
-          "Ninja of the Deep Hours (bok) 44",
-          "Dokuchi Silencer (neo) 95",
-          "Prosperous Thief (neo) 73",
-          "Nashi, Moon Sage's Scion (neo) 114",
-          "Dragon Tempest (dtk) 136",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Fallen Shinobi (mh1) 199",
-      "Ninja of the Deep Hours (bok) 44",
-      "Dokuchi Silencer (neo) 95",
-      "Prosperous Thief (neo) 73",
-      "Nashi, Moon Sage's Scion (neo) 114",
-      "Dragon Tempest (dtk) 136",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Marchesa, Dealer of Death",
-    "set": "otj",
-    "collector_number": "220",
-    "image": "https://api.scryfall.com/cards/otj/220?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{U}{B}{R}",
-    "type_line": "Legendary Creature — Human Rogue",
-    "type": "Legendary Creature — Human Rogue",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Glasses of Urza (30a) 241",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Glasses of Urza (30a) 241",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Atla Palani, Nest Tender",
-    "set": "c19",
-    "collector_number": "38",
-    "image": "https://api.scryfall.com/cards/c19/38?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{1}{R}{G}{W}",
-    "type_line": "Legendary Creature — Human Shaman",
-    "type": "Legendary Creature — Human Shaman",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Thornbite Staff (mor) 145",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Thornbite Staff (mor) 145",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
-    "name": "Arabella, Abandoned Doll",
-    "set": "dsk",
-    "collector_number": "208",
-    "image": "https://api.scryfall.com/cards/dsk/208?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{R}{W}",
-    "type_line": "Legendary Artifact Creature — Toy",
-    "type": "Legendary Artifact Creature — Toy",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "MacCready, Lamplight Mayor (pip) 108",
-          "Looking For Group!"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "MacCready, Lamplight Mayor (pip) 108",
-      {
-        "name": "Looking For Group!",
-        "image": "https://i.imgur.com/22rD7R7.png",
-        "type": "Draft Effect - Shapeshifter Partner"
-      }
     ]
   },
   {
@@ -2062,58 +495,6 @@
     ]
   },
   {
-    "name": "Yannik, Scavenging Sentinel",
-    "set": "c20",
-    "collector_number": "19",
-    "image": "https://api.scryfall.com/cards/c20/19?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{2}{G}{W}",
-    "type_line": "Legendary Creature — Hyena Beast",
-    "type": "Legendary Creature — Hyena Beast",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 1,
-        "cards": [
-          "Nikara, Lair Scavenger (c20) 3"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Nikara, Lair Scavenger (c20) 3"
-    ]
-  },
-  {
-    "name": "Elsha, Threefold Master",
-    "set": "tdc",
-    "collector_number": "2",
-    "image": "https://api.scryfall.com/cards/tdc/2?format=image&version=border_crop",
-    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
-    "mana_cost": "{U}{R}{W}",
-    "type_line": "Legendary Creature — Djinn Monk",
-    "type": "Legendary Creature — Djinn Monk",
-    "draft_effects": [
-      {
-        "type": "AddCards",
-        "count": 2,
-        "cards": [
-          "Leering Emblem (eve) 171",
-          "Signature Spell"
-        ],
-        "duplicateProtection": true
-      }
-    ],
-    "related_cards": [
-      "Leering Emblem (eve) 171",
-      {
-        "name": "Signature Spell",
-        "image": "https://i.imgur.com/GSOAER0.jpeg",
-        "type": "Draft Effect - Signature Spell"
-      }
-    ]
-  },
-  {
     "name": "Shabraz, the Skyshark",
     "set": "c20",
     "collector_number": "14",
@@ -2150,25 +531,25 @@
         "type": "AddCards",
         "count": 6,
         "cards": [
-          "Cleaver Skaab (mic) 11",
-          "Hordewing Skaab (mic) 15",
-          "Prophet of the Scarab (drc) 9",
-          "Rooftop Storm (isd) 71",
           "Gravecrawler (dka) 64",
           "Shepherd of Rot (ons) 168",
-          "Undead Augur (mh1) 112",
-          "Cemetery Reaper (m10) 87",
-          "Death Baron (ala) 70",
-          "Diregraf Colossus (soi) 107",
-          "Liliana's Devotee (m21) 109",
-          "Lord of the Accursed (akh) 99",
-          "Lord of the Undead (10e) 155",
-          "Graveborn Muse (lgn) 73",
-          "Lost Monarch of Ifnir (drc) 11",
           "Undead Warchief (plst) TSB-52",
-          "Endless Ranks of the Dead (isd) 99",
+          "Death Baron (ala) 70",
           "Lich Lord of Unx (arb) 24",
-          "Unholy Grotto (ons) 327"
+          "Cemetery Reaper (m10) 87",
+          "Graveborn Muse (lgn) 73",
+          "Endless Ranks of the Dead (isd) 99",
+          "Diregraf Colossus (soi) 107",
+          "Rooftop Storm (isd) 71",
+          "Liliana's Devotee (m21) 109",
+          "Cleaver Skaab (mic) 11",
+          "Hordewing Skaab (mic) 15",
+          "Lord of the Accursed (akh) 99",
+          "Unholy Grotto (ons) 327",
+          "Undead Augur (mh1) 112",
+          "Lord of the Undead (10e) 155",
+          "Lost Monarch of Ifnir (drc) 11",
+          "Prophet of the Scarab (drc) 9"
         ],
         "duplicateProtection": true
       }
@@ -2176,144 +557,1796 @@
     "related_cards": [
       "Zombie Booster Pack"
     ]
+  },
+  {
+    "name": "Alela, Artful Provocateur",
+    "set": "ncc",
+    "collector_number": "325",
+    "image": "https://api.scryfall.com/cards/ncc/325?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
+    "mana_cost": "{1}{W}{U}{B}",
+    "type_line": "Legendary Creature — Faerie Warlock",
+    "type": "Legendary Creature — Faerie Warlock",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Cloud of Faeries (woc) 86",
+          "Emrakul's Messenger (mh3) 61",
+          "Faerie Mastermind (mom) 58",
+          "Spellstutter Sprite (lrw) 89",
+          "Brazen Borrower (eld) 39",
+          "Scion of Oona (lrw) 83",
+          "Glen Elendra Archmage (eve) 22",
+          "Malleable Impostor (woc) 10",
+          "Archmage of Echoes (woc) 9",
+          "Thieves' Fortune (mor) 54",
+          "Notorious Throng (mor) 45",
+          "Blightwing Bandit (woc) 13",
+          "Faerie Bladecrafter (woc) 14",
+          "Nettling Nuisance (woc) 15",
+          "Oona's Blackguard (dci) 15",
+          "Bitterblossom (mor) 58",
+          "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
+          "Spellscorn Coven (woe) 237",
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Faerie Booster Pack"
+    ]
+  },
+  {
+    "name": "Hashaton, Scarab's Fist",
+    "set": "drc",
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/drc/1?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{W}{B}",
+    "type_line": "Legendary Creature — Zombie Wizard",
+    "type": "Legendary Creature — Zombie Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Tortured Existence (sth) 74",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Tortured Existence (sth) 74",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Galadriel, Light of Valinor",
+    "set": "ltc",
+    "collector_number": "498",
+    "image": "https://api.scryfall.com/cards/ltc/498?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
+    "mana_cost": "{2}{G}{W}{U}",
+    "type_line": "Legendary Creature — Elf Noble",
+    "type": "Legendary Creature — Elf Noble",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Heritage Druid (mor) 126",
+          "Elvish Warmaster (khm) 167",
+          "Elvish Archdruid (m10) 176",
+          "Elvish Champion (10e) 261",
+          "Imperious Perfect (lrw) 220",
+          "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
+          "Lys Alana Huntmaster (lrw) 229",
+          "Norwood Priestess (vma) 221",
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Elf Booster Pack"
+    ]
+  },
+  {
+    "name": "Varina, Lich Queen",
+    "set": "c18",
+    "collector_number": "48",
+    "image": "https://api.scryfall.com/cards/c18/48?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Zombie Booster Pack",
+    "mana_cost": "{1}{W}{U}{B}",
+    "type_line": "Legendary Creature — Zombie Wizard",
+    "type": "Legendary Creature — Zombie Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Gravecrawler (dka) 64",
+          "Shepherd of Rot (ons) 168",
+          "Undead Warchief (plst) TSB-52",
+          "Death Baron (ala) 70",
+          "Lich Lord of Unx (arb) 24",
+          "Cemetery Reaper (m10) 87",
+          "Graveborn Muse (lgn) 73",
+          "Endless Ranks of the Dead (isd) 99",
+          "Diregraf Colossus (soi) 107",
+          "Rooftop Storm (isd) 71",
+          "Liliana's Devotee (m21) 109",
+          "Cleaver Skaab (mic) 11",
+          "Hordewing Skaab (mic) 15",
+          "Lord of the Accursed (akh) 99",
+          "Unholy Grotto (ons) 327",
+          "Undead Augur (mh1) 112",
+          "Lord of the Undead (10e) 155",
+          "Lost Monarch of Ifnir (drc) 11",
+          "Prophet of the Scarab (drc) 9"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Zombie Booster Pack"
+    ]
+  },
+  {
+    "name": "Mizzix of the Izmagnus",
+    "set": "c15",
+    "collector_number": "50",
+    "image": "https://api.scryfall.com/cards/c15/50?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack (and adds any listed cards/effects).",
+    "mana_cost": "{2}{U}{R}",
+    "type_line": "Legendary Creature — Goblin Wizard",
+    "type": "Legendary Creature — Goblin Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 4,
+        "cards": [
+          "Signature Spell",
+          "Empty the Warrens (tsp) 152",
+          "Brightstone Ritual (ons) 191",
+          "Goblin War Strike (scg) 96"
+        ],
+        "duplicateProtection": true
+      },
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Goblin War Strike (scg) 96",
+          "Dragon Fodder (ala) 97",
+          "Krenko's Command (m13) 139",
+          "Hordeling Outburst (f15) 3",
+          "Krenko, Tin Street Kingpin (war) 137",
+          "Goblin Wizard (me1) 97",
+          "Goblin Chieftain (m10) 139",
+          "Goblin King (10e) 207",
+          "Warren Instigator (zen) 154",
+          "Goblin Lackey (v09) 5",
+          "Goblin Trashmaster (m19) 144",
+          "Hobgoblin Bandit Lord (afr) 147",
+          "Goblin Lookout (lgn) 101",
+          "Krenko, Baron of Tin Street (mkm) 135",
+          "Goblinslide (ktk) 109",
+          "Goblin Rally (rtr) 95",
+          "Kuldotha Rebirth (som) 96",
+          "Goblin Offensive (hop) 56",
+          "Pashalik Mons (mh1) 138",
+          "General Kreat, the Boltbringer (j25) 48"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Empty the Warrens (tsp) 152",
+      "Brightstone Ritual (ons) 191",
+      "Goblin War Strike (scg) 96",
+      "Goblin Booster Pack"
+    ]
+  },
+  {
+    "name": "Krenko, Mob Boss",
+    "set": "m13",
+    "collector_number": "138",
+    "image": "https://api.scryfall.com/cards/m13/138?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack",
+    "mana_cost": "{2}{R}{R}",
+    "type_line": "Legendary Creature — Goblin Warrior",
+    "type": "Legendary Creature — Goblin Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Goblin War Strike (scg) 96",
+          "Dragon Fodder (ala) 97",
+          "Krenko's Command (m13) 139",
+          "Hordeling Outburst (f15) 3",
+          "Krenko, Tin Street Kingpin (war) 137",
+          "Goblin Wizard (me1) 97",
+          "Goblin Chieftain (m10) 139",
+          "Goblin King (10e) 207",
+          "Warren Instigator (zen) 154",
+          "Goblin Lackey (v09) 5",
+          "Goblin Trashmaster (m19) 144",
+          "Hobgoblin Bandit Lord (afr) 147",
+          "Goblin Lookout (lgn) 101",
+          "Krenko, Baron of Tin Street (mkm) 135",
+          "Goblinslide (ktk) 109",
+          "Goblin Rally (rtr) 95",
+          "Kuldotha Rebirth (som) 96",
+          "Goblin Offensive (hop) 56",
+          "Pashalik Mons (mh1) 138",
+          "General Kreat, the Boltbringer (j25) 48"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Goblin Booster Pack"
+    ]
+  },
+  {
+    "name": "Fumiko the Lowblood",
+    "set": "bok",
+    "collector_number": "104",
+    "image": "https://api.scryfall.com/cards/bok/104?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack (and adds any listed cards/effects).",
+    "mana_cost": "{2}{R}{R}",
+    "type_line": "Legendary Creature — Human Samurai",
+    "type": "Legendary Creature — Human Samurai",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 1,
+        "cards": [
+          "Pearl Adornment"
+        ],
+        "duplicateProtection": true
+      },
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      {
+        "name": "Pearl Adornment",
+        "image": "https://i.imgur.com/CnqHfs2.jpeg",
+        "type": "Adornment - White"
+      },
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Adriana, Captain of the Guard",
+    "set": "cn2",
+    "collector_number": "73",
+    "image": "https://api.scryfall.com/cards/cn2/73?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
+    "mana_cost": "{3}{R}{W}",
+    "type_line": "Legendary Creature — Human Knight",
+    "type": "Legendary Creature — Human Knight",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Vial Smasher the Fierce",
+    "set": "c16",
+    "collector_number": "49",
+    "image": "https://api.scryfall.com/cards/c16/49?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Goblin Booster Pack",
+    "mana_cost": "{1}{B}{R}",
+    "type_line": "Legendary Creature — Goblin Berserker",
+    "type": "Legendary Creature — Goblin Berserker",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Goblin War Strike (scg) 96",
+          "Dragon Fodder (ala) 97",
+          "Krenko's Command (m13) 139",
+          "Hordeling Outburst (f15) 3",
+          "Krenko, Tin Street Kingpin (war) 137",
+          "Goblin Wizard (me1) 97",
+          "Goblin Chieftain (m10) 139",
+          "Goblin King (10e) 207",
+          "Warren Instigator (zen) 154",
+          "Goblin Lackey (v09) 5",
+          "Goblin Trashmaster (m19) 144",
+          "Hobgoblin Bandit Lord (afr) 147",
+          "Goblin Lookout (lgn) 101",
+          "Krenko, Baron of Tin Street (mkm) 135",
+          "Goblinslide (ktk) 109",
+          "Goblin Rally (rtr) 95",
+          "Kuldotha Rebirth (som) 96",
+          "Goblin Offensive (hop) 56",
+          "Pashalik Mons (mh1) 138",
+          "General Kreat, the Boltbringer (j25) 48"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Goblin Booster Pack"
+    ]
+  },
+  {
+    "name": "Wyleth, Soul of Steel",
+    "set": "cmr",
+    "collector_number": "362",
+    "image": "https://api.scryfall.com/cards/cmr/362?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{1}{R}{W}",
+    "type_line": "Legendary Creature — Human Warrior",
+    "type": "Legendary Creature — Human Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Aegis of the Legion (clu) 22",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Aegis of the Legion (clu) 22",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Galazeth Prismari",
+    "set": "stx",
+    "collector_number": "189",
+    "image": "https://api.scryfall.com/cards/stx/189?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{U}{R}",
+    "type_line": "Legendary Creature — Elder Dragon",
+    "type": "Legendary Creature — Elder Dragon",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Trail of Evidence (soi) 93",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Trail of Evidence (soi) 93",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Lathril, Blade of the Elves",
+    "set": "khc",
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/khc/1?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
+    "mana_cost": "{2}{B}{G}",
+    "type_line": "Legendary Creature — Elf Noble",
+    "type": "Legendary Creature — Elf Noble",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Heritage Druid (mor) 126",
+          "Elvish Warmaster (khm) 167",
+          "Elvish Archdruid (m10) 176",
+          "Elvish Champion (10e) 261",
+          "Imperious Perfect (lrw) 220",
+          "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
+          "Lys Alana Huntmaster (lrw) 229",
+          "Norwood Priestess (vma) 221",
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Elf Booster Pack"
+    ]
+  },
+  {
+    "name": "Ezuri, Claw of Progress",
+    "set": "oc15",
+    "collector_number": "44",
+    "image": "https://api.scryfall.com/cards/oc15/44?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
+    "mana_cost": "{2}{G}{U}",
+    "type_line": "Legendary Creature — Phyrexian Elf Warrior",
+    "type": "Legendary Creature — Phyrexian Elf Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Heritage Druid (mor) 126",
+          "Elvish Warmaster (khm) 167",
+          "Elvish Archdruid (m10) 176",
+          "Elvish Champion (10e) 261",
+          "Imperious Perfect (lrw) 220",
+          "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
+          "Lys Alana Huntmaster (lrw) 229",
+          "Norwood Priestess (vma) 221",
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Elf Booster Pack"
+    ]
+  },
+  {
+    "name": "Emry, Lurker of the Loch",
+    "set": "eld",
+    "collector_number": "43",
+    "image": "https://api.scryfall.com/cards/eld/43?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{U}",
+    "type_line": "Legendary Creature — Merfolk Wizard",
+    "type": "Legendary Creature — Merfolk Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 3,
+        "cards": [
+          "Imotekh the Stormlord (40k) 169",
+          "River Kelpie (shm) 49",
+          "Looking For Group!"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Imotekh the Stormlord (40k) 169",
+      "River Kelpie (shm) 49",
+      {
+        "name": "Looking For Group!",
+        "image": "https://i.imgur.com/22rD7R7.png",
+        "type": "Draft Effect - Shapeshifter Partner"
+      }
+    ]
+  },
+  {
+    "name": "Niko, Light of Hope",
+    "set": "dsk",
+    "collector_number": "224",
+    "image": "https://api.scryfall.com/cards/dsk/224?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{W}{U}",
+    "type_line": "Legendary Creature — Human Wizard",
+    "type": "Legendary Creature — Human Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Niko Aris (khm) 225",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Niko Aris (khm) 225",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Will, Scion of Peace",
+    "set": "woe",
+    "collector_number": "218",
+    "image": "https://api.scryfall.com/cards/woe/218?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack (x4) (and adds any listed cards/effects).",
+    "mana_cost": "{1}{W}{U}",
+    "type_line": "Legendary Creature — Human Wizard",
+    "type": "Legendary Creature — Human Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Ivory Tower (v10) 4",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      },
+      {
+        "type": "AddCards",
+        "count": 4,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Ivory Tower (v10) 4",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Odric, Master Tactician",
+    "set": "m13",
+    "collector_number": "23",
+    "image": "https://api.scryfall.com/cards/m13/23?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack (x8)",
+    "mana_cost": "",
+    "type_line": "Card",
+    "type": "Card",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 8,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Marchesa, Dealer of Death",
+    "set": "otj",
+    "collector_number": "220",
+    "image": "https://api.scryfall.com/cards/otj/220?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{U}{B}{R}",
+    "type_line": "Legendary Creature — Human Rogue",
+    "type": "Legendary Creature — Human Rogue",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Glasses of Urza (30a) 241",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Glasses of Urza (30a) 241",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Yannik, Scavenging Sentinel",
+    "set": "c20",
+    "collector_number": "19",
+    "image": "https://api.scryfall.com/cards/c20/19?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{G}{W}",
+    "type_line": "Legendary Creature — Hyena Beast",
+    "type": "Legendary Creature — Hyena Beast",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 1,
+        "cards": [
+          "Nikara, Lair Scavenger (c20) 3"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Nikara, Lair Scavenger (c20) 3"
+    ]
+  },
+  {
+    "name": "Atla Palani, Nest Tender",
+    "set": "c19",
+    "collector_number": "38",
+    "image": "https://api.scryfall.com/cards/c19/38?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{1}{R}{G}{W}",
+    "type_line": "Legendary Creature — Human Shaman",
+    "type": "Legendary Creature — Human Shaman",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Thornbite Staff (mor) 145",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Thornbite Staff (mor) 145",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Endrek Sahr, Master Breeder",
+    "set": "mm2",
+    "collector_number": "82",
+    "image": "https://api.scryfall.com/cards/mm2/82?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{4}{B}",
+    "type_line": "Legendary Creature — Human Wizard",
+    "type": "Legendary Creature — Human Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Into the Pit (dsc) 20",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Into the Pit (dsc) 20",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Rowan, Scion of War",
+    "set": "woe",
+    "collector_number": "211",
+    "image": "https://api.scryfall.com/cards/woe/211?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{1}{B}{R}",
+    "type_line": "Legendary Creature — Human Wizard",
+    "type": "Legendary Creature — Human Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Soul Channeling (mmq) 163",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Soul Channeling (mmq) 163",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Judith, Carnage Connoisseur",
+    "set": "mkm",
+    "collector_number": "210",
+    "image": "https://api.scryfall.com/cards/mkm/210?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{3}{B}{R}",
+    "type_line": "Legendary Creature — Human Shaman",
+    "type": "Legendary Creature — Human Shaman",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 4,
+        "cards": [
+          "Chain Reaction (wwk) 74",
+          "End the Festivities (vow) 155",
+          "Smash to Dust (dmu) 144",
+          "Scouring Sands (bng) 110"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Chain Reaction (wwk) 74",
+      "End the Festivities (vow) 155",
+      "Smash to Dust (dmu) 144",
+      "Scouring Sands (bng) 110"
+    ]
+  },
+  {
+    "name": "Lathiel, the Bounteous Dawn",
+    "set": "cmr",
+    "collector_number": "285",
+    "image": "https://api.scryfall.com/cards/cmr/285?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{G}{W}",
+    "type_line": "Legendary Creature — Unicorn",
+    "type": "Legendary Creature — Unicorn",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 1,
+        "cards": [
+          "Well of Lost Dreams (dst) 159"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Well of Lost Dreams (dst) 159"
+    ]
+  },
+  {
+    "name": "Sigarda, Font of Blessings",
+    "set": "mat",
+    "collector_number": "47",
+    "image": "https://api.scryfall.com/cards/mat/47?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
+    "mana_cost": "{2}{G}{W}",
+    "type_line": "Legendary Creature — Angel",
+    "type": "Legendary Creature — Angel",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Arabella, Abandoned Doll",
+    "set": "dsk",
+    "collector_number": "208",
+    "image": "https://api.scryfall.com/cards/dsk/208?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{R}{W}",
+    "type_line": "Legendary Artifact Creature — Toy",
+    "type": "Legendary Artifact Creature — Toy",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "MacCready, Lamplight Mayor (pip) 108",
+          "Looking For Group!"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "MacCready, Lamplight Mayor (pip) 108",
+      {
+        "name": "Looking For Group!",
+        "image": "https://i.imgur.com/22rD7R7.png",
+        "type": "Draft Effect - Shapeshifter Partner"
+      }
+    ]
+  },
+  {
+    "name": "Taii Wakeen, Perfect Shot",
+    "set": "otj",
+    "collector_number": "234",
+    "image": "https://api.scryfall.com/cards/otj/234?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{R}{W}",
+    "type_line": "Legendary Creature — Human Mercenary",
+    "type": "Legendary Creature — Human Mercenary",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 3,
+        "cards": [
+          "Tectonic Hazard (lci) 169",
+          "Signature Spell",
+          "Blazing Volley (akh) 119"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Tectonic Hazard (lci) 169",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Blazing Volley (akh) 119"
+    ]
+  },
+  {
+    "name": "Brimaz, Blight of Oreskos",
+    "set": "moc",
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/moc/2?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{2}{W}{B}",
+    "type_line": "Legendary Creature — Phyrexian Cat",
+    "type": "Legendary Creature — Phyrexian Cat",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Progenitor Exarch (mom) 32",
+          "Essence of Orthodoxy (mom) 323"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Progenitor Exarch (mom) 32",
+      "Essence of Orthodoxy (mom) 323"
+    ]
+  },
+  {
+    "name": "Kambal, Profiteering Mayor",
+    "set": "otj",
+    "collector_number": "211",
+    "image": "https://api.scryfall.com/cards/otj/211?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
+    "mana_cost": "{1}{W}{B}",
+    "type_line": "Legendary Creature — Human Advisor",
+    "type": "Legendary Creature — Human Advisor",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Tyvar the Bellicose",
+    "set": "mat",
+    "collector_number": "48",
+    "image": "https://api.scryfall.com/cards/mat/48?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Elf Booster Pack",
+    "mana_cost": "{2}{B}{G}",
+    "type_line": "Legendary Creature — Elf Warrior",
+    "type": "Legendary Creature — Elf Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Heritage Druid (mor) 126",
+          "Elvish Warmaster (khm) 167",
+          "Elvish Archdruid (m10) 176",
+          "Elvish Champion (10e) 261",
+          "Imperious Perfect (lrw) 220",
+          "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
+          "Lys Alana Huntmaster (lrw) 229",
+          "Norwood Priestess (vma) 221",
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Elf Booster Pack"
+    ]
+  },
+  {
+    "name": "Tinybones, the Pickpocket",
+    "set": "otj",
+    "collector_number": "109",
+    "image": "https://api.scryfall.com/cards/otj/109?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{B}",
+    "type_line": "Legendary Creature — Skeleton Rogue",
+    "type": "Legendary Creature — Skeleton Rogue",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Ragavan, Nimble Pilferer (mh2) 138",
+          "Looking For Group!"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Ragavan, Nimble Pilferer (mh2) 138",
+      {
+        "name": "Looking For Group!",
+        "image": "https://i.imgur.com/22rD7R7.png",
+        "type": "Draft Effect - Shapeshifter Partner"
+      }
+    ]
+  },
+  {
+    "name": "Alela, Cunning Conqueror",
+    "set": "woc",
+    "collector_number": "3",
+    "image": "https://api.scryfall.com/cards/woc/3?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
+    "mana_cost": "{2}{U}{B}",
+    "type_line": "Legendary Creature — Faerie Warlock",
+    "type": "Legendary Creature — Faerie Warlock",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Cloud of Faeries (woc) 86",
+          "Emrakul's Messenger (mh3) 61",
+          "Faerie Mastermind (mom) 58",
+          "Spellstutter Sprite (lrw) 89",
+          "Brazen Borrower (eld) 39",
+          "Scion of Oona (lrw) 83",
+          "Glen Elendra Archmage (eve) 22",
+          "Malleable Impostor (woc) 10",
+          "Archmage of Echoes (woc) 9",
+          "Thieves' Fortune (mor) 54",
+          "Notorious Throng (mor) 45",
+          "Blightwing Bandit (woc) 13",
+          "Faerie Bladecrafter (woc) 14",
+          "Nettling Nuisance (woc) 15",
+          "Oona's Blackguard (dci) 15",
+          "Bitterblossom (mor) 58",
+          "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
+          "Spellscorn Coven (woe) 237",
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Faerie Booster Pack"
+    ]
+  },
+  {
+    "name": "Obyra, Dreaming Duelist",
+    "set": "woe",
+    "collector_number": "210",
+    "image": "https://api.scryfall.com/cards/woe/210?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
+    "mana_cost": "{U}{B}",
+    "type_line": "Legendary Creature — Faerie Warrior",
+    "type": "Legendary Creature — Faerie Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Cloud of Faeries (woc) 86",
+          "Emrakul's Messenger (mh3) 61",
+          "Faerie Mastermind (mom) 58",
+          "Spellstutter Sprite (lrw) 89",
+          "Brazen Borrower (eld) 39",
+          "Scion of Oona (lrw) 83",
+          "Glen Elendra Archmage (eve) 22",
+          "Malleable Impostor (woc) 10",
+          "Archmage of Echoes (woc) 9",
+          "Thieves' Fortune (mor) 54",
+          "Notorious Throng (mor) 45",
+          "Blightwing Bandit (woc) 13",
+          "Faerie Bladecrafter (woc) 14",
+          "Nettling Nuisance (woc) 15",
+          "Oona's Blackguard (dci) 15",
+          "Bitterblossom (mor) 58",
+          "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
+          "Spellscorn Coven (woe) 237",
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Faerie Booster Pack"
+    ]
+  },
+  {
+    "name": "Oona, Queen of the Fae",
+    "set": "shm",
+    "collector_number": "172",
+    "image": "https://api.scryfall.com/cards/shm/172?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
+    "mana_cost": "{3}{U/B}{U/B}{U/B}",
+    "type_line": "Legendary Creature — Faerie Wizard",
+    "type": "Legendary Creature — Faerie Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Cloud of Faeries (woc) 86",
+          "Emrakul's Messenger (mh3) 61",
+          "Faerie Mastermind (mom) 58",
+          "Spellstutter Sprite (lrw) 89",
+          "Brazen Borrower (eld) 39",
+          "Scion of Oona (lrw) 83",
+          "Glen Elendra Archmage (eve) 22",
+          "Malleable Impostor (woc) 10",
+          "Archmage of Echoes (woc) 9",
+          "Thieves' Fortune (mor) 54",
+          "Notorious Throng (mor) 45",
+          "Blightwing Bandit (woc) 13",
+          "Faerie Bladecrafter (woc) 14",
+          "Nettling Nuisance (woc) 15",
+          "Oona's Blackguard (dci) 15",
+          "Bitterblossom (mor) 58",
+          "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
+          "Spellscorn Coven (woe) 237",
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Faerie Booster Pack"
+    ]
+  },
+  {
+    "name": "Tegwyll, Duke of Splendor",
+    "set": "woc",
+    "collector_number": "1",
+    "image": "https://api.scryfall.com/cards/woc/1?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Faerie Booster Pack",
+    "mana_cost": "{1}{U}{B}",
+    "type_line": "Legendary Creature — Faerie Noble",
+    "type": "Legendary Creature — Faerie Noble",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Cloud of Faeries (woc) 86",
+          "Emrakul's Messenger (mh3) 61",
+          "Faerie Mastermind (mom) 58",
+          "Spellstutter Sprite (lrw) 89",
+          "Brazen Borrower (eld) 39",
+          "Scion of Oona (lrw) 83",
+          "Glen Elendra Archmage (eve) 22",
+          "Malleable Impostor (woc) 10",
+          "Archmage of Echoes (woc) 9",
+          "Thieves' Fortune (mor) 54",
+          "Notorious Throng (mor) 45",
+          "Blightwing Bandit (woc) 13",
+          "Faerie Bladecrafter (woc) 14",
+          "Nettling Nuisance (woc) 15",
+          "Oona's Blackguard (dci) 15",
+          "Bitterblossom (mor) 58",
+          "Halo Forager (mom) 227",
+          "Likeness Looter (woe) 208",
+          "Nymris, Oona's Trickster (cmr) 288",
+          "Spellscorn Coven (woe) 237",
+          "Faerie Seer (mh1) 51",
+          "Hypnotic Sprite (eld) 49",
+          "Mocking Doppelganger (clb) 667",
+          "Picklock Prankster (woe) 64",
+          "Quickling (m15) 76",
+          "Aetherize (gtc) 29",
+          "Faebloom Trick (fdn) 38",
+          "Strix Serenade (mh3) 71",
+          "Hands of Binding (gtc) 37",
+          "Stolen by the Fae (eld) 66"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Faerie Booster Pack"
+    ]
+  },
+  {
+    "name": "Imaryll, Elfhame Elite",
+    "set": "gn3",
+    "collector_number": "5",
+    "image": "https://api.scryfall.com/cards/gn3/5?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Elf Booster Pack (x3)",
+    "mana_cost": "{2}{G}{G}",
+    "type_line": "Legendary Creature — Elf Warrior",
+    "type": "Legendary Creature — Elf Warrior",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 3,
+        "cards": [
+          "Heritage Druid (mor) 126",
+          "Elvish Warmaster (khm) 167",
+          "Elvish Archdruid (m10) 176",
+          "Elvish Champion (10e) 261",
+          "Imperious Perfect (lrw) 220",
+          "Immaculate Magistrate (lrw) 219",
+          "Cultivator of Blades (kld) 151",
+          "Elvish Promenade (lrw) 208",
+          "Leaf-Crowned Visionary (dmu) 167",
+          "Wolverine Riders (khc) 14",
+          "Priest of Titania (mh3) 286",
+          "Elvish Mystic (m14) 169",
+          "Joraga Warcaller (wwk) 106",
+          "Bramblewood Paragon (mor) 115",
+          "Wellwisher (ons) 300",
+          "Dionus, Elvish Archdruid (j25) 52",
+          "Lys Alana Huntmaster (lrw) 229",
+          "Norwood Priestess (vma) 221",
+          "Wirewood Lodge (plst) DD1-26",
+          "Marwyn, the Nurturer (dom) 172"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Elf Booster Pack"
+    ]
+  },
+  {
+    "name": "The Watcher in the Water",
+    "set": "ltr",
+    "collector_number": "75",
+    "image": "https://api.scryfall.com/cards/ltr/75?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{3}{U}{U}",
+    "type_line": "Legendary Creature — Kraken",
+    "type": "Legendary Creature — Kraken",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 4,
+        "cards": [
+          "Nadir Kraken (thb) 55",
+          "Keep Watch (jud) 43",
+          "Signature Spell",
+          "Perilous Research (csp) 41"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Nadir Kraken (thb) 55",
+      "Keep Watch (jud) 43",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Perilous Research (csp) 41"
+    ]
+  },
+  {
+    "name": "Goro-Goro and Satoru",
+    "set": "moc",
+    "collector_number": "445",
+    "image": "https://api.scryfall.com/cards/moc/445?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{U}{B}{R}",
+    "type_line": "Legendary Creature — Goblin Human",
+    "type": "Legendary Creature — Goblin Human",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 7,
+        "cards": [
+          "Fallen Shinobi (mh1) 199",
+          "Ninja of the Deep Hours (bok) 44",
+          "Dokuchi Silencer (neo) 95",
+          "Prosperous Thief (neo) 73",
+          "Nashi, Moon Sage's Scion (neo) 114",
+          "Signature Spell",
+          "Dragon Tempest (dtk) 136"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Fallen Shinobi (mh1) 199",
+      "Ninja of the Deep Hours (bok) 44",
+      "Dokuchi Silencer (neo) 95",
+      "Prosperous Thief (neo) 73",
+      "Nashi, Moon Sage's Scion (neo) 114",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Dragon Tempest (dtk) 136"
+    ]
+  },
+  {
+    "name": "Rionya, Fire Dancer",
+    "set": "c21",
+    "collector_number": "55",
+    "image": "https://api.scryfall.com/cards/c21/55?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{3}{R}{R}",
+    "type_line": "Legendary Creature — Human Wizard",
+    "type": "Legendary Creature — Human Wizard",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 7,
+        "cards": [
+          "Pyretic Ritual (m11) 153",
+          "Gut Shot (nph) 86",
+          "Flame Jab (eve) 53",
+          "Patron of the Arts (clb) 191",
+          "Redoubled Stormsinger (tdc) 37",
+          "Ardent Elementalist (mid) 128",
+          "Humble Defector (frf) 104"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Pyretic Ritual (m11) 153",
+      "Gut Shot (nph) 86",
+      "Flame Jab (eve) 53",
+      "Patron of the Arts (clb) 191",
+      "Redoubled Stormsinger (tdc) 37",
+      "Ardent Elementalist (mid) 128",
+      "Humble Defector (frf) 104"
+    ]
+  },
+  {
+    "name": "Baba Lysaga, Night Witch",
+    "set": "clb",
+    "collector_number": "266",
+    "image": "https://api.scryfall.com/cards/clb/266?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{1}{B}{G}",
+    "type_line": "Legendary Creature — Human Warlock",
+    "type": "Legendary Creature — Human Warlock",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Crop Rotation (c20) 169",
+          "Signature Spell",
+          "Mishra's Factory (dmr) 251",
+          "Mishra's Foundry (bro) 265",
+          "Inkmoth Nexus (mbs) 145",
+          "Blinkmoth Nexus (dst) 163"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Crop Rotation (c20) 169",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Mishra's Factory (dmr) 251",
+      "Mishra's Foundry (bro) 265",
+      "Inkmoth Nexus (mbs) 145",
+      "Blinkmoth Nexus (dst) 163"
+    ]
+  },
+  {
+    "name": "Urza, Lord Protector",
+    "set": "bro",
+    "collector_number": "225",
+    "image": "https://api.scryfall.com/cards/bro/225?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{1}{W}{U}",
+    "type_line": "Legendary Creature — Human Artificer",
+    "type": "Legendary Creature — Human Artificer",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "The Mightstone and Weakstone (bro) 238",
+          "Signature Spell"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "The Mightstone and Weakstone (bro) 238",
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      }
+    ]
+  },
+  {
+    "name": "Toothy, Imaginary Friend",
+    "set": "bbd",
+    "collector_number": "12",
+    "image": "https://api.scryfall.com/cards/bbd/12?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{3}{U}",
+    "type_line": "Legendary Creature — Illusion",
+    "type": "Legendary Creature — Illusion",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 1,
+        "cards": [
+          "Pir, Imaginative Rascal (bbd) 11"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Pir, Imaginative Rascal (bbd) 11"
+    ]
+  },
+  {
+    "name": "Kyler, Sigardian Emissary",
+    "set": "mic",
+    "collector_number": "4",
+    "image": "https://api.scryfall.com/cards/mic/4?format=image&version=border_crop",
+    "oracle_text": "Drafting this card also drafts: Human Booster Pack",
+    "mana_cost": "{3}{G}{W}",
+    "type_line": "Legendary Creature — Human Cleric",
+    "type": "Legendary Creature — Human Cleric",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 6,
+        "cards": [
+          "Thraben Doomsayer (dka) 25",
+          "Increasing Devotion (dka) 11",
+          "Soul's Attendant (roe) 44",
+          "Ranger of Eos (ala) 21",
+          "The Wandering Emperor (neo) 42",
+          "Call the Coppercoats (c20) 23",
+          "Adeline, Resplendent Cathar (mid) 1",
+          "Angel of Glory's Rise (avr) 1",
+          "Beregond of the Guard (ltc) 9",
+          "Cosmogrand Zenith (eoe) 9",
+          "Devout Chaplain (avr) 17",
+          "Greymond, Avacyn's Stalwart (slx) 18",
+          "Distract the Guards (acr) 3",
+          "Champion of the Parish (isd) 6",
+          "Knight-Errant of Eos (mom) 26",
+          "Ranger-Captain of Eos (mh1) 21",
+          "Sunset Revelry (mid) 38",
+          "Visions of Glory (mic) 32",
+          "Fight as One (iko) 12",
+          "Thalia's Lieutenant (soi) 43"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      "Human Booster Pack"
+    ]
+  },
+  {
+    "name": "Elsha, Threefold Master",
+    "set": "tdc",
+    "collector_number": "2",
+    "image": "https://api.scryfall.com/cards/tdc/2?format=image&version=border_crop",
+    "oracle_text": "Selecting this card automatically adds cards to your draft pool",
+    "mana_cost": "{U}{R}{W}",
+    "type_line": "Legendary Creature — Djinn Monk",
+    "type": "Legendary Creature — Djinn Monk",
+    "draft_effects": [
+      {
+        "type": "AddCards",
+        "count": 2,
+        "cards": [
+          "Signature Spell",
+          "Leering Emblem (eve) 171"
+        ],
+        "duplicateProtection": true
+      }
+    ],
+    "related_cards": [
+      {
+        "name": "Signature Spell",
+        "image": "https://i.imgur.com/GSOAER0.jpeg",
+        "type": "Draft Effect - Signature Spell"
+      },
+      "Leering Emblem (eve) 171"
+    ]
   }
 ]
 
 [commander]
-Delney, Streetwise Lookout (mkm) 12
-Celestine, the Living Saint (40k) 10
-God-Eternal Oketra (war) 16
-Evra, Halcyon Witness (dom) 16
-Taigam, Master Opportunist (tdm) 60
-Maeve, Insidious Singer (gn3) 2
-Urza, Lord High Artificer (mh1) 75
-Hraesvelgr of the First Brood (fic) 37
-The Watcher in the Water (ltr) 75
-Siegfried, Famed Swordsman (fic) 51
-Yawgmoth, Thran Physician (mh1) 116
-Endrek Sahr, Master Breeder (mm2) 82
-Tergrid, God of Fright (khm) 112
-K'rrik, Son of Yawgmoth (c19) 18
-Kediss, Emberclaw Familiar (cmr) 188
-Alexios, Deimos of Kosmos (acr) 33
-Krenko, Mob Boss (m13) 138
-Plargg and Nassari (mat) 18
-Rionya, Fire Dancer (c21) 55
-Arwen, Weaver of Hope (ltc) 35
-Eladamri, Korvecdal (mh3) 149
-Goreclaw, Terror of Qal Sisma (m19) 186
-Imaryll, Elfhame Elite (gn3) 5
-Urza, Lord Protector (bro) 225
-Will, Scion of Peace (woe) 218
-Ishai, Ojutai Dragonspeaker (cm2) 12
-Kykar, Zephyr Awakener (fdn) 122
-Niko, Light of Hope (dsk) 224
-Dragonlord Ojutai (dtk) 219
-Obyra, Dreaming Duelist (woe) 210
-Sygg, River Cutthroat (shm) 176
-Emry, Lurker of the Loch (eld) 43
-Silas Renn, Seeker Adept (c16) 43
-Tegwyll, Duke of Splendor (woc) 1
-Alela, Cunning Conqueror (woc) 3
-Kels, Fight Fixer (jmp) 15
-Wilhelt, the Rotcleaver (mic) 2
 The Scarab God (hou) 145
-Oona, Queen of the Fae (shm) 172
-Tinybones, the Pickpocket (otj) 109
-Rowan, Scion of War (woe) 211
+Wilhelt, the Rotcleaver (mic) 2
+Kelsien, the Plague (c20) 11
+Pako, Arcane Retriever (c20) 13
+Shabraz, the Skyshark (c20) 14
+Karador, Ghost Chieftain (cmd) 207
+Sidisi, Brood Tyrant (ktk) 199
+Isshin, Two Heavens as One (neo) 224
+Kresh the Bloodbraided (ala) 178
+Korvold, Fae-Cursed King (eld) 329
+Marchesa, the Black Rose (cns) 49
+Alela, Artful Provocateur (ncc) 325
+Hashaton, Scarab's Fist (drc) 1
+Galadriel, Light of Valinor (ltc) 498
+Varina, Lich Queen (c18) 48
+Mizzix of the Izmagnus (c15) 50
+Rielle, the Everwise (iko) 203
+Krenko, Mob Boss (m13) 138
+Fumiko the Lowblood (bok) 104
+Prime Speaker Zegana (gtc) 188
+Akiri, Line-Slinger (c16) 26
+Urza, Chief Artificer (brc) 2
+Adriana, Captain of the Guard (cn2) 73
+Ravos, Soultender (c16) 39
+Tymna the Weaver (c16) 48
 Vial Smasher the Fierce (c16) 49
-Akul the Unrepentant (otj) 189
-Chainer, Nightmare Adept (c19) 39
+Kediss, Emberclaw Familiar (cmr) 188
+Wyleth, Soul of Steel (cmr) 362
+Dragonlord Ojutai (dtk) 219
+Silas Renn, Seeker Adept (c16) 43
+Galazeth Prismari (stx) 189
+Jarad, Golgari Lich Lord (ddj) 45
+Meren of Clan Nel Toth (cma) 186
+Mazirek, Kraul Death Priest (c15) 48
+Goreclaw, Terror of Qal Sisma (m19) 186
+Lathril, Blade of the Elves (khc) 1
+Ezuri, Claw of Progress (oc15) 44
+Eladamri, Korvecdal (mh3) 149
+Emry, Lurker of the Loch (eld) 43
+Urza, Lord High Artificer (mh1) 75
+Narset, Enlightened Exile (mat) 38
+Bria, Riptide Rogue (blb) 379
 Greven, Predator Captain (c19) 43
+Captain Howler, Sea Scourge (dft) 194
+Commissar Severina Raine (40k) 112
+Elenda, the Dusk Rose (rix) 157
+Niko, Light of Hope (dsk) 224
+Will, Scion of Peace (woe) 218
+Kykar, Zephyr Awakener (fdn) 122
+Odric, Master Tactician (m13) 23
+Celestine, the Living Saint (40k) 10
+Kels, Fight Fixer (jmp) 15
+Marchesa, Dealer of Death (otj) 220
+Yannik, Scavenging Sentinel (c20) 19
+Atla Palani, Nest Tender (c19) 38
+Endrek Sahr, Master Breeder (mm2) 82
+Arwen, Weaver of Hope (ltc) 35
+Samut, Voice of Dissent (akh) 205
+Klauth, Unrivaled Ancient (afc) 50
+K'rrik, Son of Yawgmoth (c19) 18
+Rowan, Scion of War (woe) 211
+Chainer, Nightmare Adept (c19) 39
 Judith, Carnage Connoisseur (mkm) 210
 Karazikar, the Eye Tyrant (afc) 49
 Rakdos, the Muscle (otj) 226
-Anzrag, the Quake-Mole (mkm) 186
+Sygg, River Cutthroat (shm) 176
+Baral and Kari Zev (mom) 302
+Jhoira, Ageless Innovator (dmu) 202
+Ishai, Ojutai Dragonspeaker (cm2) 12
+Chulane, Teller of Tales (plst) ELD-326
+Thalia and The Gitrog Monster (mom) 255
+Animar, Soul of Elements (ocmd) 181
 Halana and Alena, Partners (vow) 239
 Tana, the Bloodsower (c16) 45
-Phylath, World Sculptor (znr) 234
 Ruric Thar, the Unbowed (dgm) 99
-Etali, Primal Conqueror (mom) 137
-Klauth, Unrivaled Ancient (afc) 50
-Kutzil, Malamet Exemplar (lci) 232
 Lathiel, the Bounteous Dawn (cmr) 285
-Sigarda, Font of Blessings (mat) 47
-Sovereign Okinec Ahau (lci) 240
-Kyler, Sigardian Emissary (mic) 4
 Dragonlord Dromoka (dtk) 217
-Hamza, Guardian of Arashin (cmr) 278
-Ghalta and Mavren (mom) 225
-Commissar Severina Raine (40k) 112
-Kambal, Profiteering Mayor (otj) 211
-Tymna the Weaver (c16) 48
-Brimaz, Blight of Oreskos (moc) 2
-Carmen, Cruel Skymarcher (lcc) 5
-Ravos, Soultender (c16) 39
-Jhoira, Ageless Innovator (dmu) 202
-Baral and Kari Zev (mom) 302
-Rielle, the Everwise (iko) 203
-Bria, Riptide Rogue (blb) 379
-Captain Howler, Sea Scourge (dft) 194
-Galazeth Prismari (stx) 189
-Mizzix of the Izmagnus (c15) 50
-Niv-Mizzet, Visionary (fdn) 482
-The Locust God (hou) 139
-Ovika, Enigma Goliath (one) 213
-Baba Lysaga, Night Witch (clb) 266
-Kraven the Hunter (spm) 133
-Vraska, the Silencer (otj) 237
-Jarad, Golgari Lich Lord (ddj) 45
-Lathril, Blade of the Elves (khc) 1
-Meren of Clan Nel Toth (cma) 186
-Tyvar the Bellicose (mat) 48
-Mazirek, Kraul Death Priest (c15) 48
-The Gitrog, Ravenous Ride (otj) 206
-Akiri, Line-Slinger (c16) 26
+Sigarda, Font of Blessings (mat) 47
+Arabella, Abandoned Doll (dsk) 208
 Taii Wakeen, Perfect Shot (otj) 234
-Wyleth, Soul of Steel (cmr) 362
-Fumiko the Lowblood (bok) 104
 Osgir, the Reconstructor (c21) 8
-Adriana, Captain of the Guard (cn2) 73
 Alibou, Ancient Witness (c21) 7
-Otharri, Suns' Glory (onc) 3
+Siegfried, Famed Swordsman (fic) 51
+Taigam, Master Opportunist (tdm) 60
+Carmen, Cruel Skymarcher (lcc) 5
+Brimaz, Blight of Oreskos (moc) 2
+Kambal, Profiteering Mayor (otj) 211
+The Gitrog, Ravenous Ride (otj) 206
+Vraska, the Silencer (otj) 237
+Tyvar the Bellicose (mat) 48
 Kinnan, Bonder Prodigy (iko) 192
-Ezuri, Claw of Progress (oc15) 44
 Inga and Esika (mom) 229
 Kianne, Corrupted Memory (dsc) 2
-Toothy, Imaginary Friend (bbd) 12
-Volo, Guide to Monsters (afr) 238
-Prime Speaker Zegana (gtc) 188
-Chulane, Teller of Tales (plst) ELD-326
-Galadriel, Light of Valinor (ltc) 498
-Hashaton, Scarab's Fist (drc) 1
-Alela, Artful Provocateur (ncc) 325
-Varina, Lich Queen (c18) 48
-Urza, Chief Artificer (brc) 2
-Goro-Goro and Satoru (moc) 445
-Marchesa, Dealer of Death (otj) 220
-Marchesa, the Black Rose (cns) 49
-Indoraptor, the Perfect Hybrid (rex) 15
-Korvold, Fae-Cursed King (eld) 329
-Kresh the Bloodbraided (ala) 178
-Ghired, Mirror of the Wilds (otj) 205
-Atla Palani, Nest Tender (c19) 38
-Samut, Voice of Dissent (akh) 205
-Arabella, Abandoned Doll (dsk) 208
-Isshin, Two Heavens as One (neo) 224
-Kelsien, the Plague (c20) 11
-Animar, Soul of Elements (ocmd) 181
-Loot, the Key to Everything (big) 21
-Pako, Arcane Retriever (c20) 13
-Thalia and The Gitrog Monster (mom) 255
-Yannik, Scavenging Sentinel (c20) 19
 Betor, Ancestor's Voice (tdc) 1
-Karador, Ghost Chieftain (cmd) 207
-Elsha, Threefold Master (tdc) 2
-Narset, Enlightened Exile (mat) 38
-Shabraz, the Skyshark (c20) 14
 Kotis, the Fangkeeper (tdm) 202
-Sidisi, Brood Tyrant (ktk) 199
+Volo, Guide to Monsters (afr) 238
+Tinybones, the Pickpocket (otj) 109
+Alela, Cunning Conqueror (woc) 3
+Obyra, Dreaming Duelist (woe) 210
+Oona, Queen of the Fae (shm) 172
+Tegwyll, Duke of Splendor (woc) 1
+Imaryll, Elfhame Elite (gn3) 5
+Anzrag, the Quake-Mole (mkm) 186
+Delney, Streetwise Lookout (mkm) 12
+Evra, Halcyon Witness (dom) 16
+Niv-Mizzet, Visionary (fdn) 482
+Tergrid, God of Fright (khm) 112
+Hraesvelgr of the First Brood (fic) 37
+Maeve, Insidious Singer (gn3) 2
+The Watcher in the Water (ltr) 75
+Yawgmoth, Thran Physician (mh1) 116
+Etali, Primal Conqueror (mom) 137
+Otharri, Suns' Glory (onc) 3
+Goro-Goro and Satoru (moc) 445
+Rionya, Fire Dancer (c21) 55
+Ghired, Mirror of the Wilds (otj) 205
+Baba Lysaga, Night Witch (clb) 266
+Alexios, Deimos of Kosmos (acr) 33
+Plargg and Nassari (mat) 18
+Urza, Lord Protector (bro) 225
+Toothy, Imaginary Friend (bbd) 12
+Hamza, Guardian of Arashin (cmr) 278
+Kutzil, Malamet Exemplar (lci) 232
+Kyler, Sigardian Emissary (mic) 4
+Sovereign Okinec Ahau (lci) 240
+Elsha, Threefold Master (tdc) 2
 Yarok, the Desecrated (m20) 220
+Phylath, World Sculptor (znr) 234
+The Locust God (hou) 139
+Kraven the Hunter (spm) 133
+Ghalta and Mavren (mom) 225
 Sapphire Adornment
 Ruby Adornment
 Emerald Adornment
@@ -2329,823 +2362,822 @@ Looking For Group!
 Plenty for Both of Us
 
 [mono]
-Mikaeus, the Lunarch (2x2) 18
-Serra Ascendant (m11) 28
-Soul Warden (mm3) 24
-Bounty Agent (grn) 2
-Charismatic Conqueror (lcc) 70
-Charming Prince (eld) 8
-Dusk Legion Duelist (mom) 11
-Loyal Warhound (afr) 23
-Luminarch Aspirant (znr) 24
-Myrsmith (som) 16
-Oreskos Explorer (c15) 6
-Puresteel Paladin (nph) 20
-Relic Seeker (pori) 29
-Scholar of New Horizons (brc) 6
-Soulfire Grand Master (frf) 27
-Stoneforge Mystic (wwk) 20
-Suture Priest (nph) 25
-Abzan Falconer (ktk) 2
-Bygone Bishop (soi) 8
-Codsworth, Handy Helper (pip) 14
-Drumbellower (nec) 6
-Elenda's Hierophant (lcc) 71
-Fiend Hunter (isd) 15
-Frontline Medic (gtc) 12
-Intrepid Hero (8ed) 26★
-Loran of the Third Path (bro) 12
-Losheel, Clockwork Scholar (c21) 18
-Loyal Retainers (cmm) 39
-Mentor of the Meek (isd) 21
-Metropolis Reformer (mat) 4
-Mirror Entity (lrw) 31
-Monastery Mentor (frf) 20
-Oltec Matterweaver (big) 3
-Welcoming Vampire (vow) 46
-Custodi Soulbinders (cns) 17
-Exemplar of Light (fdn) 11
-Filigree Vector (moc) 15
-Keeper of the Accord (cmr) 27
-Luminous Broodmoth (iko) 21
-Mangara, the Diplomat (cmm) 42
-Odric, Lunarch Marshal (soi) 31
-Odric, Master Tactician (m13) 23
-Priest of the Crossing (drc) 6
-Restoration Angel (avr) 32
-Serra Paragon (dmu) 32
-Teshar, Ancestor's Apostle (dom) 36
-Angel of Invention (kld) 4
-Archangel of Thune (m14) 5
-Archon of Redemption (wwk) 3
-Bronze Guardian (c21) 13
-Cavalier of Dawn (m20) 10
-Exalted Sunborn (eoe) 15
-Illustrious Wanderglyph (lcc) 9
-Reveillark (mor) 22
-Stonehewer Giant (mor) 24
-Sunscorch Regent (dtk) 41
-Adarkar Valkyrie (csp) 1
-Angel of Indemnity (otc) 9
-Angelic Skirmisher (gtc) 3
-Sun Titan (m11) 35
-Victory's Herald (mbs) 18
-Angel of the Ruins (c21) 11
-Elesh Norn, Grand Cenobite (nph) 9
-Emeria Shepherd (bfz) 22
-Sephara, Sky's Blade (m20) 36
-Moonshaker Cavalry (woe) 21
-Basri Ket (m21) 7
-Elspeth, Knight-Errant (ala) 9
-Elspeth, Sun's Champion (ths) 9
-Ephemerate (mh1) 7
-Path to Exile (mma) 25
-Restoration Magic (fin) 30
-Swords to Plowshares (cmm) 841
-Eerie Interlude (ddq) 8
-Generous Gift (mh1) 11
-Akroma's Will (cmr) 3
-Board the Weatherlight (dom) 8
-Gift of Estates (c14) 73
-Recommission (bro) 22
-Council's Judgment (cns) 16
-Day of Judgment (zen) 9
-Sram's Expertise (aer) 24
-Wrath of God (9ed) 56★
-Starfall Invocation (blb) 34
-Open the Vaults (m10) 21
-Devout Invocation (m14) 16
-Reunion of the House (tdc) 15
-Archaeomancer's Map (c21) 12
-Caduceus, Staff of Hermes (acr) 2
-Godsend (jou) 12
-Land Tax (bbd) 94
-Sigarda's Aid (emn) 41
-All That Glitters (eld) 2
-Journey to Nowhere (zen) 14
-Luminarch Ascension (zen) 25
-Ossification (one) 26
-Gift of Immortality (ths) 14
-Martial Impetus (c20) 28
-Oblivion Ring (ala) 20
-Anointed Procession (akh) 2
-Felidar Retreat (znr) 16
-Smothering Tithe (rna) 22
-Cathars' Crusade (avr) 10
-Hedron Crab (zen) 47
-Ruin Crab (znr) 75
-Chief Engineer (m15) 47
-Etherium Sculptor (ala) 42
-Ghostly Pilferer (m21) 52
-Kitsa, Otterball Elite (blb) 54
-Ledger Shredder (snc) 46
-Merfolk Looter (m12) 65
-O'aka, Traveling Merchant (fic) 39
-Phantasmal Image (m12) 72
-Pollywog Prodigy (blc) 15
-Saprazzan Heir (mmq) 99
-Snapcaster Mage (isd) 78
-Thieving Skydiver (znr) 85
-Chasm Skulker (m15) 46
-Chrome Host Seedshark (mom) 51
-Flux Channeler (war) 52
-Forensic Gadgeteer (mkm) 57
-Grand Architect (som) 33
-Jace's Archivist (m12) 59
-Master of Etherium (ala) 49
-Poppet Stitcher (mid) 71
-Sai, Master Thopterist (m19) 69
-Uthros Psionicist (eoe) 84
-Wavebreak Hippocamp (thb) 80
-Archmage Emeritus (stx) 37
-Displacer Kitten (clb) 63
-Faerie Artisans (c16) 8
-Herald of Secret Streams (xln) 59
-High Fae Trickster (fdn) 40
-Master Transmuter (con) 31
-Moonshae Pixie (clb) 84
-Niblis of Frost (emn) 72
-Sakashima's Student (pc2) 24
-Sower of Temptation (lrw) 88
-Vedalken Archmage (mrd) 55
-Deekah, Fractal Theorist (c21) 26
-Deepglow Skate (c16) 7
-Research Thief (nec) 16
-Willbreaker (ori) 84
-Arcanis the Omnipotent (10e) 66
-Cyberdrive Awakener (nec) 12
-Deadeye Navigator (avr) 47
-Roil Elemental (zen) 62
-Sharding Sphinx (ala) 55
-Torrential Gearhulk (kld) 67
-Diluvian Primordial (gtc) 33
-Enigma Thief (znc) 4
-Sphinx of Uthuun (m12) 76
-Thought Monitor (mh2) 71
-Astral Dragon (clb) 664
-Jin-Gitaxias, Core Augur (nph) 37
-Jace Beleren (ss1) 1
-Tezzeret the Seeker (ala) 60
-Brainstorm (plst) SS1-3
-Magic Damper (fin) 61
-Pongify (plc) 44
-Spell Pierce (zen) 67
 Swan Song (ths) 65
-Three Steps Ahead (otj) 75
-Arcane Denial (cmr) 630
-Counterspell (ss1) 4
-Cyber Conversion (who) 38
-Echoing Truth (dst) 21
-Flash (a25) 57
-Fumble (bbd) 34
-Impulse (v13) 5
-Mana Drain (ima) 65
-Memory Lapse (7ed) 88★
-Pull from Tomorrow (akh) 65
-Snap (dmr) 66
-Telling Time (rav) 69
-Think Twice (isd) 83
-Twincast (10e) 120
-Cackling Counterpart (isd) 46
-Drown in Dreams (mic) 13
-Flatline (who) 43
-Forbidden Alchemy (f12) 7
-Frantic Search (uma) 57
-Behold the Multiverse (khm) 46
-Fact or Fiction (mh1) 50
-Memory Deluge (mid) 62
-Aetherspouts (m15) 44
-Evacuation (10e) 83
+Saheeli, Sublime Artificer (war) 234
 Synthetic Destiny (c15) 15
-Dig Through Time (ktk) 36
-Gitaxian Probe (nph) 35
-Ponder (m10) 68
-Preordain (m11) 70
-Impede Momentum (dmu) 54
-Haunting Imitation (voc) 13
-Mists of Lórien (ltc) 501
-Quasiduplicate (grn) 51
-Ravenform (khm) 72
-Show and Tell (j13) 8
-Windfall (c15) 111
-Arcane Heist (otc) 13
-Distant Melody (mor) 32
-Rite of Replication (zen) 61
-Reverse Engineer (f17) 7
-Aminatou's Augury (dsc) 71
-Treasure Cruise (ktk) 59
-Curiosity (isd) 49
-Dream Halls (sth) 28
-Treachery (uds) 50
-Shark Typhoon (iko) 67
-Mind's Dilation (emn) 70
-Stitcher's Supplier (m19) 121
-Accursed Marauder (mh3) 80
-Bloodghast (zen) 83
-Marionette Apprentice (mh3) 100
-Nether Traitor (tsp) 120
-Priest of Forgotten Gods (rna) 83
-Reassembling Skeleton (m11) 112
-Rotting Rats (con) 51
-Soldevi Adnate (all) 60b
-Vampire Hexmage (zen) 114
-Zulaport Cutthroat (bfz) 126
-Coffin Queen (plst) TPR-87
-Illuminor Szeras (40k) 37
-Midnight Reaper (grn) 77
-Morbid Opportunist (spg) 32
-Murderous Rider (eld) 97
-Ophiomancer (cc2) 3
-Rotting Regisaur (m20) 111
-Royal Assassin (dmr) 310
-Veinwitch Coven (c21) 373
-Warren Soultrader (mh3) 110
-Defiler of Flesh (dmu) 90
-Disciple of Bolas (m13) 88
-Fell Beast of Mordor (ltc) 513
-Forge, Neverwinter Charlatan (sld) 1239
-Grim Hireling (afc) 25
-Mirkwood Bats (ltr) 95
-Pitiless Plunderer (spg) 5
-Prowling Geistcatcher (mic) 21
-Rankle, Master of Pranks (eld) 101
-Ruthless Technomancer (nec) 56
-Starving Revenant (lci) 123
-Venomcrawler (40k) 68
-Bone Miser (c19) 15
-Gray Merchant of Asphodel (ths) 89
-Necron Deathmark (40k) 42
-Phyrexian Delver (moc) 263
-Geth, Lord of the Vault (som) 64
-Grave Titan (m11) 97
-Kokusho, the Evening Star (chk) 122
-Marionette Master (kld) 90
-Massacre Wurm (mbs) 46
-Metamorphosis Fanatic (dsc) 21
-Noosegraf Mob (emn) 98
-Noxious Gearhulk (kld) 96
-Elder Brain (clb) 125
-Overseer of the Damned (c14) 28
-Sepulchral Primordial (gtc) 75
-Thieving Amalgam (c19) 21
-Vilis, Broker of Blood (m20) 122
-Liliana of the Veil (isd) 105
-Liliana, Death's Majesty (akh) 97
-Liliana, Dreadhorde General (war) 97
-Cut Down (dmu) 89
-Entomb (pd3) 14
-Fatal Push (2xm) 343
-Go for the Throat (f11) 11
-Wake the Dead (c14) 31
-Dismember (nph) 57
-Saw in Half (unf) 88
-Makeshift Mannequin (lrw) 124
-Snuff Out (fic) 285
-Bone Shards (mh2) 395
+Memory Deluge (mid) 62
+Sphinx of Uthuun (m12) 76
+Diluvian Primordial (gtc) 33
 Call to the Netherworld (tsp) 97
-Reanimate (pd3) 15
-Unearth (ulg) 72
-Dread Summons (c15) 20
-Exhume (usg) 134
-Exsanguinate (som) 61
-Feed the Swarm (znr) 102
-Night's Whisper (pw24) 18
-Persist (mh2) 96
-Rite of Consumption (shm) 76
-Stitch Together (c18) 119
-Buried Alive (cm2) 59
-Dark Deal (frf) 66
-Infest (ala) 80
-Toxic Deluge (c13) 96
-Victimize (tdc) 198
-Damnation (plc) 85
-Dread Return (pd3) 23
-From Under the Floorboards (soi) 111
-Ghouls' Night Out (mic) 19
-Lich-Knights' Conquest (woe) 96
+Grave Titan (m11) 97
 Living Death (v14) 8
-Rejoin the Fight (fic) 49
-Shadow of the Enemy (ltr) 107
-Blood Money (clb) 116
-Rise of the Dark Realms (fdn) 323
-Wand of Orcus (afc) 28
-Bolas's Citadel (war) 79
-Bloodchief Ascension (zen) 82
+Altar of Dementia (cns) 196
+Stitch Together (c18) 119
+Dolmen Gate (lrw) 256
+Murderous Rider (eld) 97
+Entomb (pd3) 14
+Exhume (usg) 134
+Reanimate (pd3) 15
+Dread Return (pd3) 23
+Accursed Marauder (mh3) 80
+Stitcher's Supplier (m19) 121
 Animate Dead (pd3) 16
-Cover of Darkness (acr) 201
-Attrition (uds) 52
-Bastion of Remembrance (iko) 73
-Curse of the Restless Dead (mic) 18
-Diabolic Servitude (pd3) 22
-Black Market (c15) 116
+Bone Miser (c19) 15
+From Under the Floorboards (soi) 111
+Noosegraf Mob (emn) 98
+Dread Summons (c15) 20
+Overseer of the Damned (c14) 28
+Liliana, Death's Majesty (akh) 97
+Saw in Half (unf) 88
 Open the Graves (m19) 112
-Goblin Welder (cm2) 101
-Rabbit Battery (neo) 157
-Coruscation Mage (blb) 131
-Dockside Extortionist (c19) 24
-Firebrand Archer (hou) 92
-Goro-Goro, Disciple of Ryusei (neo) 145
-Grenzo, Havoc Raiser (cn2) 54
-Loyal Apprentice (c18) 23
-Razorkin Needlehead (dsk) 153
-Reckless Fireweaver (kld) 126
-Runaway Steam-Kin (grn) 115
-Young Pyromancer (m14) 163
-Dualcaster Mage (c14) 34
-Feldon of the Third Path (cm2) 6
-Gadrak, the Crown-Scourge (m21) 146
+Midnight Reaper (grn) 77
+Distant Melody (mor) 32
+Molten Echoes (c20) 54
+Flameshadow Conjuring (ori) 147
+Mana Echoes (2xm) 136
+Drown in Dreams (mic) 13
+Feed the Swarm (znr) 102
+Aetherspouts (m15) 44
+Ghouls' Night Out (mic) 19
+Curse of the Restless Dead (mic) 18
+Echoing Truth (dst) 21
+Sakura-Tribe Elder (chk) 239
+Thieving Amalgam (c19) 21
+Swiftfoot Boots (m12) 219
+Thopter Assembly (mbs) 140
+Tormod's Crypt (c14) 278
+Loxodon Warhammer (mrd) 201
+Mishra's Bauble (csp) 138
+Ghoulcaller's Bell (isd) 224
+Culling Dais (som) 148
+Steel Overseer (m11) 214
+Solemn Simulacrum (fdn) 257
+Worn Powerstone (c14) 282
+Precursor Golem (som) 194
+Pilgrim's Eye (wwk) 128
+Deathrender (lrw) 255
+Ichor Wellspring (mbs) 110
+Surveyor's Scope (c13) 262
+The Ozolith (iko) 362
+Adaptive Automaton (m12) 201
+Palladium Myr (som) 190
+Voltaic Key (m11) 219
+Triskelavus (tsp) 266
+Gilded Lotus (mrd) 175
+Ornithopter of Paradise (mh2) 232
+Skullclamp (dst) 140
+Metalworker (uds) 135
+Go for the Throat (f11) 11
+Infest (ala) 80
+Makeshift Mannequin (lrw) 124
 Goblin Sharpshooter (c13) 111
 Guttersnipe (rtr) 98
-Magus of the Wheel (cm2) 113
-Molten Gatekeeper (mh3) 128
-Professional Face-Breaker (snc) 116
-Slobad, Iron Goblin (one) 149
-Witty Roastmaster (snc) 131
-Anger (jud) 77
-Atsushi, the Blazing Sky (neo) 134
-Enduring Courage (dsk) 133
-Fireflux Squad (c20) 51
-Hellrider (dka) 93
-Orthion, Hero of Lavabrink (mom) 334
-Pia and Kiran Nalaar (ori) 157
-Rodeo Pyromancers (otj) 143
-Rose Room Treasurer (ncc) 51
-Siege-Gang Lieutenant (m3c) 113
-Solphim, Mayhem Dominus (one) 150
+Archmage Emeritus (stx) 37
 Storm-Kiln Artist (stx) 115
-Daretti, Rocketeer Engineer (dft) 120
-Goldlust Triad (tdc) 74
-Mindclaw Shaman (m13) 142
-Siege-Gang Commander (10e) 234
-Terror of the Peaks (m21) 164
-Urabrask the Hidden (nph) 98
-Chandra's Incinerator (m21) 136
-Etali, Primal Storm (rix) 100
-Predator Dragon (ala) 109
-Ruin Grinder (c21) 57
-Chancellor of the Forge (nph) 81
-Molten Primordial (gtc) 101
-Stalking Vengeance (dis) 73
-Chandra, Torch of Defiance (kld) 110
-Crimson Wisps (shm) 88
-Lightning Bolt (m10) 146
-Might of the Meek (blb) 144
-Abrade (hou) 83
+Young Pyromancer (m14) 163
+Mizzix's Mastery (c15) 29
+Rite of Replication (zen) 61
 Battle Hymn (avr) 128
-Comet Storm (pwwk) 76★
+Mana Geyser (5dn) 75
+Apex of Power (m19) 129
+Vandalblast (rtr) 111
+Windfall (c15) 111
+Wheel of Fortune (g10) 7
+Treasure Cruise (ktk) 59
+Dig Through Time (ktk) 36
 Electrodominance (rna) 99
-Fling (dci) 69
+Shark Typhoon (iko) 67
+Mind's Dilation (emn) 70
+Siege-Gang Commander (10e) 234
+Siege-Gang Lieutenant (m3c) 113
+Burn at the Stake (avr) 130
+Myr Battlesphere (som) 180
+Triplicate Titan (plst) C21-79
+Wurmcoil Engine (som) 223
+Slobad, Iron Goblin (one) 149
+Grenzo, Havoc Raiser (cn2) 54
+Runaway Steam-Kin (grn) 115
+Manabarbs (m10) 149
+Anger (jud) 77
+Goblin Welder (cm2) 101
 Manamorphose (shm) 211
+Loyal Apprentice (c18) 23
+Valakut Exploration (znr) 175
+Magus of the Wheel (cm2) 113
+Shared Animosity (mor) 104
 Reverberate (m11) 155
-Wild Magic Surge (clb) 206
+Lightning Bolt (m10) 146
+Etali, Primal Storm (rix) 100
+Rabbit Battery (neo) 157
+Reckless Fireweaver (kld) 126
+Feldon of the Third Path (cm2) 6
+Blasphemous Act (isd) 130
+Jeska's Will (cmr) 187
+Witty Roastmaster (snc) 131
 Chaos Warp (cmd) 114
-Delayed Blast Fireball (clb) 676
-Invoke Calamity (neo) 147
-Banefire (con) 58
+Black Market (c15) 116
+Impact Tremors (dtk) 140
+Roar of Resistance (onc) 15
+Professional Face-Breaker (snc) 116
+Brass's Bounty (prix) 94
+Rite of the Dragoncaller (fdn) 92
+Goro-Goro, Disciple of Ryusei (neo) 145
+Coffin Queen (plst) TPR-87
+Dismember (nph) 57
+Noxious Gearhulk (kld) 96
+Persist (mh2) 96
+Blood Money (clb) 116
+Buried Alive (cm2) 59
+Attrition (uds) 52
+Bastion of Remembrance (iko) 73
+Oreskos Explorer (c15) 6
+Bounty Agent (grn) 2
+Open the Vaults (m10) 21
+Mentor of the Meek (isd) 21
+Oblivion Ring (ala) 20
+Day of Judgment (zen) 9
+Anointed Procession (akh) 2
+Path to Exile (mma) 25
+Vulturous Zombie (cmd) 236
+Garna, the Bloodflame (dom) 194
+Lich-Knights' Conquest (woe) 96
+Wake the Dead (c14) 31
+Dockside Extortionist (c19) 24
+Abrade (hou) 83
 Faithless Looting (dka) 87
 Gleeful Demolition (one) 134
 Hell to Pay (otj) 126
-Strike It Rich (mh2) 143
-Thud (m19) 163
-Vandalblast (rtr) 111
-Finale of Promise (war) 127
-Jeska's Will (cmr) 187
-Trash for Treasure (mrd) 109
-Wheel of Fortune (g10) 7
-Disrupt Decorum (c17) 25
-Mizzix's Mastery (c15) 29
-Burn at the Stake (avr) 130
-Chandra's Ignition (ori) 137
-Mana Geyser (5dn) 75
-Brass's Bounty (prix) 94
-Apex of Power (m19) 129
-Blasphemous Act (isd) 130
-Insurrection (cmd) 126
-Glittering Stockpile (snc) 107
-The Reaver Cleaver (dmc) 8
-Gauntlet of Might (30a) 537
 Curse of Opulence (c17) 24
-Sticky Fingers (snc) 124
-Determined Iteration (ncc) 45
-Impact Tremors (dtk) 140
-Roar of Resistance (onc) 15
-Spiteful Banditry (ltr) 149
-Shared Animosity (mor) 104
-Valakut Exploration (znr) 175
-Elemental Mastery (shm) 90
-Flameshadow Conjuring (ori) 147
-Mana Echoes (2xm) 136
-Manabarbs (m10) 149
-Molten Echoes (c20) 54
 Sneak Attack (ema) 148
+Comet Storm (pwwk) 76★
+Banefire (con) 58
+Wild Magic Surge (clb) 206
+Urabrask the Hidden (nph) 98
+Terror of the Peaks (m21) 164
+Insurrection (cmd) 126
 Arcane Bombardment (snc) 101
-Rite of the Dragoncaller (fdn) 92
-Warstorm Surge (m12) 160
-City on Fire (mom) 135
-Birds of Paradise (rav) 153
-Gilded Goose (eld) 160
-Haywire Mite (bro) 199
-Llanowar Elves (pdmu) 1★
-Skyshroud Ranger (tmp) 256
-Ulvenwald Tracker (avr) 200
-Aftermath Analyst (mkm) 148
-Bloom Tender (eve) 66
-Bristly Bill, Spine Sower (otj) 157
-Cankerbloom (one) 161
-Elvish Visionary (f10) 6
-Fanatic of Rhonas (mh3) 152
-Gyre Sage (gtc) 123
-Hermit Druid (vma) 216
-Incubation Druid (rna) 131
-Lotus Cobra (zen) 168
-Sakura-Tribe Elder (chk) 239
-Satyr Wayfinder (bng) 136
-Scavenging Ooze (cmd) 170
-Seeker of Skybreak (tmp) 254
-Azusa, Lost but Seeking (j16) 3
-Caller of the Claw (lgn) 121
-Champion of Lambholt (avr) 171
-Circle of Dreams Druid (afr) 176
-Dryad of the Ilysian Grove (thb) 169
-Elvish Rejuvenator (m19) 180
-Eternal Witness (5dn) 86
-Evolution Sage (onc) 108
-Evolution Witness (mh3) 151
-Farhaven Elf (shm) 113
-Rishkar, Peema Renegade (aer) 122
-Selvala, Heart of the Wilds (cn2) 70
-Tireless Provisioner (plst) MH2-180
-Tireless Tracker (soi) 233
-Wayward Swordtooth (rix) 150
-Yavimaya Elder (cmd) 179
-Armorcraft Judge (kld) 144
-Beast Whisperer (grn) 123
-Blossoming Tortoise (woe) 163
-Brawn (cmd) 145
-Elvish Piper (a25) 168
+Invoke Calamity (neo) 147
+Predator Dragon (ala) 109
+Elemental Mastery (shm) 90
+Molten Primordial (gtc) 101
+Strike It Rich (mh2) 143
+Gauntlet of Might (30a) 537
+Molten Gatekeeper (mh3) 128
+Trash for Treasure (mrd) 109
+Ruin Grinder (c21) 57
+Glittering Stockpile (snc) 107
+Corpsejack Menace (ima) 197
+Fling (dci) 69
+Rite of Consumption (shm) 76
+Thud (m19) 163
+Mayhem Devil (war) 204
+Sticky Fingers (snc) 124
+Spiteful Banditry (ltr) 149
+The Reaver Cleaver (dmc) 8
+Storm the Vault (rix) 173
+Warren Soultrader (mh3) 110
+Pitiless Plunderer (spg) 5
+Bronze Guardian (c21) 13
+Sarkhan Vol (ala) 191
+Aura Shards (cmd) 182
 Obstinate Baloth (m11) 188
-Oracle of Mul Daya (zen) 172
-Ripjaw Raptor (xln) 203
-Vengevine (roe) 212
-World Shaper (rix) 151
-Acidic Slime (f12) 6
-Blossoming Bogbeast (c21) 59
-Defiler of Vigor (dmu) 160
-Elder Gargaroth (m21) 179
-Kalonian Hydra (m14) 181
-Mycoloth (ala) 140
-Railway Brawler (otj) 175
-Seedborn Muse (10e) 296
-Titania, Protector of Argoth (c14) 50
-Quilled Greatwurm (fdn) 111
-Rampaging Baloths (zen) 178
-Surrak and Goreclaw (mom) 337
-Avenger of Zendikar (wwk) 96
-Apex Devastator (cmr) 217
-Craterhoof Behemoth (avr) 172
-Ghalta, Primal Hunger (rix) 130
-Ghalta, Stampede Tyrant (lci) 185
-Garruk Wildspeaker (lrw) 213
-Garruk, Primal Hunter (m12) 174
-Berserk (cn2) 175
-Benefactor's Draught (c16) 21
-Heroic Intervention (afc) 161
-Return to Nature (eld) 173
-Arachnogenesis (c15) 32
-Beast Within (nph) 103
-Harrow (zen) 165
-Collected Company (dtk) 177
-Second Harvest (soi) 227
-Return of the Wildspeaker (eld) 172
-Glimpse of Nature (chk) 210
-Farseek (m13) 170
-Life from the Loam (rav) 172
-Open the Way (mat) 23
-Rampant Growth (10e) 288
-Three Visits (cmr) 686
-Cultivate (m11) 168
 Kodama's Reach (dmc) 134
-Scapeshift (mor) 136
-Splendid Reclamation (emn) 171
+Beastmaster Ascension (zen) 159
+Brawn (cmd) 145
+Farhaven Elf (shm) 113
+Acidic Slime (f12) 6
+Rampant Growth (10e) 288
+Farseek (m13) 170
+Return to Nature (eld) 173
+Tireless Tracker (soi) 233
+Mycoloth (ala) 140
+Eternal Witness (5dn) 86
+Cultivate (m11) 168
+Harrow (zen) 165
+Llanowar Elves (pdmu) 1★
+Three Visits (cmr) 686
+Return of the Wildspeaker (eld) 172
+Yavimaya Elder (cmd) 179
+Heroic Intervention (afc) 161
+Bygone Bishop (soi) 8
+Frontline Medic (gtc) 12
+Loran of the Third Path (bro) 12
+Myrsmith (som) 16
+Oltec Matterweaver (big) 3
+Puresteel Paladin (nph) 20
+Relic Seeker (pori) 29
+Stoneforge Mystic (wwk) 20
+Teshar, Ancestor's Apostle (dom) 36
+Martial Impetus (c20) 28
+Thieving Skydiver (znr) 85
+Torrential Gearhulk (kld) 67
+Reverse Engineer (f17) 7
+Lightning Greaves (mrd) 199
+Cankerbloom (one) 161
+Disciple of Bolas (m13) 88
+Ghalta, Primal Hunger (rix) 130
+Tribute to the World Tree (mom) 211
+Warstorm Surge (m12) 160
 Traverse the Outlands (c17) 34
 Rishkar's Expertise (aer) 123
-Conduit of Worlds (one) 163
+Chandra's Ignition (ori) 137
+Selvala, Heart of the Wilds (cn2) 70
 The Great Henge (eld) 161
-Exploration (cns) 164
-Hardened Scales (ktk) 133
-Rancor (gvl) 15
+Rotting Regisaur (m20) 111
+Beast Whisperer (grn) 123
+Aftermath Analyst (mkm) 148
+Elvish Visionary (f10) 6
+Hermit Druid (vma) 216
 Cryptolith Rite (soi) 200
-Beastmaster Ascension (zen) 159
-Court of Garenbrig (woc) 25
-Next of Kin (ncc) 62
-Tribute to the World Tree (mom) 211
-Leyline Immersion (mat) 21
-One with the Kami (nec) 27
-Parallel Lives (isd) 199
-Cyberman Patrol (who) 174
-Metallic Mimic (lcc) 308
-Myr Retriever (mrd) 215
-Ornithopter of Paradise (mh2) 232
-Steel Overseer (m11) 214
-Academy Manufactor (mh2) 219
-Adaptive Automaton (m12) 201
-Burnished Hart (ths) 213
-Foundry Inspector (kld) 215
-Junk Diver (cm2) 195
-Metalworker (uds) 135
-Palladium Myr (som) 190
-Pilgrim's Eye (wwk) 128
-Scrap Trawler (aer) 175
-Scrawling Crawler (fdn) 132
-Stridehangar Automaton (drc) 19
-Surge Conductor (eoc) 19
-Canoptek Scarab Swarm (40k) 150
-Roaming Throne (lci) 258
-Solemn Simulacrum (fdn) 257
-Canoptek Spyder (40k) 151
-Precursor Golem (som) 194
-Psychosis Crawler (mbs) 126
-Thopter Assembly (mbs) 140
-Wurmcoil Engine (som) 223
-Cybermen Squadron (who) 176
-Myr Battlesphere (som) 180
-Triskelavus (tsp) 266
-Ancient Stone Idol (c18) 53
-Mycosynth Golem (5dn) 137
-Triplicate Titan (plst) C21-79
-Mishra's Bauble (csp) 138
-Tormod's Crypt (c14) 278
-Zuran Orb (mh2) 300
-Basilisk Collar (wwk) 122
-Bloodforged Battle-Axe (c17) 50
-Chromatic Star (tsp) 251
-Conjurer's Bauble (5dn) 112
-Expedition Map (zen) 201
-Ghoulcaller's Bell (isd) 224
-Lost Jitte (big) 23
-Relic of Progenitus (ala) 218
-Skullclamp (dst) 140
-Stoneforge Masterwork (ogw) 166
-The Ozolith (iko) 362
-Voltaic Key (m11) 219
-Altar of Dementia (cns) 196
-Arcane Signet (c20) 237
-Armillary Sphere (con) 134
-Blackblade Reforged (dom) 211
-Blade of Selves (c15) 51
-Culling Dais (som) 148
-Dolmen Gate (lrw) 256
-Ichor Wellspring (mbs) 110
-Illusionist's Bracers (gtc) 231
-Isochron Scepter (v10) 3
-Lightning Greaves (mrd) 199
-Liquimetal Coating (som) 171
-Mesmeric Orb (mrd) 204
-Mind Stone (10e) 335
-Mycosynth Wellspring (nph) 145
-Scythe of the Wretched (mrd) 239
-Silver Shroud Costume (pip) 142
-Strionic Resonator (c19) 224
-Surveyor's Scope (c13) 262
-Swiftfoot Boots (m12) 219
-Sword of the Animist (ori) 240
-Thought Vessel (c15) 55
-Ashnod's Altar (ema) 218
-Buster Sword (fin) 255
-Crucible of Worlds (10e) 319
-Kusari-Gama (chk) 260
-Loxodon Warhammer (mrd) 201
-Monument to Endurance (dft) 237
-Phyrexian Altar (uma) 232
-Relic of Legends (dmu) 236
-Sculpting Steel (10e) 342
-Urza's Incubator (c15) 273
-Worn Powerstone (c14) 282
-Deathrender (lrw) 255
-Helm of the Host (dom) 217
+Life from the Loam (rav) 172
+Evolution Witness (mh3) 151
+Rishkar, Peema Renegade (aer) 122
+Wayward Swordtooth (rix) 150
+Beast Within (nph) 103
+Oracle of Mul Daya (zen) 172
+Vengevine (roe) 212
+World Shaper (rix) 151
+Collected Company (dtk) 177
+Scapeshift (mor) 136
+Second Harvest (soi) 227
+Craterhoof Behemoth (avr) 172
+Ghalta, Stampede Tyrant (lci) 185
+Scavenging Ooze (cmd) 170
+Azusa, Lost but Seeking (j16) 3
+Avenger of Zendikar (wwk) 96
+Rampaging Baloths (zen) 178
+Ripjaw Raptor (xln) 203
+Snapcaster Mage (isd) 78
+Counterspell (ss1) 4
+Grand Architect (som) 33
+Hedron Crab (zen) 47
+Think Twice (isd) 83
+Roil Elemental (zen) 62
+Twincast (10e) 120
+Spell Pierce (zen) 67
+Arcanis the Omnipotent (10e) 66
+Etherium Sculptor (ala) 42
+Preordain (m11) 70
+Ponder (m10) 68
+Brainstorm (plst) SS1-3
+Thought Monitor (mh2) 71
+Sharding Sphinx (ala) 55
+Reveillark (mor) 22
+Marionette Master (kld) 90
+Research Thief (nec) 16
+Sai, Master Thopterist (m19) 69
+Master Transmuter (con) 31
+Astral Dragon (clb) 664
+Vedalken Archmage (mrd) 55
+Frantic Search (uma) 57
+Jace Beleren (ss1) 1
+Cyberdrive Awakener (nec) 12
+Fact or Fiction (mh1) 50
 Krark-Clan Ironworks (5dn) 134
-Nevinyrral's Disk (v10) 11
-Unwinding Clock (nph) 164
-Vedalken Orrery (5dn) 163
-Conjurer's Closet (avr) 214
-Gilded Lotus (mrd) 175
-Throne of Eldraine (woc) 28
-Darksteel Forge (dst) 110
-Excalibur, Sword of Eden (acr) 72
-Azorius Signet (dis) 159
-Talisman of Progress (mrd) 256
-Turn to Mist (shm) 155
-Soulherder (mh1) 214
-Sphinx's Revelation (rtr) 200
-Steel of the Godhead (shm) 150
-Fractured Identity (sld) 272
-Dimir Signet (rav) 260
-Mind Grind (gtc) 178
-Talisman of Dominance (mrd) 253
-Rakdos Signet (dis) 165
-Talisman of Indulgence (mrd) 255
+Strionic Resonator (c19) 224
+Chromatic Star (tsp) 251
+Armillary Sphere (con) 134
+Expedition Map (zen) 201
+Liquimetal Coating (som) 171
+Relic of Progenitus (ala) 218
+Monastery Mentor (frf) 20
+Jace's Archivist (m12) 59
+Three Steps Ahead (otj) 75
+Psychosis Crawler (mbs) 126
+Chasm Skulker (m15) 46
+Chrome Host Seedshark (mom) 51
+Merfolk Looter (m12) 65
+Forensic Gadgeteer (mkm) 57
+Flux Channeler (war) 52
+Deepglow Skate (c16) 7
+Treachery (uds) 50
+Magic Damper (fin) 61
+Gitaxian Probe (nph) 35
+Telling Time (rav) 69
+Cackling Counterpart (isd) 46
+Behold the Multiverse (khm) 46
+Dream Halls (sth) 28
+Phantasmal Image (m12) 72
+Conjurer's Bauble (5dn) 112
 Mahadi, Emporium Master (clb) 282
-Mayhem Devil (war) 204
+Elas il-Kor, Sadistic Pilgrim (dmu) 198
+Kambal, Consul of Allocation (kld) 183
+Mind Grind (gtc) 178
+Deadeye Navigator (avr) 47
+Soul Warden (mm3) 24
+Archon of Redemption (wwk) 3
+Serra Ascendant (m11) 28
+Jin-Gitaxias, Core Augur (nph) 37
+Elesh Norn, Grand Cenobite (nph) 9
+Exploration (cns) 164
+Mycosynth Golem (5dn) 137
+Junk Diver (cm2) 195
+Myr Retriever (mrd) 215
+Gadrak, the Crown-Scourge (m21) 146
+Willbreaker (ori) 84
+Victory's Herald (mbs) 18
+Council's Judgment (cns) 16
+Cyberman Patrol (who) 174
+Academy Manufactor (mh2) 219
+Burnished Hart (ths) 213
+Bloodforged Battle-Axe (c17) 50
+Monument to Endurance (dft) 237
+Stridehangar Automaton (drc) 19
+Darksteel Forge (dst) 110
+Nevinyrral's Disk (v10) 11
+Codsworth, Handy Helper (pip) 14
+Sigarda's Aid (emn) 41
+Elenda's Hierophant (lcc) 71
+Buster Sword (fin) 255
+Stonehewer Giant (mor) 24
+Excalibur, Sword of Eden (acr) 72
+Wand of Orcus (afc) 28
+Scythe of the Wretched (mrd) 239
+Caduceus, Staff of Hermes (acr) 2
+Sword of the Animist (ori) 240
+Silver Shroud Costume (pip) 142
+Lost Jitte (big) 23
+Blade of Selves (c15) 51
+Illusionist's Bracers (gtc) 231
+Basilisk Collar (wwk) 122
+Blackblade Reforged (dom) 211
+Stoneforge Masterwork (ogw) 166
+Gift of Estates (c14) 73
+Archaeomancer's Map (c21) 12
+Land Tax (bbd) 94
+Smothering Tithe (rna) 22
+Felidar Retreat (znr) 16
+Charming Prince (eld) 8
+Restoration Angel (avr) 32
+Eerie Interlude (ddq) 8
+Soulherder (mh1) 214
+Displacer Kitten (clb) 63
+Turn to Mist (shm) 155
+Fiend Hunter (isd) 15
+Welcoming Vampire (vow) 46
+Exemplar of Light (fdn) 11
+Keeper of the Accord (cmr) 27
+Serra Paragon (dmu) 32
+Luminous Broodmoth (iko) 21
+Odric, Lunarch Marshal (soi) 31
+Angel of Invention (kld) 4
+Archangel of Thune (m14) 5
+Sun Titan (m11) 35
+Basri Ket (m21) 7
+Elspeth, Sun's Champion (ths) 9
+Restoration Magic (fin) 30
+Suture Priest (nph) 25
+Loyal Warhound (afr) 23
+Luminarch Ascension (zen) 25
+Angelic Skirmisher (gtc) 3
+Emeria Shepherd (bfz) 22
+Godsend (jou) 12
+Rise of the Dark Realms (fdn) 323
+Ruin Crab (znr) 75
+Mirror Entity (lrw) 31
+Sram's Expertise (aer) 24
+Board the Weatherlight (dom) 8
+Recommission (bro) 22
+Ashnod's Altar (ema) 218
+Phyrexian Altar (uma) 232
+Marionette Apprentice (mh3) 100
+Zulaport Cutthroat (bfz) 126
+Phyrexian Delver (moc) 263
+Necron Deathmark (40k) 42
+Geth, Lord of the Vault (som) 64
+Sepulchral Primordial (gtc) 75
+Vilis, Broker of Blood (m20) 122
+Lotus Cobra (zen) 168
+Birds of Paradise (rav) 153
+Incubation Druid (rna) 131
+Hardened Scales (ktk) 133
+Court of Garenbrig (woc) 25
+Bristly Bill, Spine Sower (otj) 157
+Railway Brawler (otj) 175
+Seedborn Muse (10e) 296
+Kalonian Hydra (m14) 181
+Elder Gargaroth (m21) 179
+Surrak and Goreclaw (mom) 337
+Quilled Greatwurm (fdn) 111
+Garruk, Primal Hunter (m12) 174
+Garruk Wildspeaker (lrw) 213
+Crimson Wisps (shm) 88
+Might of the Meek (blb) 144
+Toxic Deluge (c13) 96
 Black Waltz No. 3 (fin) 214
-Garna, the Bloodflame (dom) 194
-Gruul Signet (gpt) 150
-Talisman of Impulse (mrd) 254
+Defiler of Flesh (dmu) 90
+Steel of the Godhead (shm) 150
+Elvish Piper (a25) 168
+Glimpse of Nature (chk) 210
+Parallel Lives (isd) 199
+Deekah, Fractal Theorist (c21) 26
+Poppet Stitcher (mid) 71
+Shield of the Oversoul (shm) 242
+Gift of Orzhova (gtc) 219
+Leyline Immersion (mat) 21
+Rancor (gvl) 15
+Next of Kin (ncc) 62
+One with the Kami (nec) 27
+All That Glitters (eld) 2
+Ossification (one) 26
+Gift of Immortality (ths) 14
+Pollenbright Wings (rav) 219
+Delayed Blast Fireball (clb) 676
+Rodeo Pyromancers (otj) 143
+Coruscation Mage (blb) 131
+Chandra's Incinerator (m21) 136
+Chancellor of the Forge (nph) 81
+Losheel, Clockwork Scholar (c21) 18
+Crucible of Worlds (10e) 319
+Sculpting Steel (10e) 342
+Mycosynth Wellspring (nph) 145
+Curiosity (isd) 49
+Show and Tell (j13) 8
+Unwinding Clock (nph) 164
+Niblis of Frost (emn) 72
+Bloodghast (zen) 83
+Reassembling Skeleton (m11) 112
+Nether Traitor (tsp) 120
+Night's Whisper (pw24) 18
+Unearth (ulg) 72
+Exsanguinate (som) 61
+Victimize (tdc) 198
+Kokusho, the Evening Star (chk) 122
+Liliana of the Veil (isd) 105
+Mesmeric Orb (mrd) 204
+Ancient Stone Idol (c18) 53
+Filigree Vector (moc) 15
+Illustrious Wanderglyph (lcc) 9
+Canoptek Spyder (40k) 151
+Cybermen Squadron (who) 176
+Scrawling Crawler (fdn) 132
+Illuminor Szeras (40k) 37
+Metallic Mimic (lcc) 308
+Surge Conductor (eoc) 19
+Haywire Mite (bro) 199
+Journey to Nowhere (zen) 14
+Fatal Push (2xm) 343
+Scrap Trawler (aer) 175
+Venomcrawler (40k) 68
+Canoptek Scarab Swarm (40k) 150
+Thought Vessel (c15) 55
+Saprazzan Heir (mmq) 99
+Chief Engineer (m15) 47
+Isochron Scepter (v10) 3
+Pongify (plc) 44
+Ravenform (khm) 72
+High Fae Trickster (fdn) 40
+Uthros Psionicist (eoe) 84
+Fumble (bbd) 34
+Pull from Tomorrow (akh) 65
+Cyber Conversion (who) 38
+Flash (a25) 57
+Tezzeret the Seeker (ala) 60
+Impulse (v13) 5
+Memory Lapse (7ed) 88★
+Impede Momentum (dmu) 54
+Haunting Imitation (voc) 13
+Mists of Lórien (ltc) 501
+Flatline (who) 43
+Satyr Wayfinder (bng) 136
+Savra, Queen of the Golgari (rav) 225
+Cut Down (dmu) 89
+It Came from Planet Glurg (unf) 169
+Kusari-Gama (chk) 260
+Fractured Identity (sld) 272
+Starfall Invocation (blb) 34
+Sephara, Sky's Blade (m20) 36
+Adarkar Valkyrie (csp) 1
+Angel of Indemnity (otc) 9
+Devout Invocation (m14) 16
+Reunion of the House (tdc) 15
+Bolas's Citadel (war) 79
+Liliana, Dreadhorde General (war) 97
+Rejoin the Fight (fic) 49
+Shadow of the Enemy (ltr) 107
+Rotting Rats (con) 51
+God-Eternal Oketra (war) 16
+Bloodchief Ascension (zen) 82
+Urza's Incubator (c15) 273
+Wargate (arb) 129
+Fireflux Squad (c20) 51
+Mind Stone (10e) 335
+Moonshae Pixie (clb) 84
+Sower of Temptation (lrw) 88
+Enigma Thief (znc) 4
+Rankle, Master of Pranks (eld) 101
+Skyshroud Ranger (tmp) 256
+Bloom Tender (eve) 66
+Gyre Sage (gtc) 123
+Seeker of Skybreak (tmp) 254
+Caller of the Claw (lgn) 121
+Circle of Dreams Druid (afr) 176
+Elvish Rejuvenator (m19) 180
+Evolution Sage (onc) 108
+Armorcraft Judge (kld) 144
+"Ach! Hans, Run!" (unh) 116
+Cavalier of Dawn (m20) 10
+Exalted Sunborn (eoe) 15
+Intrepid Hero (8ed) 26★
+Loyal Retainers (cmm) 39
+Moonshaker Cavalry (woe) 21
+Mangara, the Diplomat (cmm) 42
+Mikaeus, the Lunarch (2x2) 18
+Wrath of God (9ed) 56★
+Custodi Soulbinders (cns) 17
+Cathars' Crusade (avr) 10
+Abzan Falconer (ktk) 2
+Champion of Lambholt (avr) 171
+Vorel of the Hull Clade (cm2) 169
+Diabolic Servitude (pd3) 22
+Ghostly Pilferer (m21) 52
+Angel of the Ruins (c21) 11
+Bone Shards (mh2) 395
+Rose Room Treasurer (ncc) 51
+Ledger Shredder (snc) 46
+O'aka, Traveling Merchant (fic) 39
+Sakashima's Student (pc2) 24
+Wavebreak Hippocamp (thb) 80
+Dark Deal (frf) 66
+Enduring Courage (dsk) 133
 Rhythm of the Wild (rna) 201
 Shadow in the Warp (40k) 140
-Sarkhan Vol (ala) 191
 Xenagos, the Reveler (ths) 209
-"Ach! Hans, Run!" (unh) 116
+Lotleth Troll (rtr) 177
+Master Biomancer (gtc) 176
+Atsushi, the Blazing Sky (neo) 134
+Dualcaster Mage (c14) 34
+Mindclaw Shaman (m13) 142
+City on Fire (mom) 135
+Chandra, Torch of Defiance (kld) 110
+Relic of Legends (dmu) 236
+Throne of Eldraine (woc) 28
+Zuran Orb (mh2) 300
+Drumbellower (nec) 6
+Sunscorch Regent (dtk) 41
+Priest of Forgotten Gods (rna) 83
+Morbid Opportunist (spg) 32
+Veinwitch Coven (c21) 373
+Starving Revenant (lci) 123
+Gray Merchant of Asphodel (ths) 89
+Snuff Out (fic) 285
+Master of Etherium (ala) 49
+Razorkin Needlehead (dsk) 153
+Apex Devastator (cmr) 217
+Defiler of Vigor (dmu) 160
+Titania, Protector of Argoth (c14) 50
+Fanatic of Rhonas (mh3) 152
+Ulvenwald Tracker (avr) 200
+Open the Way (mat) 23
+Berserk (cn2) 175
+Blossoming Tortoise (woe) 163
+Tyvar, Jubilant Brawler (one) 218
+Inkshield (c21) 71
+Determined Iteration (ncc) 45
+Orthion, Hero of Lavabrink (mom) 334
+Solphim, Mayhem Dominus (one) 150
+Goldlust Triad (tdc) 74
+Metamorphosis Fanatic (dsc) 21
+Cover of Darkness (acr) 201
+Kitsa, Otterball Elite (blb) 54
+Pollywog Prodigy (blc) 15
+Mirkwood Bats (ltr) 95
+Herald of Secret Streams (xln) 59
+Evacuation (10e) 83
+Aminatou's Augury (dsc) 71
+Fathom Mage (pgtc) 162★
+Vampire Hexmage (zen) 114
+Fell Beast of Mordor (ltc) 513
+Faerie Artisans (c16) 8
+Snap (dmr) 66
+Arcane Heist (otc) 13
+Quasiduplicate (grn) 51
+Soldevi Adnate (all) 60b
+Finale of Promise (war) 127
+Splendid Reclamation (emn) 171
+Ruthless Technomancer (nec) 56
+Forge, Neverwinter Charlatan (sld) 1239
+Ophiomancer (cc2) 3
+Roaming Throne (lci) 258
+Akroma's Will (cmr) 3
+Generous Gift (mh1) 11
+Swords to Plowshares (cmm) 841
+Vedalken Orrery (5dn) 163
+Charismatic Conqueror (lcc) 70
+Dusk Legion Duelist (mom) 11
+Luminarch Aspirant (znr) 24
+Elspeth, Knight-Errant (ala) 9
+Conduit of Worlds (one) 163
+Arachnogenesis (c15) 32
+Benefactor's Draught (c16) 21
+Blossoming Bogbeast (c21) 59
+Tireless Provisioner (plst) MH2-180
+Dryad of the Ilysian Grove (thb) 169
+Foundry Inspector (kld) 215
+Conjurer's Closet (avr) 214
+Disrupt Decorum (c17) 25
+Grim Hireling (afc) 25
+Forbidden Alchemy (f12) 7
+Stalking Vengeance (dis) 73
+Elder Brain (clb) 125
+Scholar of New Horizons (brc) 6
+Soulfire Grand Master (frf) 27
+Ephemerate (mh1) 7
+Royal Assassin (dmr) 310
+Prowling Geistcatcher (mic) 21
+Helm of the Host (dom) 217
+Massacre Wurm (mbs) 46
+Damnation (plc) 85
+Pia and Kiran Nalaar (ori) 157
+Daretti, Rocketeer Engineer (dft) 120
+Gilded Goose (eld) 160
+Priest of the Crossing (drc) 6
+Firebrand Archer (hou) 92
+Hellrider (dka) 93
+Metropolis Reformer (mat) 4
+Arcane Signet (c20) 237
+Azorius Signet (dis) 159
+Talisman of Progress (td2) 26
+Dimir Signet (rav) 260
+Talisman of Dominance (e01) 90
+Rakdos Signet (dis) 165
+Talisman of Indulgence (e01) 91
+Gruul Signet (gpt) 150
+Talisman of Impulse (scd) 281
 Selesnya Signet (rav) 270
-Talisman of Unity (mrd) 257
-Aura Shards (cmd) 182
-Shield of the Oversoul (shm) 242
-Pollenbright Wings (rav) 219
-Elas il-Kor, Sadistic Pilgrim (dmu) 198
+Talisman of Unity (mic) 165
 Orzhov Signet (gpt) 155
 Talisman of Hierarchy (mh1) 233
-Gift of Orzhova (gtc) 219
-Kambal, Consul of Allocation (kld) 183
-Elenda, the Dusk Rose (rix) 157
-Inkshield (c21) 71
 Izzet Signet (gpt) 152
 Talisman of Creativity (mh1) 231
-Saheeli, Sublime Artificer (war) 234
-Storm the Vault (rix) 173
 Golgari Signet (rav) 262
-Lotleth Troll (rtr) 177
 Talisman of Resilience (mh1) 234
-Tyvar, Jubilant Brawler (one) 218
-Corpsejack Menace (ima) 197
-Savra, Queen of the Golgari (rav) 225
-Vulturous Zombie (cmd) 236
 Boros Signet (rav) 255
 Talisman of Conviction (mh1) 230
-It Came from Planet Glurg (unf) 169
 Simic Signet (dis) 166
 Talisman of Curiosity (mh1) 232
-Vorel of the Hull Clade (cm2) 169
-Fathom Mage (pgtc) 162★
-Master Biomancer (gtc) 176
-Wargate (arb) 129
+Arcane Denial (cmr) 630
+Mana Drain (ima) 65
+Kiora, the Rising Tide (fdn) 45
 
 [land]
-Adarkar Wastes (10e) 347
-Glacial Fortress (m10) 226
-Hallowed Fountain (dis) 174
-Irrigated Farmland (akh) 245
-Meticulous Archive (mkm) 264
-Mystic Gate (shm) 277
-Temple of Enlightenment (nec) 180
-Tundra (vma) 322
-Drowned Catacomb (m12) 226
-Fetid Pools (akh) 243
-Sunken Ruins (shm) 280
-Temple of Deceit (ths) 225
-Undercity Sewers (mkm) 270
-Underground River (10e) 362
-Underground Sea (vma) 323
-Watery Grave (grn) 259
-Badlands (vma) 291
-Blood Crypt (dis) 171
-Canyon Slough (akh) 239
-Dragonskull Summit (m12) 225
-Graven Cairns (shm) 272
-Raucous Theater (mkm) 266
-Sulfurous Springs (10e) 359
-Temple of Malice (dmc) 236
-Commercial District (mkm) 259
-Fire-Lit Thicket (shm) 271
-Karplusan Forest (10e) 354
-Rootbound Crag (m12) 228
-Sheltered Thicket (akh) 248
-Stomping Ground (gpt) 165
-Taiga (vma) 317
-Temple of Abandon (thb) 244
-Brushland (10e) 349
-Lush Portico (mkm) 263
-Savannah (vma) 311
-Scattered Groves (akh) 247
-Sunpetal Grove (m12) 229
-Temple Garden (rav) 284
-Temple of Plenty (thb) 248
-Wooded Bastion (shm) 281
-Caves of Koilos (10e) 350
-Fetid Heath (eve) 176
-Godless Shrine (gpt) 157
-Isolated Chapel (isd) 242
-Scrubland (vma) 313
-Shadowy Backstreet (mkm) 268
-Silent Clearing (mh1) 246
-Temple of Silence (ths) 227
-Cascade Bluffs (eve) 175
-Fiery Islet (mh1) 238
-Shivan Reef (10e) 357
-Steam Vents (gpt) 164
-Sulfur Falls (isd) 248
-Temple of Epiphany (m21) 252
-Thundering Falls (mkm) 269
-Volcanic Island (vma) 324
-Bayou (vma) 293
-Llanowar Wastes (10e) 355
-Nurturing Peatland (mh1) 243
-Overgrown Tomb (rtr) 243
-Temple of Malady (c21) 323
-Twilight Mire (eve) 180
-Underground Mortuary (mkm) 271
-Woodland Cemetery (isd) 249
-Battlefield Forge (10e) 348
-Clifftop Retreat (isd) 238
-Elegant Parlor (mkm) 260
-Plateau (vma) 308
-Rugged Prairie (eve) 178
-Sacred Foundry (rav) 280
-Sunbaked Canyon (mh1) 247
-Temple of Triumph (m20) 257
-Breeding Pool (dis) 172
-Flooded Grove (eve) 177
-Hedge Maze (mkm) 262
-Hinterland Harbor (isd) 241
-Temple of Mystery (m20) 255
-Tropical Island (vma) 321
-Waterlogged Grove (mh1) 249
-Yavimaya Coast (10e) 363
-Spara's Headquarters (snc) 257
-Raffine's Tower (snc) 254
-Xander's Lounge (snc) 260
-Ziatora's Proving Ground (snc) 261
-Jetmir's Garden (snc) 250
-Savai Triome (iko) 253
-Ketria Triome (iko) 250
-Indatha Triome (iko) 248
-Raugrin Triome (iko) 251
-Zagoth Triome (iko) 259
-Academy Ruins (tsp) 269
-Archway of Innovation (mh3) 214
-Arid Mesa (zen) 211
+Field of the Dead (m20) 247
+Volrath's Stronghold (sth) 143
+Rogue's Passage (rtr) 245
+Scalding Tarn (zen) 223
+Flooded Strand (ktk) 233
+Polluted Delta (ktk) 239
 Bloodstained Mire (ktk) 230
+Wooded Foothills (ktk) 249
+Windswept Heath (ktk) 248
+Marsh Flats (zen) 219
+Verdant Catacombs (zen) 229
+Arid Mesa (zen) 211
+Misty Rainforest (zen) 220
+Mystic Gate (shm) 277
+Sunken Ruins (shm) 280
+Graven Cairns (shm) 272
+Fire-Lit Thicket (shm) 271
+Wooded Bastion (shm) 281
+Fetid Heath (eve) 176
+Cascade Bluffs (eve) 175
+Twilight Mire (eve) 180
+Rugged Prairie (eve) 178
+Flooded Grove (eve) 177
+Steam Vents (gpt) 164
+Godless Shrine (gpt) 157
+Hallowed Fountain (dis) 174
+Blood Crypt (dis) 171
+Temple Garden (rav) 284
+Breeding Pool (dis) 172
+Watery Grave (grn) 259
+Stomping Ground (gpt) 165
+Sacred Foundry (rav) 280
+Overgrown Tomb (rtr) 243
+Hinterland Harbor (isd) 241
+Clifftop Retreat (isd) 238
+Woodland Cemetery (isd) 249
+Sulfur Falls (isd) 248
+Isolated Chapel (isd) 242
+Rootbound Crag (m12) 228
+Sunpetal Grove (m12) 229
+Dragonskull Summit (m12) 225
+Drowned Catacomb (m12) 226
+Glacial Fortress (m10) 226
+Temple of Enlightenment (nec) 180
+Temple of Deceit (ths) 225
+Temple of Malice (dmc) 236
+Temple of Abandon (thb) 244
+Temple of Plenty (thb) 248
+Temple of Silence (ths) 227
+Temple of Epiphany (m21) 252
+Temple of Malady (c21) 323
+Temple of Triumph (m20) 257
+Temple of Mystery (m20) 255
+Archway of Innovation (mh3) 214
 Bojuka Bog (wwk) 132
-Cabal Coffers (mh2) 301
-City of Brass (mma) 221
 Command Beacon (c15) 56
 Command Tower (cmd) 269
-Darksteel Citadel (dst) 164
-Demolition Field (bro) 260
-Eiganjo Castle (chk) 275
+City of Brass (mma) 221
+Cabal Coffers (mh2) 301
 Eiganjo, Seat of the Empire (neo) 268
 Emeria, the Sky Ruin (zen) 213
 Evolving Wilds (f12) 10
 Fabled Passage (eld) 244
-Field of the Dead (m20) 247
 Flamekin Village (c14) 60
-Flooded Strand (ktk) 233
-Great Furnace (mrd) 282
-Ishgard, the Holy See (fin) 283
-Khalni Garden (wwk) 138
-Kher Keep (c13) 303
-Lindblum, Industrial Regency (fin) 285
-Marsh Flats (zen) 219
 Minamo, School at Water's Edge (chk) 279
-Minas Tirith (ltr) 256
-Misty Rainforest (zen) 220
-Myriad Landscape (c14) 61
 Mystic Sanctuary (eld) 247
-Nykthos, Shrine to Nyx (ths) 223
 Oran-Rief, the Vastwood (zen) 221
-Path of Ancestry (c17) 56
 Phyrexian Tower (uma) 248
-Polluted Delta (ktk) 239
+Path of Ancestry (c17) 56
 Prismatic Vista (mh1) 244
-Reflecting Pool (shm) 278
 Reliquary Tower (con) 143
-Rivendell (ltr) 259
-Rogue's Passage (rtr) 245
-Scalding Tarn (zen) 223
-Seat of the Synod (mrd) 283
-Shifting Woodland (mh3) 228
 Shinka, the Bloodsoaked Keep (chk) 282
 Shizo, Death's Storehouse (plst) CHK-283
 Spinerock Knoll (lrw) 274
 Spymaster's Vault (mh3) 230
 Takenuma, Abandoned Mire (neo) 278
 Tectonic Edge (wwk) 145
-Three Tree City (blb) 260
-Tolarian Academy (usg) 330
-Tomb Fortress (40k) 168
-Tree of Tales (mrd) 285
-Urborg, Tomb of Yawgmoth (tsr) 287
-Valakut, the Molten Pinnacle (zen) 228
-Valgavoth's Lair (dsk) 271
 Vault of Whispers (mrd) 286
-Verdant Catacombs (zen) 229
+Windbrisk Heights (lrw) 281
+Demolition Field (bro) 260
+Tolarian Academy (usg) 330
+Ishgard, the Holy See (fin) 283
+Kher Keep (c13) 303
+Lindblum, Industrial Regency (fin) 285
+Minas Tirith (ltr) 256
+Myriad Landscape (c14) 61
+Shifting Woodland (mh3) 228
+Three Tree City (blb) 260
+Tomb Fortress (40k) 168
+Yavimaya, Cradle of Growth (mh2) 441
+Urborg, Tomb of Yawgmoth (tsr) 287
+Yavimaya Hollow (vma) 325
+Witch's Clinic (c21) 81
+Fiery Islet (mh1) 238
+Waterlogged Grove (mh1) 249
+Nurturing Peatland (mh1) 243
+Silent Clearing (mh1) 246
+Sunbaked Canyon (mh1) 247
+Tundra (vma) 322
+Savannah (vma) 311
+Underground Sea (vma) 323
+Badlands (vma) 291
+Taiga (vma) 317
+Scrubland (vma) 313
+Volcanic Island (vma) 324
+Bayou (vma) 293
+Plateau (vma) 308
+Tropical Island (vma) 321
+Canyon Slough (akh) 239
+Fetid Pools (akh) 243
+Irrigated Farmland (akh) 245
+Scattered Groves (akh) 247
+Sheltered Thicket (akh) 248
+Commercial District (mkm) 259
+Elegant Parlor (mkm) 260
+Hedge Maze (mkm) 262
+Lush Portico (mkm) 263
+Meticulous Archive (mkm) 264
+Raucous Theater (mkm) 266
+Shadowy Backstreet (mkm) 268
+Thundering Falls (mkm) 269
+Undercity Sewers (mkm) 270
+Underground Mortuary (mkm) 271
+Shivan Reef (10e) 357
+Yavimaya Coast (10e) 363
+Battlefield Forge (10e) 348
+Llanowar Wastes (10e) 355
+Caves of Koilos (10e) 350
+Adarkar Wastes (10e) 347
+Brushland (10e) 349
+Karplusan Forest (10e) 354
+Sulfurous Springs (10e) 359
+Underground River (10e) 362
+Raffine's Tower (snc) 254
+Xander's Lounge (snc) 260
+Ziatora's Proving Ground (snc) 261
+Jetmir's Garden (snc) 250
+Savai Triome (iko) 253
+Indatha Triome (iko) 248
+Zagoth Triome (iko) 259
+Raugrin Triome (iko) 251
+Ketria Triome (iko) 250
+Spara's Headquarters (snc) 257
+Rivendell (ltr) 259
+Valakut, the Molten Pinnacle (zen) 228
+Eiganjo Castle (chk) 275
+Academy Ruins (tsp) 269
+Nykthos, Shrine to Nyx (ths) 223
 Vivid Crag (lrw) 275
 Vivid Creek (lrw) 276
 Vivid Grove (lrw) 277
 Vivid Marsh (lrw) 278
 Vivid Meadow (lrw) 279
-Volrath's Stronghold (sth) 143
-Windbrisk Heights (lrw) 281
-Windswept Heath (ktk) 248
-Witch's Clinic (c21) 81
-Wooded Foothills (ktk) 249
-Yavimaya Hollow (vma) 325
-Yavimaya, Cradle of Growth (mh2) 441
+Reflecting Pool (shm) 278
+Darksteel Citadel (dst) 164
+Great Furnace (mrd) 282
+Khalni Garden (wwk) 138
+Seat of the Synod (mrd) 283
+Tree of Tales (mrd) 285
+Valgavoth's Lair (dsk) 271

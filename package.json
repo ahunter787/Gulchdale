@@ -28,7 +28,8 @@
 		"fronttest-headless-bail": "cross-env PORT=3002 HEADLESS=TRUE mocha dist/test/frontend --exit --experimental-json-modules -bail",
 		"prettier-format": "prettier --config .prettierrc --write src/**/*.ts test/**/*.ts test/**/*.js client/src/**/*[!min].js client/src/**/*[!min].ts client/src/**/*.vue",
 		"prepare": "husky",
-		"client-type-check": "cd client && vue-tsc --noEmit"
+		"client-type-check": "cd client && vue-tsc --noEmit",
+		"test-compiler": "python3 -m pytest compiler/tests"
 	},
 	"repository": {
 		"type": "git",

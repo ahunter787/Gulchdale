@@ -71,6 +71,13 @@ Makefile
 client/dist/*
 tmp
 state
+.gulchdale/
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
 
 # Ignore built ts files
 dist/**/*

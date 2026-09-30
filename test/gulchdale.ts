@@ -9,6 +9,7 @@ import {
 	cloneGulchdaleEnvironment,
 	GULCHDALE_CUBE_ID,
 	GULCHDALE_ENVIRONMENT_HASH,
+	GULCHDALE_MANIFEST,
 	isGulchdaleSession,
 } from "../src/Gulchdale.js";
 import { Session } from "../src/Session.js";
@@ -17,13 +18,13 @@ describe("Gulchdale environment", () => {
 	it("loads the pinned snapshot with the expected identity and sheets", () => {
 		const environment = cloneGulchdaleEnvironment();
 
-		expect(GULCHDALE_ENVIRONMENT_HASH).to.equal("faa043e37114b395869ef7a2d426167e632f3e3f471370f957d1c17cf9523fac");
+		expect(GULCHDALE_MANIFEST.environmentSha256).to.equal(GULCHDALE_ENVIRONMENT_HASH);
+		expect(GULCHDALE_MANIFEST.version).to.equal(`gch-${GULCHDALE_ENVIRONMENT_HASH.slice(0, 12)}`);
 		expect(environment.name).to.equal("Gulchdale");
 		expect(environment.cubeCobraID).to.equal(GULCHDALE_CUBE_ID);
 		expect(Object.keys(environment.sheets)).to.have.members(["commander", "mono", "land"]);
-		expect(getSheetCardIDs(environment.sheets.commander)).to.have.length(147);
-		expect(getSheetCardIDs(environment.sheets.mono)).to.have.length(658);
-		expect(getSheetCardIDs(environment.sheets.land)).to.have.length(160);
+		for (const sheet of ["commander", "mono", "land"])
+			expect(getSheetCardIDs(environment.sheets[sheet])).to.have.length(GULCHDALE_MANIFEST.counts.sheets[sheet]);
 	});
 
 	it("preserves the four current pack layouts and two-pick rule", () => {

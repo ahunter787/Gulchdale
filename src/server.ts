@@ -74,9 +74,11 @@ import {
 	applyGulchdaleEnvironment,
 	GULCHDALE_APP_NAME,
 	GULCHDALE_ENVIRONMENT_HASH,
+	GULCHDALE_MANIFEST,
 	GulchdalePublicConfig,
 	isGulchdaleSession,
 } from "./Gulchdale.js";
+import { GulchdaleFreshnessMonitor } from "./GulchdaleFreshness.js";
 
 import { init as MTGOAPIInit } from "./MTGOAPI.js";
 import { isTiebreaker } from "./SilentAuctionDraft.js";
@@ -88,6 +90,8 @@ if (process.env.NODE_ENV === "production") MTGOAPIInit();
 
 const app = express();
 const httpServer = new http.Server(app);
+const gulchdaleFreshness = new GulchdaleFreshnessMonitor(GULCHDALE_MANIFEST);
+if (!InTesting) gulchdaleFreshness.start();
 const io = new Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>(httpServer, {
 	maxHttpBufferSize: 1e7, // Increase max. message size to 10MB to accomodate larger custom card lists.
 	httpCompression: true,
@@ -2293,12 +2297,17 @@ app.get("/healthz", (_req, res) => {
 		status: "ok",
 		app: GULCHDALE_APP_NAME,
 		environmentHash: GULCHDALE_ENVIRONMENT_HASH,
+		activeVersion: GULCHDALE_MANIFEST.version,
 		upstreamRevision: GulchdalePublicConfig.upstreamRevision,
 	});
 });
 
 app.get("/api/gulchdale/config", (_req, res) => {
-	res.json(GulchdalePublicConfig);
+	res.json({ ...GulchdalePublicConfig, compiler: gulchdaleFreshness.snapshot() });
+});
+
+app.get("/api/gulchdale/compiler/status", (_req, res) => {
+	res.json(gulchdaleFreshness.snapshot());
 });
 
 // Debug endpoints

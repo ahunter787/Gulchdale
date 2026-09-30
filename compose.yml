@@ -2,11 +2,11 @@ services:
     gulchdale:
         build:
             context: .
-        container_name: gulchdale
         environment:
             NODE_ENV: production
             PERSISTENCE_LOCAL_PATH: /app/state
             PORT: 3000
+            GULCHDALE_UPDATE_CHECK_INTERVAL_SECONDS: ${GULCHDALE_UPDATE_CHECK_INTERVAL_SECONDS:-21600}
         ports:
             - "${GULCHDALE_PORT:-43721}:8080"
         volumes:
@@ -19,6 +19,16 @@ services:
             timeout: 5s
             retries: 5
             start_period: 30s
+
+    compiler:
+        profiles: [tools]
+        build:
+            context: .
+            dockerfile: compiler/Dockerfile
+        user: "${GULCHDALE_UID:-1000}:${GULCHDALE_GID:-1000}"
+        working_dir: /workspace
+        volumes:
+            - .:/workspace
 
 volumes:
     gulchdale-state:

@@ -10,6 +10,7 @@ export const GULCHDALE_APP_NAME = "Gulchdale";
 export const GULCHDALE_CUBE_NAME = "Gulchdale";
 export const GULCHDALE_CUBE_ID = "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa";
 export const GULCHDALE_ENVIRONMENT_FILE = "data/cubes/gulchdale.txt";
+export const GULCHDALE_MANIFEST_FILE = "data/cubes/gulchdale.manifest.json";
 export const GULCHDALE_UPSTREAM_REVISION = "11f056cc1be6f99795f89d8dc7111d98f1a83c6a";
 export const GULCHDALE_MAX_PLAYERS = 8;
 export const GULCHDALE_DEFAULT_TIMER = 0;
@@ -24,6 +25,26 @@ try {
 	);
 }
 export const GULCHDALE_ENVIRONMENT_HASH = crypto.createHash("sha256").update(environmentSource).digest("hex");
+
+type GulchdaleManifest = {
+	version: string;
+	environmentSha256: string;
+	cube: { sourceSha256: string };
+	counts: { sheets: Record<string, number> };
+};
+
+let manifest: GulchdaleManifest;
+try {
+	manifest = JSON.parse(fs.readFileSync(GULCHDALE_MANIFEST_FILE, "utf8")) as GulchdaleManifest;
+} catch (error) {
+	throw new Error(`Unable to start ${GULCHDALE_APP_NAME}: cannot read ${GULCHDALE_MANIFEST_FILE}.`, { cause: error });
+}
+if (manifest.environmentSha256 !== GULCHDALE_ENVIRONMENT_HASH) {
+	throw new Error(
+		`Unable to start ${GULCHDALE_APP_NAME}: environment hash does not match ${GULCHDALE_MANIFEST_FILE}. Recompile and promote the environment together.`
+	);
+}
+export const GULCHDALE_MANIFEST = Object.freeze(manifest);
 
 const parsedEnvironment = parseCardList(environmentSource, {
 	name: GULCHDALE_CUBE_NAME,
@@ -44,6 +65,7 @@ export type GulchdalePublicConfig = {
 	cubeCobraID: typeof GULCHDALE_CUBE_ID;
 	defaultTimer: typeof GULCHDALE_DEFAULT_TIMER;
 	environmentHash: string;
+	activeVersion: string;
 	locked: true;
 	maxPlayers: typeof GULCHDALE_MAX_PLAYERS;
 	reportingEnabled: false;
@@ -56,6 +78,7 @@ export const GulchdalePublicConfig: GulchdalePublicConfig = Object.freeze({
 	cubeCobraID: GULCHDALE_CUBE_ID,
 	defaultTimer: GULCHDALE_DEFAULT_TIMER,
 	environmentHash: GULCHDALE_ENVIRONMENT_HASH,
+	activeVersion: GULCHDALE_MANIFEST.version,
 	locked: true,
 	maxPlayers: GULCHDALE_MAX_PLAYERS,
 	reportingEnabled: false,
