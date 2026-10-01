@@ -39,7 +39,8 @@ import { Sortable } from "sortablejs-vue3";
 import Swal, { SweetAlertIcon, SweetAlertOptions, SweetAlertResult } from "sweetalert2";
 import { SortableEvent } from "sortablejs";
 import { createCommonApp } from "./appCommon";
-import { GulchdaleCompilerStatus, shouldShowGulchdaleUpdateBanner } from "./gulchdaleCompilerStatus";
+import { GulchdaleCompilerStatus } from "./gulchdaleCompilerStatus";
+import GulchdaleLobby from "./components/GulchdaleLobby.vue";
 
 const DefaultCardback = "/img/gulchdale-card-back.png";
 
@@ -55,6 +56,20 @@ type GulchdaleConfig = {
 	reportingEnabled: boolean;
 	upstreamRevision: string;
 	compiler: GulchdaleCompilerStatus;
+	environment: {
+		id: string;
+		displayName: string;
+		cubeCobraID: string;
+		version: string;
+		environmentHash: string;
+		sourceHash: string;
+		maxPlayers: number;
+		defaultTimer: number;
+		locked: boolean;
+		reportingEnabled: boolean;
+		stages: Array<{ layout: string; label: string }>;
+		branding: { logo: string; cardBack: string; backdrop: string };
+	};
 };
 
 // @ts-expect-error Don't want to debug why TS doesn't understand this for now. Import works fine.
@@ -219,6 +234,7 @@ export default defineComponent({
 		GettingStarted: defineAsyncComponent(() => import("./components/GettingStarted.vue")),
 		GridDraft: defineAsyncComponent(() => import("./components/GridDraft.vue")),
 		HelpModal: defineAsyncComponent(() => import("./components/HelpModal.vue")),
+		GulchdaleLobby,
 		HousmanDraft: defineAsyncComponent(() => import("./components/HousmanDraft.vue")),
 		LandControl: defineAsyncComponent(() => import("./components/LandControl.vue")),
 		MinesweeperDraft: defineAsyncComponent(() => import("./components/MinesweeperDraft.vue")),
@@ -258,7 +274,8 @@ export default defineComponent({
 		let userID: UserID = getCookie("userID", guid());
 		setCookie("userID", userID);
 
-		const urlParamSession = urlParams.get("session");
+		const pathSession = window.location.pathname.match(/^\/join\/([A-Za-z0-9]{6})\/?$/)?.[1]?.toUpperCase();
+		const urlParamSession = (pathSession ?? urlParams.get("session"))?.toUpperCase();
 		let sessionID: string | undefined =
 			urlParamSession && urlParamSession !== "" ? urlParamSession : getCookie("sessionID", shortguid());
 
@@ -319,6 +336,7 @@ export default defineComponent({
 		const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io({
 			transports: ["websocket", "polling"], // Immediately try websocket connection instead of polling first.
 			query,
+			autoConnect: false,
 		});
 
 		socket.on("connect_error", () => {
@@ -345,9 +363,25 @@ export default defineComponent({
 					state: "checking",
 					lastSuccessfulCheckAt: null,
 				},
+				environment: {
+					id: "classic",
+					displayName: "Gulchdale",
+					cubeCobraID: "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
+					version: "",
+					environmentHash: "",
+					sourceHash: "",
+					maxPlayers: 8,
+					defaultTimer: 0,
+					locked: true,
+					reportingEnabled: false,
+					stages: [],
+					branding: {
+						logo: "/img/gulchdale-logo.png",
+						cardBack: "/img/gulchdale-card-back.png",
+						backdrop: "/img/gulchdale-landing.jpg",
+					},
+				},
 			} as GulchdaleConfig,
-			compilerStatusInitialTimer: undefined as ReturnType<typeof setTimeout> | undefined,
-			compilerStatusTimer: undefined as ReturnType<typeof setInterval> | undefined,
 			// Make these enums available in the template
 			GameState: GameState,
 			ReadyState,
@@ -378,6 +412,9 @@ export default defineComponent({
 			sessionSpectators: [] as SpectatorData[],
 			displaySpectatorsList: false,
 			disconnectedUsers: {} as { [uid: UserID]: { userName: string } },
+			environmentProfileID: "classic",
+			environmentVersion: "",
+			environmentLocked: true,
 			// Session settings
 			ownerIsPlayer: true,
 			allowSpectators: false,
@@ -525,14 +562,6 @@ export default defineComponent({
 		};
 	},
 	methods: {
-		async refreshGulchdaleCompilerStatus() {
-			try {
-				const response = await fetch("/api/gulchdale/compiler/status");
-				if (response.ok) this.gulchdaleConfig.compiler = (await response.json()) as GulchdaleCompilerStatus;
-			} catch (error) {
-				console.warn("Unable to refresh Gulchdale compiler status.", error);
-			}
-		},
 		initializeSocket() {
 			this.socket.on("disconnect", () => {
 				console.log("Disconnected from server.");
@@ -621,6 +650,13 @@ export default defineComponent({
 					this.drafting = false;
 					this.gameState = GameState.Brewing;
 				}
+			});
+			this.socket.on("sessionJoinRejected", (reason) => {
+				eraseCookie("sessionID");
+				sessionStorage.removeItem(sessionStorageWindowSpecificDataKey);
+				void Alert.fire({ icon: "error", title: "Cannot join draft", text: reason }).then(() =>
+					window.location.assign("/")
+				);
 			});
 
 			this.socket.on("sessionUsers", (users) => {
@@ -3714,7 +3750,7 @@ export default defineComponent({
 			copyToClipboard(
 				`${window.location.protocol}//${window.location.hostname}${
 					window.location.port ? ":" + window.location.port : ""
-				}/?session=${encodeURIComponent(this.sessionID ?? "")}`
+				}/join/${encodeURIComponent(this.sessionID ?? "")}`
 			);
 			fireToast("success", "Session link copied to clipboard!");
 		},
@@ -3888,9 +3924,7 @@ export default defineComponent({
 			// Spectate connections keep the invite link as-is so a refresh re-validates it
 			if (this.isSpectator) return;
 			if (this.sessionID) {
-				const params = new URLSearchParams();
-				params.append("session", this.sessionID);
-				history.replaceState({ sessionID: this.sessionID }, "", `/?${params.toString()}`);
+				history.replaceState({ sessionID: this.sessionID }, "", `/join/${encodeURIComponent(this.sessionID)}`);
 			}
 		},
 		requestTakeover() {
@@ -3903,8 +3937,9 @@ export default defineComponent({
 		onEnterBoosterCards: onEnterBoosterCards,
 	},
 	computed: {
-		gulchdaleUpdateAvailableForOwner(): boolean {
-			return shouldShowGulchdaleUpdateBanner(this.userID, this.sessionOwner, this.gulchdaleConfig.compiler.state);
+		activeStageLabel(): string {
+			const stageIndex = this.draftState?.boosterNumber ?? 0;
+			return this.gulchdaleConfig.environment.stages[stageIndex]?.label ?? `Stage ${stageIndex + 1}`;
 		},
 		deckDisplay(): typeof CardPool | null {
 			return this.$refs.deckDisplay as typeof CardPool | null;
@@ -4209,13 +4244,12 @@ export default defineComponent({
 		try {
 			const configResponse = await fetch("/api/gulchdale/config");
 			if (configResponse.ok) this.gulchdaleConfig = (await configResponse.json()) as GulchdaleConfig;
-			this.compilerStatusInitialTimer = setTimeout(() => void this.refreshGulchdaleCompilerStatus(), 2_000);
-			this.compilerStatusTimer = setInterval(() => void this.refreshGulchdaleCompilerStatus(), 5 * 60 * 1000);
 
 			this.emitter.on("notification", this.pushNotification);
 			this.emitter.on("requestNotificationPermission", this.requestNotificationPermission);
 
 			this.initializeSocket();
+			this.socket.connect();
 			this.updateURLQuery();
 
 			// Initialized only now so it's correctly sync with the server.
@@ -4277,8 +4311,6 @@ export default defineComponent({
 	unmounted() {
 		this.emitter.off("notification", this.pushNotification);
 		window.removeEventListener("beforeunload", this.beforeunload);
-		if (this.compilerStatusInitialTimer) clearTimeout(this.compilerStatusInitialTimer);
-		if (this.compilerStatusTimer) clearInterval(this.compilerStatusTimer);
 	},
 	watch: {
 		sessionID() {

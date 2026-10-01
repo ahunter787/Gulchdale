@@ -53,7 +53,13 @@ def compile_candidate(root: Path, source: Path, metadata: Path, fetched_at: str,
     p = paths(root)
     config = load_config(p["config"])
     result = compile_environment(source, metadata, p["config"])
-    manifest = manifest_for(result, str(config["cube"]["id"]), fetched_at, recovered=recovered)
+    manifest = manifest_for(
+        result,
+        str(config["cube"]["id"]),
+        fetched_at,
+        recovered=recovered,
+        profile=config.get("profile"),
+    )
     candidate = write_candidate(root, result, source, metadata, manifest)
     print(f"Compiled {result.version}: {result.environment_sha256}")
     for warning in result.warnings:

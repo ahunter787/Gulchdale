@@ -17,6 +17,33 @@ body {
 	background-attachment: local;
 }
 
+.gulchdale-lobby-state .session-players,
+.gulchdale-lobby-state #view-controls,
+.gulchdale-lobby-state #limited-controls {
+	display: none;
+}
+
+.gulchdale-engine #booster-controls {
+	background: linear-gradient(90deg, rgba(7, 35, 38, 0.95), rgba(42, 28, 12, 0.9));
+	border-bottom: 1px solid rgba(120, 226, 226, 0.25);
+}
+
+.gulchdale-engine #booster-controls h2 {
+	color: #f0d185;
+	font-family: Georgia, serif;
+}
+
+@media (max-width: 720px) {
+	.gulchdale-engine .main-content {
+		padding-inline: 0.35rem;
+	}
+
+	.gulchdale-engine #booster-controls {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}
+
 .gulchdale-logo {
 	display: block;
 	width: min(42rem, 82vw);

@@ -9,8 +9,10 @@ import {
 	cloneGulchdaleEnvironment,
 	GULCHDALE_CUBE_ID,
 	GULCHDALE_ENVIRONMENT_HASH,
+	GULCHDALE_ENVIRONMENT_PROFILE,
 	GULCHDALE_MANIFEST,
 	isGulchdaleSession,
+	migrateGulchdaleSessionIdentity,
 } from "../src/Gulchdale.js";
 import { Session } from "../src/Session.js";
 
@@ -20,6 +22,16 @@ describe("Gulchdale environment", () => {
 
 		expect(GULCHDALE_MANIFEST.environmentSha256).to.equal(GULCHDALE_ENVIRONMENT_HASH);
 		expect(GULCHDALE_MANIFEST.version).to.equal(`gch-${GULCHDALE_ENVIRONMENT_HASH.slice(0, 12)}`);
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.id).to.equal("classic");
+		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE)).to.equal(true);
+		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.stages)).to.equal(true);
+		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.branding)).to.equal(true);
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.stages.map((stage) => stage.layout)).to.deep.equal([
+			"pack1",
+			"pack2",
+			"pack3",
+			"landpack",
+		]);
 		expect(environment.name).to.equal("Gulchdale");
 		expect(environment.cubeCobraID).to.equal(GULCHDALE_CUBE_ID);
 		expect(Object.keys(environment.sheets)).to.have.members(["commander", "mono", "land"]);
@@ -112,10 +124,25 @@ describe("Gulchdale environment", () => {
 		expect(first.maxTimer).to.equal(0);
 		expect(first.bots).to.equal(0);
 		expect(first.sendResultsToCubeCobra).to.equal(false);
+		expect(first.environmentProfileID).to.equal("classic");
+		expect(first.environmentVersion).to.equal(GULCHDALE_MANIFEST.version);
+		expect(first.environmentLocked).to.equal(true);
 
 		first.customCardList.name = "Mutated";
 		first.customCardList.settings!.cardBack = "mutated.png";
 		expect(second.customCardList.name).to.equal("Gulchdale");
 		expect(second.customCardList.settings?.cardBack).to.equal("/img/gulchdale-card-back.png");
+	});
+
+	it("migrates legacy sessions without replacing their embedded environment version", () => {
+		const legacy = new Session("legacy", "owner");
+		legacy.setCustomCardList(cloneGulchdaleEnvironment());
+		migrateGulchdaleSessionIdentity(legacy);
+		expect(legacy.environmentProfileID).to.equal("classic");
+		expect(legacy.environmentVersion).to.equal(GULCHDALE_MANIFEST.version);
+
+		legacy.environmentVersion = "gch-olderfixture";
+		migrateGulchdaleSessionIdentity(legacy);
+		expect(legacy.environmentVersion).to.equal("gch-olderfixture");
 	});
 });

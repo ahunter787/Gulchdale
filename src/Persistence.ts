@@ -40,6 +40,7 @@ import { sendLog } from "./BotTrainingAPI.js";
 import { deserializeBracket } from "./BracketSerialization.js";
 import { hasProperty, isString } from "./TypeChecks.js";
 import { DefaultTiebreakers } from "./SilentAuctionDraftTiebreakers.js";
+import { migrateGulchdaleSessionIdentity } from "./Gulchdale.js";
 
 const PersistenceLocalPath = process.env.PERSISTENCE_LOCAL_PATH ?? ".";
 const LocalPersitenceDirectory = "tmp";
@@ -126,6 +127,7 @@ export function restoreSession(s: any, owner: UserID) {
 	)) {
 		(r as IIndexable)[prop] = s[prop];
 	}
+	migrateGulchdaleSessionIdentity(r);
 
 	if (s.draftState) {
 		switch (s.draftState.type) {

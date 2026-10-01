@@ -96,8 +96,8 @@ The frozen Phase 1 fixture must always reproduce SHA-256 `faa043e37114b395869ef7
 Shortly after startup and every six hours, the server compares the remote CSV hash to the active source hash. Set `GULCHDALE_UPDATE_CHECK_INTERVAL_SECONDS=0` to disable it or provide another non-negative interval. Each request has a ten-second timeout and never affects `/healthz` or drafting.
 
 - `GET /api/gulchdale/compiler/status` returns the active version/hashes, update state, and last successful check.
-- `GET /api/gulchdale/config` includes the same compiler state for the UI.
-- Session owners see a restrained notice when the state is `update_available`; compilation and promotion remain operator-only.
+- `GET /api/gulchdale/config` includes the same state for compatibility and operator diagnostics.
+- Freshness is not a session-owner responsibility. Phase 3 removes player-facing notices; operators inspect the endpoint or server logs until authenticated administration arrives with Forge in Phase 6.
 
 ## Troubleshooting
 
@@ -105,4 +105,4 @@ Shortly after startup and every six hours, the server compares the remote CSV ha
 - **CubeCobra or Scryfall is unavailable:** keep drafting from the active bundle and rerun `build` later. No active file was changed.
 - **Candidate inputs were edited:** rerun `compile`; promotion intentionally rejects a manifest/input/output mismatch.
 - **Application refuses to start after a manual edit:** restore all four active artifacts together or promote a validated candidate. Do not edit `gulchdale.txt` by hand.
-- **Update banner persists after promotion:** restart or rebuild the application so it loads the new manifest and environment.
+- **Status remains stale after promotion:** restart or rebuild the application so it loads the new manifest and environment.

@@ -140,6 +140,9 @@ export class Session implements IIndexable {
 	id: SessionID;
 	owner?: UserID;
 	readonly managed: boolean = false;
+	environmentProfileID?: string;
+	environmentVersion?: string;
+	environmentLocked: boolean = false;
 	userOrder: Array<string> = [];
 	users: Set<UserID> = new Set();
 	spectators: Set<UserID> = new Set();
@@ -567,6 +570,9 @@ export class Session implements IIndexable {
 			managed: this.managed,
 			sessionOwner: this.owner,
 			bracket: this.bracket,
+			environmentProfileID: this.environmentProfileID,
+			environmentVersion: this.environmentVersion,
+			environmentLocked: this.environmentLocked,
 		};
 		for (const p of Object.keys(SessionsSettingsProps)) options[p] = (this as IIndexable)[p];
 		if (userID === this.owner) options.spectateKey = this.spectateKey;

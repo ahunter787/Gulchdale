@@ -107,7 +107,21 @@ def test_promotion_revalidates_and_replaces_all_active_files(
     root = tmp_path / "repository"
     shutil.copytree(REPOSITORY / "compiler/config", root / "compiler/config")
     result = compile_fixture()
-    manifest = core.manifest_for(result, "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa", "2026-09-30T00:00:00Z", True)
+    config = core.load_config(CONFIG)
+    manifest = core.manifest_for(
+        result,
+        "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
+        "2026-09-30T00:00:00Z",
+        True,
+        config["profile"],
+    )
+    assert manifest["environmentProfile"]["id"] == "classic"
+    assert [stage["layout"] for stage in manifest["environmentProfile"]["stages"]] == [
+        "pack1",
+        "pack2",
+        "pack3",
+        "landpack",
+    ]
     core.write_candidate(root, result, FIXTURE / "gulchdale.csv", FIXTURE / "scryfall.json", manifest)
     monkeypatch.setattr(core, "validate_with_engine", lambda *_args: None)
     core.promote_candidate(root, result.version)

@@ -116,6 +116,7 @@ app.use(compression());
 
 app.use("/bracket", ExpressStatic("./client/dist/bracket.html"));
 app.use("/draftqueue", ExpressStatic("./client/dist/index.html"));
+app.get("/join/:code", (_req, res) => res.sendFile("index.html", { root: "./client/dist" }));
 
 app.use(cookieParser());
 app.use(ExpressJSON({ limit: "2mb" }));
@@ -184,6 +185,27 @@ const gulchdaleLockError = () =>
 // The inherited test suite needs generic Draftmancer sessions. The dedicated
 // Gulchdale acceptance suite opts back into the production engine explicitly.
 const gulchdaleEngineEnabled = !InTesting || process.env.GULCHDALE_ACCEPTANCE === "TRUE";
+const strictGulchdaleSessionEntry = !InTesting;
+const PendingGulchdaleSessions = new Map<SessionID, NodeJS.Timeout>();
+const GulchdaleSessionAlphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+function newGulchdaleSessionCode(): SessionID {
+	let code = "";
+	do {
+		code = Array.from({ length: 6 }, () =>
+			GulchdaleSessionAlphabet.charAt(Math.floor(Math.random() * GulchdaleSessionAlphabet.length))
+		).join("");
+	} while (sessionIDInUse(code) || PendingGulchdaleSessions.has(code));
+	return code;
+}
+
+function reserveGulchdaleSession(): SessionID {
+	const code = newGulchdaleSessionCode();
+	const timeout = setTimeout(() => PendingGulchdaleSessions.delete(code), 5 * 60 * 1000);
+	timeout.unref();
+	PendingGulchdaleSessions.set(code, timeout);
+	return code;
+}
 
 const rejectLockedGulchdaleMutation = (sessionID: SessionID, ack?: (result: SocketAck) => void) => {
 	if (!gulchdaleEngineEnabled || !isGulchdaleSession(Sessions[sessionID])) return false;
@@ -1898,7 +1920,7 @@ io.on("connection", async function (socket) {
 			console.error("query.sessionSettings: ", query.sessionSettings);
 		}
 
-		let sessionID: string = query.sessionID;
+		let sessionID: string = strictGulchdaleSessionEntry ? query.sessionID.toUpperCase() : query.sessionID;
 		if (sessionSettings.cubeCobraID) {
 			// Make sure the session ID isn't in use for redirections from Cube Cobra.
 			if (sessionIDInUse(sessionID)) sessionID = newSessionID("CC_");
@@ -1974,6 +1996,10 @@ function joinSession(sessionID: SessionID, userID: UserID, defaultSessionSetting
 	// Fallback to previous session if possible, or generate a new one
 	const refuse = (msg: string) => {
 		Connections[userID].socket.emit("message", new Message("Cannot join session", "", "", msg));
+		if (strictGulchdaleSessionEntry) {
+			Connections[userID].socket.emit("sessionJoinRejected", msg);
+			return;
+		}
 		const newSID = Connections[userID].sessionID ? Connections[userID].sessionID! : newSessionID();
 		Connections[userID].socket.emit("setSession", newSID);
 	};
@@ -2034,6 +2060,11 @@ function joinSession(sessionID: SessionID, userID: UserID, defaultSessionSetting
 			addUserToSession(userID, sessionID);
 		}
 	} else {
+		if (strictGulchdaleSessionEntry && !PendingGulchdaleSessions.has(sessionID))
+			return refuse(`Session '${sessionID}' does not exist. Check the invite code and try again.`);
+		const pendingTimeout = PendingGulchdaleSessions.get(sessionID);
+		if (pendingTimeout) clearTimeout(pendingTimeout);
+		PendingGulchdaleSessions.delete(sessionID);
 		addUserToSession(userID, sessionID, defaultSessionSettings);
 	}
 }
@@ -2293,7 +2324,7 @@ app.get(["/getDraftLog/:sessionID", "/api/getDraftLog/:sessionID"], (req, res) =
 // Gulchdale runtime endpoints
 
 app.get("/healthz", (_req, res) => {
-	res.json({
+	return res.json({
 		status: "ok",
 		app: GULCHDALE_APP_NAME,
 		environmentHash: GULCHDALE_ENVIRONMENT_HASH,
@@ -2308,6 +2339,30 @@ app.get("/api/gulchdale/config", (_req, res) => {
 
 app.get("/api/gulchdale/compiler/status", (_req, res) => {
 	res.json(gulchdaleFreshness.snapshot());
+});
+
+app.post("/api/gulchdale/sessions", (_req, res) => {
+	const code = reserveGulchdaleSession();
+	res.status(201).json({ code, joinPath: `/join/${code}` });
+});
+
+app.get("/api/gulchdale/sessions/:code", (req, res) => {
+	const code = req.params.code.toUpperCase();
+	if (!new RegExp(`^[${GulchdaleSessionAlphabet}]{6}$`).test(code))
+		return res.status(400).json({ available: false, reason: "Invitation codes contain six letters or numbers." });
+	const session = Sessions[code];
+	const inactive = InactiveSessions[code];
+	if (!session && !inactive) return res.status(404).json({ available: false, reason: "Session not found." });
+	const candidate = session ?? inactive;
+	if (candidate.drafting) return res.status(409).json({ available: false, reason: "Draft already started." });
+	if (session && session.getHumanPlayerCount() >= session.maxPlayers)
+		return res.status(409).json({ available: false, reason: "Session is full." });
+	return res.json({
+		available: true,
+		code,
+		environmentProfileID: candidate.environmentProfileID ?? "classic",
+		environmentVersion: candidate.environmentVersion ?? GULCHDALE_MANIFEST.version,
+	});
 });
 
 // Debug endpoints

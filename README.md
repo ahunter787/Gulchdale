@@ -54,12 +54,12 @@ Every compiled environment should receive a version or content hash. An active d
 
 The committed Phase 1 environment uses four predetermined stages, with two cards selected per pick:
 
-| Stage | Contents |
-| --- | --- |
-| Pack 1 | 4 Commander, 16 Mono |
-| Pack 2 | 2 Commander, 18 Mono |
-| Pack 3 | 20 Mono |
-| Expedition/Land Pack | 20 Land |
+| Stage                | Contents             |
+| -------------------- | -------------------- |
+| Pack 1               | 4 Commander, 16 Mono |
+| Pack 2               | 2 Commander, 18 Mono |
+| Pack 3               | 20 Mono              |
+| Expedition/Land Pack | 20 Land              |
 
 These values come directly from `data/cubes/gulchdale.txt` rather than being hard-coded into UI components. An earlier planning outline described separate Multicolor and Acceleration sheets, but those sheets are not present in the current generated snapshot.
 
@@ -138,6 +138,10 @@ docker compose up --build -d gulchdale
 ```
 
 Promotion must name the reviewed candidate version and never commits, rebuilds, or restarts the app. Because the active environment is copied into the production image, activating a promotion requires the `up --build -d` command shown above; a plain restart keeps the previous image. The complete workflow, local Python setup, manifest format, and recovery steps are documented in [`docs/PHASE2_COMPILER.md`](docs/PHASE2_COMPILER.md).
+
+## Running the Phase 3 player flow
+
+Open the server root to host a draft or validate an invitation code. Gulchdale uses canonical `/join/<code>` links, a campfire lobby, profile-driven stage labels, and the existing Draftmancer engine for drafting, reconnects, pools, and exports. Environment freshness and promotion remain operator concerns, never session-owner privileges. The UI and single-active-profile model are documented in [`docs/PHASE3_UI.md`](docs/PHASE3_UI.md).
 
 ## Source discussions
 

@@ -577,16 +577,6 @@ div:where(.swal2-container) .swal2-checkbox {
 	margin: 1rem;
 }
 
-.gulchdale-update-banner {
-	max-width: 54rem;
-	margin: 0.75rem auto 1.25rem;
-	padding: 0.8rem 1rem;
-	border: 1px solid #a9813d;
-	border-radius: 0.35rem;
-	background: rgb(169 129 61 / 14%);
-	color: #f1d79d;
-}
-
 .welcome-top {
 	display: flex;
 	justify-content: center;

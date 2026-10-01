@@ -7,11 +7,3 @@ export type GulchdaleCompilerStatus = {
 	state: GulchdaleUpdateState;
 	lastSuccessfulCheckAt: string | null;
 };
-
-export function shouldShowGulchdaleUpdateBanner(
-	userID: string | undefined,
-	sessionOwner: string | undefined,
-	state: GulchdaleUpdateState
-): boolean {
-	return userID !== undefined && userID === sessionOwner && state === "update_available";
-}

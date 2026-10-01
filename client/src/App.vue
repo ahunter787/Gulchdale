@@ -6,7 +6,12 @@
 			--card-back-image: url(${cardBackImage});
 			--card-title-height-factor: ${cardTitleHeightFactor};
 		`"
-		:class="{ 'using-fixed-deck': displayFixedDeck, 'no-foil-effect': !foilEffect }"
+		:class="{
+			'using-fixed-deck': displayFixedDeck,
+			'no-foil-effect': !foilEffect,
+			'gulchdale-engine': gulchdaleConfig.locked,
+			'gulchdale-lobby-state': gulchdaleConfig.locked && gameState === GameState.None,
+		}"
 	>
 		<!-- Personal Options -->
 		<div id="view-controls" class="main-controls">
@@ -793,7 +798,7 @@
 							:class="{ disabled: draftPaused }"
 						>
 							<div id="booster-controls" class="section-title">
-								<h2>Your Pack ({{ draftState.booster.length }})</h2>
+								<h2>{{ activeStageLabel }} · Your Pack ({{ draftState.booster.length }})</h2>
 								<div class="controls" style="flex-grow: 2">
 									<span
 										>Pack #{{ draftState.boosterNumber + 1 }}, Pick #{{
@@ -1573,16 +1578,27 @@
 					>
 						<font-awesome-icon :icon="['fas', 'rotate-left']" /> Reload last deck
 					</button>
-					<img class="gulchdale-logo" src="/img/gulchdale-logo.png" alt="Gulchdale" />
-					<h1>Welcome to Gulchdale</h1>
-					<p class="important">Host or join a session to draft the bundled Gulchdale Commander Cube.</p>
-					<div
-						v-if="gulchdaleUpdateAvailableForOwner"
-						class="gulchdale-update-banner"
-					>
-						CubeCobra has changed since this build. Compile and promote a new environment, then restart
-						Gulchdale.
-					</div>
+					<GulchdaleLobby
+						v-if="gulchdaleConfig.locked && sessionID"
+						:bots="bots"
+						:environment-name="gulchdaleConfig.environment.displayName"
+						:environment-version="environmentVersion || gulchdaleConfig.environment.version"
+						:is-owner="userID === sessionOwner"
+						:max-players="maxPlayers"
+						:session-id="sessionID"
+						:session-owner="sessionOwner"
+						:timer="maxTimer"
+						:users="sessionUsers"
+						@share="sessionURLToClipboard"
+						@ready-check="readyCheck"
+						@start="startDraft"
+						@update:bots="bots = $event"
+						@update:timer="maxTimer = $event"
+					/>
+					<template v-if="!gulchdaleConfig.locked">
+						<img class="gulchdale-logo" src="/img/gulchdale-logo.png" alt="Gulchdale" />
+						<h1>Welcome to Gulchdale</h1>
+					</template>
 					<div v-if="!gulchdaleConfig.locked" class="welcome-top">
 						<div>
 							<a href="/draftqueue">

@@ -501,11 +501,35 @@ def compile_environment(source_path: Path, metadata_path: Path, config_path: Pat
     )
 
 
-def manifest_for(result: CompileResult, cube_id: str, fetched_at: str, recovered: bool = False) -> dict[str, Any]:
+def manifest_for(
+    result: CompileResult,
+    cube_id: str,
+    fetched_at: str,
+    recovered: bool = False,
+    profile: Mapping[str, Any] | None = None,
+) -> dict[str, Any]:
+    active_profile = dict(profile or {"id": "classic", "display_name": "Gulchdale"})
     return {
         "schemaVersion": 1,
         "compilerVersion": __version__,
         "version": result.version,
+        "environmentProfile": {
+            "id": str(active_profile.get("id", "classic")),
+            "displayName": str(active_profile.get("display_name", "Gulchdale")),
+            "stages": [
+                {"layout": str(stage["layout"]), "label": str(stage["label"])}
+                for stage in active_profile.get("stages", [])
+            ],
+            "branding": {
+                "logo": str(active_profile.get("branding", {}).get("logo", "/img/gulchdale-logo.png")),
+                "cardBack": str(
+                    active_profile.get("branding", {}).get("card_back", "/img/gulchdale-card-back.png")
+                ),
+                "backdrop": str(
+                    active_profile.get("branding", {}).get("backdrop", "/img/gulchdale-landing.jpg")
+                ),
+            },
+        },
         "cube": {
             "id": cube_id,
             "sourceSha256": result.source_sha256,

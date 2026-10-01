@@ -42,6 +42,7 @@ export interface ServerToClientEvents {
 	alreadyConnected: (uid: UserID) => void;
 	stillAlive: (callback: () => void) => void;
 	setSession: (sid: SessionID) => void;
+	sessionJoinRejected: (reason: string) => void;
 	message: (msg: Message, pushToHistory?: boolean) => void;
 	chatMessage: (msg: { author: string; text: string; timestamp: number }) => void;
 	readyCheck: () => void;
@@ -102,6 +103,9 @@ export interface ServerToClientEvents {
 			useCustomCardList: boolean;
 			usePredeterminedBoosters: boolean;
 			virtualPlayersData: Record<UserID, UserData>;
+			environmentProfileID: string;
+			environmentVersion: string;
+			environmentLocked: boolean;
 		}>
 	) => void;
 	updateCustomCardListSetting: (name: keyof CCLSettings, value: unknown) => void;

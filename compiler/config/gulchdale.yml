@@ -1,62 +1,78 @@
 schema_version: 1
+profile:
+    id: classic
+    display_name: Gulchdale
+    stages:
+        - layout: pack1
+          label: Commanders' Call
+        - layout: pack2
+          label: Allies Gather
+        - layout: pack3
+          label: The Long Night
+        - layout: landpack
+          label: Claim the Land
+    branding:
+        logo: /img/gulchdale-logo.png
+        card_back: /img/gulchdale-card-back.png
+        backdrop: /img/gulchdale-landing.jpg
 cube:
-  id: f1c8be0f-7ac3-420f-81eb-ec8933ce45fa
-  name: Gulchdale
-  csv_url: https://cubecobra.com/cube/download/csv/f1c8be0f-7ac3-420f-81eb-ec8933ce45fa
+    id: f1c8be0f-7ac3-420f-81eb-ec8933ce45fa
+    name: Gulchdale
+    csv_url: https://cubecobra.com/cube/download/csv/f1c8be0f-7ac3-420f-81eb-ec8933ce45fa
 
 tags:
-  sheets:
-    commander: commander
-    mono: mono
-    land: land
-  draft_effect: draftEffect
-  spawned: spawnedByDraftEffect
+    sheets:
+        commander: commander
+        mono: mono
+        land: land
+    draft_effect: draftEffect
+    spawned: spawnedByDraftEffect
 
 note_grammar:
-  tribal_booster: '^(?P<tribe>[A-Za-z]+)\s+Booster\s+Pack(?:\s*,\s*(?P<count>\d+))?$'
+    tribal_booster: '^(?P<tribe>[A-Za-z]+)\s+Booster\s+Pack(?:\s*,\s*(?P<count>\d+))?$'
 
 custom_card_priority:
-  - Taigam, Master Opportunist
-  - Maeve, Insidious Singer
+    - Taigam, Master Opportunist
+    - Maeve, Insidious Singer
 
 settings:
-  boosterSettings:
-    - picks: 2
-      burns: 0
-  layouts:
-    pack1:
-      commander: 4
-      mono: 16
-    pack2:
-      commander: 2
-      mono: 18
-    pack3:
-      mono: 20
-    landpack:
-      land: 20
-  predeterminedLayouts: [pack1, pack2, pack3, landpack]
+    boosterSettings:
+        - picks: 2
+          burns: 0
+    layouts:
+        pack1:
+            commander: 4
+            mono: 16
+        pack2:
+            commander: 2
+            mono: 18
+        pack3:
+            mono: 20
+        landpack:
+            land: 20
+    predeterminedLayouts: [pack1, pack2, pack3, landpack]
 
 tribes:
-  elf:
-    tag: elf
-    custom_card: Elf Booster Pack
-    default_count: 6
-  goblin:
-    tag: goblin
-    custom_card: Goblin Booster Pack
-    default_count: 6
-  zombie:
-    tag: zombie
-    custom_card: Zombie Booster Pack
-    default_count: 6
-  faerie:
-    tag: faerie
-    aliases: [fae]
-    custom_card: Faerie Booster Pack
-    default_count: 6
-  human:
-    tag: human
-    custom_card: Human Booster Pack
-    default_count: 6
+    elf:
+        tag: elf
+        custom_card: Elf Booster Pack
+        default_count: 6
+    goblin:
+        tag: goblin
+        custom_card: Goblin Booster Pack
+        default_count: 6
+    zombie:
+        tag: zombie
+        custom_card: Zombie Booster Pack
+        default_count: 6
+    faerie:
+        tag: faerie
+        aliases: [fae]
+        custom_card: Faerie Booster Pack
+        default_count: 6
+    human:
+        tag: human
+        custom_card: Human Booster Pack
+        default_count: 6
 
 static_custom_cards: static_custom_cards.yml
