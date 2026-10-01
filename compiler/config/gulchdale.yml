@@ -16,6 +16,16 @@ profile:
         card_back: /img/gulchdale-card-back.png
         backdrop: /img/gulchdale-landing.jpg
         lobby_backdrop: /img/gulchdale-campfire.webp
+        seated_traveler_silhouette: /img/gulchdale-traveler-seated.webp
+        seat_traveler_silhouettes:
+            - /img/gulchdale-traveler-1.webp
+            - /img/gulchdale-traveler-seat-2.webp
+            - /img/gulchdale-traveler-seat-3.webp
+            - /img/gulchdale-traveler-seat-4.webp
+            - /img/gulchdale-traveler-seat-5.webp
+            - /img/gulchdale-traveler-2.webp
+            - /img/gulchdale-traveler-seat-7.webp
+            - /img/gulchdale-traveler-seat-8.webp
         traveler_silhouettes:
             - /img/gulchdale-traveler-1.webp
             - /img/gulchdale-traveler-2.webp

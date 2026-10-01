@@ -1589,6 +1589,8 @@
 						:max-players="maxPlayers"
 						:session-id="sessionID"
 						:session-owner="sessionOwner"
+						:seated-traveler-silhouette="gulchdaleConfig.environment.branding.seatedTravelerSilhouette"
+						:seat-traveler-silhouettes="gulchdaleConfig.environment.branding.seatTravelerSilhouettes"
 						:timer="maxTimer"
 						:traveler-silhouettes="gulchdaleConfig.environment.branding.travelerSilhouettes"
 						:users="sessionUsers"
@@ -2814,14 +2816,6 @@
 				<card-list :cardlist="customCardList" :language="language" :collection="collection"></card-list>
 			</template>
 		</modal>
-		<modal :displayed="displayedModal === 'About'" @close="displayedModal = ''">
-			<template v-slot:header>
-				<h2>About &amp; legal</h2>
-			</template>
-			<template v-slot:body>
-				<About />
-			</template>
-		</modal>
 		<modal :displayed="displayedModal === 'donation'" @close="displayedModal = ''">
 			<template v-slot:header>
 				<h2>Support Draftmancer</h2>
@@ -2836,7 +2830,7 @@
 				Gulchdale is Powered by
 				<a href="https://github.com/sponsors/Senryoku" target="_blank" rel="noopener">Draftmancer</a>
 			</span>
-			<button type="button" class="footer-legal-link" @click="displayedModal = 'About'">About &amp; legal</button>
+			<LegalPopover />
 		</footer>
 		<div
 			class="disconnected-icon"

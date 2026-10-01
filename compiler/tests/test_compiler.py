@@ -122,6 +122,10 @@ def test_promotion_revalidates_and_replaces_all_active_files(monkeypatch: pytest
     ]
     assert manifest["environmentProfile"]["branding"]["lobbyBackdrop"].endswith("gulchdale-campfire.webp")
     assert len(manifest["environmentProfile"]["branding"]["travelerSilhouettes"]) == 4
+    assert (
+        manifest["environmentProfile"]["branding"]["seatedTravelerSilhouette"] == "/img/gulchdale-traveler-seated.webp"
+    )
+    assert len(manifest["environmentProfile"]["branding"]["seatTravelerSilhouettes"]) == 8
     core.write_candidate(root, result, FIXTURE / "gulchdale.csv", FIXTURE / "scryfall.json", manifest)
     monkeypatch.setattr(core, "validate_with_engine", lambda *_args: None)
     core.promote_candidate(root, result.version)

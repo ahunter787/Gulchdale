@@ -41,6 +41,7 @@ import { SortableEvent } from "sortablejs";
 import { createCommonApp } from "./appCommon";
 import { GulchdaleCompilerStatus } from "./gulchdaleCompilerStatus";
 import GulchdaleLobby from "./components/GulchdaleLobby.vue";
+import LegalPopover from "./components/LegalPopover.vue";
 
 const DefaultCardback = "/img/gulchdale-card-back.png";
 
@@ -73,6 +74,8 @@ type GulchdaleConfig = {
 			cardBack: string;
 			backdrop: string;
 			lobbyBackdrop: string;
+			seatedTravelerSilhouette: string;
+			seatTravelerSilhouettes: string[];
 			travelerSilhouettes: string[];
 		};
 	};
@@ -213,7 +216,6 @@ const ChoosePlayerComponent = defineAsyncComponent(() => import("./components/Ch
 
 export default defineComponent({
 	components: {
-		About: defineAsyncComponent(() => import("./components/About.vue")),
 		BoosterCard,
 		BracketComponent: defineAsyncComponent(() => import("./components/Bracket.vue")),
 		Card: defineAsyncComponent(() => import("./components/Card.vue")),
@@ -241,6 +243,7 @@ export default defineComponent({
 		GridDraft: defineAsyncComponent(() => import("./components/GridDraft.vue")),
 		HelpModal: defineAsyncComponent(() => import("./components/HelpModal.vue")),
 		GulchdaleLobby,
+		LegalPopover,
 		HousmanDraft: defineAsyncComponent(() => import("./components/HousmanDraft.vue")),
 		LandControl: defineAsyncComponent(() => import("./components/LandControl.vue")),
 		MinesweeperDraft: defineAsyncComponent(() => import("./components/MinesweeperDraft.vue")),
@@ -386,6 +389,8 @@ export default defineComponent({
 						cardBack: "/img/gulchdale-card-back.png",
 						backdrop: "/img/gulchdale-landing.jpg",
 						lobbyBackdrop: "/img/gulchdale-landing.jpg",
+						seatedTravelerSilhouette: "",
+						seatTravelerSilhouettes: [],
 						travelerSilhouettes: [],
 					},
 				},

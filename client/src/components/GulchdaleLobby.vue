@@ -38,7 +38,8 @@
 							'gulchdale-seat--bot': seat.bot,
 							'gulchdale-seat--ready': seat.ready,
 							'gulchdale-seat--disconnected': seat.disconnected,
-							'gulchdale-seat--mirrored': seat.index % 2 === 1,
+							'gulchdale-seat--mirrored': seat.mirrored,
+							[`gulchdale-seat--${seat.pose}`]: true,
 						},
 					]"
 				>
@@ -131,6 +132,8 @@ export default defineComponent({
 		isOwner: { type: Boolean, required: true },
 		lobbyBackdrop: { type: String, required: true },
 		maxPlayers: { type: Number, required: true },
+		seatedTravelerSilhouette: { type: String, default: "" },
+		seatTravelerSilhouettes: { type: Array as PropType<string[]>, default: () => [] },
 		sessionID: { type: String, required: true },
 		sessionOwner: { type: String, default: "" },
 		timer: { type: Number, required: true },
@@ -168,6 +171,8 @@ export default defineComponent({
 				bots: this.bots,
 				maxPlayers: this.maxPlayers,
 				sessionOwner: this.sessionOwner,
+				seatedTravelerSilhouette: this.seatedTravelerSilhouette,
+				seatTravelerSilhouettes: this.seatTravelerSilhouettes,
 				travelerSilhouettes: this.travelerSilhouettes,
 			});
 		},
@@ -321,43 +326,54 @@ h1 {
 	position: absolute;
 	z-index: 3;
 	width: 15%;
-	height: 35%;
+	height: 27%;
 	min-width: 8rem;
+	pointer-events: none;
 	filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.7));
 }
 .gulchdale-seat--1 {
 	left: 4%;
 	top: 35%;
+	height: 35%;
+	z-index: 4;
 }
 .gulchdale-seat--2 {
-	left: 18%;
-	top: 24%;
+	left: 20%;
+	top: 36%;
 }
 .gulchdale-seat--3 {
-	left: 32%;
-	top: 19%;
+	left: 34%;
+	top: 29%;
+	--avatar-scale: 0.84;
 }
 .gulchdale-seat--4 {
-	right: 32%;
-	top: 19%;
+	right: 34%;
+	top: 29%;
+	--avatar-scale: 0.84;
 }
 .gulchdale-seat--5 {
-	right: 18%;
-	top: 24%;
+	right: 20%;
+	top: 36%;
 }
 .gulchdale-seat--6 {
 	right: 4%;
 	top: 35%;
+	height: 35%;
+	z-index: 4;
 }
 .gulchdale-seat--7 {
-	left: 22%;
-	top: 51%;
-	z-index: 4;
+	left: 30%;
+	top: 61%;
+	height: 24%;
+	--avatar-scale: 1.05;
+	z-index: 5;
 }
 .gulchdale-seat--8 {
-	right: 22%;
-	top: 51%;
-	z-index: 4;
+	right: 30%;
+	top: 61%;
+	height: 24%;
+	--avatar-scale: 1.05;
+	z-index: 5;
 }
 .gulchdale-seat__traveler {
 	position: absolute;
@@ -366,16 +382,21 @@ h1 {
 	width: auto;
 	height: 100%;
 	max-width: 145%;
+	pointer-events: none;
 	object-fit: contain;
-	transform: translateX(-50%);
+	transform: translateX(-50%) scale(var(--avatar-scale, 1));
 	transform-origin: bottom center;
 	transition:
 		filter 180ms ease,
 		opacity 180ms ease,
 		transform 180ms ease;
 }
+.gulchdale-seat--seated .gulchdale-seat__traveler {
+	height: 76%;
+	max-width: 165%;
+}
 .gulchdale-seat--mirrored .gulchdale-seat__traveler {
-	transform: translateX(-50%) scaleX(-1);
+	transform: translateX(-50%) scaleX(-1) scale(var(--avatar-scale, 1));
 }
 .gulchdale-seat--bot .gulchdale-seat__traveler {
 	filter: saturate(0.7) hue-rotate(145deg) drop-shadow(0 0 0.7rem rgba(92, 221, 229, 0.5));
@@ -539,33 +560,46 @@ select:focus-visible {
 		min-height: 36rem;
 	}
 	.gulchdale-seat {
-		width: 18%;
-		height: 30%;
+		width: 17%;
+		height: 26%;
 		min-width: 6.5rem;
 	}
+	.gulchdale-seat__nameplate {
+		width: 110%;
+	}
 	.gulchdale-seat--1 {
-		left: 1%;
+		left: 0;
+		height: 32%;
 	}
 	.gulchdale-seat--2 {
-		left: 16%;
+		left: 19%;
+		top: 37%;
 	}
 	.gulchdale-seat--3 {
 		left: 31%;
+		top: 30%;
 	}
 	.gulchdale-seat--4 {
 		right: 31%;
+		top: 30%;
 	}
 	.gulchdale-seat--5 {
-		right: 16%;
+		right: 19%;
+		top: 37%;
 	}
 	.gulchdale-seat--6 {
-		right: 1%;
+		right: 0;
+		height: 32%;
 	}
 	.gulchdale-seat--7 {
-		left: 20%;
+		left: 23%;
+		top: 62%;
+		height: 23%;
 	}
 	.gulchdale-seat--8 {
-		right: 20%;
+		right: 23%;
+		top: 62%;
+		height: 23%;
 	}
 	.gulchdale-lobby__controls {
 		flex-wrap: wrap;
@@ -632,6 +666,13 @@ select:focus-visible {
 		max-width: 3.8rem;
 		transform: none;
 	}
+	.gulchdale-seat--seated .gulchdale-seat__traveler {
+		left: -0.15rem;
+		bottom: 0.45rem;
+		width: 4.8rem;
+		height: 4.4rem;
+		max-width: none;
+	}
 	.gulchdale-seat--mirrored .gulchdale-seat__traveler {
 		transform: scaleX(-1);
 	}
@@ -646,7 +687,7 @@ select:focus-visible {
 		width: 100%;
 		height: 100%;
 		transform: none;
-		padding: 1.25rem 0.4rem 0.4rem 4.2rem;
+		padding: 1.25rem 0.4rem 0.4rem 5rem;
 		text-align: left;
 	}
 	.gulchdale-seat__number {

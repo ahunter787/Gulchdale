@@ -534,6 +534,12 @@ def manifest_for(
                 "lobbyBackdrop": str(
                     active_profile.get("branding", {}).get("lobby_backdrop", "/img/gulchdale-landing.jpg")
                 ),
+                "seatedTravelerSilhouette": str(
+                    active_profile.get("branding", {}).get("seated_traveler_silhouette", "")
+                ),
+                "seatTravelerSilhouettes": [
+                    str(asset) for asset in active_profile.get("branding", {}).get("seat_traveler_silhouettes", [])
+                ],
                 "travelerSilhouettes": [
                     str(asset) for asset in active_profile.get("branding", {}).get("traveler_silhouettes", [])
                 ],

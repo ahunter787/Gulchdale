@@ -11,7 +11,7 @@
 
 			<div class="gulchdale-landing__actions">
 				<button class="gulchdale-primary" :disabled="busy !== ''" @click="hostDraft">
-					{{ busy === "host" ? "Preparing your table…" : "Host Draft" }}
+					{{ busy === "host" ? "Setting camp…" : "Host Draft" }}
 				</button>
 				<button class="gulchdale-secondary" :aria-expanded="showJoin" @click="showJoin = !showJoin">
 					Join Draft
@@ -53,35 +53,20 @@
 				Gulchdale is Powered by
 				<a href="https://github.com/sponsors/Senryoku" target="_blank" rel="noopener">Draftmancer</a>
 			</span>
-			<details>
-				<summary>About &amp; legal</summary>
-				<div class="gulchdale-landing__legal">
-					<p>
-						Built with
-						<a href="https://github.com/Senryoku/Draftmancer" target="_blank" rel="noopener">Draftmancer</a>
-						under its MIT license, using card data and images from
-						<a href="https://scryfall.com/" target="_blank" rel="noopener">Scryfall</a>.
-					</p>
-					<p>
-						Gulchdale is unofficial Fan Content permitted under the
-						<a href="https://company.wizards.com/en/legal/fancontentpolicy" target="_blank" rel="noopener">
-							Fan Content Policy</a
-						>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of
-						the Coast. ©Wizards of the Coast LLC.
-					</p>
-				</div>
-			</details>
+			<LegalPopover />
 		</footer>
 	</main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import LegalPopover from "./LegalPopover.vue";
 
 type LandingEnvironment = { displayName: string; version: string };
 
 export default defineComponent({
 	name: "GulchdaleLanding",
+	components: { LegalPopover },
 	data: () => ({
 		busy: "" as "" | "host" | "join",
 		error: "",
@@ -291,29 +276,6 @@ footer {
 }
 footer a {
 	color: #bee8e6;
-}
-footer summary {
-	color: #9db0b1;
-	text-decoration: underline;
-	cursor: pointer;
-}
-.gulchdale-landing__legal {
-	position: absolute;
-	right: 0;
-	bottom: 1.75rem;
-	width: min(36rem, calc(100vw - 2rem));
-	box-sizing: border-box;
-	padding: 0.9rem 1rem;
-	border: 1px solid rgba(112, 226, 229, 0.25);
-	border-radius: 0.6rem;
-	background: rgba(3, 12, 15, 0.97);
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
-	color: #c5d5d5;
-	line-height: 1.45;
-	text-align: left;
-}
-.gulchdale-landing__legal p {
-	margin: 0.35rem 0;
 }
 @media (max-width: 560px) {
 	.gulchdale-landing {

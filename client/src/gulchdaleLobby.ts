@@ -10,6 +10,8 @@ export type CampfireSeat = {
 	disconnected: boolean;
 	status: string;
 	artwork: string;
+	pose: "standing" | "seated";
+	mirrored: boolean;
 };
 
 export function buildCampfireSeats(options: {
@@ -18,14 +20,12 @@ export function buildCampfireSeats(options: {
 	bots: number;
 	maxPlayers: number;
 	sessionOwner: string;
+	seatedTravelerSilhouette: string;
+	seatTravelerSilhouettes: string[];
 	travelerSilhouettes: string[];
 }): CampfireSeat[] {
-	const art = (index: number) =>
-		options.travelerSilhouettes.length
-			? options.travelerSilhouettes[index % options.travelerSilhouettes.length]
-			: "";
-	const connected: CampfireSeat[] = options.users.map((user, index) => ({
-		index,
+	type OccupiedSeat = Omit<CampfireSeat, "index" | "artwork" | "pose" | "mirrored">;
+	const connected: OccupiedSeat[] = options.users.map((user) => ({
 		key: user.userID,
 		name: user.userName,
 		owner: user.userID === options.sessionOwner,
@@ -42,14 +42,11 @@ export function buildCampfireSeats(options: {
 					: user.readyState === "NotReady"
 						? "Not ready"
 						: "Player",
-		artwork: art(index),
 	}));
-	const disconnected: CampfireSeat[] = Object.entries(options.disconnectedUsers)
+	const disconnected: OccupiedSeat[] = Object.entries(options.disconnectedUsers)
 		.filter(([id]) => !options.users.some((user) => user.userID === id))
-		.map(([id, user], offset) => {
-			const index = connected.length + offset;
+		.map(([id, user]) => {
 			return {
-				index,
 				key: id,
 				name: user.userName,
 				owner: id === options.sessionOwner,
@@ -57,14 +54,11 @@ export function buildCampfireSeats(options: {
 				ready: false,
 				disconnected: true,
 				status: "Disconnected · Seat reserved",
-				artwork: art(index),
 			};
 		});
-	const humans = [...connected, ...disconnected];
-	const bots: CampfireSeat[] = Array.from({ length: options.bots }, (_, offset) => {
-		const index = humans.length + offset;
+	const humans = [...connected, ...disconnected].sort((a, b) => Number(b.owner) - Number(a.owner));
+	const bots: OccupiedSeat[] = Array.from({ length: options.bots }, (_, offset) => {
 		return {
-			index,
 			key: `bot-${offset}`,
 			name: `Bot ${offset + 1}`,
 			owner: false,
@@ -72,23 +66,39 @@ export function buildCampfireSeats(options: {
 			ready: true,
 			disconnected: false,
 			status: "Bot drafter · Ready",
-			artwork: art(index),
 		};
 	});
 	const occupied = [...humans, ...bots].slice(0, options.maxPlayers);
-	return Array.from(
-		{ length: options.maxPlayers },
-		(_, index) =>
-			occupied[index] ?? {
-				index,
-				key: `empty-${index}`,
-				name: "",
-				owner: false,
-				bot: false,
-				ready: false,
-				disconnected: false,
-				status: "Awaiting player",
-				artwork: "",
-			}
-	);
+	const poseFor = (index: number): CampfireSeat["pose"] =>
+		(options.seatTravelerSilhouettes[index] || options.seatedTravelerSilhouette) && index !== 0 && index !== 5
+			? "seated"
+			: "standing";
+	const artFor = (index: number, pose: CampfireSeat["pose"]): string => {
+		if (options.seatTravelerSilhouettes[index]) return options.seatTravelerSilhouettes[index];
+		if (pose === "seated") return options.seatedTravelerSilhouette;
+		if (index === 0) return options.travelerSilhouettes[0] ?? "";
+		if (index === 5) return options.travelerSilhouettes[1] ?? options.travelerSilhouettes[0] ?? "";
+		return options.travelerSilhouettes.length
+			? options.travelerSilhouettes[index % options.travelerSilhouettes.length]
+			: "";
+	};
+	return Array.from({ length: options.maxPlayers }, (_, index) => {
+		const pose = poseFor(index);
+		const mirrored = !options.seatTravelerSilhouettes[index] && index % 2 === 1;
+		return occupied[index]
+			? { ...occupied[index], index, pose, mirrored, artwork: artFor(index, pose) }
+			: {
+					index,
+					key: `empty-${index}`,
+					name: "",
+					owner: false,
+					bot: false,
+					ready: false,
+					disconnected: false,
+					status: "Awaiting player",
+					artwork: "",
+					pose,
+					mirrored,
+				};
+	});
 }

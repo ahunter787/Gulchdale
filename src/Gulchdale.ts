@@ -34,6 +34,8 @@ export type EnvironmentProfile = {
 		cardBack: string;
 		backdrop: string;
 		lobbyBackdrop: string;
+		seatedTravelerSilhouette: string;
+		seatTravelerSilhouettes: readonly string[];
 		travelerSilhouettes: readonly string[];
 	}>;
 };
@@ -82,6 +84,8 @@ const profileBranding = Object.freeze({
 	cardBack: profileManifest?.branding?.cardBack ?? "/img/gulchdale-card-back.png",
 	backdrop: profileManifest?.branding?.backdrop ?? "/img/gulchdale-landing.jpg",
 	lobbyBackdrop: profileManifest?.branding?.lobbyBackdrop ?? "/img/gulchdale-landing.jpg",
+	seatedTravelerSilhouette: profileManifest?.branding?.seatedTravelerSilhouette ?? "",
+	seatTravelerSilhouettes: Object.freeze(profileManifest?.branding?.seatTravelerSilhouettes ?? []),
 	travelerSilhouettes: Object.freeze(profileManifest?.branding?.travelerSilhouettes ?? []),
 });
 export const GULCHDALE_ENVIRONMENT_PROFILE: EnvironmentProfile = Object.freeze({

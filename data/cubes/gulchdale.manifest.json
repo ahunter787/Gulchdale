@@ -1,64 +1,75 @@
 {
-	"compiledAt": "2026-10-01T06:15:26Z",
-	"compilerVersion": "2.0.0",
-	"configSha256": "01be4286da0cafc468eb1d954a5e77b158895cc50642fb624acd8c67a5a9ab77",
-	"counts": {
-		"customCards": 66,
-		"draftEffectCards": 52,
-		"sheets": {
-			"commander": 144,
-			"land": 160,
-			"mono": 657
-		},
-		"sourceRows": 1114,
-		"warnings": 2
-	},
-	"cube": {
-		"fetchedAt": "2026-09-30T17:00:55Z",
-		"id": "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
-		"recoveredPhase1Source": false,
-		"sourceSha256": "d5d18e520ec31715a4c59fdadf296ed930d738966673264aa9f9b117ca6fe0c9"
-	},
-	"environmentProfile": {
-		"branding": {
-			"backdrop": "/img/gulchdale-landing.jpg",
-			"cardBack": "/img/gulchdale-card-back.png",
-			"lobbyBackdrop": "/img/gulchdale-campfire.webp",
-			"logo": "/img/gulchdale-logo.png",
-			"travelerSilhouettes": [
-				"/img/gulchdale-traveler-1.webp",
-				"/img/gulchdale-traveler-2.webp",
-				"/img/gulchdale-traveler-3.webp",
-				"/img/gulchdale-traveler-4.webp"
-			]
-		},
-		"displayName": "Gulchdale",
-		"id": "classic",
-		"stages": [
-			{
-				"label": "Commanders' Call",
-				"layout": "pack1"
-			},
-			{
-				"label": "Allies Gather",
-				"layout": "pack2"
-			},
-			{
-				"label": "The Long Night",
-				"layout": "pack3"
-			},
-			{
-				"label": "Claim the Land",
-				"layout": "landpack"
-			}
-		]
-	},
-	"environmentSha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68",
-	"schemaVersion": 1,
-	"scryfallSha256": "c3b149935af1ac1cc3a189781f17a695975a95b9dade62c72f2e98dac8b39a05",
-	"version": "gch-bfc40f9519b9",
-	"warnings": [
-		"Unreferenced spawnedByDraftEffect card: Fear of Burning Alive",
-		"Unreferenced spawnedByDraftEffect card: Viridian Emissary"
-	]
+  "compiledAt": "2026-10-01T10:06:07Z",
+  "compilerVersion": "2.0.0",
+  "configSha256": "642c82fc432f4979a7e54271ed5ff441bdff761ed106ede65f33011e4a9a7ff0",
+  "counts": {
+    "customCards": 66,
+    "draftEffectCards": 52,
+    "sheets": {
+      "commander": 144,
+      "land": 160,
+      "mono": 657
+    },
+    "sourceRows": 1114,
+    "warnings": 2
+  },
+  "cube": {
+    "fetchedAt": "2026-09-30T17:00:55Z",
+    "id": "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
+    "recoveredPhase1Source": false,
+    "sourceSha256": "d5d18e520ec31715a4c59fdadf296ed930d738966673264aa9f9b117ca6fe0c9"
+  },
+  "environmentProfile": {
+    "branding": {
+      "backdrop": "/img/gulchdale-landing.jpg",
+      "cardBack": "/img/gulchdale-card-back.png",
+      "lobbyBackdrop": "/img/gulchdale-campfire.webp",
+      "logo": "/img/gulchdale-logo.png",
+      "seatTravelerSilhouettes": [
+        "/img/gulchdale-traveler-1.webp",
+        "/img/gulchdale-traveler-seat-2.webp",
+        "/img/gulchdale-traveler-seat-3.webp",
+        "/img/gulchdale-traveler-seat-4.webp",
+        "/img/gulchdale-traveler-seat-5.webp",
+        "/img/gulchdale-traveler-2.webp",
+        "/img/gulchdale-traveler-seat-7.webp",
+        "/img/gulchdale-traveler-seat-8.webp"
+      ],
+      "seatedTravelerSilhouette": "/img/gulchdale-traveler-seated.webp",
+      "travelerSilhouettes": [
+        "/img/gulchdale-traveler-1.webp",
+        "/img/gulchdale-traveler-2.webp",
+        "/img/gulchdale-traveler-3.webp",
+        "/img/gulchdale-traveler-4.webp"
+      ]
+    },
+    "displayName": "Gulchdale",
+    "id": "classic",
+    "stages": [
+      {
+        "label": "Commanders' Call",
+        "layout": "pack1"
+      },
+      {
+        "label": "Allies Gather",
+        "layout": "pack2"
+      },
+      {
+        "label": "The Long Night",
+        "layout": "pack3"
+      },
+      {
+        "label": "Claim the Land",
+        "layout": "landpack"
+      }
+    ]
+  },
+  "environmentSha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68",
+  "schemaVersion": 1,
+  "scryfallSha256": "c3b149935af1ac1cc3a189781f17a695975a95b9dade62c72f2e98dac8b39a05",
+  "version": "gch-bfc40f9519b9",
+  "warnings": [
+    "Unreferenced spawnedByDraftEffect card: Fear of Burning Alive",
+    "Unreferenced spawnedByDraftEffect card: Viridian Emissary"
+  ]
 }

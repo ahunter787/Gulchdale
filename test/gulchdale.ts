@@ -26,7 +26,21 @@ describe("Gulchdale environment", () => {
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE)).to.equal(true);
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.stages)).to.equal(true);
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.branding)).to.equal(true);
+		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.branding.seatTravelerSilhouettes)).to.equal(true);
 		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.lobbyBackdrop).to.equal("/img/gulchdale-campfire.webp");
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.seatedTravelerSilhouette).to.equal(
+			"/img/gulchdale-traveler-seated.webp"
+		);
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.seatTravelerSilhouettes).to.deep.equal([
+			"/img/gulchdale-traveler-1.webp",
+			"/img/gulchdale-traveler-seat-2.webp",
+			"/img/gulchdale-traveler-seat-3.webp",
+			"/img/gulchdale-traveler-seat-4.webp",
+			"/img/gulchdale-traveler-seat-5.webp",
+			"/img/gulchdale-traveler-2.webp",
+			"/img/gulchdale-traveler-seat-7.webp",
+			"/img/gulchdale-traveler-seat-8.webp",
+		]);
 		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.travelerSilhouettes).to.have.length(4);
 		expect(GULCHDALE_ENVIRONMENT_PROFILE.stages.map((stage) => stage.layout)).to.deep.equal([
 			"pack1",
