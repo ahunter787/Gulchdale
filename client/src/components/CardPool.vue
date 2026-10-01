@@ -578,10 +578,10 @@ const columnNames = computed(() => {
 			for (let i = 0; i < rows.value[0].length; ++i) {
 				let cards = rows.value.map((row) => row[i]).flat();
 				if (cards.length === 0 && i <= 20) {
-					r.push(`<img class="mana-icon" src="img/mana/${i}.svg">`);
+					r.push(`<img class="mana-icon" src="/img/mana/${i}.svg">`);
 				} else {
 					let v = [...new Set(cards.map((c) => c.cmc))];
-					if (v.length === 1) r.push(`<img class="mana-icon" src="img/mana/${v[0]}.svg">`);
+					if (v.length === 1) r.push(`<img class="mana-icon" src="/img/mana/${v[0]}.svg">`);
 					else r.push("");
 				}
 			}
@@ -591,13 +591,13 @@ const columnNames = computed(() => {
 			for (let i = 0; i < rows.value[0].length; ++i) {
 				const cards = rows.value.map((row) => row[i]).flat();
 				if (cards.length === 0 && i < defaultValues.length) {
-					r.push(`<img class="mana-icon" src="img/mana/${defaultValues[i]}.svg">`);
+					r.push(`<img class="mana-icon" src="/img/mana/${defaultValues[i]}.svg">`);
 				} else {
 					let v = [...new Set(cards.map((c) => c.colors).flat())];
 					let c = "M";
 					if (v.length === 1) c = v[0];
 					else if (v.length === 0) c = "C";
-					r.push(`<img class="mana-icon" src="img/mana/${c}.svg">`);
+					r.push(`<img class="mana-icon" src="/img/mana/${c}.svg">`);
 				}
 			}
 			break;

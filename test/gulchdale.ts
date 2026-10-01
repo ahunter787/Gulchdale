@@ -26,6 +26,8 @@ describe("Gulchdale environment", () => {
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE)).to.equal(true);
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.stages)).to.equal(true);
 		expect(Object.isFrozen(GULCHDALE_ENVIRONMENT_PROFILE.branding)).to.equal(true);
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.lobbyBackdrop).to.equal("/img/gulchdale-campfire.webp");
+		expect(GULCHDALE_ENVIRONMENT_PROFILE.branding.travelerSilhouettes).to.have.length(4);
 		expect(GULCHDALE_ENVIRONMENT_PROFILE.stages.map((stage) => stage.layout)).to.deep.equal([
 			"pack1",
 			"pack2",

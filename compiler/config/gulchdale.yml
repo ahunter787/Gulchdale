@@ -15,6 +15,12 @@ profile:
         logo: /img/gulchdale-logo.png
         card_back: /img/gulchdale-card-back.png
         backdrop: /img/gulchdale-landing.jpg
+        lobby_backdrop: /img/gulchdale-campfire.webp
+        traveler_silhouettes:
+            - /img/gulchdale-traveler-1.webp
+            - /img/gulchdale-traveler-2.webp
+            - /img/gulchdale-traveler-3.webp
+            - /img/gulchdale-traveler-4.webp
 cube:
     id: f1c8be0f-7ac3-420f-81eb-ec8933ce45fa
     name: Gulchdale

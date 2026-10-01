@@ -68,7 +68,13 @@ type GulchdaleConfig = {
 		locked: boolean;
 		reportingEnabled: boolean;
 		stages: Array<{ layout: string; label: string }>;
-		branding: { logo: string; cardBack: string; backdrop: string };
+		branding: {
+			logo: string;
+			cardBack: string;
+			backdrop: string;
+			lobbyBackdrop: string;
+			travelerSilhouettes: string[];
+		};
 	};
 };
 
@@ -157,10 +163,10 @@ enum GameState {
 }
 
 export const Sounds: { [name: string]: HTMLAudioElement } = {
-	start: new Audio("sound/drop_003.ogg"),
-	next: new Audio("sound/next.mp3"),
-	countdown: new Audio("sound/click_001.ogg"),
-	readyCheck: new Audio("sound/drop_003.ogg"),
+	start: new Audio("/sound/drop_003.ogg"),
+	next: new Audio("/sound/next.mp3"),
+	countdown: new Audio("/sound/click_001.ogg"),
+	readyCheck: new Audio("/sound/drop_003.ogg"),
 };
 
 const localStorageSettingsKey = "draftmancer-settings";
@@ -379,6 +385,8 @@ export default defineComponent({
 						logo: "/img/gulchdale-logo.png",
 						cardBack: "/img/gulchdale-card-back.png",
 						backdrop: "/img/gulchdale-landing.jpg",
+						lobbyBackdrop: "/img/gulchdale-landing.jpg",
+						travelerSilhouettes: [],
 					},
 				},
 			} as GulchdaleConfig,
@@ -671,7 +679,6 @@ export default defineComponent({
 			});
 
 			this.socket.on("userDisconnected", (data) => {
-				if (!this.drafting) return;
 				this.sessionOwner = data.owner;
 				this.disconnectedUsers = data.disconnectedUsers;
 			});
@@ -3299,7 +3306,8 @@ export default defineComponent({
 			for (const b of boosters) {
 				const colors = b.colors
 					.map(
-						(c) => `<img src="img/mana/${c}.svg" class="mana-icon" style="vertical-align: text-top;"></img>`
+						(c) =>
+							`<img src="/img/mana/${c}.svg" class="mana-icon" style="vertical-align: text-top;"></img>`
 					)
 					.join(" ");
 				boostersDisplay += `<div class="pack-button clickable" style="text-align: center"><img src="${b.image}" style="display:block; min-width: 250px; min-height: 354px; max-width: 250px; max-height: 60vh; border-radius: 5% / 3%;; margin: auto;" /><h2>${colors}<br />${b.name}</h2></div>`;

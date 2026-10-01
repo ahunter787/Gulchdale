@@ -22,7 +22,7 @@
 				class="yellow missing-warning"
 				v-if="!hasenoughwildcards"
 			/>
-			<img class="wildcard-icon" :src="`img/wc_${card.rarity}.webp`" />
+			<img class="wildcard-icon" :src="`/img/wc_${card.rarity}.webp`" />
 		</div>
 		<div class="bot-score" v-if="displayBotScore">{{ displayBotScore }}</div>
 		<template v-if="canbeburned && !selected">

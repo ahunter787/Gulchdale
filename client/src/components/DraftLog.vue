@@ -127,7 +127,7 @@
 					</div>
 					<!-- Color Summary of the picks, explicitly hidden for other players if the details are supposed to be delayed (Don't leak it to the owner) -->
 					<span class="color-list" v-if="(!draftlog.delayed || log.userID === userID) && log.colors">
-						<img v-for="c in log.colors" :key="c" :src="'img/mana/' + c + '.svg'" class="mana-icon" />
+						<img v-for="c in log.colors" :key="c" :src="'/img/mana/' + c + '.svg'" class="mana-icon" />
 					</span>
 				</li>
 			</ul>

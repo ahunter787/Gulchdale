@@ -22,7 +22,7 @@
 					</tr>
 					<tr v-for="(data, cmc) in manacurve" :key="cmc">
 						<td class="table-number">
-							<img :src="`img/mana/${cmc}.svg`" class="mana-icon" />
+							<img :src="`/img/mana/${cmc}.svg`" class="mana-icon" />
 						</td>
 						<td class="table-number">{{ data.creatures }}</td>
 						<td class="table-number">{{ data.nonCreatures }}</td>

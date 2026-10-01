@@ -56,6 +56,26 @@ describe("Gulchdale production engine acceptance", function () {
 		});
 	});
 
+	it("reserves and restores a disconnected lobby seat", function (done) {
+		const reconnecting = clients[nonOwnerIdx];
+		const reconnectingID = getUID(reconnecting);
+		const reconnectingName = Connections[reconnectingID].userName;
+		clients[ownerIdx].once("userDisconnected", (data) => {
+			expect(data.disconnectedUsers[reconnectingID]?.userName).to.equal(reconnectingName);
+			expect(Sessions[sessionID].users.has(reconnectingID)).to.equal(false);
+			expect(Sessions[sessionID].userOrder).to.include(reconnectingID);
+			waitForSocket(reconnecting, () => {
+				reconnecting.once("sessionUsers", (users) => {
+					expect(users.some((user) => user.userID === reconnectingID)).to.equal(true);
+					expect(Sessions[sessionID].disconnectedUsers).to.not.have.property(reconnectingID);
+					done();
+				});
+				reconnecting.connect();
+			});
+		});
+		reconnecting.disconnect();
+	});
+
 	it("starts the four-stage draft with two humans and six bots", function (done) {
 		let receivedStates = 0;
 		for (const client of clients) {

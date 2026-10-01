@@ -3,12 +3,12 @@
 		<h1>Choose a color</h1>
 		<div style="margin-left: 1em; margin-right: 1em">For {{ userName }}'s '{{ card.name }}'</div>
 		<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5em">
-			<img v-for="c in availableChoices" :key="c" @click="select(c)" class="choice" :src="`img/mana/${c}.svg`" />
+			<img v-for="c in availableChoices" :key="c" @click="select(c)" class="choice" :src="`/img/mana/${c}.svg`" />
 		</div>
 		<CardComponent :card="card">
 			<div v-if="(card.state?.colors?.length ?? 0) > 0" style="position: absolute; left: -2em; top: 1em">
 				<div style="display: flex; flex-direction: column; gap: 0.5em">
-					<img v-for="c in card.state!.colors" :key="c" class="mana-icon" :src="`img/mana/${c}.svg`" />
+					<img v-for="c in card.state!.colors" :key="c" class="mana-icon" :src="`/img/mana/${c}.svg`" />
 				</div>
 			</div>
 		</CardComponent>

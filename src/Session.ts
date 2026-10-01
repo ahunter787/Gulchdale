@@ -369,16 +369,17 @@ export class Session implements IIndexable {
 		this.emitToConnectedUsers("sessionOptions", { virtualPlayersData: this.getSortedVirtualPlayerData() });
 	}
 
-	remUser(userID: UserID) {
+	remUser(userID: UserID, reserveDisconnected: boolean = false) {
 		// Nothing to do if the user wasn't playing
 		if (userID === this.owner && !this.ownerIsPlayer) return;
 
 		this.users.delete(userID);
+		const reserveLobbySeat = reserveDisconnected && this.environmentLocked && !this.drafting;
 
 		// User was the owner of the session, transfer ownership to the first available users.
-		if (this.owner === userID) this.owner = this.users.values().next().value;
+		if (this.owner === userID && !reserveLobbySeat) this.owner = this.users.values().next().value;
 
-		if (this.drafting) {
+		if (this.drafting || reserveLobbySeat) {
 			if (this.managed) {
 				// If user is still disconnected after a timeout, replace them by a bot.
 				const timeoutSeconds = 30;
@@ -395,13 +396,23 @@ export class Session implements IIndexable {
 				}, timeoutSeconds * 1000);
 			}
 			if (!this.disconnectedUsers[userID]) {
-				this.stopCountdown(userID);
+				if (this.drafting) this.stopCountdown(userID);
 				this.disconnectedUsers[userID] = this.getDisconnectedUserData(userID);
 				this.broadcastDisconnectedUsers();
 			}
 		} else {
 			this.userOrder.splice(this.userOrder.indexOf(userID), 1);
 		}
+	}
+
+	reconnectLobbyUser(userID: UserID) {
+		const disconnected = this.disconnectedUsers[userID];
+		if (this.drafting || !this.environmentLocked || !disconnected) return;
+
+		Connections[userID].pickedCards = disconnected.pickedCards;
+		delete this.disconnectedUsers[userID];
+		this.addUser(userID);
+		this.broadcastDisconnectedUsers();
 	}
 
 	setBoostersPerPlayer(boostersPerPlayer: number, userID: UserID | null = null) {

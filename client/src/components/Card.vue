@@ -28,7 +28,7 @@
 			</template>
 
 			<div v-if="notedColors" class="noted-colors">
-				<img v-for="c in notedColors" :key="c" class="mana-icon" :src="`img/mana/${c}.svg`" />
+				<img v-for="c in notedColors" :key="c" class="mana-icon" :src="`/img/mana/${c}.svg`" />
 			</div>
 		</div>
 		<slot></slot>

@@ -126,7 +126,9 @@ def load_rows(csv_path: Path) -> list[CardRow]:
                 name = str(raw.get(name_col, "") or "").strip()
                 if not name:
                     raise CompilerError(f"CSV row {index} has no card name.")
-                board = str(raw.get(board_col, "mainboard") or "mainboard").strip().lower() if board_col else "mainboard"
+                board = (
+                    str(raw.get(board_col, "mainboard") or "mainboard").strip().lower() if board_col else "mainboard"
+                )
                 maybe = _truthy(raw.get(maybe_col, "")) if maybe_col else False
                 if maybe and board == "mainboard":
                     raise CompilerError(f"{name}: board=mainboard conflicts with maybeboard=true.")
@@ -137,8 +139,12 @@ def load_rows(csv_path: Path) -> list[CardRow]:
                         name=name,
                         set_code=str(raw.get(set_col, "") or "").strip().lower(),
                         collector_number=str(raw.get(number_col, "") or "").strip(),
-                        tags=tuple(item.strip() for item in str(raw.get(tags_col, "") or "").split(";") if item.strip()),
-                        notes=tuple(item.strip() for item in str(raw.get(notes_col, "") or "").splitlines() if item.strip()),
+                        tags=tuple(
+                            item.strip() for item in str(raw.get(tags_col, "") or "").split(";") if item.strip()
+                        ),
+                        notes=tuple(
+                            item.strip() for item in str(raw.get(notes_col, "") or "").splitlines() if item.strip()
+                        ),
                         board=board or "mainboard",
                         maybeboard=False,
                         source_index=index,
@@ -194,7 +200,10 @@ def _metadata_for(row: CardRow, metadata: Mapping[str, Mapping[str, str]]) -> Ma
         raise CompilerError(f"{row.name}: missing cached Scryfall metadata for {key}.")
     if item.get("name", "").lower() != row.name.lower():
         raise CompilerError(f"{row.name}: Scryfall metadata for {key} resolves to {item.get('name', 'unknown')}.")
-    if item.get("set", row.set_code).lower() != row.set_code or str(item.get("collector_number", row.collector_number)) != row.collector_number:
+    if (
+        item.get("set", row.set_code).lower() != row.set_code
+        or str(item.get("collector_number", row.collector_number)) != row.collector_number
+    ):
         raise CompilerError(f"{row.name}: cached Scryfall printing does not match exact identifier {key}.")
     return item
 
@@ -245,15 +254,15 @@ def _render_settings(payload: Mapping[str, Any]) -> str:
                     space = " " if comma else ""
                     lines.append(
                         f'                "{sheet}"{(" " if name == "pack2" and sheet == "mono" else "")}: '
-                        f'{int(count)}{comma}{space}'
+                        f"{int(count)}{comma}{space}"
                     )
-            lines.extend(["            } " if len(slots) == 1 and name == "landpack" else "            }", "        },"])
+            lines.extend(
+                ["            } " if len(slots) == 1 and name == "landpack" else "            }", "        },"]
+            )
     lines.extend(
         [
             "    },",
-            '    "predeterminedLayouts": '
-            + json.dumps(payload["predeterminedLayouts"], separators=(",", ":"))
-            + ",",
+            '    "predeterminedLayouts": ' + json.dumps(payload["predeterminedLayouts"], separators=(",", ":")) + ",",
             "}",
         ]
     )
@@ -349,9 +358,7 @@ def compile_environment(source_path: Path, metadata_path: Path, config_path: Pat
         for tribe_name, requested in pack_requests:
             pool = tribe_pools[tribe_name]
             if requested <= 0 or requested > len(pool):
-                raise CompilerError(
-                    f"{row.name}: requested {requested} {tribe_name} cards from a pool of {len(pool)}."
-                )
+                raise CompilerError(f"{row.name}: requested {requested} {tribe_name} cards from a pool of {len(pool)}.")
             effects.append(
                 {
                     "type": "AddCards",
@@ -522,12 +529,14 @@ def manifest_for(
             ],
             "branding": {
                 "logo": str(active_profile.get("branding", {}).get("logo", "/img/gulchdale-logo.png")),
-                "cardBack": str(
-                    active_profile.get("branding", {}).get("card_back", "/img/gulchdale-card-back.png")
+                "cardBack": str(active_profile.get("branding", {}).get("card_back", "/img/gulchdale-card-back.png")),
+                "backdrop": str(active_profile.get("branding", {}).get("backdrop", "/img/gulchdale-landing.jpg")),
+                "lobbyBackdrop": str(
+                    active_profile.get("branding", {}).get("lobby_backdrop", "/img/gulchdale-landing.jpg")
                 ),
-                "backdrop": str(
-                    active_profile.get("branding", {}).get("backdrop", "/img/gulchdale-landing.jpg")
-                ),
+                "travelerSilhouettes": [
+                    str(asset) for asset in active_profile.get("branding", {}).get("traveler_silhouettes", [])
+                ],
             },
         },
         "cube": {
@@ -545,7 +554,9 @@ def manifest_for(
     }
 
 
-def write_candidate(root: Path, result: CompileResult, source: Path, metadata: Path, manifest: Mapping[str, Any]) -> Path:
+def write_candidate(
+    root: Path, result: CompileResult, source: Path, metadata: Path, manifest: Mapping[str, Any]
+) -> Path:
     candidate = root / ".gulchdale/build" / result.version
     if candidate.exists():
         shutil.rmtree(candidate)
@@ -560,9 +571,7 @@ def write_candidate(root: Path, result: CompileResult, source: Path, metadata: P
 
 
 def validate_with_engine(root: Path, environment: Path) -> None:
-    validator = Path(
-        os.environ.get("GULCHDALE_VALIDATOR", str(root / "dist/src/tools/validateGulchdaleCandidate.js"))
-    )
+    validator = Path(os.environ.get("GULCHDALE_VALIDATOR", str(root / "dist/src/tools/validateGulchdaleCandidate.js")))
     if not validator.exists():
         raise CompilerError("Draftmancer validator is not built. Run `npm run build-server` first.")
     completed = subprocess.run(
@@ -611,13 +620,17 @@ def sync_metadata(source: Path, destination: Path, existing: Path | None, config
         try:
             response = session.post(
                 "https://api.scryfall.com/cards/collection",
-                json={"identifiers": [{"set": row.set_code, "collector_number": row.collector_number} for row in batch]},
+                json={
+                    "identifiers": [{"set": row.set_code, "collector_number": row.collector_number} for row in batch]
+                },
                 timeout=SCRYFALL_TIMEOUT_SECONDS,
             )
             response.raise_for_status()
             payload = response.json()
         except (requests.RequestException, ValueError) as exc:
-            raise CompilerError(f"Unable to resolve Scryfall metadata batch at source row {batch[0].source_index}: {exc}") from exc
+            raise CompilerError(
+                f"Unable to resolve Scryfall metadata batch at source row {batch[0].source_index}: {exc}"
+            ) from exc
         if payload.get("not_found"):
             raise CompilerError(f"Scryfall could not resolve exact printings: {payload['not_found']}")
         returned = list(payload.get("data", []))
@@ -731,7 +744,9 @@ def environment_summary(path: Path) -> dict[str, Any]:
     text = path.read_text(encoding="utf-8")
     headers = list(re.finditer(r"^\[([^]]+)]$", text, re.MULTILINE))
     sections = {
-        match.group(1): text[match.end() : headers[index + 1].start() if index + 1 < len(headers) else len(text)].strip()
+        match.group(1): text[
+            match.end() : headers[index + 1].start() if index + 1 < len(headers) else len(text)
+        ].strip()
         for index, match in enumerate(headers)
     }
     custom_cards = json.loads(sections["CustomCards"])

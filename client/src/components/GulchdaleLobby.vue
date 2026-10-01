@@ -4,7 +4,7 @@
 			<div>
 				<p class="gulchdale-lobby__kicker">Campfire lobby</p>
 				<h1 id="lobby-title">Gather your party</h1>
-				<p>{{ environmentName }} <span>·</span> {{ environmentVersion }}</p>
+				<p>{{ environmentName }} <span aria-hidden="true">·</span> {{ environmentVersion }}</p>
 			</div>
 			<div class="gulchdale-lobby__code">
 				<img v-if="qrCode" :src="qrCode" alt="QR code for this Gulchdale invitation" />
@@ -16,25 +16,65 @@
 			</div>
 		</header>
 
-		<div class="gulchdale-lobby__seats" :aria-label="`${occupiedSeats} of ${maxPlayers} seats occupied`">
-			<article v-for="seat in seats" :key="seat.index" class="gulchdale-seat" :class="{ occupied: seat.name }">
-				<div class="gulchdale-seat__ember" aria-hidden="true"></div>
-				<span class="gulchdale-seat__number">{{ seat.index + 1 }}</span>
-				<strong>{{ seat.name || "Open seat" }}</strong>
-				<small v-if="seat.owner">Session owner</small>
-				<small v-else-if="seat.bot">Bot drafter</small>
-				<small v-else>{{ seat.name ? "Player" : "Awaiting player" }}</small>
-			</article>
+		<div
+			class="gulchdale-campfire"
+			:style="{ backgroundImage: `url(${lobbyBackdrop})` }"
+			:aria-label="`${occupiedSeats} of ${maxPlayers} seats occupied`"
+		>
+			<div class="gulchdale-campfire__glow" aria-hidden="true"></div>
+			<div class="gulchdale-campfire__embers" aria-hidden="true">
+				<i v-for="ember in 8" :key="ember"></i>
+			</div>
+			<ol class="gulchdale-campfire__seats">
+				<li
+					v-for="seat in seats"
+					:key="seat.key"
+					class="gulchdale-seat"
+					:class="[
+						`gulchdale-seat--${seat.index + 1}`,
+						{
+							'gulchdale-seat--occupied': seat.name,
+							'gulchdale-seat--owner': seat.owner,
+							'gulchdale-seat--bot': seat.bot,
+							'gulchdale-seat--ready': seat.ready,
+							'gulchdale-seat--disconnected': seat.disconnected,
+							'gulchdale-seat--mirrored': seat.index % 2 === 1,
+						},
+					]"
+				>
+					<img
+						v-if="seat.name && seat.artwork"
+						class="gulchdale-seat__traveler"
+						:src="seat.artwork"
+						alt=""
+						aria-hidden="true"
+					/>
+					<div v-else class="gulchdale-seat__empty" aria-hidden="true"><i></i></div>
+					<div class="gulchdale-seat__nameplate">
+						<span class="gulchdale-seat__number">{{ seat.index + 1 }}</span>
+						<strong>{{ seat.name || "Open seat" }}</strong>
+						<small>{{ seat.status }}</small>
+					</div>
+				</li>
+			</ol>
 		</div>
 
 		<div class="gulchdale-lobby__controls">
 			<div v-if="isOwner" class="gulchdale-lobby__setting">
 				<label for="gulchdale-bots">Bots</label>
 				<div class="gulchdale-stepper">
-					<button type="button" :disabled="bots <= 0" @click="$emit('update:bots', bots - 1)">−</button>
+					<button
+						type="button"
+						aria-label="Remove a bot"
+						:disabled="bots <= 0"
+						@click="$emit('update:bots', bots - 1)"
+					>
+						−
+					</button>
 					<output id="gulchdale-bots">{{ bots }}</output>
 					<button
 						type="button"
+						aria-label="Add a bot"
 						:disabled="occupiedSeats >= maxPlayers"
 						@click="$emit('update:bots', bots + 1)"
 					>
@@ -78,21 +118,23 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import QRCode from "qrcode";
-
-type LobbyUser = { userID: string; userName: string };
+import { buildCampfireSeats, CampfireSeat, DisconnectedUsers, LobbyUser } from "../gulchdaleLobby";
 
 export default defineComponent({
 	name: "GulchdaleLobby",
 	data: () => ({ qrCode: "" }),
 	props: {
 		bots: { type: Number, required: true },
+		disconnectedUsers: { type: Object as PropType<DisconnectedUsers>, default: () => ({}) },
 		environmentName: { type: String, required: true },
 		environmentVersion: { type: String, required: true },
 		isOwner: { type: Boolean, required: true },
+		lobbyBackdrop: { type: String, required: true },
 		maxPlayers: { type: Number, required: true },
 		sessionID: { type: String, required: true },
 		sessionOwner: { type: String, default: "" },
 		timer: { type: Number, required: true },
+		travelerSilhouettes: { type: Array as PropType<string[]>, default: () => [] },
 		users: { type: Array as PropType<LobbyUser[]>, required: true },
 	},
 	emits: ["ready-check", "share", "start", "update:bots", "update:timer"],
@@ -106,12 +148,10 @@ export default defineComponent({
 	},
 	methods: {
 		async renderQRCode() {
-			const invitation = `${window.location.origin}/join/${encodeURIComponent(this.inviteCode)}`;
-			this.qrCode = await QRCode.toDataURL(invitation, {
-				width: 112,
-				margin: 1,
-				color: { dark: "#071315", light: "#e6f5f2" },
-			});
+			this.qrCode = await QRCode.toDataURL(
+				`${window.location.origin}/join/${encodeURIComponent(this.inviteCode)}`,
+				{ width: 112, margin: 1, color: { dark: "#071315", light: "#e6f5f2" } }
+			);
 		},
 	},
 	computed: {
@@ -119,23 +159,17 @@ export default defineComponent({
 			return this.sessionID || window.location.pathname.split("/").filter(Boolean).at(-1) || "";
 		},
 		occupiedSeats(): number {
-			return this.users.length + this.bots;
+			return this.users.length + Object.keys(this.disconnectedUsers).length + this.bots;
 		},
-		seats(): Array<{ index: number; name: string; owner: boolean; bot: boolean }> {
-			const players = this.users.map((user) => ({
-				name: user.userName,
-				owner: user.userID === this.sessionOwner,
-				bot: false,
-			}));
-			const bots = Array.from({ length: this.bots }, (_, index) => ({
-				name: `Bot ${index + 1}`,
-				owner: false,
-				bot: true,
-			}));
-			return Array.from({ length: this.maxPlayers }, (_, index) => ({
-				index,
-				...(players[index] ?? bots[index - players.length] ?? { name: "", owner: false, bot: false }),
-			}));
+		seats(): CampfireSeat[] {
+			return buildCampfireSeats({
+				users: this.users,
+				disconnectedUsers: this.disconnectedUsers,
+				bots: this.bots,
+				maxPlayers: this.maxPlayers,
+				sessionOwner: this.sessionOwner,
+				travelerSilhouettes: this.travelerSilhouettes,
+			});
 		},
 	},
 });
@@ -143,20 +177,26 @@ export default defineComponent({
 
 <style scoped>
 .gulchdale-lobby {
-	width: min(76rem, calc(100% - 2rem));
-	margin: 1.5rem auto 3rem;
-	padding: clamp(1rem, 3vw, 2rem);
-	box-sizing: border-box;
-	border: 1px solid rgba(113, 224, 225, 0.22);
-	border-radius: 1.2rem;
-	background: linear-gradient(145deg, rgba(5, 17, 20, 0.92), rgba(17, 14, 10, 0.9));
-	box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.45);
+	width: min(88rem, calc(100% - 2rem));
+	margin: 1rem auto 3rem;
+	color: #e8f1f1;
+}
+.gulchdale-lobby__header,
+.gulchdale-lobby__controls {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	border: 1px solid rgba(113, 224, 225, 0.2);
+	background: rgba(3, 12, 15, 0.9);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.36);
+	backdrop-filter: blur(12px);
 }
 .gulchdale-lobby__header {
-	display: flex;
 	justify-content: space-between;
-	gap: 1rem;
-	align-items: flex-start;
+	border-radius: 1rem 1rem 0 0;
 	text-align: left;
 }
 .gulchdale-lobby__kicker {
@@ -167,41 +207,45 @@ export default defineComponent({
 	font-size: 0.72rem;
 }
 h1 {
-	margin: 0.25rem 0;
+	margin: 0.15rem 0;
 	color: #f1d287;
 	font-family: Georgia, serif;
-	font-size: clamp(2rem, 4vw, 3rem);
+	font-size: clamp(1.8rem, 4vw, 3rem);
 }
 .gulchdale-lobby__header p {
+	margin: 0;
 	color: #aebfc0;
 }
 .gulchdale-lobby__code {
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
-	padding: 0.65rem 0.8rem;
+	padding: 0.5rem 0.75rem;
 	text-align: center;
 	border: 1px solid rgba(240, 205, 123, 0.28);
 	border-radius: 0.8rem;
 	background: rgba(0, 0, 0, 0.28);
 }
 .gulchdale-lobby__code img {
-	width: 4.5rem;
-	height: 4.5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 0.3rem;
 }
-.gulchdale-lobby__code span {
+.gulchdale-lobby__code span,
+.gulchdale-seat small {
 	display: block;
 	color: #9eb1b2;
-	font-size: 0.72rem;
+	font-size: 0.7rem;
+}
+.gulchdale-lobby__code span {
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
 }
 .gulchdale-lobby__code strong {
 	display: block;
-	margin: 0.25rem 0;
+	margin: 0.15rem 0;
 	color: #f3d58f;
-	font-size: 1.55rem;
+	font-size: 1.4rem;
 	letter-spacing: 0.18em;
 }
 .gulchdale-lobby__code button {
@@ -210,71 +254,209 @@ h1 {
 	background: transparent;
 	cursor: pointer;
 }
-.gulchdale-lobby__seats {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 0.7rem;
-	margin: 1.5rem 0;
+.gulchdale-campfire {
+	position: relative;
+	min-height: clamp(31rem, 52vw, 47rem);
+	overflow: hidden;
+	background-color: #071014;
+	background-position: center;
+	background-size: cover;
+	box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+.gulchdale-campfire::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: linear-gradient(180deg, rgba(2, 8, 12, 0.12), transparent 40%, rgba(2, 8, 10, 0.4));
+}
+.gulchdale-campfire__glow {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 61%;
+	width: 26%;
+	aspect-ratio: 1;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 171, 62, 0.3), rgba(255, 103, 22, 0.08) 42%, transparent 70%);
+	animation: campfire-pulse 3.4s ease-in-out infinite alternate;
+}
+.gulchdale-campfire__embers,
+.gulchdale-campfire__seats {
+	position: absolute;
+	inset: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.gulchdale-campfire__embers {
+	z-index: 2;
+	pointer-events: none;
+}
+.gulchdale-campfire__embers i {
+	position: absolute;
+	left: calc(48% + var(--drift, 0%));
+	top: 65%;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+	background: #ffc05d;
+	box-shadow: 0 0 0.6rem #ff8127;
+	animation: ember-rise 3.8s linear infinite;
+}
+.gulchdale-campfire__embers i:nth-child(2n) {
+	--drift: 4%;
+	animation-delay: -1.2s;
+}
+.gulchdale-campfire__embers i:nth-child(3n) {
+	--drift: -3%;
+	animation-delay: -2.4s;
+}
+.gulchdale-campfire__embers i:nth-child(4n) {
+	--drift: 7%;
+	animation-delay: -3.1s;
 }
 .gulchdale-seat {
-	position: relative;
-	min-height: 5.2rem;
-	padding: 0.85rem 0.8rem 0.75rem 2.55rem;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	border-radius: 0.75rem;
-	text-align: left;
-	background: rgba(4, 10, 11, 0.58);
+	position: absolute;
+	z-index: 3;
+	width: 15%;
+	height: 35%;
+	min-width: 8rem;
+	filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.7));
 }
-.gulchdale-seat.occupied {
-	border-color: rgba(80, 204, 208, 0.3);
-	background: linear-gradient(135deg, rgba(9, 40, 42, 0.78), rgba(12, 17, 16, 0.8));
+.gulchdale-seat--1 {
+	left: 4%;
+	top: 35%;
+}
+.gulchdale-seat--2 {
+	left: 18%;
+	top: 24%;
+}
+.gulchdale-seat--3 {
+	left: 32%;
+	top: 19%;
+}
+.gulchdale-seat--4 {
+	right: 32%;
+	top: 19%;
+}
+.gulchdale-seat--5 {
+	right: 18%;
+	top: 24%;
+}
+.gulchdale-seat--6 {
+	right: 4%;
+	top: 35%;
+}
+.gulchdale-seat--7 {
+	left: 22%;
+	top: 51%;
+	z-index: 4;
+}
+.gulchdale-seat--8 {
+	right: 22%;
+	top: 51%;
+	z-index: 4;
+}
+.gulchdale-seat__traveler {
+	position: absolute;
+	left: 50%;
+	bottom: 2.4rem;
+	width: auto;
+	height: 100%;
+	max-width: 145%;
+	object-fit: contain;
+	transform: translateX(-50%);
+	transform-origin: bottom center;
+	transition:
+		filter 180ms ease,
+		opacity 180ms ease,
+		transform 180ms ease;
+}
+.gulchdale-seat--mirrored .gulchdale-seat__traveler {
+	transform: translateX(-50%) scaleX(-1);
+}
+.gulchdale-seat--bot .gulchdale-seat__traveler {
+	filter: saturate(0.7) hue-rotate(145deg) drop-shadow(0 0 0.7rem rgba(92, 221, 229, 0.5));
+}
+.gulchdale-seat--disconnected .gulchdale-seat__traveler {
+	opacity: 0.35;
+	filter: grayscale(0.8);
+}
+.gulchdale-seat__empty {
+	position: absolute;
+	left: 50%;
+	bottom: 3rem;
+	width: 2.3rem;
+	height: 2.3rem;
+	transform: translateX(-50%);
+	border: 1px solid rgba(120, 226, 228, 0.22);
+	border-radius: 50%;
+	background: rgba(4, 14, 16, 0.54);
+}
+.gulchdale-seat__empty i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0.55rem;
+	height: 0.55rem;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: #597071;
+	box-shadow: 0 0 0.8rem rgba(74, 203, 208, 0.35);
+}
+.gulchdale-seat__nameplate {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: min(12rem, 130%);
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	padding: 0.38rem 0.55rem;
+	border: 1px solid rgba(114, 220, 222, 0.22);
+	border-radius: 0.5rem;
+	background: rgba(3, 10, 12, 0.86);
+	text-align: center;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 .gulchdale-seat__number {
 	position: absolute;
-	left: 0.8rem;
-	top: 0.8rem;
-	color: #738889;
-}
-.gulchdale-seat__ember {
-	position: absolute;
-	left: 1rem;
-	bottom: 0.75rem;
-	width: 0.55rem;
-	height: 0.55rem;
-	border-radius: 50%;
-	background: #3c4e4e;
-}
-.occupied .gulchdale-seat__ember {
-	background: #e9a94a;
-	box-shadow: 0 0 1rem #d6792b;
-}
-.gulchdale-seat strong,
-.gulchdale-seat small {
-	display: block;
+	left: 0.38rem;
+	top: 0.35rem;
+	color: #6f898a;
+	font-size: 0.68rem;
 }
 .gulchdale-seat strong {
-	color: #e8f1f1;
+	display: block;
 	overflow: hidden;
+	color: #e8f1f1;
+	font-size: clamp(0.72rem, 1vw, 0.92rem);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.gulchdale-seat small {
-	margin-top: 0.3rem;
-	color: #8fa5a6;
+.gulchdale-seat--owner .gulchdale-seat__nameplate {
+	border-color: rgba(242, 208, 126, 0.68);
+	box-shadow: 0 0 1.2rem rgba(227, 161, 55, 0.26);
+}
+.gulchdale-seat--ready .gulchdale-seat__nameplate {
+	background: rgba(6, 37, 39, 0.9);
+	border-color: rgba(103, 226, 226, 0.58);
+}
+.gulchdale-seat--disconnected .gulchdale-seat__nameplate {
+	border-style: dashed;
+	opacity: 0.78;
 }
 .gulchdale-lobby__controls {
-	display: flex;
 	align-items: end;
-	gap: 1rem;
-	padding-top: 1rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 0 0 1rem 1rem;
 }
 .gulchdale-lobby__setting {
 	text-align: left;
 }
 .gulchdale-lobby__setting label {
 	display: block;
-	margin: 0 0 0.4rem;
+	margin: 0 0 0.35rem;
 	color: #aebfc0;
 	font-size: 0.8rem;
 }
@@ -309,6 +491,9 @@ select {
 	align-items: center;
 	gap: 0.7rem;
 }
+.gulchdale-lobby__actions p {
+	color: #aebfc0;
+}
 .gulchdale-lobby__actions button {
 	min-height: 2.7rem;
 	padding: 0.65rem 1.2rem;
@@ -330,9 +515,57 @@ select:focus-visible {
 	outline: 3px solid #75dfe2;
 	outline-offset: 2px;
 }
-@media (max-width: 800px) {
-	.gulchdale-lobby__seats {
-		grid-template-columns: repeat(2, 1fr);
+@keyframes campfire-pulse {
+	to {
+		transform: translate(-50%, -50%) scale(1.12);
+		opacity: 0.78;
+	}
+}
+@keyframes ember-rise {
+	0% {
+		transform: translate(0, 0) scale(0.55);
+		opacity: 0;
+	}
+	18% {
+		opacity: 0.9;
+	}
+	100% {
+		transform: translate(1rem, -8rem) scale(0);
+		opacity: 0;
+	}
+}
+@media (max-width: 900px) {
+	.gulchdale-campfire {
+		min-height: 36rem;
+	}
+	.gulchdale-seat {
+		width: 18%;
+		height: 30%;
+		min-width: 6.5rem;
+	}
+	.gulchdale-seat--1 {
+		left: 1%;
+	}
+	.gulchdale-seat--2 {
+		left: 16%;
+	}
+	.gulchdale-seat--3 {
+		left: 31%;
+	}
+	.gulchdale-seat--4 {
+		right: 31%;
+	}
+	.gulchdale-seat--5 {
+		right: 16%;
+	}
+	.gulchdale-seat--6 {
+		right: 1%;
+	}
+	.gulchdale-seat--7 {
+		left: 20%;
+	}
+	.gulchdale-seat--8 {
+		right: 20%;
 	}
 	.gulchdale-lobby__controls {
 		flex-wrap: wrap;
@@ -343,21 +576,105 @@ select:focus-visible {
 		justify-content: flex-end;
 	}
 }
-@media (max-width: 520px) {
+@media (max-width: 620px) {
+	.gulchdale-lobby {
+		width: calc(100% - 1rem);
+	}
 	.gulchdale-lobby__header {
 		display: block;
 	}
 	.gulchdale-lobby__code {
-		margin-top: 1rem;
+		margin-top: 0.8rem;
+		justify-content: center;
 	}
-	.gulchdale-lobby__seats {
-		grid-template-columns: 1fr;
+	.gulchdale-campfire {
+		min-height: 39rem;
+		padding: 9rem 0.6rem 0.8rem;
+		box-sizing: border-box;
+		background-position: 50% top;
+	}
+	.gulchdale-campfire__glow,
+	.gulchdale-campfire__embers {
+		display: none;
+	}
+	.gulchdale-campfire::after {
+		background: linear-gradient(180deg, transparent 10%, rgba(2, 8, 10, 0.78) 33%);
+	}
+	.gulchdale-campfire__seats {
+		position: relative;
+		z-index: 4;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.55rem;
+	}
+	.gulchdale-seat,
+	.gulchdale-seat--1,
+	.gulchdale-seat--2,
+	.gulchdale-seat--3,
+	.gulchdale-seat--4,
+	.gulchdale-seat--5,
+	.gulchdale-seat--6,
+	.gulchdale-seat--7,
+	.gulchdale-seat--8 {
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+		width: auto;
+		height: 5.3rem;
+		min-width: 0;
+		filter: none;
+	}
+	.gulchdale-seat__traveler {
+		left: 0.4rem;
+		bottom: 0.35rem;
+		height: 4.6rem;
+		max-width: 3.8rem;
+		transform: none;
+	}
+	.gulchdale-seat--mirrored .gulchdale-seat__traveler {
+		transform: scaleX(-1);
+	}
+	.gulchdale-seat__empty {
+		left: 1.9rem;
+		bottom: 1.5rem;
+		transform: none;
+	}
+	.gulchdale-seat__nameplate {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		transform: none;
+		padding: 1.25rem 0.4rem 0.4rem 4.2rem;
+		text-align: left;
+	}
+	.gulchdale-seat__number {
+		left: auto;
+		right: 0.4rem;
 	}
 	.gulchdale-lobby__actions {
 		display: grid;
 	}
 	.gulchdale-lobby__actions button {
 		width: 100%;
+	}
+}
+@media (max-width: 400px) {
+	.gulchdale-campfire {
+		min-height: 65rem;
+	}
+	.gulchdale-campfire__seats {
+		grid-template-columns: 1fr;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.gulchdale-campfire__glow,
+	.gulchdale-campfire__embers i {
+		animation: none;
+	}
+	.gulchdale-seat__traveler {
+		transition: none;
 	}
 }
 </style>

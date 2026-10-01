@@ -31,7 +31,7 @@
 			<table style="margin: auto">
 				<tbody>
 					<tr v-for="(value, rarity) in collectionInfos.wildcards" :key="rarity">
-						<td><img class="wildcard-icon" :src="`img/wc_${rarity}.webp`" /></td>
+						<td><img class="wildcard-icon" :src="`/img/wc_${rarity}.webp`" /></td>
 						<td>{{ value }}</td>
 					</tr>
 					<tr

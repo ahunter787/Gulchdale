@@ -16,7 +16,7 @@
 					@contextmenu.prevent="rem(c)"
 					class="clickable"
 				>
-					<img :src="`img/mana/${c}.svg`" class="mana-icon" />
+					<img :src="`/img/mana/${c}.svg`" class="mana-icon" />
 					{{ lands[c] }}
 				</span>
 			</span>
@@ -34,7 +34,7 @@
 					:class="{ disabled: lands[c] <= 0 }"
 				/>
 				<img
-					:src="`img/mana/${c}.svg`"
+					:src="`/img/mana/${c}.svg`"
 					class="mana-icon clickable"
 					@click="add(c)"
 					@contextmenu.prevent="rem(c)"
@@ -48,7 +48,7 @@
 					@input="updateLands($event, c)"
 					min="0"
 					max="999"
-					onclick="this.select();"
+					onclick="this.select()"
 				/>
 				<font-awesome-icon icon="fa-solid fa-plus" size="lg" class="clickable" @click="add(c)" />
 			</div>

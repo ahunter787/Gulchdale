@@ -56,9 +56,9 @@ def test_partners_tribes_adornments_and_custom_images_compile() -> None:
 def test_csv_multiline_notes_and_mainboard_filtering(tmp_path: Path) -> None:
     source = tmp_path / "source.csv"
     source.write_text(
-        'name,Set,Collector Number,board,maybeboard,tags,Notes\n'
+        "name,Set,Collector Number,board,maybeboard,tags,Notes\n"
         'Main,tst,1,mainboard,false,mono,"one\ntwo"\n'
-        'Maybe,tst,2,maybeboard,true,mono,\n',
+        "Maybe,tst,2,maybeboard,true,mono,\n",
         encoding="utf-8",
     )
     rows = core.load_rows(source)
@@ -101,9 +101,7 @@ def test_complete_metadata_cache_rebuilds_offline(monkeypatch: pytest.MonkeyPatc
     assert destination.read_bytes() == (FIXTURE / "scryfall.json").read_bytes()
 
 
-def test_promotion_revalidates_and_replaces_all_active_files(
-    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
-) -> None:
+def test_promotion_revalidates_and_replaces_all_active_files(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
     root = tmp_path / "repository"
     shutil.copytree(REPOSITORY / "compiler/config", root / "compiler/config")
     result = compile_fixture()
@@ -122,6 +120,8 @@ def test_promotion_revalidates_and_replaces_all_active_files(
         "pack3",
         "landpack",
     ]
+    assert manifest["environmentProfile"]["branding"]["lobbyBackdrop"].endswith("gulchdale-campfire.webp")
+    assert len(manifest["environmentProfile"]["branding"]["travelerSilhouettes"]) == 4
     core.write_candidate(root, result, FIXTURE / "gulchdale.csv", FIXTURE / "scryfall.json", manifest)
     monkeypatch.setattr(core, "validate_with_engine", lambda *_args: None)
     core.promote_candidate(root, result.version)
@@ -148,6 +148,11 @@ def test_markdown_diff_is_a_human_readable_promotion_report() -> None:
         "sheets": {"commander": {"added": ["New Card (tst) 2"], "removed": []}},
         "customCards": {"added": ["New Custom"], "removed": []},
         "effects": {"changed": ["Effect Card"]},
+        "profile": {
+            "changed": True,
+            "active": {"id": "classic"},
+            "candidate": {"id": "classic", "branding": {"lobbyBackdrop": "/img/gulchdale-campfire.webp"}},
+        },
         "warnings": ["Review this support card"],
     }
     rendered = cli.markdown_diff(report)
@@ -155,4 +160,6 @@ def test_markdown_diff_is_a_human_readable_promotion_report() -> None:
     assert "| Version | `gch-old` | `gch-new` |" in rendered
     assert "- New Card (tst) 2" in rendered
     assert "- New Custom" in rendered
+    assert "## Environment profile" in rendered
+    assert "gulchdale-campfire.webp" in rendered
     assert "- Review this support card" in rendered

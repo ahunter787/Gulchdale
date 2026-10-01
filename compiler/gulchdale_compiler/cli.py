@@ -92,6 +92,8 @@ def build_diff_report(root: Path, version: str) -> dict[str, Any]:
     candidate_source = source_summary(candidate / "gulchdale.csv")
     active_source_cards = set(active_source.pop("cards"))
     candidate_source_cards = set(candidate_source.pop("cards"))
+    active_profile = active_manifest.get("environmentProfile", {})
+    candidate_profile = manifest.get("environmentProfile", {})
     return {
         "activeVersion": active_manifest.get("version", "unversioned-phase1"),
         "candidateVersion": version,
@@ -122,6 +124,11 @@ def build_diff_report(root: Path, version: str) -> dict[str, Any]:
                 if active_effects.get(name) != candidate_effects.get(name)
             )
         },
+        "profile": {
+            "changed": active_profile != candidate_profile,
+            "active": active_profile,
+            "candidate": candidate_profile,
+        },
         "warnings": manifest.get("warnings", []),
     }
 
@@ -138,18 +145,18 @@ def markdown_diff(report: dict[str, Any]) -> str:
     active_environment = environment["active"]
     candidate_environment = environment["candidate"]
     lines = [
-        f'# Gulchdale promotion report: {report["candidateVersion"]}',
+        f"# Gulchdale promotion report: {report['candidateVersion']}",
         "",
         "## Provenance",
         "",
         "| Field | Active | Candidate |",
         "| --- | --- | --- |",
-        f'| Version | `{report["activeVersion"]}` | `{report["candidateVersion"]}` |',
-        f'| Source SHA-256 | `{active_source["sha256"]}` | `{candidate_source["sha256"]}` |',
-        f'| Environment SHA-256 | `{active_environment["sha256"]}` | `{candidate_environment["sha256"]}` |',
-        f'| Source rows | {active_source["rows"]} | {candidate_source["rows"]} |',
-        f'| Custom cards | {active_environment["customCards"]} | {candidate_environment["customCards"]} |',
-        f'| Draft effects | {active_environment["draftEffects"]} | {candidate_environment["draftEffects"]} |',
+        f"| Version | `{report['activeVersion']}` | `{report['candidateVersion']}` |",
+        f"| Source SHA-256 | `{active_source['sha256']}` | `{candidate_source['sha256']}` |",
+        f"| Environment SHA-256 | `{active_environment['sha256']}` | `{candidate_environment['sha256']}` |",
+        f"| Source rows | {active_source['rows']} | {candidate_source['rows']} |",
+        f"| Custom cards | {active_environment['customCards']} | {candidate_environment['customCards']} |",
+        f"| Draft effects | {active_environment['draftEffects']} | {candidate_environment['draftEffects']} |",
         "",
         "## Source cards added",
         "",
@@ -191,6 +198,14 @@ def markdown_diff(report: dict[str, Any]) -> str:
             "",
             _markdown_list(report["effects"]["changed"]),
             "",
+            "## Environment profile",
+            "",
+            f"Changed: {'yes' if report['profile']['changed'] else 'no'}",
+            "",
+            "```json",
+            json.dumps(report["profile"]["candidate"], indent=2, sort_keys=True),
+            "```",
+            "",
             "## Validation warnings",
             "",
             _markdown_list(report["warnings"]),
@@ -203,9 +218,7 @@ def markdown_diff(report: dict[str, Any]) -> str:
 def show_diff(root: Path, version: str, output_format: str = "json", output: Path | None = None) -> None:
     report = build_diff_report(root, version)
     rendered = (
-        markdown_diff(report)
-        if output_format == "markdown"
-        else json.dumps(report, indent=2, sort_keys=True) + "\n"
+        markdown_diff(report) if output_format == "markdown" else json.dumps(report, indent=2, sort_keys=True) + "\n"
     )
     if output:
         output.parent.mkdir(parents=True, exist_ok=True)

@@ -1,36 +1,29 @@
 <template>
-	<div>
+	<div class="gulchdale-credits">
+		<h3>Credits</h3>
 		<p>
-			Developped by
-			<a href="https://senryoku.github.io/" target="_blank" rel="noopener nofollow">Senryoku</a>
-			(contact in French or English:
-			<a href="mailto:dev@draftmancer.com">dev@draftmancer.com</a>
-			) using
-			<a href="https://scryfall.com/">Scryfall</a>
-			card data and images and loads of open source software.
+			Gulchdale is powered by
+			<a href="https://github.com/Senryoku/Draftmancer" target="_blank" rel="noopener">Draftmancer</a>, used under
+			its MIT license. Card data and images are provided by
+			<a href="https://scryfall.com/" target="_blank" rel="noopener">Scryfall</a>.
 		</p>
+		<h3>Fan content notice</h3>
 		<p>
-			Draftmancer Discord:
-			<a href="https://discord.gg/XscXXNw">https://discord.gg/XscXXNw</a>
-		</p>
-		<h3>Patch Notes</h3>
-		<patch-notes></patch-notes>
-		<span style="font-size: 0.8em">
-			(detailed changes can be found on
-			<a href="https://github.com/Senryoku/Draftmancer" title="GitHub" target="_blank" rel="noopener nofollow">
-				<font-awesome-icon icon="fa-brands fa-github" style="vertical-align: baseline; padding: 0px 0.25em" />
-				GitHub
-			</a>
-			)
-		</span>
-		<h3>Notice</h3>
-		<p>
-			Draftmancer is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by
-			Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+			Gulchdale is unofficial Fan Content permitted under the
+			<a href="https://company.wizards.com/en/legal/fancontentpolicy" target="_blank" rel="noopener">
+				Fan Content Policy</a
+			>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast.
+			©Wizards of the Coast LLC.
 		</p>
 	</div>
 </template>
 
-<script setup lang="ts">
-import PatchNotes from "./PatchNotes.vue";
-</script>
+<style scoped>
+.gulchdale-credits {
+	max-width: 44rem;
+	line-height: 1.6;
+}
+.gulchdale-credits h3 {
+	color: #efd18a;
+}
+</style>

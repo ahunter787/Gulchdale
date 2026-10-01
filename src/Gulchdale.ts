@@ -29,7 +29,13 @@ export type EnvironmentProfile = {
 	locked: true;
 	reportingEnabled: false;
 	stages: readonly EnvironmentStage[];
-	branding: Readonly<{ logo: string; cardBack: string; backdrop: string }>;
+	branding: Readonly<{
+		logo: string;
+		cardBack: string;
+		backdrop: string;
+		lobbyBackdrop: string;
+		travelerSilhouettes: readonly string[];
+	}>;
 };
 
 let environmentSource: string;
@@ -75,6 +81,8 @@ const profileBranding = Object.freeze({
 	logo: profileManifest?.branding?.logo ?? "/img/gulchdale-logo.png",
 	cardBack: profileManifest?.branding?.cardBack ?? "/img/gulchdale-card-back.png",
 	backdrop: profileManifest?.branding?.backdrop ?? "/img/gulchdale-landing.jpg",
+	lobbyBackdrop: profileManifest?.branding?.lobbyBackdrop ?? "/img/gulchdale-landing.jpg",
+	travelerSilhouettes: Object.freeze(profileManifest?.branding?.travelerSilhouettes ?? []),
 });
 export const GULCHDALE_ENVIRONMENT_PROFILE: EnvironmentProfile = Object.freeze({
 	id: profileManifest?.id ?? GULCHDALE_DEFAULT_PROFILE_ID,

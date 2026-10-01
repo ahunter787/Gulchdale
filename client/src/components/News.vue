@@ -3,14 +3,14 @@
 		<div class="news">
 			<em>September 19, 2026</em>
 			<p>
-				<img src="img/sets/mbc.svg" class="set-icon" style="--invertedness: 100%" alt="MBC" /> Mystery Booster
+				<img src="/img/sets/mbc.svg" class="set-icon" style="--invertedness: 100%" alt="MBC" /> Mystery Booster
 				Commander Edition (MBC) is now available.
 			</p>
 		</div>
 		<div class="news">
 			<em>September 18, 2026</em>
 			<p>
-				<img src="img/sets/fra.svg" class="set-icon" style="--invertedness: 100%" alt="FRA" /> Reality Fracture
+				<img src="/img/sets/fra.svg" class="set-icon" style="--invertedness: 100%" alt="FRA" /> Reality Fracture
 				(FRA) is now available.
 			</p>
 		</div>
@@ -28,7 +28,7 @@
 		<div class="news">
 			<em>July 31, 2026</em>
 			<p>
-				<img src="img/sets/hob.svg" class="set-icon" style="--invertedness: 100%" alt="HOB" /> The Hobbit (HOB)
+				<img src="/img/sets/hob.svg" class="set-icon" style="--invertedness: 100%" alt="HOB" /> The Hobbit (HOB)
 				is now available.
 			</p>
 		</div>
@@ -36,7 +36,7 @@
 			<em>June 12, 2026</em>
 			<ul>
 				<li>
-					<img src="img/sets/msh.svg" class="set-icon" style="--invertedness: 100%" alt="MSH" /> Marvel Super
+					<img src="/img/sets/msh.svg" class="set-icon" style="--invertedness: 100%" alt="MSH" /> Marvel Super
 					Heroes (MSH) is now available.
 				</li>
 				<li>
@@ -49,21 +49,21 @@
 		<div class="news">
 			<em>April 10, 2026</em>
 			<p>
-				<img src="img/sets/sos.svg" class="set-icon" style="--invertedness: 100%" alt="SOS" /> Secrets of
+				<img src="/img/sets/sos.svg" class="set-icon" style="--invertedness: 100%" alt="SOS" /> Secrets of
 				Strixhaven (SOS) is now available.
 			</p>
 		</div>
 		<div class="news">
 			<em>February 21, 2026</em>
 			<p>
-				<img src="img/sets/tmt.svg" class="set-icon" style="--invertedness: 100%" alt="TMT" /> Teenage Mutant
+				<img src="/img/sets/tmt.svg" class="set-icon" style="--invertedness: 100%" alt="TMT" /> Teenage Mutant
 				Ninja Turtles (TMT) is now available.
 			</p>
 		</div>
 		<div class="news">
 			<em>January 10, 2026</em>
 			<p>
-				<img src="img/sets/ecl.svg" class="set-icon" style="--invertedness: 100%" alt="ECL" /> Lorwyn Eclipsed
+				<img src="/img/sets/ecl.svg" class="set-icon" style="--invertedness: 100%" alt="ECL" /> Lorwyn Eclipsed
 				(ECL) is now available!
 			</p>
 		</div>

@@ -49,10 +49,22 @@ footer {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
 }
 
 footer span {
-	margin-left: 2em;
+	margin-left: 0;
+}
+
+.footer-legal-link {
+	padding: 0;
+	border: 0;
+	color: #9db0b1;
+	background: transparent;
+	font: inherit;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .disconnected-icon {

@@ -1736,7 +1736,7 @@ io.on("connection", async function (socket) {
 						Object.keys(Connections).length - 1
 					} players online)`
 				);
-			if (Connections[userID].sessionID) removeUserFromSession(Connections[userID].sessionID, userID);
+			if (Connections[userID].sessionID) removeUserFromSession(Connections[userID].sessionID, userID, true);
 			process.nextTick(() => {
 				if (Connections[userID]?.socket === this) delete Connections[userID];
 			});
@@ -2048,6 +2048,8 @@ function joinSession(sessionID: SessionID, userID: UserID, defaultSessionSetting
 				return refuse(
 					`This session (${sessionID}) is currently drafting. Please wait for them to finish.${bracketLink}`
 				);
+		} else if (sess.environmentLocked && userID in sess.disconnectedUsers) {
+			sess.reconnectLobbyUser(userID);
 		} else if (sess.managed) {
 			// Session exists and is managed but not drafting, it cannot be joined anymore.
 			return refuse(`This session (${sessionID}) is closed.`);
@@ -2123,17 +2125,23 @@ function deleteSession(sessionID: SessionID) {
 }
 
 // Remove user from previous session and cleanup if empty
-function removeUserFromSession(sessionID: SessionID, userID: UserID) {
+function removeUserFromSession(sessionID: SessionID, userID: UserID, reserveDisconnected: boolean = false) {
 	if (sessionID in Sessions) {
 		const sess = Sessions[sessionID];
 		if (sess.users.has(userID) || userID in sess.disconnectedUsers) {
-			sess.remUser(userID);
+			sess.remUser(userID, reserveDisconnected);
 			if (sess.isPublic) updatePublicSession(sessionID);
 
 			if (Connections[userID]) Connections[userID].sessionID = undefined;
 
 			//                           Keep session alive if the owner wasn't a player and is still connected.
-			if (sess.users.size === 0 && (sess.ownerIsPlayer || !(sess.owner && sess.owner in Connections))) {
+			const hasReservedLobbySeat =
+				reserveDisconnected && sess.environmentLocked && !sess.drafting && userID in sess.disconnectedUsers;
+			if (
+				sess.users.size === 0 &&
+				!hasReservedLobbySeat &&
+				(sess.ownerIsPlayer || !(sess.owner && sess.owner in Connections))
+			) {
 				// If a game was going, we'll keep the session around for a while in case a player reconnects
 				// (mostly useful in case of disconnection during a single player game)
 				// Also keep it around if draft logs weren't unlocked, and scheduled to be automatically unlocked.

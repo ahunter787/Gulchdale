@@ -6,7 +6,7 @@
 				<div v-for="user in teamDisplay" :key="user.idx" :class="`player player-${user.idx}`">
 					<span>{{ user.userName }}</span>
 					<span class="color-list" v-if="user.colors">
-						<img v-for="c in user.colors" :key="c" :src="'img/mana/' + c + '.svg'" class="mana-icon" />
+						<img v-for="c in user.colors" :key="c" :src="'/img/mana/' + c + '.svg'" class="mana-icon" />
 					</span>
 				</div>
 			</div>

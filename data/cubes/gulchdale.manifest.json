@@ -1,7 +1,7 @@
 {
-	"compiledAt": "2026-09-30T20:38:20Z",
+	"compiledAt": "2026-10-01T06:15:26Z",
 	"compilerVersion": "2.0.0",
-	"configSha256": "4a535666349e03b404d1e36eb9bbcbd588263fcd256878aead1290f512ef6132",
+	"configSha256": "01be4286da0cafc468eb1d954a5e77b158895cc50642fb624acd8c67a5a9ab77",
 	"counts": {
 		"customCards": 66,
 		"draftEffectCards": 52,
@@ -19,12 +19,18 @@
 		"recoveredPhase1Source": false,
 		"sourceSha256": "d5d18e520ec31715a4c59fdadf296ed930d738966673264aa9f9b117ca6fe0c9"
 	},
-	"environmentSha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68",
 	"environmentProfile": {
 		"branding": {
 			"backdrop": "/img/gulchdale-landing.jpg",
 			"cardBack": "/img/gulchdale-card-back.png",
-			"logo": "/img/gulchdale-logo.png"
+			"lobbyBackdrop": "/img/gulchdale-campfire.webp",
+			"logo": "/img/gulchdale-logo.png",
+			"travelerSilhouettes": [
+				"/img/gulchdale-traveler-1.webp",
+				"/img/gulchdale-traveler-2.webp",
+				"/img/gulchdale-traveler-3.webp",
+				"/img/gulchdale-traveler-4.webp"
+			]
 		},
 		"displayName": "Gulchdale",
 		"id": "classic",
@@ -47,6 +53,7 @@
 			}
 		]
 	},
+	"environmentSha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68",
 	"schemaVersion": 1,
 	"scryfallSha256": "c3b149935af1ac1cc3a189781f17a695975a95b9dade62c72f2e98dac8b39a05",
 	"version": "gch-bfc40f9519b9",

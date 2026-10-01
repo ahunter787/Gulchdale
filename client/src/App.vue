@@ -1360,7 +1360,7 @@
 																(neededWildcards!.main?.rare ?? 0),
 													}"
 												>
-													<img class="wildcard-icon" :src="`img/wc_rare.webp`" />
+													<img class="wildcard-icon" :src="`/img/wc_rare.webp`" />
 													{{ neededWildcards!.main?.rare ?? 0 }}
 												</span>
 												<span
@@ -1371,7 +1371,7 @@
 																(neededWildcards!.main?.mythic ?? 0),
 													}"
 												>
-													<img class="wildcard-icon" :src="`img/wc_mythic.webp`" />
+													<img class="wildcard-icon" :src="`/img/wc_mythic.webp`" />
 													{{ neededWildcards!.main?.mythic ?? 0 }}
 												</span>
 											</span>
@@ -1388,7 +1388,7 @@
 													}"
 												>
 													<td>
-														<img class="wildcard-icon" :src="`img/wc_${rarity}.webp`" />
+														<img class="wildcard-icon" :src="`/img/wc_${rarity}.webp`" />
 													</td>
 													<td>{{ value }}</td>
 													<td>({{ neededWildcards!.side?.[rarity] ?? 0 }})</td>
@@ -1581,13 +1581,16 @@
 					<GulchdaleLobby
 						v-if="gulchdaleConfig.locked && sessionID"
 						:bots="bots"
+						:disconnected-users="disconnectedUsers"
 						:environment-name="gulchdaleConfig.environment.displayName"
 						:environment-version="environmentVersion || gulchdaleConfig.environment.version"
 						:is-owner="userID === sessionOwner"
+						:lobby-backdrop="gulchdaleConfig.environment.branding.lobbyBackdrop"
 						:max-players="maxPlayers"
 						:session-id="sessionID"
 						:session-owner="sessionOwner"
 						:timer="maxTimer"
+						:traveler-silhouettes="gulchdaleConfig.environment.branding.travelerSilhouettes"
 						:users="sessionUsers"
 						@share="sessionURLToClipboard"
 						@ready-check="readyCheck"
@@ -2813,7 +2816,7 @@
 		</modal>
 		<modal :displayed="displayedModal === 'About'" @close="displayedModal = ''">
 			<template v-slot:header>
-				<h2>About</h2>
+				<h2>About &amp; legal</h2>
 			</template>
 			<template v-slot:body>
 				<About />
@@ -2829,47 +2832,11 @@
 		</modal>
 		<CardPopup :language="language" :customCards="customCardList?.customCards" ref="cardPopup" />
 		<footer>
-			<span @click="displayedModal = 'About'" class="clickable">
-				<span class="link">About</span>
-			</span>
 			<span>
-				Powered by Draftmancer, made by
-				<a href="https://github.com/sponsors/Senryoku" target="_blank" rel="noopener nofollow">Senryoku</a>
+				Gulchdale is Powered by
+				<a href="https://github.com/sponsors/Senryoku" target="_blank" rel="noopener">Draftmancer</a>
 			</span>
-			<span>
-				<span class="link" @click="displayedModal = 'donation'">
-					Buy me a Coffee
-					<font-awesome-icon icon="fa-solid fa-mug-hot" aria-hidden="true" />
-				</span>
-			</span>
-			<span>
-				<a href="mailto:dev@draftmancer.com" title="Email">
-					<font-awesome-icon
-						icon="fa-solid fa-envelope"
-						size="lg"
-						style="vertical-align: baseline; padding: 0 0.25em"
-					/>
-				</a>
-				<a href="https://discord.gg/XscXXNw" title="Discord" target="_blank" rel="noopener nofollow">
-					<font-awesome-icon
-						icon="fa-brands fa-discord"
-						size="lg"
-						style="vertical-align: baseline; padding: 0 0.25em"
-					/>
-				</a>
-				<a
-					href="https://github.com/Senryoku/Draftmancer"
-					title="GitHub"
-					target="_blank"
-					rel="noopener nofollow"
-				>
-					<font-awesome-icon
-						icon="fa-brands fa-github"
-						size="lg"
-						style="vertical-align: baseline; padding: 0 0.25em"
-					/>
-				</a>
-			</span>
+			<button type="button" class="footer-legal-link" @click="displayedModal = 'About'">About &amp; legal</button>
 		</footer>
 		<div
 			class="disconnected-icon"
