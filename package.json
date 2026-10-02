@@ -61,7 +61,7 @@
 		"qrcode": "^1.5.4",
 		"random-js": "^2.1.0",
 		"smol-string": "^1.0.4",
-		"socket.io": "^4.8.3",
+		"socket.io": "^4.8.4",
 		"socket.io-client": "^4.8.3",
 		"sortablejs": "^1.15.3",
 		"sortablejs-vue3": "1.2.11",
