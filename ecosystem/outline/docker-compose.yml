@@ -1,0 +1,79 @@
+# Outline — this project's engineering documentation.
+#
+#   project: <PROJECT_SLUG>-outline
+#   URL:     http://<ECOSYSTEM_HOST>:<OUTLINE_HTTP_PORT>
+#
+# Three containers: the app, its own PostgreSQL, and Redis (Outline requires
+# one). No TLS proxy: locally this is reached over plain HTTP on the LAN, and the
+# URL in outline.env is the exact origin users - and magic-link emails - use.
+#
+# Redis appears here and NOT in the application: the application's own compose
+# project is untouched by this file, and a project's "no Redis unless actually
+# needed" rule governs the application, not its documentation tooling.
+#
+# Credentials come from the generated env file (install.sh writes it under
+# .runtime/, gitignored). Ports and names come from .runtime/env via --env-file.
+
+name: ${OUTLINE_COMPOSE_PROJECT:-outline}
+
+services:
+  outline:
+    image: docker.getoutline.com/outlinewiki/outline:${OUTLINE_VERSION:-1.10.1}
+    container_name: ${OUTLINE_COMPOSE_PROJECT:-outline}-app
+    restart: unless-stopped
+    env_file: ["../.runtime/outline.env"]
+    ports:
+      - "${OUTLINE_HTTP_PORT:-8090}:3000"
+    volumes:
+      - outline-data:/var/lib/outline/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - default
+      - shared
+
+  postgres:
+    # PostgreSQL 18 changes the default data directory layout; Outline's own
+    # sample mounts /var/lib/postgresql rather than .../data for this reason.
+    image: postgres:18-alpine
+    container_name: ${OUTLINE_COMPOSE_PROJECT:-outline}-db
+    restart: unless-stopped
+    env_file: ["../.runtime/outline.env"]
+    volumes:
+      - outline-db:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U outline -d outline"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    networks:
+      - default
+
+  redis:
+    image: redis:7-alpine
+    container_name: ${OUTLINE_COMPOSE_PROJECT:-outline}-redis
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1"]
+    volumes:
+      - outline-redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks:
+      - default
+
+volumes:
+  outline-data:
+  outline-db:
+  outline-redis:
+
+networks:
+  shared:
+    external: true
+    name: ${SHARED_NETWORK}

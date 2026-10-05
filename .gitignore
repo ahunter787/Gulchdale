@@ -81,3 +81,10 @@ __pycache__/
 
 # Ignore built ts files
 dist/**/*
+
+
+# --- Development ecosystem runtime -------------------------------------------
+# Everything the ecosystem generates - the generated env file, the service
+# secrets, the sync state, the backups and Plane's vendored bundle - lives under
+# one directory, so one rule excludes all of it.
+ecosystem/.runtime/
