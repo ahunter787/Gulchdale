@@ -240,12 +240,27 @@ export class FoundationRepository implements CatalogRepository, ReleaseRepositor
 				reason: "No promoted foundation release",
 			};
 		const release = await this.release(live);
+		const expected = releasesFor(w, []).at(-1)!;
+		const reference = release.payload.reference as ReleaseReference;
+		const expectedReference = expected.payload.reference as ReleaseReference;
+		const provenance = release.payload.provenance as Data;
+		const matches = {
+			pool: reference.pool === expectedReference.pool,
+			rules: reference.rules === expectedReference.rules,
+			engine: reference.engine === expectedReference.engine,
+			sources:
+				provenance.cubeId === w.provenance.cubeId &&
+				provenance.environmentSha256 === w.provenance.environmentSha256 &&
+				digest(provenance.sourceHashes) === digest(w.provenance.sourceHashes),
+			counts: digest(release.payload.counts) === digest(w.counts),
+		};
 		return {
 			legacy: w.provenance.legacyVersion,
 			live,
-			reconciled:
-				digest(release.payload.counts) === digest(w.counts) &&
-				(release.payload.provenance as Data).environmentSha256 === w.provenance.environmentSha256,
+			reconciled: Object.values(matches).every(Boolean),
+			matches,
+			// Deliberate human metadata overrides may differ without changing the legacy pool/rules.
+			metadataMatchesImported: reference.metadata === expectedReference.metadata,
 			counts: release.payload.counts,
 			reference: release.payload.reference,
 		};

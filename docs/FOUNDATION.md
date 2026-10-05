@@ -77,6 +77,9 @@ identity includes the pinned upstream revision, full frozen legacy commit and th
 versioned unavailable-player compatibility patch, not just an upstream SHA.
 Environment references all four, provenance/counts and workspace identity.
 Diffs expose changed values and keyed records as well as component hashes.
+Legacy comparison checks Pool, Rules and Engine identities plus all source hashes and
+counts; unchanged counts alone cannot hide source drift. Intentional human metadata
+overrides are reported separately from source/pool reconciliation.
 Promotion locks against
 concurrent pointer/override changes and rejects a stale review. Old releases survive
 refreshes and can be inspected without CSV, Scryfall or the Draftmancer parser.

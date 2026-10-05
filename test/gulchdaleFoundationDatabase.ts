@@ -62,6 +62,13 @@ describe("Gulchdale application PostgreSQL", function () {
 		expect(Object.keys(refs).sort()).to.deep.equal(["engine", "metadata", "pool", "rules"]);
 		expect((await repo.release(refs.pool)).payload.entries).to.have.length(w.pool.length);
 		expect((await repo.compareLegacy(w)).reconciled).to.equal(true);
+		expect((await repo.compareLegacy(w)).matches).to.deep.equal({
+			pool: true,
+			rules: true,
+			engine: true,
+			sources: true,
+			counts: true,
+		});
 		let immutable = false;
 		try {
 			await db.query("UPDATE gulchdale.releases SET payload='{}'");
@@ -110,6 +117,10 @@ describe("Gulchdale application PostgreSQL", function () {
 		const promoted = await repo.promote(next.id, diff.digest);
 		const refs = (await repo.release(promoted)).payload.reference as ReleaseReference;
 		const metadata = (await repo.release(refs.metadata)).payload.cards as CardRecord[];
+		// Equal counts and an unchanged legacy artifact are not enough to hide refreshed sources.
+		const comparison = await repo.compareLegacy(w);
+		expect(comparison.reconciled).to.equal(false);
+		expect((comparison.matches as Record<string, boolean>).sources).to.equal(false);
 		expect(metadata.find((c) => c.id === card.id)!.data["affinity.goblin"]).to.equal(0.9);
 		expect((await db.query("SELECT count(*) FROM gulchdale.human_overrides")).rows[0].count).to.equal("1");
 		expect((await repo.release(initial)).hash).to.equal(initial);
