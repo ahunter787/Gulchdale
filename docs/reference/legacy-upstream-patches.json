@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 1,
+  "upstreamRepository": "https://github.com/Senryoku/Draftmancer",
+  "upstreamRevision": "11f056cc1be6f99795f89d8dc7111d98f1a83c6a",
+  "upstreamArchiveSha256": "e7794d27bd291827754a4b42e94e974e6882f53612686fa49bdfe65b10b1fa38",
+  "baselineTag": "gulchdale-legacy-v1.0.0",
+  "baselineCommit": "e766438c617711a22f3ec6899f4155cb0f6fb040",
+  "upstreamFiles": 1856,
+  "legacyFiles": 1943,
+  "identicalFiles": 1821,
+  "differences": [
+    {
+      "path": ".agents/skills/project-ecosystem/SKILL.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "9b68ec1ad4927619429c3c32267f9f0161f15204cce3730c437be34a93afcd3d"
+    },
+    {
+      "path": ".dockerignore",
+      "kind": "changed",
+      "upstreamSha256": "00e7fe2cc7941e3299edcf08f038c5d3775ee2ba69e80707632c6a436d5620cc",
+      "legacySha256": "551df96d91ac45b00dbe91be27d85e9f3b74bddf746639d7d9a2d57b3f73ed71"
+    },
+    {
+      "path": ".gitattributes",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ca65dfcb4f78cfdfdaee8656366b2bc91cacbb86d3ea45549461ae544646e8aa"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "kind": "removed",
+      "upstreamSha256": "ad1008ee52b98dbf23522850d96b3d146b68d678bd684aa41a948cf58cb3f184",
+      "legacySha256": null
+    },
+    {
+      "path": ".github/workflows/client.yml",
+      "kind": "changed",
+      "upstreamSha256": "035231c29957164c01c915c37268e62dee487cd9cfc75c302a8ed760d4995d99",
+      "legacySha256": "a031b9597e626ff87d6fa86f13c0a5c43443736260308cc87092112b3210f8ea"
+    },
+    {
+      "path": ".github/workflows/compiler.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "9c4053876cd806e61d94a84af64b80e9e17a70932665fd5a2ec1db9d442bb1a8"
+    },
+    {
+      "path": ".github/workflows/server.yml",
+      "kind": "changed",
+      "upstreamSha256": "7ada5f3098db6d45f1ac85c81dcb85464da9733a501aacc3e0afaaa8a58da21d",
+      "legacySha256": "694afd1e69e429cf52dc3b1d6127815468da12fb5b5e793d6f59cbda9d13a3f0"
+    },
+    {
+      "path": ".github/workflows/upstream-compatibility.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d460364e8ee1947fb359bab7fa4bb4b2201fe0d0873b84ddf14ed38612aaad47"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "changed",
+      "upstreamSha256": "cd75a2a5c20b8365a1175df67eed2f44be6913c4d94123d2f0c2b9210ef60727",
+      "legacySha256": "4559f636f59092195225b4c7eea026c1c6ac4e3d2ee9e7f7abf00824d7ddc3d5"
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "0993b8db1de0992ab0129e720507f083428e2855e6d378b354ea31e1dd383572"
+    },
+    {
+      "path": "Dockerfile",
+      "kind": "changed",
+      "upstreamSha256": "bca3354748ac8c2dfd3adf947cbd0deab6ef50dd683dfa69eca12eb6756edf94",
+      "legacySha256": "ef31a7213ed321c805d91580a9f63f78f092bbd0dfac0fbd02446c871ba75387"
+    },
+    {
+      "path": "GulchdaleLandingPage.jpg",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "90e586dfbf4e1e6df59f917093d56303f9500eabe050d3c57b4ccf8610a2c203"
+    },
+    {
+      "path": "GulchdaleLandingPage2.jpg",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6827d320e6c4c3e5e6af88716782c42d4b6171892af9ed270ed4272253acfbd8"
+    },
+    {
+      "path": "README.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "fbf69b2a933b1ff2700ac629530f45bf5e64590a05c72e381849beaf212918d4"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "70fd6c3fe8a979692ce6cb4ae3a3b37bad6b4e0a4607e19f3b253c7121672995"
+    },
+    {
+      "path": "client/public/img/gulchdale-campfire.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "2408e0b3067a4a3194837e101831bcc1992b757b46f2123304692caef94c9b1f"
+    },
+    {
+      "path": "client/public/img/gulchdale-card-back.png",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ec277c986d687208ba58bbc0fa2e986b11191d16beb316cc430b0e4c90ba984b"
+    },
+    {
+      "path": "client/public/img/gulchdale-game-mat.png",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "770a623ac6f5e208c5d93855b6153fa2e538e757d73cfa44b0c474153b569758"
+    },
+    {
+      "path": "client/public/img/gulchdale-landing.jpg",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6827d320e6c4c3e5e6af88716782c42d4b6171892af9ed270ed4272253acfbd8"
+    },
+    {
+      "path": "client/public/img/gulchdale-logo.png",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "e35f34310d421d98af96e6659f1626093854362716a5ded778c541210fa1f71e"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-1.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ab7885694ff1cc628dbe674a31bc34e9f367559b37009c5a786f1652299c308e"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-2.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "1ba201ee0659fa0b4dbbfbe64c38aed4ab6c5732554437c22309767487cc2201"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-3.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "bde95ed9fbb2132c7f95b68ee66f4cbe490e619c9a4dd4af701b50379353edbf"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-4.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "4d7dcf4f054143fde8aa74f8bcb6ad3c0f30ab750a5aba12ab8c34e97a4da7cd"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-2.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d54c450724bde5cb24e903de6ed2439981bd4ad2d160b5ff530194ec92d16356"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-3.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "899f2e4e7b1ba021b3d2a7f1408287259edc2aa207604932dad184eaeaf63acd"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-4.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "313d25594a5a8d54c7af6cca8c668ae55448f6a04f15ae204765117435b37fed"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-5.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "48931ca4b56e0607b5c1e2035e25cc0c7df6b13e15d01e55e24432e9c65d48f7"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-7.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "193b584afc198d83c8a7f7004f638d96a855477d3f948495160d3728ca94f74a"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seat-8.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "1a1ee688b4646f517600d5613574b873aaae49af69aabbf74cb3aabb438714df"
+    },
+    {
+      "path": "client/public/img/gulchdale-traveler-seated.webp",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "43595b2562bbc3b147989c8824ddeda778f9ab972e60cfcda66a9cb9dcd11959"
+    },
+    {
+      "path": "client/public/site.webmanifest",
+      "kind": "changed",
+      "upstreamSha256": "e69a2456e2ad23af56189bfbe7c70fc37c084ada09f69c94c77dff0f01dc78f5",
+      "legacySha256": "1d8caf91cf3090e8fb0d45ef69895f5d6192c85d7f8b1f77144af67f19a8b7f1"
+    },
+    {
+      "path": "client/src/App.ts",
+      "kind": "changed",
+      "upstreamSha256": "6dbc873c47ddb504859a9e8492af8f33d91dbf6d8dfdf4b35e2227ab4c74d0b8",
+      "legacySha256": "496363e527ba7ef587a231816d7520de877804a726e702ea5772e41e9098d05e"
+    },
+    {
+      "path": "client/src/App.vue",
+      "kind": "changed",
+      "upstreamSha256": "8910ca736f94c64cf4a08ad2da84cce61e0494cf7c0edb1d3372736c370a3112",
+      "legacySha256": "fa8ce57f7e757b48e7dfcf1a98a6aee0b0c36356574cfd898b7115dfa49f378c"
+    },
+    {
+      "path": "client/src/components/About.vue",
+      "kind": "changed",
+      "upstreamSha256": "5b3b2edd18a1e6e841717bf8d4589b8254be3723eeff8cfda8cb87d2ec222de0",
+      "legacySha256": "97002bc8aa68c84b6c250b781a2775df1d7e075c60bcfe5dbce21daca155de52"
+    },
+    {
+      "path": "client/src/components/BoosterCard.vue",
+      "kind": "changed",
+      "upstreamSha256": "1fc50a795c041d30716cc6232eed76906de24f473f9da34c43df03108133aef7",
+      "legacySha256": "ede170fe8667cae296c4319a32cb2fbaa2b762f879f989da87c9c03ec56b0223"
+    },
+    {
+      "path": "client/src/components/Card.vue",
+      "kind": "changed",
+      "upstreamSha256": "fd7510bb6c88c2758ba6820c82a10e33c7d087ac910aee427b0efedcce5d496f",
+      "legacySha256": "b56b2c13ff81f41838730ac0bce12a835d23289d573c3f47f98cc64aa9cff56c"
+    },
+    {
+      "path": "client/src/components/CardPool.vue",
+      "kind": "changed",
+      "upstreamSha256": "941e6b4195d51a1876a41a545ca11a7ac762c023cd3f017e799a28dd43908cc9",
+      "legacySha256": "4e77ca49dbc021fc8eb4b455f0a6615fe78b8b867d3c6538ef45e8cbe131d64b"
+    },
+    {
+      "path": "client/src/components/CardStats.vue",
+      "kind": "changed",
+      "upstreamSha256": "7d8ce7db0a1162a6706403446c86440582b26794d83dba8031d5d81f1c185619",
+      "legacySha256": "7a2cf4d0395de134966755994e563a7cb49bd5b74befed7c9fd18903b3b449d3"
+    },
+    {
+      "path": "client/src/components/ChooseColor.vue",
+      "kind": "changed",
+      "upstreamSha256": "64088d4e734ef60d9ed86e8e0c442d7a351d3ef09d206ed0f7928125855b3bc3",
+      "legacySha256": "e460f9c0dab93b36b6df7af3740d4150cffd3e376b472f726bbf1dc71f5fb3b7"
+    },
+    {
+      "path": "client/src/components/Collection.vue",
+      "kind": "changed",
+      "upstreamSha256": "7fa6ae1baf0755665be19a2fa84d9e6148e5b411659d6a92d7ba72379eb33c25",
+      "legacySha256": "c4c22b7afb9a204769919d099bca80edb3a3b720d3a55934774fef6cb22e3009"
+    },
+    {
+      "path": "client/src/components/Decklist.vue",
+      "kind": "changed",
+      "upstreamSha256": "e0d84a4001bd085f26242672011831ee2668920dc3655fb72a0991b42f7d9199",
+      "legacySha256": "db58467e87302e158df114785a3dfb43872ad224b8144f2b5055160203829460"
+    },
+    {
+      "path": "client/src/components/DraftLog.vue",
+      "kind": "changed",
+      "upstreamSha256": "61695d4c8231bcebab6be9b465eb545b1951709cfea0137b8b64098bcffec0ed",
+      "legacySha256": "b8195b5058a84b0d139698935da1ee0cd7c0b34f9833827c28b5864f7610de9a"
+    },
+    {
+      "path": "client/src/components/GulchdaleLanding.vue",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "11e1dea532347e50bf75ac469bbf8e5805465ec7fbd3c656c5c77c0a655b81c8"
+    },
+    {
+      "path": "client/src/components/GulchdaleLobby.vue",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d54fb2b5f0a0a7e9fe8d8efab32d53cea77cfb9967731d39bad0368b6fa3d41c"
+    },
+    {
+      "path": "client/src/components/LandControl.vue",
+      "kind": "changed",
+      "upstreamSha256": "187a825ebbabd8886bf7daa8f8beeaab3e1f151d7d351d132cfaa86ffa210d40",
+      "legacySha256": "e7c8b180cca984e51db401f089ce9bcc1e9c6445dd86a4ad7c70a037d2692655"
+    },
+    {
+      "path": "client/src/components/LegalPopover.vue",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "3bc1bda9d75f568b3c14284b9dc6628cf55910d5438e1075a0012b8549bd42ae"
+    },
+    {
+      "path": "client/src/components/News.vue",
+      "kind": "changed",
+      "upstreamSha256": "6da7a29867e69b913a927c1b02010b52aee05403fb5de971b972969a8d8c2c24",
+      "legacySha256": "eb9828fed2682495ba8fa059036e205b14a11a936048bc2605fe1023ffa7b29f"
+    },
+    {
+      "path": "client/src/components/TeamSealed.vue",
+      "kind": "changed",
+      "upstreamSha256": "6ecd4c4f27cc053e9544740f9ca0b68964c1d8cf59bef197df54b353669c7f26",
+      "legacySha256": "08c0bc06e0eb7c58fa0fc824e09bff7e2ff8a8ecb379f9de1f6c00fa37bf3abc"
+    },
+    {
+      "path": "client/src/css/app.css",
+      "kind": "changed",
+      "upstreamSha256": "bdc8fba5b6c51f47d642fa2dd50687904224e4b16c3a76147544ad439054028b",
+      "legacySha256": "d2c106c397698dba1d77f156c31e907d3713352acb4dae3e303e22e1e8c6599d"
+    },
+    {
+      "path": "client/src/css/style.css",
+      "kind": "changed",
+      "upstreamSha256": "dc304901782d948af238abf4553c119dc997b210c974b8cdf1aabf5a411ce422",
+      "legacySha256": "8ed9dd3bba2b964f930e21d607f418e3cc42c049d83b9b5dbcaa56ccf3cc6e05"
+    },
+    {
+      "path": "client/src/gulchdaleCompilerStatus.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6a0ea1f71ad8ccce7debf1989cf9f3391ec389e0cb170b80b02957a670105d6e"
+    },
+    {
+      "path": "client/src/gulchdaleLobby.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "396fd2ada2199a39558961105c8ee0c43c31350e82fa026e741e3c0465223ac1"
+    },
+    {
+      "path": "client/src/index.ts",
+      "kind": "changed",
+      "upstreamSha256": "41588d7bee6df63cc642f6432bbfec6904d30e3faf6df3990782fc66cbb8e327",
+      "legacySha256": "b4ef31be73fb48ad50c361827b146516ef7230c2625fe9ce9c96f8deeb86bae0"
+    },
+    {
+      "path": "client/template/index.html",
+      "kind": "changed",
+      "upstreamSha256": "7e21ba82fb19d0932c162bde0f1cdb6e40a5d45493efebe1a846848dd9d89bfb",
+      "legacySha256": "b8c36821c942e881202f98a4e03e1d6175f88d55fdb88631e25c28235dea424a"
+    },
+    {
+      "path": "client/webpack.config.js",
+      "kind": "changed",
+      "upstreamSha256": "7f9a5ac7b9f7a07c5893d5ff3f1f101e75a098d49e3e5486e4f2aaa4cd43b02f",
+      "legacySha256": "eb8965d9df2cd1af793c937ac03aa5e1f1435cbad7a04560b92600a75dca069f"
+    },
+    {
+      "path": "compiler/Dockerfile",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ee85ebaf3b486a35fb125688b24c453af6e566301013421ceeae2e3bbb8e32cf"
+    },
+    {
+      "path": "compiler/config/gulchdale.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "1fa4efa549e0d52f9f474672c7b56604c2664111de6e5a7ed286d8bfffc94eb9"
+    },
+    {
+      "path": "compiler/config/static_custom_cards.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "19011093b2612d1fd5fe47cf8fdea1f59693719db0bcd07befd9f11041221bd3"
+    },
+    {
+      "path": "compiler/gulchdale_compiler/__init__.py",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6fc500412335bb0b64a605a2b40f027989f3ccb4f5074b282a56e6997d77289d"
+    },
+    {
+      "path": "compiler/gulchdale_compiler/cli.py",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "828e41c97726c28f6d7cd1e8b1f56be9cc0f9bd638330eb4349ca625566ca7ad"
+    },
+    {
+      "path": "compiler/gulchdale_compiler/core.py",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "c8933523cbeb21e8b6227ce097bc8027318910dc4a55ca50a49ea31bbb3e6ee9"
+    },
+    {
+      "path": "compiler/pyproject.toml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "1fc06d37b90fa7b59404d168755e0d1bdb40d3d513288e97e5975da2c0e24623"
+    },
+    {
+      "path": "compiler/requirements.lock",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "7efd58f35453451fbb2b419958ad0f3d175365877d3d43fde5e7d10569c8692e"
+    },
+    {
+      "path": "compiler/tests/fixtures/phase1/expected-gulchdale.txt",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "faa043e37114b395869ef7a2d426167e632f3e3f471370f957d1c17cf9523fac"
+    },
+    {
+      "path": "compiler/tests/fixtures/phase1/gulchdale.csv",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "9fc4363bb442534ce60be6206efce8e653d6c277e61b13a2f8fd37d54df4b46b"
+    },
+    {
+      "path": "compiler/tests/fixtures/phase1/scryfall.json",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "b0173f2af3a040e6006192833e43a248d0bf527e96688158e906cd9372204736"
+    },
+    {
+      "path": "compiler/tests/test_compiler.py",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ee549fbdc46c1bcd66b18ca5fc9d43072e10b837aedfb408d429699b374504c6"
+    },
+    {
+      "path": "compiler/tools/recover_phase1.py",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "cdf723eaf44e682421eba267bb75c9b27aed02fc4101a5cf93f56861d2f7d970"
+    },
+    {
+      "path": "compiler/uv.lock",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "3695448c6ea0ad66672f6034f8f9659ae12029f90aee8c8f6a0d7d8f4684efd5"
+    },
+    {
+      "path": "compose.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "70804ce48deef8edbf6e1b7da0faa9f72d0f8754d7b691eca87a96df320fe01a"
+    },
+    {
+      "path": "data/compiler/source/gulchdale.csv",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d5d18e520ec31715a4c59fdadf296ed930d738966673264aa9f9b117ca6fe0c9"
+    },
+    {
+      "path": "data/compiler/source/scryfall.json",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "c3b149935af1ac1cc3a189781f17a695975a95b9dade62c72f2e98dac8b39a05"
+    },
+    {
+      "path": "data/cubes/gulchdale.manifest.json",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "0535861c833ec49983705a2ae47709b7dffa5c4871a4afa24d53db4f94d61f17"
+    },
+    {
+      "path": "data/cubes/gulchdale.txt",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68"
+    },
+    {
+      "path": "docs/HARDENING.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "4561add0d26be594706d839af7c160541a18bbd2948d750c18acff0c78f0fe53"
+    },
+    {
+      "path": "docs/PHASE1_ENGINE.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "171e232267833fea7640092786fa6b869d44a8fbe5f7685ede416892492f3588"
+    },
+    {
+      "path": "docs/PHASE2_COMPILER.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "faa98ef8909734ab66201068a601eda7dc93a38eecab95d5575cd45a857fba40"
+    },
+    {
+      "path": "docs/PHASE3_UI.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d5f4e6f95db729e7d6fb6de3efba08413c4f93d7e450872f5ade81522e500d39"
+    },
+    {
+      "path": "docs/PHASE4_MECHANICS.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "df9be3a85ae62a0f8eb0f80c909ac29861102546502ada2753ceaab5f83ec9d5"
+    },
+    {
+      "path": "docs/decisions/ADR-0001-development-tooling.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "88eb28c7e4fb6d65d79e1f60f41b5d3fd80cdc06eb4954089d718b96cae02fcb"
+    },
+    {
+      "path": "docs/extensions.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "555a010ddab64458df10d67e71e1b35c02e096d81c1ec0ab2af1d0428d49448d"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6abef239fe13a0e701deafa20a2ad2db78ba033af41aae7f32ed77e1850bc04b"
+    },
+    {
+      "path": "ecosystem/.env.example",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "e362ad0332e3601f5537b3969a6a3a21d2c94ca63287458bfe4207046346b33d"
+    },
+    {
+      "path": "ecosystem/README.md",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "aab8c48e4caee39e556965ac905f0274aca55777895c436e6ce15f95c056d9b6"
+    },
+    {
+      "path": "ecosystem/integrations/backup.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "b6516e108d9a9e458c8172c448ce2d216b331fb079d806598db9a2af06812106"
+    },
+    {
+      "path": "ecosystem/integrations/bootstrap.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "218efa2f6f1a9eeffd6f9feceb2355b9d42c3cc18bf8dfa8e9b1bd5acf579625"
+    },
+    {
+      "path": "ecosystem/integrations/ensure-network.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "a0eaf9d3a7ecc991cdc2719f23971fb1d5918d778a1f4d60ae3873b82fe11554"
+    },
+    {
+      "path": "ecosystem/integrations/health.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "d1f09f912eda3f91c593c5c7f2b432a6d519c9adaae4c3de3e6700f909e744b8"
+    },
+    {
+      "path": "ecosystem/integrations/init-env.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "7cfaefb9afb3feeb28bf93f9642f206de3ce537222bca98aebaacbe316ead616"
+    },
+    {
+      "path": "ecosystem/integrations/mailbox.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "7ec2cd08103d0a04c34d3a800c1d67c39911974867a40fb6857547ebd1cbe7b6"
+    },
+    {
+      "path": "ecosystem/integrations/publish-docs.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "c2e22a1e7ac95a3582861a13d508080b3d38adf2830442a64f446ea4528c489f"
+    },
+    {
+      "path": "ecosystem/integrations/sync-roadmap.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6374129f239c94694cbb3773a9aa89dee3540021d58168c14e2d0f444a4dcbbb"
+    },
+    {
+      "path": "ecosystem/integrations/teardown.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "4c31340f8223bfc7200203a6ef591260a61b5f3d34f13738144aa2e441805aa6"
+    },
+    {
+      "path": "ecosystem/integrations/verify.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "52eb54e38d07fc11ea704ec78d59d53aa0410bb299382f4f764d26593aad5fac"
+    },
+    {
+      "path": "ecosystem/lib.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "4c14590beec57ff615a59608365a4b6bba92617b8a917e9fb5ee887b24bb1bf5"
+    },
+    {
+      "path": "ecosystem/mail/docker-compose.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "bebf3ce6f218db6d92d2b7144c3b0f50b2217c6d82cc12100f38145f5f066fe6"
+    },
+    {
+      "path": "ecosystem/outline/docker-compose.yml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "cf8cf769c21a0c1616445b881fc0e1325c960b8e8853803d15555aaf257c607c"
+    },
+    {
+      "path": "ecosystem/outline/install.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6b6f67fffd342b7552e7d4ee8e8e217e5ed9de4b516ff4e78813396263a6ff8f"
+    },
+    {
+      "path": "ecosystem/outline/outline.env.example",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "ec895ad9dd6397802ef769e16c0d658a03c266035513ccfeedbbe7af7e6a2aea"
+    },
+    {
+      "path": "ecosystem/plane/docker-compose.override.yaml",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "1136c1e9fb1594cb6e1e1f7579fbd8f6b88b39bc83069b7a066536464a64e567"
+    },
+    {
+      "path": "ecosystem/plane/install.sh",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6524a915f68b8c0bd17401bffd8f3f3ff6e156364aeda65f1dde9d1e91cfaa3e"
+    },
+    {
+      "path": "ecosystem/plane/overrides.env",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6ed9bde69119c6453f6820b29f2692e66d59fe4ee18e0b26538d33b40d4515e5"
+    },
+    {
+      "path": "ecosystem/secrets/outline.env.example",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "56726ecede903d82138a02285df36b1d48a7ebbd14555613fe980a2d6539c9d1"
+    },
+    {
+      "path": "ecosystem/secrets/plane.env.example",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "5444e1535414d98015854a04913d99a7fddc6dd72be82765bd73a4ef7ab4b687"
+    },
+    {
+      "path": "nginx.conf",
+      "kind": "changed",
+      "upstreamSha256": "61787d427e72b89dc01c93f6cf2e28c61e065b5bcc909c9e33934b9f99e166fe",
+      "legacySha256": "a1da68867cefec32e08c2b97dac3b47b9f831d9a98a32337f7352067037c3721"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "changed",
+      "upstreamSha256": "9f37c7634747323e96a503a8b9cee51d451aea0fec252b0359fbd3845f372287",
+      "legacySha256": "d110f93c51e1cfa658e5aeddd8c85a52bde894ef0cfba5e1bca5b65118b9bfdf"
+    },
+    {
+      "path": "package.json",
+      "kind": "changed",
+      "upstreamSha256": "269c8488b12f8fba3f8803af7ea7411e930feed2d2f5724557ddf6d726d68bba",
+      "legacySha256": "7831cacaba68bb91ee846bfcec4d06f0c315ef6ab8fa531a8095921d6da424ef"
+    },
+    {
+      "path": "reference/prototype/gulchdale_draft.html",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "9ae51b1070aa4c45fdf8b34469fd597936b773ea5e2409ac2b65b40bbfc3ed77"
+    },
+    {
+      "path": "src/Gulchdale.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "382a16a510323c5922f9d19d19625b8846a8b1ad4f21a6dd4d6c897a592fbe62"
+    },
+    {
+      "path": "src/GulchdaleFreshness.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "6db54e7e083432c7bc8604877d4c4948ea0c38e7f04e8939c1f9d9508d7291a9"
+    },
+    {
+      "path": "src/Persistence.ts",
+      "kind": "changed",
+      "upstreamSha256": "d7067afb0a3143c1b62b192cecc253a59a4f3839225cd7d6e128608de2e2cff0",
+      "legacySha256": "a0a2cc6cae2678038c54c39f56492bd4f70ba2571335d7820a3f271eeeb5195b"
+    },
+    {
+      "path": "src/Session.ts",
+      "kind": "changed",
+      "upstreamSha256": "1bf9305ef1e01a2243ff6a89aefbb31d874aa3e8cb80eb46e30d3cf07780f6c9",
+      "legacySha256": "c0ea8105597a68984657f422804de642446bc09523f02e699dee8162a7f23e80"
+    },
+    {
+      "path": "src/SocketType.ts",
+      "kind": "changed",
+      "upstreamSha256": "92f54e2a7acda3054adf6de92de0c4a09e395b59c6565b3e9f29dda74a36c8ce",
+      "legacySha256": "6a5658360068b603171c67c79d45c535b5406fec912112d681bea234b1c03a1a"
+    },
+    {
+      "path": "src/bots/DraftmancerAI.ts",
+      "kind": "changed",
+      "upstreamSha256": "90d858b180e712f5212933db34bc9bcabb53bd3e2b6b774bc5c24c3f0a7ade69",
+      "legacySha256": "5c576a2daaea11c63807540a3bd30939bede333e7e6b7d4c8ef1f72353f951cf"
+    },
+    {
+      "path": "src/data/constants.json",
+      "kind": "changed",
+      "upstreamSha256": "74e28ccfb268caf27e1e37dae5ea019d6012ed51bc7feb033124c9d7ba275cc9",
+      "legacySha256": "30d8314cd56a51f7d3a4bc824745d2ef6186fc852d63f99451bcdcde10cd41a4"
+    },
+    {
+      "path": "src/server.ts",
+      "kind": "changed",
+      "upstreamSha256": "2c7db143ec4091df540b2475bbc8b88a75c428ef9ee1212fa7b68478160461cf",
+      "legacySha256": "b6bbaab3f84301d310fba267388d5a9a954aff53e8794ece499d71fb1cc734ab"
+    },
+    {
+      "path": "src/tools/validateGulchdaleCandidate.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "8d0298d353d0b5fb1a05a74fd49027ecd3ccae1033ae5fd4f3295415ce0d48ce"
+    },
+    {
+      "path": "test/gulchdale.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "26c05c38a70da7736cda70c0698f23416b3715e2401fd07c0b47ad53d0df4eee"
+    },
+    {
+      "path": "test/gulchdaleAcceptance.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "86c51d4c4c7c3283d9e6da6e77ddd64c5a9a217a076a036a15ca7b1618cbba0c"
+    },
+    {
+      "path": "test/gulchdaleControls.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "33a4a9e1b4e6bbde97dfda0747d504f610c9413decb77d590fd57b5fb188cfe6"
+    },
+    {
+      "path": "test/gulchdaleFreshness.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "7c5b8d5a68f12946a568559ded06c6e0e940bf6fe097cd4446adf7cc68dca1c8"
+    },
+    {
+      "path": "test/gulchdaleLobby.ts",
+      "kind": "added",
+      "upstreamSha256": null,
+      "legacySha256": "54fee0761cb43247f3215e81b883cd411a52337e4c59f9d0dd1de41000dbc76c"
+    }
+  ]
+}

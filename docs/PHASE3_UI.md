@@ -103,3 +103,4 @@ Seating reordering and compact chat remain intentionally deferred secondary cont
 ## Development verification
 
 Run the server build, Vue type check, application and compiler tests, production build, and Gulchdale acceptance test. Verify `/` remains disconnected until Host or Join, then test two browsers through `/join/<code>`, six bots, disconnect/reconnect, all four stages, and pool export.
+> Legacy/as-built Phase 3 and 3.1: player flow and controls. Not overhaul Phase 3 (orchestrator).

@@ -1,4 +1,9 @@
 import "source-map-support/register.js";
+import { runtimeMode, startShadowComparison } from "./gulchdale/runtime.js";
+
+// Validate before any listeners open. Shadow is diagnostic only.
+const gulchdaleRuntimeMode = runtimeMode();
+startShadowComparison(gulchdaleRuntimeMode);
 
 export const DraftmancerPort = process.env.PORT || 3000;
 

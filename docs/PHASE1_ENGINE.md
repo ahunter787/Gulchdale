@@ -64,3 +64,4 @@ Each pick takes two cards. This differs from an earlier planning outline that de
 - **Container is unhealthy:** inspect `docker compose logs gulchdale`, then verify both `/healthz` and the persistent volume permissions.
 
 See `UPSTREAM.md` before importing a newer Draftmancer revision.
+> Legacy/as-built Phase 1: engine baseline. Not overhaul Phase 1 (database foundation).

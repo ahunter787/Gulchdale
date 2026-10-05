@@ -23,6 +23,16 @@ def compile_fixture() -> core.CompileResult:
     return core.compile_environment(FIXTURE / "gulchdale.csv", FIXTURE / "scryfall.json", CONFIG)
 
 
+def test_current_committed_baseline_reproduces_without_network() -> None:
+    source = REPOSITORY / "data/compiler/source"
+    result = core.compile_environment(source / "gulchdale.csv", source / "scryfall.json", CONFIG)
+    active = REPOSITORY / "data/cubes"
+    manifest = json.loads((active / "gulchdale.manifest.json").read_text())
+    assert result.environment.encode() == (active / "gulchdale.txt").read_bytes()
+    assert result.environment_sha256 == manifest["environmentSha256"]
+    assert result.counts == manifest["counts"]
+
+
 def custom_cards(environment: str) -> list[dict[str, object]]:
     match = re.search(r"\[CustomCards]\n(.*?)\n\n\[commander]", environment, re.DOTALL)
     assert match

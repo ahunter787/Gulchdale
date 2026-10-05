@@ -32,6 +32,10 @@ jobs:
             - name: Run Gulchdale unit and control tests
               run: npm run test-gulchdale
             - run: npm run test-gulchdale-acceptance
+            - name: Offline foundation and runtime isolation
+              run: npm run test-foundation
+            - name: Application DB migrations and immutable release gates
+              run: node scripts/test-foundation-db.mjs
 
     docker:
         runs-on: ubuntu-latest

@@ -6,6 +6,8 @@ services:
             NODE_ENV: production
             PERSISTENCE_LOCAL_PATH: /app/state
             PORT: 3000
+            GULCHDALE_RUNTIME_MODE: ${GULCHDALE_RUNTIME_MODE:-legacy}
+            GULCHDALE_DATABASE_URL: ${GULCHDALE_DATABASE_URL:-}
             GULCHDALE_UPDATE_CHECK_INTERVAL_SECONDS: ${GULCHDALE_UPDATE_CHECK_INTERVAL_SECONDS:-21600}
         ports:
             - "${GULCHDALE_PORT:-43721}:8080"
@@ -20,6 +22,34 @@ services:
             retries: 5
             start_period: 30s
 
+    database:
+        profiles: [foundation]
+        image: postgres:17-alpine
+        environment:
+            POSTGRES_DB: gulchdale
+            POSTGRES_USER: gulchdale
+            # Development only: no host database port. Override before deployment.
+            POSTGRES_PASSWORD: ${GULCHDALE_DB_PASSWORD:-development-only-change-me}
+        volumes:
+            - gulchdale-database:/var/lib/postgresql/data
+        restart: unless-stopped
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U gulchdale -d gulchdale"]
+            interval: 5s
+            timeout: 5s
+            retries: 10
+
+    foundation-tools:
+        profiles: [foundation]
+        build:
+            context: .
+        entrypoint: ["node", "dist/src/gulchdale/cli.js"]
+        environment:
+            GULCHDALE_DATABASE_URL: postgres://gulchdale:${GULCHDALE_DB_PASSWORD:-development-only-change-me}@database:5432/gulchdale
+        depends_on:
+            database:
+                condition: service_healthy
+
     compiler:
         profiles: [tools]
         build:
@@ -32,3 +62,4 @@ services:
 
 volumes:
     gulchdale-state:
+    gulchdale-database:

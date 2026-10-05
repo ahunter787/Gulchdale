@@ -1,16 +1,1 @@
-# Large generated card databases. Keep these files in Git, but collapse them in
-# GitHub language statistics and review views so application code stays visible.
-/data/MTGCards.*.json linguist-generated=true
-/data/MTGADataDebug.json linguist-generated=true
-/data/CardsByName.json linguist-generated=true
-/data/cubecobra-ratings.json linguist-generated=true
-/data/scryfall-sets.json linguist-generated=true
-/client/src/data/MTGACards.json linguist-generated=true
-/client/src/data/MTGAAlternates.json linguist-generated=true
-/src/data/sealed_extended_data.json linguist-generated=true
-/data/cubes/gulchdale.txt -text -diff linguist-generated=true
-/data/compiler/source/gulchdale.csv -text -diff linguist-generated=true
-/data/compiler/source/scryfall.json -diff linguist-generated=true
-/compiler/tests/fixtures/phase1/gulchdale.csv -text -diff linguist-generated=true
-/compiler/tests/fixtures/phase1/scryfall.json -diff linguist-generated=true
-/compiler/tests/fixtures/phase1/expected-gulchdale.txt -text -diff linguist-generated=true
+*.pdf binary

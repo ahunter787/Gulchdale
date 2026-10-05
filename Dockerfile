@@ -39,5 +39,8 @@ COPY --chown=node:node --from=builder /app/dist ./dist
 COPY --chown=node:node --from=builder /app/client/dist ./client/dist
 COPY --chown=node:node --from=builder /app/node_modules ./node_modules
 COPY --chown=node:node --from=builder /app/package.json ./
+COPY --chown=node:node migrations ./migrations
+COPY --chown=node:node scripts/migrate.mjs ./scripts/migrate.mjs
+COPY --chown=node:node compiler/config ./compiler/config
 
 CMD nginx && node --experimental-json-modules --max-old-space-size=8192 .

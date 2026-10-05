@@ -1,26 +1,89 @@
-# Roadmap
+# Gulchdale overhaul roadmap
 
-The plan of record. The development ecosystem mirrors this table into Plane, one
-work item per phase: re-running the sync updates the existing item rather than
-adding another. **Change the plan here, never in Plane.**
+Repository Markdown is authoritative. Outline and Plane are one-way mirrors.
+Governing inputs: [Charter](architecture/DESIGN_CHARTER.md), [Systems Map](architecture/SYSTEMS_MAP_v1.0.md).
+Baseline: `e766438`, tag `gulchdale-legacy-v1.0.0`; branch `codex/overhaul-foundation`.
+The previous Phase 1–3 work is legacy/as-built history, not these phases.
 
-The table below is deliberately empty. A project that has not stated a plan
-mirrors nothing, which is better than mirroring a placeholder somebody has to
-delete later. Add a row per phase as you adopt them.
+## Modules
 
-Rows have three cells, and the header row must read exactly `Phase`, `Scope`,
-`Status`. A row looks like `| 1 | The engine | Building |`. The phase cell is the
-key Plane matches on, so number phases as you intend to keep them.
-
-Statuses, and the status each becomes in Plane:
-
-| This table | Plane |
+| Module | Name |
 | --- | --- |
-| `Not started` | backlog |
-| `Next` | unstarted |
-| `Building` | started |
-| `Complete` | completed |
-| `Withdrawn` | cancelled |
+| GD-000 | Architecture & Legacy Baseline |
+| GD-100 | Data Foundation & Releases |
+| GD-200 | Card Graph & External Data |
+| GD-300 | Pack Generator & Simulation |
+| GD-400 | Draft Orchestrator & Expeditions |
+| GD-500 | Draftmancer Adapter |
+| GD-600 | Admin / Curation / Publishing |
+| GD-700 | Telemetry & Analytics |
+| GD-800 | Player Personalization |
+| GD-900 | Deployment / Buildability |
 
-| Phase | Scope | Status |
-| --- | --- | --- |
+## Phase milestones
+
+| Phase | Scope | Module | Status |
+| --- | --- | --- | --- |
+| 0 | Preserve, audit, establish guardrails | GD-000 | Next |
+| 1 | PostgreSQL data foundation | GD-100 | Not started |
+| 2 | Seeded pack simulator on a small curated slice | GD-300 | Not started |
+| 3 | Independent orchestrator and Expedition state machine | GD-400 | Not started |
+| 4 | Thin Draftmancer adapter | GD-500 | Not started |
+| 5 | Four-player vertical slice | GD-500 | Not started |
+| 6 | Curation, staging, releases and rollback | GD-600 | Not started |
+| 7 | Append-only telemetry and health projections | GD-700 | Not started |
+| 8 | Anonymous identity and evidence-backed player learning | GD-800 | Not started |
+| 9 | Advanced systems after real play data | GD-400 | Not started |
+| 10 | Buildability, deployment and privacy | GD-900 | Not started |
+
+## Executable tickets
+
+| Ticket | Module | Phase | Title | Status | Acceptance |
+| --- | --- | --- | --- | --- | --- |
+| GD-000-001 | GD-000 | 0 | Publish governing documents and legacy labels | Next | Outline and Plane verify; ten modules; legacy tag |
+| GD-000-002 | GD-000 | 0 | Inventory architecture and data flow | Next | Published Keep/Wrap/Replace Later/Retire inventory |
+| GD-000-003 | GD-000 | 0 | Freeze and reproduce the legacy baseline | Next | Fresh-clone bootstrap; manifest hashes unchanged |
+| GD-000-004 | GD-000 | 0 | Golden smoke and stale-player regression | Next | Four rounds, controls, reconnect, effects, pool and export coverage |
+| GD-000-005 | GD-000 | 0 | Verify Draftmancer pin and patch manifest | Next | Isolated upstream archive; no imported Git history |
+| GD-000-006 | GD-000 | 0 | Adopt architecture-boundary ADRs | Next | DB, domain, sources, ownership and compatibility published |
+| GD-000-007 | GD-000 | 0 | Phase 0 review and exit gate | Next | Composite legacy and ecosystem verification pass |
+| GD-100-001 | GD-100 | 1 | Application PostgreSQL and migrations | Not started | Separate service/volume; versioned transactional schema |
+| GD-100-002 | GD-100 | 1 | Runtime isolation and domain repositories | Not started | Legacy default; shadow failure nonblocking; orchestrated refused |
+| GD-200-001 | GD-200 | 1 | Offline snapshot import and validation | Not started | Input hash/count reconciliation; deterministic staging |
+| GD-100-003 | GD-100 | 1 | Immutable releases and reviewed promotion | Not started | Diff/review identities/live pointer; overrides survive refresh |
+| GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Not started | No browser editing or live content mutation |
+| GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Not started | Independent pool; DB tests; legacy and ecosystem green |
+
+## Owner decisions (stop at the relevant gate)
+
+| Ticket | Module | Phase | Title | Status | Acceptance |
+| --- | --- | --- | --- | --- | --- |
+| GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Not started | Owner ADR; shared capacity, injections and shortages |
+| GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
+| GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
+| GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
+
+Decision context: [ADR-0007](decisions/ADR-0007-open-game-rules.md).
+
+## Sequencing and gates
+
+Phase 0 exits after a fresh clone reproduces the pinned legacy draft without hidden
+manual steps. Phase 1 exits after an independent immutable pool reconciles with the
+manifest and shadow failure cannot disrupt drafts. Phases 2 and 3 validate architecture
+before full-cube tagging or deep engine changes. Start with approximately 20 commanders,
+100 cards and 5–8 archetypes. PassingPack passes normally; ChoicePack is private,
+keeps selected results, destroys the remainder and never enters passing.
+Shared play resumes at an all-player barrier; disconnected private choices await recovery.
+
+Phase 4 adapter operations: pause/resume, dynamic pack handoff, intermission presentation,
+private reward grants and complete events. Phase 5 requires four players, four retained
+commanders, a marked leader, two questions, one private ChoicePack, a 60-card deck
+and a complete audit trail before cutover. Phase 6 adds curation edits/publishing/rollback.
+Phases 7–10 follow the Systems Map. Telemetry is append-only; analytics rebuildable.
+Mailpit is development email only.
+
+Every phase requires server/client builds, legacy smoke, Gulchdale tests, compiler
+reproduction, production Docker build and ecosystem verification.
+Legacy is default through Phase 4 and until the vertical-slice gate passes.
+Shadow never serves orchestrated drafts. No cutover is authorized here.
+Rollback is legacy mode, later also the prior immutable release pointer.

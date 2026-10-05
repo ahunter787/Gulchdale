@@ -106,3 +106,4 @@ Shortly after startup and every six hours, the server compares the remote CSV ha
 - **Candidate inputs were edited:** rerun `compile`; promotion intentionally rejects a manifest/input/output mismatch.
 - **Application refuses to start after a manual edit:** restore all four active artifacts together or promote a validated candidate. Do not edit `gulchdale.txt` by hand.
 - **Status remains stale after promotion:** restart or rebuild the application so it loads the new manifest and environment.
+> Legacy/as-built Phase 2: compiler. Not overhaul Phase 2 (pack simulator).

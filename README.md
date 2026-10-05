@@ -1,8 +1,35 @@
 # Gulchdale
 
+## Overhaul: preserve first
+
+The governing design inputs are the [Design Charter](docs/architecture/DESIGN_CHARTER.md),
+[Systems Map v1.0](docs/architecture/SYSTEMS_MAP_v1.0.md), and [overhaul conversation](https://chatgpt.com/share/6ac35a77-0d7c-83e8-855d-fa275c074182).
+Gulchdale becomes the source of truth for releases, metadata, supply, orchestration,
+weighting, telemetry and curation. Cube Cobra is an import/publishing integration;
+Draftmancer remains the proven legacy draft engine behind a future narrow adapter.
+
+The [overhaul roadmap](docs/roadmap.md) replaces the historical roadmap below:
+Phase 0 preserve/audit; 1 PostgreSQL foundation; 2 pack simulator; 3 orchestrator;
+4 thin adapter; 5 four-player vertical slice; 6 curation/releases; 7 telemetry;
+8 player learning; 9 advanced systems; 10 buildability.
+Repository Markdown is authoritative; Plane and Outline are synchronized mirrors.
+Do not rewrite Draftmancer or tag the full cube. Legacy stays the default through
+overhaul Phase 4 and until the vertical-slice acceptance gate passes.
+
+The original Phase 1–3 documents and runtime remain legacy/as-built records.
+The old [Phase 4 proposal](docs/PHASE4_MECHANICS.md) is superseded research, not an
+implementation mandate: singleton applies to each final deck, not the whole draft.
+Baseline: tag `gulchdale-legacy-v1.0.0`, commit `e766438`.
+
+Start with the [legacy reproduction runbook](docs/LEGACY_BASELINE.md).
+The separate [PostgreSQL foundation](docs/FOUNDATION.md) provides offline imports,
+immutable releases, reviewed promotion and read-only inspection. It does not replace
+legacy drafting. See the [architecture inventory](docs/architecture/LEGACY_INVENTORY.md)
+and [accepted boundary decisions](docs/decisions/ADR-0003-domain-and-engine-boundary.md).
+
 Gulchdale is a standalone, Gulchdale-branded multiplayer Commander Cube drafting application. It is intended to turn the existing CubeCobra-to-Draftmancer workflow into a cohesive product: players visit Gulchdale, host or join a lobby, draft, review their pool, and export a deck without seeing Draftmancer configuration files or manually uploading a cube list.
 
-## Product direction
+## Historical product direction (legacy/as-built)
 
 The app should begin as a self-hosted web application and installable PWA rather than an Electron desktop application. Draftmancer remains the proven drafting and multiplayer engine, but becomes an internal dependency instead of the visible product. CubeCobra remains the authoritative source for the cube, and the existing Python export logic evolves into a reusable Gulchdale compiler.
 
@@ -93,7 +120,7 @@ For the MVP, players must be able to:
 
 Players should not need to visit Draftmancer, paste a CubeCobra URL, or upload a generated Draftmancer list.
 
-## Roadmap
+## Historical roadmap (superseded by the overhaul roadmap)
 
 1. **Engine:** Host the current Gulchdale environment on an owned Draftmancer-based server while retaining the upstream UI where practical.
 2. **Compiler:** Refactor the existing Python exporter into testable compile, validate, build, and version operations; remove manual CSV/TXT steps.

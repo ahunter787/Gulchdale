@@ -99,6 +99,17 @@ resolves, or when a sync would change something.
 
 ## Everyday use
 
+Gulchdale's overhaul mirror uses the Modules, Phase milestones, Executable tickets
+and Owner decisions tables in docs/roadmap.md. Stable external IDs match ten Modules,
+eleven milestones and their tickets. A new empty project receives standard workflow
+states and has Modules enabled only on an explicit --apply. The installed v1 API is
+used; pagination, live content and membership are checked. Run parser tests with
+`node --test ecosystem/integrations/plane-sync.test.mjs`.
+Extensions remain a documented research register, not automatic execution tickets;
+adopt executable extension work explicitly into the roadmap.
+Verification accepts Outline's Markdown formatting normalization, compares content,
+and reports retained stale material without deleting it.
+
 ```bash
 make health              # what answers, and which container holds which port
 make ps                  # this ecosystem's containers

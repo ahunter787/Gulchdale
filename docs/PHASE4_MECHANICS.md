@@ -117,3 +117,4 @@ The toast currently used for `addCards` can remain as a fallback, but it is not 
 - Rewriting generic booster generation or bot logic.
 - Commander selection and color-identity enforcement, which remain Phase 5.
 - Forge administration and multi-profile selection, which remain Phase 6.
+> Superseded research. The cube-wide singleton proposal below is NOT adopted. The overhaul uses per-player deck singleton and scalable virtual supply; see architecture/SYSTEMS_MAP_v1.0.md. Preserve observations of existing AddCards behavior, not the proposed allocator.

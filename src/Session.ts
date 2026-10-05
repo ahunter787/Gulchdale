@@ -1922,6 +1922,14 @@ export class Session implements IIndexable {
 	}): SocketAck {
 		if (this.drafting) return new SocketError("Already drafting.");
 
+		// Lobby reservations have no live Connection. Reject before collation or
+		// seating changes; the owner can wait for reconnect or explicitly remove.
+		if (Object.keys(this.disconnectedUsers).length > 0 || [...this.users].some((id) => !Connections[id]))
+			return new SocketError(
+				"Players unavailable",
+				"Wait for disconnected players to return or remove their reserved seats before starting."
+			);
+
 		if (this.randomizeSeatingOrder) this.randomizeSeating();
 
 		const boosterPerPlayer = overrides?.boostersPerPlayer ?? this.boostersPerPlayer;

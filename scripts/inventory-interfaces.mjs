@@ -1,0 +1,12 @@
+import fs from "node:fs";
+import { execFileSync } from "node:child_process";
+const revision="e766438c617711a22f3ec6899f4155cb0f6fb040";
+const source=execFileSync("git",["show",revision+":src/server.ts"],{encoding:"utf8"});
+const line=offset=>source.slice(0,offset).split("\n").length;
+const http=[...source.matchAll(/app\.(get|post|put|patch|delete|use)\(\s*"([^"]+)"/g)].map(m=>({method:m[1].toUpperCase(),path:m[2],line:line(m.index)}));
+const sockets=[...source.matchAll(/socket\.on\(\s*"([^"]+)"/g)].map(m=>({event:m[1],line:line(m.index)}));
+const manifest={baselineCommit:revision,source:"src/server.ts",http,sockets};
+const target="docs/reference/legacy-interfaces.json";
+if(process.argv.includes("--write"))fs.writeFileSync(target,JSON.stringify(manifest,null,2)+"\n");
+else if(JSON.stringify(manifest)!==JSON.stringify(JSON.parse(fs.readFileSync(target,"utf8"))))throw new Error("Legacy interface inventory drift");
+console.log(http.length+" HTTP route/static registrations; "+new Set(sockets.map(s=>s.event)).size+" socket event names.");

@@ -1,0 +1,574 @@
+{
+  "baselineCommit": "e766438c617711a22f3ec6899f4155cb0f6fb040",
+  "source": "src/server.ts",
+  "http": [
+    {
+      "method": "USE",
+      "path": "/",
+      "line": 112
+    },
+    {
+      "method": "USE",
+      "path": "/",
+      "line": 113
+    },
+    {
+      "method": "USE",
+      "path": "/bracket",
+      "line": 117
+    },
+    {
+      "method": "USE",
+      "path": "/draftqueue",
+      "line": 118
+    },
+    {
+      "method": "GET",
+      "path": "/join/:code",
+      "line": 119
+    },
+    {
+      "method": "GET",
+      "path": "/healthCheck",
+      "line": 2250
+    },
+    {
+      "method": "GET",
+      "path": "/getCollection",
+      "line": 2269
+    },
+    {
+      "method": "GET",
+      "path": "/getCollection/:sessionID",
+      "line": 2273
+    },
+    {
+      "method": "GET",
+      "path": "/getCollectionPlainText/",
+      "line": 2298
+    },
+    {
+      "method": "GET",
+      "path": "/getCollectionPlainText/:sessionID",
+      "line": 2302
+    },
+    {
+      "method": "GET",
+      "path": "/getUsers/:sessionID",
+      "line": 2306
+    },
+    {
+      "method": "POST",
+      "path": "/getCards",
+      "line": 2317
+    },
+    {
+      "method": "POST",
+      "path": "/getDeck",
+      "line": 2338
+    },
+    {
+      "method": "GET",
+      "path": "/getBracket/:sessionID",
+      "line": 2367
+    },
+    {
+      "method": "GET",
+      "path": "/healthz",
+      "line": 2405
+    },
+    {
+      "method": "GET",
+      "path": "/api/gulchdale/config",
+      "line": 2415
+    },
+    {
+      "method": "GET",
+      "path": "/api/gulchdale/compiler/status",
+      "line": 2419
+    },
+    {
+      "method": "POST",
+      "path": "/api/gulchdale/sessions",
+      "line": 2423
+    },
+    {
+      "method": "GET",
+      "path": "/api/gulchdale/sessions/:code",
+      "line": 2428
+    },
+    {
+      "method": "GET",
+      "path": "/getSessionsDebug/:key",
+      "line": 2480
+    },
+    {
+      "method": "GET",
+      "path": "/getConnections/:key",
+      "line": 2484
+    },
+    {
+      "method": "GET",
+      "path": "/getStatus/:key",
+      "line": 2488
+    },
+    {
+      "method": "GET",
+      "path": "/getSessions/:key",
+      "line": 2509
+    },
+    {
+      "method": "POST",
+      "path": "/setDraftQueueSettings/:key",
+      "line": 2528
+    },
+    {
+      "method": "GET",
+      "path": "/api/getDraftQueueStatus",
+      "line": 2551
+    },
+    {
+      "method": "POST",
+      "path": "/setBotBatchWindow",
+      "line": 2555
+    }
+  ],
+  "sockets": [
+    {
+      "event": "disconnect",
+      "line": 1795
+    },
+    {
+      "event": "error",
+      "line": 1815
+    },
+    {
+      "event": "setUserName",
+      "line": 1844
+    },
+    {
+      "event": "leaveSession",
+      "line": 1845
+    },
+    {
+      "event": "chatMessage",
+      "line": 1846
+    },
+    {
+      "event": "setUserName",
+      "line": 1852
+    },
+    {
+      "event": "leaveSession",
+      "line": 1853
+    },
+    {
+      "event": "setCollection",
+      "line": 1854
+    },
+    {
+      "event": "parseCollection",
+      "line": 1855
+    },
+    {
+      "event": "useCollection",
+      "line": 1856
+    },
+    {
+      "event": "chatMessage",
+      "line": 1857
+    },
+    {
+      "event": "setReady",
+      "line": 1858
+    },
+    {
+      "event": "pickCard",
+      "line": 1859
+    },
+    {
+      "event": "passBooster",
+      "line": 1860
+    },
+    {
+      "event": "gridDraftPick",
+      "line": 1861
+    },
+    {
+      "event": "rochesterDraftPick",
+      "line": 1862
+    },
+    {
+      "event": "rotisserieDraftPick",
+      "line": 1863
+    },
+    {
+      "event": "winstonDraftTakePile",
+      "line": 1864
+    },
+    {
+      "event": "winstonDraftSkipPile",
+      "line": 1865
+    },
+    {
+      "event": "winchesterDraftPick",
+      "line": 1866
+    },
+    {
+      "event": "housmanDraftPick",
+      "line": 1867
+    },
+    {
+      "event": "minesweeperDraftPick",
+      "line": 1868
+    },
+    {
+      "event": "solomonDraftOrganize",
+      "line": 1869
+    },
+    {
+      "event": "solomonDraftConfirmPiles",
+      "line": 1870
+    },
+    {
+      "event": "solomonDraftPick",
+      "line": 1871
+    },
+    {
+      "event": "silentAuctionDraftBid",
+      "line": 1872
+    },
+    {
+      "event": "teamSealedPick",
+      "line": 1873
+    },
+    {
+      "event": "updateBracket",
+      "line": 1874
+    },
+    {
+      "event": "updateDeckLands",
+      "line": 1875
+    },
+    {
+      "event": "moveCard",
+      "line": 1876
+    },
+    {
+      "event": "swapDeckAndSideboard",
+      "line": 1877
+    },
+    {
+      "event": "moveAllToDeck",
+      "line": 1878
+    },
+    {
+      "event": "moveAllToSideboard",
+      "line": 1879
+    },
+    {
+      "event": "removeBasicsFromDeck",
+      "line": 1880
+    },
+    {
+      "event": "retrieveUpdatedDraftLogs",
+      "line": 1881
+    },
+    {
+      "event": "requestTakeover",
+      "line": 1882
+    },
+    {
+      "event": "convertMTGOLog",
+      "line": 1883
+    },
+    {
+      "event": "setSession",
+      "line": 1886
+    },
+    {
+      "event": "readyCheck",
+      "line": 1906
+    },
+    {
+      "event": "startDraft",
+      "line": 1907
+    },
+    {
+      "event": "stopDraft",
+      "line": 1908
+    },
+    {
+      "event": "pauseDraft",
+      "line": 1909
+    },
+    {
+      "event": "resumeDraft",
+      "line": 1910
+    },
+    {
+      "event": "startSilentAuctionDraft",
+      "line": 1911
+    },
+    {
+      "event": "startGlimpseDraft",
+      "line": 1912
+    },
+    {
+      "event": "startSupremeDraft",
+      "line": 1913
+    },
+    {
+      "event": "startGridDraft",
+      "line": 1914
+    },
+    {
+      "event": "startRochesterDraft",
+      "line": 1915
+    },
+    {
+      "event": "startRotisserieDraft",
+      "line": 1916
+    },
+    {
+      "event": "startWinstonDraft",
+      "line": 1917
+    },
+    {
+      "event": "startWinchesterDraft",
+      "line": 1918
+    },
+    {
+      "event": "startHousmanDraft",
+      "line": 1919
+    },
+    {
+      "event": "startMinesweeperDraft",
+      "line": 1920
+    },
+    {
+      "event": "startSolomonDraft",
+      "line": 1921
+    },
+    {
+      "event": "startTeamSealed",
+      "line": 1922
+    },
+    {
+      "event": "distributeJumpstart",
+      "line": 1923
+    },
+    {
+      "event": "distributeSealed",
+      "line": 1924
+    },
+    {
+      "event": "setSessionOwner",
+      "line": 1925
+    },
+    {
+      "event": "setOwnerIsPlayer",
+      "line": 1926
+    },
+    {
+      "event": "removePlayer",
+      "line": 1927
+    },
+    {
+      "event": "setSeating",
+      "line": 1928
+    },
+    {
+      "event": "boostersPerPlayer",
+      "line": 1929
+    },
+    {
+      "event": "cardsPerBooster",
+      "line": 1930
+    },
+    {
+      "event": "teamDraft",
+      "line": 1931
+    },
+    {
+      "event": "setRandomizeSeatingOrder",
+      "line": 1932
+    },
+    {
+      "event": "setDisableBotSuggestions",
+      "line": 1933
+    },
+    {
+      "event": "setDistributionMode",
+      "line": 1934
+    },
+    {
+      "event": "setCustomBoosters",
+      "line": 1935
+    },
+    {
+      "event": "setBots",
+      "line": 1936
+    },
+    {
+      "event": "setRestriction",
+      "line": 1937
+    },
+    {
+      "event": "parseCustomCardList",
+      "line": 1938
+    },
+    {
+      "event": "importCube",
+      "line": 1939
+    },
+    {
+      "event": "loadLocalCustomCardList",
+      "line": 1940
+    },
+    {
+      "event": "ignoreCollections",
+      "line": 1941
+    },
+    {
+      "event": "setPickTimer",
+      "line": 1942
+    },
+    {
+      "event": "setTournamentTimer",
+      "line": 1943
+    },
+    {
+      "event": "setReviewTimer",
+      "line": 1944
+    },
+    {
+      "event": "setHidePicks",
+      "line": 1945
+    },
+    {
+      "event": "setMaxPlayers",
+      "line": 1946
+    },
+    {
+      "event": "setMythicPromotion",
+      "line": 1947
+    },
+    {
+      "event": "setUseBoosterContent",
+      "line": 1948
+    },
+    {
+      "event": "setBoosterContent",
+      "line": 1949
+    },
+    {
+      "event": "setUsePredeterminedBoosters",
+      "line": 1950
+    },
+    {
+      "event": "setBoosters",
+      "line": 1951
+    },
+    {
+      "event": "shuffleBoosters",
+      "line": 1952
+    },
+    {
+      "event": "setPersonalLogs",
+      "line": 1953
+    },
+    {
+      "event": "setDraftLogRecipients",
+      "line": 1954
+    },
+    {
+      "event": "setDraftLogUnlockTimer",
+      "line": 1955
+    },
+    {
+      "event": "setMaxDuplicates",
+      "line": 1956
+    },
+    {
+      "event": "setColorBalance",
+      "line": 1957
+    },
+    {
+      "event": "setFoil",
+      "line": 1958
+    },
+    {
+      "event": "setUseCustomCardList",
+      "line": 1959
+    },
+    {
+      "event": "setCustomCardListWithReplacement",
+      "line": 1960
+    },
+    {
+      "event": "setCustomCardListDuplicateProtection",
+      "line": 1961
+    },
+    {
+      "event": "setCustomCardListSetting",
+      "line": 1965
+    },
+    {
+      "event": "setDoubleMastersMode",
+      "line": 1966
+    },
+    {
+      "event": "setPickedCardsPerRound",
+      "line": 1967
+    },
+    {
+      "event": "setBurnedCardsPerRound",
+      "line": 1968
+    },
+    {
+      "event": "setDiscardRemainingCardsAt",
+      "line": 1969
+    },
+    {
+      "event": "setPublic",
+      "line": 1970
+    },
+    {
+      "event": "setDescription",
+      "line": 1971
+    },
+    {
+      "event": "generateBracket",
+      "line": 1972
+    },
+    {
+      "event": "lockBracket",
+      "line": 1973
+    },
+    {
+      "event": "syncBracketMTGO",
+      "line": 1974
+    },
+    {
+      "event": "shareDraftLog",
+      "line": 1975
+    },
+    {
+      "event": "setHooks",
+      "line": 1976
+    },
+    {
+      "event": "setAllowSpectators",
+      "line": 1977
+    },
+    {
+      "event": "draftQueueRegister",
+      "line": 2026
+    },
+    {
+      "event": "draftQueueUnregister",
+      "line": 2036
+    }
+  ]
+}

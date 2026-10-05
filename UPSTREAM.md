@@ -10,6 +10,15 @@ The `upstream` remote is retained for discovery and comparison only. Gulchdale's
 
 ## Updating the upstream snapshot
 
+The Phase 0 [patch manifest](docs/reference/legacy-upstream-patches.json) audits
+the frozen legacy tag against an isolated archive at the pin: 1,856 upstream files,
+1,821 identical files and 123 changed/added/removed paths. Recheck with
+`npm run verify:upstream`; explicitly regenerate only after review using
+`node scripts/verify-upstream.mjs --write`.
+Post-baseline engine changes are limited to the unavailable-player preflight in
+`Session.startDraft` and runtime-mode startup validation in `server.ts`.
+The new domain lives separately under `src/gulchdale/`.
+
 Never merge, rebase, subtree-import, or otherwise copy Draftmancer's Git ancestry into this repository. In particular, do not run `git merge upstream/master` (or the equivalent for any upstream branch). Doing so would make every clone and push carry the upstream project's entire historical object database again.
 
 For an update:

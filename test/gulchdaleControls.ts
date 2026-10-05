@@ -105,10 +105,35 @@ describe("Gulchdale campfire controls", function () {
 			check();
 		});
 
+		// Regression: a reserved lobby seat has no Connection. Starting used to
+		// dereference it in DraftState after consuming/generated packs.
+		let startResult: SocketAck | undefined;
+		expect(() => {
+			startResult = Sessions[sessionID].startDraft();
+		}).to.not.throw();
+		expect(startResult?.error?.title).to.equal("Players unavailable");
+		expect(Sessions[sessionID].drafting).to.equal(false);
+		expect(Sessions[sessionID].disconnectedUsers).to.have.property(targetID);
 		const response = await new Promise<SocketAck>((resolve) => owner.emit("removePlayer", targetID, resolve));
 		expect(response.code).to.equal(0);
 		expect(Sessions[sessionID].disconnectedUsers).to.not.have.property(targetID);
 		expect(Sessions[sessionID].userOrder).to.not.include(targetID);
+	});
+
+	it("rejects a deleted Connection without mutating seating or starting a draft", function () {
+		const session = Sessions[sessionID],
+			stale = "deleted-stale-player";
+		session.users.add(stale);
+		session.userOrder.push(stale);
+		const seating = [...session.userOrder];
+		try {
+			expect(session.startDraft().error?.title).to.equal("Players unavailable");
+			expect(session.drafting).to.equal(false);
+			expect(session.userOrder).to.deep.equal(seating);
+		} finally {
+			session.users.delete(stale);
+			session.userOrder = session.userOrder.filter((id) => id !== stale);
+		}
 	});
 
 	it("requires the owner to transfer ownership before leaving", async function () {
