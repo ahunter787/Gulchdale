@@ -5,6 +5,10 @@ Read [database ADR](decisions/ADR-0002-runtime-and-database.md) and
 [source/release ADR](decisions/ADR-0004-source-and-release-pipeline.md).
 Legacy drafting and file persistence remain unchanged.
 
+The initial immutable release is recorded in the tracked
+[promotion receipt](reference/foundation-initial-release.json). Its hashes can be
+reproduced on any application database using the reviewed operator workflow below.
+
 ## Local operator workflow
 
 The application database is the foundation-profile database service in compose.yml,

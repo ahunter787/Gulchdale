@@ -12,13 +12,17 @@ checkout, external cube login, source download, account or ecosystem secret is r
 to build/run the legacy application.
 
 ```bash
-npm ci
+PUPPETEER_SKIP_DOWNLOAD=true npm ci
 python3 -m venv compiler/.venv
 compiler/.venv/bin/python -m pip install -r compiler/requirements.lock
 compiler/.venv/bin/python -m pip install -e './compiler[dev]'
 GULCHDALE_PYTHON=compiler/.venv/bin/python npm run verify:legacy
 docker compose up --build -d gulchdale
 ```
+
+The legacy/Gulchdale gates use sockets and the real exporter, not Puppeteer's browser;
+skipping that optional download avoids an unrelated browser prerequisite. Install it
+separately if running inherited browser-driven/manual UI suites later.
 
 Open localhost:43721 (or configured GULCHDALE_PORT). Host a lobby; share the six-character
 invite after the host has joined. Choose names, ready players, remove accidental or

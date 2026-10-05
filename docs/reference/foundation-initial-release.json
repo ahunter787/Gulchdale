@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Reviewed initial application-owned foundation release; does not select the legacy draft runtime",
+  "workspace": "37141e0b73c2a65a7c72db784a1ea9d5812375e4b10854289613929cc8f21fc6",
+  "reviewedDiffDigest": "401ebfd159ce2af1dd5488e5b70b5bb90f8b403242119d116a40ce7863105812",
+  "environment": "18d862d186b05e5f8becdd59a13dfc3d5748ca3a7f9da4429415c2000b8f70b5",
+  "reference": {
+    "pool": "cc59063f48b3af7110f667460aac3323b486cd7d3ff6d4b075777e1113f4c8c4",
+    "metadata": "54e010787faa6364497defb410855ca86483bd882e452d1288b9f2554bafbfcb",
+    "rules": "8fc963a1c3fc2b5c8582813d8b3df2495da21f6fdee2810bbc814dcae88427a8",
+    "engine": "40e6faf0b165dfcfd9a016755537cdbe0afc8e5639511e67fdd496b3d6e00f53"
+  },
+  "counts": {
+    "sourceRows": 1114,
+    "sheets": { "commander": 144, "mono": 657, "land": 160 },
+    "customCards": 66,
+    "draftEffectCards": 52,
+    "warnings": 2
+  },
+  "provenance": {
+    "cubeId": "f1c8be0f-7ac3-420f-81eb-ec8933ce45fa",
+    "legacyVersion": "gch-bfc40f9519b9",
+    "environmentSha256": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68",
+    "engineIdentity": {
+      "upstreamRevision": "11f056cc1be6f99795f89d8dc7111d98f1a83c6a",
+      "legacyBaselineCommit": "e766438c617711a22f3ec6899f4155cb0f6fb040",
+      "compatibilityPatch": "unavailable-lobby-player-preflight-v1"
+    },
+    "sourceHashes": {
+      "cube-cobra": "d5d18e520ec31715a4c59fdadf296ed930d738966673264aa9f9b117ca6fe0c9",
+      "scryfall": "c3b149935af1ac1cc3a189781f17a695975a95b9dade62c72f2e98dac8b39a05",
+      "compiler-config": "1fa4efa549e0d52f9f474672c7b56604c2664111de6e5a7ed286d8bfffc94eb9",
+      "custom-config": "19011093b2612d1fd5fe47cf8fdea1f59693719db0bcd07befd9f11041221bd3",
+      "manifest": "0535861c833ec49983705a2ae47709b7dffa5c4871a4afa24d53db4f94d61f17",
+      "legacy-environment": "bfc40f9519b9da93733b83d2d89ec82b5103b2913c670d955e9b4f95d7040b68"
+    }
+  },
+  "review": {
+    "initialImport": true,
+    "addedLogicalPoolCards": 1128,
+    "removedLogicalPoolCards": 0,
+    "countsAndProvenanceReconciled": true,
+    "supplyScaling": "Pending owner decision GD-300-901; imported quantities only",
+    "runtimeCutover": false
+  }
+}

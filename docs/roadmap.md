@@ -24,8 +24,8 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 
 | Phase | Scope | Module | Status |
 | --- | --- | --- | --- |
-| 0 | Preserve, audit, establish guardrails | GD-000 | Next |
-| 1 | PostgreSQL data foundation | GD-100 | Not started |
+| 0 | Preserve, audit, establish guardrails | GD-000 | Complete |
+| 1 | PostgreSQL data foundation | GD-100 | Complete |
 | 2 | Seeded pack simulator on a small curated slice | GD-300 | Not started |
 | 3 | Independent orchestrator and Expedition state machine | GD-400 | Not started |
 | 4 | Thin Draftmancer adapter | GD-500 | Not started |
@@ -40,19 +40,19 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
-| GD-000-001 | GD-000 | 0 | Publish governing documents and legacy labels | Next | Outline and Plane verify; ten modules; legacy tag |
-| GD-000-002 | GD-000 | 0 | Inventory architecture and data flow | Next | Published Keep/Wrap/Replace Later/Retire inventory |
-| GD-000-003 | GD-000 | 0 | Freeze and reproduce the legacy baseline | Next | Fresh-clone bootstrap; manifest hashes unchanged |
-| GD-000-004 | GD-000 | 0 | Golden smoke and stale-player regression | Next | Four rounds, controls, reconnect, effects, pool and export coverage |
-| GD-000-005 | GD-000 | 0 | Verify Draftmancer pin and patch manifest | Next | Isolated upstream archive; no imported Git history |
-| GD-000-006 | GD-000 | 0 | Adopt architecture-boundary ADRs | Next | DB, domain, sources, ownership and compatibility published |
-| GD-000-007 | GD-000 | 0 | Phase 0 review and exit gate | Next | Composite legacy and ecosystem verification pass |
-| GD-100-001 | GD-100 | 1 | Application PostgreSQL and migrations | Not started | Separate service/volume; versioned transactional schema |
-| GD-100-002 | GD-100 | 1 | Runtime isolation and domain repositories | Not started | Legacy default; shadow failure nonblocking; orchestrated refused |
-| GD-200-001 | GD-200 | 1 | Offline snapshot import and validation | Not started | Input hash/count reconciliation; deterministic staging |
-| GD-100-003 | GD-100 | 1 | Immutable releases and reviewed promotion | Not started | Diff/review identities/live pointer; overrides survive refresh |
-| GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Not started | No browser editing or live content mutation |
-| GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Not started | Independent pool; DB tests; legacy and ecosystem green |
+| GD-000-001 | GD-000 | 0 | Publish governing documents and legacy labels | Complete | Outline and Plane verify; ten modules; legacy tag |
+| GD-000-002 | GD-000 | 0 | Inventory architecture and data flow | Complete | Published Keep/Wrap/Replace Later/Retire inventory |
+| GD-000-003 | GD-000 | 0 | Freeze and reproduce the legacy baseline | Complete | Fresh-clone bootstrap; manifest hashes unchanged |
+| GD-000-004 | GD-000 | 0 | Golden smoke and stale-player regression | Complete | Four rounds, controls, reconnect, effects, pool and export coverage |
+| GD-000-005 | GD-000 | 0 | Verify Draftmancer pin and patch manifest | Complete | Isolated upstream archive; no imported Git history |
+| GD-000-006 | GD-000 | 0 | Adopt architecture-boundary ADRs | Complete | DB, domain, sources, ownership and compatibility published |
+| GD-000-007 | GD-000 | 0 | Phase 0 review and exit gate | Complete | Composite legacy and ecosystem verification pass |
+| GD-100-001 | GD-100 | 1 | Application PostgreSQL and migrations | Complete | Separate service/volume; versioned transactional schema |
+| GD-100-002 | GD-100 | 1 | Runtime isolation and domain repositories | Complete | Legacy default; shadow failure nonblocking; orchestrated refused |
+| GD-200-001 | GD-200 | 1 | Offline snapshot import and validation | Complete | Input hash/count reconciliation; deterministic staging |
+| GD-100-003 | GD-100 | 1 | Immutable releases and reviewed promotion | Complete | Diff/review identities/live pointer; overrides survive refresh |
+| GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Complete | No browser editing or live content mutation |
+| GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
 
 ## Owner decisions (stop at the relevant gate)
 
@@ -64,6 +64,8 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
 
 Decision context: [ADR-0007](decisions/ADR-0007-open-game-rules.md).
+Completed preservation/foundation evidence: [Phase 0/1 exit record](OVERHAUL_PHASE_0_1_VERIFICATION.md).
+Next gate: owner decision GD-300-901 before Phase 2 simulation.
 
 ## Sequencing and gates
 

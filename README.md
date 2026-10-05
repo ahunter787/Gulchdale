@@ -27,6 +27,10 @@ immutable releases, reviewed promotion and read-only inspection. It does not rep
 legacy drafting. See the [architecture inventory](docs/architecture/LEGACY_INVENTORY.md)
 and [accepted boundary decisions](docs/decisions/ADR-0003-domain-and-engine-boundary.md).
 
+Overhaul Phases 0 and 1 are complete; see the [verified exit record](docs/OVERHAUL_PHASE_0_1_VERIFICATION.md).
+Phase 2 awaits owner decision GD-300-901 on virtual supply and reservations. No new
+draft flow or full-cube tagging has been implemented.
+
 Gulchdale is a standalone, Gulchdale-branded multiplayer Commander Cube drafting application. It is intended to turn the existing CubeCobra-to-Draftmancer workflow into a cohesive product: players visit Gulchdale, host or join a lobby, draft, review their pool, and export a deck without seeing Draftmancer configuration files or manually uploading a cube list.
 
 ## Historical product direction (legacy/as-built)
