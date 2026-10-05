@@ -95,8 +95,30 @@ extensions="$(awk '
   in_table { exit }
 ' "$PROJECT_ROOT/docs/extensions.md")"
 
-[ -n "$phases" ] || die "no phase rows found in docs/roadmap.md - has the table format changed?"
-[ -n "$extensions" ] || warn "no extension rows found in docs/extensions.md - has the table format changed?"
+# An empty table is a legitimate state, not a broken one: the scaffold ships both
+# documents with their headers and no rows, so that a project which has not stated
+# a plan yet mirrors nothing rather than inventing placeholder work. Only a
+# *missing* header means the format has actually changed - saying "has the format
+# changed?" about an empty table sends the reader looking for a problem that is
+# not there.
+roadmap_header='^\|[[:space:]]*Phase[[:space:]]*\|[[:space:]]*Scope[[:space:]]*\|[[:space:]]*Status[[:space:]]*\|'
+extensions_header='^\|[[:space:]]*#[[:space:]]*\|[[:space:]]*What it is[[:space:]]*\|[[:space:]]*Kind[[:space:]]*\|[[:space:]]*Status[[:space:]]*\|'
+
+if [ -z "$phases" ]; then
+  if grep -qE "$roadmap_header" "$PROJECT_ROOT/docs/roadmap.md" 2>/dev/null; then
+    log "the roadmap table is empty - nothing to mirror yet"
+  else
+    die "no '| Phase | Scope | Status |' table in docs/roadmap.md - has the format changed?"
+  fi
+fi
+
+if [ -z "$extensions" ]; then
+  if grep -qE "$extensions_header" "$PROJECT_ROOT/docs/extensions.md" 2>/dev/null; then
+    log "the extensions register is empty - nothing to mirror yet"
+  else
+    warn "no '| # | What it is | Kind | Status |' table in docs/extensions.md - has the format changed?"
+  fi
+fi
 
 # A coarse state group, derived from the words the documents already use.
 # Plane state names are chosen per project, but the *group* of a state

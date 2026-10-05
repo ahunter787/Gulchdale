@@ -89,7 +89,10 @@ load_env() {
   : "${OUTLINE_VERSION:=1.10.1}"
   : "${MAIL_FROM_PLANE:=plane@${PROJECT_SLUG}.local}"
   : "${MAIL_FROM_OUTLINE:=outline@${PROJECT_SLUG}.local}"
-  : "${DOCS_EXCLUDE:=ecosystem/}"
+  # Path prefixes the documentation sync leaves out: the ecosystem's own
+  # documentation, and the agent skill under .agents/ - both describe the
+  # tooling, not the project.
+  : "${DOCS_EXCLUDE:=ecosystem/ .agents/}"
   export PROJECT_SLUG PROJECT_NAME ECOSYSTEM_HOST ECOSYSTEM_SCHEME ECOSYSTEM_ADMIN_EMAIL
   export PLANE_VERSION PLANE_HTTP_PORT OUTLINE_HTTP_PORT MAILPIT_HTTP_PORT
   export SHARED_NETWORK PLANE_COMPOSE_PROJECT MAIL_COMPOSE_PROJECT OUTLINE_COMPOSE_PROJECT MAILPIT_CONTAINER
