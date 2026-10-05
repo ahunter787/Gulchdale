@@ -2,6 +2,13 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+	CATALOG_PATH,
+	parseCatalog,
+	renderDescription,
+	plainDescription,
+	normalizedHTML,
+} from "./work-item-content.mjs";
 
 export function table(text, headers) {
 	const lines = text.split("\n"),
@@ -82,16 +89,28 @@ export function group(status) {
 	);
 }
 const hash = (value) => crypto.createHash("sha256").update(JSON.stringify(value)).digest("hex");
-const html = (text) =>
-	text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 
 async function main() {
 	const args = process.argv.slice(2);
 	if (args.some((x) => !["--apply", "--check", "--verify", "--print-plan"].includes(x)))
 		throw new Error("Usage: sync-roadmap.sh [--apply|--check|--verify|--print-plan]");
 	const plan = parsePlan(fs.readFileSync(path.join(process.env.PROJECT_ROOT, "docs/roadmap.md"), "utf8"));
+	const catalog = parseCatalog(fs.readFileSync(path.join(process.env.PROJECT_ROOT, CATALOG_PATH), "utf8"), [
+		...plan.modules.map((m) => m.Module),
+		...plan.items.map((i) => i.key),
+	]);
+	// Validate all bodies and repository links before contacting Plane or changing anything.
+	const relativeLinks = new Set([CATALOG_PATH]);
+	const preflightLink = (link) => {
+		if (link.external) return link.external;
+		if (!fs.existsSync(path.join(process.env.PROJECT_ROOT, link.file)))
+			throw new Error("Catalog references missing document " + link.file);
+		relativeLinks.add(link.file);
+		return link.file + link.fragment;
+	};
+	for (const entry of catalog.values()) renderDescription(entry, "", preflightLink);
 	if (args.includes("--print-plan")) {
-		console.log(JSON.stringify(plan, null, 2));
+		console.log(JSON.stringify({ ...plan, descriptions: [...catalog.values()] }, null, 2));
 		return;
 	}
 	const apply = args.includes("--apply"),
@@ -140,12 +159,40 @@ async function main() {
 			cursors.add(cursor);
 		}
 	}
-	const states = await list("states/");
 	if (args.includes("--check")) {
-		console.log("Plane project and module API reachable");
+		await list("states/");
 		await list("modules/");
+		console.log("Plane project and module API reachable");
 		return;
 	}
+	const stateFile = path.join(process.env.STATE_DIR, "plane.json");
+	const state = fs.existsSync(stateFile) ? JSON.parse(fs.readFileSync(stateFile, "utf8")) : {};
+	const docsFile = path.join(process.env.STATE_DIR, "docs.json");
+	const docs = fs.existsSync(docsFile) ? JSON.parse(fs.readFileSync(docsFile, "utf8")) : {};
+	const outline =
+		process.env.ECOSYSTEM_SCHEME + "://" + process.env.ECOSYSTEM_HOST + ":" + process.env.OUTLINE_HTTP_PORT;
+	for (const file of relativeLinks)
+		if (!docs[file]?.id) throw new Error("Publish Outline documents first: missing " + file);
+	const resolveLink = (link) => link.external ?? outline + "/doc/" + docs[link.file].id + link.fragment;
+	const description = (key, status, module) =>
+		renderDescription(
+			catalog.get(key),
+			"Repository-owned mirror. Sources: " +
+				CATALOG_PATH +
+				" and docs/roadmap.md. External ID: " +
+				key +
+				". Status: " +
+				status +
+				". Module: " +
+				module +
+				". Edit repository Markdown, then synchronize.",
+			resolveLink
+		);
+	const itemDescriptions = new Map(plan.items.map((i) => [i.key, description(i.key, i.status, i.module)]));
+	const moduleDescriptions = new Map(
+		plan.modules.map((m) => [m.Module, plainDescription(description(m.Module, "planned", m.Module))])
+	);
+	const states = await list("states/");
 	const project = await api("GET", "");
 	for (const [name, g, color] of [
 		["Backlog", "backlog", "#60646C"],
@@ -166,29 +213,6 @@ async function main() {
 	}
 	const modules = await list("modules/"),
 		issues = await list("issues/");
-	const stateFile = path.join(process.env.STATE_DIR, "plane.json");
-	const state = fs.existsSync(stateFile) ? JSON.parse(fs.readFileSync(stateFile, "utf8")) : {};
-	const docsFile = path.join(process.env.STATE_DIR, "docs.json");
-	const docs = fs.existsSync(docsFile) ? JSON.parse(fs.readFileSync(docsFile, "utf8")) : {};
-	const outline =
-		process.env.ECOSYSTEM_SCHEME + "://" + process.env.ECOSYSTEM_HOST + ":" + process.env.OUTLINE_HTTP_PORT;
-	const refs = ["docs/roadmap.md", "docs/architecture/DESIGN_CHARTER.md", "docs/architecture/SYSTEMS_MAP_v1.0.md"];
-	const description = (i) =>
-		"<p>Source: docs/roadmap.md. Status: " +
-		html(i.status) +
-		". Module: " +
-		i.module +
-		".</p><p>" +
-		html(i.acceptance) +
-		"</p>" +
-		refs
-			.map((p) =>
-				docs[p] ? '<p><a href="' + outline + "/doc/" + docs[p].id + '">' + p + "</a></p>" : "<p>" + p + "</p>"
-			)
-			.join("") +
-		"<!-- ecosystem-key: " +
-		i.key +
-		" -->";
 	let created = 0,
 		updated = 0,
 		membership = 0;
@@ -199,12 +223,6 @@ async function main() {
 		if (found.length > 1) throw new Error("Duplicate published external ID " + key);
 		return found[0];
 	}
-	const normalizedHTML = (value) =>
-		(value ?? "")
-			.replace(/<!--[\s\S]*?-->/g, "")
-			.replace(/<\/?(?:div|span)[^>]*>/g, "")
-			.replace(/ rel="[^"]*"/g, "")
-			.trim();
 	async function upsert(kind, key, body, rows) {
 		const current = match(rows, key);
 		let changed = !current;
@@ -235,7 +253,7 @@ async function main() {
 	for (const m of plan.modules) {
 		const body = {
 			name: m.Module + " — " + m.Name,
-			description: "Source: docs/roadmap.md. " + m.Name,
+			description: moduleDescriptions.get(m.Module),
 			status: "planned",
 			external_source: source,
 			external_id: m.Module,
@@ -248,7 +266,7 @@ async function main() {
 		if (!s) throw new Error("Missing Plane state group " + group(i.status));
 		const body = {
 			name: i.name,
-			description_html: description(i),
+			description_html: itemDescriptions.get(i.key),
 			state: s.id,
 			external_source: source,
 			external_id: i.key,

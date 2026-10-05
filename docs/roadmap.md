@@ -1,6 +1,7 @@
 # Gulchdale overhaul roadmap
 
 Repository Markdown is authoritative. Outline and Plane are one-way mirrors.
+Human-readable descriptions and unanswered questions: [work-item catalog](WORK_ITEMS.md).
 Governing inputs: [Charter](architecture/DESIGN_CHARTER.md), [Systems Map](architecture/SYSTEMS_MAP_v1.0.md).
 Baseline: `e766438`, tag `gulchdale-legacy-v1.0.0`; branch `codex/overhaul-foundation`.
 The previous Phase 1–3 work is legacy/as-built history, not these phases.

@@ -4,6 +4,7 @@ set -euo pipefail
 . "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/lib.sh"
 load_env
 require_project
+node --test "$INFRA_DIR/integrations/plane-sync.test.mjs" "$INFRA_DIR/integrations/work-item-content.test.mjs"
 "$INFRA_DIR/integrations/sync-roadmap.sh" --verify
 load_secrets "${SECRETS_DIR}/outline.env" OUTLINE_API_TOKEN
 export PROJECT_ROOT STATE_DIR OUTLINE_URL="$(outline_url)"

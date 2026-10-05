@@ -110,6 +110,22 @@ adopt executable extension work explicitly into the roadmap.
 Verification accepts Outline's Markdown formatting normalization, compares content,
 and reports retained stale material without deleting it.
 
+Descriptions come from `docs/WORK_ITEMS.md`, not just the roadmap's short acceptance
+cells. Each `## KEY — Title` section must match exactly one existing module or work
+item. Its seven `###` sections are Purpose, Expected outcome, Current state, Open
+questions, Completion criteria, Related reading, and Engineering notes, in that order.
+Human explanations lead; synchronization metadata is appended to Engineering notes.
+Update status/membership in the roadmap and narrative content in the catalog together.
+
+Publish Outline first, then Plane. Repository Markdown links become the corresponding
+Outline links in Plane. Module descriptions use readable plain text (the installed
+module API's format); work items receive rendered HTML. The constrained renderer
+supports paragraphs, headings, flat lists, emphasis, code and links; raw HTML is escaped,
+unsafe URL schemes and unsupported indentation are rejected. No new runtime dependency
+is introduced. Missing, duplicate, unknown or incomplete catalog entries fail before
+any Plane publication. Editor-only attributes/wrappers do not cause repeat updates;
+changed text or link destinations still count as drift. Tests run inside `make verify`.
+
 ```bash
 make health              # what answers, and which container holds which port
 make ps                  # this ecosystem's containers

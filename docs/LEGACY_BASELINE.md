@@ -4,6 +4,36 @@ Ticket: GD-000-003 / GD-000-004 / GD-000-005 / GD-000-007.
 Frozen source: e766438, tag gulchdale-legacy-v1.0.0. Legacy artifact and hashes are
 listed in [inventory](architecture/LEGACY_INVENTORY.md); input bytes are unchanged.
 
+## Local recovery points
+
+- `gulchdale-legacy-v1.0.0` stays at `e766438c617711a22f3ec6899f4155cb0f6fb040`.
+  It is the original frozen source, before the stale-player reliability correction.
+- `gulchdale-legacy-preserved-v1.0.1` points to `e3d8a9f87617aa057bd2a995ec6f56a65c2eec11`.
+  It preserves the verified legacy application with the narrow unavailable-player
+  start check and completed data foundation. Legacy remains the default runtime.
+
+Prefer the tested preservation checkpoint when recovering a playable application.
+These are local, immutable code references, not off-machine backups. Neither tag has
+been pushed. They do not include ignored credentials, saved sessions, the application
+database, or Plane/Outline/Mailpit data; those require their own protected backups.
+Do not move the tags, delete volumes, relocate the engine, or reset the active checkout.
+
+To inspect/reproduce the checkpoint without changing the active checkout, run from
+the repository root and use a new isolated clone:
+
+```bash
+git show --no-patch gulchdale-legacy-preserved-v1.0.1
+recovery_dir=$(mktemp -d /tmp/gulchdale-legacy-recovery.XXXXXX)
+git clone --no-hardlinks --branch gulchdale-legacy-preserved-v1.0.1 . "$recovery_dir/repo"
+cd "$recovery_dir/repo"
+# Install and verify using the fresh-clone workflow below.
+```
+
+Do not start a recovery server over the existing application's port or reuse its
+Compose project accidentally. Choose an explicit separate project/free application
+port when a separate running recovery instance is actually requested. This preservation
+step itself does not start, stop, or restart any service.
+
 ## Fresh clone
 
 Prerequisites: Git, Node22/npm, Python>=3.12 with venv/pip, Docker Compose.
