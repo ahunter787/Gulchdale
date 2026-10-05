@@ -8,6 +8,7 @@ const steps = [
 	["npm", ["run", "test-gulchdale"]],
 	["npm", ["run", "test-gulchdale-acceptance"]],
 	["npm", ["run", "test-foundation"]],
+	["npm", ["run", "test-supply"]],
 	["docker", ["build", "--tag", "gulchdale-legacy-check", "."]],
 ];
 for (const [cmd, args] of steps) {

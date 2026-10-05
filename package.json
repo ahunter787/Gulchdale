@@ -20,6 +20,7 @@
 		"foundation:compose": "node scripts/foundation-compose.mjs",
 		"db:migrate": "node --env-file-if-exists=.env scripts/migrate.mjs",
 		"test-foundation": "mocha dist/test/gulchdaleFoundation.js --exit",
+		"test-supply": "mocha dist/test/gulchdaleSupply.js --exit",
 		"test-foundation-db": "mocha dist/test/gulchdaleFoundationDatabase.js --exit",
 		"build-server-dev": "tsc --watch",
 		"build-client": "webpack --config client/webpack.config.prod.js --mode=production",

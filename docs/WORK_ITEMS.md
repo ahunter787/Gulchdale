@@ -64,9 +64,9 @@ Make packs respond to a player's journey without becoming inexplicable, unfair, 
 ### Expected outcome
 Reproducible passing packs and private Choice Packs, with explainable weights, supply accounting, and small-slice simulations.
 ### Current state
-Phase 2 has not started. Supply and reservation decisions in GD-300-901 are the next owner gate.
+Phase 2 is Building. The owner-approved supply accounting prototype is implemented; seeded scoring and the curated pack simulator are not yet implemented. Legacy is unchanged.
 ### Open questions
-Player-count scaling, reservation timing, shortages, pool duplicates, and injection accounting need approval. Randomness and crowding calibration require subsequent playtest evidence.
+Tribal scaling outside four/eight players, shortage responses, passing-pack reservations and live private contention remain open. Pool singleton, category limits and injection accounting are approved. Randomness and crowding calibration require subsequent playtest evidence.
 ### Completion criteria
 An administrator can replay generation and explain each candidate's score and supply use without opening a browser.
 ### Related reading
@@ -217,9 +217,9 @@ Prove that guided packs and virtual supply can produce understandable, replayabl
 ### Expected outcome
 Small-slice PassingPack and ChoicePack simulations with reservations, scoring explanations, and crowding behavior.
 ### Current state
-Not started. GD-300-901 must be resolved before supply behavior is implemented.
+Building. GD-300-001 delivers the approved supply subset, with synthetic accounting tests. It does not deliver a seeded generator or claim the real cube is balanced.
 ### Open questions
-Supply/reservations are the immediate gate. The curated slice and archetype capacities need explicit design inputs; randomness calibration remains a test hypothesis.
+Remaining supply gates are intermediate player-count scaling, shortage responses, passing reservations and concurrent private recovery. The curated slice and archetype capacities need explicit design inputs; randomness calibration remains a test hypothesis.
 ### Completion criteria
 Thousands of simulated packs can be replayed from release, seed, and state, and each score and reservation can be explained.
 ### Related reading
@@ -592,24 +592,43 @@ A virtual copy is an allowance for the generator to offer a card. Physical inven
 ### Expected outcome
 An owner-approved supply policy for the first simulator, with worked four-player examples and stated boundaries for eventual two-to-eight-player sessions.
 ### Current state
-**Adopted:** singleton applies to each final player's deck, not to the entire draft. Two players may receive the same card and each use one copy. Supply must scale with player count; personal commander/tribal injections can be unique by design.
-**Proposed, not approved:** use distinct global-unique, per-player-singleton, injection-only, and unlimited-exception policies, with scaling by pool/archetype rather than one multiplier. Current foundation data retains imported quantities only.
-Phase 2 is Not started and waits for this decision. This ticket is not a request to eliminate all cross-player duplicates in Draftmancer.
+**Adopted from your answers on October 5:** tribal injections share two copies per card at four players and three at eight. Commanders, their support packages, Mono/main-pool cards and utility lands are draft-unique. Commander staples (currently Command Tower and Arcane Signet) are one per player and granted, never drafted. Fixing lands and Gulchdale assets use personal supply.
+**Adopted:** no player may hold duplicates in their draft pool. Destroy duplicate allocations without spending another shared copy. Private rewards consume only the selected card; unselected options are burned as choices but returned to available supply. Tribal injections consume scaled shared supply; personal allowances are checked independently.
+For example, Alice and Bob may each receive the same tribal card in a four-player session; a third allocation needs exhaustion handling. Both may receive their own Command Tower. A unique commander cannot be granted twice across the session.
+Phase 2 is Building with an isolated supply prototype. Your answers are preserved in ADR-0008; this ticket remains Building for the specific follow-ups below, not because the original six questions were ignored. The foundation's imported legacy quantities remain unchanged.
+**Future direction, not a legacy change:** budget fixing will likely grow through Expeditions, with only utility lands draftable and the final land round refactored later. Difficult-to-complete tribes and a clear saturation message are design intent, not a chosen compensation policy.
 ### Open questions
-- What copy allowance should the first four-player simulator give ordinary cards, commanders, scarce archetype pieces, and personal packages? How should those allowances change for other player counts?
-- Which cards consume shared session supply, which have player-specific supply, and which are deliberately globally unique or exceptions?
-- When does offering a card reserve supply: during generation, when a pack becomes visible, or when it is picked? What happens to unpicked Choice Pack options, discarded passing cards, canceled packs, and recovery attempts?
-- If legal candidates run out, should generation stop with an explanation, use an approved fallback pool, reduce the pack, or permit another explicitly approved behavior?
-- May a player hold duplicate non-basic cards in their drafted pool while their final deck remains singleton, or should future generation exclude cards that player already owns? How should passing packs interact with that choice?
-- Do personal injections consume shared supply or a separate allowance? How are unique commander packages and two players pursuing the same tribe reconciled?
-These are decisions to answer, not silently chosen defaults. Exact larger-group pack-size calibration and physical-copy reconciliation can remain later research, but their deferral must be explicit.
+- What tribal allowance applies at two, three, five, six and seven players? Four and eight are approved; interpolation is not.
+- When a tribe exhausts, what exactly should happen to the player's reward or spent booster: redirection, smaller reward, compensation, another tribe, or another response?
+- When do passing packs reserve supply, and what do burns, cancellation and recovery do to that reservation?
+- May simultaneous private offers overlap, with regeneration when another player selects first, or do they need temporary presentation holds? Only selected cards consuming capacity is settled; the contention experience is not.
+- Which fixing lands/assets and quantities belong in the curated slice, and what player-facing name replaces Mono?
+The prototype reports exhaustion without choosing a gameplay fallback. These remaining questions gate only their affected behavior; they do not prevent implementing the approved subset.
 ### Completion criteria
-The owner approves concrete allowances, reservation/release transitions, shortage behavior, pool-duplicate handling, and injection accounting. Examples cover two players wanting the same card, an abandoned private pack, exhausted candidates, and a repeated/recovered generation request.
-Deferred questions are listed with their later gate; Phase 2 does not begin with an invented formula.
+ADR-0008 already records concrete approved category allowances, selected-only private consumption, pool singleton and injection accounting, with worked examples and prototype tests. Close this ticket when the remaining scaling, shortages and lifecycle decisions are answered or explicitly deferred by the owner to named gates.
+No invented interpolation, fallback or live contention rule clears this ticket.
 ### Related reading
-[Supply decision record](decisions/ADR-0007-open-game-rules.md), [Card Pool and Supply design](architecture/SYSTEMS_MAP_v1.0.md), and [singleton design intent](architecture/DESIGN_CHARTER.md).
+[Approved answers and remaining gates](decisions/ADR-0008-approved-supply-rules.md), [Phase 2 implementation record](OVERHAUL_PHASE_2.md), [Card Pool and Supply design](architecture/SYSTEMS_MAP_v1.0.md), and [original review checklist](decisions/ADR-0007-open-game-rules.md).
 ### Engineering notes
-Blocking gate: Phase 2. Store approved policy in a new accepted ADR linked from the roadmap and this record. Do not patch Draftmancer or tag the full cube to bypass this decision.
+Partial owner gate, not blanket approval of every supply transition. Preserve the owner's Plane comment and answers through the repository record before synchronization. Do not patch Draftmancer or tag the full cube.
+
+## GD-300-001 — Implement approved supply accounting prototype
+
+### Purpose
+Turn the approved supply rules into a small, testable accounting component before designing weighted packs or integrating multiplayer.
+### Expected outcome
+Shared and personal limits, per-player singleton, private selected-only consumption, immutable release references, explainable outcomes and safe repeat requests.
+### Current state
+Complete for this bounded prototype. Nine synthetic tests cover the approved four/eight-player tribal endpoints, draft-unique categories, duplicate destruction, personal staples, private selections, shared exhaustion, replay identities and defensive input checks. The composite legacy verification also runs these tests.
+No live runtime hook, database change, pack scorer, real cube tagging or automated shortage fallback was added. This is not the Phase 2 exit gate.
+### Open questions
+None for the approved accounting subset. The remaining rules are explicitly owned by GD-300-901; real curated slice selection and score calibration remain later Phase 2 work.
+### Completion criteria
+The supply tests pass; a repeated allocation cannot spend another copy; an exhausted selection cannot grant a card; no player pool can contain a duplicate. Legacy artifacts and default runtime remain unchanged.
+### Related reading
+[Approved supply rules](decisions/ADR-0008-approved-supply-rules.md) and [Phase 2 scope and verification](OVERHAUL_PHASE_2.md).
+### Engineering notes
+Implementation is `src/gulchdale/supply.ts`; tests are `test/gulchdaleSupply.ts`. Run `npm run build-server && npm run test-supply`. Canonical card identities must not be replaced by printing IDs. The in-memory audit is a prototype, not the persistent Phase 7 telemetry system.
 
 ## GD-400-901 — Decide the first Expedition and Adornment limits
 

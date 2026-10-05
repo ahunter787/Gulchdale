@@ -22,8 +22,8 @@ const catalog = parseCatalog(text, keys);
 const example =
 	"## GD-000 — Example\n" + CONTENT_HEADINGS.map((h) => "### " + h + "\nReadable " + h + ".\n").join("\n");
 
-test("all 38 records have human-first content and resolved repository references", () => {
-	assert.equal(catalog.size, 38);
+test("all 39 records have human-first content and resolved repository references", () => {
+	assert.equal(catalog.size, 39);
 	for (const entry of catalog.values()) {
 		const html = renderDescription(entry, "External ID: " + entry.key, (link) => {
 			if (link.external) return link.external;
@@ -38,14 +38,14 @@ test("all 38 records have human-first content and resolved repository references
 	const supply = catalog.get("GD-300-901").markdown;
 	for (const phrase of [
 		"Physical inventory",
-		"Two players",
-		"reserve supply",
-		"run out",
-		"drafted pool",
-		"personal injections",
+		"two copies per card at four players and three at eight",
+		"private rewards consume only the selected card",
+		"no player may hold duplicates",
+		"remaining questions",
+		"ADR-0008",
 	])
 		assert.ok(supply.toLowerCase().includes(phrase.toLowerCase()), phrase);
-	assert.ok(supply.includes("Proposed, not approved"));
+	assert.ok(supply.includes("Future direction, not a legacy change"));
 	assert.ok(catalog.get("GD-400-901").markdown.includes("already answered"));
 });
 

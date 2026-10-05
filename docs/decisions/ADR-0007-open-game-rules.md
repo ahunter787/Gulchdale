@@ -1,6 +1,6 @@
 # ADR-0007: unresolved rules and owner gates
 
-Status: Pending owner decisions; implementation must stop at each relevant gate.
+Status: Partially resolved; implementation must stop at each remaining relevant gate.
 
 Accepted format direction: per-player final-deck singleton, scalable virtual supply,
 60-card decks, 30 life, four retained commanders and one marked leader,
@@ -14,16 +14,22 @@ until the owner approves an explicit decision; implementation stops at the relev
 
 ## GD-300-901: virtual supply and reservations — Phase 2
 
+Owner answers received 2026-10-05. [ADR-0008](ADR-0008-approved-supply-rules.md)
+records the adopted category limits, selected-only private consumption, strict pool
+singleton and injection accounting. Phase 2 may begin with that bounded subset.
+The questions below are the original review checklist, retained as history; the
+remaining active questions and approved examples are listed in ADR-0008.
+
 Virtual supply is the generator's allowance to offer cards. Physical inventory is
 what the playgroup owns; it is reconciled later rather than allowed to dictate simulator
 behavior. Two players receiving the same card is already allowed. Final decks remain
 singleton for non-basic cards unless an explicit rule grants an exception.
 
-Proposed policy categories (not yet approved): global-unique, per-player-singleton,
+Original proposed policy categories (historical, superseded by ADR-0008): global-unique, per-player-singleton,
 player-injection-only and unlimited-exception. Scaling by pool/archetype instead of
 one multiplier is a recommendation. The foundation currently retains imported quantities.
 
-Open decisions:
+Original decision checklist:
 
 - Set concrete four-player allowances for ordinary cards, commanders, scarce archetype
   pieces and personal packages; define how those allowances scale or are deferred for 2-8 players.

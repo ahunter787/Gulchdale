@@ -27,7 +27,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | --- | --- | --- | --- |
 | 0 | Preserve, audit, establish guardrails | GD-000 | Complete |
 | 1 | PostgreSQL data foundation | GD-100 | Complete |
-| 2 | Seeded pack simulator on a small curated slice | GD-300 | Not started |
+| 2 | Seeded pack simulator on a small curated slice | GD-300 | Building |
 | 3 | Independent orchestrator and Expedition state machine | GD-400 | Not started |
 | 4 | Thin Draftmancer adapter | GD-500 | Not started |
 | 5 | Four-player vertical slice | GD-500 | Not started |
@@ -54,19 +54,23 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-100-003 | GD-100 | 1 | Immutable releases and reviewed promotion | Complete | Diff/review identities/live pointer; overrides survive refresh |
 | GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Complete | No browser editing or live content mutation |
 | GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
+| GD-300-001 | GD-300 | 2 | Implement approved supply accounting prototype | Complete | Category limits, singleton, private selection and replay tests; no runtime integration |
 
 ## Owner decisions (stop at the relevant gate)
 
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
-| GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Not started | Owner ADR; shared capacity, injections and shortages |
+| GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Building | Approved subset in ADR-0008; remaining scaling, shortage and contention decisions |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
 
 Decision context: [ADR-0007](decisions/ADR-0007-open-game-rules.md).
 Completed preservation/foundation evidence: [Phase 0/1 exit record](OVERHAUL_PHASE_0_1_VERIFICATION.md).
-Next gate: owner decision GD-300-901 before Phase 2 simulation.
+Phase 2 has begun with approved supply accounting, not a completed pack simulator.
+[ADR-0008](decisions/ADR-0008-approved-supply-rules.md) records owner answers and
+remaining gates. Passing-pack lifecycle, unsupported player counts, shortage
+resolution and live private contention stop at their respective unanswered decisions.
 
 ## Sequencing and gates
 
