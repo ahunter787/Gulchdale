@@ -1,0 +1,60 @@
+# Compose override for Plane — loaded automatically by Compose when it runs in
+# the vendored bundle directory (install.sh copies this file in).
+#
+# Two jobs:
+#
+#   1. put the services that send mail on the shared network, so they can reach
+#      the `mailpit` container by name;
+#   2. hand them the mail settings as environment variables.
+#
+# Plane stores its instance settings in the database, but it seeds any that are
+# missing from the environment the first time its api container starts, and its
+# god-mode API - the only other way in - authenticates with a browser session
+# whose CSRF cookie is HttpOnly. Setting the environment is therefore how the
+# mail wiring is configured without a browser.
+#
+# Everything else - ports, images, volumes - stays exactly as Plane ships it.
+#
+# The project name matters more than it looks. Plane's bundle carries no `name:`,
+# so Compose would derive it from the directory - and every project's bundle
+# directory is called plane-app, which would give two projects the same container
+# names and let the second one replace the first. It is named after this
+# project's slug instead.
+
+name: ${PLANE_COMPOSE_PROJECT:-plane-app}
+
+x-mail-environment: &mail-environment
+  ENABLE_SMTP: ${ENABLE_SMTP:-1}
+  EMAIL_HOST: ${EMAIL_HOST:-mailpit}
+  EMAIL_PORT: ${EMAIL_PORT:-1025}
+  EMAIL_USE_TLS: ${EMAIL_USE_TLS:-0}
+  EMAIL_USE_SSL: ${EMAIL_USE_SSL:-0}
+  EMAIL_FROM: ${EMAIL_FROM:-}
+  EMAIL_HOST_USER: ${EMAIL_HOST_USER:-}
+  EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD:-}
+
+services:
+  api:
+    environment:
+      <<: *mail-environment
+    networks:
+      - default
+      - shared
+  worker:
+    environment:
+      <<: *mail-environment
+    networks:
+      - default
+      - shared
+  beat-worker:
+    environment:
+      <<: *mail-environment
+    networks:
+      - default
+      - shared
+
+networks:
+  # Created once by `make network`; never removed by `compose down`.
+  shared:
+    external: true
+    name: ${SHARED_NETWORK}

@@ -20,3 +20,9 @@ tmp
 data/scryfall-all-cards.json
 data/scryfall-sets.json
 data/cubecobra-ratings.json
+
+
+# --- Development ecosystem ----------------------------------------------------
+# The ecosystem holds generated secrets and a live database, and it is not part
+# of the application: keep all of it out of any image built from this directory.
+ecosystem
