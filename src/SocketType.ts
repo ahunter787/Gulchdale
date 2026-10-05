@@ -287,7 +287,8 @@ export interface ClientToServerEvents {
 	setSession: (sid: SessionID, options: Options) => void;
 
 	// Personal events
-	setUserName: (userName: string) => void;
+	setUserName: (userName: string, ack?: (response: SocketAck & { userName?: string }) => void) => void;
+	leaveSession: (ack?: (response: SocketAck) => void) => void;
 	setCollection: (collection: PlainCollection, ack?: (response: SocketAck) => void) => void;
 	parseCollection: (txtcollection: string, ack: (ret: SocketAck & { collection?: PlainCollection }) => void) => void;
 	useCollection: (useCollection: boolean) => void;
@@ -401,8 +402,8 @@ export interface ClientToServerEvents {
 		tiebreakers: Tiebreaker[],
 		ack: (result: SocketAck) => void
 	) => void;
-	setSessionOwner: (newOwnerID: UserID) => void;
-	removePlayer: (userToRemove: UserID) => void;
+	setSessionOwner: (newOwnerID: UserID, ack?: (response: SocketAck) => void) => void;
+	removePlayer: (userToRemove: UserID, ack?: (response: SocketAck) => void) => void;
 	setSeating: (seating: Array<UserID>) => void;
 	boostersPerPlayer: (boostersPerPlayer: number) => void;
 	cardsPerBooster: (cardsPerBooster: number) => void;

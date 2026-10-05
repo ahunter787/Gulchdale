@@ -1,12 +1,13 @@
 {
 	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
-	"name": "Draftmancer",
-	"short_name": "Draftmancer",
-	"start_url": ".",
-	"display": "fullscreen",
+	"name": "Gulchdale Commander Cube Draft",
+	"short_name": "Gulchdale",
+	"start_url": "/",
+	"display": "standalone",
 	"orientation": "landscape",
-	"background_color": "#202020",
-	"description": "Multi-Player Magic: the Gathering Limited Simulator",
+	"background_color": "#071014",
+	"theme_color": "#17120b",
+	"description": "Host or join a multiplayer draft of the Gulchdale Commander Cube.",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png?v=2",

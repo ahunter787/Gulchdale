@@ -3,6 +3,7 @@ export type DisconnectedUsers = Record<string, { userName: string }>;
 export type CampfireSeat = {
 	index: number;
 	key: string;
+	userID?: string;
 	name: string;
 	owner: boolean;
 	bot: boolean;
@@ -27,6 +28,7 @@ export function buildCampfireSeats(options: {
 	type OccupiedSeat = Omit<CampfireSeat, "index" | "artwork" | "pose" | "mirrored">;
 	const connected: OccupiedSeat[] = options.users.map((user) => ({
 		key: user.userID,
+		userID: user.userID,
 		name: user.userName,
 		owner: user.userID === options.sessionOwner,
 		bot: false,
@@ -48,6 +50,7 @@ export function buildCampfireSeats(options: {
 		.map(([id, user]) => {
 			return {
 				key: id,
+				userID: id,
 				name: user.userName,
 				owner: id === options.sessionOwner,
 				bot: false,

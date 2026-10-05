@@ -18,6 +18,7 @@
 		"dev-front": "concurrently --kill-others --raw \"npm run start\" \"npm run build-dev\"",
 		"dev": "concurrently --kill-others --raw \"npm run build-server-dev\" \"npm run start-dev\" \"npm run build-client-dev\"",
 		"test": "cross-env PORT=3001 mocha dist/test --exit --experimental-json-modules",
+		"test-gulchdale": "cross-env PORT=3001 mocha dist/test/gulchdale.js dist/test/gulchdaleFreshness.js dist/test/gulchdaleLobby.js dist/test/gulchdaleControls.js --exit --experimental-json-modules",
 		"test-gulchdale-acceptance": "cross-env PORT=3003 GULCHDALE_ACCEPTANCE=TRUE mocha dist/test/gulchdaleAcceptance.js --exit --experimental-json-modules",
 		"test-bail": "cross-env PORT=3001 mocha dist/test --exit --experimental-json-modules -bail",
 		"manualtest": "cross-env PORT=3001 mocha dist/test/manual --exit --experimental-json-modules",

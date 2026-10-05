@@ -254,16 +254,43 @@ const checkDraftAction = function (userID: UserID, sess: Session, type: string, 
 };
 
 // Personnal options
-function setUserName(userID: UserID, sessionID: SessionID, userName: string) {
-	Connections[userID].userName = userName;
+function setUserName(
+	userID: UserID,
+	sessionID: SessionID,
+	userName: unknown,
+	ack?: (response: SocketAck & { userName?: string }) => void
+) {
+	if (!isString(userName))
+		return ack?.(new SocketError("Invalid display name", "Enter a name using 1–50 characters."));
+	const normalizedName = userName.trim();
+	if (normalizedName.length === 0 || normalizedName.length > 50)
+		return ack?.(new SocketError("Invalid display name", "Enter a name using 1–50 characters."));
+
+	const sess = Sessions[sessionID];
+	const normalizedKey = normalizedName.toLocaleLowerCase();
+	const participantIDs = new Set<UserID>([...sess.users, ...sess.spectators, ...Object.keys(sess.disconnectedUsers)]);
+	for (const participantID of participantIDs) {
+		if (participantID === userID) continue;
+		const participantName = Connections[participantID]?.userName ?? sess.disconnectedUsers[participantID]?.userName;
+		if (participantName?.trim().toLocaleLowerCase() === normalizedKey)
+			return ack?.(
+				new SocketError(
+					"Name already in use",
+					"Choose a display name that is different from everyone else at the campfire."
+				)
+			);
+	}
+
+	Connections[userID].userName = normalizedName;
 	Sessions[sessionID].forUsers((uid: UserID) =>
 		Connections[uid]?.socket.emit("updateUser", {
 			userID: userID,
 			updatedProperties: {
-				userName: userName,
+				userName: normalizedName,
 			},
 		})
 	);
+	ack?.(Object.assign(new SocketAck(), { userName: normalizedName }));
 }
 
 function setCollection(
@@ -984,26 +1011,68 @@ function startTeamSealed(
 }
 
 // Session Settings
-function setSessionOwner(userID: UserID, sessionID: SessionID, newOwnerID: UserID) {
-	Sessions[sessionID]?.setSessionOwner(newOwnerID);
+function setSessionOwner(
+	userID: UserID,
+	sessionID: SessionID,
+	newOwnerID: UserID,
+	ack?: (response: SocketAck) => void
+) {
+	const sess = Sessions[sessionID];
+	if (newOwnerID === userID)
+		return ack?.(new SocketError("Already the session owner", "Choose another connected player."));
+	if (!sess.users.has(newOwnerID))
+		return ack?.(new SocketError("Player unavailable", "Ownership can only be transferred to a connected player."));
+	sess.setSessionOwner(newOwnerID);
+	ack?.(new SocketAck());
 }
 
-function removePlayer(userID: UserID, sessionID: SessionID, userToRemove: UserID) {
+function removePlayer(userID: UserID, sessionID: SessionID, userToRemove: UserID, ack?: (response: SocketAck) => void) {
 	const sess = Sessions[sessionID];
-	if (!sess || userToRemove === sess.owner) return;
+	if (!sess) return ack?.(new SocketError("Session unavailable"));
+	if (userToRemove === sess.owner)
+		return ack?.(
+			new SocketError("Cannot remove the session owner", "Transfer ownership before leaving the campfire.")
+		);
 
 	if (sess.users.has(userToRemove) || userToRemove in sess.disconnectedUsers) {
+		const connected = sess.users.has(userToRemove);
+		const wasDisconnected = userToRemove in sess.disconnectedUsers;
 		removeUserFromSession(sessionID, userToRemove);
-		sess.replaceDisconnectedPlayer(userToRemove);
-		sess.notifyUserChange();
+		if (sessionID in Sessions) {
+			sess.replaceDisconnectedPlayer(userToRemove);
+			if (wasDisconnected && !sess.drafting) {
+				delete sess.disconnectedUsers[userToRemove];
+				sess.broadcastDisconnectedUsers();
+			}
+			sess.notifyUserChange();
+		}
+		if (connected)
+			moveToNewSession(
+				userToRemove,
+				new Message("Removed from session", `You've been removed from session '${sessionID}' by its owner.`)
+			);
 	} else if (sess.spectators.has(userToRemove)) {
 		sess.removeSpectator(userToRemove);
-	} else return;
+		moveToNewSession(
+			userToRemove,
+			new Message("Removed from session", `You've been removed from session '${sessionID}' by its owner.`)
+		);
+	} else return ack?.(new SocketError("Player unavailable", "That player is no longer in this session."));
 
-	moveToNewSession(
-		userToRemove,
-		new Message("Removed from session", `You've been removed from session '${sessionID}' by its owner.`)
-	);
+	ack?.(new SocketAck());
+}
+
+function leaveSession(userID: UserID, sessionID: SessionID, ack?: (response: SocketAck) => void) {
+	const sess = Sessions[sessionID];
+	if (sess.owner === userID)
+		return ack?.(
+			new SocketError(
+				"Transfer ownership first",
+				"Choose another connected player as session owner before leaving."
+			)
+		);
+	removeUserFromSession(sessionID, userID);
+	ack?.(new SocketAck());
 }
 
 function moveToNewSession(userID: UserID, message: Message) {
@@ -1625,7 +1694,7 @@ const prepareSocketCallback = <T extends Array<unknown>>(
 			return;
 		}
 		if (ownerOnly && Sessions[sessionID].owner !== userID) {
-			ack?.(ackError({ code: 401, title: "Unautorized", text: "Must be session owner." }));
+			ack?.(ackError({ code: 401, title: "Unauthorized", text: "Must be session owner." }));
 			return;
 		}
 		try {
@@ -1773,6 +1842,7 @@ io.on("connection", async function (socket) {
 			return refuseSpectate(`Spectating is not supported for this game mode.`);
 
 		socket.on("setUserName", prepareSocketCallback(setUserName));
+		socket.on("leaveSession", prepareSocketCallback(leaveSession));
 		socket.on("chatMessage", prepareSocketCallback(chatMessage));
 		addSpectatorToSession(userID, spectatedSession.id);
 		return;
@@ -1780,6 +1850,7 @@ io.on("connection", async function (socket) {
 
 	// Personal events
 	socket.on("setUserName", prepareSocketCallback(setUserName));
+	socket.on("leaveSession", prepareSocketCallback(leaveSession));
 	socket.on("setCollection", prepareSocketCallback(setCollection));
 	socket.on("parseCollection", prepareSocketCallback(parseCollection));
 	socket.on("useCollection", prepareSocketCallback(useCollection));

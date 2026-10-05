@@ -27,7 +27,10 @@ jobs:
             - run: npm ci
             - run: npm run build-server
             - run: mkdir tmp # For simulating server restarts
-            - run: npm test
+            - name: Verify production dependency tree
+              run: npm audit --omit=dev --audit-level=high
+            - name: Run Gulchdale unit and control tests
+              run: npm run test-gulchdale
             - run: npm run test-gulchdale-acceptance
 
     docker:

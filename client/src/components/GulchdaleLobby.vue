@@ -51,7 +51,21 @@
 						aria-hidden="true"
 					/>
 					<div v-else class="gulchdale-seat__empty" aria-hidden="true"><i></i></div>
-					<div class="gulchdale-seat__nameplate">
+					<button
+						v-if="seatIsActionable(seat)"
+						type="button"
+						class="gulchdale-seat__nameplate"
+						:class="{ 'gulchdale-seat__nameplate--active': activeSeatKey === seat.key }"
+						:aria-expanded="activeSeatKey === seat.key"
+						:aria-controls="`gulchdale-seat-controls-${seat.index}`"
+						:aria-label="`Open controls for ${seat.name}, ${seat.status}`"
+						@click="toggleSeatControls(seat)"
+					>
+						<span class="gulchdale-seat__number">{{ seat.index + 1 }}</span>
+						<strong>{{ seat.name }}</strong>
+						<small>{{ seat.status }}</small>
+					</button>
+					<div v-else class="gulchdale-seat__nameplate">
 						<span class="gulchdale-seat__number">{{ seat.index + 1 }}</span>
 						<strong>{{ seat.name || "Open seat" }}</strong>
 						<small>{{ seat.status }}</small>
@@ -59,6 +73,63 @@
 				</li>
 			</ol>
 		</div>
+
+		<section
+			v-if="activeSeat"
+			:id="`gulchdale-seat-controls-${activeSeat.index}`"
+			class="gulchdale-lobby__seat-controls"
+			:aria-labelledby="'gulchdale-seat-controls-title'"
+		>
+			<div>
+				<p class="gulchdale-lobby__kicker">
+					{{ activeSeat.userID === currentUserId ? "Your traveler" : "Player controls" }}
+				</p>
+				<h2 id="gulchdale-seat-controls-title">{{ activeSeat.name }}</h2>
+				<p>{{ activeSeat.status }}</p>
+			</div>
+			<form
+				v-if="activeSeat.userID === currentUserId"
+				class="gulchdale-lobby__rename"
+				@submit.prevent="submitUserName"
+			>
+				<label for="gulchdale-user-name">Display name</label>
+				<div>
+					<input
+						id="gulchdale-user-name"
+						v-model="userNameDraft"
+						maxlength="50"
+						autocomplete="nickname"
+						required
+					/>
+					<button type="submit" class="secondary">Save name</button>
+				</div>
+				<small>{{ socketConnected ? "Connected to the campfire" : "Trying to reconnect…" }}</small>
+			</form>
+			<div v-if="activeSeat.userID === currentUserId" class="gulchdale-lobby__seat-actions">
+				<button type="button" class="danger" @click="$emit('leave')">Leave lobby</button>
+			</div>
+			<div v-else-if="isOwner && activeSeat.userID" class="gulchdale-lobby__seat-actions">
+				<button
+					v-if="!activeSeat.disconnected"
+					type="button"
+					class="secondary"
+					@click="$emit('transfer-owner', activeSeat.userID)"
+				>
+					Transfer ownership
+				</button>
+				<button type="button" class="danger" @click="$emit('remove-player', activeSeat.userID)">
+					{{ activeSeat.disconnected ? "Clear reserved seat" : "Remove from lobby" }}
+				</button>
+			</div>
+			<button
+				type="button"
+				class="gulchdale-lobby__close-controls"
+				aria-label="Close player controls"
+				@click="activeSeatKey = ''"
+			>
+				×
+			</button>
+		</section>
 
 		<div class="gulchdale-lobby__controls">
 			<div v-if="isOwner" class="gulchdale-lobby__setting">
@@ -123,33 +194,60 @@ import { buildCampfireSeats, CampfireSeat, DisconnectedUsers, LobbyUser } from "
 
 export default defineComponent({
 	name: "GulchdaleLobby",
-	data: () => ({ qrCode: "" }),
+	data: () => ({ qrCode: "", activeSeatKey: "", userNameDraft: "" }),
 	props: {
 		bots: { type: Number, required: true },
 		disconnectedUsers: { type: Object as PropType<DisconnectedUsers>, default: () => ({}) },
 		environmentName: { type: String, required: true },
 		environmentVersion: { type: String, required: true },
+		currentUserId: { type: String, required: true },
+		currentUserName: { type: String, required: true },
 		isOwner: { type: Boolean, required: true },
 		lobbyBackdrop: { type: String, required: true },
 		maxPlayers: { type: Number, required: true },
 		seatedTravelerSilhouette: { type: String, default: "" },
 		seatTravelerSilhouettes: { type: Array as PropType<string[]>, default: () => [] },
-		sessionID: { type: String, required: true },
+		sessionId: { type: String, required: true },
 		sessionOwner: { type: String, default: "" },
+		socketConnected: { type: Boolean, required: true },
 		timer: { type: Number, required: true },
 		travelerSilhouettes: { type: Array as PropType<string[]>, default: () => [] },
 		users: { type: Array as PropType<LobbyUser[]>, required: true },
 	},
-	emits: ["ready-check", "share", "start", "update:bots", "update:timer"],
+	emits: [
+		"leave",
+		"ready-check",
+		"remove-player",
+		"rename",
+		"share",
+		"start",
+		"transfer-owner",
+		"update:bots",
+		"update:timer",
+	],
 	mounted() {
+		this.userNameDraft = this.currentUserName;
 		void this.renderQRCode();
 	},
 	watch: {
-		sessionID() {
+		currentUserName(value: string) {
+			this.userNameDraft = value;
+		},
+		sessionId() {
 			void this.renderQRCode();
 		},
 	},
 	methods: {
+		seatIsActionable(seat: CampfireSeat): boolean {
+			if (!seat.userID || seat.bot) return false;
+			return seat.userID === this.currentUserId || (this.isOwner && !seat.owner);
+		},
+		toggleSeatControls(seat: CampfireSeat) {
+			this.activeSeatKey = this.activeSeatKey === seat.key ? "" : seat.key;
+		},
+		submitUserName() {
+			this.$emit("rename", this.userNameDraft);
+		},
 		async renderQRCode() {
 			this.qrCode = await QRCode.toDataURL(
 				`${window.location.origin}/join/${encodeURIComponent(this.inviteCode)}`,
@@ -158,8 +256,11 @@ export default defineComponent({
 		},
 	},
 	computed: {
+		activeSeat(): CampfireSeat | undefined {
+			return this.seats.find((seat) => seat.key === this.activeSeatKey && this.seatIsActionable(seat));
+		},
 		inviteCode(): string {
-			return this.sessionID || window.location.pathname.split("/").filter(Boolean).at(-1) || "";
+			return this.sessionId || window.location.pathname.split("/").filter(Boolean).at(-1) || "";
 		},
 		occupiedSeats(): number {
 			return this.users.length + Object.keys(this.disconnectedUsers).length + this.bots;
@@ -432,7 +533,9 @@ h1 {
 	left: 50%;
 	bottom: 0;
 	width: min(12rem, 130%);
+	min-height: 2.85rem;
 	box-sizing: border-box;
+	overflow: hidden;
 	transform: translateX(-50%);
 	padding: 0.38rem 0.55rem;
 	border: 1px solid rgba(114, 220, 222, 0.22);
@@ -440,6 +543,9 @@ h1 {
 	background: rgba(3, 10, 12, 0.86);
 	text-align: center;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+.gulchdale-seat__nameplate--active {
+	border-color: #75dfe2;
 }
 .gulchdale-seat__number {
 	position: absolute;
@@ -451,8 +557,14 @@ h1 {
 .gulchdale-seat strong {
 	display: block;
 	overflow: hidden;
+	padding: 0 1rem;
 	color: #e8f1f1;
 	font-size: clamp(0.72rem, 1vw, 0.92rem);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.gulchdale-seat small {
+	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
@@ -471,6 +583,77 @@ h1 {
 .gulchdale-lobby__controls {
 	align-items: end;
 	border-radius: 0 0 1rem 1rem;
+}
+.gulchdale-lobby__seat-controls {
+	position: relative;
+	z-index: 6;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	padding: 1rem 3.5rem 1rem 1.25rem;
+	border-top: 1px solid rgba(117, 223, 226, 0.28);
+	background: rgba(5, 19, 22, 0.97);
+	text-align: left;
+}
+.gulchdale-lobby__seat-controls h2,
+.gulchdale-lobby__seat-controls p {
+	margin: 0.1rem 0;
+}
+.gulchdale-lobby__seat-controls h2 {
+	color: #f1d287;
+	font-family: Georgia, serif;
+}
+.gulchdale-lobby__seat-controls > div:first-child {
+	min-width: 12rem;
+}
+.gulchdale-lobby__rename {
+	flex: 1;
+}
+.gulchdale-lobby__rename label,
+.gulchdale-lobby__rename small {
+	display: block;
+	color: #aebfc0;
+	font-size: 0.78rem;
+}
+.gulchdale-lobby__rename > div,
+.gulchdale-lobby__seat-actions {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+.gulchdale-lobby__rename input {
+	width: min(22rem, 100%);
+	min-height: 2.5rem;
+	box-sizing: border-box;
+	padding: 0.5rem 0.7rem;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 0.45rem;
+	color: #e8f1f1;
+	background: #132326;
+}
+.gulchdale-lobby__seat-actions {
+	margin-left: auto;
+}
+.gulchdale-lobby__seat-actions button,
+.gulchdale-lobby__rename button {
+	min-height: 2.5rem;
+	padding: 0.55rem 0.9rem;
+	border-radius: 999px;
+}
+.danger {
+	color: #ffd8d2;
+	border: 1px solid rgba(255, 133, 117, 0.62);
+	background: rgba(113, 24, 20, 0.46);
+}
+.gulchdale-lobby__close-controls {
+	position: absolute;
+	top: 0.6rem;
+	right: 0.75rem;
+	border: 0;
+	color: #aebfc0;
+	background: transparent;
+	font-size: 1.5rem;
+	cursor: pointer;
 }
 .gulchdale-lobby__setting {
 	text-align: left;
@@ -532,6 +715,7 @@ select {
 	background: transparent;
 }
 button:focus-visible,
+input:focus-visible,
 select:focus-visible {
 	outline: 3px solid #75dfe2;
 	outline-offset: 2px;
@@ -603,6 +787,14 @@ select:focus-visible {
 	}
 	.gulchdale-lobby__controls {
 		flex-wrap: wrap;
+	}
+	.gulchdale-lobby__seat-controls {
+		align-items: stretch;
+		flex-direction: column;
+	}
+	.gulchdale-lobby__seat-actions {
+		width: 100%;
+		margin-left: 0;
 	}
 	.gulchdale-lobby__actions {
 		width: 100%;
@@ -696,6 +888,16 @@ select:focus-visible {
 	}
 	.gulchdale-lobby__actions {
 		display: grid;
+	}
+	.gulchdale-lobby__rename > div,
+	.gulchdale-lobby__seat-actions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+	.gulchdale-lobby__rename input,
+	.gulchdale-lobby__seat-actions button,
+	.gulchdale-lobby__rename button {
+		width: 100%;
 	}
 	.gulchdale-lobby__actions button {
 		width: 100%;

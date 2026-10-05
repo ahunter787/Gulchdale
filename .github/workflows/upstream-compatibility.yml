@@ -1,0 +1,21 @@
+name: Upstream compatibility
+
+on:
+    workflow_dispatch:
+
+jobs:
+    inherited-suite:
+        runs-on: ubuntu-latest
+        env:
+            PERSISTENCE_LOCAL_PATH: .
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22.x
+                  cache: npm
+            - run: npm ci
+            - run: npm run build-server
+            - run: mkdir tmp
+            - name: Run inherited Draftmancer compatibility suite
+              run: npm test

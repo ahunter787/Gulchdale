@@ -407,6 +407,7 @@ export default defineComponent({
 			// User Data
 			userID: userID,
 			userName: userName,
+			suppressUserNameSync: false,
 			useCollection: true, // Note: True value will be set later so it's automatically sync with the server.
 			collection: {} as PlainCollection,
 			collectionInfos: {
@@ -689,10 +690,10 @@ export default defineComponent({
 			});
 
 			this.socket.on("updateUser", (data) => {
+				if (data.userID === this.sessionOwner && data.updatedProperties.userName)
+					this.sessionOwnerUsername = data.updatedProperties.userName;
 				const user = this.userByID[data.userID];
 				if (!user) {
-					if (data.userID === this.sessionOwner && data.updatedProperties.userName)
-						this.sessionOwnerUsername = data.updatedProperties.userName;
 					const spectator = this.sessionSpectators.find((s) => s.userID === data.userID);
 					if (spectator && data.updatedProperties.userName)
 						spectator.userName = data.updatedProperties.userName;
@@ -3197,7 +3198,10 @@ export default defineComponent({
 				confirmButtonText: "Yes",
 			}).then((result) => {
 				if (result.value) {
-					this.socket.emit("setSessionOwner", newOwnerID);
+					this.socket.emit("setSessionOwner", newOwnerID, (response) => {
+						if (response?.error) void Alert.fire(response.error);
+						else fireToast("success", `${user.userName} is now the session owner.`);
+					});
 				}
 			});
 		},
@@ -3219,8 +3223,41 @@ export default defineComponent({
 				confirmButtonText: `Remove ${role}`,
 			}).then((result) => {
 				if (result.value) {
-					this.socket.emit("removePlayer", userID);
+					this.socket.emit("removePlayer", userID, (response) => {
+						if (response?.error) void Alert.fire(response.error);
+						else fireToast("success", `${user.userName} was removed from the lobby.`);
+					});
 				}
+			});
+		},
+		leaveGulchdaleSession() {
+			if (this.userID === this.sessionOwner) {
+				void Alert.fire({
+					icon: "warning",
+					title: "Transfer ownership first",
+					text: "Choose another connected player as session owner before leaving the campfire.",
+				});
+				return;
+			}
+			void Alert.fire({
+				title: "Leave this lobby?",
+				text: "Your seat will become available immediately. You can rejoin later with the invitation.",
+				icon: "warning",
+				showCancelButton: true,
+				confirmButtonColor: ButtonColor.Critical,
+				cancelButtonColor: ButtonColor.Safe,
+				confirmButtonText: "Leave lobby",
+			}).then((result) => {
+				if (!result.value) return;
+				this.socket.emit("leaveSession", (response) => {
+					if (response?.error) {
+						void Alert.fire(response.error);
+						return;
+					}
+					eraseCookie("sessionID");
+					sessionStorage.removeItem(sessionStorageWindowSpecificDataKey);
+					window.location.assign("/");
+				});
 			});
 		},
 		movePlayer(idx: number, dir: -1 | 1) {
@@ -4348,12 +4385,33 @@ export default defineComponent({
 			this.updateURLQuery();
 			if (this.sessionID) setCookie("sessionID", this.sessionID);
 		},
-		userName() {
-			if (this.socket) {
+		userName(newName: string, previousName: string) {
+			if (this.suppressUserNameSync) {
+				this.suppressUserNameSync = false;
 				this.socket.io.opts.query!.userName = this.userName;
-				this.socket.emit("setUserName", this.userName);
+				this.storeSettings();
+				return;
 			}
-			this.storeSettings();
+			if (!this.socket) {
+				this.storeSettings();
+				return;
+			}
+			this.socket.emit("setUserName", newName, (response) => {
+				if (response?.error) {
+					this.suppressUserNameSync = true;
+					this.userName = previousName;
+					void Alert.fire(response.error);
+					return;
+				}
+				const acceptedName = response.userName ?? newName.trim();
+				if (acceptedName !== this.userName) {
+					this.suppressUserNameSync = true;
+					this.userName = acceptedName;
+				} else {
+					this.socket.io.opts.query!.userName = acceptedName;
+					this.storeSettings();
+				}
+			});
 		},
 		useCollection() {
 			this.socket?.emit("useCollection", this.useCollection);

@@ -3,39 +3,48 @@ import { RequestParameters } from "./ExternalBotInterface";
 
 export const DraftmancerAI = {
 	available: false,
-	domain: process.env.DRAFTMANCER_AI_DOMAIN ?? "http://127.0.0.1:8080/",
-	authToken: process.env.DRAFTMANCER_AI_AUTH_TOKEN ?? "testing",
+	domain: (process.env.DRAFTMANCER_AI_DOMAIN ?? "").trim().replace(/\/$/, ""),
+	authToken: process.env.DRAFTMANCER_AI_AUTH_TOKEN ?? "",
 	models: [] as string[],
 };
 
 // Check if DraftmancerAI server is online and update the list of available models
 function checkDraftmancerAIAvailability() {
+	if (!DraftmancerAI.domain) return;
 	axios
 		.get(`${DraftmancerAI.domain}/version`, { timeout: 5000 })
 		.then((response) => {
-			if (response.status === 200) {
+			if (
+				response.status === 200 &&
+				response.data !== null &&
+				typeof response.data === "object" &&
+				Array.isArray(response.data.models) &&
+				response.data.models.every((model: unknown) => typeof model === "string")
+			) {
 				DraftmancerAI.available = true;
 				DraftmancerAI.models = response.data.models;
 				console.log(`[+] DraftmancerAI instance '${DraftmancerAI.domain}' added.`);
 				console.log(`    Available models: ${DraftmancerAI.models}`);
 			} else {
 				DraftmancerAI.available = false;
-				console.error(
-					`DraftmancerAI instance '${DraftmancerAI.domain}' returned an error: ${response.statusText}.`
-				);
+				DraftmancerAI.models = [];
+				console.error(`DraftmancerAI instance '${DraftmancerAI.domain}' returned an invalid version response.`);
 			}
 		})
 		.catch((error) => {
 			DraftmancerAI.available = false;
+			DraftmancerAI.models = [];
 			if (error.isAxiosError) {
 				const e = error as AxiosError;
 				console.error(`DraftmancerAI instance '${DraftmancerAI.domain}' could not be reached: ${e.message}.`);
 			} else console.error(`DraftmancerAI instance '${DraftmancerAI.domain}' could not be reached: ${error}.`);
 		});
 }
-checkDraftmancerAIAvailability();
-// Verify every 30 minutes (for availability and potential new models)
-setInterval(checkDraftmancerAIAvailability, 30 * 60 * 1000);
+if (DraftmancerAI.domain) {
+	checkDraftmancerAIAvailability();
+	// Verify every 30 minutes (for availability and potential new models)
+	setInterval(checkDraftmancerAIAvailability, 30 * 60 * 1000);
+}
 
 interface DrafterState {
 	cardsInPack: string[];

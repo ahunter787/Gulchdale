@@ -23,6 +23,65 @@ body {
 	display: none;
 }
 
+/*
+ * Player nameplates can be buttons for seats the current user may manage.
+ * Keep those buttons visually identical to passive nameplates by overriding
+ * Draftmancer's deliberately broad #main-container button theme.
+ */
+#main-container.gulchdale-lobby-state .gulchdale-seat button.gulchdale-seat__nameplate {
+	appearance: none;
+	display: block;
+	height: auto;
+	min-height: 2.85rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 0.38rem 0.55rem;
+	border: 1px solid rgba(114, 220, 222, 0.22);
+	border-radius: 0.5rem;
+	color: #e8f1f1;
+	background: rgba(3, 10, 12, 0.86);
+	font: inherit;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: none;
+	white-space: normal;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+#main-container.gulchdale-lobby-state
+	.gulchdale-seat
+	button.gulchdale-seat__nameplate.gulchdale-seat__nameplate--active {
+	border-color: #75dfe2;
+}
+
+#main-container.gulchdale-lobby-state .gulchdale-seat button.gulchdale-seat__nameplate:hover {
+	border-color: rgba(117, 223, 226, 0.72);
+	background: rgba(7, 30, 33, 0.94);
+}
+
+#main-container.gulchdale-lobby-state .gulchdale-seat--owner button.gulchdale-seat__nameplate {
+	border-color: rgba(242, 208, 126, 0.68);
+	box-shadow: 0 0 1.2rem rgba(227, 161, 55, 0.26);
+}
+
+#main-container.gulchdale-lobby-state .gulchdale-seat--owner button.gulchdale-seat__nameplate:hover {
+	border-color: #f1d287;
+	background: rgba(32, 27, 17, 0.94);
+}
+
+#main-container.gulchdale-lobby-state .gulchdale-seat--ready button.gulchdale-seat__nameplate {
+	background: rgba(6, 37, 39, 0.9);
+	border-color: rgba(103, 226, 226, 0.58);
+}
+
+#main-container.gulchdale-lobby-state .gulchdale-seat--disconnected button.gulchdale-seat__nameplate {
+	border-style: dashed;
+	opacity: 0.78;
+}
+
 .gulchdale-engine #booster-controls {
 	background: linear-gradient(90deg, rgba(7, 35, 38, 0.95), rgba(42, 28, 12, 0.9));
 	border-bottom: 1px solid rgba(120, 226, 226, 0.25);
@@ -79,6 +138,18 @@ button.blue {
 @media (max-width: 650px) {
 	#main-container {
 		background-position: 50% 10em;
+	}
+}
+
+@media (max-width: 620px) {
+	#main-container.gulchdale-lobby-state .gulchdale-seat button.gulchdale-seat__nameplate {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		transform: none;
+		padding: 1.25rem 0.4rem 0.4rem 5rem;
+		text-align: left;
 	}
 }
 

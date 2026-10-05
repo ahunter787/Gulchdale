@@ -97,11 +97,13 @@ Players should not need to visit Draftmancer, paste a CubeCobra URL, or upload a
 
 1. **Engine:** Host the current Gulchdale environment on an owned Draftmancer-based server while retaining the upstream UI where practical.
 2. **Compiler:** Refactor the existing Python exporter into testable compile, validate, build, and version operations; remove manual CSV/TXT steps.
-3. **Gulchdale UI:** Add the branded landing page, host/join flow, campfire lobby, responsive draft interface, and Gulchdale card presentation.
+3. **Gulchdale UI:** Add the branded landing page, host/join flow, campfire lobby and table controls, responsive draft interface, and Gulchdale card presentation.
 4. **Mechanics:** Give partner acquisition and tribal/custom boosters first-class visual feedback.
 5. **Deck builder:** Add commander selection, color-identity guidance, deck/sideboard organization, and exports.
 6. **Forge:** Add a private administration surface for CubeCobra sync, validation, environment rebuilds, version history, rollback, and test drafts.
 7. **Persistence:** Later, optionally add accounts, draft/deck history, statistics, avatars, achievements, and analytics.
+
+Release-hardening boundaries are recorded in [`docs/HARDENING.md`](docs/HARDENING.md). Phase 4 mechanics, singleton allocation, and presentation work are planned in [`docs/PHASE4_MECHANICS.md`](docs/PHASE4_MECHANICS.md).
 
 ## Engineering principles
 
