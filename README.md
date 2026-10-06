@@ -34,8 +34,11 @@ legacy drafting. See the [architecture inventory](docs/architecture/LEGACY_INVEN
 and [accepted boundary decisions](docs/decisions/ADR-0003-domain-and-engine-boundary.md).
 
 Overhaul Phases 0 and 1 are complete; see the [verified exit record](docs/OVERHAUL_PHASE_0_1_VERIFICATION.md).
-Phase 2 awaits owner decision GD-300-901 on virtual supply and reservations. No new
-draft flow or full-cube tagging has been implemented.
+Phase 2 is Building: GD-300-901 is approved, and GD-300-002 provides an isolated
+headless pack simulator verified through 10,000 scenarios and their replays. See the [Phase 2 evidence](docs/OVERHAUL_PHASE_2.md)
+and [independent-worker commands](docs/PHASE2_WORKER_HANDOFF.md). Real small-slice
+content/balance review remains open. No live new-game flow, UI or full-cube tagging
+has been implemented.
 The [human-readable work catalog](docs/WORK_ITEMS.md) explains each module/ticket and
 its remaining questions inside Plane and Outline. The tested legacy recovery point
 is `gulchdale-legacy-preserved-v1.0.1`; see the legacy runbook before restoring.
@@ -155,7 +158,7 @@ Release-hardening boundaries are recorded in [`docs/HARDENING.md`](docs/HARDENIN
 - Design for responsive desktop/mobile use, Docker deployment, and a Linux-hosted server.
 - Do not make authentication a prerequisite for the MVP.
 
-## Running Phase 1
+## Running legacy Phase 1
 
 Phase 1 runs the current Gulchdale environment on a self-hosted Draftmancer engine. The cube snapshot is bundled and locked, so normal users cannot replace its lists or pack rules.
 
@@ -167,7 +170,7 @@ Open `http://localhost:43721`, or use port `43721` on the host's LAN address fro
 
 The original public-Draftmancer launcher remains available only as a historical prototype under `reference/prototype/`.
 
-## Running the Phase 2 compiler
+## Running the legacy Phase 2 compiler
 
 Phase 2 adds a deterministic, explicitly promoted compiler. A build downloads the public CubeCobra CSV, resolves exact Scryfall printings, compiles and validates a candidate, and leaves the active environment untouched:
 

@@ -64,7 +64,7 @@ Make packs respond to a player's journey without becoming inexplicable, unfair, 
 ### Expected outcome
 Reproducible immediate-resolution shared and private packs, with explainable weights, supply accounting, and small-slice simulations.
 ### Current state
-Phase 2 is Building. GD-300-002 implements immediate offers, seeded scoring, holds, smaller tribal offers, replacement rewards and decline burns. Focused tests pass; the 10,000-scenario proof and composite gates are in progress. Real cube balance is not approved. Legacy is unchanged.
+Phase 2 is Building. GD-300-002 is complete as a synthetic engineering proof: immediate offers, seeded scoring, holds, smaller tribal offers, replacement rewards and decline burns. All 10,000 scenarios and 10,000 independent command replays passed, alongside 34 focused tests and composite gates. Real cube balance is not approved. Legacy is unchanged.
 ### Open questions
 Supply decisions are resolved in ADR-0009: exactly four/eight seats, generation-time holds, immediate resolution and equivalent replacement rewards. Real small-slice content and randomness/crowding calibration require review and playtest evidence.
 ### Completion criteria
@@ -72,7 +72,7 @@ An administrator can replay generation and explain each candidate's score and su
 ### Related reading
 [Open owner decisions](decisions/ADR-0007-open-game-rules.md) and [pack/supply design](architecture/SYSTEMS_MAP_v1.0.md).
 ### Engineering notes
-No new pack passes. Release unselected holds unless an explicit session-burn policy applies. GD-300-002 is the next headless proof; no full-cube tagging or engine rewrite.
+No new pack passes. Release unselected holds unless an explicit session-burn policy applies. GD-300-002 is the verified headless proof; no full-cube tagging or engine rewrite.
 
 ## GD-400 — Draft orchestration and Expeditions
 
@@ -217,7 +217,7 @@ Prove that guided packs and virtual supply can produce understandable, replayabl
 ### Expected outcome
 Small-slice immediate-pack simulations with generation-time holds, scoring explanations, replacement rewards and scarcity reporting.
 ### Current state
-Building. GD-300-001 remains historical accounting evidence; GD-300-002 now provides the synthetic seeded simulator under verification. Real curated content and balance review still gate Phase 2 completion.
+Building. GD-300-001 remains historical accounting evidence; GD-300-002 provides a verified synthetic seeded simulator with 10,000 passing scenarios and replays. Real curated content and balance review still gate Phase 2 completion.
 ### Open questions
 No supply question remains for the bounded simulator after ADR-0009. The real curated slice and archetype capacities need content review; randomness calibration remains a test hypothesis. Synthetic engineering fixtures do not clear the real balance gate.
 ### Completion criteria
@@ -623,7 +623,7 @@ Shared and personal limits, per-player singleton, private selected-only consumpt
 Complete for this bounded prototype. Nine synthetic tests cover the approved four/eight-player tribal endpoints, draft-unique categories, duplicate destruction, personal staples, private selections, shared exhaustion, replay identities and defensive input checks. The composite legacy verification also runs these tests.
 No live runtime hook, database change, pack scorer, real cube tagging or automated shortage fallback was added. This is not the Phase 2 exit gate.
 ### Open questions
-None for the historical accounting subset. ADR-0009 resolves later supply rules; GD-300-002 will implement them. Real curated slice selection and score calibration remain later Phase 2 work.
+None for the historical accounting subset. ADR-0009 resolves later supply rules; GD-300-002 implements them in a separate simulator. Real curated slice selection and score calibration remain later Phase 2 work.
 ### Completion criteria
 The supply tests pass; a repeated allocation cannot spend another copy; an exhausted selection cannot grant a card; no player pool can contain a duplicate. Legacy artifacts and default runtime remain unchanged.
 ### Related reading
@@ -638,15 +638,15 @@ Prove the new pack and scarcity rules without making the new game depend on the 
 ### Expected outcome
 A seeded headless simulator with atomic offer holds, legal selections, smaller tribal offers, deliberate decline burns, replacement rewards, rotating priority and replayable explanations.
 ### Current state
-Building. The new simulator and CLI are implemented with 34 passing focused tests and a passing 16-scenario smoke corpus. The full 10,000-scenario corpus and composite gates are in progress. GD-300-001 remains historical accounting coverage, not the generation-time hold implementation.
+Complete as the bounded synthetic engineering proof on 2026-10-06. All 10,000 scenarios (5,000 each at four/eight seats) and 10,000 independent command replays passed with zero failures. Each of eight families passed 625 times per seat count. The 34 focused tests, 16 saved CLI sample replays and composite legacy/foundation/client/Docker/ecosystem gates passed. GD-300-001 remains historical accounting coverage, not the generation-time hold implementation.
 ### Open questions
 No supply-rule question blocks the bounded engineering proof. Real card/archetype selection and balance calibration remain content-review gates; synthetic fixtures are not approved cube content.
 ### Completion criteria
 At least 10,000 four/eight-seat scenarios replay identically; category supply and pool singleton never fail; competing offers cannot overbook cards; replacement failures preserve boosters. Produce traces and an operator summary, with legacy/ecosystem gates green.
 ### Related reading
-[Proof A](CONTINUATION_TECHNICAL_PROOF.md), [approved boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Phase 2 evidence](OVERHAUL_PHASE_2.md).
+[Proof A](CONTINUATION_TECHNICAL_PROOF.md), [approved boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), [Phase 2 evidence and limitations](OVERHAUL_PHASE_2.md), and [independent-worker commands](PHASE2_WORKER_HANDOFF.md).
 ### Engineering notes
-Keep this under the new domain/harness, not Session.ts or the Campfire UI. The CLI provides simulate:phase2, explain:phase2 and replay:phase2 commands. Record actual release/configuration/seed/state identities, candidate scores, rotating priority and reservation events. See the worker handoff for exact commands. No new runtime cutover or source promotion.
+Implementation checkpoint: local commit 3a9e296. Keep this under the new domain/harness, not Session.ts or the Campfire UI. The CLI provides simulate:phase2, explain:phase2 and replay:phase2 commands. The reviewed receipt records actual release/configuration/seed/state identities and corpus trace hash 21101977c9df6ebcf6ecf54fd3df76548571849c1568a41bbe400f8a33bb611a. See the worker handoff for exact commands. No new runtime cutover or source promotion.
 
 ## GD-400-001 — Prove authoritative all-player phase and recovery barrier
 

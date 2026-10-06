@@ -1,0 +1,288 @@
+{
+  "kind": "reviewed-engineering-proof-receipt",
+  "date": "2026-10-06",
+  "sourceCommit": "3a9e2967d90b7b3a38a3694957bbfc296f30b2db",
+  "version": "phase2-immediate-v1",
+  "engineHash": "185e4d0d990007d882dfcd1513df65fc6afcdb530c132e6e34095f7e7ee3b319",
+  "environment": {
+    "node": "22.22.1",
+    "platform": "linux",
+    "randomJs": "2.1.0",
+    "typescript": "5.9.3"
+  },
+  "command": "npm run --silent simulate:phase2 -- --runs 5000 --seats both --seed-start 0 --output /absolute/empty/report-directory",
+  "seedRangePerSeat": {
+    "start": 0,
+    "endExclusive": 5000
+  },
+  "seatCounts": [
+    4,
+    8
+  ],
+  "runsPerSeat": 5000,
+  "totals": {
+    "scenarios": 10000,
+    "replayExecutions": 10000,
+    "passed": 10000,
+    "failed": 0
+  },
+  "byFamily": {
+    "4:shared": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:partial-tribal": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:replacement": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:unfulfillable": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:contention": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:decline": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:remainder-burn": {
+      "passed": 625,
+      "failed": 0
+    },
+    "4:rotation": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:shared": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:partial-tribal": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:replacement": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:unfulfillable": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:contention": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:decline": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:remainder-burn": {
+      "passed": 625,
+      "failed": 0
+    },
+    "8:rotation": {
+      "passed": 625,
+      "failed": 0
+    }
+  },
+  "corpusTraceHash": "21101977c9df6ebcf6ecf54fd3df76548571849c1568a41bbe400f8a33bb611a",
+  "distinctOutcomeSignatures": 4022,
+  "fixture": {
+    "commanders": 20,
+    "nonCommanderCards": 100,
+    "personalStaples": 2,
+    "archetypes": 6,
+    "synthetic": true,
+    "balanceApproved": false
+  },
+  "releases": {
+    "pool": "73ed93dd9e987f0f531d76d7d6323db5a7123848345fb33c39c8d8dccd4216a6",
+    "metadata": "c0c764f0f82a43a137482f0b36d401f3a4414b358cf8613b225ebbb3dfeacf84",
+    "rules": [
+      {
+        "seats": 4,
+        "guidance": 0,
+        "hash": "ff2d5a04f8bec00f447f10b216b42b8016ed9b0466c632df4ff21671b5bc7066"
+      },
+      {
+        "seats": 4,
+        "guidance": 0.8,
+        "hash": "076de15bc0525c9a8cd836d7141ec668a4010c550cb46a0ed7e01cd69638b89b"
+      },
+      {
+        "seats": 8,
+        "guidance": 0,
+        "hash": "751d48264d386f2deed916605e01bbb84b4fc3301bc3d8ace0375efe0de87963"
+      },
+      {
+        "seats": 8,
+        "guidance": 0.8,
+        "hash": "11ffb6877d746e2b9a5132411f9f9589f654395359608fca16e4887650916f5f"
+      }
+    ]
+  },
+  "firstPriority": {
+    "4:seat-3": 771,
+    "4:seat-2": 785,
+    "4:seat-0": 787,
+    "4:seat-1": 782,
+    "8:seat-4": 706,
+    "8:seat-0": 697,
+    "8:seat-6": 703,
+    "8:seat-5": 705,
+    "8:seat-3": 698,
+    "8:seat-2": 704,
+    "8:seat-1": 702,
+    "8:seat-7": 710
+  },
+  "sharedSelectionBySeat": {
+    "4:seat-3": {
+      "count": 3125,
+      "affinitySum": 1889.300000000007
+    },
+    "4:seat-2": {
+      "count": 3125,
+      "affinitySum": 1898.5666666666739
+    },
+    "4:seat-0": {
+      "count": 3125,
+      "affinitySum": 1896.9666666666742
+    },
+    "4:seat-1": {
+      "count": 3125,
+      "affinitySum": 1889.2333333333393
+    },
+    "8:seat-4": {
+      "count": 5625,
+      "affinitySum": 3375.9000000000005
+    },
+    "8:seat-0": {
+      "count": 5625,
+      "affinitySum": 3367.700000000005
+    },
+    "8:seat-6": {
+      "count": 5625,
+      "affinitySum": 3349.033333333332
+    },
+    "8:seat-5": {
+      "count": 5625,
+      "affinitySum": 3363.299999999999
+    },
+    "8:seat-7": {
+      "count": 5625,
+      "affinitySum": 3366.033333333333
+    },
+    "8:seat-2": {
+      "count": 5625,
+      "affinitySum": 3375.833333333331
+    },
+    "8:seat-3": {
+      "count": 5625,
+      "affinitySum": 3371.3000000000025
+    },
+    "8:seat-1": {
+      "count": 5625,
+      "affinitySum": 3365.699999999999
+    }
+  },
+  "sharedOffersByGenerationPosition": {
+    "4:0": {
+      "offers": 3125,
+      "options": 6250
+    },
+    "4:1": {
+      "offers": 3125,
+      "options": 6250
+    },
+    "4:2": {
+      "offers": 3125,
+      "options": 6250
+    },
+    "4:3": {
+      "offers": 3125,
+      "options": 6250
+    },
+    "8:0": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:1": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:2": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:3": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:4": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:5": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:6": {
+      "offers": 5625,
+      "options": 11250
+    },
+    "8:7": {
+      "offers": 5625,
+      "options": 11250
+    }
+  },
+  "verification": {
+    "focusedSimulatorTests": {
+      "passed": 34,
+      "failed": 0
+    },
+    "savedSamples": {
+      "count": 16,
+      "standaloneCliReplaysPassed": 16,
+      "byteIdenticalBetweenSmokeAndFullCorpus": true
+    },
+    "compositeCommand": "GULCHDALE_PYTHON=compiler/.venv/bin/python DOCKER_BUILDKIT=0 npm run verify:overhaul",
+    "compositeExitCode": 0,
+    "compilerTests": 9,
+    "controlTests": 21,
+    "legacyAcceptanceTests": 8,
+    "foundationTests": 5,
+    "supplyTests": 9,
+    "disposablePostgresTests": 3,
+    "ecosystemContentTests": 10,
+    "serverBuild": "passed",
+    "clientTypeCheck": "passed",
+    "clientProductionBuild": "passed",
+    "productionImage": "passed",
+    "ecosystem": {
+      "modules": 10,
+      "workItems": 32,
+      "outlineDocuments": 31,
+      "idempotency": "passed"
+    },
+    "legacyModeUnchanged": true,
+    "legacyTagsUnchanged": true,
+    "liveReleasePromoted": false,
+    "liveServicesRestarted": false
+  },
+  "aborted": false,
+  "limitations": [
+    "Eight bounded scenario families with varied seeds, not exhaustive verification of every possible input.",
+    "Fresh-instance command replay uses the same engine implementation; supply/ownership invariants and focused tests provide additional checks.",
+    "Choices and bots are deterministic fixture actions, not production bot intelligence.",
+    "Aggregate priority/scoring metrics are diagnostics, not approval of real cube balance or influence constants.",
+    "Phase 3 barrier, Phase 4 scenes/adapters and real curated content remain separate gates."
+  ],
+  "rawArtifacts": "/tmp/gulchdale-phase2-proof.207SJy (temporary, reproducible; not tracked)"
+}

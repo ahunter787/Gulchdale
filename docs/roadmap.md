@@ -57,7 +57,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Complete | No browser editing or live content mutation |
 | GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
 | GD-300-001 | GD-300 | 2 | Implement approved supply accounting prototype | Complete | Category limits, singleton, private selection and replay tests; no runtime integration |
-| GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Building | Seeded headless replay, atomic holds, burns and booster-preserving alternatives |
+| GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Complete | 10,000 seeded scenarios/replays; atomic holds, burns, booster-preserving alternatives; composite gates |
 | GD-400-001 | GD-400 | 3 | Prove authoritative all-player phase and recovery barrier | Not started | Four seats, stale action rejection, disconnected private recovery and exactly-once return |
 | GD-500-001 | GD-500 | 4 | Prove scene-based card primitives and reward adapter | Not started | New isolated scenes, floating packs, pool visibility, direct gifts and real client recovery |
 
@@ -72,7 +72,8 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 
 Decision context: [ADR-0007](decisions/ADR-0007-open-game-rules.md).
 Completed preservation/foundation evidence: [Phase 0/1 exit record](OVERHAUL_PHASE_0_1_VERIFICATION.md).
-Phase 2 has begun with approved supply accounting, not a completed pack simulator.
+Phase 2 has a verified synthetic pack simulator; real content/balance review is
+still required before the phase exits. [Engineering evidence](OVERHAUL_PHASE_2.md).
 [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md) resolves supply
 questions and defines new-game boundaries. Real content review remains a Phase 2
 exit gate; Expedition, deck legality and identity remain separate owner gates.

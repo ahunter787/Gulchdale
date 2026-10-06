@@ -1,8 +1,10 @@
 # Phase 2 independent-worker handoff
 
 Scope: verify GD-300-002, not edit it or implement Phases 3/4.
-Wait for the primary worker's tested implementation commit before starting. The
-documentation checkpoint `db38524` does not contain simulator implementation.
+The tested implementation commit is `3a9e296` on the local
+`codex/overhaul-foundation` branch. The documentation checkpoint `db38524` does
+not contain simulator implementation. Later evidence-only commits do not change
+this source checkpoint.
 
 ## Isolate the tested source
 
@@ -16,6 +18,11 @@ the snapshot without modifying it, or install exact lockfile dependencies in the
 isolated snapshot. Compile from that snapshot root:
 
 ```sh
+phase2_source=/home/captain/Code/Gulchdale
+phase2_snapshot="$(mktemp -d /tmp/gulchdale-phase2-worker.XXXXXX)"
+git -C "$phase2_source" archive 3a9e296 | tar -x -C "$phase2_snapshot"
+ln -s "$phase2_source/node_modules" "$phase2_snapshot/node_modules"
+cd "$phase2_snapshot"
 npm run build-server
 npm run test-simulator
 ```
@@ -31,8 +38,12 @@ directories and never overwrites reports. Redirect stdout/stderr to files outsid
 that report directory; redirection inside it would make it nonempty before startup.
 
 ```sh
-npm run --silent simulate:phase2 -- --runs 5000 --seats both --seed-start 0 --output /absolute/empty/report-directory
+phase2_report="$(mktemp -d /tmp/gulchdale-phase2-worker-report.XXXXXX)"
+npm run --silent simulate:phase2 -- --runs 5000 --seats both --seed-start 0 --output "$phase2_report" > "${phase2_report}.stdout.json" 2> "${phase2_report}.progress.log"
 ```
+
+Record the command's exit code immediately. The report directory is printed by
+`printf '%s\n' "$phase2_report"`; do not remove it before returning the result.
 
 `--runs` means runs per seat count: this executes 5,000 four-seat and 5,000 eight-seat
 scenarios, seeds 0 through 4999 for each. Every passing scenario also executes an

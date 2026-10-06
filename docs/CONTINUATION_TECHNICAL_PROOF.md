@@ -1,6 +1,6 @@
 # Continuation technical proof: new scenes, one authoritative session
 
-Status: A implemented and under verification; B/C specified, not started. Governing amendment:
+Status: A verified as a bounded synthetic engineering proof; B/C specified, not started. Governing amendment:
 [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
 
 ## What the proof answers
@@ -18,6 +18,12 @@ candidates; their existence does not prove barrier safety or replay correctness.
 Implementation commands and independent-worker setup:
 [Phase 2 worker handoff](PHASE2_WORKER_HANDOFF.md). This implementation is an
 offline synthetic proof, not new live application behavior.
+
+Verified on 2026-10-06 at implementation checkpoint `3a9e296`: 10,000 distinct
+four/eight-seat scenarios and 10,000 independent command replays, zero failures;
+34 focused tests and the composite preservation gates passed. The [operator
+summary and limitations](OVERHAUL_PHASE_2.md) distinguish this result from real
+content/balance approval and the unimplemented B/C integration proofs.
 
 Build a headless harness using explicit four/eight-seat rosters, immutable release
 references, versioned simulator settings and seeds. Start with labeled synthetic
