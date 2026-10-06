@@ -63,7 +63,8 @@ test("missing, duplicate, unknown, empty, and reordered catalog sections fail", 
 test("resolved owner answers and phased proof remain explicit rather than implied implementation", () => {
 	assert.equal(plan.items.find((i) => i.key === "GD-300-901").status, "Complete");
 	assert.ok(catalog.get("GD-300-901").markdown.includes("Complete as an owner decision, not as an implemented simulator"));
-	assert.ok(catalog.get("GD-300-002").markdown.includes("Next, not implemented"));
+	assert.ok(["Building", "Complete"].includes(plan.items.find((i) => i.key === "GD-300-002").status));
+	assert.ok(catalog.get("GD-300-002").markdown.includes("synthetic") || catalog.get("GD-300-002").markdown.includes("34 passing"));
 	assert.ok(catalog.get("GD-400-001").markdown.includes("same offer"));
 	assert.ok(catalog.get("GD-500-001").markdown.includes("Not started"));
 	assert.ok(catalog.get("GD-500-001").markdown.includes("client addCards event is not a grant"));

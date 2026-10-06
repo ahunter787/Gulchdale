@@ -57,7 +57,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Complete | No browser editing or live content mutation |
 | GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
 | GD-300-001 | GD-300 | 2 | Implement approved supply accounting prototype | Complete | Category limits, singleton, private selection and replay tests; no runtime integration |
-| GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Next | Seeded headless replay, atomic holds, burns and booster-preserving alternatives |
+| GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Building | Seeded headless replay, atomic holds, burns and booster-preserving alternatives |
 | GD-400-001 | GD-400 | 3 | Prove authoritative all-player phase and recovery barrier | Not started | Four seats, stale action rejection, disconnected private recovery and exactly-once return |
 | GD-500-001 | GD-500 | 4 | Prove scene-based card primitives and reward adapter | Not started | New isolated scenes, floating packs, pool visibility, direct gifts and real client recovery |
 

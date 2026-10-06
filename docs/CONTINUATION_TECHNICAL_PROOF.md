@@ -1,6 +1,6 @@
 # Continuation technical proof: new scenes, one authoritative session
 
-Status: Specified, not implemented. Governing amendment:
+Status: A implemented and under verification; B/C specified, not started. Governing amendment:
 [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
 
 ## What the proof answers
@@ -14,6 +14,10 @@ from existing pause/addCards functions being present. Those are integration
 candidates; their existence does not prove barrier safety or replay correctness.
 
 ## A: Phase 2 domain proof — GD-300-002
+
+Implementation commands and independent-worker setup:
+[Phase 2 worker handoff](PHASE2_WORKER_HANDOFF.md). This implementation is an
+offline synthetic proof, not new live application behavior.
 
 Build a headless harness using explicit four/eight-seat rosters, immutable release
 references, versioned simulator settings and seeds. Start with labeled synthetic

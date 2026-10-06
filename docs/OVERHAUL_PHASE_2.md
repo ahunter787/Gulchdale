@@ -62,6 +62,12 @@ legacy engine files and compiler inputs are unchanged from the preserved tag.
 
 ## Technical proof and implementation boundaries
 
+GD-300-002 is implemented and under verification. Run `npm run build-server` then
+`npm run test-simulator`; 34 focused cases and the 16-scenario CLI smoke corpus pass.
+The independent [worker handoff](PHASE2_WORKER_HANDOFF.md) gives exact simulate,
+explain and replay commands. Full-corpus and composite-gate results will be recorded
+after completion; this paragraph is not a claim that those pending gates passed.
+
 [The proof specification](CONTINUATION_TECHNICAL_PROOF.md) separates headless supply
 verification from phase/recovery and scene integration. UI is not part of the
 Phase 2 harness. Future scene UI may adapt reviewed card-rendering primitives, but

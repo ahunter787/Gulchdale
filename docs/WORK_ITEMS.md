@@ -64,7 +64,7 @@ Make packs respond to a player's journey without becoming inexplicable, unfair, 
 ### Expected outcome
 Reproducible immediate-resolution shared and private packs, with explainable weights, supply accounting, and small-slice simulations.
 ### Current state
-Phase 2 is Building. The owner-approved supply accounting prototype is implemented; seeded scoring and the curated pack simulator are not yet implemented. Legacy is unchanged.
+Phase 2 is Building. GD-300-002 implements immediate offers, seeded scoring, holds, smaller tribal offers, replacement rewards and decline burns. Focused tests pass; the 10,000-scenario proof and composite gates are in progress. Real cube balance is not approved. Legacy is unchanged.
 ### Open questions
 Supply decisions are resolved in ADR-0009: exactly four/eight seats, generation-time holds, immediate resolution and equivalent replacement rewards. Real small-slice content and randomness/crowding calibration require review and playtest evidence.
 ### Completion criteria
@@ -217,7 +217,7 @@ Prove that guided packs and virtual supply can produce understandable, replayabl
 ### Expected outcome
 Small-slice immediate-pack simulations with generation-time holds, scoring explanations, replacement rewards and scarcity reporting.
 ### Current state
-Building. GD-300-001 delivers the approved supply subset, with synthetic accounting tests. It does not deliver a seeded generator or claim the real cube is balanced.
+Building. GD-300-001 remains historical accounting evidence; GD-300-002 now provides the synthetic seeded simulator under verification. Real curated content and balance review still gate Phase 2 completion.
 ### Open questions
 No supply question remains for the bounded simulator after ADR-0009. The real curated slice and archetype capacities need content review; randomness calibration remains a test hypothesis. Synthetic engineering fixtures do not clear the real balance gate.
 ### Completion criteria
@@ -638,7 +638,7 @@ Prove the new pack and scarcity rules without making the new game depend on the 
 ### Expected outcome
 A seeded headless simulator with atomic offer holds, legal selections, smaller tribal offers, deliberate decline burns, replacement rewards, rotating priority and replayable explanations.
 ### Current state
-Next, not implemented. GD-300-001 is historical accounting coverage; it does not yet reserve open offers or generate packs. ADR-0009 supplies the resolved rules, including the approved review amendments.
+Building. The new simulator and CLI are implemented with 34 passing focused tests and a passing 16-scenario smoke corpus. The full 10,000-scenario corpus and composite gates are in progress. GD-300-001 remains historical accounting coverage, not the generation-time hold implementation.
 ### Open questions
 No supply-rule question blocks the bounded engineering proof. Real card/archetype selection and balance calibration remain content-review gates; synthetic fixtures are not approved cube content.
 ### Completion criteria
@@ -646,7 +646,7 @@ At least 10,000 four/eight-seat scenarios replay identically; category supply an
 ### Related reading
 [Proof A](CONTINUATION_TECHNICAL_PROOF.md), [approved boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Phase 2 evidence](OVERHAUL_PHASE_2.md).
 ### Engineering notes
-Keep this under the new domain/harness, not Session.ts or the Campfire UI. Record release/configuration/seed/state identities, candidate scores and reservation events. Distinguish temporary holds from permanent exhaustion. No new runtime cutover or source promotion.
+Keep this under the new domain/harness, not Session.ts or the Campfire UI. The CLI provides simulate:phase2, explain:phase2 and replay:phase2 commands. Record actual release/configuration/seed/state identities, candidate scores, rotating priority and reservation events. See the worker handoff for exact commands. No new runtime cutover or source promotion.
 
 ## GD-400-001 — Prove authoritative all-player phase and recovery barrier
 
