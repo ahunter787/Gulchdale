@@ -18,7 +18,10 @@ Owner answers received 2026-10-05. [ADR-0008](ADR-0008-approved-supply-rules.md)
 records the adopted category limits, selected-only private consumption, strict pool
 singleton and injection accounting. Phase 2 may begin with that bounded subset.
 The questions below are the original review checklist, retained as history; the
-remaining active questions and approved examples are listed in ADR-0008.
+later answers are recorded in [ADR-0009](ADR-0009-new-game-and-integration-boundaries.md).
+GD-300-901 is now resolved for the simulator. Its original checklist below is
+historical; content review and defector research are explicitly deferred. The
+Expedition, deck-legality and identity gates below remain open.
 
 Virtual supply is the generator's allowance to offer cards. Physical inventory is
 what the playgroup owns; it is reconciled later rather than allowed to dictate simulator

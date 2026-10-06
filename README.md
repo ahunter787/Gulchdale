@@ -8,6 +8,12 @@ Gulchdale becomes the source of truth for releases, metadata, supply, orchestrat
 weighting, telemetry and curation. Cube Cobra is an import/publishing integration;
 Draftmancer remains the proven legacy draft engine behind a future narrow adapter.
 
+Current decisions in [ADR-0009](docs/decisions/ADR-0009-new-game-and-integration-boundaries.md)
+supersede conflicting original UI/passing assumptions: this is a distinct new game,
+with immediate-resolution packs and new scene UI. Reviewed low-level card primitives
+may be adapted; legacy screens are not design references. See the
+[continuation technical proof](docs/CONTINUATION_TECHNICAL_PROOF.md) for phased validation.
+
 The [overhaul roadmap](docs/roadmap.md) replaces the historical roadmap below:
 Phase 0 preserve/audit; 1 PostgreSQL foundation; 2 pack simulator; 3 orchestrator;
 4 thin adapter; 5 four-player vertical slice; 6 curation/releases; 7 telemetry;

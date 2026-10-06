@@ -22,8 +22,8 @@ const catalog = parseCatalog(text, keys);
 const example =
 	"## GD-000 — Example\n" + CONTENT_HEADINGS.map((h) => "### " + h + "\nReadable " + h + ".\n").join("\n");
 
-test("all 39 records have human-first content and resolved repository references", () => {
-	assert.equal(catalog.size, 39);
+test("all 42 records have human-first content and resolved repository references", () => {
+	assert.equal(catalog.size, 42);
 	for (const entry of catalog.values()) {
 		const html = renderDescription(entry, "External ID: " + entry.key, (link) => {
 			if (link.external) return link.external;
@@ -58,6 +58,16 @@ test("missing, duplicate, unknown, empty, and reordered catalog sections fail", 
 		() => parseCatalog(example.replace("### Purpose", "### Engineering notes"), ["GD-000"]),
 		/headings\/order/
 	);
+});
+
+test("resolved owner answers and phased proof remain explicit rather than implied implementation", () => {
+	assert.equal(plan.items.find((i) => i.key === "GD-300-901").status, "Complete");
+	assert.ok(catalog.get("GD-300-901").markdown.includes("Complete as an owner decision, not as an implemented simulator"));
+	assert.ok(catalog.get("GD-300-002").markdown.includes("Next, not implemented"));
+	assert.ok(catalog.get("GD-400-001").markdown.includes("same offer"));
+	assert.ok(catalog.get("GD-500-001").markdown.includes("Not started"));
+	assert.ok(catalog.get("GD-500-001").markdown.includes("client addCards event is not a grant"));
+	assert.ok(catalog.get("GD-500-001").markdown.includes("not an iframe or restyled legacy"));
 });
 
 test("safe constrained Markdown renders readable headings, paragraphs, lists, emphasis, code and links", () => {

@@ -3,6 +3,8 @@
 Repository Markdown is authoritative. Outline and Plane are one-way mirrors.
 Human-readable descriptions and unanswered questions: [work-item catalog](WORK_ITEMS.md).
 Governing inputs: [Charter](architecture/DESIGN_CHARTER.md), [Systems Map](architecture/SYSTEMS_MAP_v1.0.md).
+Current owner amendment: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
+Proof gates: [continuation technical proof](CONTINUATION_TECHNICAL_PROOF.md).
 Baseline: `e766438`, tag `gulchdale-legacy-v1.0.0`; branch `codex/overhaul-foundation`.
 The previous Phase 1–3 work is legacy/as-built history, not these phases.
 
@@ -55,12 +57,15 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-600-001 | GD-600 | 1 | Read-only catalog and comparison views | Complete | No browser editing or live content mutation |
 | GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
 | GD-300-001 | GD-300 | 2 | Implement approved supply accounting prototype | Complete | Category limits, singleton, private selection and replay tests; no runtime integration |
+| GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Next | Seeded headless replay, atomic holds, burns and booster-preserving alternatives |
+| GD-400-001 | GD-400 | 3 | Prove authoritative all-player phase and recovery barrier | Not started | Four seats, stale action rejection, disconnected private recovery and exactly-once return |
+| GD-500-001 | GD-500 | 4 | Prove scene-based card primitives and reward adapter | Not started | New isolated scenes, floating packs, pool visibility, direct gifts and real client recovery |
 
 ## Owner decisions (stop at the relevant gate)
 
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
-| GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Building | Approved subset in ADR-0008; remaining scaling, shortage and contention decisions |
+| GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Complete | ADR-0009 records owner answers, immediate packs and explicit content/research deferrals |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
@@ -68,9 +73,9 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 Decision context: [ADR-0007](decisions/ADR-0007-open-game-rules.md).
 Completed preservation/foundation evidence: [Phase 0/1 exit record](OVERHAUL_PHASE_0_1_VERIFICATION.md).
 Phase 2 has begun with approved supply accounting, not a completed pack simulator.
-[ADR-0008](decisions/ADR-0008-approved-supply-rules.md) records owner answers and
-remaining gates. Passing-pack lifecycle, unsupported player counts, shortage
-resolution and live private contention stop at their respective unanswered decisions.
+[ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md) resolves supply
+questions and defines new-game boundaries. Real content review remains a Phase 2
+exit gate; Expedition, deck legality and identity remain separate owner gates.
 
 ## Sequencing and gates
 
@@ -78,12 +83,14 @@ Phase 0 exits after a fresh clone reproduces the pinned legacy draft without hid
 manual steps. Phase 1 exits after an independent immutable pool reconciles with the
 manifest and shadow failure cannot disrupt drafts. Phases 2 and 3 validate architecture
 before full-cube tagging or deep engine changes. Start with approximately 20 commanders,
-100 cards and 5–8 archetypes. PassingPack passes normally; ChoicePack is private,
-keeps selected results, destroys the remainder and never enters passing.
+100 cards and 5–8 archetypes. New shared and private packs resolve immediately;
+unselected options return to supply unless an explicit session-burn policy applies.
+Legacy passing remains unchanged. New UI follows the new game, not legacy screens;
+reviewed low-level card primitives may be adapted behind new interfaces.
 Shared play resumes at an all-player barrier; disconnected private choices await recovery.
 
-Phase 4 adapter operations: pause/resume, dynamic pack handoff, intermission presentation,
-private reward grants and complete events. Phase 5 requires four players, four retained
+Phase 4 adapter operations: authoritative phase gates, offer/pool projection, new scene
+presentation, idempotent reward grants, recovery and complete events. Phase 5 requires four players, four retained
 commanders, a marked leader, two questions, one private ChoicePack, a 60-card deck
 and a complete audit trail before cutover. Phase 6 adds curation edits/publishing/rollback.
 Phases 7–10 follow the Systems Map. Telemetry is append-only; analytics rebuildable.

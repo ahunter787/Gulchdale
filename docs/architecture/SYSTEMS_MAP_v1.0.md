@@ -1,6 +1,13 @@
 # Gulchdale Systems Map v1.0
 Derived companion: [original PDF](../reference/Gulchdale_Systems_Map_v1.0.pdf). Markdown is authoritative.
-Status: Working architecture for harness implementation.
+Status: Original v1.0 design input with later owner amendments.
+
+Current implementation must apply [ADR-0009](../decisions/ADR-0009-new-game-and-integration-boundaries.md):
+new packs resolve immediately, shared stages are simultaneous rather than passing,
+and new scenes do not inherit legacy UI. Reviewed low-level card primitives may be
+adapted. Original passing/rendering ownership recommendations below are superseded
+where conflicting. The linked PDF remains the original v1.0 snapshot.
+Validation is specified in [the continuation technical proof](../CONTINUATION_TECHNICAL_PROOF.md).
 ## Architecture principles
 - Gulchdale is the source of truth; Cube Cobra and Draftmancer are integrations.
 - Gulchdale owns orchestration, state, metadata, weighting, versioning, telemetry, and curation.

@@ -62,17 +62,17 @@ Start the simulator with a small curated slice, not cube-wide tagging. Preserve 
 ### Purpose
 Make packs respond to a player's journey without becoming inexplicable, unfair, or dependent on scarce physical copies during simulation.
 ### Expected outcome
-Reproducible passing packs and private Choice Packs, with explainable weights, supply accounting, and small-slice simulations.
+Reproducible immediate-resolution shared and private packs, with explainable weights, supply accounting, and small-slice simulations.
 ### Current state
 Phase 2 is Building. The owner-approved supply accounting prototype is implemented; seeded scoring and the curated pack simulator are not yet implemented. Legacy is unchanged.
 ### Open questions
-Tribal scaling outside four/eight players, shortage responses, passing-pack reservations and live private contention remain open. Pool singleton, category limits and injection accounting are approved. Randomness and crowding calibration require subsequent playtest evidence.
+Supply decisions are resolved in ADR-0009: exactly four/eight seats, generation-time holds, immediate resolution and equivalent replacement rewards. Real small-slice content and randomness/crowding calibration require review and playtest evidence.
 ### Completion criteria
 An administrator can replay generation and explain each candidate's score and supply use without opening a browser.
 ### Related reading
 [Open owner decisions](decisions/ADR-0007-open-game-rules.md) and [pack/supply design](architecture/SYSTEMS_MAP_v1.0.md).
 ### Engineering notes
-PassingPack passes; ChoicePack is private, keeps selected results, destroys the remainder, and never passes. No full-cube tagging or engine rewrite.
+No new pack passes. Release unselected holds unless an explicit session-burn policy applies. GD-300-002 is the next headless proof; no full-cube tagging or engine rewrite.
 
 ## GD-400 — Draft orchestration and Expeditions
 
@@ -94,19 +94,19 @@ Shared stages wait for all players. Disconnected private choices pause for recov
 ## GD-500 — Draftmancer adapter and playable integration
 
 ### Purpose
-Reuse proven multiplayer rendering, passing, reconnects, and deck building while Gulchdale owns the new journey and content.
+Evaluate proven backend and card-rendering ingredients while Gulchdale owns the new game, scenes, ownership and workflow. Legacy screens are not design references.
 ### Expected outcome
 A thin adapter and a four-player playable slice that demonstrates a better experience than the legacy draft.
 ### Current state
 Phases 4 and 5 have not started. The legacy engine is pinned and audited; no overhaul adapter or new browser flow exists yet.
 ### Open questions
-The minimum patch surface and card-component reuse need technical validation later. GD-500-901 must settle commander/deck counting and Adornment representation before legality enforcement.
+Reviewed card primitives may be adapted; exact dependency isolation, phase gating, pool projection and recovery need the GD-500-001 proof. GD-500-901 must settle commander/deck counting and Adornment representation before legality enforcement.
 ### Completion criteria
 Players pause and resume without lost state, complete the intended deck, and leave a complete audit trail.
 ### Related reading
 [Engine boundary](decisions/ADR-0003-domain-and-engine-boundary.md), [compatibility gate](decisions/ADR-0005-compatibility-and-rollout.md), and [legality questions](decisions/ADR-0007-open-game-rules.md).
 ### Engineering notes
-No deep fork changes before the simulator and independent orchestrator validate the architecture. Legacy remains available for rollback.
+Follow ADR-0009 and the continuation technical proof. Do not mount the legacy App controller or use traditional passing to drive the new game. No deep fork changes before simulator/orchestrator gates; legacy remains available for rollback.
 
 ## GD-600 — Curation, administration, and publishing
 
@@ -215,11 +215,11 @@ Legacy remains default; orchestrated mode is refused. Initial inspection is thro
 ### Purpose
 Prove that guided packs and virtual supply can produce understandable, replayable choices before touching multiplayer integration.
 ### Expected outcome
-Small-slice PassingPack and ChoicePack simulations with reservations, scoring explanations, and crowding behavior.
+Small-slice immediate-pack simulations with generation-time holds, scoring explanations, replacement rewards and scarcity reporting.
 ### Current state
 Building. GD-300-001 delivers the approved supply subset, with synthetic accounting tests. It does not deliver a seeded generator or claim the real cube is balanced.
 ### Open questions
-Remaining supply gates are intermediate player-count scaling, shortage responses, passing reservations and concurrent private recovery. The curated slice and archetype capacities need explicit design inputs; randomness calibration remains a test hypothesis.
+No supply question remains for the bounded simulator after ADR-0009. The real curated slice and archetype capacities need content review; randomness calibration remains a test hypothesis. Synthetic engineering fixtures do not clear the real balance gate.
 ### Completion criteria
 Thousands of simulated packs can be replayed from release, seed, and state, and each score and reservation can be explained.
 ### Related reading
@@ -247,9 +247,9 @@ Shared play resumes only after every player reaches the barrier. Never silently 
 ## phase-04 — Thin Draftmancer adapter
 
 ### Purpose
-Connect the validated Gulchdale journey to the multiplayer engine without replacing its reliable transport and card UI.
+Connect validated Gulchdale contracts to selected backend capabilities and adapted low-level card primitives inside an entirely new scene UI.
 ### Expected outcome
-Narrow pause/resume, dynamic pack handoff, intermission presentation, private rewards, and event bridging.
+Authoritative phase gates, immediate-offer presentation, idempotent reward/pool projection, recovery, and event bridging. Demonstrate floating cards and hidden pool presentation without adopting legacy screens.
 ### Current state
 Not started. The simulator and independent orchestrator must prove the boundaries first.
 ### Open questions
@@ -259,7 +259,7 @@ A real four-player session pauses for questions/private choices and resumes with
 ### Related reading
 [Adapter boundary](decisions/ADR-0003-domain-and-engine-boundary.md), [upstream audit](../UPSTREAM.md), and [rollout gate](decisions/ADR-0005-compatibility-and-rollout.md).
 ### Engineering notes
-Legacy stays default through this phase. ChoicePack never enters the ordinary passing lifecycle.
+Legacy stays default through this phase. No new pack passes. Timer pause alone is not a barrier; client addCards alone is not a grant. GD-500-001 specifies the real-client proof.
 
 ## phase-05 — Four-player playable vertical slice
 
@@ -587,30 +587,31 @@ Run `npm run verify:foundation` and the documented legacy/ecosystem gates. Do no
 ## GD-300-901 — Decide virtual supply and reservation behavior
 
 ### Purpose
-Decide how many opportunities Gulchdale can offer each player without confusing a digital draft with the number of physical cards in somebody's box.
-A virtual copy is an allowance for the generator to offer a card. Physical inventory is what a group must actually own to play; shopping and shortage reports come later.
+Decide how Gulchdale offers useful choices while keeping category supply, player singleton and physical budget concerns understandable. Physical inventory is a later reconciliation concern; virtual supply governs the simulator.
 ### Expected outcome
-An owner-approved supply policy for the first simulator, with worked four-player examples and stated boundaries for eventual two-to-eight-player sessions.
+An owner-approved four/eight-seat policy with explicit pack, shortage and content/research boundaries.
 ### Current state
-**Adopted from your answers on October 5:** tribal injections share two copies per card at four players and three at eight. Commanders, their support packages, Mono/main-pool cards and utility lands are draft-unique. Commander staples (currently Command Tower and Arcane Signet) are one per player and granted, never drafted. Fixing lands and Gulchdale assets use personal supply.
-**Adopted:** no player may hold duplicates in their draft pool. Destroy duplicate allocations without spending another shared copy. Private rewards consume only the selected card; unselected options are burned as choices but returned to available supply. Tribal injections consume scaled shared supply; personal allowances are checked independently.
-For example, Alice and Bob may each receive the same tribal card in a four-player session; a third allocation needs exhaustion handling. Both may receive their own Command Tower. A unique commander cannot be granted twice across the session.
-Phase 2 is Building with an isolated supply prototype. Your answers are preserved in ADR-0008; this ticket remains Building for the specific follow-ups below, not because the original six questions were ignored. The foundation's imported legacy quantities remain unchanged.
-**Future direction, not a legacy change:** budget fixing will likely grow through Expeditions, with only utility lands draftable and the final land round refactored later. Difficult-to-complete tribes and a clear saturation message are design intent, not a chosen compensation policy.
+Complete as an owner decision, not as an implemented simulator. ADR-0008 preserves the first answers; ADR-0009 records later answers and direct conversation confirmations. Phase 2 remains Building; the existing prototype does not yet hold options at generation or generate replacement rewards.
+**Adopted:** tribal injections share two copies per card at four players and three at eight. Commanders, support packages, Main Deck cards and utility lands are draft-unique. Commander staples are personal grants, never draftable options. Fixing lands and Gulchdale assets use personal supply.
+**Adopted:** no player may hold duplicates in their draft pool. Private rewards consume only the selected card in the one-selection case; the general pack definition supplies retained count. Unselected options return to available supply unless explicitly session-burned. Tribal injections consume shared scaled supply.
+**Future direction, not a legacy change:** budget fixing and expanded personal staples require content review; the legacy land round and imported quantities remain unchanged.
 ### Open questions
-- What tribal allowance applies at two, three, five, six and seven players? Four and eight are approved; interpolation is not.
-- When a tribe exhausts, what exactly should happen to the player's reward or spent booster: redirection, smaller reward, compensation, another tribe, or another response?
-- When do passing packs reserve supply, and what do burns, cancellation and recovery do to that reservation?
-- May simultaneous private offers overlap, with regeneration when another player selects first, or do they need temporary presentation holds? Only selected cards consuming capacity is settled; the contention experience is not.
-- Which fixing lands/assets and quantities belong in the curated slice, and what player-facing name replaces Mono?
-The prototype reports exhaustion without choosing a gameplay fallback. These remaining questions gate only their affected behavior; they do not prevent implementing the approved subset.
+**Answers received — no remaining questions for this simulator gate.**
+
+- **Q1:** Exactly four or eight seats including bots; five humans require three bots. No intermediate-count scaling formula is needed.
+- **Q2:** Show tribal allocation/scarcity; allow smaller tribal offers if they meet retained count, otherwise offer a same-size legal reward from weighted archetypes. Charge a Tribal Booster only on successful selection; preserve it if no equivalent replacement is possible.
+- **Q3:** All new packs resolve immediately. Selected cards consume supply; release unselected holds unless an explicit session-burn policy removes them. Deliberate decline burns one player-chosen held copy and closes the opportunity without rerolling, releasing other holds and preserving the booster. Disconnect preserves the offer; technical failure never burns. Legacy passing remains untouched.
+- **Q4:** Screen and hold options atomically at generation so competing open offers cannot share draft-unique cards or exceed scaled tribal limits. Holds are temporary, not permanent consumption. Shared stages rotate first priority from a seeded initial order, including bot seats.
+- **Q5:** Defer fixing/assets and expanded staples to content review. Review high-budget, three-color, game-changer and salty cards; strengthen tribal support. Arcane Signet, Evolving Wilds and Command Tower were cited as staples-list examples, not a completed approved list.
+- **Q6:** Main Deck for now. The Gulch and The Caravan remain possible future names.
+
+Defector mechanics are research-only advanced-system scope. The commander and tribe following a defection is the intended concept; subtype, mana-payment and tabletop rules are not approved. The 36-spell/24-land and 8-12 Expedition estimates are calibration intent, not fixed counts. Real content review and separate Expedition/deck-legality gates remain open.
 ### Completion criteria
-ADR-0008 already records concrete approved category allowances, selected-only private consumption, pool singleton and injection accounting, with worked examples and prototype tests. Close this ticket when the remaining scaling, shortages and lifecycle decisions are answered or explicitly deferred by the owner to named gates.
-No invented interpolation, fallback or live contention rule clears this ticket.
+Met as a decision record: ADR-0009 captures answers, later confirmations and explicit deferrals. Implementation/proof is tracked separately by GD-300-002, GD-400-001 and GD-500-001; closing this ticket does not claim those systems exist.
 ### Related reading
-[Approved answers and remaining gates](decisions/ADR-0008-approved-supply-rules.md), [Phase 2 implementation record](OVERHAUL_PHASE_2.md), [Card Pool and Supply design](architecture/SYSTEMS_MAP_v1.0.md), and [original review checklist](decisions/ADR-0007-open-game-rules.md).
+[Current answers and boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), [technical proof](CONTINUATION_TECHNICAL_PROOF.md), [first approved subset](decisions/ADR-0008-approved-supply-rules.md), and [Phase 2 implementation record](OVERHAUL_PHASE_2.md).
 ### Engineering notes
-Partial owner gate, not blanket approval of every supply transition. Preserve the owner's Plane comment and answers through the repository record before synchronization. Do not patch Draftmancer or tag the full cube.
+Keep owner comments intact. ADR-0009 supersedes conflicting passing/UI ownership assumptions; no source promotion or engine patch follows from closing this decision ticket.
 
 ## GD-300-001 — Implement approved supply accounting prototype
 
@@ -622,13 +623,64 @@ Shared and personal limits, per-player singleton, private selected-only consumpt
 Complete for this bounded prototype. Nine synthetic tests cover the approved four/eight-player tribal endpoints, draft-unique categories, duplicate destruction, personal staples, private selections, shared exhaustion, replay identities and defensive input checks. The composite legacy verification also runs these tests.
 No live runtime hook, database change, pack scorer, real cube tagging or automated shortage fallback was added. This is not the Phase 2 exit gate.
 ### Open questions
-None for the approved accounting subset. The remaining rules are explicitly owned by GD-300-901; real curated slice selection and score calibration remain later Phase 2 work.
+None for the historical accounting subset. ADR-0009 resolves later supply rules; GD-300-002 will implement them. Real curated slice selection and score calibration remain later Phase 2 work.
 ### Completion criteria
 The supply tests pass; a repeated allocation cannot spend another copy; an exhausted selection cannot grant a card; no player pool can contain a duplicate. Legacy artifacts and default runtime remain unchanged.
 ### Related reading
 [Approved supply rules](decisions/ADR-0008-approved-supply-rules.md) and [Phase 2 scope and verification](OVERHAUL_PHASE_2.md).
 ### Engineering notes
 Implementation is `src/gulchdale/supply.ts`; tests are `test/gulchdaleSupply.ts`. Run `npm run build-server && npm run test-supply`. Canonical card identities must not be replaced by printing IDs. The in-memory audit is a prototype, not the persistent Phase 7 telemetry system.
+
+## GD-300-002 — Prove immediate pack generation and replacement rewards
+
+### Purpose
+Prove the new pack and scarcity rules without making the new game depend on the legacy draft controller or browser.
+### Expected outcome
+A seeded headless simulator with atomic offer holds, legal selections, smaller tribal offers, deliberate decline burns, replacement rewards, rotating priority and replayable explanations.
+### Current state
+Next, not implemented. GD-300-001 is historical accounting coverage; it does not yet reserve open offers or generate packs. ADR-0009 supplies the resolved rules, including the approved review amendments.
+### Open questions
+No supply-rule question blocks the bounded engineering proof. Real card/archetype selection and balance calibration remain content-review gates; synthetic fixtures are not approved cube content.
+### Completion criteria
+At least 10,000 four/eight-seat scenarios replay identically; category supply and pool singleton never fail; competing offers cannot overbook cards; replacement failures preserve boosters. Produce traces and an operator summary, with legacy/ecosystem gates green.
+### Related reading
+[Proof A](CONTINUATION_TECHNICAL_PROOF.md), [approved boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Phase 2 evidence](OVERHAUL_PHASE_2.md).
+### Engineering notes
+Keep this under the new domain/harness, not Session.ts or the Campfire UI. Record release/configuration/seed/state identities, candidate scores and reservation events. Distinguish temporary holds from permanent exhaustion. No new runtime cutover or source promotion.
+
+## GD-400-001 — Prove authoritative all-player phase and recovery barrier
+
+### Purpose
+Make shared drafting and private journeys one recoverable session, rather than letting a hidden button or timer determine when the game advances.
+### Expected outcome
+Four simulated seats enter private choices, preserve pending disconnected choices, and return to shared immediate packs only after every seat is ready.
+### Current state
+Not started; Phase 3 follows the Phase 2 domain proof. Existing legacy timer pause is not this barrier.
+### Open questions
+Real Expedition scripts, pacing and Adornment permissions remain GD-400-901 decisions. The technical proof uses non-production labels and explicit fixtures, not invented playable content.
+### Completion criteria
+Three completed seats cannot advance past an unfinished fourth. Recovery restores the same offer; duplicate/stale/out-of-order commands cannot allocate twice or cross phases. The next shared stage opens exactly once after all seats complete.
+### Related reading
+[Proof B](CONTINUATION_TECHNICAL_PROOF.md), [phase boundary](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Expedition owner gate](decisions/ADR-0007-open-game-rules.md).
+### Engineering notes
+Prove the actual independent domain state machine, not a browser-only modal or a mocked timer flag. Validate session/phase/offer references and in-flight actions, including bot seats. No automatic disconnected private selection.
+
+## GD-500-001 — Prove scene-based card primitives and reward adapter
+
+### Purpose
+Establish that low-level card functionality and selected backend capabilities can serve the new game's scenes without importing legacy screens or gameplay workflow.
+### Expected outcome
+An isolated scene-based proof with a landscape, dialogue and floating cards; a hideable pool; private rewards/direct gifts; and safe four-client recovery and return to shared play.
+### Current state
+Not started; Phase 4 follows domain/orchestrator gates. Reuse of reviewed card primitives is approved, but their integration and dependency isolation have not been proved.
+### Open questions
+Audit the exact card cache, popup emitter, global styling and backend projection dependencies before choosing the minimal patch surface. Whole legacy-screen reuse is not an option. Full deck/Adornment legality remains GD-500-901 scope.
+### Completion criteria
+Actual connected clients select in a bounded floating pack, hide/show their pool without loss, receive a gift without a normal pack pick, disconnect/recover without duplication, and resume shared play only at the all-player barrier. Export and authoritative ownership reconcile; legacy tests remain green.
+### Related reading
+[Proof C and evidence](CONTINUATION_TECHNICAL_PROOF.md), [current boundary ADR](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [amended domain ownership](decisions/ADR-0003-domain-and-engine-boundary.md).
+### Engineering notes
+Build a new isolated entrypoint, not an iframe or restyled legacy App.vue/App.ts. Use narrow presentation/command adapters; a client addCards event is not a grant and timer pause is not phase safety. Demonstrate real chosen adapters, preserve attribution, and record patches. No production cutover.
 
 ## GD-400-901 — Decide the first Expedition and Adornment limits
 

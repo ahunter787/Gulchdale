@@ -1,6 +1,8 @@
 # Overhaul Phase 2: pack simulator
 
 Status: Building, not complete. Legacy remains the default runtime.
+Current owner decisions: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
+The delivered prototype below is historical evidence, not the new hold-based implementation.
 
 ## Delivered first step: GD-300-001
 
@@ -40,17 +42,31 @@ legacy engine files and compiler inputs are unchanged from the preserved tag.
 
 ## Next work and explicit gates
 
-- Approve passing-pack reservation/burn/cancel/recovery rules before its lifecycle.
-- Approve tribal exhaustion response and intermediate player-count allowances
-  before implementing those cases. The four-player accounting scope is usable now.
+- GD-300-002 is Next: implement immediate shared/private offers with generation-time
+  holds, selected-only consumption, explicit burns, deliberate decline and deterministic replay.
+- Support exactly four/eight seats; distinguish temporary holds from tribal exhaustion.
+  Permit smaller tribal offers that meet retained count; otherwise offer same-size
+  legal weighted-archetype alternatives before spending a booster.
+  Preserve it if no replacement can be fulfilled.
+- Decline burns one player-chosen held copy, releases others and closes the opportunity
+  without a reroll. Disconnect and technical rollback never burn. Rotate shared
+  generation priority from seeded seat order, including bot seats.
 - Choose the real approximately 20-commanders/100-cards/5-8-archetypes slice and
   capacities before claiming balance or tagging cards. Do not tag the full cube.
 - Implement seeded candidate scoring and complete generation traces as explicit
   experimental simulator inputs, not approved influence constants.
-- Build PassingPack and private ChoicePack simulations, then replay and stress
-  them against release identities and seeds. Current offers are accounting only,
-  not generated/scored packs.
-- Resolve live overlapping private-offer contention before Phase 3/4 integration.
+- Replay/stress immediate pack simulations against release identities and seeds;
+  screen competing offers atomically. Current offers do not yet hold options.
+- Prove the all-player barrier independently in Phase 3 and scene/reward adapters
+  with connected clients in Phase 4. Neither is currently implemented.
+
+## Technical proof and implementation boundaries
+
+[The proof specification](CONTINUATION_TECHNICAL_PROOF.md) separates headless supply
+verification from phase/recovery and scene integration. UI is not part of the
+Phase 2 harness. Future scene UI may adapt reviewed card-rendering primitives, but
+must not mount legacy App.vue/App.ts or use Campfire layouts as a starting point.
+Defector mechanics are research only; Main Deck is the current public pool name.
 
 No live release was promoted, schema migrated, service restarted or engine file
 changed. The legacy land stage remains intact; budget mana-base redesign belongs

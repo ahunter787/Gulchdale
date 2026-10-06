@@ -1,6 +1,7 @@
 # ADR-0008: owner-approved supply rules and bounded Phase 2 start
 
-Status: Accepted for the rules below; remaining decisions are explicitly gated.
+Status: Historical approved subset; remaining supply questions resolved/superseded
+by [ADR-0009](ADR-0009-new-game-and-integration-boundaries.md). Prototype evidence below remains historical.
 Date: 2026-10-05.
 
 ## Decision source
