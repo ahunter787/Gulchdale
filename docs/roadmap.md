@@ -58,6 +58,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | GD-100-004 | GD-100 | 1 | Phase 1 exit gate | Complete | Independent pool; DB tests; legacy and ecosystem green |
 | GD-300-001 | GD-300 | 2 | Implement approved supply accounting prototype | Complete | Category limits, singleton, private selection and replay tests; no runtime integration |
 | GD-300-002 | GD-300 | 2 | Prove immediate pack generation and replacement rewards | Complete | 10,000 seeded scenarios/replays; atomic holds, burns, booster-preserving alternatives; composite gates |
+| GD-300-003 | GD-300 | 2 | Build the offline candidate research workbench | Complete | Separate candidates/snapshots, coverage/diffs, explicit paired experiments, replay and preservation gates |
 | GD-400-001 | GD-400 | 3 | Prove authoritative all-player phase and recovery barrier | Not started | Four seats, stale action rejection, disconnected private recovery and exactly-once return |
 | GD-500-001 | GD-500 | 4 | Prove scene-based card primitives and reward adapter | Not started | New isolated scenes, floating packs, pool visibility, direct gifts and real client recovery |
 
@@ -66,6 +67,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
 | GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Complete | ADR-0009 records owner answers, immediate packs and explicit content/research deferrals |
+| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Next | Q01–Q12 answered in Plane comments and reviewed into Markdown; no implicit game-rule approval |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
@@ -77,6 +79,11 @@ still required before the phase exits. [Engineering evidence](OVERHAUL_PHASE_2.m
 [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md) resolves supply
 questions and defines new-game boundaries. Real content review remains a Phase 2
 exit gate; Expedition, deck legality and identity remain separate owner gates.
+
+Auxiliary research support: [workbench guide](RESEARCH_WORKBENCH.md) and
+[owner questionnaire](RESEARCH_QUESTIONNAIRE.md). This lane does not close Phase 2
+or start Phases 3/4. Questions may be answered incrementally; incomplete metadata
+and profiles block experiments, not read-only catalog inspection.
 
 ## Sequencing and gates
 

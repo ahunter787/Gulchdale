@@ -72,7 +72,7 @@ An administrator can replay generation and explain each candidate's score and su
 ### Related reading
 [Open owner decisions](decisions/ADR-0007-open-game-rules.md) and [pack/supply design](architecture/SYSTEMS_MAP_v1.0.md).
 ### Engineering notes
-No new pack passes. Release unselected holds unless an explicit session-burn policy applies. GD-300-002 is the verified headless proof; no full-cube tagging or engine rewrite.
+No new pack passes. Release unselected holds unless an explicit session-burn policy applies. GD-300-002 is the verified headless proof; GD-300-003 adds a separate research workbench. Owner research lives in GD-300-902. No full-cube tagging or engine rewrite.
 
 ## GD-400 — Draft orchestration and Expeditions
 
@@ -754,3 +754,49 @@ The owner approves a readable policy and examples for recovery, consent, deletio
 [Identity/privacy decision record](decisions/ADR-0007-open-game-rules.md), [player-profile and telemetry design](architecture/SYSTEMS_MAP_v1.0.md), and [player-autonomy intent](architecture/DESIGN_CHARTER.md).
 ### Engineering notes
 Blocking gate: Phase 8 persistent learning. Mailpit captures development account mail only if accounts are later approved; no production delivery or mandatory authentication is implied.
+
+## GD-300-003 — Build the offline candidate research workbench
+
+### Purpose
+Give the owner useful tools while researching a distinct new Gulchdale card collection, without turning unfinished game design into production rules or inheriting the legacy cube's classifications.
+### Expected outcome
+Readable Markdown and JSON reports for candidate metadata, curves, color demands, declared roles/tribes/archetypes, missing data and changes. Explicit experimental profiles compare seeded random legal and affinity-directed picks using the existing supply engine, with replay evidence.
+### Current state
+Complete on 2026-10-06. Candidate loading, separate curator annotations, sealed source snapshots, reports, comparisons and explicit experimental commands are implemented. All 38 research tests and the composite legacy/foundation/compiler/client/Docker/ecosystem gates passed. The owner-approved source-map-js 1.2.2 patch cleared the production audit; broader development-tool audit findings remain separate hardening work. The guide records verification evidence. The tools do not require an approved new cube to inspect incomplete candidates. No live runtime, database pointer or UI has changed.
+### Open questions
+No tooling preference remains: optional legacy reference, explicit Scryfall snapshots, offline analysis, both modeled selection policies and answers through Plane comments are approved. The actual candidates, role targets, archetype evidence and experimental profiles remain GD-300-902 owner research. Unknowns must be displayed rather than guessed.
+### Completion criteria
+Tests cover exact resolution, duplicate printings, board preservation, missing metadata, annotation precedence, mocked API limits/retries, deterministic reports/diffs, both policies and replay. Composite preservation gates pass. Publication retains ten modules, 34 work items and 33 Outline documents; a second sync changes nothing.
+### Related reading
+[Workbench commands and formats](RESEARCH_WORKBENCH.md), [owner questionnaire](RESEARCH_QUESTIONNAIRE.md), [approved supply boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Phase 2 engineering evidence](OVERHAUL_PHASE_2.md).
+### Engineering notes
+Implementation is isolated under src/gulchdale/research. Use npm run research with snapshot, validate, report, compare, simulate or replay; tests are npm run test-research. Working data stays in ignored .gulchdale/research or temporary storage. Do not modify the frozen importer or simulator, promote content, infer legality, tag the full cube or build legacy-derived UI.
+
+## GD-300-902 — Define research priorities, candidate slice and experimental hypotheses
+
+### Purpose
+Capture the owner's new-game research in a durable, understandable place while avoiding accidental approval of guesses made by tooling or implementers.
+### Expected outcome
+Evidence-backed answers to Q01–Q12 covering audience, experience, accessibility, first slice, archetypes, tribes, commander review, roles, supply classification, affinities, experiments and acceptance. Reviewed answers and source-comment provenance enter repository Markdown; Outline/Plane remain published mirrors.
+### Current state
+Next. All twelve answers are explicitly Not supplied in the questionnaire. No real candidate slice, target set, affinity annotations or playable content has been approved. The workbench's construction can finish independently; incomplete experimental inputs must still prevent that experiment from running.
+### Open questions
+- Q01: Who is the audience and what complexity should it accommodate?
+- Q02: What experience and frustrating play patterns should guide review?
+- Q03: What accessibility, budget and availability constraints matter?
+- Q04: Which approximately 20 commanders and 100 cards form the first bounded slice?
+- Q05: Which 5–8 archetypes and distinct plans should be studied?
+- Q06: Which tribes and curated support relationships matter first?
+- Q07: What commander characteristics warrant inclusion, exclusion or complexity review?
+- Q08: What fixing, ramp, draw, removal, enabler and payoff targets should be tested?
+- Q09: Which cards belong to each already-approved supply category?
+- Q10: Which initial affinity relationships have supporting evidence?
+- Q11: What named experimental profiles specify pack sizes, permissions, resources and actions?
+- Q12: What evidence makes the slice ready for playtesting, and what requires revision?
+Adopted supply/singleton rules are not reopened. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
+### Completion criteria
+The owner supplies numbered answers in this ticket's comments, explicitly identifies research versus requested decisions, and requests review. The reviewed questionnaire records each accepted answer, evidence, status and provenance. Content approval requires its own review; this ticket cannot silently approve later phase rules.
+### Related reading
+[Fill-in research questions](RESEARCH_QUESTIONNAIRE.md), [workbench and interpretation limits](RESEARCH_WORKBENCH.md), [current owner boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [separate game-design gates](decisions/ADR-0007-open-game-rules.md).
+### Engineering notes
+Preserve Plane comments. Do not edit synchronized Outline bodies to supply authoritative answers, auto-ingest comments, invent missing quantities or promote a collection. Transfer answers to Markdown only after explicit review. Leave Phase 2 Building and Phases 3/4 Not started until their existing gates pass.

@@ -43,6 +43,12 @@ The [human-readable work catalog](docs/WORK_ITEMS.md) explains each module/ticke
 its remaining questions inside Plane and Outline. The tested legacy recovery point
 is `gulchdale-legacy-preserved-v1.0.1`; see the legacy runbook before restoring.
 
+The separate [research workbench](docs/RESEARCH_WORKBENCH.md) supports offline
+candidate reports and explicit paired experiments. Answer the numbered
+[research questionnaire](docs/RESEARCH_QUESTIONNAIRE.md) in GD-300-902's Plane
+comments; reviewed answers enter repository Markdown. This support work does not
+complete Phase 2 or start the new-game UI/orchestrator.
+
 Gulchdale is a standalone, Gulchdale-branded multiplayer Commander Cube drafting application. It is intended to turn the existing CubeCobra-to-Draftmancer workflow into a cohesive product: players visit Gulchdale, host or join a lobby, draft, review their pool, and export a deck without seeing Draftmancer configuration files or manually uploading a cube list.
 
 ## Historical product direction (legacy/as-built)

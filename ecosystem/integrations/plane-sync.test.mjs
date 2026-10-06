@@ -6,7 +6,7 @@ const text = fs.readFileSync(new URL("../../docs/roadmap.md", import.meta.url), 
 test("roadmap has ten unique modules, eleven milestones and assigned tickets", () => {
 	const p = parsePlan(text);
 	assert.equal(p.modules.length, 10);
-	assert.equal(p.items.length, 32);
+	assert.equal(p.items.length, 34);
 	assert.equal(new Set(p.items.map((i) => i.key)).size, p.items.length);
 	for (const i of p.items) assert.ok(p.modules.some((m) => m.Module === i.module));
 });

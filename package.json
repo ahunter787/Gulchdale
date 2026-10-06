@@ -25,6 +25,8 @@
 		"simulate:phase2": "node dist/src/gulchdale/simulatorCli.js simulate",
 		"explain:phase2": "node dist/src/gulchdale/simulatorCli.js explain",
 		"replay:phase2": "node dist/src/gulchdale/simulatorCli.js replay",
+		"research": "node dist/src/gulchdale/research/cli.js",
+		"test-research": "mocha dist/test/gulchdaleResearch.js --exit",
 		"test-foundation-db": "mocha dist/test/gulchdaleFoundationDatabase.js --exit",
 		"build-server-dev": "tsc --watch",
 		"build-client": "webpack --config client/webpack.config.prod.js --mode=production",
