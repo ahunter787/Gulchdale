@@ -38,6 +38,9 @@ The owner's [Gulchdale Philosophy](http://10.60.0.227:8105/doc/gulchdale-philoso
 is marketing/player-experience and curation intent, not an executable specification.
 The handwritten Game Design and Balance collection is protected and never modified
 by this workflow. Strong guidance is not a promise of a fully coherent deck.
+Later reviewed discussion adopts sequential recruitment/Expeditions, Tribe/Hire as
+entry order rather than exclusion, unique tribe allocation and tribe-owned
+commander/signature subsets. R09–R14 retain unanswered details and experiments.
 
 ## Q01 — Audience
 
@@ -125,7 +128,7 @@ Which candidate cards belong to each already-approved supply category: commander
 commander-support, Main Deck, utility land, tribal or personal commander staple?
 Each card has one policy regardless of overlapping tribe/archetype memberships.
 
-- Answer: Partial. Signatures and support belong exclusively to one commander, are granted on selecting it and cannot occur in any other independently draftable pool. The legacy spawnedByDraftEffect tag and commander Notes demonstrate the relationship; modern data needs explicit typed ownership rather than executable free-form Notes. Other real candidate classifications remain Not supplied.
+- Answer: Partial. General commanders may own fixed signatures/support; tribes own tribe-exclusive commanders and discoverable signatures. Exclusive owner links prevent cards entering unrelated pools. Fixed attachments are earned on recruitment; tribe-owned signature options may be discovered later, not all granted on tribe selection. The legacy spawnedByDraftEffect tag demonstrates injection-only data, not the complete new ownership model. Other real candidate classifications remain Not supplied.
 - Evidence: Owner's package clarification; inspected Cube Cobra and committed legacy Atla/Thornbite Staff and Baba/Crop Rotation examples, summarized in ADR-0010.
 - Status: Partially answered; exclusive package direction adopted, candidate mapping and package schema/accounting proof not implemented.
 - Related gate: GD-300-902; experiment readiness; existing GD-300-901 policy is settled.
@@ -148,7 +151,7 @@ sequences should each named hypothesis test? Specify initial boosters, grants,
 declines, burns and any explicit retries. Both modeled selection policies run with
 matched initial inputs; later offers may diverge. Profiles do not define playable Expeditions.
 
-- Answer: Partial. Research should distinguish lobby commander content from personal Adornment eligibility, and strong tribe/commander guidance from curated mana-curve/role coverage. Historical passing language has no backend governance. Defection remains experimental. No pack sizes, retained counts, coefficients, action sequences or real-card profiles are supplied.
+- Answer: Partial. Recruitment and supply-affecting Expedition choices are sequential regenerated offers; Tribe/Hire chooses entry order, not an exclusive career. Tribe allocation is unique; only the current holder can recruit/discover from its owned subset. Closing the offer releases unselected holds without burning. Main Deck timing, priority and four retained-commanders acquisition remain open. Historical passing language is not circulating-pack behavior. Defection and attack burns remain experimental. No numeric settings or real-card profiles are supplied.
 - Evidence: Reviewed owner discussion recorded in ADR-0010; no executable experimental profile supplied.
 - Status: Partially answered; actual named profiles remain open. Do not add curve/fixing corrective weighting or infer numeric guidance constants.
 - Related gate: GD-300-902; explicit-profile readiness; separate GD-400-901 content gate.
@@ -233,13 +236,14 @@ current scope; signatures are hand-curated, not chosen mid-draft.
 
 ### R06 — Package data and slice scope
 
-Supply the initial commander-to-signature/support mappings, distinguishing each
-signature from ordinary support. The owner prefers signatures in the first slice
+Supply the initial commander-owned and tribe-owned mappings, distinguishing fixed
+signatures/support from discoverable tribal signatures and exclusive commanders.
+The owner prefers signatures in the first slice
 if the bounded package/recovery/export gate can pass; which mappings demonstrate it?
 Record explicit deferral if that technical gate cannot be met. Do not re-ask whether
 attachments should overlap other pools: their exclusivity is settled.
 
-- Answer: Real initial mapping set Not supplied; Atla/Thornbite Staff and Baba/Crop Rotation plus four utility lands are reviewed historical examples, not automatic new-slice approval.
+- Answer: Real initial mapping set Not supplied; Atla/Thornbite Staff and Baba/Crop Rotation plus four utility lands are historical examples. Goblin/Krenko with Goblinslide or Hordeling Outburst illustrates discovery, not a promoted candidate mapping. Tribe-owned packages amend the earlier commander-only relationship.
 - Evidence: Reviewed owner package and conditional first-slice direction.
 - Status: Open content mappings and pending technical gate; no broad Phase 9 pull-forward.
 - Related gate: GD-300-902; GD-500-901 legality; Phase 2/3/4 package proof boundaries in ADR-0010.
@@ -267,6 +271,78 @@ remain adopted; no automatic rescue/reroll/supply creation is added.
 - Evidence: Owner's diagnostic-only instruction and the existing approved replacement policy have different scopes.
 - Status: Open clarification; no silent repeal or expansion.
 - Related gate: GD-300-902; GD-300-901 only if the owner requests a supply-policy amendment.
+
+### R09 — Turn priority, Main Deck timing and recovery
+
+How is first pick established/recorded, and does priority rotate, snake or remain
+fixed across later rounds? Does Main Deck drafting remain simultaneous immediate
+offers, or also become sequential? What timing/recovery behavior applies to the
+active seat, including bots? No answer may silently enable real pack circulation.
+
+- Answer: Recruitment/Expeditions are turn-based. The example awards first pick to a dice winner; later priority and Main Deck timing are Not supplied. Inactive seats must not claim supply while the active player reads; disconnected choices remain recoverable.
+- Evidence: Reviewed owner turn-based proposal and follow-up agreement.
+- Status: Adopted sequential direction; operational order/timing details open.
+- Related gate: GD-400-901; GD-300-902 for profiles; GD-400-001 technical turn/recovery proof.
+
+### R10 — Exclusive tribes and eight-seat content
+
+With five uniquely allocated tribes, what should an eight-seat session offer after
+all tribes are claimed: hire-only play, additional tribes or another approved rule?
+How do tribe availability and existing per-card allowances interact? Do not infer
+extra tribes, shared tribe ownership or changes to approved four/eight-seat card caps.
+
+- Answer: A tribe has one current holder with exclusive access to its dedicated subset. Eight-seat content/hire-only behavior is Not supplied.
+- Evidence: Owner clarified tribe-unique commanders/signatures and unique turn-based allocation.
+- Status: Ownership adopted; seat/content capacity unresolved.
+- Related gate: GD-300-902; GD-400-901; GD-300-901 only for an explicitly requested capacity amendment.
+
+### R11 — Two entry orders and retained commanders
+
+Which open tribes are compatible with a general hire? How are all four retained
+commanders acquired after initial recruitment, or is that earlier rule changing?
+Can a player change affiliation outside experimental defection? General Hire does
+not expose tribe-exclusive commanders before affiliation.
+
+- Answer: Tribe-first and Hire-first both remain possible; a later tribal hire uses the tribe's curated subset. Exact compatibility and four-commander acquisition are Not supplied.
+- Evidence: Owner's explicit entry-order clarification.
+- Status: Flexible entry adopted; subsequent eligibility/acquisition details open.
+- Related gate: GD-400-901; GD-500-901 for retained-commanders legality; GD-300-902 mappings.
+
+### R12 — Discoverable signature slot and lock-in
+
+Does a tribal signature only fill an empty commander slot, or replace a fixed
+signature? What is locked by choosing it: signature alone, commander or tribe too?
+What happens to an existing signature after leader change? Are unselected options
+available for later eligible discovery? No multiple command-zone signatures are inferred.
+
+- Answer: Tribal commanders may discover curated tribe-owned signatures during Expeditions. Exact slot/replacement/lock-in rules are Not supplied.
+- Evidence: Goblin/Krenko/Goblinslide/Hordeling Outburst illustration; arbitrary conversion of drafted spells remains excluded.
+- Status: Ownership/discovery direction adopted; playable slot/choice rules open.
+- Related gate: GD-500-901; GD-400-901 Expedition reward design; GD-300-902 package mappings.
+
+### R13 — Interactive Expeditions and attack burns
+
+What constitutes a successful Expedition beyond questionnaire answers? If an Elf
+Expedition can burn unallocated Goblin cards, does unallocated mean card copies,
+an unclaimed tribe, or both? Which targets/counts, counterplay, timing and fairness
+limits would apply, and is it intended for the slice or later research? How could
+we ensure earned cards and held offers remain protected?
+
+- Answer: Not decided. Elf-versus-Goblin burning is brainstorming, not an approved effect.
+- Evidence: Owner explicitly says no decision has been made and seeks simple meaningful Expedition content.
+- Status: Experimental hypothesis only; no automatic attack or new burns authorized.
+- Related gate: GD-400-901 for content research; GD-300-902 for future explicit experiments; broader Phase 9 before implementation.
+
+### R14 — Defection availability versus retained inventory
+
+How would defection be earned/resolved, which old commanders/signatures remain
+usable, and what type/color/leader changes apply? What limits prevent repeated
+affiliation from bypassing scarcity, and how would interruption/replay behave?
+
+- Answer: Research direction only: destination must be an unallocated tribe; old tribe availability returns but collected cards stay owned. This does not restore previously consumed contents.
+- Evidence: Reviewed owner defection clarification; explicitly experimental.
+- Status: Not approved as playable behavior; timing, permissions, limits and proof remain open.
+- Related gate: GD-400-901 research; GD-500-901 if deck rules are proposed; Phase 9 advanced systems.
 
 ## Other owner gates
 

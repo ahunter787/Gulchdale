@@ -3,6 +3,9 @@
 Status: Accepted owner direction and bounded rules; implementation not started.
 Related gates: GD-300-902, GD-400-901, GD-500-901, GD-800-901.
 This amends ADR-0009 where stated; legacy behavior and proof receipts are unchanged.
+Later owner discussion on 2026-10-06 adds sequential recruitment/Expeditions and
+tribe-owned packages below. It supersedes this ADR's earlier commander-only
+signature ownership model, not the existing code or historical proofs.
 
 ## Authority, provenance and protected research
 
@@ -73,14 +76,19 @@ answered conditionally by the owner's subsequent chat message; neither page is e
 
 - Every commander has an optional signature slot; empty slots are valid and many
   commanders may have none. Signature and support relationships are curated data.
-- A commander owns its signature and support cards exclusively. An attachment
-  cannot belong to another commander or occur in Main Deck, tribal, utility,
-  reward, fallback or other independently draftable pools. Validate canonical
+- General commanders may own fixed signatures/support. Tribes own tribe-exclusive
+  commanders and discoverable tribe-exclusive signatures. Each attachment has an
+  explicit exclusive owner, not simultaneous ownership in unrelated packages.
+  It cannot occur in Main Deck, utility, unrelated tribal/reward/fallback or other
+  independently draftable pools; owner-authorized discovery is not an unrelated
+  pool. Validate canonical
   identity across printings; duplicate printings cannot evade exclusivity.
-- These cards are automatic commander-package grants on selecting that commander,
+- Fixed commander attachments are automatic package grants on selecting that commander,
   not competing ordinary draft supply or universal per-player commander staples.
   Track entitlement, allocation, provenance and singleton despite their exclusion
   from pack supply. No extra category-wide multiplier or replenishment is implied.
+  Tribe-owned signature possibilities are not all granted just by joining a tribe;
+  an eligible later Expedition may award a selected signature, under curated rules.
 - Legacy evidence: Atla Palani owns Thornbite Staff; Baba Lysaga's Notes reference
   Crop Rotation and Mishra's Factory, Mishra's Foundry, Inkmoth Nexus and Blinkmoth
   Nexus. `spawnedByDraftEffect` identifies injection-only rows. Notes and tags are
@@ -116,6 +124,77 @@ Proposed event vocabulary includes commander selected, package granted and leade
 marked. Names are illustrative, not an adopted API schema. Pool projections and
 external logs supplement, never own, the Gulchdale record.
 
+## Sequential recruitment and Expedition choices — adopted direction
+
+Tribe or Hire determines entry order, not a mutually exclusive career. A player
+may join a tribe and recruit later, or hire first and later join a meaningful open
+tribe. Choosing a tribe restricts later tribe-specific recruitment to its curated
+commander subset, not the unrestricted general pool. Exact compatibility of a
+general hire with later tribes is open; do not invent a rule converting it into a
+tribal commander.
+
+Recruitment and Expedition choices are turn-based: one active
+seat receives a question, its answer shapes a newly generated offer, selection
+commits ownership/grants, and the next seat receives an offer based on updated
+availability. No circulating pack exists. "Passing" means advancing the turn;
+closing/destroying the offer presentation releases unselected holds and does not
+burn cards, delete audit evidence or replenish already consumed cards.
+
+The initial example uses a dice winner for first pick. How that result is recorded,
+whether later rounds rotate/snake/fix priority, bots and recovery limits are still
+R09 decisions. Do not infer Veteran priority from the illustrative Veteran winner.
+Preserve an active disconnected seat's turn/offer for recovery, with no automatic
+pick; reject inactive-seat, duplicate and stale turn actions. Later choices must
+not invalidate an offer while its owner reads. These are future proof contracts,
+not implemented behavior. A phase boundary still waits for all required turns.
+
+The sequential amendment is limited to recruitment/Expeditions. Main Deck timing
+still needs R09 confirmation; immediate non-circulating packs remain adopted.
+Existing seeded rotating priority in the simultaneous simulator is historical
+proof and remains unchanged, not an approved answer for new Expedition rounds.
+
+## Exclusive tribe allocation and discoverable signatures — adopted direction
+
+A tribe is allocated uniquely to one current player. Only that holder can acquire
+new cards from its exclusive commander/signature subset. General Hire offers must
+not expose tribe-exclusive commanders before the player holds that tribe. Tribe
+availability and remaining card supply are separate ledgers; printed type, archetype
+affinity and Main Deck support do not implicitly make a card tribe-exclusive.
+
+Example, not a promoted mapping: claim Goblins, later recruit Krenko, Mob Boss,
+then discover an eligible signature such as Goblinslide or Hordeling Outburst.
+The candidate relationships are curated before drafting, not arbitrary conversion
+of any drafted spell. Whether discovery fills an empty slot, replaces a fixed
+signature, or locks tribe/commander as well as signature remains R12. Do not grant
+multiple command-zone signatures or expand the two-card counting rule implicitly.
+
+Exclusive tribe allocation prevents another player from taking that same subset
+mid-choice. It does not prove adequate legal options within the subset. Five tribes
+allow at most five simultaneous tribe holders; eight-seat content/hire-only behavior
+must be approved in R10. No sixth tribe or shared-tribe exception is invented.
+
+## Defection and adversarial Expeditions — experimental, not approved
+
+Defection research direction: only an unallocated tribe may be a destination;
+leaving a tribe returns its availability but retains collected cards. This is a
+constraint on a future experiment, not permission to implement defection. A released
+tribe's remaining contents must reflect prior grants/burns; previously earned
+commanders/signatures do not become available again. Type/color/casting changes,
+eligibility, limits, old leader compatibility and replay semantics remain open.
+
+The owner is brainstorming interactive Expedition content beyond a questionnaire:
+for example, a successful Elf Expedition against Goblins might burn some unallocated
+Goblin-pool cards. No success mechanic, targeting/count, timing, counterplay or
+first-slice scope is decided. Record this only as a hypothesis. Unallocated card
+copies and an unallocated tribe are different concepts; the intended target is
+unresolved. Do not remove player-owned cards, cancel held offers or infer new burns.
+
+Three concepts must stay distinct: ordinary offer closure releases holds without
+burning; already-approved explicit decline/remainder burns stay as documented in
+ADR-0009; proposed attack burns require a separate owner decision and proof. Any
+future approved burn would affect session availability, not erase a source card
+or immutable release. Defection and attacks have no implementation ticket yet.
+
 ## Budget and availability
 
 Early research has a soft $1,000 all-in target, not a failed-list criterion.
@@ -148,7 +227,7 @@ nothing extra; attachment cards never appear elsewhere; earned cards are visible
 final export reconciles the selected deck and approved command-zone rules. If this
 gate cannot be met for the slice, document deferral rather than silently dropping cards.
 
-Open questions are numbered R01–R08 in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md)
+Open questions are numbered R01–R14 in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md)
 and assigned to existing owner tickets. In particular: which retained signatures
 are command-zone eligible, leader changes, attachment color permissions, physical
 versus deck membership, mixed-mode setup, measurable failure criteria and any

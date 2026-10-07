@@ -68,7 +68,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
 | GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Complete | ADR-0009 records owner answers, immediate packs and explicit content/research deferrals |
-| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Building | Q01–Q03 reviewed; remaining answers and R01–R08 recorded in existing owner gates; no implicit game-rule approval |
+| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Building | Q01–Q03 reviewed; remaining answers and R01–R14 recorded in existing owner gates; no implicit game-rule approval |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
@@ -85,6 +85,11 @@ Auxiliary research support: [workbench guide](RESEARCH_WORKBENCH.md) and
 [owner questionnaire](RESEARCH_QUESTIONNAIRE.md). This lane does not close Phase 2
 or start Phases 3/4. Questions may be answered incrementally; incomplete metadata
 and profiles block experiments, not read-only catalog inspection.
+Later recruitment/Expedition direction is sequential with regenerated offers and
+unique tribe access. Tribe/Hire sets entry order, not permanent exclusion. Closing
+an offer is not burning its cards. R09–R14 retain priority, Main Deck timing,
+eight-seat tribes, retained-commanders and signature-discovery questions. Defection
+and interactive Expedition attacks remain experimental research, not new tickets.
 Q01–Q03 are now reviewed; package/lobby clarifications are documented, not implemented.
 Follow-up questions stay in existing owner tickets, retaining 34 work items.
 ADR-0010 adds one engineering Outline document (34 engineering documents); the
@@ -101,6 +106,9 @@ unselected options return to supply unless an explicit session-burn policy appli
 Legacy passing remains unchanged. New UI follows the new game, not legacy screens;
 reviewed low-level card primitives may be adapted behind new interfaces.
 Shared play resumes at an all-player barrier; disconnected private choices await recovery.
+Recruitment/Expedition simultaneity is superseded by the later ADR-0010 amendment:
+one active turn at a time, fresh owner-eligible offers after prior commits. Main
+Deck timing needs confirmation; the historical simultaneous simulator is unchanged.
 
 Phase 4 adapter operations: authoritative phase gates, offer/pool projection, new scene
 presentation, idempotent reward grants, recovery and complete events. Phase 5 requires four players, four retained

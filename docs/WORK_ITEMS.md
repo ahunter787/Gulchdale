@@ -82,12 +82,13 @@ Turn drafting into one coherent adventure with meaningful questions, locations, 
 A data-driven phase state machine, Expedition definitions, player barriers, and recovery tools independent of Draftmancer.
 ### Current state
 Phase 3 and advanced Phase 9 work have not started. The first Expedition and Adornment details await GD-400-901.
+Later owner direction adopts turn-based recruitment/Expeditions, Tribe/Hire as entry order and one current holder per tribe. General hires and tribe-exclusive commander/signature subsets remain distinct. No turn, affiliation or discovery implementation exists; the first-slice content and signature rules still need review. Interactive attack burns and defection are research only.
 ### Open questions
 First-script content, pacing, shared versus private questions, reward counts, and color-expansion limits remain open. Broader Warbands/Signature Spell systems remain later work; ADR-0010 conditionally targets small hand-curated commander signatures for the first slice if package/recovery/export gates pass.
 ### Completion criteria
 A simulated Expedition completes without Draftmancer; future content extends configuration rather than forking the flow.
 ### Related reading
-[Expedition owner gate](decisions/ADR-0007-open-game-rules.md) and [domain/engine boundary](decisions/ADR-0003-domain-and-engine-boundary.md).
+[Expedition owner gate](decisions/ADR-0007-open-game-rules.md), [sequential/ownership amendment](decisions/ADR-0010-experience-policy-and-commander-packages.md), [experimental interaction register](extensions.md), and [domain/engine boundary](decisions/ADR-0003-domain-and-engine-boundary.md).
 ### Engineering notes
 Shared stages wait for all players. Disconnected private choices pause for recovery rather than auto-resolving; these rules are already adopted.
 
@@ -653,13 +654,13 @@ Implementation checkpoint: local commit 3a9e296. Keep this under the new domain/
 ### Purpose
 Make shared drafting and private journeys one recoverable session, rather than letting a hidden button or timer determine when the game advances.
 ### Expected outcome
-Four simulated seats enter private choices, preserve pending disconnected choices, and return to shared immediate packs only after every seat is ready.
+Four simulated seats take sequential recruitment/Expedition turns, generate fresh offers after each commit, preserve the active disconnected choice and advance a phase only after every required seat completes. Tribe access and package ownership remain authoritative in Gulchdale.
 ### Current state
 Not started; Phase 3 follows the Phase 2 domain proof. Existing legacy timer pause is not this barrier.
 ### Open questions
 Real Expedition scripts, pacing and Adornment permissions remain GD-400-901 decisions. The technical proof uses non-production labels and explicit fixtures, not invented playable content.
 ### Completion criteria
-Three completed seats cannot advance past an unfinished fourth. Recovery restores the same offer; duplicate/stale/out-of-order commands cannot allocate twice or cross phases. The next shared stage opens exactly once after all seats complete.
+Three completed seats cannot advance past an unfinished fourth. Recovery restores the same offer and active turn; inactive seats and duplicate/stale/out-of-order commands cannot allocate twice or cross phases. Offer closure releases holds without burning; later offers reflect earlier claims. The next configured phase opens exactly once after all required turns complete. Main Deck timing and later priority remain R09, not fixture-invented game rules.
 ### Related reading
 [Proof B](CONTINUATION_TECHNICAL_PROOF.md), [phase boundary](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Expedition owner gate](decisions/ADR-0007-open-game-rules.md).
 ### Engineering notes
@@ -693,6 +694,7 @@ An approved first Expedition script with named questions, locations, rewards, pa
 **Proposed, not approved:** begin with a few locations and one rule-changing reward. Small private option pools and influence targets are hypotheses, not settled counts or balancing rules.
 Phase 3 is Not started; no Expedition content has been implemented.
 Reviewed partial answers in ADR-0010: lobby choice is a willing override of recommended difficulty, Beginner/Intermediate commander pools exclude three-color commanders, and personal Adornment eligibility remains based on player level. Tribe/Expedition selection and commander packages are separate Gulchdale-owned systems. Exact setup, permissions, guidance and content are not implemented.
+Later direction: recruitment/Expeditions are sequential regenerated offers; Tribe/Hire defines entry order, not exclusion. Each tribe has one current holder with access to its exclusive commanders and discoverable signatures. Closing an offer does not burn cards. Elf attacks burning unallocated Goblin cards and defection releasing tribe availability while retaining collected cards are explicitly undecided experiments, not approved Expedition content.
 ### Open questions
 - What exact opening script, location choices, and two meaningful questions should the first playable journey use? Which questions are shared and which are player-specific?
 - Where should intermissions occur, and how long should the first experience take? Which timing decisions are first-slice settings versus later playtest calibration?
@@ -702,6 +704,10 @@ Reviewed partial answers in ADR-0010: lobby choice is a willing override of reco
 Barrier and disconnected-private-choice behavior are already answered; this ticket must not reopen them as unresolved choices.
 - R01: Who chooses lobby mode and how is personal experience supplied before persistent learning? Automatic lobby averaging is not approved.
 - R02: What personal Adornment color limits apply, including when a beginner willingly joins a Veteran lobby? How do these combine with commander/signature permissions?
+- R09–R11: What first/later turn order, Main Deck timing, eight-seat tribe availability, hire-first compatibility and four-commanders acquisition rules apply?
+- R12: What discovery step grants a tribe-owned signature, and what does choosing it lock?
+- R13: How could Expeditions have meaningful interactive content? The Elf-versus-Goblin attack example has no approved success, targets, amount, timing or counterplay.
+- R14: If defection is later pursued, how do availability, retained inventory, leader compatibility, colors and replay interact? No playable defection rule is approved.
 ### Completion criteria
 The owner approves the actual first script and examples of resulting signals, rewards, and color permissions. The independent orchestrator can implement it without inventing content, counts, or eligibility rules.
 ### Related reading
@@ -717,7 +723,7 @@ Make the deck a player takes to the table unambiguous, especially when four comm
 An owner-approved legality record with worked legal/illegal decks, commander roles, card counting, and explicit permissions.
 ### Current state
 **Adopted:** 60-card decks, 30 life, four retained commander options, one marked leader, and per-player final-deck singleton for non-basic cards unless an explicit rule changes it. Adornments can grant off-color permission for that draft.
-The normal basic/non-basic distinction is not a new global singleton restriction. Reviewed partial counting: the deck's commander is card 1 of 60 and its optional signature is card 2. Signatures start in the command zone and follow ordinary zones after casting, with no new whole-game casting cap. Signatures/support belong exclusively to their commander and are automatically earned on selection, never independent pack options. Gulchdale records and displays entitlements; Draftmancer is a projection, not the source of package ownership. The owner prefers curated signatures in the first slice if the bounded infrastructure gate passes, otherwise explicitly defer. Other retained-commanders' placement, signature eligibility and color/export details remain open; no package implementation is claimed.
+The normal basic/non-basic distinction is not a new global singleton restriction. Reviewed partial counting: the deck's commander is card 1 of 60 and its optional signature is card 2. Signatures start in the command zone and follow ordinary zones after casting, with no new whole-game casting cap. General commander fixed attachments and tribe-owned discoverable signatures have exclusive curated ownership, never unrelated pool membership. Fixed attachments are earned on recruitment; tribal signature options may be discovered later, not automatically all granted on affiliation. Gulchdale records and displays entitlements; Draftmancer is a projection, not the source of package ownership. The owner prefers curated signatures in the first slice if the bounded infrastructure gate passes, otherwise explicitly defer. Other retained-commanders' placement, signature eligibility and color/export details remain open; no package implementation is claimed.
 **Proposed, not approved:** model permission explicitly while possibly displaying a physical Adornment as a separate reference card.
 Phase 5 is Not started; the legacy flow has not been converted to these new validation rules.
 ### Open questions
@@ -728,6 +734,7 @@ Phase 5 is Not started; the legacy flow has not been converted to these new vali
 - How should permitted repeated basics and any expressly granted non-basic exception be represented consistently in the digital deck and tabletop instructions?
 - What color permissions apply to a signature? Arbitrary-drafted-spell conversion is already excluded from current scope; signatures are hand-curated during cube design.
 - R06: What curated package mappings demonstrate the conditional first-slice signature gate? Final deck/export must reconcile earned packages without reconstructing them from Draftmancer logs.
+- R12: Does tribal discovery fill an empty slot or replace a fixed signature; what locks and what happens on leader change? No multiple command-zone signatures are inferred.
 These questions clarify representation and play rules; they do not ask whether cross-player duplicates should be forbidden.
 ### Completion criteria
 The owner approves worked examples covering commander placement/counting, color permissions, repeated basics, explicit exceptions, and Adornment export. Deck validation can give a human-readable reason for each rejection.
@@ -801,6 +808,8 @@ Building. Q01–Q03 are reviewed and answered: relative beginners through vetera
 - R06/R07: Supply curated signature/support mappings and shared-substrate evidence. Which bounded examples should demonstrate package safety for the first slice?
 - R08: Does diagnostic-only failure handling leave the existing explicit tribal replacements intact? Until clarified, no supply rescue or silent repeal is added.
 R02 personal Adornment limits belong to GD-400-901; R05 signature/leader/deck placement belongs to GD-500-901. All R questions include Answer, Evidence, Status and Related gate fields in the questionnaire.
+- R09–R12: Supply priority, eight-seat tribe content, hire-first compatibility, four retained-commanders acquisition and signature-discovery details. Unique tribe allocation and both entry orders are settled direction, not implemented features.
+- R13/R14: Preserve Expedition-attack burning and defection as experimental hypotheses; no new effect, automatic burn or supply replenishment is approved.
 Adopted supply/singleton rules are not reopened. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
 ### Completion criteria
 The owner supplies numbered answers in this ticket's comments, explicitly identifies research versus requested decisions, and requests review. The reviewed questionnaire records each accepted answer, evidence, status and provenance. Content approval requires its own review; this ticket cannot silently approve later phase rules.

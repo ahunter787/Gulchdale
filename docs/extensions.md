@@ -1,17 +1,24 @@
 # Extensions register
 
-Changes to the specification that are **not** phases: additions, clarifications
-and decisions taken while building. The ecosystem mirrors this table into Plane
-alongside the roadmap, one work item per row, keyed by the number. **Change the
-register here, never in Plane.**
-
-Deliberately empty, like the roadmap: nothing is mirrored until the project says
-what it wants tracked.
+Research additions and clarifications are not automatic implementation work.
+This register is published to Outline as documentation; the current Plane publisher
+creates only items explicitly adopted into docs/roadmap.md and docs/WORK_ITEMS.md.
+No new ticket or approved game rule follows from adding a hypothesis here.
+Change the register here, never edit the published mirror as execution authority.
 
 Four cells, and the header row must read exactly `#`, `What it is`, `Kind`,
 `Status`. A row looks like `| **E1** | A short name for the change | Additive |
-Proposed |`. The first cell is the key Plane matches on, so keep it stable even
-when the wording around it changes.
+Proposed |`. The first cell is a stable research reference, not a Plane ticket ID.
+Keep it stable when the wording changes; adopting execution requires a GD ticket
+in the roadmap/catalog and an explicit owner decision.
 
 | # | What it is | Kind | Status |
 | --- | --- | --- | --- |
+| **E1** | Defection only to an unallocated tribe; release the old tribe but retain earned cards and spent supply | Research hypothesis | Experimental; not approved or implemented |
+| **E2** | Interactive Expedition success might burn unallocated opposing-tribe cards; Elf versus Goblin example | Research hypothesis | Brainstorming; no success, target, count, timing or counterplay rules decided |
+
+Owner discussion preserved 2026-10-06. [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md)
+separates adopted sequential recruitment/tribe ownership from these experiments.
+R13/R14 in the [questionnaire](RESEARCH_QUESTIONNAIRE.md) route research to existing
+GD-400-901 and GD-300-902 descriptions. Broader advanced systems remain Phase 9;
+no automatic attack, defection, supply replenishment or production cutover is authorized.

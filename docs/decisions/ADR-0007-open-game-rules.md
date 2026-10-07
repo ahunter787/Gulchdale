@@ -9,6 +9,9 @@ These do not retroactively change the working four-stage legacy flow.
 Reviewed updates: [ADR-0010](ADR-0010-experience-policy-and-commander-packages.md).
 Q01–Q03 are answered; the remaining research and new R01–R08 follow-ups are
 tracked in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md) and existing tickets.
+Later R09–R14 record turn priority, exclusive tribe capacity, entry orders,
+signature discovery and explicitly experimental attacks/defection. No burn effect
+is approved merely by brainstorming it.
 
 This is the decision record, not an approval of the proposed answers. The
 [human-readable work catalog](../WORK_ITEMS.md) publishes the same owner gates inside
@@ -73,6 +76,16 @@ approved script or count. Open decisions:
   a beginner choosing a two-color leader.
 - R01/R02: choose the lobby-mode setup mechanism and personal experience input;
   set personal Adornment limits when a player willingly joins a harder lobby.
+- R09–R11: decide turn order, Main Deck timing, eight-seat tribe availability,
+  hire/tribe compatibility and how the four retained commanders are acquired.
+- R12: decide the Expedition discovery step for tribe-owned signatures.
+- R13/R14: preserve interactive-attack and defection ideas as experiments, not
+  implementation authorization. No opponent-owned cards or held offers are removed.
+
+Later adopted direction: recruitment/Expedition choices occur sequentially, with
+fresh offers generated after earlier selections commit. Closing a pack releases
+unselected holds without burning. Tribe/Hire defines order, not exclusion; a tribe
+is unique to its current holder and owns a curated commander/signature subset.
 
 Reviewed direction: personal experience recommends difficulty; lobby content is
 selected by mode, not prohibited by a personal label. Beginner/Intermediate
@@ -93,8 +106,9 @@ card are recommendations, not a settled 61st-card rule. Open decisions:
 
 Reviewed counting: the deck's commander counts as card 1 of 60 and its optional
 signature as card 2. Signatures begin in the command zone and follow ordinary zones
-after casting; no new whole-game casting cap is imposed. Commander-owned signatures
-and support are exclusive automatic attachments, never independent pack candidates.
+after casting; no new whole-game casting cap is imposed. Commander-owned fixed
+signatures/support and tribe-owned discoverable signatures have explicit exclusive
+owners, never unrelated pack candidates.
 Gulchdale owns their records; Draftmancer projections/logs are not authoritative.
 These partial answers do not define all four retained commanders' placement.
 

@@ -6,6 +6,10 @@ The completed synthetic proof below remains unchanged historical evidence. It
 does not prove mode-aware shared offers or exclusive commander-package grants.
 Those need bounded follow-up plans/tests before implementation; the current
 commander-support category alone does not enforce the new package exclusivity.
+Later follow-up also needs tribe-owned exclusive subsets, unique affiliation and
+sequential recruitment/Expedition turns. These are documented direction, not
+features proved by the existing 10,000-scenario corpus. Attack burns/defection
+remain experimental, distinct from its tested explicit decline/remainder burns.
 Current owner decisions: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
 GD-300-001 below is historical evidence. GD-300-002 is the separate hold-based
 implementation; its current verification is recorded under Technical proof.

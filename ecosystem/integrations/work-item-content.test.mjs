@@ -90,7 +90,7 @@ test("reviewed research separates curation goals, package ownership, and open de
 	);
 	for (const id of ["Q01", "Q02", "Q03"])
 		assert.match(questionnaire.split("## " + id + " —")[1].split("\n## ")[0], /Status: Answered and reviewed/);
-	for (let i = 1; i <= 8; i++) {
+	for (let i = 1; i <= 14; i++) {
 		const section = questionnaire.split("### R" + String(i).padStart(2, "0") + " —")[1].split(/\n### |\n## /)[0];
 		for (const field of ["Answer", "Evidence", "Status", "Related gate"])
 			assert.ok(section.includes("- " + field + ":"));
@@ -104,6 +104,25 @@ test("reviewed research separates curation goals, package ownership, and open de
 	assert.ok(amendment.includes("implementation not started"));
 	assert.ok(catalog.get("GD-500-901").markdown.includes("R05"));
 	assert.ok(catalog.get("GD-400-901").markdown.includes("R02"));
+});
+
+test("sequential tribe recruitment is adopted but attack burns and defection remain experimental", () => {
+	const amendment = fs.readFileSync(
+		new URL("../../docs/decisions/ADR-0010-experience-policy-and-commander-packages.md", import.meta.url),
+		"utf8"
+	);
+	const research = fs.readFileSync(new URL("../../docs/extensions.md", import.meta.url), "utf8");
+	assert.ok(amendment.includes("entry order, not a mutually exclusive career"));
+	assert.ok(amendment.includes("Recruitment and Expedition choices are turn-based"));
+	assert.ok(amendment.includes("does not\nburn cards"));
+	assert.ok(amendment.includes("one current player"));
+	assert.ok(amendment.includes("Tribes own tribe-exclusive"));
+	assert.ok(amendment.includes("experimental, not approved"));
+	assert.ok(research.includes("Brainstorming"));
+	assert.ok(research.includes("not automatic implementation work"));
+	assert.ok(catalog.get("GD-400-901").markdown.includes("R13"));
+	assert.ok(catalog.get("GD-500-901").markdown.includes("R12"));
+	assert.equal(plan.items.find((i) => i.key === "phase-03").status, "Not started");
 });
 
 test("safe constrained Markdown renders readable headings, paragraphs, lists, emphasis, code and links", () => {

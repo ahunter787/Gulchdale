@@ -12,6 +12,10 @@ Curve/fixing/spell-count goals are curation observations, not corrective weights
 The handwritten Game Design and Balance collection is protected; engineering
 mirrors do not write into it. Current engineering publication has 34 documents;
 the 33-document receipts below describe the original workbench delivery.
+Further ADR-0010 discussion records sequential recruitment/Expeditions, exclusive
+tribe-owned packages and R09–R14 follow-ups. The current CLI cannot simulate that
+turn/affiliation/discovery model; existing create/stage commands are not proof of
+it. Attack burns and defection are research only, not new supported profile actions.
 
 ## Purpose and confirmed choices
 

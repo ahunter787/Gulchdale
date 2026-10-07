@@ -15,6 +15,9 @@ not retroactively expand the verified A corpus.
 - Phase 3: separate tribe/Expedition and commander-package state; record ownership
   when earned, not by parsing Draftmancer logs at submission. Personal experience
   recommends lobby choice; exact Adornment limits still require decisions.
+  Recruitment/Expeditions now need authoritative sequential turns, unique tribe
+  allocation and owner-scoped recruitment/discovery. General Hire cannot expose
+  another tribe's exclusive subset. Preserve the active turn on disconnect.
 - Phase 4/5: show earned signatures/support clearly, retain them through recovery,
   distinguish ownership from command-zone/deck placement and export from Gulchdale
   authoritative records. Pool projection timing is an adapter decision to prove.
@@ -92,13 +95,18 @@ Real small-slice review remains a Phase 2 content/balance exit gate.
 
 Use four simulated seats and non-production scene labels to demonstrate:
 
-1. All seats complete a simultaneous shared pack stage.
-2. Each enters a private question/reward phase.
-3. Three complete; the fourth remains unfinished or disconnected.
-4. Shared progression stays blocked. A stale shared pick is rejected by the server
-   domain boundary, not just by a disabled button.
-5. Restore the fourth seat's existing offer and complete it once.
-6. Every seat reaches the barrier; the next shared stage opens exactly once.
+1. With an explicit proof-only seat order, the active seat answers Tribe/Hire,
+   receives an owner-eligible offer and commits its selection/package once.
+2. Closing the offer releases unselected holds without burning. Generate the next
+   seat's offer from updated tribe availability and consumed-card accounting.
+3. Only the active seat can make a supply-affecting recruitment/Expedition choice;
+   reject other seats and stale turn/phase/offer references server-side.
+4. Three seats complete their required turns; the fourth disconnects while reading.
+   Both its turn and offer remain pending, and the next phase stays blocked.
+5. Restore that same turn/offer, complete it once and reject duplicate deliveries.
+6. Every seat reaches the barrier; the next configured phase opens exactly once.
+   Main Deck simultaneity and later-round priority remain R09 owner decisions,
+   not invented by this fixture. No actual pack circulation is introduced.
 
 Transitions refer to session, phase and offer identities. Commands are validated
 against current state; in-flight actions and simulated bot seats cannot cross the
@@ -120,9 +128,11 @@ interfaces; isolate legacy emitters, caches, CSS and socket assumptions. A scene
 view model receives projected state and submits commands; it never allocates cards
 or advances shared phases itself.
 
-Demonstrate four test browser clients: shared offers, independent private reward
-scenes, hidden pool presentation, one disconnect, recovery, then all-player return
-to a shared stage. The pool is merely hidden; showing it again preserves its cards.
+Demonstrate four test browser clients: active-player recruitment/Expedition scenes,
+inactive-seat waiting, explicit Tribe/Hire entry orders, earned package visibility,
+hidden pool presentation, one disconnect, recovery, then all-player progression.
+Any simultaneous Main Deck scene is explicitly configured proof scope pending R09.
+The pool is merely hidden; showing it again preserves its cards.
 Use placeholder dialogue and proof-only option counts, not approved story content.
 
 Exercise a narrow authenticated/idempotent reward-grant adapter, including a direct
