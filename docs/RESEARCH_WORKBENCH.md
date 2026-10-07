@@ -4,6 +4,15 @@ Tickets: **GD-300-003** implementation; **GD-300-902** owner research.
 Status: complete and verified on 2026-10-06. Phase 2 remains Building;
 Phases 3/4 remain Not started. This is a headless research tool, not a new game UI.
 
+Reviewed research update: Q01–Q03 are answered; lobby/package direction and R01–R08
+follow-ups are in [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md)
+and the questionnaire. The current CLI does not implement mode selection,
+commander packages, automatic curation-failure classification or new weighting.
+Curve/fixing/spell-count goals are curation observations, not corrective weights.
+The handwritten Game Design and Balance collection is protected; engineering
+mirrors do not write into it. Current engineering publication has 34 documents;
+the 33-document receipts below describe the original workbench delivery.
+
 ## Purpose and confirmed choices
 
 Research a new candidate collection without inheriting legacy rules, tags or screens.
@@ -256,7 +265,8 @@ archetype targets, content balance or player behavior has been approved.
 Run research tests, existing legacy/foundation/compiler/client/Docker gates and
 `make -C ecosystem verify`. API tests are mocked and require no live external services.
 The questionnaire and guide publish to Outline before Plane; repeat publication
-must make zero changes. Expected totals: ten modules, 34 work items, 33 Outline documents.
+must make zero changes. Current totals after ADR-0010: ten modules, 34 work items,
+34 engineering Outline documents. The original 33-document delivery receipt remains historical.
 
 GD-300-003 completes only when implementation and gates pass. GD-300-902 stays open
 until owner research is reviewed. No full-cube tagging, database/live pointer write,

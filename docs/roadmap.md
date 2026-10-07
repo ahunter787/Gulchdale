@@ -4,6 +4,7 @@ Repository Markdown is authoritative. Outline and Plane are one-way mirrors.
 Human-readable descriptions and unanswered questions: [work-item catalog](WORK_ITEMS.md).
 Governing inputs: [Charter](architecture/DESIGN_CHARTER.md), [Systems Map](architecture/SYSTEMS_MAP_v1.0.md).
 Current owner amendment: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
+Reviewed experience/package amendment: [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md).
 Proof gates: [continuation technical proof](CONTINUATION_TECHNICAL_PROOF.md).
 Baseline: `e766438`, tag `gulchdale-legacy-v1.0.0`; branch `codex/overhaul-foundation`.
 The previous Phase 1–3 work is legacy/as-built history, not these phases.
@@ -67,7 +68,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
 | GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Complete | ADR-0009 records owner answers, immediate packs and explicit content/research deferrals |
-| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Next | Q01–Q12 answered in Plane comments and reviewed into Markdown; no implicit game-rule approval |
+| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Building | Q01–Q03 reviewed; remaining answers and R01–R08 recorded in existing owner gates; no implicit game-rule approval |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; pacing, questions and private selection counts |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
@@ -84,6 +85,10 @@ Auxiliary research support: [workbench guide](RESEARCH_WORKBENCH.md) and
 [owner questionnaire](RESEARCH_QUESTIONNAIRE.md). This lane does not close Phase 2
 or start Phases 3/4. Questions may be answered incrementally; incomplete metadata
 and profiles block experiments, not read-only catalog inspection.
+Q01–Q03 are now reviewed; package/lobby clarifications are documented, not implemented.
+Follow-up questions stay in existing owner tickets, retaining 34 work items.
+ADR-0010 adds one engineering Outline document (34 engineering documents); the
+owner-authored Game Design and Balance collection is separate and protected.
 
 ## Sequencing and gates
 
@@ -103,6 +108,13 @@ commanders, a marked leader, two questions, one private ChoicePack, a 60-card de
 and a complete audit trail before cutover. Phase 6 adds curation edits/publishing/rollback.
 Phases 7–10 follow the Systems Map. Telemetry is append-only; analytics rebuildable.
 Mailpit is development email only.
+
+Conditional first-slice direction: curated commander signatures/support are owned
+by Gulchdale and excluded from other draft pools. Prove package allocation/replay
+in Phase 2 follow-up, authoritative state in Phase 3 and clear presentation/export
+in Phases 4/5 before including signatures. Existing proof completion is historical,
+not evidence for these additions. If the bounded signature gate cannot pass,
+record explicit deferral; broader advanced systems remain Phase 9.
 
 Every phase requires server/client builds, legacy smoke, Gulchdale tests, compiler
 reproduction, production Docker build and ecosystem verification.

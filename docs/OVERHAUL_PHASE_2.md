@@ -1,6 +1,11 @@
 # Overhaul Phase 2: pack simulator
 
 Status: Building, not complete. Legacy remains the default runtime.
+Later design direction: [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md).
+The completed synthetic proof below remains unchanged historical evidence. It
+does not prove mode-aware shared offers or exclusive commander-package grants.
+Those need bounded follow-up plans/tests before implementation; the current
+commander-support category alone does not enforce the new package exclusivity.
 Current owner decisions: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
 GD-300-001 below is historical evidence. GD-300-002 is the separate hold-based
 implementation; its current verification is recorded under Technical proof.
@@ -43,6 +48,14 @@ and updated nothing. Both legacy tags still resolve to their documented commits;
 legacy engine files and compiler inputs are unchanged from the preserved tag.
 
 ## Implemented rules and remaining gates
+
+Reviewed Q01–Q03 and R01–R08: [research questionnaire](RESEARCH_QUESTIONNAIRE.md).
+Curve, spell-count and mana-support failures are list-curation indicators, not
+new weights or automatic in-draft corrections. Diagnostic failures retain supply
+and decision-path evidence. Existing tribal replacements remain adopted pending
+R08 clarification. Conditional first-slice signatures require typed owner links,
+exclusion from every unrelated pool and atomic replay-safe package allocation;
+do not treat old single-card grant tests as package proof.
 
 - GD-300-002 implements immediate shared/private offers with generation-time
   holds, selected-only consumption, explicit burns, deliberate decline and deterministic replay.

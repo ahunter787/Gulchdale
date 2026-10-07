@@ -2,6 +2,30 @@
 
 Status: A verified as a bounded synthetic engineering proof; B/C specified, not started. Governing amendment:
 [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
+Later design amendment: [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md).
+The following new package/policy gates are specified, not implemented; they do
+not retroactively expand the verified A corpus.
+
+## Follow-up proof boundaries from owner research
+
+- Phase 2: canonical attachment exclusivity across printings, no attachment in
+  unrelated/fallback pools, atomic commander-plus-package grants, singleton and
+  exactly-once replay. Mixed-mode experiments must retain shared rotating
+  priority/holds while resolving explicit mode and personal permission inputs.
+- Phase 3: separate tribe/Expedition and commander-package state; record ownership
+  when earned, not by parsing Draftmancer logs at submission. Personal experience
+  recommends lobby choice; exact Adornment limits still require decisions.
+- Phase 4/5: show earned signatures/support clearly, retain them through recovery,
+  distinguish ownership from command-zone/deck placement and export from Gulchdale
+  authoritative records. Pool projection timing is an adapter decision to prove.
+- Curation diagnostics trace inadequate support to offered/selected cards and
+  actual supply. Do not invent curve/fixing corrective weighting, automatic rescue
+  or balanced-deck guarantees. Operational metrics remain owner research.
+
+Curated signatures are conditional first-slice scope if the package/visibility/
+recovery/export gate passes. Otherwise document deferral; broader Phase 9 features
+are not pulled forward. GD-500-901 must resolve retained-signature command-zone,
+leader-change, color and counting details before claiming playable legality.
 
 ## What the proof answers
 

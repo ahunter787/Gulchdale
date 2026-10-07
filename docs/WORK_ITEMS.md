@@ -83,7 +83,7 @@ A data-driven phase state machine, Expedition definitions, player barriers, and 
 ### Current state
 Phase 3 and advanced Phase 9 work have not started. The first Expedition and Adornment details await GD-400-901.
 ### Open questions
-First-script content, pacing, shared versus private questions, reward counts, and color-expansion limits remain open. Later Warbands and Signature Spells need real play data first.
+First-script content, pacing, shared versus private questions, reward counts, and color-expansion limits remain open. Broader Warbands/Signature Spell systems remain later work; ADR-0010 conditionally targets small hand-curated commander signatures for the first slice if package/recovery/export gates pass.
 ### Completion criteria
 A simulated Expedition completes without Draftmancer; future content extends configuration rather than forking the flow.
 ### Related reading
@@ -692,6 +692,7 @@ An approved first Expedition script with named questions, locations, rewards, pa
 **Adopted:** players retain four commanders and mark a leader; Choice Packs are private and never pass. Shared stages wait for every player. A disconnected private question/choice pauses for recovery rather than receiving an automatic answer.
 **Proposed, not approved:** begin with a few locations and one rule-changing reward. Small private option pools and influence targets are hypotheses, not settled counts or balancing rules.
 Phase 3 is Not started; no Expedition content has been implemented.
+Reviewed partial answers in ADR-0010: lobby choice is a willing override of recommended difficulty, Beginner/Intermediate commander pools exclude three-color commanders, and personal Adornment eligibility remains based on player level. Tribe/Expedition selection and commander packages are separate Gulchdale-owned systems. Exact setup, permissions, guidance and content are not implemented.
 ### Open questions
 - What exact opening script, location choices, and two meaningful questions should the first playable journey use? Which questions are shared and which are player-specific?
 - Where should intermissions occur, and how long should the first experience take? Which timing decisions are first-slice settings versus later playtest calibration?
@@ -699,10 +700,12 @@ Phase 3 is Not started; no Expedition content has been implemented.
 - How many private options and retained rewards should each first-script choice offer?
 - How many permanent color expansions may a player obtain, which colors may they open, and what eligibility restriction applies to a beginner using a two-color leader?
 Barrier and disconnected-private-choice behavior are already answered; this ticket must not reopen them as unresolved choices.
+- R01: Who chooses lobby mode and how is personal experience supplied before persistent learning? Automatic lobby averaging is not approved.
+- R02: What personal Adornment color limits apply, including when a beginner willingly joins a Veteran lobby? How do these combine with commander/signature permissions?
 ### Completion criteria
 The owner approves the actual first script and examples of resulting signals, rewards, and color permissions. The independent orchestrator can implement it without inventing content, counts, or eligibility rules.
 ### Related reading
-[Expedition decision record](decisions/ADR-0007-open-game-rules.md), [World/Expedition and player-state design](architecture/SYSTEMS_MAP_v1.0.md), and [Design Charter](architecture/DESIGN_CHARTER.md).
+[Expedition decision record](decisions/ADR-0007-open-game-rules.md), [reviewed experience/package amendment](decisions/ADR-0010-experience-policy-and-commander-packages.md), [R01/R02 follow-ups](RESEARCH_QUESTIONNAIRE.md), and [World/Expedition and player-state design](architecture/SYSTEMS_MAP_v1.0.md).
 ### Engineering notes
 Blocking gate: Phase 3. Record narrative wording separately from mechanical effects. No forced auto-resolution for disconnected players.
 
@@ -714,20 +717,22 @@ Make the deck a player takes to the table unambiguous, especially when four comm
 An owner-approved legality record with worked legal/illegal decks, commander roles, card counting, and explicit permissions.
 ### Current state
 **Adopted:** 60-card decks, 30 life, four retained commander options, one marked leader, and per-player final-deck singleton for non-basic cards unless an explicit rule changes it. Adornments can grant off-color permission for that draft.
-The normal basic/non-basic distinction is not a new global singleton restriction. The Charter's format direction is settled; exact counting and exception representation still need clarification.
+The normal basic/non-basic distinction is not a new global singleton restriction. Reviewed partial counting: the deck's commander is card 1 of 60 and its optional signature is card 2. Signatures start in the command zone and follow ordinary zones after casting, with no new whole-game casting cap. Signatures/support belong exclusively to their commander and are automatically earned on selection, never independent pack options. Gulchdale records and displays entitlements; Draftmancer is a projection, not the source of package ownership. The owner prefers curated signatures in the first slice if the bounded infrastructure gate passes, otherwise explicitly defer. Other retained-commanders' placement, signature eligibility and color/export details remain open; no package implementation is claimed.
 **Proposed, not approved:** model permission explicitly while possibly displaying a physical Adornment as a separate reference card.
 Phase 5 is Not started; the legacy flow has not been converted to these new validation rules.
 ### Open questions
 - Which of the four retained commanders may occupy the command zone during a game: only the marked leader, a chosen option, or a specifically defined combination?
-- Where do the other commander options live, and which commanders count toward the 60-card deck? Can a player change leader after drafting, and when are permissions recalculated?
+- R05: Where do other retained commander options and their packages live? Which signatures may start in the command zone, and can a leader change alter designation or permissions? Which included support cards count toward 60? Do not reopen the settled deck-commander/optional-signature counting.
 - Does the physical Adornment count as a deck card, a separate reference card, or another game object? What does export show?
 - How exactly do leader colors, Adornment permissions, and explicit format exceptions combine? Which exception cases must validation and export explain to players?
 - How should permitted repeated basics and any expressly granted non-basic exception be represented consistently in the digital deck and tabletop instructions?
+- What color permissions apply to a signature? Arbitrary-drafted-spell conversion is already excluded from current scope; signatures are hand-curated during cube design.
+- R06: What curated package mappings demonstrate the conditional first-slice signature gate? Final deck/export must reconcile earned packages without reconstructing them from Draftmancer logs.
 These questions clarify representation and play rules; they do not ask whether cross-player duplicates should be forbidden.
 ### Completion criteria
 The owner approves worked examples covering commander placement/counting, color permissions, repeated basics, explicit exceptions, and Adornment export. Deck validation can give a human-readable reason for each rejection.
 ### Related reading
-[Deck-rule decision record](decisions/ADR-0007-open-game-rules.md), [Deck Construction and Game design](architecture/SYSTEMS_MAP_v1.0.md), and [format intent](architecture/DESIGN_CHARTER.md).
+[Deck-rule decision record](decisions/ADR-0007-open-game-rules.md), [exclusive commander packages](decisions/ADR-0010-experience-policy-and-commander-packages.md), [R05/R06 follow-ups](RESEARCH_QUESTIONNAIRE.md), and [Deck Construction and Game design](architecture/SYSTEMS_MAP_v1.0.md).
 ### Engineering notes
 Blocking gate: Phase 5 legality acceptance. Do not infer command-zone combinations or a 61st-card rule from a recommended physical representation.
 
@@ -766,7 +771,7 @@ Complete on 2026-10-06. Candidate loading, separate curator annotations, sealed 
 ### Open questions
 No tooling preference remains: optional legacy reference, explicit Scryfall snapshots, offline analysis, both modeled selection policies and answers through Plane comments are approved. The actual candidates, role targets, archetype evidence and experimental profiles remain GD-300-902 owner research. Unknowns must be displayed rather than guessed.
 ### Completion criteria
-Tests cover exact resolution, duplicate printings, board preservation, missing metadata, annotation precedence, mocked API limits/retries, deterministic reports/diffs, both policies and replay. Composite preservation gates pass. Publication retains ten modules, 34 work items and 33 Outline documents; a second sync changes nothing.
+Tests cover exact resolution, duplicate printings, board preservation, missing metadata, annotation precedence, mocked API limits/retries, deterministic reports/diffs, both policies and replay. Composite preservation gates passed at delivery with ten modules, 34 work items and 33 engineering Outline documents. The later ADR-0010 documentation amendment adds one engineering document without changing workbench behavior or ticket count; repeat sync must change nothing.
 ### Related reading
 [Workbench commands and formats](RESEARCH_WORKBENCH.md), [owner questionnaire](RESEARCH_QUESTIONNAIRE.md), [approved supply boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [Phase 2 engineering evidence](OVERHAUL_PHASE_2.md).
 ### Engineering notes
@@ -779,11 +784,8 @@ Capture the owner's new-game research in a durable, understandable place while a
 ### Expected outcome
 Evidence-backed answers to Q01–Q12 covering audience, experience, accessibility, first slice, archetypes, tribes, commander review, roles, supply classification, affinities, experiments and acceptance. Reviewed answers and source-comment provenance enter repository Markdown; Outline/Plane remain published mirrors.
 ### Current state
-Next. All twelve answers are explicitly Not supplied in the questionnaire. No real candidate slice, target set, affinity annotations or playable content has been approved. The workbench's construction can finish independently; incomplete experimental inputs must still prevent that experiment from running.
+Building. Q01–Q03 are reviewed and answered: relative beginners through veterans; curation indicators for 36 spells, two-color mana support and meaningful offered curves; soft early budget and a hard future public $1,000 ceiling. Q07/Q09/Q11/Q12 are partially informed by the reviewed lobby and exclusive commander-package discussion; Q04/Q05/Q06/Q08/Q10 remain Not supplied. No real candidate slice, numeric guidance profile or playable content has been approved. Answers were reviewed from the owner's direct chat request; the Plane comments API returned zero comments at review time, so no comment provenance is invented. ADR-0010 records the approved boundaries, not completed implementation.
 ### Open questions
-- Q01: Who is the audience and what complexity should it accommodate?
-- Q02: What experience and frustrating play patterns should guide review?
-- Q03: What accessibility, budget and availability constraints matter?
 - Q04: Which approximately 20 commanders and 100 cards form the first bounded slice?
 - Q05: Which 5–8 archetypes and distinct plans should be studied?
 - Q06: Which tribes and curated support relationships matter first?
@@ -793,10 +795,16 @@ Next. All twelve answers are explicitly Not supplied in the questionnaire. No re
 - Q10: Which initial affinity relationships have supporting evidence?
 - Q11: What named experimental profiles specify pack sizes, permissions, resources and actions?
 - Q12: What evidence makes the slice ready for playtesting, and what requires revision?
+- R01: Who chooses lobby mode, what supplies personal experience, and which exact commander rosters apply? Personal difficulty is a recommendation; harder-lobby joins are willing overrides. Beginner/Intermediate exclude three-color commanders.
+- R03: What counts toward 36 spells, how do we measure offered curves/two-color support, and how do we distinguish list failure from player choices? These are curation diagnostics, not weighting or live repair.
+- R04: What does the future all-in $1,000 ceiling include, how are owned cards valued, and what current inventory/purchase allowance guides the slice? Current research has no hard budget failure criterion.
+- R06/R07: Supply curated signature/support mappings and shared-substrate evidence. Which bounded examples should demonstrate package safety for the first slice?
+- R08: Does diagnostic-only failure handling leave the existing explicit tribal replacements intact? Until clarified, no supply rescue or silent repeal is added.
+R02 personal Adornment limits belong to GD-400-901; R05 signature/leader/deck placement belongs to GD-500-901. All R questions include Answer, Evidence, Status and Related gate fields in the questionnaire.
 Adopted supply/singleton rules are not reopened. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
 ### Completion criteria
 The owner supplies numbered answers in this ticket's comments, explicitly identifies research versus requested decisions, and requests review. The reviewed questionnaire records each accepted answer, evidence, status and provenance. Content approval requires its own review; this ticket cannot silently approve later phase rules.
 ### Related reading
-[Fill-in research questions](RESEARCH_QUESTIONNAIRE.md), [workbench and interpretation limits](RESEARCH_WORKBENCH.md), [current owner boundaries](decisions/ADR-0009-new-game-and-integration-boundaries.md), and [separate game-design gates](decisions/ADR-0007-open-game-rules.md).
+[Reviewed answers and follow-ups](RESEARCH_QUESTIONNAIRE.md), [experience and exclusive packages](decisions/ADR-0010-experience-policy-and-commander-packages.md), [workbench and interpretation limits](RESEARCH_WORKBENCH.md), and [separate game-design gates](decisions/ADR-0007-open-game-rules.md).
 ### Engineering notes
-Preserve Plane comments. Do not edit synchronized Outline bodies to supply authoritative answers, auto-ingest comments, invent missing quantities or promote a collection. Transfer answers to Markdown only after explicit review. Leave Phase 2 Building and Phases 3/4 Not started until their existing gates pass.
+Preserve Plane comments and the owner's handwritten Game Design and Balance pages. Do not edit those pages, auto-ingest comments, invent missing quantities or promote a collection. Transfer answers to Markdown only after explicit review. Tribe/commander guidance remains distinct from curation indicators; no new curve/fixing correction weights. Leave Phase 2 Building and Phases 3/4 Not started until their existing gates pass.

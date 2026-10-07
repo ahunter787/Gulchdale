@@ -2,6 +2,9 @@
 
 Status: Accepted owner decisions; proof and implementation remain pending.
 Related tickets: GD-300-901, GD-300-002, GD-400-001, GD-500-001.
+Later reviewed amendment: [ADR-0010](ADR-0010-experience-policy-and-commander-packages.md)
+adds lobby recommendations, diagnostic-only curation criteria and exclusive
+commander packages. It does not imply these additions are implemented.
 
 ## Authority and provenance
 

@@ -6,6 +6,9 @@ Accepted format direction: per-player final-deck singleton, scalable virtual sup
 60-card decks, 30 life, four retained commanders and one marked leader,
 Adornment-based color expansion, native private ChoicePacks.
 These do not retroactively change the working four-stage legacy flow.
+Reviewed updates: [ADR-0010](ADR-0010-experience-policy-and-commander-packages.md).
+Q01–Q03 are answered; the remaining research and new R01–R08 follow-ups are
+tracked in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md) and existing tickets.
 
 This is the decision record, not an approval of the proposed answers. The
 [human-readable work catalog](../WORK_ITEMS.md) publishes the same owner gates inside
@@ -68,6 +71,13 @@ approved script or count. Open decisions:
 - Set the private option counts and retained reward counts for the first script.
 - Set permanent color-expansion limits, eligible colors, and the ability restriction for
   a beginner choosing a two-color leader.
+- R01/R02: choose the lobby-mode setup mechanism and personal experience input;
+  set personal Adornment limits when a player willingly joins a harder lobby.
+
+Reviewed direction: personal experience recommends difficulty; lobby content is
+selected by mode, not prohibited by a personal label. Beginner/Intermediate
+commander pools exclude three-color commanders. Adornments use personal level;
+exact permissions are still open. No automatic averaging or coefficients approved.
 
 Approval includes the complete first script and examples of resulting signals,
 rewards and permissions. No implementer invents question wording or mechanical counts.
@@ -81,6 +91,13 @@ explicit exceptions. The ordinary basic/non-basic distinction is not a global co
 Explicit permission validation and a possibly separate physical Adornment reference
 card are recommendations, not a settled 61st-card rule. Open decisions:
 
+Reviewed counting: the deck's commander counts as card 1 of 60 and its optional
+signature as card 2. Signatures begin in the command zone and follow ordinary zones
+after casting; no new whole-game casting cap is imposed. Commander-owned signatures
+and support are exclusive automatic attachments, never independent pack candidates.
+Gulchdale owns their records; Draftmancer projections/logs are not authoritative.
+These partial answers do not define all four retained commanders' placement.
+
 - Define which commanders may occupy the command zone and which combinations are legal.
 - Place the other retained commanders and define which count toward the 60 cards;
   decide whether/when leader changes are allowed and permissions recalculated.
@@ -89,6 +106,12 @@ card are recommendations, not a settled 61st-card rule. Open decisions:
 - Define how leader colors, Adornment permissions and explicit exceptions combine.
 - Specify consistent digital/tabletop representation of repeated basics and any granted
   non-basic exception rather than reopening the settled cross-player-duplicate direction.
+- R05: which retained signatures are command-zone eligible, how leader changes
+  affect designation/colors, and where unused packages live. Clarify support/deck
+  counting. Arbitrary-spell signature conversion is excluded from current scope;
+  hand-curated signatures are the adopted direction.
+- R06: conditional first-slice signatures require package/recovery/export proof;
+  approve real mappings and explicitly record deferral if that gate cannot pass.
 
 Approval requires legal/illegal deck examples and understandable validation/export reasons.
 

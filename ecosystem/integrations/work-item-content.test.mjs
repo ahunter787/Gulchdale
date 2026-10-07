@@ -74,12 +74,36 @@ test("resolved owner answers and phased proof remain explicit rather than implie
 	assert.ok(catalog.get("GD-500-001").markdown.includes("Not started"));
 	assert.ok(catalog.get("GD-500-001").markdown.includes("client addCards event is not a grant"));
 	assert.ok(catalog.get("GD-500-001").markdown.includes("not an iframe or restyled legacy"));
-	assert.ok(catalog.get("GD-300-902").markdown.includes("All twelve answers are explicitly Not supplied"));
+	assert.ok(catalog.get("GD-300-902").markdown.includes("Q01–Q03 are reviewed and answered"));
 	assert.equal(plan.items.find((i) => i.key === "GD-300-003").status, "Complete");
 	assert.ok(catalog.get("GD-300-003").markdown.includes("38 research tests"));
-	assert.equal(plan.items.find((i) => i.key === "GD-300-902").status, "Next");
+	assert.equal(plan.items.find((i) => i.key === "GD-300-902").status, "Building");
 	assert.equal(plan.items.find((i) => i.key === "phase-02").status, "Building");
 	assert.equal(plan.items.find((i) => i.key === "phase-03").status, "Not started");
+});
+
+test("reviewed research separates curation goals, package ownership, and open decisions", () => {
+	const questionnaire = fs.readFileSync(new URL("../../docs/RESEARCH_QUESTIONNAIRE.md", import.meta.url), "utf8");
+	const amendment = fs.readFileSync(
+		new URL("../../docs/decisions/ADR-0010-experience-policy-and-commander-packages.md", import.meta.url),
+		"utf8"
+	);
+	for (const id of ["Q01", "Q02", "Q03"])
+		assert.match(questionnaire.split("## " + id + " —")[1].split("\n## ")[0], /Status: Answered and reviewed/);
+	for (let i = 1; i <= 8; i++) {
+		const section = questionnaire.split("### R" + String(i).padStart(2, "0") + " —")[1].split(/\n### |\n## /)[0];
+		for (const field of ["Answer", "Evidence", "Status", "Related gate"])
+			assert.ok(section.includes("- " + field + ":"));
+	}
+	assert.ok(amendment.includes("not a guarantee"));
+	assert.ok(amendment.includes("curve/fixing/spell-count weighting"));
+	assert.ok(amendment.includes("not a failed-list criterion"));
+	assert.ok(amendment.includes("hard $1,000 ceiling"));
+	assert.ok(amendment.includes("never edit") || amendment.includes("Never edit"));
+	assert.ok(amendment.includes("ordinary draft supply"));
+	assert.ok(amendment.includes("implementation not started"));
+	assert.ok(catalog.get("GD-500-901").markdown.includes("R05"));
+	assert.ok(catalog.get("GD-400-901").markdown.includes("R02"));
 });
 
 test("safe constrained Markdown renders readable headings, paragraphs, lists, emphasis, code and links", () => {
