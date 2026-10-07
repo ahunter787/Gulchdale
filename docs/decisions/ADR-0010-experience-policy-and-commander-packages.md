@@ -134,11 +134,14 @@ general hire with later tribes is open; do not invent a rule converting it into 
 tribal commander.
 
 Recruitment and Expedition choices are turn-based: one active
-seat receives a question, its answer shapes a newly generated offer, selection
+seat receives a question, its answer shapes an eligible offer, selection
 commits ownership/grants, and the next seat receives an offer based on updated
 availability. No circulating pack exists. "Passing" means advancing the turn;
 closing/destroying the offer presentation releases unselected holds and does not
 burn cards, delete audit evidence or replenish already consumed cards.
+
+The later persistent-location amendment below supersedes fresh regeneration for
+Expedition returns. Closing a selection window does not discard a location's stock.
 
 The initial example uses a dice winner for first pick. How that result is recorded,
 whether later rounds rotate/snake/fix priority, bots and recovery limits are still
@@ -175,6 +178,11 @@ must be approved in R10. No sixth tribe or shared-tribe exception is invented.
 
 ## Defection and adversarial Expeditions — experimental, not approved
 
+Discovering a tribe during an Expedition is explicitly reserved for experimental
+Defector content, not ordinary recruitment or an automatic affiliation change.
+Discovery alone authorizes no switch. Eligibility, activation/cost, commander
+compatibility, former privileges and first-slice scope require separate approval.
+
 Defection research direction: only an unallocated tribe may be a destination;
 leaving a tribe returns its availability but retains collected cards. This is a
 constraint on a future experiment, not permission to implement defection. A released
@@ -194,6 +202,76 @@ burning; already-approved explicit decline/remainder burns stay as documented in
 ADR-0009; proposed attack burns require a separate owner decision and proof. Any
 future approved burn would affect session availability, not erase a source card
 or immutable release. Defection and attacks have no implementation ticket yet.
+
+## Public discovery and persistent Expedition locations — adopted direction
+
+Owner discussion on 2026-10-06 distinguishes personal generation/eligibility from
+private presentation. Recruitment, tribal and Expedition choices are publicly
+observed on every player's screen: question, offered options, selected outcome and
+unchosen options. Only the active player may act. This amends earlier references
+to private Choice Packs for these scenes; it does not make them circulating packs
+or expose future discoveries, internal scores, seeds or harness diagnostics.
+Observation should preserve skill-based interpretation, not automatically coach
+players toward the strongest card. New scenes are not based on legacy screens.
+
+- A location has persistent, session-owned revealed stock. Explore reveals it and
+  includes a pick. Later Return guarantees access to the same remaining stock,
+  not a fresh random offer or a promise that a previously seen card is still there.
+- Locations never replenish. Picking consumes allocation; closing a presentation
+  does not burn its remaining stock. Other approved removals, if any, require their
+  own explicit rules. All discovery, claim and remaining-stock history is retained.
+- Explore spends one shared exploration and opens an undiscovered location.
+  Return takes from a revealed location without spending an exploration.
+- Empty locations disappear from actionable Return choices but remain in history.
+  A nonempty location is actionable for a player only when it contains an eligible
+  choice. Public knowledge does not bypass ownership, permissions or singleton.
+- At zero explorations, each player receives one final pick opportunity, not
+  guaranteed supply. With no explorations and no eligible remaining choice, that
+  player's turn is forcibly skipped with its reason recorded; no automatic grant.
+- No separate turn cap is adopted for now. The owner wants greed for unexplored
+  opportunities to spend the shared clock; whether this produces good pacing is
+  a testable hypothesis, not a demonstrated equilibrium or balance guarantee.
+
+Illustration only: a Library shows five cards; the active player takes Merchant
+Scroll and leaves Rhystic Study. Another player visits the Blacksmith. A later
+eligible visitor can intentionally return for the still-unclaimed Rhystic Study.
+These names are not approved slice inclusions, ratings or curated location mappings.
+
+Proposed settings, not approved constants: four players, three explorations and
+six locations; eight players, six explorations and eight locations. Initial and
+final seat order, exploration/eligibility edge cases and exact content remain R15.
+No refill, fallback location, timer, forced exploration or attack burn is inferred.
+
+Gulchdale must own location inventories and public discovery/claim events separately
+from player selection windows. Unclaimed revealed stock stays accounted for and
+cannot be independently offered elsewhere while still claimable here. The exact
+reservation lifecycle across shared stock and commander/tribal entitlements needs
+schema/accounting proof; legacy holds and the current single-offer simulator are
+not evidence of this capability. Snapshot/replay must restore stock, clock, active
+turn, observed history and the remaining final opportunities without duplication.
+
+## Singleton intent, staples and sufficient deck-building opportunity
+
+The owner wants singleton as the new-game default, with a small curated exception
+for inexpensive practical staples such as Command Tower, Arcane Signet, Evolving
+Wilds and Terramorphic Expanse. Exact list, quantities and distribution are open.
+Unique tribe ownership supports one-copy dedicated content; it does not by itself
+implement singleton shared Main Deck supply. This new intent requires reconciliation
+with ADR-0009's older two/three-copy tribal capacities before execution. Existing
+simulator rules and historical receipts remain unchanged; R16 requests the amendment.
+
+Green having only Elves is acceptable; color-symmetric tribe coverage is not required.
+Dragon, Merfolk, Vampires and Angels are research candidates, not a final launch
+roster or approved color/mapping set. Dinosaurs are not required or approved.
+
+Adopted design direction: Expedition rewards are supplemental; the overall Main
+Deck acquisition budget must provide sufficient deck-building opportunity independent
+of Expedition success. This is not a guarantee that every player builds well.
+Record disparities, eligible opportunities, forced skips and remaining opportunities
+as observational evidence, not an automatic "N cards by now" catch-up system.
+Do not manufacture supply, add correction weights or grant cards after skips.
+Exact acquisition counts, land access and deck-counting assumptions remain R17.
+No implementation or safe-60-card proof is claimed by this direction.
 
 ## Budget and availability
 
@@ -227,7 +305,7 @@ nothing extra; attachment cards never appear elsewhere; earned cards are visible
 final export reconciles the selected deck and approved command-zone rules. If this
 gate cannot be met for the slice, document deferral rather than silently dropping cards.
 
-Open questions are numbered R01–R14 in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md)
+Open questions are numbered R01–R17 in the [questionnaire](../RESEARCH_QUESTIONNAIRE.md)
 and assigned to existing owner tickets. In particular: which retained signatures
 are command-zone eligible, leader changes, attachment color permissions, physical
 versus deck membership, mixed-mode setup, measurable failure criteria and any

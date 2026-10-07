@@ -16,6 +16,12 @@ Further ADR-0010 discussion records sequential recruitment/Expeditions, exclusiv
 tribe-owned packages and R09–R14 follow-ups. The current CLI cannot simulate that
 turn/affiliation/discovery model; existing create/stage commands are not proof of
 it. Attack burns and defection are research only, not new supported profile actions.
+R15–R17 add public, persistent non-replenishing Expedition stock and a shared
+exploration clock, singleton/staple-policy reconciliation and independent Main Deck
+opportunity. The current CLI does not implement locations, Explore/Return, final
+opportunities, forced skips, public observer projections or catch-up rewards.
+Existing traces do not prove these contracts; do not label older simulations as
+location-budget tests. Real candidate content remains owner research.
 
 ## Purpose and confirmed choices
 

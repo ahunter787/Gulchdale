@@ -10,6 +10,11 @@ Later follow-up also needs tribe-owned exclusive subsets, unique affiliation and
 sequential recruitment/Expedition turns. These are documented direction, not
 features proved by the existing 10,000-scenario corpus. Attack burns/defection
 remain experimental, distinct from its tested explicit decline/remainder burns.
+Further ADR-0010 direction introduces publicly observed, persistent non-replenishing
+Expedition locations and a shared exploration clock. Neither the corpus nor the
+research workbench implements that model. R15–R17 retain pacing/accounting details,
+singleton/staple reconciliation and sufficient Main Deck acquisition independent of
+supplemental Expedition rewards. No automatic catch-up system is approved.
 Current owner decisions: [ADR-0009](decisions/ADR-0009-new-game-and-integration-boundaries.md).
 GD-300-001 below is historical evidence. GD-300-002 is the separate hold-based
 implementation; its current verification is recorded under Technical proof.

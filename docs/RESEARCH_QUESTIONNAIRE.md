@@ -1,8 +1,8 @@
 # Gulchdale research questionnaire
 
 Owner-research ticket: **GD-300-902**. Workbench implementation: **GD-300-003**.
-Status: Q01–Q03 reviewed and answered; Q07/Q09/Q11/Q12 partially informed by the
-reviewed discussion. Q04/Q05/Q06/Q08/Q10 remain Not supplied. No candidate list,
+Status: Q01–Q03 reviewed and answered; Q06/Q07/Q09/Q11/Q12 partially informed by the
+reviewed discussion. Q04/Q05/Q08/Q10 remain Not supplied. No candidate list,
 numeric weighting profile or playable Expedition has been approved.
 
 Review source: direct owner messages in this chat, incorporated on 2026-10-06.
@@ -40,7 +40,9 @@ The handwritten Game Design and Balance collection is protected and never modifi
 by this workflow. Strong guidance is not a promise of a fully coherent deck.
 Later reviewed discussion adopts sequential recruitment/Expeditions, Tribe/Hire as
 entry order rather than exclusion, unique tribe allocation and tribe-owned
-commander/signature subsets. R09–R14 retain unanswered details and experiments.
+commander/signature subsets. Public observation and persistent, non-replenishing
+Expedition locations amend private presentation and fresh-return generation.
+R09–R17 retain unanswered details, supply amendments and experiments.
 
 ## Q01 — Audience
 
@@ -95,9 +97,9 @@ Identify enablers, payoffs and overlaps rather than assigning scores to the enti
 Which tribes and support relationships deserve initial attention? Distinguish a
 printed creature type from a curated support package or proposed group membership.
 
-- Answer: Not supplied.
-- Evidence: Not supplied.
-- Status: Open owner research; no tribe/support list adopted.
+- Answer: Partial. Green having only Elves is acceptable; no symmetrical color coverage is required. Dragon, Merfolk, Vampires and Angels are proposed additions. Exact launch roster, packages and support relationships remain Not supplied; Dinosaurs are not required.
+- Evidence: Reviewed owner chat discussion, 2026-10-06; no approved candidate mappings supplied.
+- Status: Partially answered as direction/candidates, not a promoted tribe list.
 - Related gate: GD-300-902; tribal coverage and scarcity experiments.
 
 ## Q07 — Commanders
@@ -133,6 +135,10 @@ Each card has one policy regardless of overlapping tribe/archetype memberships.
 - Status: Partially answered; exclusive package direction adopted, candidate mapping and package schema/accounting proof not implemented.
 - Related gate: GD-300-902; experiment readiness; existing GD-300-901 policy is settled.
 
+Later direction favors singleton with a small practical staple exception; R16
+requests exact classification/capacity reconciliation rather than silently changing
+the older simulator's approved allowances.
+
 ## Q10 — Affinity evidence
 
 Which card/archetype relationships should receive initial annotations, and why?
@@ -155,6 +161,14 @@ matched initial inputs; later offers may diverge. Profiles do not define playabl
 - Evidence: Reviewed owner discussion recorded in ADR-0010; no executable experimental profile supplied.
 - Status: Partially answered; actual named profiles remain open. Do not add curve/fixing corrective weighting or infer numeric guidance constants.
 - Related gate: GD-300-902; explicit-profile readiness; separate GD-400-901 content gate.
+
+Later reviewed amendment: choices are publicly observed, with one active actor.
+Explore reveals persistent location stock and picks, spending one shared exploration;
+Return picks from the same remaining stock without spending one. No replenishment
+or separate turn cap. At zero explorations each player has one final opportunity;
+ineligible turns skip without compensation. Four-seat 3/6 and eight-seat 6/8
+exploration/location settings are hypotheses. Details remain R15; the current CLI
+cannot execute this location model.
 
 ## Q12 — Acceptance
 
@@ -339,10 +353,51 @@ How would defection be earned/resolved, which old commanders/signatures remain
 usable, and what type/color/leader changes apply? What limits prevent repeated
 affiliation from bypassing scarcity, and how would interruption/replay behave?
 
-- Answer: Research direction only: destination must be an unallocated tribe; old tribe availability returns but collected cards stay owned. This does not restore previously consumed contents.
+- Answer: Research direction only: destination must be an unallocated tribe; old tribe availability returns but collected cards stay owned. This does not restore previously consumed contents. Finding a tribe during an Expedition belongs to experimental Defector content, not ordinary recruitment or an automatic affiliation change.
 - Evidence: Reviewed owner defection clarification; explicitly experimental.
 - Status: Not approved as playable behavior; timing, permissions, limits and proof remain open.
 - Related gate: GD-400-901 research; GD-500-901 if deck rules are proposed; Phase 9 advanced systems.
+
+### R15 — Expedition budget, final round and location accounting
+
+Which exploration/location counts should the slice test, and in what turn order?
+Who takes the first final turn after the last exploration, and where does its
+spender fall in that order? Each player already gets a final opportunity.
+Must unopened locations contain an eligible option
+for the explorer, and what happens if none do while exploration budget remains?
+How is shared location stock allocated/reserved so it cannot appear in another
+offer? What measurements would accept pacing, exploration incentives and seat fairness?
+
+- Answer: Explore includes a pick and spends shared exploration; Return consumes stock but not exploration. Revealed stock persists, never replenishes, and empty or player-ineligible locations are unavailable as actions. At zero explorations each player gets one final opportunity; no eligible option means a forced skip. No separate turn cap for now. Four-seat 3 explores/6 locations and eight-seat 6 explores/8 locations are proposals only.
+- Evidence: Owner's reviewed public-discovery, no-replenishment, shared-clock and skip discussion, 2026-10-06. Greed spending the clock is a hypothesis, not playtest evidence.
+- Status: Core direction adopted; settings, ordering, remaining edge cases and accounting proof open. No playable location implementation exists.
+- Related gate: GD-400-901; GD-300-902 for explicit hypotheses; GD-400-001 turn/location proof.
+
+### R16 — Singleton scope and staple exceptions
+
+Which exact cards and quantities form the staple exception, and how are they
+distributed? Does default singleton mean one session-wide allocation for every
+non-staple Main Deck/utility/tribal card at both four and eight seats? How should
+this replace ADR-0009's older two/three-copy tribal allowances, and reconcile
+commander/tribe attachments and physical inventory? Do not infer a capacity from
+unique tribe ownership or multiply copies through duplicate printings.
+
+- Answer: Singleton is the intended default with a small practical staple exception. Command Tower, Arcane Signet, Evolving Wilds and Terramorphic Expanse are examples; complete list, counts and distribution Not supplied. Per-player deck singleton remains settled.
+- Evidence: Reviewed owner singleton and budget-friendly unique-tribe discussion, 2026-10-06.
+- Status: Direction adopted; exact policy amendment requires approval before changing the current supply engine. Historical supply proof stays unchanged.
+- Related gate: GD-300-902; GD-300-901 for explicit supply amendment; Phase 2 accounting tests.
+
+### R17 — Main Deck opportunity and observational checkpoints
+
+What acquisition budget and basic-land access should allow a 60-card deck without
+Expedition rewards? How do commander/signature/support cards count, and how much
+selection slack is needed? Which observations flag insufficient opportunity versus
+player choice without becoming corrective weighting or automatic catch-up grants?
+
+- Answer: Expedition rewards are supplemental; sufficient Main Deck opportunity is the preferred baseline. Observe counts, eligible opportunities, forced skips and remaining draft opportunities; no automatic "N cards by now" compensation. Exact counts and land access Not supplied.
+- Evidence: Owner agreed to the supplemental-reward and observational-checkpoint recommendation in this chat, 2026-10-06.
+- Status: Design direction adopted; numerical plan and safe-deck-completion evidence open. No fallback supply or guaranteed good deck is approved.
+- Related gate: GD-300-902; GD-400-901 flow; GD-500-901 counting; R03 curation indicators.
 
 ## Other owner gates
 

@@ -83,6 +83,7 @@ A data-driven phase state machine, Expedition definitions, player barriers, and 
 ### Current state
 Phase 3 and advanced Phase 9 work have not started. The first Expedition and Adornment details await GD-400-901.
 Later owner direction adopts turn-based recruitment/Expeditions, Tribe/Hire as entry order and one current holder per tribe. General hires and tribe-exclusive commander/signature subsets remain distinct. No turn, affiliation or discovery implementation exists; the first-slice content and signature rules still need review. Interactive attack burns and defection are research only.
+Later location direction: public observation with one active actor; fixed revealed stock, no replenishment, shared Explore clock, free-clock Return and a final opportunity per player. Forced ineligible skips grant nothing. R15–R17 retain budgets, accounting, singleton/staple reconciliation and independent Main Deck opportunity. These are future contracts, not implemented features.
 ### Open questions
 First-script content, pacing, shared versus private questions, reward counts, and color-expansion limits remain open. Broader Warbands/Signature Spell systems remain later work; ADR-0010 conditionally targets small hand-curated commander signatures for the first slice if package/recovery/export gates pass.
 ### Completion criteria
@@ -655,6 +656,7 @@ Implementation checkpoint: local commit 3a9e296. Keep this under the new domain/
 Make shared drafting and private journeys one recoverable session, rather than letting a hidden button or timer determine when the game advances.
 ### Expected outcome
 Four simulated seats take sequential recruitment/Expedition turns, generate fresh offers after each commit, preserve the active disconnected choice and advance a phase only after every required seat completes. Tribe access and package ownership remain authoritative in Gulchdale.
+Recruitment offers regenerate; Expedition locations preserve publicly revealed remaining stock instead. The planned proof adds atomic Explore/pick/clock updates, Return without clock use, exhaustion/eligibility guards, final opportunities, forced skips and stock/history recovery. Observers cannot act. These additions have not been proved by existing tests.
 ### Current state
 Not started; Phase 3 follows the Phase 2 domain proof. Existing legacy timer pause is not this barrier.
 ### Open questions
@@ -690,16 +692,17 @@ Choose a small, understandable adventure that shows how a player's answers affec
 ### Expected outcome
 An approved first Expedition script with named questions, locations, rewards, pacing, and Adornment eligibility/limits.
 ### Current state
-**Adopted:** players retain four commanders and mark a leader; Choice Packs are private and never pass. Shared stages wait for every player. A disconnected private question/choice pauses for recovery rather than receiving an automatic answer.
+**Adopted:** players retain four commanders and mark a leader; Choice Packs never pass. Later ADR-0010 makes recruitment/tribal/Expedition scenes publicly observed while only the active player acts. Shared stages wait for every player. A disconnected active question/choice pauses for recovery rather than receiving an automatic answer.
 **Proposed, not approved:** begin with a few locations and one rule-changing reward. Small private option pools and influence targets are hypotheses, not settled counts or balancing rules.
 Phase 3 is Not started; no Expedition content has been implemented.
 Reviewed partial answers in ADR-0010: lobby choice is a willing override of recommended difficulty, Beginner/Intermediate commander pools exclude three-color commanders, and personal Adornment eligibility remains based on player level. Tribe/Expedition selection and commander packages are separate Gulchdale-owned systems. Exact setup, permissions, guidance and content are not implemented.
 Later direction: recruitment/Expeditions are sequential regenerated offers; Tribe/Hire defines entry order, not exclusion. Each tribe has one current holder with access to its exclusive commanders and discoverable signatures. Closing an offer does not burn cards. Elf attacks burning unallocated Goblin cards and defection releasing tribe availability while retaining collected cards are explicitly undecided experiments, not approved Expedition content.
+The newest amendment supersedes fresh regeneration for Expedition returns: locations retain their publicly revealed stock and never replenish. Explore includes picking and spends a shared exploration; Return picks without spending one. Exhausted or player-ineligible locations are unavailable. Zero explorations grants one final opportunity per player, not guaranteed supply; ineligible turns skip without compensation. No separate turn cap for now. Four-seat 3/6 and eight-seat 6/8 exploration/location settings are hypotheses only. Expedition tribe discovery belongs to experimental Defector content, not ordinary recruitment. Main Deck opportunity should not depend on Expedition rewards; exact budget remains open.
 ### Open questions
 - What exact opening script, location choices, and two meaningful questions should the first playable journey use? Which questions are shared and which are player-specific?
 - Where should intermissions occur, and how long should the first experience take? Which timing decisions are first-slice settings versus later playtest calibration?
 - Can a narrative answer be mechanically neutral, or must every answer affect signals or permissions? What feedback makes the consequence understandable without revealing the whole scoring system?
-- How many private options and retained rewards should each first-script choice offer?
+- How many publicly observed options and retained rewards should each first-script choice offer?
 - How many permanent color expansions may a player obtain, which colors may they open, and what eligibility restriction applies to a beginner using a two-color leader?
 Barrier and disconnected-private-choice behavior are already answered; this ticket must not reopen them as unresolved choices.
 - R01: Who chooses lobby mode and how is personal experience supplied before persistent learning? Automatic lobby averaging is not approved.
@@ -708,6 +711,8 @@ Barrier and disconnected-private-choice behavior are already answered; this tick
 - R12: What discovery step grants a tribe-owned signature, and what does choosing it lock?
 - R13: How could Expeditions have meaningful interactive content? The Elf-versus-Goblin attack example has no approved success, targets, amount, timing or counterplay.
 - R14: If defection is later pursued, how do availability, retained inventory, leader compatibility, colors and replay interact? No playable defection rule is approved.
+- R15: Which exploration/location counts, final-turn order and unopened eligibility rules should be tested? How is persistent stock reserved without duplication, and what pacing/seat-fairness evidence is sufficient?
+- R17: What Main Deck acquisition and land access provides sufficient deck-building opportunity without Expedition rewards? Observe disparities rather than add automatic catch-up grants.
 ### Completion criteria
 The owner approves the actual first script and examples of resulting signals, rewards, and color permissions. The independent orchestrator can implement it without inventing content, counts, or eligibility rules.
 ### Related reading
@@ -791,7 +796,8 @@ Capture the owner's new-game research in a durable, understandable place while a
 ### Expected outcome
 Evidence-backed answers to Q01–Q12 covering audience, experience, accessibility, first slice, archetypes, tribes, commander review, roles, supply classification, affinities, experiments and acceptance. Reviewed answers and source-comment provenance enter repository Markdown; Outline/Plane remain published mirrors.
 ### Current state
-Building. Q01–Q03 are reviewed and answered: relative beginners through veterans; curation indicators for 36 spells, two-color mana support and meaningful offered curves; soft early budget and a hard future public $1,000 ceiling. Q07/Q09/Q11/Q12 are partially informed by the reviewed lobby and exclusive commander-package discussion; Q04/Q05/Q06/Q08/Q10 remain Not supplied. No real candidate slice, numeric guidance profile or playable content has been approved. Answers were reviewed from the owner's direct chat request; the Plane comments API returned zero comments at review time, so no comment provenance is invented. ADR-0010 records the approved boundaries, not completed implementation.
+Building. Q01–Q03 are reviewed and answered: relative beginners through veterans; curation indicators for 36 spells, two-color mana support and meaningful offered curves; soft early budget and a hard future public $1,000 ceiling. Q06/Q07/Q09/Q11/Q12 are partially informed by reviewed tribe, lobby, package and location discussion; Q04/Q05/Q08/Q10 remain Not supplied. Green can have only Elves; Dragon, Merfolk, Vampires and Angels are candidates, not approved launch mappings. No real candidate slice, numeric guidance profile or playable content has been approved. Answers were reviewed from the owner's direct chat request; the Plane comments API returned zero comments at the earlier Q01–Q03 review, so no comment provenance is invented. ADR-0010 records the approved boundaries, not completed implementation.
+Public observation and persistent non-replenishing location stock are adopted direction, alongside Explore spending a shared clock and Return preserving it. Final opportunities may skip when ineligible; no catch-up grants or separate turn cap are adopted. Exact budgets remain hypotheses. Singleton with a small staple exception needs explicit supply reconciliation before engine changes. The owner is preparing the first slice and remaining answers incrementally; research remains open.
 ### Open questions
 - Q04: Which approximately 20 commanders and 100 cards form the first bounded slice?
 - Q05: Which 5–8 archetypes and distinct plans should be studied?
@@ -810,7 +816,10 @@ Building. Q01–Q03 are reviewed and answered: relative beginners through vetera
 R02 personal Adornment limits belong to GD-400-901; R05 signature/leader/deck placement belongs to GD-500-901. All R questions include Answer, Evidence, Status and Related gate fields in the questionnaire.
 - R09–R12: Supply priority, eight-seat tribe content, hire-first compatibility, four retained-commanders acquisition and signature-discovery details. Unique tribe allocation and both entry orders are settled direction, not implemented features.
 - R13/R14: Preserve Expedition-attack burning and defection as experimental hypotheses; no new effect, automatic burn or supply replenishment is approved.
-Adopted supply/singleton rules are not reopened. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
+- R15: Supply location budgets, final order and eligibility/accounting details; test pacing, abandoned resources and seat advantage rather than presume greed balances them.
+- R16: Specify default singleton scope and the exact staple list, quantities and distribution. Reconcile older tribal two/three-copy allowances explicitly; current code and historical proof remain unchanged.
+- R17: Define Main Deck opportunities and land access independent of supplemental Expedition rewards; checkpoints diagnose rather than compensate.
+Per-player deck singleton stays settled; the new singleton/staple intent needs an explicit session-supply amendment. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
 ### Completion criteria
 The owner supplies numbered answers in this ticket's comments, explicitly identifies research versus requested decisions, and requests review. The reviewed questionnaire records each accepted answer, evidence, status and provenance. Content approval requires its own review; this ticket cannot silently approve later phase rules.
 ### Related reading

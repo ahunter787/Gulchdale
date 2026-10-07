@@ -87,6 +87,19 @@ fresh offers generated after earlier selections commit. Closing a pack releases
 unselected holds without burning. Tribe/Hire defines order, not exclusion; a tribe
 is unique to its current holder and owns a curated commander/signature subset.
 
+Further ADR-0010 amendment: these choices are publicly observed but only one seat
+acts. Expedition Explore reveals persistent stock and picks, spending shared
+exploration; Return picks from the same remaining stock without spending it.
+Locations never replenish. Empty/player-ineligible locations are unavailable as
+actions; zero exploration gives each player one final opportunity, with forced
+skips when no eligible stock remains. No separate turn cap for now. This supersedes
+fresh regeneration for returns and private presentation, not private authorization.
+R15 retains counts, final order, unopened eligibility and reservation proof.
+R16 retains singleton/staple capacity reconciliation; existing two/three-copy
+tribal simulator rules are unchanged. R17 retains sufficient Main Deck opportunity
+independent of supplemental Expedition rewards; no automatic card-count catch-up.
+Expedition tribe discovery is experimental Defector content, not ordinary recruitment.
+
 Reviewed direction: personal experience recommends difficulty; lobby content is
 selected by mode, not prohibited by a personal label. Beginner/Intermediate
 commander pools exclude three-color commanders. Adornments use personal level;

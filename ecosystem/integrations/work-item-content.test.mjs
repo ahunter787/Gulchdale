@@ -90,7 +90,7 @@ test("reviewed research separates curation goals, package ownership, and open de
 	);
 	for (const id of ["Q01", "Q02", "Q03"])
 		assert.match(questionnaire.split("## " + id + " —")[1].split("\n## ")[0], /Status: Answered and reviewed/);
-	for (let i = 1; i <= 14; i++) {
+	for (let i = 1; i <= 17; i++) {
 		const section = questionnaire.split("### R" + String(i).padStart(2, "0") + " —")[1].split(/\n### |\n## /)[0];
 		for (const field of ["Answer", "Evidence", "Status", "Related gate"])
 			assert.ok(section.includes("- " + field + ":"));
@@ -123,6 +123,36 @@ test("sequential tribe recruitment is adopted but attack burns and defection rem
 	assert.ok(catalog.get("GD-400-901").markdown.includes("R13"));
 	assert.ok(catalog.get("GD-500-901").markdown.includes("R12"));
 	assert.equal(plan.items.find((i) => i.key === "phase-03").status, "Not started");
+});
+
+test("persistent public locations remain planned contracts with explicit owner gates", () => {
+	const amendment = fs.readFileSync(
+		new URL("../../docs/decisions/ADR-0010-experience-policy-and-commander-packages.md", import.meta.url),
+		"utf8"
+	);
+	for (const phrase of [
+		"Locations never replenish",
+		"Only the active player may act",
+		"No separate turn cap",
+		"supplemental",
+		"not ordinary recruitment",
+		"older two/three-copy tribal capacities",
+		"R01–R17",
+	])
+		assert.ok(amendment.includes(phrase), phrase);
+	const expedition = catalog.get("GD-400-901").markdown;
+	for (const phrase of [
+		"publicly observed",
+		"stock",
+		"R15",
+		"R17",
+		"hypotheses only",
+		"no Expedition content has been implemented",
+	])
+		assert.ok(expedition.includes(phrase), phrase);
+	assert.ok(catalog.get("GD-300-902").markdown.includes("R16"));
+	assert.equal(plan.items.find((i) => i.key === "phase-03").status, "Not started");
+	assert.equal(plan.items.find((i) => i.key === "phase-04").status, "Not started");
 });
 
 test("safe constrained Markdown renders readable headings, paragraphs, lists, emphasis, code and links", () => {

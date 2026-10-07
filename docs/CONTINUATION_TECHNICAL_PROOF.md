@@ -97,8 +97,9 @@ Use four simulated seats and non-production scene labels to demonstrate:
 
 1. With an explicit proof-only seat order, the active seat answers Tribe/Hire,
    receives an owner-eligible offer and commits its selection/package once.
-2. Closing the offer releases unselected holds without burning. Generate the next
-   seat's offer from updated tribe availability and consumed-card accounting.
+2. Closing recruitment releases unselected holds without burning. Generate the
+   next recruitment offer from updated tribe availability and consumed-card accounting.
+   Expedition location stock instead persists after its selection window closes.
 3. Only the active seat can make a supply-affecting recruitment/Expedition choice;
    reject other seats and stale turn/phase/offer references server-side.
 4. Three seats complete their required turns; the fourth disconnects while reading.
@@ -107,6 +108,16 @@ Use four simulated seats and non-production scene labels to demonstrate:
 6. Every seat reaches the barrier; the next configured phase opens exactly once.
    Main Deck simultaneity and later-round priority remain R09 owner decisions,
    not invented by this fixture. No actual pack circulation is introduced.
+7. Explore publicly reveals fixed location stock and commits one pick plus one
+   shared-clock decrement atomically. Return shows that same remaining stock,
+   commits one eligible pick and does not decrement the clock. No replenishment.
+8. Empty or player-ineligible locations cannot be selected. At zero explorations,
+   preserve one final opportunity per seat; record forced skips without compensation.
+   Final order and counts are explicit proof fixtures pending R15, not adopted rules.
+9. Reconnect/replay restores location inventory, clock, public discovery history,
+   active turn and final opportunities. Reject stale claims for already-taken cards;
+   prevent stock from being independently allocated in another offer. An exhausted
+   location remains in history. Duplicate Explore cannot spend clock or grant twice.
 
 Transitions refer to session, phase and offer identities. Commands are validated
 against current state; in-flight actions and simulated bot seats cannot cross the
@@ -115,6 +126,11 @@ duplicate commands, out-of-order messages, interruption and reconnect.
 
 This remains independent of Draftmancer and does not approve real Expedition
 scripts, pacing, counts or Adornment permissions. Those remain GD-400-901 decisions.
+Current PackSimulator/workbench tests do not prove persistent locations. Later
+content simulations must measure length, unexplored/unclaimed resources, forced
+skips, seat advantage and the last explorer's influence. Before a playable slice,
+R17 must establish sufficient Main Deck opportunities without Expedition rewards;
+no automatic catch-up grant is introduced by this proof plan.
 
 ## C: Phase 4 scene and adapter proof — GD-500-001
 
@@ -129,11 +145,15 @@ view model receives projected state and submits commands; it never allocates car
 or advances shared phases itself.
 
 Demonstrate four test browser clients: active-player recruitment/Expedition scenes,
-inactive-seat waiting, explicit Tribe/Hire entry orders, earned package visibility,
+inactive-seat public observation of questions/offers/picks/unchosen options with
+no action authority, explicit Tribe/Hire entry orders, earned package visibility,
 hidden pool presentation, one disconnect, recovery, then all-player progression.
 Any simultaneous Main Deck scene is explicitly configured proof scope pending R09.
 The pool is merely hidden; showing it again preserves its cards.
 Use placeholder dialogue and proof-only option counts, not approved story content.
+Show persistent revealed locations, remaining-stock counts and legal Explore/Return
+actions without revealing unopened stock or harness scores. A reconnecting observer
+receives the same authorized public history; observing never grants pick authority.
 
 Exercise a narrow authenticated/idempotent reward-grant adapter, including a direct
 gift that was not picked from a pack. Gulchdale remains the owner/supply authority;

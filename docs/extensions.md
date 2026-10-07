@@ -14,7 +14,7 @@ in the roadmap/catalog and an explicit owner decision.
 
 | # | What it is | Kind | Status |
 | --- | --- | --- | --- |
-| **E1** | Defection only to an unallocated tribe; release the old tribe but retain earned cards and spent supply | Research hypothesis | Experimental; not approved or implemented |
+| **E1** | Expedition tribe discovery belongs to Defector research; only unallocated destinations, release old tribe but retain earned cards and spent supply | Research hypothesis | Experimental; discovering a tribe does not authorize switching; not implemented |
 | **E2** | Interactive Expedition success might burn unallocated opposing-tribe cards; Elf versus Goblin example | Research hypothesis | Brainstorming; no success, target, count, timing or counterplay rules decided |
 
 Owner discussion preserved 2026-10-06. [ADR-0010](decisions/ADR-0010-experience-policy-and-commander-packages.md)

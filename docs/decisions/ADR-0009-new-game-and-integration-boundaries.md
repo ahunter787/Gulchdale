@@ -8,6 +8,11 @@ commander packages. It does not imply these additions are implemented.
 Its later amendment makes recruitment/Expeditions sequential and permits
 tribe-owned exclusive commander/signature subsets. That supersedes simultaneous
 choice assumptions for those phases, not the historical simulator proof or legacy.
+Its public-discovery amendment also supersedes private presentation for those
+scenes and fresh regeneration of Expedition returns: revealed location stock
+persists without replenishment. R15–R17 retain Expedition budgets, singleton/staple
+capacity reconciliation and sufficient Main Deck opportunities. Current supply
+code remains unchanged pending the explicit capacity amendment.
 
 ## Authority and provenance
 
