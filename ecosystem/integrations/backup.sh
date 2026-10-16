@@ -1,135 +1,141 @@
 #!/usr/bin/env bash
-# Back up everything this infrastructure holds, into backups/<timestamp>/.
-#
-#   - Plane:   PostgreSQL dump, uploaded files (MinIO data), settings/secrets
-#   - Outline: PostgreSQL dump, uploaded files, environment/secrets
-#   - Mailpit: the message database (so a magic link survives a restore)
-#
-# The result deliberately contains SECRETS (variables.env, outline.env): without
-# them a restore cannot decrypt what Plane encrypted or sign anyone in. Treat
-# backups/ as sensitive - it is gitignored, and it should not be copied to
-# a machine you would not give the databases to.
-#
-# An untested backup is not a backup. MANIFEST.txt in each backup names the exact
-# restore commands; practise a restore into a scratch project before trusting it.
-#
-#   ./integrations/backup.sh
-
+# Live project-scoped backup: never stops services or silently skips components.
 set -euo pipefail
-
-# shellcheck source=../lib.sh
+umask 077
 . "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/lib.sh"
-
-require_cmd docker
+for command in docker jq git tar sha256sum envsubst; do require_cmd "$command"; done
 load_env
+PLANE_DB="${PLANE_COMPOSE_PROJECT}-plane-db-1"
+PLANE_MINIO="${PLANE_COMPOSE_PROJECT}-plane-minio-1"
+OUTLINE_DB="${OUTLINE_COMPOSE_PROJECT}-db"
+OUTLINE_APP="${OUTLINE_COMPOSE_PROJECT}-app"
+OUTLINE_VOLUME="${OUTLINE_COMPOSE_PROJECT}_outline-data"
+MAIL_VOLUME="${MAIL_COMPOSE_PROJECT}_mailpit-data"
+MINIO_SOURCE="${PLANE_DIR}/plane/data/minio"
+STARTED="$(date -u +%FT%TZ)"
 
-STAMP="$(date +%Y-%m-%d_%H%M%S)"
-OUT="${BACKUP_DIR}/${STAMP}"
-ensure_dir "$OUT"
-
-PLANE_DIR="${INFRA_DIR}/plane/plane-app"
-PLANE_CONTAINERS="plane-app-plane-db-1"
-OUTLINE_DB_CONTAINER="${OUTLINE_COMPOSE_PROJECT}-db"
-
-container_running() {
-  docker ps --format '{{.Names}}' | grep -qx "$1"
+check_container() {
+  local name="$1" project="$2" service="$3"
+  docker inspect "$name" | jq -e --arg project "$project" --arg service "$service" \
+    '.[0] | .State.Running == true and
+     .Config.Labels["com.docker.compose.project"] == $project and
+     .Config.Labels["com.docker.compose.service"] == $service' >/dev/null \
+    || die "Missing, stopped or mismatched source container: ${name}"
 }
+check_mount() {
+  local name="$1" destination="$2" kind="$3" source="$4"
+  docker inspect "$name" | jq -e --arg dst "$destination" --arg kind "$kind" --arg src "$source" \
+    '.[0].Mounts | any(.Destination == $dst and .Type == $kind and
+      (if $kind == "volume" then .Name == $src else .Source == $src end))' >/dev/null \
+    || die "Unexpected ${name} storage at ${destination}"
+}
+check_container "$PLANE_DB" "$PLANE_COMPOSE_PROJECT" plane-db
+check_container "$PLANE_MINIO" "$PLANE_COMPOSE_PROJECT" plane-minio
+check_container "$OUTLINE_DB" "$OUTLINE_COMPOSE_PROJECT" postgres
+check_container "$OUTLINE_APP" "$OUTLINE_COMPOSE_PROJECT" outline
+check_container "$MAILPIT_CONTAINER" "$MAIL_COMPOSE_PROJECT" mailpit
+check_mount "$PLANE_MINIO" /export bind "${MINIO_SOURCE}/uploads"
+check_mount "$PLANE_MINIO" /data bind "${MINIO_SOURCE}/data"
+check_mount "$OUTLINE_APP" /var/lib/outline/data volume "$OUTLINE_VOLUME"
+check_mount "$MAILPIT_CONTAINER" /data volume "$MAIL_VOLUME"
+for volume in "$OUTLINE_VOLUME" "$MAIL_VOLUME"; do docker volume inspect "$volume" >/dev/null; done
+for file in "$ENV_FILE" "${RUNTIME_DIR}/outline.env" "${PLANE_DIR}/variables.env" \
+  "${PLANE_DIR}/docker-compose.yml" "${SECRETS_DIR}/plane.env" \
+  "${SECRETS_DIR}/outline.env" "${SECRETS_DIR}/admin.txt" \
+  "${STATE_DIR}/docs.json" "${STATE_DIR}/plane.json"; do
+  [ -s "$file" ] || die "Required backup input missing or empty: ${file}"
+done
+[ -d "$MINIO_SOURCE" ] || die "Missing Plane uploads: ${MINIO_SOURCE}"
+# Use cached helpers, pinned by image ID for this run. No pulls/installations.
+TAR_IMAGE="$(docker image inspect alpine:latest --format '{{.Id}}')"
+NODE_IMAGE="$(docker image inspect node:22-alpine --format '{{.Id}}')"
+docker run --rm --pull=never --network=none --read-only "$NODE_IMAGE" \
+  node --disable-warning=ExperimentalWarning -e \
+  'if(typeof require("node:sqlite").backup!=="function")process.exit(1)'
+git -C "$PROJECT_ROOT" check-ignore -q "${BACKUP_DIR}/probe" \
+  || die "Backup directory must be ignored by Git"
+mkdir -p "$BACKUP_DIR"
+OUT="$(mktemp -d "${BACKUP_DIR}/$(date -u +%Y-%m-%d_%H%M%S_UTC).XXXXXX")"
+chmod 700 "$OUT"
+trap 'printf "Backup incomplete; retain for diagnosis, do not trust: %s\n" "$OUT" >&2' ERR
+step "backing up to ${OUT}"
 
 dump_postgres() {
-  # dump_postgres <container> <dest-file> <label>
-  local container="$1" dest="$2" label="$3"
-  if ! container_running "$container"; then
-    warn "${label}: container ${container} is not running - skipped its database"
-    return 0
-  fi
-  docker exec "$container" sh -c 'pg_dump -U "${POSTGRES_USER:-plane}" -d "${POSTGRES_DB:-plane}" -Fc' > "$dest"
-  log "${label}: database -> $(basename "$dest") ($(du -h "$dest" | cut -f1))"
+  local container="$1" prefix="$2"
+  docker exec "$container" sh -c \
+    'pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" -Fc' > "${OUT}/${prefix}-db.dump"
+  [ -s "${OUT}/${prefix}-db.dump" ] || die "Empty ${prefix} database dump"
+  docker exec -i "$container" pg_restore --list < "${OUT}/${prefix}-db.dump" \
+    > "${OUT}/${prefix}-db.catalog.txt"
+  # Decode the entire archive without executing SQL or connecting to a database.
+  docker exec -i "$container" pg_restore --file=/dev/null < "${OUT}/${prefix}-db.dump"
+  log "${prefix}: catalog and complete archive decoding passed"
 }
-
-archive_path() {
-  # archive_path <host-dir> <dest-file> <label>
-  local source="$1" dest="$2" label="$3"
-  if [ ! -d "$source" ]; then
-    warn "${label}: ${source} does not exist - skipped"
-    return 0
-  fi
-  docker run --rm -v "${source}:/src:ro" alpine tar czf - -C /src . > "$dest"
-  log "${label}: files -> $(basename "$dest") ($(du -h "$dest" | cut -f1))"
+archive() {
+  local kind="$1" source="$2" output="$3"
+  shift 3
+  docker run --rm --pull=never --network=none --read-only \
+    --mount "type=${kind},source=${source},target=/src,readonly" \
+    "$TAR_IMAGE" tar czf - "$@" -C /src . > "${OUT}/${output}"
+  tar tzf "${OUT}/${output}" >/dev/null
+  log "${output}: archive integrity passed"
 }
+dump_postgres "$PLANE_DB" plane
+dump_postgres "$OUTLINE_DB" outline
+archive bind "$MINIO_SOURCE" plane-minio-files.tar.gz
+archive volume "$OUTLINE_VOLUME" outline-files.tar.gz
+# WAL-aware online SQLite backup from a read-only volume, with only tmpfs writes
+# in the disposable helper. Verified binary snapshot is streamed to the host.
+docker run --rm --pull=never --network=none --read-only --tmpfs /tmp \
+  --mount "type=volume,source=${MAIL_VOLUME},target=/source,readonly" \
+  --mount "type=bind,source=${INFRA_DIR}/integrations/backup-mailpit.mjs,target=/backup-mailpit.mjs,readonly" \
+  "$NODE_IMAGE" node --disable-warning=ExperimentalWarning /backup-mailpit.mjs \
+  > "${OUT}/mailpit.db"
+[ -s "${OUT}/mailpit.db" ] || die "Empty Mailpit snapshot"
+log "Mailpit: SQLite online backup and integrity_check passed"
 
-archive_volume() {
-  # archive_volume <volume-name> <dest-file> <label>
-  local volume="$1" dest="$2" label="$3"
-  if ! docker volume inspect "$volume" >/dev/null 2>&1; then
-    warn "${label}: volume ${volume} does not exist - skipped"
-    return 0
-  fi
-  docker run --rm -v "${volume}:/src:ro" alpine tar czf - -C /src . > "$dest"
-  log "${label}: files -> $(basename "$dest") ($(du -h "$dest" | cut -f1))"
-}
-
-step "backing up to backups/${STAMP}"
-
-# --- Plane ------------------------------------------------------------------
-if [ -f "${PLANE_DIR}/variables.env" ]; then
-  dump_postgres "$PLANE_CONTAINERS" "${OUT}/plane-db.dump" "Plane"
-  archive_path "${PLANE_DIR}/plane/data/minio" "${OUT}/plane-minio-files.tar.gz" "Plane"
-  cp "${PLANE_DIR}/variables.env" "${OUT}/plane-variables.env"
-  chmod 600 "${OUT}/plane-variables.env"
-  log "Plane: settings -> plane-variables.env (contains secrets)"
-else
-  warn "Plane is not installed - skipped"
-fi
-
-# --- Outline ----------------------------------------------------------------
-dump_postgres "$OUTLINE_DB_CONTAINER" "${OUT}/outline-db.dump" "Outline"
-archive_volume "${OUTLINE_COMPOSE_PROJECT}_outline-data" "${OUT}/outline-files.tar.gz" "Outline"
-if [ -f "${INFRA_DIR}/outline/outline.env" ]; then
-  cp "${INFRA_DIR}/outline/outline.env" "${OUT}/outline.env"
-  chmod 600 "${OUT}/outline.env"
-  log "Outline: settings -> outline.env (contains secrets)"
-fi
-
-# --- Mailpit ----------------------------------------------------------------
-archive_volume "${MAIL_COMPOSE_PROJECT}_mailpit-data" "${OUT}/mailpit-mail.tar.gz" "Mailpit"
-
-# --- Manifest ---------------------------------------------------------------
-cat > "${OUT}/MANIFEST.txt" <<EOF
-Development ecosystem backup
-created:  $(date -Iseconds)
-host:     ${ECOSYSTEM_HOST}
-Plane:    ${PLANE_VERSION:-unknown}      (project identifier ${PLANE_PROJECT_IDENTIFIER})
-Outline:  ${OUTLINE_VERSION:-unknown}
-Mailpit:  ${MAILPIT_VERSION:-unknown}
-
-Contents
-  plane-db.dump            Plane PostgreSQL, custom format (-Fc)
-  plane-minio-files.tar.gz Plane uploads (MinIO data directory)
-  plane-variables.env      Plane settings AND secrets
-  outline-db.dump          Outline PostgreSQL, custom format (-Fc)
-  outline-files.tar.gz     Outline uploads (outline-data volume)
-  outline.env              Outline settings AND secrets
-  mailpit-mail.tar.gz      Mailpit message database
-
-Restore (into a stopped stack; this REPLACES the current data)
-  # Plane database
-  docker exec -i ${PLANE_COMPOSE_PROJECT}-plane-db-1 sh -c \\
-    'pg_restore -U "\$POSTGRES_USER" -d "\$POSTGRES_DB" --clean --if-exists' < plane-db.dump
-  # Plane files
-  docker run --rm -v <abs path to plane/data/minio>:/dst -i alpine \\
-    sh -c 'tar xzf - -C /dst' < plane-minio-files.tar.gz
-  # Outline database
-  docker exec -i ${OUTLINE_DB_CONTAINER} sh -c \\
-    'pg_restore -U "\$POSTGRES_USER" -d "\$POSTGRES_DB" --clean --if-exists' < outline-db.dump
-  # Outline files
-  docker run --rm -v ${OUTLINE_COMPOSE_PROJECT}_outline-data:/dst -i alpine sh -c 'tar xzf - -C /dst' < outline-files.tar.gz
-
-Settings are not in the archives: copy plane-variables.env / outline.env back
-into place by hand, because overwriting them with an older copy rotates the
-secrets the application is already using.
-EOF
-
-step "done"
-printf '  %s\n' "${OUT#"$INFRA_DIR"/}"
-printf '  total %s\n' "$(du -sh "$OUT" | cut -f1)"
-printf '  restore commands: %s/MANIFEST.txt\n\n' "${OUT#"$INFRA_DIR"/}"
+tar czf "${OUT}/runtime-config.tar.gz" -C "$RUNTIME_DIR" env outline.env secrets state
+# Include proxy configuration, TLS material and overrides, even root-owned files.
+# Exclude duplicate uploads, raw databases/queues/caches and runtime logs only.
+archive bind "$PLANE_DIR" plane-deployment.tar.gz \
+  --exclude=./plane/data --exclude=./plane/logs --exclude=./.git
+# Preserve exact current tooling/config, including uncommitted backup fixes.
+tar czf "${OUT}/ecosystem-deployment.tar.gz" -C "$INFRA_DIR" --exclude=./.runtime .
+for archive_file in runtime-config plane-deployment ecosystem-deployment; do
+  tar tzf "${OUT}/${archive_file}.tar.gz" >/dev/null
+done
+# Whitelist fields: full inspect output contains credentials.
+for project in "$PLANE_COMPOSE_PROJECT" "$OUTLINE_COMPOSE_PROJECT" "$MAIL_COMPOSE_PROJECT"; do
+  docker ps -aq --filter "label=com.docker.compose.project=${project}"
+done > "${OUT}/container-ids.txt"
+mapfile -t CONTAINER_IDS < "${OUT}/container-ids.txt"
+docker inspect "${CONTAINER_IDS[@]}" | jq \
+  '[.[] | {Id,Name,Image,imageReference:.Config.Image,
+    project:.Config.Labels["com.docker.compose.project"],
+    service:.Config.Labels["com.docker.compose.service"],
+    mounts:[.Mounts[] | {Type,Name,Source,Destination,RW}]}]' > "${OUT}/sources.json"
+jq -n --arg started "$STARTED" --arg finished "$(date -u +%FT%TZ)" \
+  --arg commit "$(git -C "$PROJECT_ROOT" rev-parse HEAD)" \
+  --arg tarImage "$TAR_IMAGE" --arg nodeImage "$NODE_IMAGE" \
+  '{startedUTC:$started,finishedUTC:$finished,repositoryCommit:$commit,
+    helpers:{tar:$tarImage,sqlite:$nodeImage},restoreTested:false,
+    checks:["PostgreSQL catalogs and full archive decoding","gzip/tar listings",
+      "Mailpit SQLite online backup and integrity_check","SHA256SUMS"],
+    consistency:"Live backup: individual DB snapshots, not an atomic cross-service or DB/upload snapshot. Upload changes and in-flight jobs may not align. Redis/RabbitMQ transient queues excluded."}' \
+  > "${OUT}/verification.json"
+export BACKUP_PLANE_DB="$PLANE_DB" BACKUP_OUTLINE_DB="$OUTLINE_DB"
+export BACKUP_MINIO_SOURCE="$MINIO_SOURCE" BACKUP_OUTLINE_VOLUME="$OUTLINE_VOLUME"
+export BACKUP_MAIL_VOLUME="$MAIL_VOLUME" BACKUP_TAR_IMAGE="$TAR_IMAGE"
+envsubst '${BACKUP_PLANE_DB} ${BACKUP_OUTLINE_DB} ${BACKUP_MINIO_SOURCE} ${BACKUP_OUTLINE_VOLUME} ${BACKUP_MAIL_VOLUME} ${BACKUP_TAR_IMAGE}' \
+  < "${INFRA_DIR}/integrations/backup-manifest.txt" > "${OUT}/MANIFEST.txt"
+(cd "$OUT" && find . -maxdepth 1 -type f ! -name SHA256SUMS -print0 \
+  | sort -z | xargs -0 sha256sum > SHA256SUMS && sha256sum --check --quiet SHA256SUMS)
+check_container "$PLANE_DB" "$PLANE_COMPOSE_PROJECT" plane-db
+check_container "$PLANE_MINIO" "$PLANE_COMPOSE_PROJECT" plane-minio
+check_container "$OUTLINE_DB" "$OUTLINE_COMPOSE_PROJECT" postgres
+check_container "$OUTLINE_APP" "$OUTLINE_COMPOSE_PROJECT" outline
+check_container "$MAILPIT_CONTAINER" "$MAIL_COMPOSE_PROJECT" mailpit
+trap - ERR
+step "verified backup complete (restore not tested)"
+printf '  %s\n' "$OUT"
+du -sh "$OUT"

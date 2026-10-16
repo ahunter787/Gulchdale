@@ -6,6 +6,12 @@ reviewed discussion. Q04/Q05/Q08/Q10 remain Not supplied. No candidate list,
 numeric weighting profile or playable Expedition has been approved.
 
 Review source: direct owner messages in this chat, incorporated on 2026-10-06.
+Relevance review on 2026-10-13 incorporates later Hire and dual-interaction-mode
+discussion. The old four-retained-commanders recruitment model is superseded;
+new retained count is unanswered. The 20/100 fixture is not a playable-pool cap.
+Questions keep their identifiers so older answers remain traceable. R13/R14 are
+deferred experiments, not mandatory first-slice decisions. Later owner gates are
+cross-references, not a requirement to answer everything before supplying candidates.
 The owner reports the same Q01–Q03 answers in Plane. At review time the exact
 GD-300-902 v1 comments endpoint returned zero comments; no comment ID is invented.
 This explicit review request authorizes transfer of the supplied chat answers.
@@ -74,8 +80,11 @@ Budget goals are notes here; current pricing, substitutions and shopping remain 
 
 ## Q04 — First slice
 
-Which approximately 20 commanders and 100 cards should form the initial bounded
-collection? Supply exact candidate names or a CSV; this is not a request to tag the full cube.
+Which cards should form the first bounded playable collection? Supply a CSV or
+names separated into general Hire commanders, tribe-owned commanders/content,
+Main Deck, staples, signatures/support and lands, including quantities and intended
+acquisitions. The historical 20/100 engineering fixture is not a cap or proven deck
+inventory. A small research batch may precede the playable pool; label which it is.
 
 - Answer: Not supplied.
 - Evidence: Not supplied.
@@ -84,7 +93,8 @@ collection? Supply exact candidate names or a CSV; this is not a request to tag 
 
 ## Q05 — Archetypes
 
-Which 5–8 archetypes should be studied, and what distinguishes their plans?
+Which initial archetypes should be studied, and what distinguishes their plans?
+The earlier 5–8 suggestion is a research starting point, not an approved quota.
 Identify enablers, payoffs and overlaps rather than assigning scores to the entire pool.
 
 - Answer: Not supplied.
@@ -108,7 +118,7 @@ What commander characteristics warrant inclusion, exclusion or complexity review
 Describe color demands, play patterns and pilot difficulty. Command-zone placement
 and deck counting remain GD-500-901, not answers inferred from this question.
 
-- Answer: Partial. Beginner and Intermediate lobby commander pools exclude three-color commanders. Personal experience recommends a lobby rather than prohibiting a willing higher-difficulty join. Commander signatures/support are exclusive curated packages, not ordinary pack candidates. Exact launch roster, complexity reviews and higher-color treatment are not supplied.
+- Answer: Partial. Beginner and Intermediate lobby commander pools exclude three-color commanders. Personal experience recommends a lobby rather than prohibiting a willing higher-difficulty join. Hire offers use general non-tribal commanders with signatures shown to the choosing player; tribal recruitment uses curated tribal subsets. Eight Hire candidates is proposed, not eight acquisitions. The old four-retained-commanders model is superseded, but replacement count is unanswered. Exact launch roster, complexity reviews and higher-color treatment are not supplied.
 - Evidence: Reviewed owner discussion recorded in ADR-0010; no candidate roster or pilot-complexity study supplied.
 - Status: Partially answered; commander curation remains open, with lobby setup in R01 and signature legality in R05/R06.
 - Related gate: GD-300-902; commander review; separate GD-500-901 legality gate.
@@ -126,9 +136,11 @@ leave unknown quantities open rather than presenting them as accepted minimums.
 
 ## Q09 — Supply classification
 
-Which candidate cards belong to each already-approved supply category: commander,
-commander-support, Main Deck, utility land, tribal or personal commander staple?
-Each card has one policy regardless of overlapping tribe/archetype memberships.
+For each candidate, identify its pool, exclusive owner if any, available quantity
+and proposed supply policy, distinguishing Hire commanders, tribal commanders,
+tribal content, Main Deck, staples, signatures/support and lands. R16 retains the
+explicit amendment from older category capacities; do not assume those are current
+new-game defaults. Overlapping affinities do not independently multiply supply.
 
 - Answer: Partial. General commanders may own fixed signatures/support; tribes own tribe-exclusive commanders and discoverable signatures. Exclusive owner links prevent cards entering unrelated pools. Fixed attachments are earned on recruitment; tribe-owned signature options may be discovered later, not all granted on tribe selection. The legacy spawnedByDraftEffect tag demonstrates injection-only data, not the complete new ownership model. Other real candidate classifications remain Not supplied.
 - Evidence: Owner's package clarification; inspected Cube Cobra and committed legacy Atla/Thornbite Staff and Baba/Crop Rotation examples, summarized in ADR-0010.
@@ -157,7 +169,7 @@ sequences should each named hypothesis test? Specify initial boosters, grants,
 declines, burns and any explicit retries. Both modeled selection policies run with
 matched initial inputs; later offers may diverge. Profiles do not define playable Expeditions.
 
-- Answer: Partial. Recruitment and supply-affecting Expedition choices are sequential regenerated offers; Tribe/Hire chooses entry order, not an exclusive career. Tribe allocation is unique; only the current holder can recruit/discover from its owned subset. Closing the offer releases unselected holds without burning. Main Deck timing, priority and four retained-commanders acquisition remain open. Historical passing language is not circulating-pack behavior. Defection and attack burns remain experimental. No numeric settings or real-card profiles are supplied.
+- Answer: Partial. Support sequential Turn Based and parallel Player Based choices; scheduling and visibility are separate. Per-step assignments remain open. Tribe/Hire chooses entry order, not an exclusive career. Tribe allocation is unique; only the current holder can recruit/discover from its owned subset. Recruitment releases unselected holds without burning; Expedition returns preserve location stock. Main Deck timing, priority, Hire retained count and secrecy details remain open. Historical passing language is not circulating-pack behavior. Defection and attack burns remain experimental. No executable real-card profiles are supplied.
 - Evidence: Reviewed owner discussion recorded in ADR-0010; no executable experimental profile supplied.
 - Status: Partially answered; actual named profiles remain open. Do not add curve/fixing corrective weighting or infer numeric guidance constants.
 - Related gate: GD-300-902; explicit-profile readiness; separate GD-400-901 content gate.
@@ -286,40 +298,44 @@ remain adopted; no automatic rescue/reroll/supply creation is added.
 - Status: Open clarification; no silent repeal or expansion.
 - Related gate: GD-300-902; GD-300-901 only if the owner requests a supply-policy amendment.
 
-### R09 — Turn priority, Main Deck timing and recovery
+### R09 — Interaction modes, visibility, priority and recovery
 
-How is first pick established/recorded, and does priority rotate, snake or remain
-fixed across later rounds? Does Main Deck drafting remain simultaneous immediate
-offers, or also become sequential? What timing/recovery behavior applies to the
-active seat, including bots? No answer may silently enable real pack circulation.
+Which steps use sequential Turn Based versus parallel Player Based interactions?
+For Hire, are candidates, selection and identifying signatures private, and when
+are they revealed? How is sequential priority established/rotated, how do parallel
+steps wait for every required player, and how do bots/disconnects recover? What
+explicit behavior handles insufficient candidates for held parallel offers?
+Main Deck timing remains unassigned; no answer silently enables pack circulation.
 
-- Answer: Recruitment/Expeditions are turn-based. The example awards first pick to a dice winner; later priority and Main Deck timing are Not supplied. Inactive seats must not claim supply while the active player reads; disconnected choices remain recoverable.
-- Evidence: Reviewed owner turn-based proposal and follow-up agreement.
-- Status: Adopted sequential direction; operational order/timing details open.
+- Answer: Both interaction modes are required; public observation remains Expedition direction, while commander secrecy is desired. Exact mode/visibility matrix, Hire reveal timing and priority are Not supplied. Disconnected choices remain recoverable. One active actor applies to sequential turns, not to parallel player choices.
+- Evidence: Owner's later Turn Based/Player Based clarification and commander-secrecy direction, reviewed 2026-10-13; this amends the earlier all-sequential recruitment assumption.
+- Status: Dual-mode direction adopted; per-step scheduling, visibility, shortage and recovery configuration open. Existing code does not prove it.
 - Related gate: GD-400-901; GD-300-902 for profiles; GD-400-001 technical turn/recovery proof.
 
 ### R10 — Exclusive tribes and eight-seat content
 
-With five uniquely allocated tribes, what should an eight-seat session offer after
-all tribes are claimed: hire-only play, additional tribes or another approved rule?
-How do tribe availability and existing per-card allowances interact? Do not infer
-extra tribes, shared tribe ownership or changes to approved four/eight-seat card caps.
+Which actual tribes are in the first slice and eventual eight-seat roster? What
+options remain when all included tribes are claimed? Five was an earlier example,
+not a fixed roster now that more tribes are candidates. How does exclusive ownership
+interact with R16's supply amendment? Do not infer shared tribe ownership or new caps.
 
 - Answer: A tribe has one current holder with exclusive access to its dedicated subset. Eight-seat content/hire-only behavior is Not supplied.
 - Evidence: Owner clarified tribe-unique commanders/signatures and unique turn-based allocation.
 - Status: Ownership adopted; seat/content capacity unresolved.
 - Related gate: GD-300-902; GD-400-901; GD-300-901 only for an explicitly requested capacity amendment.
 
-### R11 — Two entry orders and retained commanders
+### R11 — Two entry orders and Hire acquisitions
 
-Which open tribes are compatible with a general hire? How are all four retained
-commanders acquired after initial recruitment, or is that earlier rule changing?
-Can a player change affiliation outside experimental defection? General Hire does
+Which open tribes are compatible with a general hire? How many commanders does a
+Hire offer retain, is eight its intended first-slice offer size, and can later
+recruitment change the chosen commander? The old four-retained-commanders obligation
+is superseded, not an unanswered requirement to acquire four. Can a player change
+affiliation outside experimental defection? General Hire does
 not expose tribe-exclusive commanders before affiliation.
 
-- Answer: Tribe-first and Hire-first both remain possible; a later tribal hire uses the tribe's curated subset. Exact compatibility and four-commander acquisition are Not supplied.
-- Evidence: Owner's explicit entry-order clarification.
-- Status: Flexible entry adopted; subsequent eligibility/acquisition details open.
+- Answer: Tribe-first and Hire-first both remain possible; a tribal hire uses the tribe's curated subset. General Hire is a separate non-tribal offer, provisionally eight candidates with their signatures. The owner rejects the old four-retained-commanders model; exact retained count and later compatibility/recruitment are Not supplied.
+- Evidence: Owner's entry-order clarification and later rejection of the old commander model, reviewed 2026-10-13.
+- Status: Flexible entry and separate offers adopted; candidate count remains proposed and retained count remains open. Do not infer one retained commander as approved.
 - Related gate: GD-400-901; GD-500-901 for retained-commanders legality; GD-300-902 mappings.
 
 ### R12 — Discoverable signature slot and lock-in

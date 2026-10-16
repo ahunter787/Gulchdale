@@ -68,6 +68,7 @@ data/LimitedRatings/*
 data/scryfall-all-cards.json*
 data/BulkArena.json
 Makefile
+!ecosystem/Makefile
 client/dist/*
 tmp
 state

@@ -1,0 +1,51 @@
+Gulchdale development ecosystem backup — SENSITIVE, keep private
+
+Sources: sources.json records exact container/image IDs and storage mounts.
+Times, helper identities and verification: verification.json (UTC).
+Integrity: from this directory run sha256sum --check SHA256SUMS.
+Repository commit is recorded; ecosystem-deployment includes current uncommitted
+tooling/configuration. This is not a backup of the application's database or repo.
+
+Contents
+  plane-db.dump / outline-db.dump: custom PostgreSQL archives, with catalog files
+  plane-minio-files.tar.gz: entire Plane MinIO source (uploads and data)
+  outline-files.tar.gz: Outline uploaded files
+  mailpit.db: SQLite online backup, not a raw live/WAL file copy
+  runtime-config.tar.gz: .runtime/env, outline.env, secrets and synchronization state
+  plane-deployment.tar.gz: deployed Compose/configuration, variables.env, proxy/TLS
+    state; excludes plane/data (separately dumped/archived) and runtime logs
+  ecosystem-deployment.tar.gz: ecosystem tooling and config, excluding .runtime
+
+Limitations
+Services were left running. Each PostgreSQL dump and Mailpit snapshot is internally
+consistent, but they are taken at different times; uploaded files may change during
+copying and may not align with database references. This is not an atomic snapshot.
+Redis caches and RabbitMQ/in-flight jobs are not backed up. No restore was performed.
+Archive decoding, catalogs, SQLite integrity, tar integrity and checksums were checked;
+these checks do not establish a successful restore. A local copy does not protect
+against loss of this disk. Existing uncommitted project docs are not in this backup.
+
+RESTORE REFERENCE ONLY — NOT EXECUTED
+Restore only after explicit authorization, preferably to an isolated scratch stack.
+Use matching recorded images/configuration; do not run these against live services.
+Disable application writers/workers; PostgreSQL itself must run for pg_restore.
+Verify target names/mounts and preserve current data separately before replacement.
+
+1. Extract configuration archives into a private review directory, NOT over a live
+   checkout. runtime-config paths are relative to ecosystem/.runtime; plane-deployment
+   paths to ecosystem/.runtime/plane-app; ecosystem-deployment paths to ecosystem/.
+   Restore original encryption/signing secrets for the restored data. Never rotate
+   or overwrite live credentials by blindly extracting these archives.
+2. With only target databases running and writers disabled:
+   docker exec -i ${BACKUP_PLANE_DB} sh -c 'pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists --exit-on-error' < plane-db.dump
+   docker exec -i ${BACKUP_OUTLINE_DB} sh -c 'pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists --exit-on-error' < outline-db.dump
+3. With target upload services stopped and EMPTY, verified destination storage:
+   docker run --rm --network=none --mount type=bind,source=${BACKUP_MINIO_SOURCE},target=/dst -i ${BACKUP_TAR_IMAGE} tar xzf - -C /dst < plane-minio-files.tar.gz
+   docker run --rm --network=none --mount type=volume,source=${BACKUP_OUTLINE_VOLUME},target=/dst -i ${BACKUP_TAR_IMAGE} tar xzf - -C /dst < outline-files.tar.gz
+4. With Mailpit stopped and its verified target volume EMPTY (no stale WAL/SHM):
+   docker run --rm --network=none --mount type=volume,source=${BACKUP_MAIL_VOLUME},target=/dst -i ${BACKUP_TAR_IMAGE} sh -c 'umask 077; cat > /dst/mailpit.db' < mailpit.db
+   Restore file ownership appropriate to the recorded target container before startup.
+5. Start only the approved target services; validate login, Plane work items/comments,
+   all Outline collections including handwritten pages, upload access and Mailpit.
+   Run ecosystem verification in the restored checkout with its restored settings.
+   Do not publish/synchronize automatically as part of restoration.

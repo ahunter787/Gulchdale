@@ -273,7 +273,45 @@ Do not manufacture supply, add correction weights or grant cards after skips.
 Exact acquisition counts, land access and deck-counting assumptions remain R17.
 No implementation or safe-60-card proof is claimed by this direction.
 
-## Budget and availability
+## Recruitment and interaction-mode amendment — reviewed 2026-10-13
+
+This review incorporates the owner's later chat decisions, not new Plane-comment
+answers. It supersedes requiring all recruitment to be sequential/public and the
+old four-retained-commanders recruitment model. Legacy code and proof receipts
+are unaffected; no replacement retained count is silently adopted.
+
+- Hire offers use general non-tribal commanders and clearly show their associated
+  signatures to the choosing player. Tribe-first recruitment uses the tribe's
+  curated subset rather than the general Hire pool. Both entry orders remain possible.
+- Eight general commanders is a proposed Hire offer size, not eight acquisitions,
+  a fixed pool size, or a reason to retain four. Exact retained count remains R11.
+- Support both sequential Turn Based interactions (one actor, other players
+  observing) and parallel Player Based interactions (players choose for themselves).
+  Per-step mode assignment remains R09; neither mode restores circulating packs.
+- The owner wants commander secrecy. Actor scheduling and visibility must be
+  independent: whether Hire candidates, selected commander and identifying
+  signatures are hidden, and when they are revealed, needs R09 confirmation.
+  Public Expedition discovery remains adopted; it is not silently made private.
+- Parallel unique offers must hold competing candidates before presentation so
+  choices do not disappear mid-read. Proposed engineering requirement: validate
+  exclusive package entitlements alongside candidates, atomically grant only
+  selected packages and release unselected holds without burn. Exact schema and
+  shortage behavior need proof, not invented rerolls or duplicate supply.
+
+The 20-commanders/100-noncommanders figures are a historical engineering fixture,
+not a cap, ratio or demonstrated four-deck playable inventory. The first playable
+collection needs an explicit category/acquisition ledger: general and tribe-owned
+commanders, tribal content, Main Deck, staples, signatures/support and lands.
+Keep unique identities, available copies, offer reservations and actual acquisitions
+distinct. Under a hypothetical eight-candidate parallel Hire configuration, four
+simultaneous hires need 32 distinct available commander candidates; three need 24.
+These are conditional capacity calculations, not approved rosters or gameplay counts.
+
+GD-300-902 now prioritizes missing content and experimental inputs. Other owner
+gates retain session/legality questions; attack burns and Defector design remain
+deferred experiments, not required answers for a non-Defector first slice.
+
+## Budget and availability — unchanged intent
 
 Early research has a soft $1,000 all-in target, not a failed-list criterion.
 Actual early cost may exceed $5,000; the owner estimates existing Gulchdale at

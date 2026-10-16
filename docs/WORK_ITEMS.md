@@ -692,7 +692,7 @@ Choose a small, understandable adventure that shows how a player's answers affec
 ### Expected outcome
 An approved first Expedition script with named questions, locations, rewards, pacing, and Adornment eligibility/limits.
 ### Current state
-**Adopted:** players retain four commanders and mark a leader; Choice Packs never pass. Later ADR-0010 makes recruitment/tribal/Expedition scenes publicly observed while only the active player acts. Shared stages wait for every player. A disconnected active question/choice pauses for recovery rather than receiving an automatic answer.
+**Adopted:** Choice Packs never pass; shared stages wait for every required player and disconnected choices await recovery. The 2026-10-13 ADR-0010 review supersedes the old four-retained-commanders and all-recruitment-sequential/public assumptions: support sequential and parallel interactions with separately configured visibility. Public Expedition discovery remains adopted; Hire retained count, mode assignments and secrecy details remain open.
 **Proposed, not approved:** begin with a few locations and one rule-changing reward. Small private option pools and influence targets are hypotheses, not settled counts or balancing rules.
 Phase 3 is Not started; no Expedition content has been implemented.
 Reviewed partial answers in ADR-0010: lobby choice is a willing override of recommended difficulty, Beginner/Intermediate commander pools exclude three-color commanders, and personal Adornment eligibility remains based on player level. Tribe/Expedition selection and commander packages are separate Gulchdale-owned systems. Exact setup, permissions, guidance and content are not implemented.
@@ -723,16 +723,16 @@ Blocking gate: Phase 3. Record narrative wording separately from mechanical effe
 ## GD-500-901 — Decide commander and deck-rule details
 
 ### Purpose
-Make the deck a player takes to the table unambiguous, especially when four commander options and an Adornment remain available.
+Make the deck a player takes to the table unambiguous, especially its commander, signature and Adornment permissions.
 ### Expected outcome
 An owner-approved legality record with worked legal/illegal decks, commander roles, card counting, and explicit permissions.
 ### Current state
-**Adopted:** 60-card decks, 30 life, four retained commander options, one marked leader, and per-player final-deck singleton for non-basic cards unless an explicit rule changes it. Adornments can grant off-color permission for that draft.
+**Adopted:** 60-card decks, 30 life, a designated deck commander/leader, and per-player final-deck singleton for non-basic cards unless an explicit rule changes it. Adornments can grant off-color permission for that draft. The later ADR-0010 review supersedes four retained commander options; replacement Hire retained count is unanswered, not implicitly one.
 The normal basic/non-basic distinction is not a new global singleton restriction. Reviewed partial counting: the deck's commander is card 1 of 60 and its optional signature is card 2. Signatures start in the command zone and follow ordinary zones after casting, with no new whole-game casting cap. General commander fixed attachments and tribe-owned discoverable signatures have exclusive curated ownership, never unrelated pool membership. Fixed attachments are earned on recruitment; tribal signature options may be discovered later, not automatically all granted on affiliation. Gulchdale records and displays entitlements; Draftmancer is a projection, not the source of package ownership. The owner prefers curated signatures in the first slice if the bounded infrastructure gate passes, otherwise explicitly defer. Other retained-commanders' placement, signature eligibility and color/export details remain open; no package implementation is claimed.
 **Proposed, not approved:** model permission explicitly while possibly displaying a physical Adornment as a separate reference card.
 Phase 5 is Not started; the legacy flow has not been converted to these new validation rules.
 ### Open questions
-- Which of the four retained commanders may occupy the command zone during a game: only the marked leader, a chosen option, or a specifically defined combination?
+- Once R11 establishes recruitment counts, which earned commander may occupy the command zone and what later changes are allowed? Do not assume four retained options or multiple command-zone commanders.
 - R05: Where do other retained commander options and their packages live? Which signatures may start in the command zone, and can a leader change alter designation or permissions? Which included support cards count toward 60? Do not reopen the settled deck-commander/optional-signature counting.
 - Does the physical Adornment count as a deck card, a separate reference card, or another game object? What does export show?
 - How exactly do leader colors, Adornment permissions, and explicit format exceptions combine? Which exception cases must validation and export explain to players?
@@ -798,30 +798,27 @@ Evidence-backed answers to Q01–Q12 covering audience, experience, accessibilit
 ### Current state
 Building. Q01–Q03 are reviewed and answered: relative beginners through veterans; curation indicators for 36 spells, two-color mana support and meaningful offered curves; soft early budget and a hard future public $1,000 ceiling. Q06/Q07/Q09/Q11/Q12 are partially informed by reviewed tribe, lobby, package and location discussion; Q04/Q05/Q08/Q10 remain Not supplied. Green can have only Elves; Dragon, Merfolk, Vampires and Angels are candidates, not approved launch mappings. No real candidate slice, numeric guidance profile or playable content has been approved. Answers were reviewed from the owner's direct chat request; the Plane comments API returned zero comments at the earlier Q01–Q03 review, so no comment provenance is invented. ADR-0010 records the approved boundaries, not completed implementation.
 Public observation and persistent non-replenishing location stock are adopted direction, alongside Explore spending a shared clock and Return preserving it. Final opportunities may skip when ineligible; no catch-up grants or separate turn cap are adopted. Exact budgets remain hypotheses. Singleton with a small staple exception needs explicit supply reconciliation before engine changes. The owner is preparing the first slice and remaining answers incrementally; research remains open.
+Relevance review, 2026-10-13: 20 commanders/100 cards is an engineering fixture, not a playable inventory cap or category ratio. The owner has rejected the old four-retained-commanders recruitment model. General Hire offers and tribal recruitment are separate; eight general Hire candidates is proposed, while retained count is still unanswered. Both sequential Turn Based and parallel Player Based interactions are required. Which steps use which mode, and the exact Hire secrecy/reveal policy, are open. This supersedes the earlier all-recruitment-sequential/public assumption without changing public Expedition discovery or claiming implementation.
 ### Open questions
-- Q04: Which approximately 20 commanders and 100 cards form the first bounded slice?
-- Q05: Which 5–8 archetypes and distinct plans should be studied?
-- Q06: Which tribes and curated support relationships matter first?
-- Q07: What commander characteristics warrant inclusion, exclusion or complexity review?
-- Q08: What fixing, ramp, draw, removal, enabler and payoff targets should be tested?
-- Q09: Which cards belong to each already-approved supply category?
-- Q10: Which initial affinity relationships have supporting evidence?
-- Q11: What named experimental profiles specify pack sizes, permissions, resources and actions?
-- Q12: What evidence makes the slice ready for playtesting, and what requires revision?
-- R01: Who chooses lobby mode, what supplies personal experience, and which exact commander rosters apply? Personal difficulty is a recommendation; harder-lobby joins are willing overrides. Beginner/Intermediate exclude three-color commanders.
-- R03: What counts toward 36 spells, how do we measure offered curves/two-color support, and how do we distinguish list failure from player choices? These are curation diagnostics, not weighting or live repair.
-- R04: What does the future all-in $1,000 ceiling include, how are owned cards valued, and what current inventory/purchase allowance guides the slice? Current research has no hard budget failure criterion.
-- R06/R07: Supply curated signature/support mappings and shared-substrate evidence. Which bounded examples should demonstrate package safety for the first slice?
-- R08: Does diagnostic-only failure handling leave the existing explicit tribal replacements intact? Until clarified, no supply rescue or silent repeal is added.
-R02 personal Adornment limits belong to GD-400-901; R05 signature/leader/deck placement belongs to GD-500-901. All R questions include Answer, Evidence, Status and Related gate fields in the questionnaire.
-- R09–R12: Supply priority, eight-seat tribe content, hire-first compatibility, four retained-commanders acquisition and signature-discovery details. Unique tribe allocation and both entry orders are settled direction, not implemented features.
-- R13/R14: Preserve Expedition-attack burning and defection as experimental hypotheses; no new effect, automatic burn or supply replenishment is approved.
-- R15: Supply location budgets, final order and eligibility/accounting details; test pacing, abandoned resources and seat advantage rather than presume greed balances them.
-- R16: Specify default singleton scope and the exact staple list, quantities and distribution. Reconcile older tribal two/three-copy allowances explicitly; current code and historical proof remain unchanged.
-- R17: Define Main Deck opportunities and land access independent of supplemental Expedition rewards; checkpoints diagnose rather than compensate.
-Per-player deck singleton stays settled; the new singleton/staple intent needs an explicit session-supply amendment. Expedition and Adornment content remains GD-400-901; deck legality remains GD-500-901; Defector mechanics remain research only.
+**First-slice research priorities — answer incrementally:**
+- Q04/Q09/R06: Supply a candidate list split into general Hire commanders, tribe-owned commanders/content, Main Deck, staples, signatures/support and lands. Include exclusive owner links, quantities and intended acquisitions; distinguish a research batch from a complete playable inventory. No fixed 20/100 cap or category ratio is imposed.
+- Q05/Q06/R07/R10: Choose initial archetypes, tribes and support overlaps. Green may have only Elves; Dragon, Merfolk, Vampires and Angels are candidates, not final mappings. Neither five tribes nor 5–8 archetypes is a mandatory roster size. Which modes/seat counts should the initial collection support?
+- Q07/R01: Supply the actual general and tribal commander rosters and complexity criteria per intended lobby mode. Beginner/Intermediate exclude three-color commanders; harder-lobby joins are willing overrides of recommendations.
+- Q08/Q10: Supply coverage hypotheses for fixing, ramp, draw, removal, enablers and payoffs, plus initial evidence-backed affinities. Curve/fixing/card-count goals do not authorize corrective weighting.
+- Q11/R09/R11: Specify which first-slice steps are sequential or parallel, which Hire information is private and when revealed, candidate and retained counts, and intended acquisition sequence. Eight Hire candidates remains proposed; retaining four is no longer required and retaining one is not yet approved. Parallel offer capacity and shortage behavior need explicit tests, not duplicate supply.
+- Q09/R16: Specify session-singleton scope and the exact staple exceptions, quantities and distribution. Reconcile older two/three-copy tribal allowances explicitly; per-player deck singleton stays settled and current engine rules are unchanged.
+- Q11/R15/R17: Propose location budgets and Main Deck/land acquisition counts. Expedition returns preserve stock with no refill; final opportunities may skip. Main Deck opportunities must not depend on Expedition rewards. Numeric budgets remain hypotheses, not automatic catch-up rules.
+- Q12/R03: Define evidence that makes the slice ready for playtesting, including spell counting, fixing, offered curves, shortages and player-choice attribution. Current tools prove accounting on fixtures, not enjoyment or deck completion for the new pool.
+
+**Other owner gates — still relevant, not duplicate mandatory answers here:**
+- GD-400-901 holds lobby setup, per-step mode/visibility, seat order/recovery, final-turn order, unopened-location eligibility and personal Adornment limits (R01/R02/R09/R15).
+- GD-500-901 holds commander/signature placement and counting, later commander changes and signature-discovery lock-in (R05/R11/R12). Signature visibility must respect the eventual secrecy policy.
+- R08 still needs clarification if the new flow retains or replaces older tribal replacement offers; diagnostic-only curation handling does not silently repeal those rules.
+- R04's complete future public-budget accounting remains relevant to later buildability, but is not a hard failure gate for current candidate research. R17's land access is needed for a playable acquisition plan.
+
+**Deferred experiments — not first-slice blockers unless explicitly included:** R13 attack burns and R14 Defector/Expedition tribe discovery remain research only. No success, activation, permission or burn rules have been approved. Do not require these answers to research a non-Defector slice.
 ### Completion criteria
-The owner supplies numbered answers in this ticket's comments, explicitly identifies research versus requested decisions, and requests review. The reviewed questionnaire records each accepted answer, evidence, status and provenance. Content approval requires its own review; this ticket cannot silently approve later phase rules.
+The owner supplies the scoped candidate ledger, coverage/affinity evidence, named experiment inputs and acceptance criteria incrementally, using the stable Q/R numbers in comments or expressly reviewed chat answers. Reviewed answers enter the questionnaire with provenance. Only owner gates relevant to the chosen slice must be resolved before that slice's implementation/playtest; deferred experiments are not mandatory. Content approval requires its own review and cannot be inferred from supplying names or passing synthetic tests.
 ### Related reading
 [Reviewed answers and follow-ups](RESEARCH_QUESTIONNAIRE.md), [experience and exclusive packages](decisions/ADR-0010-experience-policy-and-commander-packages.md), [workbench and interpretation limits](RESEARCH_WORKBENCH.md), and [separate game-design gates](decisions/ADR-0007-open-game-rules.md).
 ### Engineering notes

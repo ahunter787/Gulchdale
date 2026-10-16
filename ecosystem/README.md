@@ -316,13 +316,77 @@ they matter again if you do something by hand or upgrade.
 
 ## Backups, restore and upgrades
 
-`make backup` writes, into `.runtime/backups/<timestamp>/`: both PostgreSQL
-databases in custom format, Plane's uploads, Outline's uploads, Mailpit's message
-database, Plane's settings file and Outline's env file, plus a `MANIFEST.txt` with
-the exact restore commands. Treat an archive as sensitive: it contains secrets.
+`make backup` writes a new mode-0700 `.runtime/backups/<UTC-timestamp>.<suffix>/`
+directory with mode-0600 files: both PostgreSQL custom dumps, Plane/Outline uploads,
+a WAL-aware SQLite online snapshot of Mailpit, runtime settings/secrets/sync state,
+and actual Plane/ecosystem deployment configuration. Required missing, stopped or
+mismatched sources fail instead of being silently skipped. Cached Alpine and Node
+22 helper images are used by immutable ID without pulling or networking; no service
+is stopped or reconfigured. Node must provide `node:sqlite.backup`; `envsubst` is
+also required. Backup helper tests: `node --test integrations/backup.test.mjs`.
+
+Verification decodes PostgreSQL archives without executing SQL, lists tar archives,
+checks SQLite integrity and SHA-256 checksums. `sources.json`, `verification.json`
+and `MANIFEST.txt` record exact sources, timing, limitations and restore instructions.
+This is a **live**, non-atomic cross-service backup: uploads can change during copying,
+and queues/caches are excluded. A passed integrity check is not a tested restore.
+Keep the backup private; it contains credentials and is neither encrypted nor copied
+off-disk. The application database and uncommitted product documents are outside
+this ecosystem backup. Nothing is published by the backup command.
 
 The settings files are copied, not restored, on purpose: restoring an older one
 would rotate secrets the services are already using.
+
+### Isolated restore rehearsal
+
+Use an explicit backup and then the exact run directory printed by creation:
+
+```bash
+make -C ecosystem restore-test BACKUP=/absolute/path/to/ecosystem/.runtime/backups/BACKUP
+make -C ecosystem restore-test-verify RUN=/absolute/path/to/ecosystem/.runtime/restore-tests/RUN
+```
+
+There is no default source or fallback to the live stack. The rehearsal probes
+18100–18107 and exposes only Plane 18100, Outline 18105 and Mailpit 18107 on
+10.60.0.227. Each run has unique container names, an internal-only network, and
+private storage/configuration. Recorded cached image IDs are required; nothing is
+pulled, upgraded, bootstrapped, synchronized or published to the source ecosystem.
+All generated state and secrets remain under the ignored run directory, mode 0700.
+
+Docker does not publish ports for this internal-only network. A detached fixed-target
+Node ingress process therefore exposes the three LAN ports and forwards only to
+verified clone container addresses; it refreshes addresses after clone restarts.
+It does not provide general URL forwarding or give containers an external route.
+Its PID and log are recorded in the run directory. No host firewall or live proxy
+configuration is changed. External-effect consumers and scheduled jobs are omitted;
+the ordinary cloned worker is retained for local application/email functionality.
+
+Before apps start, verification compares all dumped PostgreSQL table datasets by
+row count and sorted COPY-row hash, checks uploaded-file hashes, and proves clone
+database reachability while live service endpoints/external egress are unreachable.
+It then checks restored API identities, memberships, comments and all original
+Outline collections. Exact stored document JSON/text is compared to the dump;
+rendered Markdown is checked separately because Outline's legacy text column can
+differ from its current ProseMirror rendering. Owner-authored pages are not edited.
+
+The verify command creates labeled clone-only test content, requests fresh Outline
+mail, establishes an authenticated session, restarts only cloned API/Outline/Mailpit,
+and proves persistence. It checks original container IDs, start times, restart counts,
+mounts, networks and bindings and hashes the live configuration and original backup.
+It does not change the backup to mark it restored; evidence goes in restore-report.json.
+Use a **private browser window/profile** for manual sign-in: different ports on one
+IP share cookies. Historical document links still point where their authors put
+them; do not follow links to the original services while testing.
+
+If browser isolation is unavailable to the harness, automated checks can pass while
+the report explicitly leaves interactive browser verification pending for the owner.
+The clone is left running; no automatic removal or source-stack operation occurs.
+A failed attempt is retained for diagnosis. For a pre-start interrupted run only,
+`node ecosystem/integrations/restore-test.mjs resume /absolute/RUN` rechecks fidelity
+and continues without restoring the source or replacing existing databases.
+After startup, use `audit /absolute/RUN` for read-only API/content verification
+without restarting apps or sending another login email. Test the tooling with
+`node --test ecosystem/integrations/restore-test.test.mjs`.
 
 Upgrading is a one-line change in `.runtime/env` (`PLANE_VERSION` or
 `OUTLINE_VERSION`) followed by `make plane-install` or `make outline-install`.

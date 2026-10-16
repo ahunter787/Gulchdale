@@ -2,9 +2,13 @@
 
 Status: Partially resolved; implementation must stop at each remaining relevant gate.
 
-Accepted format direction: per-player final-deck singleton, scalable virtual supply,
-60-card decks, 30 life, four retained commanders and one marked leader,
-Adornment-based color expansion, native private ChoicePacks.
+Accepted format direction: per-player final-deck singleton, virtual supply,
+60-card decks, 30 life, a designated commander/leader, Adornment-based color
+expansion and native non-passing choices. The 2026-10-13 ADR-0010 review supersedes
+four retained commanders and all-recruitment-sequential/public assumptions.
+Hire count, per-step mode and visibility remain open; public Expedition discoveries
+persist. Older four-option/private wording below is historical where contradicted
+by that amendment, not a requirement to recover the rejected recruitment model.
 These do not retroactively change the working four-stage legacy flow.
 Reviewed updates: [ADR-0010](ADR-0010-experience-policy-and-commander-packages.md).
 Q01–Q03 are answered; the remaining research and new R01–R08 follow-ups are

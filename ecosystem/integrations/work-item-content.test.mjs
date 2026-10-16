@@ -155,6 +155,23 @@ test("persistent public locations remain planned contracts with explicit owner g
 	assert.equal(plan.items.find((i) => i.key === "phase-04").status, "Not started");
 });
 
+test("research relevance review removes stale obligations without approving missing Hire rules", () => {
+	const entry = catalog.get("GD-300-902");
+	const open = entry.markdown.split("### Open questions")[1].split("### Completion criteria")[0];
+	for (const phrase of [
+		"No fixed 20/100 cap",
+		"retaining four is no longer required",
+		"retaining one is not yet approved",
+		"sequential or parallel",
+		"Deferred experiments",
+		"not first-slice blockers",
+	])
+		assert.ok(open.includes(phrase), phrase);
+	assert.ok(!open.includes("Which approximately 20 commanders"));
+	assert.ok(!open.includes("four retained-commanders acquisition"));
+	assert.equal(plan.items.find((i) => i.key === "GD-300-902").status, "Building");
+});
+
 test("safe constrained Markdown renders readable headings, paragraphs, lists, emphasis, code and links", () => {
 	const html = renderMarkdown(
 		"### Purpose\n\nA **clear** and *small* `test`.\n\n- One\n- Two\n\n1. First\n2. Second\n\n[Guide](FOUNDATION.md)\n\n```text\n<tag>\n```"

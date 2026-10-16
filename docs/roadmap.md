@@ -68,7 +68,7 @@ The previous Phase 1–3 work is legacy/as-built history, not these phases.
 | Ticket | Module | Phase | Title | Status | Acceptance |
 | --- | --- | --- | --- | --- | --- |
 | GD-300-901 | GD-300 | 2 | Approve virtual supply scaling and reservations | Complete | ADR-0009 records owner answers, immediate packs and explicit content/research deferrals |
-| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Building | Q01–Q03 reviewed; partial tribe/location direction; remaining answers and R01–R17 in existing owner gates |
+| GD-300-902 | GD-300 | 2 | Define research priorities, candidate slice and experimental hypotheses | Building | Scoped candidate ledger and experiment evidence; no 20/100 cap or four-retained requirement; mode/visibility and counts open |
 | GD-400-901 | GD-400 | 3 | Approve first Expedition and Adornment limits | Not started | Owner ADR; public location choices, pacing, final order and Adornment limits |
 | GD-500-901 | GD-500 | 5 | Approve deck legality and commander exceptions | Not started | Owner ADR; 60 cards, 30 life, four commanders, basic exceptions |
 | GD-800-901 | GD-800 | 8 | Approve identity retention, consent and caps | Not started | Owner ADR; privacy, recovery and evidence requirements |
@@ -107,20 +107,21 @@ owner-authored Game Design and Balance collection is separate and protected.
 Phase 0 exits after a fresh clone reproduces the pinned legacy draft without hidden
 manual steps. Phase 1 exits after an independent immutable pool reconciles with the
 manifest and shadow failure cannot disrupt drafts. Phases 2 and 3 validate architecture
-before full-cube tagging or deep engine changes. Start with approximately 20 commanders,
-100 cards and 5–8 archetypes. New shared and private packs resolve immediately;
+before full-cube tagging or deep engine changes. The approximately 20-commanders/
+100-cards fixture is historical engineering scope, not a playable inventory cap;
+the first playable pool requires a scoped category/acquisition ledger. New offers resolve immediately;
 unselected options return to supply unless an explicit session-burn policy applies.
 Legacy passing remains unchanged. New UI follows the new game, not legacy screens;
 reviewed low-level card primitives may be adapted behind new interfaces.
 Shared play resumes at an all-player barrier; disconnected private choices await recovery.
-Recruitment/Expedition simultaneity is superseded by the later ADR-0010 amendment:
-one active turn at a time, publicly observed owner-eligible choices after prior
-commits. Expedition returns preserve known remaining location stock. Main
-Deck timing needs confirmation; the historical simultaneous simulator is unchanged.
+The latest ADR-0010 amendment supports sequential Turn Based and parallel Player
+Based interactions with visibility configured separately. Public Expedition
+discovery and persistent location stock remain adopted. Hire secrecy, retained
+count and per-step scheduling need confirmation; the historical simulator is unchanged.
 
 Phase 4 adapter operations: authoritative phase gates, offer/pool projection, new scene
-presentation, idempotent reward grants, recovery and complete events. Phase 5 requires four players, four retained
-commanders, a marked leader, two questions, one private ChoicePack, a 60-card deck
+presentation, idempotent reward grants, recovery and complete events. Phase 5 requires four players,
+an approved recruitment count and deck commander, meaningful choices, a 60-card deck
 and a complete audit trail before cutover. Phase 6 adds curation edits/publishing/rollback.
 Phases 7–10 follow the Systems Map. Telemetry is append-only; analytics rebuildable.
 Mailpit is development email only.

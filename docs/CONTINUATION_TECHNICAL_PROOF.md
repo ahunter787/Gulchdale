@@ -8,6 +8,14 @@ not retroactively expand the verified A corpus.
 
 ## Follow-up proof boundaries from owner research
 
+2026-10-13 amendment: support sequential Turn Based and parallel Player Based
+interactions with separately defined visibility. The sequential recruitment fixture
+below proves one configured mode, not a requirement that every step use it.
+Parallel offers additionally need non-overlapping holds, package entitlement
+validation, participant-scoped recovery and an all-required-player barrier.
+Hire secrecy and retained count remain owner decisions; four retained commanders
+is no longer a required model. Fixture card counts do not prove playable inventory.
+
 - Phase 2: canonical attachment exclusivity across printings, no attachment in
   unrelated/fallback pools, atomic commander-plus-package grants, singleton and
   exactly-once replay. Mixed-mode experiments must retain shared rotating
